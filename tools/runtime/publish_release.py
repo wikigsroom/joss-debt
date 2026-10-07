@@ -74,12 +74,25 @@ def main():
             raise RuntimeError(output.strip())
         return result.returncode, output
 
+    release_id = None
+
     def release(optional=False):
-        code, output = command("api", f"repos/{REPO}/releases/tags/{TAG}", optional=optional)
-        if code:
-            if "404" not in output:
-                raise RuntimeError(output.strip())
-            return None
+        nonlocal release_id
+        # The tag endpoint omits drafts. Discover our draft through the
+        # authenticated release list, then query its stable numeric ID.
+        if release_id is None:
+            _, output = command("api", f"repos/{REPO}/releases?per_page=100",
+                                "--paginate", "--slurp")
+            candidates = [row for page in json.loads(output) for row in page
+                          if row["tag_name"] == TAG]
+            if not candidates:
+                if optional:
+                    return None
+                raise RuntimeError("The created draft was not found in the authenticated release list")
+            if len(candidates) != 1:
+                raise RuntimeError("Multiple releases use the requested tag; review before uploading")
+            release_id = candidates[0]["id"]
+        _, output = command("api", f"repos/{REPO}/releases/{release_id}")
         return json.loads(output)
 
     def matching(row, name):
@@ -124,7 +137,7 @@ def main():
             raise RuntimeError("Draft is incomplete or differs from the prepared files")
         print("All attachments verified. Publishing the Alpha prerelease...", flush=True)
         command("release", "edit", TAG, "--repo", REPO, "--draft=false", "--prerelease",
-                "--notes-file", str(notes))
+                "--target", head, "--notes-file", str(notes))
         state = release()
     assets = {row["name"]: row for row in state["assets"]}
     if state["draft"] or not state["prerelease"] or set(assets) != set(expected) or \
