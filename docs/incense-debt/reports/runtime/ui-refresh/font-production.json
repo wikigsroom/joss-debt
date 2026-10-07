@@ -1,0 +1,44 @@
+{
+  "fonts": [
+    {
+      "file": "game/assets/fonts/IncenseRounded-Medium.ttf",
+      "family": "Incense Rounded",
+      "upstream_family": "Resource Han Rounded CN",
+      "weight": "Medium",
+      "bytes": 3204088,
+      "sha256": "2b47bb8b6a225002e22c498d28d3da26b7f3739b2d84f40502aa2b5680f87c22",
+      "source_sha256": "b2ec1727fbc04b70255db6cb71be0eca3b7a7167ef11655059c5576cc920143f",
+      "glyphs": 7738,
+      "fallback_characters": [],
+      "unresolved_characters": [],
+      "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+      "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+    },
+    {
+      "file": "game/assets/fonts/IncenseRounded-Bold.ttf",
+      "family": "Incense Rounded",
+      "upstream_family": "Resource Han Rounded CN",
+      "weight": "Bold",
+      "bytes": 3116308,
+      "sha256": "a36b53f44e5721793632b3d110d550f6adcc39105d21722609d0749b92086ab1",
+      "source_sha256": "f713907a21a10701cd68a7ce3e345ccdce46c789e1809d65ace54e095d7107c3",
+      "glyphs": 7738,
+      "fallback_characters": [],
+      "unresolved_characters": [],
+      "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+      "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+    },
+    {
+      "file": "game/assets/fonts/SmileySans-Oblique.ttf",
+      "family": "Smiley Sans Oblique",
+      "version": "2.0.1",
+      "bytes": 2629764,
+      "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+      "source_sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+      "modified": false,
+      "license": "SIL OFL 1.1"
+    }
+  ],
+  "fallback": "game/assets/fonts/NotoSansSC.ttf",
+  "passed": true
+}

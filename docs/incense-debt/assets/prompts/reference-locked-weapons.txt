@@ -1,0 +1,23 @@
+Create the definitive twelve weapon UI icons for the original 2D game Incense Debt. Use the supplied approved character roster and temple asset board as binding references for ink stroke weight, torn fibrous paper, vermilion ribbons, old matte bronze, folded ivory paper and warm amber flame. The output must look cut from the same illustrations. Do not redesign their material language.
+
+1536x1024 PNG with true transparent alpha, twelve isolated objects in exactly FOUR columns by THREE rows, one centered full object per cell, generous empty gaps. No environment, no text, no labels, no frames, no checkerboard, no human body, no hand, no duplicated object. Make readable compact silhouettes at 64 pixels. Consistent upper-left illumination, two or three painted tonal masses and coarse woodblock ink contour. Tangible humble folk objects, not modern guns or sci-fi weapons.
+
+Row 1 left to right:
+1. A small squat round bronze incense burner with three feet, round perforated lid, ivory paper ward and a small amber flame; this is the paper apprentice's round incense weapon from the reference.
+2. Two small bronze soul bells joined by a short red cord, matching the bell character's rounded bells.
+3. A single upright vermilion paper lantern with a bronze stem and perforated cap, matching the lantern keeper's warm face lamp.
+4. A thick square bronze ward stamp, carved relief seal face, blocky dark handle and red cord; sturdy near-range weapon.
+
+Row 2 left to right:
+5. An open worn red paper umbrella with pale ribs and an ivory bone shaft, matching the umbrella character's broad umbrella.
+6. A thin calligrapher's bamboo brush with a pointed dark bristle, ivory paper wrap and a restrained red tassel, matching the ink clerk.
+7. Five torn rectangular ivory ritual paper slips spread in a fan, one small round bronze coin each and red stamped geometric marks without legible characters.
+8. A compact bundle of three vermilion firecracker tubes, aged paper edges, red string binding and a tiny warm glowing fuse.
+
+Row 3 left to right:
+9. A thick round aged bronze cash wheel with a square central hole, four shallow rim notches and a red ribbon tail.
+10. A small ivory-and-red soul pennant on a dark wooden staff, folded torn paper streamers and one bronze bell, no readable writing.
+11. A larger heavy magistrate brush with a carved bronze collar, long dark bristles, red handle and ivory strip, visibly distinct from the thin brush in cell 6.
+12. A curved ivory ash-bone blade with a coarse charcoal edge and a vermilion cord grip, compact and readable.
+
+Each item stays wholly within its assigned cell. Keep clear transparent gaps and do not merge the ribbons of neighboring items. Faithful to the supplied references, not vector clipart, not glossy 3D, not pixel art.

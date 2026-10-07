@@ -1,0 +1,39 @@
+{
+	"checks": [
+		{
+			"name": "a normal terminal run writes one local observation",
+			"passed": true
+		},
+		{
+			"name": "the observation is a single JSONL record",
+			"passed": true
+		},
+		{
+			"name": "character and selected routes are retained",
+			"passed": true
+		},
+		{
+			"name": "live loadout is retained without copying account data",
+			"passed": true
+		},
+		{
+			"name": "combat metrics are retained with explicit zero damage history",
+			"passed": true
+		},
+		{
+			"name": "repeating the same run result is idempotent",
+			"passed": true
+		},
+		{
+			"name": "idempotence survives a logger reload",
+			"passed": true
+		},
+		{
+			"name": "training and daily runs never enter balance observations",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "local-only terminal run observations, reload-safe idempotence and training/daily exclusion"
+}

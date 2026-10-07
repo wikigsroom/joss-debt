@@ -1,0 +1,7 @@
+{
+	"kills": 1,
+	"mode": "clear",
+	"passed": true,
+	"regression": "one stationary coin enemy behind a side-door obstacle; no fighting stat overrides",
+	"seconds": 2.0
+}

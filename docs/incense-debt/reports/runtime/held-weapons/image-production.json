@@ -1,0 +1,94 @@
+{
+  "recorded_at": "2026-10-05T07:16:28.858674+00:00",
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "size": "1536x1024",
+  "background": "transparent",
+  "attempts": [
+    {
+      "operation": "edit",
+      "endpoint": "/images/edits",
+      "references": [
+        {
+          "file": "output/imagegen/incense-debt/held-weapons/approved-poses-edit-canvas.png",
+          "sha256": "ae818ec3dcd8e92ab48fbd25ab5d21bad0182ace55510d47e394acea14d81348"
+        },
+        {
+          "file": "output/imagegen/incense-debt/held-weapons/grip-edit-guide.png",
+          "sha256": "4324be0be12dae3eee3138ea934727e5334bcba290a5e1c0c3539b50c38fe4fb"
+        },
+        {
+          "file": "output/imagegen/incense-debt/characters-roster.png",
+          "sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645"
+        }
+      ],
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/reference-locked-neutral-grips.txt",
+        "sha256": "6333714246e21862a0c00f0a561123897ab4f3292c6f5fe0b62123582633a882"
+      },
+      "status": "failed",
+      "http_status": 400,
+      "error": "Tool choice 'image_generation' not found in 'tools' parameter.",
+      "output_created": false
+    },
+    {
+      "operation": "generate",
+      "endpoint": "/images/generations",
+      "references": [],
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/reference-locked-held-weapons.txt",
+        "sha256": "bdcdf53c5837b1cb6f09fe180b34215ab0b25ea2f45af6686fb1b12270d99543"
+      },
+      "output": {
+        "file": "output/imagegen/incense-debt/held-weapons/held-weapons-generation-check.png",
+        "sha256": "04ab3ce4316a175ea4730bed1c6364bc4de0ce0cedc8e6526317c786112027b1"
+      },
+      "status": "generated_but_rejected_for_production",
+      "review": "same gateway/model availability check succeeded; bell/censer/lamp details differ from the binding reference, so this image is not a game asset source"
+    },
+    {
+      "operation": "edit",
+      "endpoint": "/images/edits",
+      "references": [
+        {
+          "file": "output/imagegen/incense-debt/held-weapons/approved-poses-edit-canvas.png",
+          "sha256": "ae818ec3dcd8e92ab48fbd25ab5d21bad0182ace55510d47e394acea14d81348"
+        }
+      ],
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/reference-locked-neutral-grips.txt",
+        "sha256": "6333714246e21862a0c00f0a561123897ab4f3292c6f5fe0b62123582633a882"
+      },
+      "output": {
+        "file": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+        "sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10"
+      },
+      "status": "accepted_local_grip_regions_only",
+      "review": "generated full-body identity edits were discarded; all original RGBA outside the reviewed masks is retained byte-for-byte; no colored guide was supplied in this successful call"
+    },
+    {
+      "operation": "edit",
+      "endpoint": "/images/edits",
+      "references": [
+        {
+          "file": "output/imagegen/incense-debt/runtime/weapons.png",
+          "sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff"
+        }
+      ],
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/reference-locked-held-weapons.txt",
+        "sha256": "bdcdf53c5837b1cb6f09fe180b34215ab0b25ea2f45af6686fb1b12270d99543"
+      },
+      "output": {
+        "file": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+        "sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d"
+      },
+      "status": "accepted_held_cutouts",
+      "review": "retains original coarse contours, paper, bronze, lamp face, bell holes and weapon identities; closed umbrella is a held variant; original icons remain unchanged"
+    }
+  ],
+  "recovery": "single-reference edits succeeded on the same configured gateway/model; the first failure's cause is not inferred from this result",
+  "body_checks": "docs/incense-debt/reports/runtime/held-weapons/body-processing.json",
+  "virtualization": "none"
+}

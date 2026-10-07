@@ -1,0 +1,123 @@
+{
+	"failures": [],
+	"limitations": [
+		"Action bot does not establish human feel or real-time device performance",
+		"Native cinematic/keyboard checks are recorded separately"
+	],
+	"method": "initial unlock pool, unchanged player health/damage/energy, 60 Hz combat and 30 Hz held action decisions for 16-unit navigation, physical door walking on the main route, mandatory double-boss floors 7–10, ten checkpoint save/restores; maximum 480000 ticks per attempt",
+	"passed": true,
+	"runs": [
+		{
+			"bosses": [
+				"b56",
+				"b57",
+				"b49",
+				"b69",
+				"b51",
+				"b36",
+				"b62",
+				"b63",
+				"b42",
+				"b41",
+				"b89",
+				"b53",
+				"b45",
+				"b58",
+				"b98",
+				"b94",
+				"b97",
+				"b37"
+			],
+			"character": "c_umbrella",
+			"cleared": 129.0,
+			"combat_seconds": 3308.0,
+			"double_boss_floors": [],
+			"epilogue_seen": true,
+			"health": 12,
+			"highest_floor": 11,
+			"last_enemy_ids": [],
+			"last_mode": "result",
+			"last_room": 31,
+			"physical_doors": 153,
+			"result": "victory",
+			"save_checks": [
+				{
+					"restored": true,
+					"to_floor": 2,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 3,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 4,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 5,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 6,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 7,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 8,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 9,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 10,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 11,
+					"validation": "ok"
+				}
+			],
+			"seed": "000000006327",
+			"stats": {
+				"ash_energy": 11095.0,
+				"damage_taken": 35.0,
+				"detonations": 567.0,
+				"dodges": 15.0,
+				"elapsed": 3307.95000001451,
+				"hits": 7538.0,
+				"kills": 848.0,
+				"max_chain": 3,
+				"max_proc_events": 24,
+				"secondary_hits": 7503.0,
+				"shots": 8443.0
+			},
+			"transitions": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	]
+}

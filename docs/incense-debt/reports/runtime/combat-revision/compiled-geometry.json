@@ -1,0 +1,16 @@
+{
+	"adaptive_thin_corridor_checks": [
+		true,
+		true
+	],
+	"android_artifact_sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+	"identical_compiled_geometry": true,
+	"passed": true,
+	"scope": "Windows embedded PCK and Android compiled geometry executed on the desktop engine; this is not an Android device test",
+	"windows_and_android_actual_rounded_sweep_checks": [
+		true,
+		true
+	],
+	"windows_artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+	"windows_geometry_sha256": "b310788f316f09067254236b25cb6d41f9b198201cfd64959fd0dd156851a077"
+}

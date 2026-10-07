@@ -1,0 +1,174 @@
+{
+  "provider": "sub2-image-gen/gpt-image-2.5",
+  "frames": 48,
+  "records": [
+    {
+      "id": "beam_amber",
+      "path": "game/assets/fx/combat-revision/beam_amber.png",
+      "source": "output/imagegen/incense-debt/combat-revision/beams.png",
+      "source_sha256": "78347176b4e24cdd71bcd6244e233215f173cfda13b3c8a55369a452b5c432d8",
+      "sha256": "7f8308c974eb63865759a22bb47a1a6f45c63f7c8abe82e48bf5690d875bd021",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "50aff468e81c81deadeda3f4eab081fd3671a844c0101559aa220379829a44f3",
+        "7572a683c403fbf44b1b6eca868984396a6aa5c8561fdc85f7c20fd48b471004",
+        "8f1534260fb1d73be8e7d38694f4c96ca66cbf4743959e4c869aa53fb3fd754a",
+        "c0dd6470a84cf1a411078b8d3597aac4fdacddc056b624ed38e9198f4baee180",
+        "7351c38c91997cb21c81b4c90b577821b23331f5acf9b68b23f129f249939b83",
+        "5dd77645c37e618def44219f4336d3811a18599fb76eaee6a7160e92f4606851"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "beam_ink",
+      "path": "game/assets/fx/combat-revision/beam_ink.png",
+      "source": "output/imagegen/incense-debt/combat-revision/beams.png",
+      "source_sha256": "78347176b4e24cdd71bcd6244e233215f173cfda13b3c8a55369a452b5c432d8",
+      "sha256": "57e276f76e1537eae5ed6a429b70d683aa798e3ec089dfbedd6b6ad33eae1e13",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "ef939c132ff0a8177159c5249475732f0c3c7b537f752aa5692107b5146feddd",
+        "a781f945fab35a619e172239c171fa3da3d057c658de433ea6d7c8f4a779e247",
+        "8c6a9eab7d1b1031c11eb09f1ea389b23899130f66687c19ee54be8769c4917a",
+        "e6eeb6f07ae0ef6d6c8f0db134baadec49e6362ba31a0e8c098f6de08c8d58a9",
+        "e429f01635b96e5a422b281b569012e324a36bc516653168a6458b434f044a36",
+        "1063816611dc13ea189730ce0213845940010f0850a70c20e6b3e2cf42ae5ba1"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "beam_thread",
+      "path": "game/assets/fx/combat-revision/beam_thread.png",
+      "source": "output/imagegen/incense-debt/combat-revision/beams.png",
+      "source_sha256": "78347176b4e24cdd71bcd6244e233215f173cfda13b3c8a55369a452b5c432d8",
+      "sha256": "4787230cd4384ac33177523a035cc0efb4e0c5e4d5cfe94d419318cbedf80ca5",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "f2d923d2d94b4645b60a6732fa2c11dc63130331658cfac8eea0c645d4d15a44",
+        "52d417f7cd9dbcb8f93768ddba93a542987d28aedb0ddd36e6cc787db9e50145",
+        "b436c8d36ac1b09a5f4cd49c29865cee8d00ac6df2e403cadf20202f9a2569e6",
+        "03cbcf70c61d5cc7d8f63ae3f04266195b1efdc27a58fcfe8276cdca43c4da95",
+        "90d0b126f5015f52a4755a29e726154390768b639e7bd8acad23a084cc444101",
+        "efc751bfdfb7a91ba1e95717926e178cce81ab556452c96d000aa08071aff036"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "beam_prism",
+      "path": "game/assets/fx/combat-revision/beam_prism.png",
+      "source": "output/imagegen/incense-debt/combat-revision/beams.png",
+      "source_sha256": "78347176b4e24cdd71bcd6244e233215f173cfda13b3c8a55369a452b5c432d8",
+      "sha256": "6ef14a36095df9df37750ac1d0fdd783dc225ad0a137a40a62af892a14ed71e1",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "3bba784e504994c1d0a03969ae8d3ddd6559db6f8be0fd720e5072c39ac493e7",
+        "30414c03c8f3eba5952d37ba2631ad8b098efec7df65cc63f2312065216e14d5",
+        "ab3dbea91b37646d01cfed1ba66db634aeba946cf9d832e340df3b97da37edcb",
+        "5244689c5d277d36a48492bb87aac370bfb07f594155839e71b0c04c095da10d",
+        "1d5e6896581770f09fa2ba3b2bb717958801ed57357ee5e141aac7c2ec088cc5",
+        "cdf221e76f11949b4e04a7bd02a4ad21ab70d40d83a64c5d5363f04e23a20e19"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "blast_flame",
+      "path": "game/assets/fx/combat-revision/blast_flame.png",
+      "source": "output/imagegen/incense-debt/combat-revision/areas.png",
+      "source_sha256": "34cc365ed9f6f35486a15348b5489970c3e99d6b1705ac98ca5259958f453b86",
+      "sha256": "8aa7b62b540f6a95744e28e6470a5dcefeed88d1cefe7aeb0a9a2c318364f16f",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "de3ffaa407a7697f7157ad64460fee0708ed843a48a942e45679a4a7c28321ba",
+        "4903264fabdbcaa81f07977441e69a076fb322859bab635fde88710afb4a4e0c",
+        "b54151a73fc70dbf81f91b714f14caed8640ec99e66ce074ae3cb54521ac449a",
+        "33de2f127205d242fc082fe877b61a3ffd06d977552f6aed09937bf7d9a08d60",
+        "d0a521e94a1bece781efc922f783dd67d83877c8bf731b7ac10cbf00ce9b16d2",
+        "f7268428709b766664c6af98c06ae6c4251c35787edc75f8737955bae06b6fd4"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "blast_ink",
+      "path": "game/assets/fx/combat-revision/blast_ink.png",
+      "source": "output/imagegen/incense-debt/combat-revision/areas.png",
+      "source_sha256": "34cc365ed9f6f35486a15348b5489970c3e99d6b1705ac98ca5259958f453b86",
+      "sha256": "5c13b59ce3773c319aeb4a2052d1e5dac03fefd1841abb4d70979c35de190f13",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "6ab79c6d70e98340077443352e0101ca9fc95bcb0084e91ef3405ab223245f1e",
+        "059d16a83da9815b90c743370bc7211a614ff353515b0e7eb986ae19695f17af",
+        "701f7e8ea6c42c497ada3a12979291e3b7da360ef78523d87605d4023b6b504f",
+        "693764409a6ae31e21b4837ff78c0dc8f6b1796c377ce61a96808946528e1513",
+        "0da2c38928ec8301f97d71419d2e970277a8f8f2b576237de56afab9a8b7e4ca",
+        "dd474d010eaf28f9f72a40d4b09213db4205fab7fb051e24a3e09047a00d6fef"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "blast_lotus",
+      "path": "game/assets/fx/combat-revision/blast_lotus.png",
+      "source": "output/imagegen/incense-debt/combat-revision/areas.png",
+      "source_sha256": "34cc365ed9f6f35486a15348b5489970c3e99d6b1705ac98ca5259958f453b86",
+      "sha256": "1783a18d3e0082ed67c3c4e0dbc8d96dfbf17b8395c8250cac21969b1d1981c9",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "70b01e0fee6d84e105091c48fc03bf68eb9314bb208939f7b35ec2e538135629",
+        "2f03fe220665a98c2bb12e470b6752d8f870edd90143361ce1435a725da9f55d",
+        "812faf0b0b34a3136290a15c90a8360e475e3b9ef399e53656d62087d8d5e888",
+        "57b754657678e0cc4b701dcbb18554263f813f5e0306c45a1ecfd66e9d110e1a",
+        "94fba5b5b0ae189b80e008b9ae43b2986f2a6b6832ff7d658b4637c775fe99d1",
+        "3844f74ad50093f1dd16a6cb34ebe3402693074096d6a9e634add72ae2c86ae2"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    },
+    {
+      "id": "shockwave",
+      "path": "game/assets/fx/combat-revision/shockwave.png",
+      "source": "output/imagegen/incense-debt/combat-revision/areas.png",
+      "source_sha256": "34cc365ed9f6f35486a15348b5489970c3e99d6b1705ac98ca5259958f453b86",
+      "sha256": "870a46714b9aa0f8dc51edd0741cbb3f129b4115b8bc6d639adcc89a1ffe60d7",
+      "frames": 6,
+      "frame_size": [
+        256,
+        256
+      ],
+      "frame_hashes": [
+        "dd9355f3c1307e7df68bfe02ea0dd8d47158a2ccd17375f67cb8d1a8d2a40f35",
+        "fa5293da3099d5e55e869bfa482d6e116ade350cc5a8fc43ce25863fa5824b19",
+        "21687224a8319f48a836e676321a0fd7eec8b87dc0213331386b7637a4904cf6",
+        "9170e1bb8cae1915df5ff3186ace266ede07c789f93495b5e474f26b1de033b2",
+        "f45a9a757c006d05c3f2e73f97d218967a85bbd0c22fc7a5cc24e4f606024957",
+        "816b0259727e3121f14942994e752fe58521448ccf6b450e32ef8a5577e2314f"
+      ],
+      "method": "six distinct AI-generated keyframes; shared row scale, normalized anchors"
+    }
+  ]
+}

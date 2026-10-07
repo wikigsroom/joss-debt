@@ -1,0 +1,22 @@
+The supplied images are binding art references for the SAME original game Incense Debt. Match their coarse woodblock ink contour, torn fibrous ivory paper, vermilion ribbons, matte aged bronze, muted jade and upper-left light. Do not redesign the art style. No glossy 3D, no pixel art, no clean vector clipart, no science fiction, no lettering or labels. Tangible folklore paper-and-wood objects with readable silhouettes at gameplay scale.
+Output one 1536x1024 PNG with true transparent alpha. Each assigned grid cell contains exactly one complete isolated subject, centered with generous transparent padding and no crossing into another cell. No scene, no frame, no checkerboard, no caption. Consistent near-top-down game orientation with readable fronts and short shadows. Keep proportions coherent across the sheet.
+Exactly SIX columns by THREE rows; eighteen compact relic icons, one per cell. Match the supplied initial icon atlas closely. Row-major order:
+1. ivory wax tear resting on a small old bronze saucer.
+2. two tied vermilion paper firecrackers with a tiny amber fuse.
+3. torn ivory ward with charred edges and one red geometric seal.
+4. small closed bronze lamp with an amber flame inside its torn paper window.
+5. three tiny ivory paper flames joined by a red knot.
+6. short dark bronze hook tied to a red wish cord.
+7. two square-hole bronze coins joined by one red cord.
+8. a distinctive figure-eight red rope clasp with small bronze tips.
+9. small ivory stitched booklet tied by a red string.
+10. compact red cord spiderweb on a small ivory paper frame.
+11. a short burnt incense stick with a tiny ember.
+12. shallow old bronze soul dish holding ivory ash.
+13. wide low bronze ash collection tray with a red cord rim.
+14. small dark bronze ash wheel with ivory fragments in the central hole.
+15. miniature squat bronze furnace with several folded ivory wish slips.
+16. one broken bronze cash coin with a vermilion ward ribbon.
+17. ivory protective paper knot with a red seal and a warm small core.
+18. small round tarnished bronze mirror with a red hanging loop.
+Use humble tactile objects, not generic symbols. No letters or numbers in the image.

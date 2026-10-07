@@ -1,0 +1,275 @@
+{
+	"checks": [
+		{
+			"name": "floor 1 rarity shares stay within three percentage points of the configured distribution",
+			"passed": true
+		},
+		{
+			"name": "floor 1 has a non-empty effective candidate pool and normalized weights",
+			"passed": true
+		},
+		{
+			"name": "floor 2 rarity shares stay within three percentage points of the configured distribution",
+			"passed": true
+		},
+		{
+			"name": "floor 2 has a non-empty effective candidate pool and normalized weights",
+			"passed": true
+		},
+		{
+			"name": "floor 3 rarity shares stay within three percentage points of the configured distribution",
+			"passed": true
+		},
+		{
+			"name": "floor 3 has a non-empty effective candidate pool and normalized weights",
+			"passed": true
+		},
+		{
+			"name": "three-choice relic offers never duplicate an item",
+			"passed": true
+		},
+		{
+			"name": "offers only contain effective relic IDs",
+			"passed": true
+		},
+		{
+			"name": "affinity reward first slot honors the character route",
+			"passed": true
+		},
+		{
+			"name": "base low-health heal rate matches the configured chance",
+			"passed": true
+		},
+		{
+			"name": "one-miss low-health heal rate matches the configured chance",
+			"passed": true
+		},
+		{
+			"name": "the third low-health miss always guarantees a heal",
+			"passed": true
+		},
+		{
+			"name": "the three-floor main-path economy has a reproducible conservative floor",
+			"passed": true
+		},
+		{
+			"name": "enemy coin samples never fall below the guaranteed economy floor",
+			"passed": true
+		}
+	],
+	"economy": {
+		"assumptions": [
+			"三层主路径每层六普通房、一个精英房、一个Boss房；不把可选支路、合同利息、掉落治疗兑换算入保守现金底线。",
+			"普通房敌数直接复用World.prepare_waves的固定房号公式；精英房按1个精英加3个护卫。",
+			"Boss按首领本体加前两名natural_reward召唤物计入纸钱，后续召唤只给余烬。",
+			"随机经济样本只模拟敌人纸钱掉落，清房纸钱按rules.json固定发放。"
+		],
+		"clear_coins_per_floor": 38,
+		"enemy_coin_chance": 0.6,
+		"enemy_coin_range": [
+			1.0,
+			2.0
+		],
+		"final_coins": {
+			"max": 265,
+			"mean": 228.48,
+			"min": 193,
+			"p10": 217.0,
+			"p90": 240.0
+		},
+		"guaranteed_coins_before_shop": [
+			30,
+			68,
+			106
+		],
+		"guaranteed_final_coins": 124,
+		"natural_enemy_quota_by_floor": {
+			"1": {
+				"boss": 3,
+				"combat": 26,
+				"elite": 4,
+				"total": 33
+			},
+			"2": {
+				"boss": 3,
+				"combat": 32,
+				"elite": 4,
+				"total": 39
+			},
+			"3": {
+				"boss": 3,
+				"combat": 37,
+				"elite": 4,
+				"total": 44
+			}
+		},
+		"scenario_samples": 10000,
+		"shop_affordability_rate": {
+			"1": {
+				"common": 1.0,
+				"heal": 1.0,
+				"mythic": 0.0,
+				"rare": 0.3624,
+				"reroll": 1.0,
+				"uncommon": 1.0,
+				"weapon": 0.9997
+			},
+			"2": {
+				"common": 1.0,
+				"heal": 1.0,
+				"mythic": 1.0,
+				"rare": 1.0,
+				"reroll": 1.0,
+				"uncommon": 1.0,
+				"weapon": 1.0
+			},
+			"3": {
+				"common": 1.0,
+				"heal": 1.0,
+				"mythic": 1.0,
+				"rare": 1.0,
+				"reroll": 1.0,
+				"uncommon": 1.0,
+				"weapon": 1.0
+			}
+		}
+	},
+	"failures": [],
+	"heal": {
+		"base_expected": 0.12,
+		"base_observed": 0.1162,
+		"chance_cap": 0.44,
+		"guarantee_hits": 1000,
+		"guarantee_samples": 1000,
+		"low_health_ratio": 0.5,
+		"miss_one_expected": 0.2,
+		"miss_one_observed": 0.2009,
+		"samples": 10000
+	},
+	"limitations": [
+		"This is an implementation/formula baseline, not human balance acceptance.",
+		"Economy covers the authored three-floor main path; optional rooms, contracts, purchases and real player routing need separate telemetry.",
+		"Enemy coin samples use the configured reward quota and do not claim physical device performance."
+	],
+	"method": "fixed-seed Godot runtime sampling; three 10000-sample floor distributions, 1000 three-choice offers, 10000 heal probability samples and 10000 three-floor economy scenarios",
+	"offer_integrity": {
+		"candidate_count": 53,
+		"first_affinity_hits": 1000,
+		"first_affinity_offers": 1000,
+		"first_affinity_rate": 1.0,
+		"floor": 2,
+		"invalid_items": 0,
+		"samples": 1000,
+		"three_choice_duplicate_offers": 0
+	},
+	"passed": true,
+	"rarity_by_floor": [
+		{
+			"absolute_error": {
+				"common": 0.0077,
+				"rare": 0.0001,
+				"uncommon": 0.0076
+			},
+			"candidate_count": 47,
+			"candidate_rarity_counts": {
+				"common": 12,
+				"mythic": 1,
+				"rare": 17,
+				"uncommon": 17
+			},
+			"effective_candidate_count": 46,
+			"expected_share": {
+				"common": 0.65,
+				"rare": 0.05,
+				"uncommon": 0.3
+			},
+			"floor": 1,
+			"max_absolute_error": 0.0077,
+			"observed_counts": {
+				"common": 6577,
+				"rare": 499,
+				"uncommon": 2924
+			},
+			"observed_share": {
+				"common": 0.6577,
+				"rare": 0.0499,
+				"uncommon": 0.2924
+			},
+			"samples": 10000
+		},
+		{
+			"absolute_error": {
+				"common": 0.0079,
+				"mythic": 0.0003,
+				"rare": 0.0018,
+				"uncommon": 0.0058
+			},
+			"candidate_count": 53,
+			"candidate_rarity_counts": {
+				"common": 12,
+				"mythic": 7,
+				"rare": 17,
+				"uncommon": 17
+			},
+			"effective_candidate_count": 53,
+			"expected_share": {
+				"common": 0.45,
+				"mythic": 0.03,
+				"rare": 0.17,
+				"uncommon": 0.35
+			},
+			"floor": 2,
+			"max_absolute_error": 0.0079,
+			"observed_counts": {
+				"common": 4421,
+				"mythic": 303,
+				"rare": 1718,
+				"uncommon": 3558
+			},
+			"observed_share": {
+				"common": 0.4421,
+				"mythic": 0.0303,
+				"rare": 0.1718,
+				"uncommon": 0.3558
+			},
+			"samples": 10000
+		},
+		{
+			"absolute_error": {
+				"common": 0.0006,
+				"mythic": 0.0019,
+				"rare": 0.0056,
+				"uncommon": 0.0031
+			},
+			"candidate_count": 52,
+			"candidate_rarity_counts": {
+				"common": 12,
+				"mythic": 6,
+				"rare": 17,
+				"uncommon": 17
+			},
+			"effective_candidate_count": 52,
+			"expected_share": {
+				"common": 0.3,
+				"mythic": 0.05,
+				"rare": 0.25,
+				"uncommon": 0.4
+			},
+			"floor": 3,
+			"max_absolute_error": 0.0056,
+			"observed_counts": {
+				"common": 3006,
+				"mythic": 519,
+				"rare": 2444,
+				"uncommon": 4031
+			},
+			"observed_share": {
+				"common": 0.3006,
+				"mythic": 0.0519,
+				"rare": 0.2444,
+				"uncommon": 0.4031
+			},
+			"samples": 10000
+		}
+	]
+}

@@ -1,0 +1,29 @@
+Use the supplied reference images as binding material and art style masters for Incense Debt. Create a clean production inventory icon atlas in the exact same Chinese folk woodblock and hand-cut paper style: tactile matte paper fibers, irregular ink contours, layered torn-paper shading, vermilion, ivory, soot black, aged bronze and muted jade. These are collectible game objects, not UI screens. Preserve the rich material quality of the props and accessories in the references; do not simplify them into flat vector logos.
+
+ONE 1536x1024 genuinely transparent PNG, a strict six-column by three-row grid. Exactly one complete collectible object centered in each cell, no text, no names, no numbers, no grid lines, no UI frames, no scene, no cast shadow, no watermark. Every object fits fully inside its cell with at least 25px clear padding. Bold readable silhouette and a consistent apparent scale, suitable for game inventory icons. Correct order, left-to-right then top-to-bottom:
+
+Row one:
+1. Charred wick fragment: curled soot-black lamp wick with a tiny warm amber flame and torn red paper tie.
+2. Spark lantern: a small round torn vermilion paper lantern with an amber star-shaped ember inside, short bronze handle.
+3. Oil-paper cage: a small bronze wire lantern cage wrapped with translucent-looking ivory oil paper, dark base and red tie.
+4. Red cord knot: a thick braided vermilion knot with two short cord tails and tiny bronze bead.
+5. Knot bell: a small aged bronze bell suspended in a thick red braided loop, short ivory tassel.
+6. Life wish slip: two short blank ivory fortune slips bound together with red cord and a bronze tag. No writing.
+
+Row two:
+7. Ash pouch: a squat soot-gray cloth-paper bag filled with pale warm ash, tied with a red ribbon.
+8. Returning soul ash: a broken ivory paper saucer holding a spiral of gray-white ash and one amber coal.
+9. Furnace tile: a cracked dark jade-brown clay tile with a warm bronze ember in the crack.
+10. Cracked copper seal: a square aged-bronze seal stamp with one diagonal crack and a short vermilion handle; no text.
+11. Paper armor clasp: a layered ivory folded armor plate with a small bronze clasp, red tie and thick ink edges.
+12. Doorstep stone: a small heavy dark gray worn threshold stone, one aged-bronze corner, red thread tied around it.
+
+Row three:
+13. Wind paper wing: one dynamic vermilion folded-paper wing with a torn ivory edge, compact and original.
+14. Folded step slip: a folded ivory zigzag paper ribbon shaped like a quick step, small red cord and bronze tip.
+15. Returning swallow bone: a pale aged swallow-shaped wish charm, curved two-wing silhouette, short red tail.
+16. Ink spot: a thick glossy-looking soot ink droplet resting on a small matte torn ivory paper scrap; no letters.
+17. Blank page: a single folded blank ivory ledger page with a curled black corner and short red stitch; no text.
+18. Delayed account slip: a vertical blank ivory paper slip, red border tie, one small round bronze pendulum charm below it; no text.
+
+No characters or faces, no repeated objects, no invented lettering. Keep each object self-contained with true transparency.

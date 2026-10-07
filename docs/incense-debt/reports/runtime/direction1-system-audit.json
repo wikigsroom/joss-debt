@@ -1,0 +1,5413 @@
+{
+  "recorded_at": "2026-10-06T14:27:08.035148+00:00",
+  "version": "0.1.0",
+  "status": "direction1_runtime_audited",
+  "passed": true,
+  "catalog_counts": {
+    "characters": 6,
+    "routes": 6,
+    "weapons": 16,
+    "skills": 18,
+    "relics": 54,
+    "talents": 36,
+    "debt_contracts": 9,
+    "enemies": 24,
+    "elite_variants": 6,
+    "bosses": 5,
+    "synergies": 24,
+    "regions": 3,
+    "room_templates": 18,
+    "special_rooms": 4
+  },
+  "catalog_status": "design_baseline",
+  "failures": [],
+  "evidence": {
+    "catalog_sync": {
+      "passed": true,
+      "game_sha256": "5c804b237d0d11f56e5a42496286cca93da73d01c5bed226cf1a8646ab273484",
+      "docs_sha256": "5c804b237d0d11f56e5a42496286cca93da73d01c5bed226cf1a8646ab273484",
+      "scope": "game/data/catalog.json == docs/incense-debt/data/catalog.json"
+    },
+    "characters": {
+      "passed": true,
+      "count": 6,
+      "route_matrix": {
+        "passed": true,
+        "runs": 24
+      },
+      "full_runs": {
+        "passed": true,
+        "runs": 12
+      }
+    },
+    "routes": {
+      "passed": true,
+      "count": 6
+    },
+    "weapons": {
+      "passed": true,
+      "count": 16,
+      "modes": [
+        "arc",
+        "bell",
+        "charged_arc",
+        "charged_line",
+        "cone",
+        "controlled",
+        "explosive",
+        "fan",
+        "flame_orb",
+        "orb",
+        "piercing",
+        "ray",
+        "returning",
+        "ricochet",
+        "seeker",
+        "triple"
+      ],
+      "special_room_test": true,
+      "motion_test": true
+    },
+    "skills": {
+      "passed": true,
+      "count": 18,
+      "all_skill_casts_in_expanded_suite": true
+    },
+    "relics": {
+      "passed": true,
+      "count": 54,
+      "combat_hook_coverage": 54,
+      "synergy_matrix_cases": 24,
+      "combination_relic_union": 47,
+      "standalone_hook_ids": [
+        "r08",
+        "r16",
+        "r24",
+        "r32",
+        "r40",
+        "r48",
+        "r54"
+      ],
+      "standalone_runtime": {
+        "passed": true,
+        "count": 7,
+        "cases": [
+          "r08",
+          "r16",
+          "r24",
+          "r32",
+          "r40",
+          "r48",
+          "r54"
+        ]
+      },
+      "catalog_status_is_design_layer": [
+        "specified"
+      ]
+    },
+    "talents": {
+      "passed": true,
+      "count": 36,
+      "combat_hook_coverage": 36,
+      "route_matrix": true
+    },
+    "synergies": {
+      "passed": true,
+      "count": 24,
+      "passed_cases": 24
+    },
+    "region_graph": {
+      "passed": true,
+      "count": 3,
+      "expected": 3,
+      "tests": {
+        "full-run-tests.json": true,
+        "route-navigation-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/ui/route_map.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    "room_geometry": {
+      "passed": true,
+      "count": 18,
+      "expected": 18,
+      "tests": {
+        "expanded-content-tests.json": true,
+        "route-navigation-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/combat/room_geometry.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    "special_room_graph": {
+      "passed": true,
+      "count": 4,
+      "expected": 4,
+      "tests": {
+        "weapon-special-room-tests.json": true,
+        "save-transfer-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/core/room_graph.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    "enemy_patterns": {
+      "passed": true,
+      "count": 24,
+      "expected": 24,
+      "tests": {
+        "expanded-content-tests.json": true,
+        "run-history-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/combat/enemy_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    "elite_dispatch": {
+      "passed": true,
+      "count": 6,
+      "expected": 6,
+      "tests": {
+        "impact-resume-tests.json": true,
+        "expanded-content-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/combat/enemy_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ],
+      "numeric_runtime": {
+        "passed": true,
+        "count": 6,
+        "fields": [
+          "health_multiplier",
+          "telegraph_multiplier",
+          "damage_bonus",
+          "natural_ash"
+        ]
+      }
+    },
+    "boss_patterns": {
+      "passed": true,
+      "count": 5,
+      "expected": 5,
+      "tests": {
+        "expanded-content-tests.json": true,
+        "full-run-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/combat/boss_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    "debt_hooks": {
+      "passed": true,
+      "count": 9,
+      "expected": 9,
+      "tests": {
+        "campaign-rules-tests.json": true,
+        "save-transfer-tests.json": true
+      },
+      "runtime_files": [
+        "game/scripts/combat/world.gd",
+        "game/scripts/combat/boss_patterns.gd"
+      ]
+    },
+    "shared_contracts": {
+      "passed": true,
+      "checks": {
+        "save": true,
+        "choices_and_history": true,
+        "menu_save_achievements": true,
+        "input": true,
+        "platform_contract": true,
+        "audio": true,
+        "assets": true,
+        "bible": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "system": "playable_characters",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "c_paper",
+          "name": "纸童",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/audio_capture_qa.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/menu_flow.gd",
+            "game/scripts/ui/save_transfer_ui.gd",
+            "game/scripts/ui/weapon_gallery.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "ash",
+              "fire"
+            ],
+            "skills": [
+              "s01",
+              "s02",
+              "s03"
+            ],
+            "weapon": "w01",
+            "routes": [
+              "ash",
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "c_bell",
+          "name": "铃师",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/weapon_gallery.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "thread",
+              "wind"
+            ],
+            "skills": [
+              "s04",
+              "s05",
+              "s06"
+            ],
+            "weapon": "w02",
+            "routes": [
+              "thread",
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "c_lantern",
+          "name": "灯客",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_gallery.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "fire",
+              "ink"
+            ],
+            "skills": [
+              "s07",
+              "s08",
+              "s09"
+            ],
+            "weapon": "w03",
+            "routes": [
+              "fire",
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "c_mask",
+          "name": "傩面",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_gallery.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "seal",
+              "ash"
+            ],
+            "skills": [
+              "s10",
+              "s11",
+              "s12"
+            ],
+            "weapon": "w04",
+            "routes": [
+              "seal",
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "c_umbrella",
+          "name": "伞灵",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_gallery.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "wind",
+              "ash"
+            ],
+            "skills": [
+              "s13",
+              "s14",
+              "s15"
+            ],
+            "weapon": "w05",
+            "routes": [
+              "wind",
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "c_ink",
+          "name": "墨吏",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_gallery.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "characters",
+            "trigger": "",
+            "mode": "",
+            "route": [
+              "ink",
+              "thread"
+            ],
+            "skills": [
+              "s16",
+              "s17",
+              "s18"
+            ],
+            "weapon": "w06",
+            "routes": [
+              "ink",
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/route-matrix-tests.json",
+        "runtime/full-run-tests.json"
+      ]
+    },
+    {
+      "system": "growth_routes",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "fire",
+          "name": "烬火",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/control_settings.gd",
+            "game/scripts/ui/input_adapter.gd",
+            "game/scripts/ui/input_profile.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 10
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "thread",
+          "name": "红绳",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/audio_capture_qa.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 10
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "ash",
+          "name": "归灰",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/room_geometry.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/daily_seed.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/run_telemetry.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/core/weapon_trial.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/audio_director.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/control_settings.gd",
+            "game/scripts/ui/game_hud.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/haptic_feedback.gd",
+            "game/scripts/ui/input_adapter.gd",
+            "game/scripts/ui/input_profile.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/menu_flow.gd",
+            "game/scripts/ui/modern_ui.gd",
+            "game/scripts/ui/paper_animation.gd",
+            "game/scripts/ui/touch_layout_editor.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/room_geometry.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 11
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "seal",
+          "name": "镇印",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 10
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "wind",
+          "name": "游风",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/control_settings.gd",
+            "game/scripts/ui/game_hud.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 9
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "ink",
+          "name": "墨契",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/core/weapon_trial.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/audio_director.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/modern_ui.gd",
+            "game/scripts/ui/music_state.gd",
+            "game/scripts/ui/route_map.gd",
+            "game/scripts/ui/weapon_gallery.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "routes",
+            "trigger": "",
+            "mode": "",
+            "route": [],
+            "talent_count": 6,
+            "relic_count": 10
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/campaign-rules-tests.json",
+        "runtime/route-matrix-tests.json"
+      ]
+    },
+    {
+      "system": "weapon_modes",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "w01",
+          "name": "香炉丸",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "orb",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w02",
+          "name": "牵魂铃",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "bell",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w03",
+          "name": "留夜灯",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "flame_orb",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w04",
+          "name": "镇门印",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "cone",
+            "route": [],
+            "dispatch": "slash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w05",
+          "name": "碎骨伞",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "returning",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w06",
+          "name": "勾账笔",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "piercing",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w07",
+          "name": "纸钱散",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "fan",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w08",
+          "name": "爆竹筒",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "explosive",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w09",
+          "name": "铜钱轮",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "ricochet",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w10",
+          "name": "招魂幡",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "seeker",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w11",
+          "name": "判官笔",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "charged_line",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w12",
+          "name": "灰骨刃",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "arc",
+            "route": [],
+            "dispatch": "slash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w13",
+          "name": "三生扇",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "triple",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w14",
+          "name": "照骨线",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "ray",
+            "route": [],
+            "dispatch": "ray"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w15",
+          "name": "引魂纸蝶",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "controlled",
+            "route": [],
+            "dispatch": "projectile"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "w16",
+          "name": "月刃蓄锋",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/ui/weapon_motion.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "weapons",
+            "trigger": "",
+            "mode": "charged_arc",
+            "route": [],
+            "dispatch": "slash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/weapon-special-room-tests.json",
+        "runtime/weapon-motion-tests.json",
+        "runtime/impact-resume-tests.json"
+      ]
+    },
+    {
+      "system": "skills",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "s01",
+          "name": "撒灰",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": false,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s02",
+          "name": "纸燕",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s03",
+          "name": "爆竹",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s04",
+          "name": "铃断",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s05",
+          "name": "赤网",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s06",
+          "name": "回音",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s07",
+          "name": "灯宴",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s08",
+          "name": "烛龙",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s09",
+          "name": "走马灯",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s10",
+          "name": "镇印",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s11",
+          "name": "护门",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s12",
+          "name": "破阵",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/impact_control.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/impact_control.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s13",
+          "name": "回伞",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s14",
+          "name": "雨帐",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s15",
+          "name": "借风",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/impact_control.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/impact_control.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s16",
+          "name": "勾销",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s17",
+          "name": "飞白",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "s18",
+          "name": "重书",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "skills",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/campaign-rules-tests.json"
+      ]
+    },
+    {
+      "system": "relic_effects",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "r01",
+          "name": "灯芯屑",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r02",
+          "name": "火星灯",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_hit",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r03",
+          "name": "油纸笼",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r04",
+          "name": "蜡泪珠",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "natural_kill",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r05",
+          "name": "纸爆竹",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_hit",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r06",
+          "name": "烧尽符",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/core/damage_record.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_hit",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r07",
+          "name": "不灭灯",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_complete",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r08",
+          "name": "三昧余烬",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "burn_tick",
+            "mode": "",
+            "route": [
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r09",
+          "name": "红绳结",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r10",
+          "name": "绳结铃",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r11",
+          "name": "牵命签",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "chain_form",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r12",
+          "name": "锁愿钩",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "chain_form",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r13",
+          "name": "同债钱",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r14",
+          "name": "八字扣",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r15",
+          "name": "群愿册",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_hit",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r16",
+          "name": "赤线天罗",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_start",
+            "mode": "",
+            "route": [
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r17",
+          "name": "灰囊",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/hub_ui.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/menu_flow.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "ash_pickup",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r18",
+          "name": "回魂灰",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "natural_kill",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r19",
+          "name": "回炉瓦",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r20",
+          "name": "余温香",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "mark_first",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r21",
+          "name": "还魂碟",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "elite_clear",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r22",
+          "name": "聚灰盘",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r23",
+          "name": "逆灰轮",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "ash_pickup",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r24",
+          "name": "百愿回炉",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_complete",
+            "mode": "",
+            "route": [
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r25",
+          "name": "铜印裂纹",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "deflect",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r26",
+          "name": "纸甲扣",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "room_clear",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r27",
+          "name": "门槛石",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/impact_control.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/impact_control.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r28",
+          "name": "挡灾钱",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "deflect",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r29",
+          "name": "护愿符",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "lethal_damage",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r30",
+          "name": "反账镜",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "dash_start",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r31",
+          "name": "镇门钉",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_complete",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r32",
+          "name": "无债金身",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "player_damage",
+            "mode": "",
+            "route": [
+              "seal"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r33",
+          "name": "风纸翅",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r34",
+          "name": "折步签",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r35",
+          "name": "燕返骨",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r36",
+          "name": "掠灰羽",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "dash_path",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r37",
+          "name": "回身铃",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "dodge_success",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r38",
+          "name": "游愿旗",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "distance_moved",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r39",
+          "name": "风过留痕",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "dash_path",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r40",
+          "name": "千纸回旋",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "wind"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r41",
+          "name": "墨点",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/modern_ui.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r42",
+          "name": "留白页",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r43",
+          "name": "迟账符",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_hit",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r44",
+          "name": "穿名签",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r45",
+          "name": "勾销章",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_start",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r46",
+          "name": "黑契纸",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "stat",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r47",
+          "name": "重书卷",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "detonate_complete",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r48",
+          "name": "空名总账",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/hub_ui.gd",
+            "game/scripts/ui/menu_flow.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r49",
+          "name": "灰线绣",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "ash_pickup",
+            "mode": "",
+            "route": [
+              "ash",
+              "thread"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r50",
+          "name": "走灯鞋",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "dash_path",
+            "mode": "",
+            "route": [
+              "wind",
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r51",
+          "name": "铜灰砚",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "deflect",
+            "mode": "",
+            "route": [
+              "seal",
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r52",
+          "name": "红墨印",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "primary_hit",
+            "mode": "",
+            "route": [
+              "thread",
+              "ink"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r53",
+          "name": "护灯绳",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "armor_break",
+            "mode": "",
+            "route": [
+              "seal",
+              "fire"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "r54",
+          "name": "借愿香",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/hub_ui.gd",
+            "game/scripts/ui/menu_flow.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "relics",
+            "trigger": "contract_repay",
+            "mode": "",
+            "route": [
+              "ink",
+              "ash"
+            ]
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/synergy-matrix-tests.json",
+        "runtime/impact-resume-tests.json",
+        "runtime/campaign-rules-tests.json"
+      ],
+      "boundary": "组合矩阵覆盖 47 件进入组合的遗物，另有 7 件独立钩子逐一通过真实路径；自动覆盖仍不等于人类平衡验收。"
+    },
+    {
+      "system": "talent_effects",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "t_fire_1a",
+          "name": "余烬入灯",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_fire_1b",
+          "name": "暖芯",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_fire_2a",
+          "name": "流火",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_fire_2b",
+          "name": "催燃",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_fire_3a",
+          "name": "烧尽还愿",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_fire_3b",
+          "name": "长明",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_1a",
+          "name": "牵线",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_1b",
+          "name": "远结",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_2a",
+          "name": "收紧",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_2b",
+          "name": "共担",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_3a",
+          "name": "群愿",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_thread_3b",
+          "name": "补结",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_1a",
+          "name": "惜灰",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_1b",
+          "name": "归途",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_2a",
+          "name": "灰击",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_2b",
+          "name": "稳炉",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_3a",
+          "name": "复燃",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ash_3b",
+          "name": "留温",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_1a",
+          "name": "纸甲",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_1b",
+          "name": "反印",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_2a",
+          "name": "印鸣",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_2b",
+          "name": "守门",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_3a",
+          "name": "破阵",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_seal_3b",
+          "name": "铜身",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_1a",
+          "name": "轻步",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_1b",
+          "name": "折身",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_2a",
+          "name": "回旋",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_2b",
+          "name": "掠愿",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_3a",
+          "name": "双返",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_wind_3b",
+          "name": "留风",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_1a",
+          "name": "落点",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_1b",
+          "name": "留白",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_2a",
+          "name": "迟书",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_2b",
+          "name": "明契",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_3a",
+          "name": "勾销",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "t_ink_3b",
+          "name": "复写",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/effects.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "talents",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/route-matrix-tests.json"
+      ]
+    },
+    {
+      "system": "synergy_matrix",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "combo01",
+          "name": "火链初成",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo02",
+          "name": "烧尽灯宴",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo03",
+          "name": "火花纸爆",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo04",
+          "name": "走灯火路",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "fire"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo05",
+          "name": "红绳同债",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo06",
+          "name": "收紧赤网",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo07",
+          "name": "群愿远结",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo08",
+          "name": "红墨穿线",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "thread"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo09",
+          "name": "回魂灰环",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo10",
+          "name": "逆灰双轮",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo11",
+          "name": "稳炉留温",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo12",
+          "name": "灰线回愿",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ash"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo13",
+          "name": "铜印反账",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo14",
+          "name": "纸甲护灯",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo15",
+          "name": "铜灰守门",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo16",
+          "name": "留命破阵",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "seal"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo17",
+          "name": "风纸掠灰",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo18",
+          "name": "燕返双攻",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo19",
+          "name": "游愿留痕",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo20",
+          "name": "风火并行",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "wind"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo21",
+          "name": "穿账勾销",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo22",
+          "name": "迟账重书",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo23",
+          "name": "黑契回炉",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        },
+        {
+          "id": "combo24",
+          "name": "红墨余灰",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "synergies",
+            "trigger": "",
+            "mode": "",
+            "route": "ink"
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_dispatch": "World.synergy_rows/active_synergies + authored test case"
+        }
+      ],
+      "evidence": [
+        "runtime/synergy-matrix-tests.json",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "region_graph",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "paper_lane",
+          "name": "纸灯巷",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "regions",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "coin_vault",
+          "name": "铜钱库",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "regions",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "ownerless_temple",
+          "name": "无主神殿",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "regions",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/full-run-tests.json",
+        "runtime/route-navigation-tests.json",
+        "game/scripts/ui/route_map.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "room_geometry",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "room_open_1",
+          "name": "room_open_1",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/combat/room_geometry.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/weapon_trial.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/room_geometry.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_open_2",
+          "name": "room_open_2",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_open_3",
+          "name": "room_open_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_pillars_1",
+          "name": "room_pillars_1",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_pillars_2",
+          "name": "room_pillars_2",
+          "design_status": "specified",
+          "runtime_source_refs": [
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_pillars_3",
+          "name": "room_pillars_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_zigzag_1",
+          "name": "room_zigzag_1",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_zigzag_2",
+          "name": "room_zigzag_2",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_zigzag_3",
+          "name": "room_zigzag_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_loop_1",
+          "name": "room_loop_1",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_loop_2",
+          "name": "room_loop_2",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_loop_3",
+          "name": "room_loop_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_bridge_1",
+          "name": "room_bridge_1",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_bridge_2",
+          "name": "room_bridge_2",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_bridge_3",
+          "name": "room_bridge_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_side_doors_1",
+          "name": "room_side_doors_1",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_side_doors_2",
+          "name": "room_side_doors_2",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "room_side_doors_3",
+          "name": "room_side_doors_3",
+          "design_status": "specified",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "room_templates",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/route-navigation-tests.json",
+        "game/scripts/combat/room_geometry.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "special_room_graph",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "sacrifice",
+          "name": "献灯房",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/room_graph.gd",
+            "game/scripts/core/save_migrations.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/audio_director.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/modern_ui.gd",
+            "game/scripts/ui/music_state.gd",
+            "game/scripts/ui/route_map.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "special_rooms",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "judge",
+          "name": "判官房",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/room_graph.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/route_map.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "special_rooms",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "angel",
+          "name": "观音房",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/room_graph.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/route_map.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "special_rooms",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "challenge",
+          "name": "破阵房",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/daily_seed.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/room_graph.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/menu_flow.gd",
+            "game/scripts/ui/modern_ui.gd",
+            "game/scripts/ui/route_map.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "special_rooms",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/weapon-special-room-tests.json",
+        "runtime/save-transfer-tests.json",
+        "game/scripts/core/room_graph.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "enemy_patterns",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "e01",
+          "name": "灯笼鬼",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/weapon_trial.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/game_renderer.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e02",
+          "name": "纸犬",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_renderer.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e03",
+          "name": "铜钱精",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e04",
+          "name": "折纸蝠",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e05",
+          "name": "供台童",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e06",
+          "name": "绳结怨",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e07",
+          "name": "灰袋客",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e08",
+          "name": "灯油匠",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e09",
+          "name": "钱盾卫",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e10",
+          "name": "算盘蛛",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e11",
+          "name": "金纸蛾",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e12",
+          "name": "称愿鬼",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e13",
+          "name": "收钱犬",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e14",
+          "name": "碎币匠",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e15",
+          "name": "悬钱铃",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/core/save_store.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e16",
+          "name": "讨债账房",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e17",
+          "name": "无名纸卫",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e18",
+          "name": "墨页虫",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e19",
+          "name": "空面灯",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e20",
+          "name": "封愿柱",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd",
+            "game/scripts/ui/game_theme.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e21",
+          "name": "断线傀",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e22",
+          "name": "催息吏",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e23",
+          "name": "卷账兽",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "e24",
+          "name": "灰愿影",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "enemies",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/run-history-tests.json",
+        "game/scripts/combat/enemy_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "elite_dispatch",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "x01",
+          "name": "长明灯鬼",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 2,
+            "expected_ash": 16,
+            "expected_damage": 2,
+            "expected_health": 120.0,
+            "expected_tell": 0.54,
+            "health": 120.0,
+            "id": "x01",
+            "passed": true,
+            "tell": 0.54
+          }
+        },
+        {
+          "id": "x02",
+          "name": "守门纸犬",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 2,
+            "expected_ash": 16,
+            "expected_damage": 2,
+            "expected_health": 84.0,
+            "expected_tell": 0.54,
+            "health": 84.0,
+            "id": "x02",
+            "passed": true,
+            "tell": 0.54
+          }
+        },
+        {
+          "id": "x03",
+          "name": "镀金盾卫",
+          "design_status": "authored",
+          "runtime_source_refs": [],
+          "combat_source_refs": [],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 2,
+            "expected_ash": 16,
+            "expected_damage": 2,
+            "expected_health": 276.0,
+            "expected_tell": 0.585,
+            "health": 276.0,
+            "id": "x03",
+            "passed": true,
+            "tell": 0.585
+          },
+          "dispatch_note": "base enemy pattern fallback; explicit variant data remains authoritative"
+        },
+        {
+          "id": "x04",
+          "name": "多足算盘",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 2,
+            "expected_ash": 16,
+            "expected_damage": 2,
+            "expected_health": 180.0,
+            "expected_tell": 0.765,
+            "health": 180.0,
+            "id": "x04",
+            "passed": true,
+            "tell": 0.765
+          }
+        },
+        {
+          "id": "x05",
+          "name": "空名封柱",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 3,
+            "expected_ash": 16,
+            "expected_damage": 3,
+            "expected_health": 450.0,
+            "expected_tell": 0.81,
+            "health": 450.0,
+            "id": "x05",
+            "passed": true,
+            "tell": 0.81
+          }
+        },
+        {
+          "id": "x06",
+          "name": "总账卷兽",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/enemy_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "elite_variants",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha",
+          "runtime_numeric": {
+            "ash": 16,
+            "damage": 3,
+            "expected_ash": 16,
+            "expected_damage": 3,
+            "expected_health": 480.0,
+            "expected_tell": 0.9,
+            "health": 480.0,
+            "id": "x06",
+            "passed": true,
+            "tell": 0.9
+          }
+        }
+      ],
+      "evidence": [
+        "runtime/impact-resume-tests.json",
+        "runtime/expanded-content-tests.json",
+        "game/scripts/combat/enemy_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "boss_patterns",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "b01",
+          "name": "债主判官",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "bosses",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "b02",
+          "name": "铁算盘",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "bosses",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "b03",
+          "name": "无主神",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/main.gd",
+            "game/scripts/ui/character_sheet.gd",
+            "game/scripts/ui/keyboard_flow_qa.gd",
+            "game/scripts/ui/modern_ui.gd",
+            "game/scripts/ui/run_review.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "bosses",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "b04",
+          "name": "无名债主",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/room_graph.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "bosses",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "b05",
+          "name": "息页巨灵",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd",
+            "game/scripts/core/meta_progress.gd",
+            "game/scripts/core/room_graph.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "bosses",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/expanded-content-tests.json",
+        "runtime/full-run-tests.json",
+        "game/scripts/combat/boss_patterns.gd",
+        "game/scripts/combat/world.gd"
+      ]
+    },
+    {
+      "system": "debt_hooks",
+      "status": "verified_alpha",
+      "items": [
+        {
+          "id": "d01",
+          "name": "借火",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d02",
+          "name": "牵线",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd",
+            "game/scripts/main.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d03",
+          "name": "借灰",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d04",
+          "name": "借命",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d05",
+          "name": "铜息",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d06",
+          "name": "行债",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d07",
+          "name": "空名",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d08",
+          "name": "镇门",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/world.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        },
+        {
+          "id": "d09",
+          "name": "总账",
+          "design_status": "authored",
+          "runtime_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "combat_source_refs": [
+            "game/scripts/combat/boss_patterns.gd"
+          ],
+          "runtime_integrated": true,
+          "contract": {
+            "kind": "debt_contracts",
+            "trigger": "",
+            "mode": "",
+            "route": []
+          },
+          "contract_valid": true,
+          "status": "verified_alpha"
+        }
+      ],
+      "evidence": [
+        "runtime/campaign-rules-tests.json",
+        "runtime/save-transfer-tests.json",
+        "game/scripts/combat/world.gd",
+        "game/scripts/combat/boss_patterns.gd"
+      ]
+    },
+    {
+      "system": "shared_contracts",
+      "status": "verified_alpha",
+      "evidence": [
+        "runtime/save-transfer-tests.json",
+        "runtime/choice-history-tests.json",
+        "runtime/achievement-tests.json",
+        "runtime/advanced-input-tests.json",
+        "runtime/platform-contract-tests.json",
+        "runtime/adaptive-music-tests.json",
+        "runtime/asset-verification.json",
+        "20-direction1-system-bible.md",
+        "22-menu-save-achievements.md"
+      ]
+    }
+  ],
+  "boundary": [
+    "design_status/specification fields remain design-layer labels; this report supplies runtime evidence without rewriting them.",
+    "automated fixed-tick coverage does not equal human balance, audio-device, or physical Android/iOS acceptance.",
+    "data-driven dispatch is accepted when the loader and integration test exercise the complete catalog; literal ID branches are not required."
+  ]
+}

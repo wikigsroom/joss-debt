@@ -1,0 +1,6 @@
+# Optional authoring / verification tools. The game itself only needs Godot.
+Pillow>=10.0
+numpy>=1.26
+scipy>=1.11
+fonttools>=4.40
+py7zr>=0.22

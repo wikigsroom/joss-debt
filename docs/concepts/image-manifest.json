@@ -1,0 +1,67 @@
+{
+  "created_date": "2026-10-03",
+  "provider_skill": "sub2-image-gen",
+  "purpose": "art-direction concept images for direction selection",
+  "images": [
+    {
+      "id": "01-incense-debt",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "docs/concepts/prompts/01-incense-debt.txt",
+      "image": "output/imagegen/concepts/01-incense-debt.png",
+      "bytes": 3067234,
+      "sha256": "17896bc523b72ab866261a00aaf38704796652d76f2bdbe0ca417189f1d584a8",
+      "visual_review": "complete"
+    },
+    {
+      "id": "02-scrap-express",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "docs/concepts/prompts/02-scrap-express.txt",
+      "image": "output/imagegen/concepts/02-scrap-express.png",
+      "bytes": 2584063,
+      "sha256": "329193f913a2abce2a76c63872b92afd2bd98048f8437ee8a777c03677f0f5a2",
+      "visual_review": "complete"
+    },
+    {
+      "id": "03-myco-riot",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "docs/concepts/prompts/03-myco-riot.txt",
+      "image": "output/imagegen/concepts/03-myco-riot.png",
+      "bytes": 3047419,
+      "sha256": "d621687a5380f7bacb378da0fc891c4ccdc1f48dc250fd9663836ab2f571e423",
+      "visual_review": "complete"
+    },
+    {
+      "id": "04-nightmare-reel",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "docs/concepts/prompts/04-nightmare-reel.txt",
+      "image": "output/imagegen/concepts/04-nightmare-reel.png",
+      "bytes": 3015333,
+      "sha256": "8cfd306a1161e5182db93dd1361bfda81bb08a058353c8621f2a28582a4ef94d",
+      "visual_review": "complete"
+    },
+    {
+      "id": "05-sugarbreach",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "docs/concepts/prompts/05-sugarbreach.txt",
+      "image": "output/imagegen/concepts/05-sugarbreach.png",
+      "bytes": 2240934,
+      "sha256": "0f582c445d67d21f8d31503a4d97199f4ded4fd5099c44a1f0c5a2f649fd0b5c",
+      "visual_review": "complete"
+    }
+  ]
+}

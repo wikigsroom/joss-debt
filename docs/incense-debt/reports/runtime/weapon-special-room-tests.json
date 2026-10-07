@@ -1,0 +1,28 @@
+{
+	"checks": [
+		"三生扇 emits exactly three authored spread projectiles",
+		"照骨线 resolves a wall-aware ray hit and exposes its beam event",
+		"引魂纸蝶 creates a persistent controllable projectile",
+		"the controllable projectile steers toward the current aim without a random branch",
+		"月刃蓄锋 visibly charges before releasing a hit",
+		"a completed charged arc releases a heavy slash event",
+		"the seeded route graph exposes the optional sacrifice room",
+		"sacrifice opens a dedicated one-pick room offering",
+		"sacrifice commits one deterministic growth choice and clears the room",
+		"sacrifice special-room choice survives checksum restore",
+		"the seeded route graph exposes the optional judge room",
+		"judge opens a dedicated one-pick room offering",
+		"judge commits one deterministic growth choice and clears the room",
+		"judge special-room choice survives checksum restore",
+		"the seeded route graph exposes the optional angel room",
+		"angel opens a dedicated one-pick room offering",
+		"angel commits one deterministic growth choice and clears the room",
+		"angel special-room choice survives checksum restore",
+		"破阵房 starts a three-wave authored gauntlet instead of a free choice",
+		"破阵房 clears into a tagged high-tier relic selection",
+		"破阵房 reward candidates survive checksum restore"
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "sixteen weapon modes, deterministic special rooms, three-wave challenge room, one-pick growth ledger and save restore"
+}

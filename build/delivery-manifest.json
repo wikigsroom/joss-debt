@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "status": "playable_eleven_floor_alpha",
+  "recorded_at": "2026-10-07T09:22:00.321021+00:00",
+  "platform_parity_report": "docs/incense-debt/reports/platforms/platform-parity.json",
+  "expansion_report": "docs/incense-debt/reports/expansion-delivery.json",
+  "files": [
+    {
+      "path": "build/windows/IncenseDebt.exe",
+      "sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+      "bytes": 561862192
+    },
+    {
+      "path": "build/android/IncenseDebt.apk",
+      "sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+      "bytes": 480710039
+    },
+    {
+      "path": "build/ios-handoff/IncenseDebt-shared-source.zip",
+      "sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+      "bytes": 561051501
+    }
+  ]
+}

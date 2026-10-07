@@ -1,0 +1,478 @@
+{
+  "font_sources": [
+    {
+      "family": "Resource Han Rounded CN",
+      "version": "0.990",
+      "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+      "archive_sha256": "e7005f7b4a7a0b8352d32c4a1358ff47564eb73be7fdb2db00d9f792755e9dc7",
+      "license": "SIL OFL 1.1"
+    },
+    {
+      "family": "Smiley Sans",
+      "version": "2.0.1",
+      "url": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
+      "archive_sha256": "299c0be6c960ae37361762eca76f7d0cd516615435bb96c0d4b98a1e70178a07",
+      "license": "SIL OFL 1.1"
+    }
+  ],
+  "vector_icons": [
+    {
+      "name": "arrow-left",
+      "file": "game/assets/ui/icons/arrow-left.svg",
+      "sha256": "16ebe780bf50214eaeb46b358482b656ea34e9a97ff4ab439d5a02200825b366",
+      "source_sha256": "c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/arrow-left.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "arrow-right",
+      "file": "game/assets/ui/icons/arrow-right.svg",
+      "sha256": "402239a21ae0b1e660572071c2644c6e7cd986880b07556b6e8a14aab7ea3008",
+      "source_sha256": "288397fdb73bb4f783cf9eabb726ff47357df1d4e3f1201dd748090579f108b9",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/arrow-right.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "arrow-up",
+      "file": "game/assets/ui/icons/arrow-up.svg",
+      "sha256": "a067638deac185038365ed3d4e9209cd0bc7f8e6868c4af6fb449a7d25622eee",
+      "source_sha256": "8c22c25874c80bb062bef985d207d8f1d4a4d7847237d0a8cf720a3235968518",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/arrow-up.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "arrow-down",
+      "file": "game/assets/ui/icons/arrow-down.svg",
+      "sha256": "3134bd4d46bea0ab9a95cc4fde096914019c1509a23dc5b7fa44128681a99cc9",
+      "source_sha256": "2b641c7a59d39450edfed72067fcc9940a1a316a737346af23b4b9103c0689f2",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/arrow-down.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "book-open",
+      "file": "game/assets/ui/icons/book-open.svg",
+      "sha256": "dc49eeac0cf2298204c2d686367ca8f638293c0ae19c07682aaff47273a0a54d",
+      "source_sha256": "9b9bed0ff057283d5c5c5a1c71f8d3e927db26a56639603a92fdf7b25961510e",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/book-open.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "pause",
+      "file": "game/assets/ui/icons/pause.svg",
+      "sha256": "ab57d6dba066f57c43ce5b62599154b16cc5329f44ef642cfc8a281ee0d76703",
+      "source_sha256": "f122ec4ea7f5693a0b1baafa9c708b53980dc87b4aacb297c6e6f71c1a4c115c",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/pause.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "play",
+      "file": "game/assets/ui/icons/play.svg",
+      "sha256": "83808435eefa274ef8b141dffa0b8e324b1456a09fe18a1f63c12d101f891e67",
+      "source_sha256": "d7c34786135922a92b6896f6c2384ceeb0346afbf6041dc79982011411409833",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/play.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "settings-2",
+      "file": "game/assets/ui/icons/settings-2.svg",
+      "sha256": "744ac0892ff3cd92bac8a4bf82dcea2b0b0db7b4f9f64ed06e4f0d6a5840faa1",
+      "source_sha256": "06d06c191bd7eb28afaf9d40acb5c49ef69448fdeda91801d9823d7c440a4e10",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/settings-2.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "log-out",
+      "file": "game/assets/ui/icons/log-out.svg",
+      "sha256": "19b4f266e71fe28160ebb2af048c06c13590605ae2e099db7dc44b6170937753",
+      "source_sha256": "f24b5b45c05a3acc346af8095408f6ba197ff58ea1641a4f2cb25a9702d2c0ac",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/log-out.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "house",
+      "file": "game/assets/ui/icons/house.svg",
+      "sha256": "3d66fe90c3c56036a609a1ec4c67caa25a1bde6843c30a9715f84a5d12c92f7a",
+      "source_sha256": "28216c479005731ef5e382e7d8627eda2b129b019eb1f3d9de9f5915576d448e",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/house.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "lock",
+      "file": "game/assets/ui/icons/lock.svg",
+      "sha256": "84f75e4302cb833e25a436cddea38aac4e67452b6b2eb7533f6b07fd9c176448",
+      "source_sha256": "d2cfe60cac8deaef36442b5c8218c1e61abe18222784b2a370ea090d13fca840",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/lock.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "check",
+      "file": "game/assets/ui/icons/check.svg",
+      "sha256": "0ea147a605635889f976e4e5b16357fa67fdf023432f57f75776637165e19aa6",
+      "source_sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/check.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "x",
+      "file": "game/assets/ui/icons/x.svg",
+      "sha256": "ce5bd16c1f703714e69d2d0242dfb822936db3e132654a0d9ab872c2379766d6",
+      "source_sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/x.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "heart",
+      "file": "game/assets/ui/icons/heart.svg",
+      "sha256": "8a190dc77c0fcc01a4371dc3fd71a3864fd1a1e78ce3098016cdf6025988f41f",
+      "source_sha256": "70af5f30be9fcb500b852556b38dcdf8c04a4ba81fd262534fb0336bd39b3b52",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/heart.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "shield",
+      "file": "game/assets/ui/icons/shield.svg",
+      "sha256": "df7f8ad5d2aeb83814e41048f450fd9030fb945a9a4db32c3fb456ea629fd1aa",
+      "source_sha256": "be32f6a86df7cbe43a83c439dd8849e5bcf5145e484d23420c20d8b98a78e82b",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/shield.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "coins",
+      "file": "game/assets/ui/icons/coins.svg",
+      "sha256": "c3357612696aa6fbff5073052ffb94c84ab2d6ea7fec53ae98c558dec47dbe34",
+      "source_sha256": "bcfec9236fd10d0aadbf90951f61dd31ec7cedc72dd38d2639f95c2b8437b9f1",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/coins.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "flame",
+      "file": "game/assets/ui/icons/flame.svg",
+      "sha256": "e6e7af037f46dd2b8602524216541a78da3aa35cdbf32c43f9b0f6e7e43c7641",
+      "source_sha256": "cede1462a46a7a3b3daf9d101f0b59484b1d882a4c42a75670810a6d4f8d42fb",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/flame.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "wind",
+      "file": "game/assets/ui/icons/wind.svg",
+      "sha256": "5bfcd0d71f477da532310df8c428db87e0fd0706ec2230b90640103a3cf10bcc",
+      "source_sha256": "eb35f6f00125b779a993c21ee761432faf8fc3210272c94448f63e2196d419b7",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/wind.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "link",
+      "file": "game/assets/ui/icons/link.svg",
+      "sha256": "5a964ba910b72645d3dfa3b9f249823d1d9e75b19437f1ee27f07afbc8445425",
+      "source_sha256": "4f3237183dcaabfac92f4e94c776a9a9e45c3c5e77a921061a6b34b61eb5413f",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/link.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "refresh-cw",
+      "file": "game/assets/ui/icons/refresh-cw.svg",
+      "sha256": "6444125438c3c27b5668d125f58214d52d01582451c85abd1c0eb018ceb41e5f",
+      "source_sha256": "2e10dd403c85a24f163d59fc6151aa21147fe9402e1305dfc8979208caee8944",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/refresh-cw.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "sparkles",
+      "file": "game/assets/ui/icons/sparkles.svg",
+      "sha256": "9b43c81b0e13c6358cd30da5624b7e61b0202fb6654ff1be5ac097de11ccda17",
+      "source_sha256": "f5499f33f09d7158151e9bd2ec0faf79ff8fb57292f84fdd7286d96d0f0424d8",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/sparkles.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "sword",
+      "file": "game/assets/ui/icons/sword.svg",
+      "sha256": "9cc656e70f5c76f691b900918890a2f65e32f15e68aad193632845e57fdefcbf",
+      "source_sha256": "0649799fe0d04e803d0fc1b861f4adec694f8afbcc0946b8ec87bb18447efa3c",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/sword.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "wand-sparkles",
+      "file": "game/assets/ui/icons/wand-sparkles.svg",
+      "sha256": "2624d136662336a3736ba1e33be7ae25313b03d4b90ff0621243a2cfd60055a8",
+      "source_sha256": "d73067ff2463118d4f11f9c532e7162be45f96835b966b4fc89977ca47a7317d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/wand-sparkles.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "scroll-text",
+      "file": "game/assets/ui/icons/scroll-text.svg",
+      "sha256": "f898cd9300c40c69e76b81ab6819b565d10f88f54b12a6b679672c258baa6d39",
+      "source_sha256": "57739b59816cedf5b2fd92559784431ce59f3d14eb77eabb659591b6789e223d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/scroll-text.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "map",
+      "file": "game/assets/ui/icons/map.svg",
+      "sha256": "5cf469697f0f340a5e0b319bfd14340960c1cd6dbdabc12983c0db49ce261e42",
+      "source_sha256": "41300a8ef2c2a4cf36ec3f8a730bcb4754543889eb23b98e7435de7a0757752d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/map.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "route",
+      "file": "game/assets/ui/icons/route.svg",
+      "sha256": "52c5b7ba526308512a5e761a5319be6e1685f7ec87f5d5408092049ded4f59de",
+      "source_sha256": "fc169fd38a9963b016ad6d60fd72baa2b0ea8e0cec085bbc53287297c3d8121a",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/route.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "volume-2",
+      "file": "game/assets/ui/icons/volume-2.svg",
+      "sha256": "1286b1935c6f9568b67ccaa84bbd817bfcd45f251ca2566255f8f2fca262dda9",
+      "source_sha256": "fb404f9c128a0579de67b399177631e5edb3502fdc247ceb30e8b15754b46071",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/volume-2.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "volume-x",
+      "file": "game/assets/ui/icons/volume-x.svg",
+      "sha256": "c70246783314720607a0ee4037d5b269c333f1978d0452ce9e79f69ae8139281",
+      "source_sha256": "f382e421b7aae01172989f2b749ee87e44c0c82c16970b13a9ad5a323b613be0",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/volume-x.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "gamepad-2",
+      "file": "game/assets/ui/icons/gamepad-2.svg",
+      "sha256": "06c9eb53e6123c029c2eade23c0dcb924547c606b2b7ca4f8770e0b16e67bc2b",
+      "source_sha256": "b0671de7afbebdafc4d655d867d9851947170b906fb187e749410039df867509",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/gamepad-2.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "mouse",
+      "file": "game/assets/ui/icons/mouse.svg",
+      "sha256": "b22e70c52a55d61cbdf277d0eb92d9b6443632b2d718e1a3bfc195a47cf07930",
+      "source_sha256": "e4238ad7b69d3c3d713fdc2284c8fb20c04781afe0be445539ce4f904c0a0e47",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/mouse.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "crosshair",
+      "file": "game/assets/ui/icons/crosshair.svg",
+      "sha256": "0aa70bb3cef0ea42b4ae79bd732411d9c05ec332a06dd723c8fbd652aaab653b",
+      "source_sha256": "ae9ed8583286ea03bffae85bb69aee5227540e588b0370cf185f2141ebe25e8d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/crosshair.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "hand",
+      "file": "game/assets/ui/icons/hand.svg",
+      "sha256": "061a26dd8c1fe724f6ed75f314afe436392e6c162515c724b4f50cb66376cd08",
+      "source_sha256": "fe3771fa2f0a9a3c7736164c9a855beefacc02548084ac1d6fc8da8a8a9180b0",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/hand.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "smartphone",
+      "file": "game/assets/ui/icons/smartphone.svg",
+      "sha256": "64c6dfb61a90ea2d88c51aa1e99d0c9ddfb8bda4998250a83e0e5d82eaa1a2c9",
+      "source_sha256": "f9fdb700b50feb5fc6436f53eb9813e9eb56a9071ac4cdcba69c7f7c1c13877d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/smartphone.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "info",
+      "file": "game/assets/ui/icons/info.svg",
+      "sha256": "74ba45a14591b60739154ac3af8f6b7b38da00edb1ed8648eeb8a66870714fb0",
+      "source_sha256": "bc977a64eb96f3e9c1041ffd09a3fceb70e3e65c02b571f76064062ed31f3cb9",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/info.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "download",
+      "file": "game/assets/ui/icons/download.svg",
+      "sha256": "284f709ee96ce61219e58d362d5b13e654bc0ff928ead0d94b6ba7d983cec1b4",
+      "source_sha256": "3daeee13ded5a3afa2198b1bb4e2262d163922f97d96ac6ff9953e8ed4fe039d",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/download.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "upload",
+      "file": "game/assets/ui/icons/upload.svg",
+      "sha256": "27cc09ff1b4d8e1d8d769e5b5e9040d0fc163aeea94ac8f24cc62e3dab7c0f6e",
+      "source_sha256": "42816ee1fa0e9d3b82272a97615c1e562b0e9de64780ebf21963bc1db0ceffd1",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/upload.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "rotate-ccw",
+      "file": "game/assets/ui/icons/rotate-ccw.svg",
+      "sha256": "4122c508ac5de482af228e0b76541066084304563f63e8814b77b368db7b5712",
+      "source_sha256": "622685386ab4017eabfde01cd74550a20b1924df233b353f73b6b155371f2afd",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/rotate-ccw.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "eye",
+      "file": "game/assets/ui/icons/eye.svg",
+      "sha256": "1784f966b8dc82b8d4546fc2a1d2778d540beef36b1460aa21a5d315c75b2343",
+      "source_sha256": "5bf90197dd7629cad64a2e48d1186a71559deb6121207d10e3dc5b19ebaffdcf",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/eye.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "circle-question-mark",
+      "file": "game/assets/ui/icons/circle-question-mark.svg",
+      "sha256": "688ee847a5faf4e5a0996737f5be6aec5b2f5ff3522e0633c2695de5a34dcb11",
+      "source_sha256": "975db087da041530dbf59ba1e61a7b99c3519fad43dae6375e42ccc74ba63924",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/circle-question-mark.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "chevron-left",
+      "file": "game/assets/ui/icons/chevron-left.svg",
+      "sha256": "c5ec3a5694fbaa1f666b365b952f2e211014e0c9384c753f1e5fb9678ead628b",
+      "source_sha256": "83b0681aa38bf55e9d52a1e4b4cced624abe1fe7678ecafda133a574f1161d93",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/chevron-left.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "chevron-right",
+      "file": "game/assets/ui/icons/chevron-right.svg",
+      "sha256": "b445feb9555997215b96d8c7dce971e5087d4b5a60e1da8c7e87fc2757192274",
+      "source_sha256": "2758143d7b2434e4aa7307dfd34405c87909ff4052f21b5f3f40d45224b4f19b",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/chevron-right.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "chevron-down",
+      "file": "game/assets/ui/icons/chevron-down.svg",
+      "sha256": "9caf46769ccf117e2837f5bad307b57c267dad539f91e78b2a5e306c9c78c6e0",
+      "source_sha256": "66ea878e72ed3488bb3b464c39dfdccee8d1f78e560dccea40e5e12da0e87e87",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/chevron-down.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "crown",
+      "file": "game/assets/ui/icons/crown.svg",
+      "sha256": "52bbcf78751d6f702caf3c6aa4b749d8a8d62be0ec88bfe3606a7433defa0e8a",
+      "source_sha256": "544c1b6181749ae4b4c98861a5a6ed1242940239cda97cc13c74e84a03fd68c0",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/crown.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "target",
+      "file": "game/assets/ui/icons/target.svg",
+      "sha256": "19850f24b8d0f08e770d9afba4cc8b97c8d7269a921bdf900078df8106a217eb",
+      "source_sha256": "96a6b16628825a1a207a77e9a5818f74c3e74ea3664783ff5c2a44e6347b90df",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/target.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "pencil",
+      "file": "game/assets/ui/icons/pencil.svg",
+      "sha256": "5680c08389b3b6f72921ab70ebf36bbbe0f041318ee04653989923df98bbda9f",
+      "source_sha256": "7e1ca7a6f5c1eb949671df762f2baadd32f5bd841d43153c3a15279af7d78d0c",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/pencil.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "sun",
+      "file": "game/assets/ui/icons/sun.svg",
+      "sha256": "e438a4d18c0171a090e8d77b8a7bafc7b9be9feefa74ade7fe48f1829611caaf",
+      "source_sha256": "a3955c8b0425fcc5c9ba12d2bdd77fe53b2cd5dd05e7742a56f342e996fb2ef8",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/sun.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "leaf",
+      "file": "game/assets/ui/icons/leaf.svg",
+      "sha256": "60759e55bd98d013e49e6c530db760bd434f4ba7ca937bfd20aaccfc1b891e3a",
+      "source_sha256": "ac2b65d8d35b5038c9388cd1f161e74570fce6ef6a4c3d99a6b0c2bd68e0cb28",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/leaf.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "droplet",
+      "file": "game/assets/ui/icons/droplet.svg",
+      "sha256": "34f9b2caae4f815b23e048f92f99ceb4b9d46230349dd688fd781222412521e6",
+      "source_sha256": "abca4df60f91c605d945c6fe5ee0e6c919b53116d81e268f4581f8841bf24751",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/droplet.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "layers",
+      "file": "game/assets/ui/icons/layers.svg",
+      "sha256": "22fe4920052e9f9d43e74b9c5f3fbe75def69d314e36f2d080b4eecce4f68c16",
+      "source_sha256": "ce16d0a955e3581cda17f6b2fd5c5bc2034b405f9cecc31c8ebb8495b4afc1bb",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/layers.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "circle-dot",
+      "file": "game/assets/ui/icons/circle-dot.svg",
+      "sha256": "13216afbd23a62caceffb18baa37803ca99a20da611a230bd213771118bc581f",
+      "source_sha256": "c263f6a08a089c06ad40f408ad5da9100359ab52d379e6c571cd7c5bd74eaa87",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/circle-dot.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "music",
+      "file": "game/assets/ui/icons/music.svg",
+      "sha256": "2bb701da5a408093dd525631cc6a4058a7caa121d7e73f097547c109d099282f",
+      "source_sha256": "8721b8a3594219c1313c4083049e5a5c049f49c47b1cd93fdb61d52a0803e42b",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/music.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "touchpad",
+      "file": "game/assets/ui/icons/touchpad.svg",
+      "sha256": "3c7a4af05408f48cd8f427af5880b6c4c6762616fd64ab705b24cce9d770dc3c",
+      "source_sha256": "9d743d5ae640f51599fb006450e07469123aca45c228021610e7bfa78e494547",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/touchpad.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "monitor",
+      "file": "game/assets/ui/icons/monitor.svg",
+      "sha256": "b95b891c49407a804e28563808d5cf05393da1fc571de072bb5b224fae475604",
+      "source_sha256": "d1a443233345724859de8e4fb48968ba91e885e12ddbd710701548bd91b39428",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/monitor.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "save",
+      "file": "game/assets/ui/icons/save.svg",
+      "sha256": "f845fe8da37a12a1de39e022a8083c3f6e4274bd83c94e7113da76fe01031a00",
+      "source_sha256": "ee9d56a7fec4b20dd6689546d41f68219ea8cbd67f99bd17a1bdaff5be6edb53",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/save.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "folder-open",
+      "file": "game/assets/ui/icons/folder-open.svg",
+      "sha256": "dea1cb02ca361027c2a4c77b0c743f6fadba5ce4e69145ad45da0e70c56e99fa",
+      "source_sha256": "ee57452b40e71df310214091dd9da1941a397c83197b8ff8d7ae66dd4242578b",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/folder-open.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "search",
+      "file": "game/assets/ui/icons/search.svg",
+      "sha256": "5bb9f23280687dd6f27ee61ac15bf174a4967a5ede0333c7d27319389e6665f2",
+      "source_sha256": "283d371c2e433817bb9c0c8310caa6c77fa4177c0f4f1168d9c83b97af7389dc",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/500620a2e8123f8d1db191538886dc0c223f69a9/icons/search.svg",
+      "normalization": "original 24-unit vector paths retained; white runtime tint mask, 96px native import for crisp 24–88px presentation"
+    },
+    {
+      "name": "heart-solid",
+      "file": "game/assets/ui/icons/heart-solid.svg",
+      "sha256": "535104edf7dc7b29aee3f14e5e0e7c1e8ee50ed2a61658760896f11f678ef477",
+      "source_sha256": "8a190dc77c0fcc01a4371dc3fd71a3864fd1a1e78ce3098016cdf6025988f41f",
+      "derivative": "same licensed heart path; filled state for health pips"
+    }
+  ],
+  "lucide_revision": "500620a2e8123f8d1db191538886dc0c223f69a9",
+  "icon_license": "ISC (Lucide), MIT (Feather-derived subset); full upstream license included",
+  "virtualization": "none"
+}

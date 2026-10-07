@@ -1,0 +1,1866 @@
+{
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "jobs": [
+    {
+      "name": "themes-01",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-01.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-01.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m01_a",
+          "m01_b",
+          "m02_a",
+          "m02_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            496
+          ],
+          [
+            770,
+            0,
+            1536,
+            496
+          ],
+          [
+            0,
+            514,
+            766,
+            1024
+          ],
+          [
+            770,
+            514,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-02",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-02.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-02.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m03_a",
+          "m03_b",
+          "m04_a",
+          "m04_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            464
+          ],
+          [
+            770,
+            0,
+            1536,
+            464
+          ],
+          [
+            0,
+            482,
+            766,
+            1024
+          ],
+          [
+            770,
+            482,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-03",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-03.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-03.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m05_a",
+          "m05_b",
+          "m06_a",
+          "m06_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            496
+          ],
+          [
+            770,
+            0,
+            1536,
+            496
+          ],
+          [
+            0,
+            514,
+            766,
+            1024
+          ],
+          [
+            770,
+            514,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-04",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-04.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-04.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m07_a",
+          "m07_b",
+          "m08_a",
+          "m08_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            494
+          ],
+          [
+            770,
+            0,
+            1536,
+            494
+          ],
+          [
+            0,
+            512,
+            766,
+            1024
+          ],
+          [
+            770,
+            512,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-05",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-05.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-05.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m09_a",
+          "m09_b",
+          "m10_a",
+          "m10_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            441
+          ],
+          [
+            770,
+            0,
+            1536,
+            441
+          ],
+          [
+            0,
+            459,
+            766,
+            1024
+          ],
+          [
+            770,
+            459,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-06",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-06.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-06.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m11_a",
+          "m11_b",
+          "m12_a",
+          "m12_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            495
+          ],
+          [
+            770,
+            0,
+            1536,
+            495
+          ],
+          [
+            0,
+            513,
+            766,
+            1024
+          ],
+          [
+            770,
+            513,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-07",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-07.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-07.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m13_a",
+          "m13_b",
+          "m14_a",
+          "m14_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            496
+          ],
+          [
+            770,
+            0,
+            1536,
+            496
+          ],
+          [
+            0,
+            514,
+            766,
+            1024
+          ],
+          [
+            770,
+            514,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-08",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-08.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-08.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m15_a",
+          "m15_b",
+          "m16_a",
+          "m16_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            478
+          ],
+          [
+            770,
+            0,
+            1536,
+            478
+          ],
+          [
+            0,
+            496,
+            766,
+            1024
+          ],
+          [
+            770,
+            496,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-09",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-09.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-09.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m17_a",
+          "m17_b",
+          "m18_a",
+          "m18_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            496
+          ],
+          [
+            770,
+            0,
+            1536,
+            496
+          ],
+          [
+            0,
+            514,
+            766,
+            1024
+          ],
+          [
+            770,
+            514,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "themes-10",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/themes-10.txt",
+      "output": "output/imagegen/incense-debt/expansion/themes-10.png",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "rooms",
+        "ids": [
+          "m19_a",
+          "m19_b",
+          "m20_a",
+          "m20_b"
+        ],
+        "columns": 2,
+        "rows": 2,
+        "rects": [
+          [
+            0,
+            0,
+            766,
+            474
+          ],
+          [
+            770,
+            0,
+            1536,
+            474
+          ],
+          [
+            0,
+            492,
+            766,
+            1024
+          ],
+          [
+            770,
+            492,
+            1536,
+            1024
+          ]
+        ]
+      }
+    },
+    {
+      "name": "bosses-01",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/bosses-01.txt",
+      "output": "output/imagegen/incense-debt/expansion/bosses-01.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/bosses.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b06",
+          "b07",
+          "b08",
+          "b09",
+          "b10",
+          "b11",
+          "b12",
+          "b13"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "bosses-02",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/bosses-02.txt",
+      "output": "output/imagegen/incense-debt/expansion/bosses-02.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/bosses.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b14",
+          "b15",
+          "b16",
+          "b17",
+          "b18",
+          "b19",
+          "b20",
+          "b21"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "bosses-03",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/bosses-03.txt",
+      "output": "output/imagegen/incense-debt/expansion/bosses-03.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/bosses.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b22",
+          "b23",
+          "b24",
+          "b25",
+          "b26",
+          "b27",
+          "b28",
+          "b29"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "bosses-04",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/bosses-04.txt",
+      "output": "output/imagegen/incense-debt/expansion/bosses-04.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/bosses.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b30",
+          "b31",
+          "b32",
+          "b33",
+          "b34",
+          "b35",
+          "b36",
+          "b37"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "enemies-01",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/enemies-01.txt",
+      "output": "output/imagegen/incense-debt/expansion/enemies-01.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e25",
+          "e26",
+          "e27",
+          "e28",
+          "e29",
+          "e30",
+          "e31",
+          "e32"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "enemies-02",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/enemies-02.txt",
+      "output": "output/imagegen/incense-debt/expansion/enemies-02.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e33",
+          "e34",
+          "e35",
+          "e36",
+          "e37",
+          "e38",
+          "e39",
+          "e40"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "enemies-03",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/enemies-03.txt",
+      "output": "output/imagegen/incense-debt/expansion/enemies-03.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e41",
+          "e42",
+          "e43",
+          "e44",
+          "e45",
+          "e46",
+          "e47",
+          "e48"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "enemies-04",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/enemies-04.txt",
+      "output": "output/imagegen/incense-debt/expansion/enemies-04.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e49",
+          "e50",
+          "e51",
+          "e52",
+          "e53",
+          "e54",
+          "e55",
+          "e56"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "weapons",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/weapons.txt",
+      "output": "output/imagegen/incense-debt/expansion/weapons.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/weapons.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "weapons",
+        "ids": [
+          "w17",
+          "w18",
+          "w19",
+          "w20",
+          "w21",
+          "w22",
+          "w23",
+          "w24",
+          "w25",
+          "w26",
+          "w27",
+          "w28",
+          "w29",
+          "w30",
+          "w31",
+          "w32"
+        ],
+        "columns": 4,
+        "rows": 4
+      }
+    },
+    {
+      "name": "attack-fx",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/attack-fx.txt",
+      "output": "output/imagegen/incense-debt/expansion/attack-fx.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "fx",
+        "ids": [
+          "amber_orb",
+          "jade_needle",
+          "paper_blade",
+          "ink_wave",
+          "lotus_petal",
+          "ember_cluster",
+          "smoke_cloud",
+          "red_seal",
+          "beam_amber",
+          "beam_ink",
+          "beam_thread",
+          "beam_prism",
+          "blast_flame",
+          "blast_ink",
+          "blast_lotus",
+          "shockwave"
+        ],
+        "columns": 4,
+        "rows": 4
+      }
+    },
+    {
+      "name": "obstacles",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/obstacles.txt",
+      "output": "output/imagegen/incense-debt/expansion/obstacles.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "obstacles",
+        "ids": [
+          "powder_urn",
+          "thorn_seal",
+          "oil_lamp",
+          "bamboo_wall",
+          "stone_wall",
+          "rope_wall",
+          "broken_urn",
+          "cold_thorn"
+        ],
+        "columns": 4,
+        "rows": 2
+      }
+    },
+    {
+      "name": "story-01",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/story-01.txt",
+      "output": "output/imagegen/incense-debt/expansion/story-01.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "story",
+        "ids": [
+          "scene_01",
+          "scene_02",
+          "scene_03",
+          "scene_04"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "story-02",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/story-02.txt",
+      "output": "output/imagegen/incense-debt/expansion/story-02.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "story",
+        "ids": [
+          "scene_05",
+          "scene_06",
+          "scene_07",
+          "scene_08"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "story-03",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/story-03.txt",
+      "output": "output/imagegen/incense-debt/expansion/story-03.png",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "opaque",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "story",
+        "ids": [
+          "scene_09",
+          "scene_10",
+          "scene_11",
+          "scene_12"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m01-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m01-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m01-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m01_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e57",
+          "e58",
+          "e59",
+          "e60",
+          "e61",
+          "e62",
+          "e63",
+          "e64",
+          "e65",
+          "e66",
+          "e67",
+          "e68"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m01-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m01-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m01-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m01_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b38",
+          "b39",
+          "b40"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m02-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m02-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m02-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m02_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e69",
+          "e70",
+          "e71",
+          "e72",
+          "e73",
+          "e74",
+          "e75",
+          "e76",
+          "e77",
+          "e78",
+          "e79",
+          "e80"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m02-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m02-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m02-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m02_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b41",
+          "b42",
+          "b43"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m03-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m03-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m03-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m03_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e81",
+          "e82",
+          "e83",
+          "e84",
+          "e85",
+          "e86",
+          "e87",
+          "e88",
+          "e89",
+          "e90",
+          "e91",
+          "e92"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m03-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m03-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m03-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m03_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b44",
+          "b45",
+          "b46"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m04-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m04-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m04-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m04_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e93",
+          "e94",
+          "e95",
+          "e96",
+          "e97",
+          "e98",
+          "e99",
+          "e100",
+          "e101",
+          "e102",
+          "e103",
+          "e104"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m04-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m04-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m04-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m04_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b47",
+          "b48",
+          "b49"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m05-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m05-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m05-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m05_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e105",
+          "e106",
+          "e107",
+          "e108",
+          "e109",
+          "e110",
+          "e111",
+          "e112",
+          "e113",
+          "e114",
+          "e115",
+          "e116"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m05-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m05-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m05-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m05_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b50",
+          "b51",
+          "b52"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m06-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m06-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m06-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m06_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e117",
+          "e118",
+          "e119",
+          "e120",
+          "e121",
+          "e122",
+          "e123",
+          "e124",
+          "e125",
+          "e126",
+          "e127",
+          "e128"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m06-bosses-02",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m06-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m06-bosses-02.png",
+      "references": [
+        "game/assets/environment/expansion/m06_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b53",
+          "b54",
+          "b55"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m07-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m07-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m07-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m07_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e129",
+          "e130",
+          "e131",
+          "e132",
+          "e133",
+          "e134",
+          "e135",
+          "e136",
+          "e137",
+          "e138",
+          "e139",
+          "e140"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m07-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m07-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m07-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m07_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b56",
+          "b57",
+          "b58"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m08-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m08-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m08-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m08_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e141",
+          "e142",
+          "e143",
+          "e144",
+          "e145",
+          "e146",
+          "e147",
+          "e148",
+          "e149",
+          "e150",
+          "e151",
+          "e152"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m08-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m08-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m08-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m08_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b59",
+          "b60",
+          "b61"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m09-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m09-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m09-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m09_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e153",
+          "e154",
+          "e155",
+          "e156",
+          "e157",
+          "e158",
+          "e159",
+          "e160",
+          "e161",
+          "e162",
+          "e163",
+          "e164"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m09-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m09-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m09-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m09_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b62",
+          "b63",
+          "b64"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m10-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m10-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m10-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m10_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e165",
+          "e166",
+          "e167",
+          "e168",
+          "e169",
+          "e170",
+          "e171",
+          "e172",
+          "e173",
+          "e174",
+          "e175",
+          "e176"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m10-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m10-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m10-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m10_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b65",
+          "b66",
+          "b67"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m11-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m11-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m11-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m11_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e177",
+          "e178",
+          "e179",
+          "e180",
+          "e181",
+          "e182",
+          "e183",
+          "e184",
+          "e185",
+          "e186",
+          "e187",
+          "e188"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m11-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m11-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m11-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m11_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b68",
+          "b69",
+          "b70"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m12-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m12-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m12-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m12_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e189",
+          "e190",
+          "e191",
+          "e192",
+          "e193",
+          "e194",
+          "e195",
+          "e196",
+          "e197",
+          "e198",
+          "e199",
+          "e200"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m12-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m12-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m12-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m12_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b71",
+          "b72",
+          "b73"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m13-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m13-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m13-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m13_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e201",
+          "e202",
+          "e203",
+          "e204",
+          "e205",
+          "e206",
+          "e207",
+          "e208",
+          "e209",
+          "e210",
+          "e211",
+          "e212"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m13-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m13-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m13-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m13_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b74",
+          "b75",
+          "b76"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m14-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m14-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m14-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m14_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e213",
+          "e214",
+          "e215",
+          "e216",
+          "e217",
+          "e218",
+          "e219",
+          "e220",
+          "e221",
+          "e222",
+          "e223",
+          "e224"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m14-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m14-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m14-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m14_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b77",
+          "b78",
+          "b79"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m15-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m15-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m15-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m15_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e225",
+          "e226",
+          "e227",
+          "e228",
+          "e229",
+          "e230",
+          "e231",
+          "e232",
+          "e233",
+          "e234",
+          "e235",
+          "e236"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m15-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m15-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m15-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m15_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b80",
+          "b81",
+          "b82"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m16-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m16-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m16-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m16_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e237",
+          "e238",
+          "e239",
+          "e240",
+          "e241",
+          "e242",
+          "e243",
+          "e244",
+          "e245",
+          "e246",
+          "e247",
+          "e248"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m16-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m16-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m16-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m16_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b83",
+          "b84",
+          "b85"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m17-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m17-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m17-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m17_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e249",
+          "e250",
+          "e251",
+          "e252",
+          "e253",
+          "e254",
+          "e255",
+          "e256",
+          "e257",
+          "e258",
+          "e259",
+          "e260"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m17-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m17-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m17-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m17_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b86",
+          "b87",
+          "b88"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m18-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m18-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m18-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m18_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e261",
+          "e262",
+          "e263",
+          "e264",
+          "e265",
+          "e266",
+          "e267",
+          "e268",
+          "e269",
+          "e270",
+          "e271",
+          "e272"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m18-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m18-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m18-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m18_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b89",
+          "b90",
+          "b91"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m19-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m19-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m19-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m19_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e273",
+          "e274",
+          "e275",
+          "e276",
+          "e277",
+          "e278",
+          "e279",
+          "e280",
+          "e281",
+          "e282",
+          "e283",
+          "e284"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m19-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m19-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m19-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m19_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b92",
+          "b93"
+        ],
+        "columns": 2,
+        "rows": 2
+      }
+    },
+    {
+      "name": "creatures-m20-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m20-enemies.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m20-enemies.png",
+      "references": [
+        "game/assets/environment/expansion/m20_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "enemies",
+        "ids": [
+          "e285",
+          "e286",
+          "e287",
+          "e288",
+          "e289",
+          "e290",
+          "e291",
+          "e292",
+          "e293",
+          "e294",
+          "e295",
+          "e296"
+        ],
+        "columns": 4,
+        "rows": 3
+      }
+    },
+    {
+      "name": "creatures-m20-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/expansion/creatures-m20-bosses.txt",
+      "output": "output/imagegen/incense-debt/expansion/creatures-m20-bosses.png",
+      "references": [
+        "game/assets/environment/expansion/m20_a.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "background": "transparent",
+      "size": "1536x1024",
+      "layout": {
+        "kind": "bosses",
+        "ids": [
+          "b94",
+          "b95",
+          "b96",
+          "b97",
+          "b98",
+          "b99"
+        ],
+        "columns": 3,
+        "rows": 2
+      }
+    }
+  ]
+}

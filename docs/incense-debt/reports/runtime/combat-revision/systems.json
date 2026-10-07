@@ -1,0 +1,1875 @@
+{
+	"boundary_variants": 40,
+	"checks": [
+		{
+			"detail": "",
+			"id": "1100_graphs_early_two_independent_single_boss_rooms_and_one_guest_theme",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "campaign_boss_quota_14_guests_of_36_random_slots_in_every_seed",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "final_six_consecutive_bosses_remain_distinct_after_mixing",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "all_twenty_themes_sampled",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m01_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m02_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m03_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m04_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m05_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m06_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m07_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m08_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m09_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m10_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m11_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m12_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m13_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m14_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m15_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m16_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m17_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m18_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m19_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_0_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_natural_room_exact_accumulated_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_spawn_and_player_are_inside_reviewed_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_four_doors_and_connected_scenery_follow_same_contour",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_actual_physical_gate_crossing_and_return_keep_legal_entry",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_actual_movement_dashes_and_fast_large_actors_cannot_cross_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_sixteen_ray_directions_stop_at_radius_offset_inner_wall",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_player_touching_inner_wall_still_fires_full_width_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_spawn_repair_and_real_enemy_boss_motion_stay_inside",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "m20_1_old_wall_positions_restore_inside_without_losing_build",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "unknown_guest_theme_save_is_rejected",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "old_live_early_pair_migrates_to_separate_rooms_without_resetting_health",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "old_displaced_boss_remaining_health_carries_into_exit_chamber",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "eight_source_bound_fx_sequences_with_48_distinct_generated_keyframes",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "real_stalled_corner_save_escapes_and_clears_without_boosting_player",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "real_narrow_fringe_joins_visible_grid_node_beyond_96_unit_lookahead",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "real_narrow_fringe_save_clears_with_normal_build_and_30_hz_actions",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "real_seven_unit_legal_corridor_connects_through_adaptive_grid",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "real_thin_corridor_reaches_and_walks_through_physical_exit",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"graph_samples": 1100,
+	"movement_ticks": 57600,
+	"passed": true,
+	"scope": "actual fixed-tick player movement and dashes; all-size swept collision, real enemy movement, radius-aware rays, legacy-position restoration, mixed quotas and independent early boss chambers"
+}

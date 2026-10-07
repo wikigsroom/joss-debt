@@ -1,0 +1,488 @@
+{
+	"cases": [
+		{
+			"evidence": [
+				"primary burn",
+				"three-target chain",
+				"next-cycle mark"
+			],
+			"id": "combo01",
+			"name": "火链初成",
+			"passed": true,
+			"relics": [
+				"r01",
+				"r02",
+				"r09"
+			],
+			"route": "fire"
+		},
+		{
+			"evidence": [
+				"three-stack detonation",
+				"burn clear",
+				"extended fire zone",
+				"three-kill refund"
+			],
+			"id": "combo02",
+			"name": "烧尽灯宴",
+			"passed": true,
+			"relics": [
+				"r03",
+				"r06",
+				"r07"
+			],
+			"route": "fire"
+		},
+		{
+			"evidence": [
+				"extended chain distance",
+				"two fire sparks",
+				"next-cycle mark"
+			],
+			"id": "combo03",
+			"name": "火花纸爆",
+			"passed": true,
+			"relics": [
+				"r02",
+				"r05",
+				"r10"
+			],
+			"route": "fire"
+		},
+		{
+			"evidence": [
+				"first-hit burn",
+				"burning death zone",
+				"dash fire path"
+			],
+			"id": "combo04",
+			"name": "走灯火路",
+			"passed": true,
+			"relics": [
+				"r01",
+				"r04",
+				"r50"
+			],
+			"route": "fire"
+		},
+		{
+			"evidence": [
+				"long chain",
+				"far chain radius",
+				"opposite-end transfer"
+			],
+			"id": "combo05",
+			"name": "红绳同债",
+			"passed": true,
+			"relics": [
+				"r09",
+				"r10",
+				"r13"
+			],
+			"route": "thread"
+		},
+		{
+			"evidence": [
+				"chain movement slow",
+				"third-hit neighbor mark"
+			],
+			"id": "combo06",
+			"name": "收紧赤网",
+			"passed": true,
+			"relics": [
+				"r09",
+				"r12",
+				"r14"
+			],
+			"route": "thread"
+		},
+		{
+			"evidence": [
+				"chain-form damage",
+				"minimum falloff 0.90"
+			],
+			"id": "combo07",
+			"name": "群愿远结",
+			"passed": true,
+			"relics": [
+				"r10",
+				"r11",
+				"r15"
+			],
+			"route": "thread"
+		},
+		{
+			"evidence": [
+				"piercing projectile",
+				"pierce-to-chain link",
+				"six-target chain cap"
+			],
+			"id": "combo08",
+			"name": "红墨穿线",
+			"passed": true,
+			"relics": [
+				"r09",
+				"r41",
+				"r52"
+			],
+			"route": "thread"
+		},
+		{
+			"evidence": [
+				"natural-kill ash bullet",
+				"extra ash energy",
+				"lower skill cost"
+			],
+			"id": "combo09",
+			"name": "回魂灰环",
+			"passed": true,
+			"relics": [
+				"r17",
+				"r18",
+				"r19"
+			],
+			"route": "ash"
+		},
+		{
+			"evidence": [
+				"expanded ash pickup radius",
+				"third-ash return bullet",
+				"stacked natural recovery"
+			],
+			"id": "combo10",
+			"name": "逆灰双轮",
+			"passed": true,
+			"relics": [
+				"r17",
+				"r22",
+				"r23"
+			],
+			"route": "ash"
+		},
+		{
+			"evidence": [
+				"first-mark recovery",
+				"lower detonation cost",
+				"elite clear heart recovery"
+			],
+			"id": "combo11",
+			"name": "稳炉留温",
+			"passed": true,
+			"relics": [
+				"r19",
+				"r20",
+				"r21"
+			],
+			"route": "ash"
+		},
+		{
+			"evidence": [
+				"kill ash bullet",
+				"chain endpoint refresh",
+				"expanded pickup radius"
+			],
+			"id": "combo12",
+			"name": "灰线回愿",
+			"passed": true,
+			"relics": [
+				"r18",
+				"r22",
+				"r49"
+			],
+			"route": "ash"
+		},
+		{
+			"evidence": [
+				"parry attack window",
+				"parry energy",
+				"early-dash reflection"
+			],
+			"id": "combo13",
+			"name": "铜印反账",
+			"passed": true,
+			"relics": [
+				"r25",
+				"r28",
+				"r30"
+			],
+			"route": "seal"
+		},
+		{
+			"evidence": [
+				"armor-break fire",
+				"room-clear paper armor",
+				"detonation landing seal"
+			],
+			"id": "combo14",
+			"name": "纸甲护灯",
+			"passed": true,
+			"relics": [
+				"r26",
+				"r31",
+				"r53"
+			],
+			"route": "seal"
+		},
+		{
+			"evidence": [
+				"parry bonus",
+				"early-dash reflection",
+				"parry ash magnet"
+			],
+			"id": "combo15",
+			"name": "铜灰守门",
+			"passed": true,
+			"relics": [
+				"r25",
+				"r30",
+				"r51"
+			],
+			"route": "seal"
+		},
+		{
+			"evidence": [
+				"stillness impact bonus",
+				"room-clear armor",
+				"single-use revival"
+			],
+			"id": "combo16",
+			"name": "留命破阵",
+			"passed": true,
+			"relics": [
+				"r26",
+				"r27",
+				"r29"
+			],
+			"route": "seal"
+		},
+		{
+			"evidence": [
+				"speed bonus",
+				"extended dash",
+				"path ash collection"
+			],
+			"id": "combo17",
+			"name": "风纸掠灰",
+			"passed": true,
+			"relics": [
+				"r33",
+				"r34",
+				"r36"
+			],
+			"route": "wind"
+		},
+		{
+			"evidence": [
+				"extended dash",
+				"returning primary",
+				"dodge side shots"
+			],
+			"id": "combo18",
+			"name": "燕返双攻",
+			"passed": true,
+			"relics": [
+				"r34",
+				"r35",
+				"r37"
+			],
+			"route": "wind"
+		},
+		{
+			"evidence": [
+				"distance-gated skill range",
+				"dash paper trail",
+				"speed bonus"
+			],
+			"id": "combo19",
+			"name": "游愿留痕",
+			"passed": true,
+			"relics": [
+				"r33",
+				"r38",
+				"r39"
+			],
+			"route": "wind"
+		},
+		{
+			"evidence": [
+				"returning primary",
+				"dash fire path",
+				"path ash collection"
+			],
+			"id": "combo20",
+			"name": "风火并行",
+			"passed": true,
+			"relics": [
+				"r35",
+				"r36",
+				"r50"
+			],
+			"route": "wind"
+		},
+		{
+			"evidence": [
+				"extra pierce",
+				"reduced pierce falloff",
+				"aligned detonation bonus"
+			],
+			"id": "combo21",
+			"name": "穿账勾销",
+			"passed": true,
+			"relics": [
+				"r41",
+				"r44",
+				"r45"
+			],
+			"route": "ink"
+		},
+		{
+			"evidence": [
+				"long mark window",
+				"delayed fixed settlement",
+				"one-room skill replay"
+			],
+			"id": "combo22",
+			"name": "迟账重书",
+			"passed": true,
+			"relics": [
+				"r42",
+				"r43",
+				"r47"
+			],
+			"route": "ink"
+		},
+		{
+			"evidence": [
+				"lower detonation cost",
+				"two-contract primary bonus",
+				"first-mark recovery"
+			],
+			"id": "combo23",
+			"name": "黑契回炉",
+			"passed": true,
+			"relics": [
+				"r19",
+				"r20",
+				"r46"
+			],
+			"route": "ink"
+		},
+		{
+			"evidence": [
+				"piercing chain link",
+				"ash endpoint refresh",
+				"piercing primary hits"
+			],
+			"id": "combo24",
+			"name": "红墨余灰",
+			"passed": true,
+			"relics": [
+				"r41",
+				"r49",
+				"r52"
+			],
+			"route": "ink"
+		}
+	],
+	"checks": [
+		"catalog keeps the authored twenty-four synergy recipes",
+		"every synergy has three known route relics and no hidden set bonus",
+		"synergy identifiers remain unique and addressable",
+		"combo01 火链初成 executes its authored relic paths",
+		"combo02 烧尽灯宴 executes its authored relic paths",
+		"combo03 火花纸爆 executes its authored relic paths",
+		"combo04 走灯火路 executes its authored relic paths",
+		"combo05 红绳同债 executes its authored relic paths",
+		"combo06 收紧赤网 executes its authored relic paths",
+		"combo07 群愿远结 executes its authored relic paths",
+		"combo08 红墨穿线 executes its authored relic paths",
+		"combo09 回魂灰环 executes its authored relic paths",
+		"combo10 逆灰双轮 executes its authored relic paths",
+		"combo11 稳炉留温 executes its authored relic paths",
+		"combo12 灰线回愿 executes its authored relic paths",
+		"combo13 铜印反账 executes its authored relic paths",
+		"combo14 纸甲护灯 executes its authored relic paths",
+		"combo15 铜灰守门 executes its authored relic paths",
+		"combo16 留命破阵 executes its authored relic paths",
+		"combo17 风纸掠灰 executes its authored relic paths",
+		"combo18 燕返双攻 executes its authored relic paths",
+		"combo19 游愿留痕 executes its authored relic paths",
+		"combo20 风火并行 executes its authored relic paths",
+		"combo21 穿账勾销 executes its authored relic paths",
+		"combo22 迟账重书 executes its authored relic paths",
+		"combo23 黑契回炉 executes its authored relic paths",
+		"combo24 红墨余灰 executes its authored relic paths",
+		"the seven non-combination relic hooks remain explicitly addressable",
+		"r08 executes its standalone authored relic path",
+		"r16 executes its standalone authored relic path",
+		"r24 executes its standalone authored relic path",
+		"r32 executes its standalone authored relic path",
+		"r40 executes its standalone authored relic path",
+		"r48 executes its standalone authored relic path",
+		"r54 executes its standalone authored relic path"
+	],
+	"count": 35,
+	"failures": [],
+	"passed": true,
+	"scope": "twenty-four authored combinations plus seven standalone relic hooks through real primary, detonation, ash, dash, parry, clear, repayment and delayed replay paths; no hidden set bonus",
+	"standalone": [
+		{
+			"evidence": [
+				"third burn pulse",
+				"eighty-unit secondary burst"
+			],
+			"id": "r08",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"marked chain segment",
+				"unmarked target pulled into skill snapshot"
+			],
+			"id": "r16",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"three detonation kills",
+				"one-room free skill token"
+			],
+			"id": "r24",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"chapter goldbody favor",
+				"one damage absorbed",
+				"post-hit slow flag"
+			],
+			"id": "r32",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"second-shot trigger",
+				"delayed authored weapon replay"
+			],
+			"id": "r40",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"third primary attack",
+				"empty-ledger three-mark payoff"
+			],
+			"id": "r48",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real debt repayment",
+				"skill refund",
+				"repayment relic offer token"
+			],
+			"id": "r54",
+			"passed": true
+		}
+	]
+}

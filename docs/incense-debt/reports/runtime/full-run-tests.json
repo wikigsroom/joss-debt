@@ -1,0 +1,348 @@
+{
+	"failures": [],
+	"limitations": [
+		"Human feel, device input and real-time performance require separate checks",
+		"Optional side bosses are tested separately"
+	],
+	"method": "shared fixed-tick simulation, navigation-aware action bot, initial 18 relic pool, 72000-tick maximum; no health, energy, damage or invulnerability overrides",
+	"passed": true,
+	"runs": [
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"cleared": 24,
+			"combat_seconds": 340.5,
+			"evolution": 0,
+			"health": 9,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s02",
+			"stats": {
+				"ash_energy": 1298.0,
+				"damage_taken": 0,
+				"detonations": 62,
+				"dodges": 4,
+				"elapsed": 340.450000000019,
+				"hits": 1036,
+				"kills": 117,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"parries": 3,
+				"secondary_hits": 350,
+				"shots": 1144
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"cleared": 24,
+			"combat_seconds": 429.6,
+			"evolution": 1,
+			"health": 9,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s03",
+			"stats": {
+				"ash_energy": 1150.0,
+				"damage_taken": 0,
+				"detonations": 53,
+				"dodges": 5,
+				"elapsed": 429.599999999938,
+				"hits": 1311,
+				"kills": 126,
+				"max_chain": 4,
+				"max_proc_events": 11,
+				"secondary_hits": 330,
+				"shots": 1413
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"cleared": 24,
+			"combat_seconds": 439.0,
+			"evolution": 0,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s05",
+			"stats": {
+				"ash_energy": 1038.0,
+				"damage_taken": 0,
+				"detonations": 68,
+				"dodges": 1,
+				"elapsed": 438.983333333263,
+				"hits": 1624,
+				"kills": 121,
+				"max_chain": 4,
+				"max_proc_events": 7,
+				"secondary_hits": 635,
+				"shots": 1726
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"cleared": 24,
+			"combat_seconds": 418.8,
+			"evolution": 1,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s06",
+			"stats": {
+				"ash_energy": 1086.0,
+				"damage_taken": 1,
+				"detonations": 64,
+				"dodges": 1,
+				"elapsed": 418.766666666614,
+				"hits": 1491,
+				"kills": 128,
+				"max_chain": 5,
+				"max_proc_events": 7,
+				"secondary_hits": 877,
+				"shots": 1606
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"cleared": 24,
+			"combat_seconds": 431.5,
+			"evolution": 0,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s08",
+			"stats": {
+				"ash_energy": 1054.0,
+				"damage_taken": 5,
+				"detonations": 49,
+				"dodges": 3,
+				"elapsed": 431.48333333327,
+				"hits": 803,
+				"kills": 122,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 151,
+				"shots": 941
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"cleared": 24,
+			"combat_seconds": 452.5,
+			"evolution": 1,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s09",
+			"stats": {
+				"ash_energy": 1070.0,
+				"damage_taken": 0,
+				"detonations": 56,
+				"dodges": 2,
+				"elapsed": 452.549999999917,
+				"hits": 863,
+				"kills": 124,
+				"max_chain": 3,
+				"max_proc_events": 7,
+				"secondary_hits": 246,
+				"shots": 962
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"cleared": 24,
+			"combat_seconds": 392.6,
+			"evolution": 0,
+			"health": 11,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s11",
+			"stats": {
+				"ash_energy": 1388.0,
+				"damage_taken": 1,
+				"detonations": 51,
+				"dodges": 1,
+				"elapsed": 392.583333333305,
+				"hits": 620,
+				"kills": 123,
+				"max_chain": 3,
+				"max_proc_events": 8,
+				"secondary_hits": 137,
+				"shots": 697
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"cleared": 24,
+			"combat_seconds": 396.2,
+			"evolution": 1,
+			"health": 11,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s12",
+			"stats": {
+				"ash_energy": 1236.0,
+				"damage_taken": 3,
+				"detonations": 42,
+				"dodges": 0,
+				"elapsed": 396.249999999968,
+				"hits": 613,
+				"kills": 127,
+				"max_chain": 4,
+				"max_proc_events": 6,
+				"secondary_hits": 144,
+				"shots": 705
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"cleared": 24,
+			"combat_seconds": 369.7,
+			"evolution": 0,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s14",
+			"stats": {
+				"ash_energy": 1616.0,
+				"damage_taken": 5,
+				"detonations": 71,
+				"dodges": 1,
+				"elapsed": 369.699999999992,
+				"hits": 1192,
+				"kills": 120,
+				"max_chain": 3,
+				"max_proc_events": 9,
+				"secondary_hits": 516,
+				"shots": 1258
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"cleared": 24,
+			"combat_seconds": 366.5,
+			"evolution": 1,
+			"health": 8,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s15",
+			"stats": {
+				"ash_energy": 1389.0,
+				"damage_taken": 3,
+				"detonations": 68,
+				"dodges": 0,
+				"elapsed": 366.549999999995,
+				"hits": 1168,
+				"kills": 120,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 324,
+				"shots": 1220
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"cleared": 24,
+			"combat_seconds": 372.9,
+			"evolution": 0,
+			"health": 9,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s17",
+			"stats": {
+				"ash_energy": 1198.0,
+				"damage_taken": 1,
+				"detonations": 60,
+				"dodges": 2,
+				"elapsed": 372.949999999989,
+				"hits": 992,
+				"kills": 118,
+				"max_chain": 4,
+				"max_proc_events": 2,
+				"secondary_hits": 122,
+				"shots": 974
+			}
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"cleared": 24,
+			"combat_seconds": 374.4,
+			"evolution": 1,
+			"health": 9,
+			"highest_floor": 3,
+			"result": "victory",
+			"skill": "s18",
+			"stats": {
+				"ash_energy": 1062.0,
+				"damage_taken": 0,
+				"detonations": 52,
+				"dodges": 1,
+				"elapsed": 374.383333333322,
+				"hits": 927,
+				"kills": 122,
+				"max_chain": 4,
+				"max_proc_events": 9,
+				"secondary_hits": 270,
+				"shots": 934
+			}
+		}
+	]
+}

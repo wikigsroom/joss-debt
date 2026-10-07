@@ -1,0 +1,21 @@
+The attached images are binding art references for the SAME original Chinese folklore game Incense Debt. Preserve fibrous torn ivory paper, dry coarse woodblock contours, matte aged bronze, muted jade and vermilion cloth, warm small ember accents and the same upper-left light. No lettering, captions, frames, pixel art, glossy 3D, vector clipart, neon, or modern machinery. Output 1536x1024 true transparent PNG; no background or checkerboard. Each complete subject stays inside its assigned cell with generous transparent padding.
+EIGHTEEN isolated illustrated ability emblems, exactly SIX columns by THREE rows. These are tangible paper-and-bronze objects depicting the abilities, consistent with the supplied offering icons, readable when reduced to 64px. No UI plate baked into the artwork. Row-major order:
+1. Ivory folded paper with three warm ash embers bursting outward.
+2. Two ivory paper swallows with amber ash tails.
+3. A small cross of red paper firecrackers.
+4. One old bronze hand bell cutting a short vermilion cord.
+5. A web of three vermilion cords tied by bronze bell knots.
+6. Two bronze hand bells surrounded by two nested warm curved sound rings.
+7. Red paper lantern over a small curled amber fire patch.
+8. An elongated curved candle-flame dragon made of ivory paper and vermilion strips.
+9. Red lantern walking on two folded paper feet above a warm fire trail.
+10. Heavy square worn bronze stamp on an ivory paper seal.
+11. Two bronze gate plates joined by an ivory paper shield.
+12. A broken square bronze stamp splitting a square-hole coin shield.
+13. Vermilion umbrella drawing three ivory ash flakes inward.
+14. A small red paper umbrella with several ivory ash raindrops making a hanging veil.
+15. Folded ivory wind curling behind a vermilion umbrella.
+16. One thick dark calligraphy brush drawing a short red-and-black line through ivory ledger scraps.
+17. Brush and three divergent dry black-and-ivory strokes.
+18. An open ivory ledger with two parallel repeated dark brush marks and a red binding.
+The emblems have no letters or numerals. Keep each motif visually distinct and consistent with the six approved character identities.

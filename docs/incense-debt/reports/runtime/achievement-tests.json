@@ -1,0 +1,16 @@
+{
+	"checks": [
+		"new and legacy profiles receive additive achievement fields",
+		"character achievements unlock from real run stats and victory",
+		"route and global achievements share the same observed run ledger",
+		"achievement unlock messaging is emitted while partial global goals remain locked",
+		"repeated checkpoint observation is idempotent for run and achievement counts",
+		"achievement unlocks and aggregate counters survive a profile journal reload",
+		"character achievement summary is scoped to the selected character",
+		"three save slots expose stable empty summaries without touching the main slot",
+		"selected save slot is persisted in its own checksum journal"
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "per-character achievements, global achievement aggregation, idempotent checkpoint observation and three-slot selection"
+}

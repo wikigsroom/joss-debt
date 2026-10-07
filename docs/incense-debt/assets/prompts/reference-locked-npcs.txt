@@ -1,0 +1,9 @@
+The supplied images are binding art references for the SAME original game Incense Debt. Match their coarse woodblock ink contour, torn fibrous ivory paper, vermilion ribbons, matte aged bronze, muted jade and upper-left light. Do not redesign the art style. No glossy 3D, no pixel art, no clean vector clipart, no science fiction, no lettering or labels. Tangible folklore paper-and-wood objects with readable silhouettes at gameplay scale.
+Output one 1536x1024 PNG with true transparent alpha. Each assigned grid cell contains exactly one complete isolated subject, centered with generous transparent padding and no crossing into another cell. No scene, no frame, no checkerboard, no caption. Consistent near-top-down game orientation with readable fronts and short shadows. Keep proportions coherent across the sheet.
+Exactly THREE columns by TWO rows. Five friendly hub NPCs and one small training prop, matching the supplied roster's approachable faces and costume texture. Row-major order:
+1. The Wish Weaver: a short elderly ivory paper woman, kind black oval eyes, patched red-and-ivory apron, gray paper hair bun, holding a bronze sewing tray and thick red thread.
+2. The Copper Abacus: a small upright old wood-and-bronze abacus with two ivory paper hands, short charcoal feet, a friendly simple face on the top crossbar, red ribbon knot.
+3. The Faceless Accountant: squat ivory paper clerk with a square dark hat, entirely blank ivory face, wide charcoal ledger, bronze coin cord and modest red coat.
+4. The Lantern Peddler: small friendly paper raccoon with a red apron, black eye markings, a little wooden lantern rack on its back, bronze cash string, warm ivory face.
+5. The Name Tablet: a small upright old wooden blank-name tablet on two tiny folded ivory feet, one vermilion seal corner, friendly shape, no writing or face.
+6. A small training stand with one folded ivory paper target and a bronze round base, red ribbon, no numbers or letters.

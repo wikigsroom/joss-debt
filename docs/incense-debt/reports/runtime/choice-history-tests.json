@@ -1,0 +1,14 @@
+{
+	"checks": [
+		"a fresh run records its starting weapon and base skill in chronological growth history",
+		"a normal offering appends its real bonus to the same history ledger",
+		"a weapon replacement records both the selected item and the live equipped state",
+		"a skill evolution records the chosen skill instead of only exposing the current skill",
+		"the complete choice history survives an actual checksum snapshot and restore",
+		"legacy-compatible history records remain readable while new UI fields are additive",
+		"number-row and keypad shortcuts map one-to-four and ignore releases or key repeat"
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "PC number-row choice selection, chronological growth history, current loadout and checksum restore"
+}

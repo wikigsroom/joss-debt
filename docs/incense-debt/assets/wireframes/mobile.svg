@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="720" viewBox="0 0 1560 720">
+<title>香火债移动端布局线框</title>
+<desc>静态交互布局说明，不是可玩游戏或实际运行截图。</desc>
+<g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+<rect x="0" y="0" width="1560" height="720" rx="0" fill="#242725" stroke="none" opacity="1"/>
+<rect x="204.0" y="72" width="1152" height="576" rx="0" fill="#53675C" stroke="#E7D8B6" opacity="1"/>
+<text x="780.0" y="345" font-size="28" fill="#E7D8B6" text-anchor="middle">战场中心保持空白</text>
+<text x="780.0" y="382" font-size="18" fill="#E7D8B6" text-anchor="middle">完整房间 / 统一规则 / 装饰低对比</text>
+<rect x="28" y="15" width="330" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="42" y="46" font-size="17" fill="#E7D8B6" text-anchor="start">心火  ●●●    香火  40/100    纸钱 10</text>
+<rect x="1316" y="15" width="160" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="1330" y="46" font-size="17" fill="#E7D8B6" text-anchor="start">地图   债约 0/2</text>
+<rect x="1486" y="15" width="54" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="1513" y="46" font-size="20" fill="#E7D8B6" text-anchor="middle">Ⅱ</text>
+<text x="780.0" y="703" font-size="18" fill="#E7D8B6" text-anchor="middle">布局线框 · 实机触控尺寸与安全区需运行验收</text>
+<rect x="36" y="83" width="1488" height="578" rx="18" fill="none" stroke="#C39A51" opacity="0.55"/>
+<text x="52" y="107" font-size="16" fill="#E7D8B6" text-anchor="start">运行时安全区边界</text>
+<circle cx="142" cy="548" r="84" fill="#242725" stroke="#E7D8B6" stroke-width="3" opacity="0.75"/>
+<circle cx="142" cy="548" r="34" fill="none" stroke="#E7D8B6" stroke-width="3" opacity="1"/>
+<text x="142" y="555" font-size="19" fill="#E7D8B6" text-anchor="middle">移动</text>
+<circle cx="1416" cy="548" r="84" fill="#242725" stroke="#E7D8B6" stroke-width="3" opacity="0.75"/>
+<circle cx="1416" cy="548" r="34" fill="none" stroke="#E7D8B6" stroke-width="3" opacity="1"/>
+<text x="1416" y="555" font-size="19" fill="#E7D8B6" text-anchor="middle">瞄准</text>
+<text x="1416" y="645" font-size="17" fill="#E7D8B6" text-anchor="middle">推动即射击</text>
+<circle cx="1269" cy="457" r="44" fill="#BC3C2F" stroke="#E7D8B6" stroke-width="3" opacity="1"/>
+<text x="1269" y="463" font-size="20" fill="#E7D8B6" text-anchor="middle">焚债</text>
+<circle cx="1248" cy="564" r="40" fill="#242725" stroke="#E7D8B6" stroke-width="3" opacity="1"/>
+<text x="1248" y="570" font-size="20" fill="#E7D8B6" text-anchor="middle">身法</text>
+<rect x="732.0" y="568" width="96" height="55" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="780.0" y="602" font-size="19" fill="#E7D8B6" text-anchor="middle">交互</text>
+<text x="250" y="626" font-size="16" fill="#E7D8B6" text-anchor="start">摇杆与按钮可拖动 / 镜像</text>
+</g>
+</svg>

@@ -1,0 +1,1776 @@
+{
+  "capture_hz": 5,
+  "character": "c_paper",
+  "frames": [
+    {
+      "effects": 1,
+      "enemies": 3,
+      "file": "frame-000.png",
+      "health": 6,
+      "hits": 0,
+      "room": 0,
+      "saved": true,
+      "shots": 1,
+      "tick": 0,
+      "time": {
+        "__float64": "111111111111913f"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 3,
+      "file": "frame-001.png",
+      "health": 6,
+      "hits": 0,
+      "room": 0,
+      "saved": true,
+      "shots": 1,
+      "tick": 12,
+      "time": {
+        "__float64": "bbbbbbbbbbbbcb3f"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 3,
+      "file": "frame-002.png",
+      "health": 6,
+      "hits": 1,
+      "room": 0,
+      "saved": true,
+      "shots": 2,
+      "tick": 24,
+      "time": {
+        "__float64": "aaaaaaaaaaaada3f"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 3,
+      "file": "frame-003.png",
+      "health": 6,
+      "hits": 1,
+      "room": 0,
+      "saved": true,
+      "shots": 3,
+      "tick": 36,
+      "time": {
+        "__float64": "bebbbbbbbbbbe33f"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-004.png",
+      "health": 6,
+      "hits": 2,
+      "room": 0,
+      "saved": true,
+      "shots": 4,
+      "tick": 48,
+      "time": {
+        "__float64": "2a2222222222ea3f"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-005.png",
+      "health": 6,
+      "hits": 3,
+      "room": 0,
+      "saved": true,
+      "shots": 4,
+      "tick": 60,
+      "time": {
+        "__float64": "4a4444444444f03f"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 3,
+      "file": "frame-006.png",
+      "health": 6,
+      "hits": 4,
+      "room": 0,
+      "saved": true,
+      "shots": 5,
+      "tick": 72,
+      "time": {
+        "__float64": "7a7777777777f33f"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-007.png",
+      "health": 6,
+      "hits": 4,
+      "room": 0,
+      "saved": true,
+      "shots": 6,
+      "tick": 84,
+      "time": {
+        "__float64": "aaaaaaaaaaaaf63f"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-008.png",
+      "health": 6,
+      "hits": 5,
+      "room": 0,
+      "saved": true,
+      "shots": 7,
+      "tick": 96,
+      "time": {
+        "__float64": "daddddddddddf93f"
+      }
+    },
+    {
+      "effects": 8,
+      "enemies": 2,
+      "file": "frame-009.png",
+      "health": 6,
+      "hits": 6,
+      "room": 0,
+      "saved": true,
+      "shots": 7,
+      "tick": 108,
+      "time": {
+        "__float64": "0a1111111111fd3f"
+      }
+    },
+    {
+      "effects": 8,
+      "enemies": 2,
+      "file": "frame-010.png",
+      "health": 6,
+      "hits": 6,
+      "room": 0,
+      "saved": true,
+      "shots": 8,
+      "tick": 120,
+      "time": {
+        "__float64": "1d22222222220040"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 2,
+      "file": "frame-011.png",
+      "health": 6,
+      "hits": 6,
+      "room": 0,
+      "saved": true,
+      "shots": 9,
+      "tick": 132,
+      "time": {
+        "__float64": "b5bbbbbbbbbb0140"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 2,
+      "file": "frame-012.png",
+      "health": 6,
+      "hits": 6,
+      "room": 0,
+      "saved": true,
+      "shots": 10,
+      "tick": 144,
+      "time": {
+        "__float64": "4d55555555550340"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 1,
+      "file": "frame-013.png",
+      "health": 6,
+      "hits": 7,
+      "room": 0,
+      "saved": true,
+      "shots": 10,
+      "tick": 156,
+      "time": {
+        "__float64": "e5eeeeeeeeee0440"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 1,
+      "file": "frame-014.png",
+      "health": 6,
+      "hits": 7,
+      "room": 0,
+      "saved": true,
+      "shots": 11,
+      "tick": 168,
+      "time": {
+        "__float64": "7d88888888880640"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 1,
+      "file": "frame-015.png",
+      "health": 6,
+      "hits": 7,
+      "room": 0,
+      "saved": true,
+      "shots": 12,
+      "tick": 180,
+      "time": {
+        "__float64": "1522222222220840"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 1,
+      "file": "frame-016.png",
+      "health": 6,
+      "hits": 7,
+      "room": 0,
+      "saved": true,
+      "shots": 13,
+      "tick": 192,
+      "time": {
+        "__float64": "adbbbbbbbbbb0940"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 1,
+      "file": "frame-017.png",
+      "health": 6,
+      "hits": 8,
+      "room": 0,
+      "saved": true,
+      "shots": 13,
+      "tick": 204,
+      "time": {
+        "__float64": "4555555555550b40"
+      }
+    },
+    {
+      "effects": 5,
+      "enemies": 1,
+      "file": "frame-018.png",
+      "health": 6,
+      "hits": 9,
+      "room": 0,
+      "saved": true,
+      "shots": 14,
+      "tick": 216,
+      "time": {
+        "__float64": "ddeeeeeeeeee0c40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 1,
+      "file": "frame-019.png",
+      "health": 6,
+      "hits": 9,
+      "room": 0,
+      "saved": true,
+      "shots": 15,
+      "tick": 228,
+      "time": {
+        "__float64": "7588888888880e40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 1,
+      "file": "frame-020.png",
+      "health": 6,
+      "hits": 10,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 240,
+      "time": {
+        "__float64": "0711111111111040"
+      }
+    },
+    {
+      "effects": 10,
+      "enemies": 0,
+      "file": "frame-021.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 252,
+      "time": {
+        "__float64": "d3dddddddddd1040"
+      }
+    },
+    {
+      "effects": 8,
+      "enemies": 0,
+      "file": "frame-022.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 264,
+      "time": {
+        "__float64": "9faaaaaaaaaa1140"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 0,
+      "file": "frame-023.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 276,
+      "time": {
+        "__float64": "6b77777777771240"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 0,
+      "file": "frame-024.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 288,
+      "time": {
+        "__float64": "3744444444441340"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 0,
+      "file": "frame-025.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 300,
+      "time": {
+        "__float64": "0311111111111440"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-026.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 312,
+      "time": {
+        "__float64": "cfdddddddddd1440"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-027.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 324,
+      "time": {
+        "__float64": "9baaaaaaaaaa1540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-028.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 336,
+      "time": {
+        "__float64": "6777777777771640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-029.png",
+      "health": 6,
+      "hits": 11,
+      "room": 0,
+      "saved": true,
+      "shots": 16,
+      "tick": 348,
+      "time": {
+        "__float64": "3344444444441740"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 3,
+      "file": "frame-030.png",
+      "health": 6,
+      "hits": 11,
+      "room": 1,
+      "saved": true,
+      "shots": 17,
+      "tick": 360,
+      "time": {
+        "__float64": "ff10111111111840"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 3,
+      "file": "frame-031.png",
+      "health": 6,
+      "hits": 11,
+      "room": 1,
+      "saved": true,
+      "shots": 18,
+      "tick": 372,
+      "time": {
+        "__float64": "cbdddddddddd1840"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 3,
+      "file": "frame-032.png",
+      "health": 6,
+      "hits": 12,
+      "room": 1,
+      "saved": true,
+      "shots": 18,
+      "tick": 384,
+      "time": {
+        "__float64": "97aaaaaaaaaa1940"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 3,
+      "file": "frame-033.png",
+      "health": 6,
+      "hits": 13,
+      "room": 1,
+      "saved": true,
+      "shots": 18,
+      "tick": 396,
+      "time": {
+        "__float64": "6377777777771a40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-034.png",
+      "health": 6,
+      "hits": 13,
+      "room": 1,
+      "saved": true,
+      "shots": 19,
+      "tick": 408,
+      "time": {
+        "__float64": "2f44444444441b40"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 3,
+      "file": "frame-035.png",
+      "health": 6,
+      "hits": 13,
+      "room": 1,
+      "saved": true,
+      "shots": 20,
+      "tick": 420,
+      "time": {
+        "__float64": "fb10111111111c40"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 3,
+      "file": "frame-036.png",
+      "health": 6,
+      "hits": 14,
+      "room": 1,
+      "saved": true,
+      "shots": 20,
+      "tick": 432,
+      "time": {
+        "__float64": "c7dddddddddd1c40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-037.png",
+      "health": 6,
+      "hits": 15,
+      "room": 1,
+      "saved": true,
+      "shots": 21,
+      "tick": 444,
+      "time": {
+        "__float64": "93aaaaaaaaaa1d40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-038.png",
+      "health": 6,
+      "hits": 15,
+      "room": 1,
+      "saved": true,
+      "shots": 22,
+      "tick": 456,
+      "time": {
+        "__float64": "5f77777777771e40"
+      }
+    },
+    {
+      "effects": 14,
+      "enemies": 1,
+      "file": "frame-039.png",
+      "health": 6,
+      "hits": 16,
+      "room": 1,
+      "saved": true,
+      "shots": 23,
+      "tick": 468,
+      "time": {
+        "__float64": "2b44444444441f40"
+      }
+    },
+    {
+      "effects": 12,
+      "enemies": 1,
+      "file": "frame-040.png",
+      "health": 6,
+      "hits": 16,
+      "room": 1,
+      "saved": true,
+      "shots": 23,
+      "tick": 480,
+      "time": {
+        "__float64": "7c88888888082040"
+      }
+    },
+    {
+      "effects": 13,
+      "enemies": 1,
+      "file": "frame-041.png",
+      "health": 6,
+      "hits": 16,
+      "room": 1,
+      "saved": true,
+      "shots": 24,
+      "tick": 492,
+      "time": {
+        "__float64": "e8eeeeeeee6e2040"
+      }
+    },
+    {
+      "effects": 10,
+      "enemies": 1,
+      "file": "frame-042.png",
+      "health": 6,
+      "hits": 17,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 504,
+      "time": {
+        "__float64": "5455555555d52040"
+      }
+    },
+    {
+      "effects": 11,
+      "enemies": 0,
+      "file": "frame-043.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 516,
+      "time": {
+        "__float64": "3733333333332140"
+      }
+    },
+    {
+      "effects": 8,
+      "enemies": 0,
+      "file": "frame-044.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 528,
+      "time": {
+        "__float64": "a399999999992140"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 0,
+      "file": "frame-045.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 540,
+      "time": {
+        "__float64": "0f00000000002240"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 0,
+      "file": "frame-046.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 552,
+      "time": {
+        "__float64": "7b66666666662240"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-047.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 564,
+      "time": {
+        "__float64": "e7cccccccccc2240"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-048.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 576,
+      "time": {
+        "__float64": "5333333333332340"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-049.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 588,
+      "time": {
+        "__float64": "bf99999999992340"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-050.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 600,
+      "time": {
+        "__float64": "2b00000000002440"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-051.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 612,
+      "time": {
+        "__float64": "9766666666662440"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-052.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 624,
+      "time": {
+        "__float64": "03cdcccccccc2440"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-053.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 636,
+      "time": {
+        "__float64": "6f33333333332540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-054.png",
+      "health": 6,
+      "hits": 18,
+      "room": 1,
+      "saved": true,
+      "shots": 25,
+      "tick": 648,
+      "time": {
+        "__float64": "db99999999992540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-055.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 660,
+      "time": {
+        "__float64": "be77777777f72540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-056.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 672,
+      "time": {
+        "__float64": "2adedddddd5d2640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-057.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 684,
+      "time": {
+        "__float64": "9644444444c42640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-058.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 696,
+      "time": {
+        "__float64": "02abaaaaaa2a2740"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-059.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 708,
+      "time": {
+        "__float64": "6e11111111912740"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-060.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 720,
+      "time": {
+        "__float64": "da77777777f72740"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-061.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 732,
+      "time": {
+        "__float64": "46dedddddd5d2840"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-062.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 744,
+      "time": {
+        "__float64": "b244444444c42840"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-063.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 756,
+      "time": {
+        "__float64": "1eabaaaaaa2a2940"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-064.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 768,
+      "time": {
+        "__float64": "8a11111111912940"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-065.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 780,
+      "time": {
+        "__float64": "f677777777f72940"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-066.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 792,
+      "time": {
+        "__float64": "62dedddddd5d2a40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-067.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 804,
+      "time": {
+        "__float64": "ce44444444c42a40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-068.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 816,
+      "time": {
+        "__float64": "3aabaaaaaa2a2b40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-069.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 828,
+      "time": {
+        "__float64": "a611111111912b40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-070.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 840,
+      "time": {
+        "__float64": "1278777777f72b40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 0,
+      "file": "frame-071.png",
+      "health": 6,
+      "hits": 18,
+      "room": 2,
+      "saved": true,
+      "shots": 25,
+      "tick": 852,
+      "time": {
+        "__float64": "7ededddddd5d2c40"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 4,
+      "file": "frame-072.png",
+      "health": 6,
+      "hits": 18,
+      "room": 3,
+      "saved": true,
+      "shots": 25,
+      "tick": 864,
+      "time": {
+        "__float64": "ea44444444c42c40"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 4,
+      "file": "frame-073.png",
+      "health": 6,
+      "hits": 18,
+      "room": 3,
+      "saved": true,
+      "shots": 26,
+      "tick": 876,
+      "time": {
+        "__float64": "56abaaaaaa2a2d40"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 4,
+      "file": "frame-074.png",
+      "health": 6,
+      "hits": 18,
+      "room": 3,
+      "saved": true,
+      "shots": 26,
+      "tick": 888,
+      "time": {
+        "__float64": "c211111111912d40"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 4,
+      "file": "frame-075.png",
+      "health": 6,
+      "hits": 19,
+      "room": 3,
+      "saved": true,
+      "shots": 27,
+      "tick": 900,
+      "time": {
+        "__float64": "2e78777777f72d40"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 4,
+      "file": "frame-076.png",
+      "health": 6,
+      "hits": 19,
+      "room": 3,
+      "saved": true,
+      "shots": 28,
+      "tick": 912,
+      "time": {
+        "__float64": "9adedddddd5d2e40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 4,
+      "file": "frame-077.png",
+      "health": 6,
+      "hits": 20,
+      "room": 3,
+      "saved": true,
+      "shots": 29,
+      "tick": 924,
+      "time": {
+        "__float64": "0645444444c42e40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 4,
+      "file": "frame-078.png",
+      "health": 6,
+      "hits": 21,
+      "room": 3,
+      "saved": true,
+      "shots": 29,
+      "tick": 936,
+      "time": {
+        "__float64": "72abaaaaaa2a2f40"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 4,
+      "file": "frame-079.png",
+      "health": 6,
+      "hits": 21,
+      "room": 3,
+      "saved": true,
+      "shots": 30,
+      "tick": 948,
+      "time": {
+        "__float64": "de11111111912f40"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 3,
+      "file": "frame-080.png",
+      "health": 6,
+      "hits": 21,
+      "room": 3,
+      "saved": true,
+      "shots": 31,
+      "tick": 960,
+      "time": {
+        "__float64": "4a78777777f72f40"
+      }
+    },
+    {
+      "effects": 5,
+      "enemies": 3,
+      "file": "frame-081.png",
+      "health": 6,
+      "hits": 21,
+      "room": 3,
+      "saved": true,
+      "shots": 32,
+      "tick": 972,
+      "time": {
+        "__float64": "55efeeeeee2e3040"
+      }
+    },
+    {
+      "effects": 5,
+      "enemies": 3,
+      "file": "frame-082.png",
+      "health": 6,
+      "hits": 21,
+      "room": 3,
+      "saved": true,
+      "shots": 32,
+      "tick": 984,
+      "time": {
+        "__float64": "8522222222623040"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-083.png",
+      "health": 6,
+      "hits": 22,
+      "room": 3,
+      "saved": true,
+      "shots": 33,
+      "tick": 996,
+      "time": {
+        "__float64": "b555555555953040"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-084.png",
+      "health": 6,
+      "hits": 23,
+      "room": 3,
+      "saved": true,
+      "shots": 34,
+      "tick": 1008,
+      "time": {
+        "__float64": "e588888888c83040"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-085.png",
+      "health": 6,
+      "hits": 24,
+      "room": 3,
+      "saved": true,
+      "shots": 35,
+      "tick": 1020,
+      "time": {
+        "__float64": "15bcbbbbbbfb3040"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 3,
+      "file": "frame-086.png",
+      "health": 6,
+      "hits": 25,
+      "room": 3,
+      "saved": true,
+      "shots": 35,
+      "tick": 1032,
+      "time": {
+        "__float64": "45efeeeeee2e3140"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 3,
+      "file": "frame-087.png",
+      "health": 6,
+      "hits": 25,
+      "room": 3,
+      "saved": true,
+      "shots": 36,
+      "tick": 1044,
+      "time": {
+        "__float64": "7522222222623140"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 3,
+      "file": "frame-088.png",
+      "health": 6,
+      "hits": 26,
+      "room": 3,
+      "saved": true,
+      "shots": 36,
+      "tick": 1056,
+      "time": {
+        "__float64": "a555555555953140"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 2,
+      "file": "frame-089.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 36,
+      "tick": 1068,
+      "time": {
+        "__float64": "d588888888c83140"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 2,
+      "file": "frame-090.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 36,
+      "tick": 1080,
+      "time": {
+        "__float64": "05bcbbbbbbfb3140"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 2,
+      "file": "frame-091.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 36,
+      "tick": 1092,
+      "time": {
+        "__float64": "35efeeeeee2e3240"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 2,
+      "file": "frame-092.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 37,
+      "tick": 1104,
+      "time": {
+        "__float64": "6522222222623240"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 2,
+      "file": "frame-093.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 38,
+      "tick": 1116,
+      "time": {
+        "__float64": "9555555555953240"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 2,
+      "file": "frame-094.png",
+      "health": 6,
+      "hits": 27,
+      "room": 3,
+      "saved": true,
+      "shots": 38,
+      "tick": 1128,
+      "time": {
+        "__float64": "c588888888c83240"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 2,
+      "file": "frame-095.png",
+      "health": 6,
+      "hits": 28,
+      "room": 3,
+      "saved": true,
+      "shots": 39,
+      "tick": 1140,
+      "time": {
+        "__float64": "f5bbbbbbbbfb3240"
+      }
+    },
+    {
+      "effects": 5,
+      "enemies": 2,
+      "file": "frame-096.png",
+      "health": 6,
+      "hits": 29,
+      "room": 3,
+      "saved": true,
+      "shots": 40,
+      "tick": 1152,
+      "time": {
+        "__float64": "25efeeeeee2e3340"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 2,
+      "file": "frame-097.png",
+      "health": 6,
+      "hits": 30,
+      "room": 3,
+      "saved": true,
+      "shots": 41,
+      "tick": 1164,
+      "time": {
+        "__float64": "5522222222623340"
+      }
+    },
+    {
+      "effects": 5,
+      "enemies": 2,
+      "file": "frame-098.png",
+      "health": 6,
+      "hits": 31,
+      "room": 3,
+      "saved": true,
+      "shots": 41,
+      "tick": 1176,
+      "time": {
+        "__float64": "8555555555953340"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 2,
+      "file": "frame-099.png",
+      "health": 6,
+      "hits": 32,
+      "room": 3,
+      "saved": true,
+      "shots": 42,
+      "tick": 1188,
+      "time": {
+        "__float64": "b588888888c83340"
+      }
+    },
+    {
+      "effects": 6,
+      "enemies": 1,
+      "file": "frame-100.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 43,
+      "tick": 1200,
+      "time": {
+        "__float64": "e5bbbbbbbbfb3340"
+      }
+    },
+    {
+      "effects": 4,
+      "enemies": 1,
+      "file": "frame-101.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 44,
+      "tick": 1212,
+      "time": {
+        "__float64": "15efeeeeee2e3440"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 1,
+      "file": "frame-102.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 44,
+      "tick": 1224,
+      "time": {
+        "__float64": "4522222222623440"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 1,
+      "file": "frame-103.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1236,
+      "time": {
+        "__float64": "7555555555953440"
+      }
+    },
+    {
+      "effects": 3,
+      "enemies": 1,
+      "file": "frame-104.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1248,
+      "time": {
+        "__float64": "a588888888c83440"
+      }
+    },
+    {
+      "effects": 2,
+      "enemies": 1,
+      "file": "frame-105.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1260,
+      "time": {
+        "__float64": "d5bbbbbbbbfb3440"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 1,
+      "file": "frame-106.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1272,
+      "time": {
+        "__float64": "05efeeeeee2e3540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-107.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1284,
+      "time": {
+        "__float64": "3522222222623540"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 1,
+      "file": "frame-108.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1296,
+      "time": {
+        "__float64": "6555555555953540"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 1,
+      "file": "frame-109.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1308,
+      "time": {
+        "__float64": "9588888888c83540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-110.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1320,
+      "time": {
+        "__float64": "c5bbbbbbbbfb3540"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-111.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1332,
+      "time": {
+        "__float64": "f5eeeeeeee2e3640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-112.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1344,
+      "time": {
+        "__float64": "2522222222623640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-113.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1356,
+      "time": {
+        "__float64": "5555555555953640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-114.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1368,
+      "time": {
+        "__float64": "8588888888c83640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-115.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1380,
+      "time": {
+        "__float64": "b5bbbbbbbbfb3640"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-116.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1392,
+      "time": {
+        "__float64": "e5eeeeeeee2e3740"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-117.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1404,
+      "time": {
+        "__float64": "1522222222623740"
+      }
+    },
+    {
+      "effects": 0,
+      "enemies": 1,
+      "file": "frame-118.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 45,
+      "tick": 1416,
+      "time": {
+        "__float64": "4555555555953740"
+      }
+    },
+    {
+      "effects": 1,
+      "enemies": 1,
+      "file": "frame-119.png",
+      "health": 6,
+      "hits": 33,
+      "room": 3,
+      "saved": true,
+      "shots": 46,
+      "tick": 1428,
+      "time": {
+        "__float64": "7588888888c83740"
+      }
+    }
+  ],
+  "held_input_hz": 30,
+  "initial_player": {
+    "aim": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "armor": 0,
+    "attack_bonus": 0,
+    "attack_bonus_until": 0,
+    "buffer_dash": 0,
+    "buffer_skill": 0,
+    "charge": 0,
+    "dash_cd": 0,
+    "dash_dir": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "dash_left": 0,
+    "dash_start": {
+      "__vector2": [
+        640.0,
+        585.0
+      ]
+    },
+    "energy": 40,
+    "facing_direction": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "guard": 0,
+    "guard_count": 0,
+    "hp": 6,
+    "invulnerable": {
+      "__float64": "9a9999999999e93f"
+    },
+    "last_shot_direction": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "max_hp": 6,
+    "move": {
+      "__vector2": [
+        0.0,
+        0.0
+      ]
+    },
+    "moved_distance": 0,
+    "passive_cd": 0,
+    "passive_hits": 0,
+    "pos": {
+      "__vector2": [
+        640.0,
+        628.361083984375
+      ]
+    },
+    "shot_cd": 0,
+    "skill": "s01",
+    "skill_cd": 0,
+    "still": 0,
+    "weapon": "w01"
+  },
+  "method": "Normal initial character stats, real weapon and skill actions from the action bot, actual enemy simulation and physical door movement; native viewport rendered from the delivered embedded scripts/assets; no save-slot access",
+  "physics_hz": 60,
+  "seed": "000000006327",
+  "stats": {
+    "ash_energy": 64,
+    "damage_taken": 0,
+    "detonations": 3,
+    "dodges": 0,
+    "elapsed": {
+      "__float64": "6177777777f73740"
+    },
+    "hits": 33,
+    "kills": 9,
+    "max_chain": 2,
+    "secondary_hits": 0,
+    "shots": 47
+  },
+  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "selected_frame": 468,
+  "gif_sha256": "30430e2833796eb460edfb53cfe44935848f0bba149653f4377c1b6a98a50dc2",
+  "screenshot_sha256": "25ef5031ddb7cfa384ffe462a54825f91a5724a109bce712debeef25d27c44f6"
+}

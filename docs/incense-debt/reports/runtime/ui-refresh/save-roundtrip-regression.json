@@ -1,0 +1,15 @@
+{
+  "observed_in": "native GUI file export/readback during the rounded UI validation",
+  "engine": "Godot 4.7.2",
+  "decimal_token": "1.4266666666666659",
+  "original_timer_le_double_bits": "d0063a6da0d3f63f",
+  "native_decimal_readback_le_double_bits": "d1063a6da0d3f63f",
+  "write_and_checksum_read_succeeded": true,
+  "change": "fractional doubles now use a validated 16-hex-digit IEEE754 tag with an explicit number_encoding marker; old decimal journals and transports remain readable",
+  "regressions": "real checked file, compressed text, fresh native journal and malformed/future encoding rejection",
+  "tests": "docs/incense-debt/reports/runtime/save-transfer-tests.json",
+  "checks": 51,
+  "passed": true,
+  "source": "https://github.com/godotengine/godot/blob/4.7.2-stable/core/io/json.cpp",
+  "scope": "same-runtime finite numeric restoration; no claim about cross-CPU simulation arithmetic"
+}

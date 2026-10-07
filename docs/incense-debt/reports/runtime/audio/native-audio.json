@@ -1,0 +1,312 @@
+{
+  "checks": [
+    "exploration reaches its requested musical arrangement",
+    "exploration produces real native PCM samples",
+    "combat reaches its requested musical arrangement",
+    "combat produces real native PCM samples",
+    "tension reaches its requested musical arrangement",
+    "tension produces real native PCM samples",
+    "menu-pause reaches its requested musical arrangement",
+    "menu-pause produces real native PCM samples",
+    "menu pause retains a live softly mixed transport",
+    "native application suspension stops sample transport",
+    "changing scene during suspension cannot start native samples",
+    "loop-seam produces real native PCM samples",
+    "native synchronized stems continue across the full-length loop seam",
+    "muted produces real native PCM samples",
+    "exploration produces audible samples",
+    "menu pause really applies its attenuation to native samples",
+    "native looping keeps producing samples after the seam",
+    "mute is actually silent in the captured mixer",
+    "exploration audibly matches the authored stems plus room-air texture",
+    "combat audibly matches the authored stems plus room-air texture",
+    "tension audibly matches the authored stems plus room-air texture",
+    "menu-pause audibly matches the authored stems plus room-air texture"
+  ],
+  "failures": [],
+  "mix_rate": 48000.0,
+  "passed": true,
+  "recordings": [
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/exploration.wav",
+      "name": "exploration",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 2.00533333333333,
+      "rms": 0.008592958926341921,
+      "peak": 0.032623291015625,
+      "channels": 2,
+      "frames": 96256,
+      "sha256": "ace3e8a52aab8c8bd3df842fc224b456c2f3edad5ec487b4cb48fd02af496f7a"
+    },
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/combat.wav",
+      "name": "combat",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 2.00533333333333,
+      "rms": 0.00864650369491568,
+      "peak": 0.038543701171875,
+      "channels": 2,
+      "frames": 96256,
+      "sha256": "cb4a7271dcf717750dc96015e4fc15e7aad518db277437bf6a33c42cd2e88011"
+    },
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/tension.wav",
+      "name": "tension",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 2.00533333333333,
+      "rms": 0.008858958507770062,
+      "peak": 0.04266357421875,
+      "channels": 2,
+      "frames": 96256,
+      "sha256": "9ca8e72ec26b57a899da6759ebc614855f11a2cdc76ab0fc01ed8c56c6387605"
+    },
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/menu-pause.wav",
+      "name": "menu-pause",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 2.00533333333333,
+      "rms": 0.002742022486099831,
+      "peak": 0.01043701171875,
+      "channels": 2,
+      "frames": 96256,
+      "sha256": "00ba14938f74ca0ebedfa8edce7e7238c68f9477d92457fb3cb5990ac21af4a9"
+    },
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/loop-seam.wav",
+      "name": "loop-seam",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 1.19466666666667,
+      "rms": 0.012371670062585698,
+      "peak": 0.051483154296875,
+      "channels": 2,
+      "frames": 57344,
+      "sha256": "46746920ec5065b42ebd577b7b3bae9e1eedfeb9e6fd1bce610ec812391f7a5b"
+    },
+    {
+      "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\runtime\\audio/muted.wav",
+      "name": "muted",
+      "sample_rate": 48000,
+      "saved": true,
+      "seconds": 0.992,
+      "rms": 0.0,
+      "peak": 0.0,
+      "channels": 2,
+      "frames": 47616,
+      "sha256": "ce2d5a1158d2bfd6e9dc1fb1fc4706dcb972d0e72ef49cb693a91488ffb5f10d"
+    }
+  ],
+  "scope": "native Windows audio mixer with authored stems plus filtered CC0 room-air texture; comparison clips seek the same source interval; no microphone, physical phone or human listening claim",
+  "trace": [
+    {
+      "audio": {
+        "bar": 11,
+        "beat": 47.8803699880557,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.0,
+          0.0,
+          0.22
+        ],
+        "paused": false,
+        "position": 32.6586685180664,
+        "requested_tier": 0,
+        "score_transitions": 2,
+        "suspended": false,
+        "tier": 0,
+        "volume_db": -8.77797222137451
+      },
+      "name": "exploration"
+    },
+    {
+      "audio": {
+        "bar": 43,
+        "beat": 175.882250099167,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.58,
+          0.0,
+          0.22
+        ],
+        "paused": false,
+        "position": 32.6586685180664,
+        "requested_tier": 1,
+        "score_transitions": 2,
+        "suspended": false,
+        "tier": 1,
+        "volume_db": -8.77797222137451
+      },
+      "name": "combat"
+    },
+    {
+      "audio": {
+        "bar": 75,
+        "beat": 303.899195382381,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.58,
+          0.45,
+          0.22
+        ],
+        "paused": false,
+        "position": 32.6693344116211,
+        "requested_tier": 2,
+        "score_transitions": 2,
+        "suspended": false,
+        "tier": 2,
+        "volume_db": -8.77797222137451
+      },
+      "name": "tension"
+    },
+    {
+      "audio": {
+        "bar": 107,
+        "beat": 431.873165254722,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.0,
+          0.0,
+          0.22
+        ],
+        "paused": true,
+        "position": 32.6586685180664,
+        "requested_tier": 0,
+        "score_transitions": 2,
+        "suspended": false,
+        "tier": 0,
+        "volume_db": -18.6749725341797
+      },
+      "name": "menu-pause"
+    },
+    {
+      "audio": {
+        "bar": 32,
+        "beat": 129.377822966764,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.0,
+          0.0,
+          0.22
+        ],
+        "paused": false,
+        "position": 0.946645855903625,
+        "requested_tier": 0,
+        "score_transitions": 4,
+        "suspended": false,
+        "tier": 0,
+        "volume_db": -8.77797222137451
+      },
+      "name": "loop-seam"
+    },
+    {
+      "audio": {
+        "bar": 32,
+        "beat": 131.144046549828,
+        "context": "region_1",
+        "gap": false,
+        "layer_gains": [
+          1.0,
+          0.0,
+          0.0,
+          0.22
+        ],
+        "paused": false,
+        "position": 2.15197920799255,
+        "requested_tier": 0,
+        "score_transitions": 4,
+        "suspended": false,
+        "tier": 0,
+        "volume_db": -80.0
+      },
+      "name": "muted"
+    }
+  ],
+  "stem_measurements": {
+    "exploration": {
+      "source_start_seconds": 30.638625,
+      "weights": [
+        0.3635222161840398,
+        4.4298205905374255e-05,
+        8.105884116710836e-05,
+        0.07990142199896261
+      ],
+      "relative_weights": [
+        1.0,
+        0.00012185831823534954,
+        0.00022298180842425,
+        0.21979790626747017
+      ],
+      "residual_rms_fraction": 0.0015303196026055963,
+      "reference_condition": 4.573592907197555,
+      "method": "sample-aligned least-squares fit of three authored score stems plus filtered room-air texture to real native PCM"
+    },
+    "combat": {
+      "source_start_seconds": 30.638625,
+      "weights": [
+        0.3635250943164162,
+        0.2109415817170871,
+        6.233409277188462e-05,
+        0.07990130045342256
+      ],
+      "relative_weights": [
+        1.0,
+        0.5802669059580279,
+        0.00017147122371042792,
+        0.21979583171189715
+      ],
+      "residual_rms_fraction": 0.0015291265342076226,
+      "reference_condition": 4.573592907197555,
+      "method": "sample-aligned least-squares fit of three authored score stems plus filtered room-air texture to real native PCM"
+    },
+    "tension": {
+      "source_start_seconds": 30.649291666666667,
+      "weights": [
+        0.36354020781479,
+        0.21086103296803174,
+        0.1635876601074169,
+        0.07991955372395437
+      ],
+      "relative_weights": [
+        1.0,
+        0.5800212148072971,
+        0.44998505417249096,
+        0.21983690388566418
+      ],
+      "residual_rms_fraction": 0.0014966941351349798,
+      "reference_condition": 4.567823392371176,
+      "method": "sample-aligned least-squares fit of three authored score stems plus filtered room-air texture to real native PCM"
+    },
+    "menu-pause": {
+      "source_start_seconds": 30.638625,
+      "weights": [
+        0.11600285563673542,
+        2.2063159758719392e-05,
+        6.363918503959551e-05,
+        0.02544688793812897
+      ],
+      "relative_weights": [
+        1.0,
+        0.00019019497095666755,
+        0.0005486001589381775,
+        0.21936432339059186
+      ],
+      "residual_rms_fraction": 0.004783973084173143,
+      "reference_condition": 4.573592907197555,
+      "method": "sample-aligned least-squares fit of three authored score stems plus filtered room-air texture to real native PCM"
+    }
+  }
+}

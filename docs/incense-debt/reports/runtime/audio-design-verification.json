@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "sfx_families": 29,
+  "sfx_variants": 87,
+  "sfx_family_ids": [
+    "armor",
+    "bell",
+    "burst",
+    "chain",
+    "clear",
+    "contract",
+    "dash",
+    "death",
+    "deflect",
+    "hit",
+    "hit_armor",
+    "hit_chain",
+    "hit_crit",
+    "hit_heavy",
+    "hit_melee",
+    "hurt",
+    "hurt_debt",
+    "hurt_heavy",
+    "mark",
+    "menu",
+    "pickup",
+    "repay",
+    "shot",
+    "shot_controlled",
+    "shot_heavy",
+    "shot_melee",
+    "shot_ray",
+    "skill",
+    "warning"
+  ],
+  "music_themes": 9,
+  "music_stems": 25,
+  "texture_stems": 4,
+  "source_license": "CC0",
+  "source_count": 4,
+  "runtime_event_matrix": {
+    "attack": [
+      "shot",
+      "ray",
+      "slash"
+    ],
+    "impact": [
+      "hit",
+      "burst",
+      "chain_formed"
+    ],
+    "hurt": [
+      "player_hurt",
+      "armor_break"
+    ],
+    "adaptive_response": [
+      "skill",
+      "chain_formed",
+      "burst",
+      "boss_phase",
+      "wave_incoming"
+    ]
+  },
+  "checks": [
+    "48kHz mono 16-bit PCM",
+    "three deterministic variants per combat/UI family",
+    "variant hashes and durations remain distinct",
+    "mode-specific attack/impact/hurt families",
+    "runtime attack/impact/hurt event contract",
+    "chain-size adaptive music response",
+    "nine 32-bar score contexts",
+    "four synchronized foreground stems plus a CC0 texture bed in each combat context",
+    "four CC0 texture stems hash-linked to local references"
+  ],
+  "failures": [],
+  "virtualization": "none"
+}

@@ -1,0 +1,2554 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"id": "complete_expanded_and_theme_bound_content_counts",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "twelve_digit_seed_validation",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "automatic_seed_preserves_leading_zeroes",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "same_seed_initial_world_and_spawns",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "upper_12_digit_values_do_not_collapse",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_timing_stream_cannot_change_loot",
+			"passed": true
+		},
+		{
+			"detail": "1100",
+			"id": "all_1100_floor_graphs_connected_and_physical",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "fixed_sixth_floor_story_boss",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "final_30plus_rooms_six_consecutive_bosses_and_fixed_final",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "early_two_separate_single_boss_rooms_and_later_intensity_doubles",
+			"passed": true
+		},
+		{
+			"detail": "20",
+			"id": "all_twenty_biomes_are_reachable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "hundred_obstacle_layouts_keep_all_walkable_cells_and_doors_connected",
+			"passed": true
+		},
+		{
+			"detail": "100",
+			"id": "connected_obstacle_clusters_and_seed_variation",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "new_campaign_snapshot_restores",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "derived_streams_resume_same_combat_and_dynamic_obstacles",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "secondary_ash_projectile_resumes_from_checkpoint",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "early_v2_secondary_ash_save_recovers_default_without_losing_run",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "actual_projectile_ignites_urn",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "urn_explosion_damages_both_sides_and_chains",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "chain_explosion_removes_collision",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "contact_hazard_health_and_saved_provenance",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "cleared_room_hazards_still_damage_player",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "hazards_and_explosions_survive_save_validation",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "ray_visual_endpoint_and_damage_stop_at_same_obstacle",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "beam_width_grazing_obstacle_clips_actual_ray",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "campaign_map_directions_match_physical_doors",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b06_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b07_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b08_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b09_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b10_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b11_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b12_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b13_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b14_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b15_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b16_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b17_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b18_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b19_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b20_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b21_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b22_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b23_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b24_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b25_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b26_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b27_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b28_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b29_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b30_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b31_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b32_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b33_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b34_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b35_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b36_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b37_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b38_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b39_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b40_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b41_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b42_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b43_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b44_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b45_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b46_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b47_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b48_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b49_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b50_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b51_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b52_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b53_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b54_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b55_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b56_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b57_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b58_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b59_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b60_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b61_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b62_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b63_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b64_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b65_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b66_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b67_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b68_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b69_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b70_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b71_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b72_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b73_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b74_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b75_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b76_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b77_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b78_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b79_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b80_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b81_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b82_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b83_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b84_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b85_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b86_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b87_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b88_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b89_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b90_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b91_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b92_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b93_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b94_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b95_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b96_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b97_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b98_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "boss_b99_three_phases_and_motion",
+			"passed": true
+		},
+		{
+			"detail": "83",
+			"id": "at_least_thirty_two_distinct_boss_behavior_combinations",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m01_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m01_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m01_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m01_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m02_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m02_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m02_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m02_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m03_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m03_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m03_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m03_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m04_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m04_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m04_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m04_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m05_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m05_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m05_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m05_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m06_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m06_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m06_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m06_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m07_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m07_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m07_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m07_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m08_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m08_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m08_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m08_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m09_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m09_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m09_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m09_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m10_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m10_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m10_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m10_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m11_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m11_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m11_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m11_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m12_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m12_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m12_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m12_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m13_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m13_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m13_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m13_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m14_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m14_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m14_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m14_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m15_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m15_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m15_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m15_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m16_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m16_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m16_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m16_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m17_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m17_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m17_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m17_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m18_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m18_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m18_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m18_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m19_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m19_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m19_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m19_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m20_twelve_mobs_and_exclusive_bosses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m20_distinct_boss_moves",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m20_actual_elite_and_adds_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "theme_m20_actual_summons_mixed_quota",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e25_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e26_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e27_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e28_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e29_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e30_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e31_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e32_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e33_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e34_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e35_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e36_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e37_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e38_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e39_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e40_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e41_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e42_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e43_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e44_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e45_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e46_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e47_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e48_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e49_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e50_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e51_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e52_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e53_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e54_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e55_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e56_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e57_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e58_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e59_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e60_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e61_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e62_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e63_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e64_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e65_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e66_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e67_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e68_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e69_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e70_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e71_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e72_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e73_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e74_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e75_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e76_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e77_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e78_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e79_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e80_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e81_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e82_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e83_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e84_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e85_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e86_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e87_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e88_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e89_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e90_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e91_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e92_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e93_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e94_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e95_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e96_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e97_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e98_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e99_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e100_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e101_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e102_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e103_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e104_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e105_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e106_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e107_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e108_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e109_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e110_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e111_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e112_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e113_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e114_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e115_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e116_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e117_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e118_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e119_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e120_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e121_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e122_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e123_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e124_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e125_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e126_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e127_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e128_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e129_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e130_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e131_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e132_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e133_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e134_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e135_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e136_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e137_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e138_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e139_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e140_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e141_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e142_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e143_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e144_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e145_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e146_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e147_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e148_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e149_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e150_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e151_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e152_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e153_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e154_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e155_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e156_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e157_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e158_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e159_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e160_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e161_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e162_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e163_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e164_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e165_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e166_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e167_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e168_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e169_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e170_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e171_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e172_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e173_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e174_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e175_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e176_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e177_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e178_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e179_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e180_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e181_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e182_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e183_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e184_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e185_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e186_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e187_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e188_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e189_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e190_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e191_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e192_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e193_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e194_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e195_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e196_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e197_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e198_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e199_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e200_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e201_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e202_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e203_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e204_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e205_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e206_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e207_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e208_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e209_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e210_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e211_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e212_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e213_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e214_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e215_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e216_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e217_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e218_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e219_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e220_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e221_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e222_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e223_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e224_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e225_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e226_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e227_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e228_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e229_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e230_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e231_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e232_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e233_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e234_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e235_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e236_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e237_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e238_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e239_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e240_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e241_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e242_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e243_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e244_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e245_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e246_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e247_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e248_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e249_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e250_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e251_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e252_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e253_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e254_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e255_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e256_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e257_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e258_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e259_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e260_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e261_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e262_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e263_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e264_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e265_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e266_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e267_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e268_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e269_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e270_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e271_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e272_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e273_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e274_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e275_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e276_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e277_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e278_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e279_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e280_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e281_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e282_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e283_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e284_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e285_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e286_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e287_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e288_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e289_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e290_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e291_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e292_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e293_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e294_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e295_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "enemy_e296_actual_attack",
+			"passed": true
+		},
+		{
+			"detail": "128.0",
+			"id": "weapon_w17_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w17_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "108.0",
+			"id": "weapon_w18_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w18_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "66.0",
+			"id": "weapon_w19_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w19_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "110.5",
+			"id": "weapon_w20_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w20_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "80.0",
+			"id": "weapon_w21_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w21_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "36.0",
+			"id": "weapon_w22_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w22_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "70.0",
+			"id": "weapon_w23_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w23_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "84.0",
+			"id": "weapon_w24_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w24_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "136.5",
+			"id": "weapon_w25_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w25_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "68.85",
+			"id": "weapon_w26_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w26_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "187.6",
+			"id": "weapon_w27_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w27_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "144.0",
+			"id": "weapon_w28_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w28_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "100.0",
+			"id": "weapon_w29_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w29_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "108.0",
+			"id": "weapon_w30_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w30_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "112.0",
+			"id": "weapon_w31_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w31_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "25.3333333333334",
+			"id": "weapon_w32_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "weapon_w32_saveable_active_effects",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "floor_change_requires_transition",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "transition_can_save_and_restore",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "transition_then_mandatory_skill_evolution",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "evolution_enters_new_campaign_room",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"geometry_samples": 100,
+	"graph_samples": 1100,
+	"passed": true,
+	"scope": "real simulation attacks, collisions, state validation and seed-derived graph coverage; native visual and full-run evidence recorded separately"
+}

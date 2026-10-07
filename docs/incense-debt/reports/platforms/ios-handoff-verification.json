@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "platform": "ios",
+  "source_zip": "build/ios-handoff/IncenseDebt-shared-source.zip",
+  "source_sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+  "template": ".local-tools/export-templates-4.7.2/ios.zip",
+  "template_sha256": "fd3280d10dc75356dded006f6f8813f40a5aebd32d128592b781256d8ffbdff4",
+  "required_members": [
+    "game/project.godot",
+    "game/data/catalog.json",
+    "game/data/rules.json",
+    "game/data/runtime_assets.json",
+    "game/data/music_scores.json",
+    "game/scripts/main.gd",
+    "game/scripts/combat/world.gd",
+    "game/scripts/ui/input_adapter.gd",
+    "game/scripts/ui/orientation_guard.gd",
+    "tools/runtime/export_ios_on_mac.py"
+  ],
+  "member_count": 7705,
+  "forbidden_tokens_checked": [
+    ".codex",
+    "api_key",
+    "keystore",
+    "production-prompts",
+    "sub2_image_gen"
+  ],
+  "failures": [],
+  "scope": "Windows-side handoff integrity only; no Xcode, signing, IPA or physical-device claim",
+  "virtualization": "none"
+}

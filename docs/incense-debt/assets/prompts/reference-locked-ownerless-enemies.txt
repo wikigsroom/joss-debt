@@ -1,0 +1,11 @@
+The supplied images are binding art references for the SAME original game Incense Debt. Match their coarse woodblock ink contour, torn fibrous ivory paper, vermilion ribbons, matte aged bronze, muted jade and upper-left light. Do not redesign the art style. No glossy 3D, no pixel art, no clean vector clipart, no science fiction, no lettering or labels. Tangible folklore paper-and-wood objects with readable silhouettes at gameplay scale.
+Output one 1536x1024 PNG with true transparent alpha. Each assigned grid cell contains exactly one complete isolated subject, centered with generous transparent padding and no crossing into another cell. No scene, no frame, no checkerboard, no caption. Consistent near-top-down game orientation with readable fronts and short shadows. Keep proportions coherent across the sheet.
+Exactly FOUR columns by TWO rows, eight hostile enemy base poses, one per cell. Same proportions and perspective as the supplied first-region enemies. Row-major order:
+1. Nameless paper guard: broad charcoal-and-ivory paper armor, blank broken mask, tall torn paper blade and a small red stamp knot.
+2. Ink page worm: crawling curled ledger pages making a segmented low worm, dark ink maw, ivory torn corners and sparse red stitching.
+3. Empty face lamp: round pale ivory paper lantern with a blank hollow black face cavity, charcoal cap, vermilion tassels, no friendly oval eyes.
+4. Seal pillar: tall carved charcoal wooden stamp column with layered ivory ward strips, one glowing muted jade seal-shaped core, jagged folded paper arms, no readable characters.
+5. Broken string puppet: crooked hanging paper limbs, dark hollow mask, broken red suspension cords and torn ivory cape, distinct asymmetrical silhouette.
+6. Interest official: thin dark paper magistrate with a steep tall black hat, hollow face, two small bronze warning bells and ripped red ledger ribbons.
+7. Rolled ledger beast: heavy four-legged beast made of tightly rolled ivory ledger books and charcoal page armor, a wide dark ink mouth, bronze bindings and a short red tail.
+8. Ash wish shadow: a small ominous soot-black paper apparition with a burnt ivory face shard, red string core and a pointed ink brush arm; irregular torn outline, no translucent background smoke.

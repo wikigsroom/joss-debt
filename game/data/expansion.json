@@ -1,0 +1,962 @@
+{
+  "version": 1,
+  "campaign_floors": 11,
+  "mid_boss": "b36",
+  "final_boss": "b37",
+  "boss_pool": [
+    "b01",
+    "b02",
+    "b03",
+    "b04",
+    "b05",
+    "b06",
+    "b07",
+    "b08",
+    "b09",
+    "b10",
+    "b11",
+    "b12",
+    "b13",
+    "b14",
+    "b15",
+    "b16",
+    "b17",
+    "b18",
+    "b19",
+    "b20",
+    "b21",
+    "b22",
+    "b23",
+    "b24",
+    "b25",
+    "b26",
+    "b27",
+    "b28",
+    "b29",
+    "b30",
+    "b31",
+    "b32",
+    "b33",
+    "b34",
+    "b35"
+  ],
+  "biomes": [
+    {
+      "id": "m01",
+      "name": "灯市后巷",
+      "environment": "MIDNIGHT LANTERN MARKET: glowing vermilion and saturated honey amber against dark aubergine shadows",
+      "ambient": "ember",
+      "palette": "lantern_amber",
+      "light_color": "#ffc05b",
+      "ambient_color": "#ffcf75",
+      "floor_material": "reddish cherry-wood planks with pale worn seams",
+      "architecture": "crowded wooden shop fronts, scalloped red awnings, tightly clustered round lanterns; narrow urban silhouettes",
+      "variants": [
+        "lantern-maker lane: staggered timber stalls and round paper lamps, long plank floor",
+        "festival delivery court: overhead zigzag lamp garlands and rolled awnings, herringbone timber floor"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m01_a.png",
+        "res://assets/environment/expansion/m01_b.png"
+      ],
+      "enemy_ids": [
+        "e57",
+        "e58",
+        "e59",
+        "e60",
+        "e61",
+        "e62",
+        "e63",
+        "e64",
+        "e65",
+        "e66",
+        "e67",
+        "e68"
+      ],
+      "boss_ids": [
+        "b38",
+        "b39",
+        "b40"
+      ],
+      "random_boss_ids": [
+        "b38",
+        "b39",
+        "b40"
+      ]
+    },
+    {
+      "id": "m02",
+      "name": "纸渡河埠",
+      "environment": "BLUE RIVER FERRY: deep indigo water, sea-teal timber and bright cyan reflections; strong cold blue identity",
+      "ambient": "water",
+      "palette": "river_indigo",
+      "light_color": "#73e7f4",
+      "ambient_color": "#72cde5",
+      "floor_material": "weathered blue-green wooden dock planks, water visible around every edge",
+      "architecture": "wooden piers floating on an indigo river, ferry slips, paper boats and mooring posts; no stone courtyard walls",
+      "variants": [
+        "outer ferry dock: parallel pier planks and folded ferry boats at the water rim",
+        "tide terminal: cross-braced pontoon deck and curved jade water channels, dock-rope perimeter"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m02_a.png",
+        "res://assets/environment/expansion/m02_b.png"
+      ],
+      "enemy_ids": [
+        "e69",
+        "e70",
+        "e71",
+        "e72",
+        "e73",
+        "e74",
+        "e75",
+        "e76",
+        "e77",
+        "e78",
+        "e79",
+        "e80"
+      ],
+      "boss_ids": [
+        "b41",
+        "b42",
+        "b43"
+      ],
+      "random_boss_ids": [
+        "b41",
+        "b42",
+        "b43"
+      ]
+    },
+    {
+      "id": "m03",
+      "name": "铜钱旧库",
+      "environment": "GOLDEN COIN TREASURY: ochre gold, golden brass and dark chocolate; keep golden-yellow floor dominant",
+      "ambient": "coin",
+      "palette": "treasury_gold",
+      "light_color": "#ffd66f",
+      "ambient_color": "#eac467",
+      "floor_material": "matte golden coin-mosaic tiles with square cash motifs",
+      "architecture": "round bronze vault doors, stacked coin cylinders and low bullion shelves; circular treasury geometry",
+      "variants": [
+        "cash vault: square-hole coin mosaic, thick round brass arches",
+        "mint workshop: burnished brass diamond floor, coin-press wheels and rounded racks at the perimeter"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m03_a.png",
+        "res://assets/environment/expansion/m03_b.png"
+      ],
+      "enemy_ids": [
+        "e81",
+        "e82",
+        "e83",
+        "e84",
+        "e85",
+        "e86",
+        "e87",
+        "e88",
+        "e89",
+        "e90",
+        "e91",
+        "e92"
+      ],
+      "boss_ids": [
+        "b44",
+        "b45",
+        "b46"
+      ],
+      "random_boss_ids": [
+        "b44",
+        "b45",
+        "b46"
+      ]
+    },
+    {
+      "id": "m04",
+      "name": "苔庭香径",
+      "environment": "LIVING SPRING GARDEN: bright fern green, moss lime and warm soft sunlight; luminous organic green floor",
+      "ambient": "leaf",
+      "palette": "garden_lime",
+      "light_color": "#d9ef86",
+      "ambient_color": "#a7d46b",
+      "floor_material": "living moss carpet, fern-leaf imprints and irregular ivory stepping slabs",
+      "architecture": "rounded hedge arches, fern planters, spreading tree roots and low woven garden gates; open-air garden without temple masonry",
+      "variants": [
+        "fern sanctuary: bright moss clearing with petal stepping stones and rounded hedge borders",
+        "root courtyard: lime-green leafy floor, a curved path and flowering root arches at the rim"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m04_a.png",
+        "res://assets/environment/expansion/m04_b.png"
+      ],
+      "enemy_ids": [
+        "e93",
+        "e94",
+        "e95",
+        "e96",
+        "e97",
+        "e98",
+        "e99",
+        "e100",
+        "e101",
+        "e102",
+        "e103",
+        "e104"
+      ],
+      "boss_ids": [
+        "b47",
+        "b48",
+        "b49"
+      ],
+      "random_boss_ids": [
+        "b47",
+        "b48",
+        "b49"
+      ]
+    },
+    {
+      "id": "m05",
+      "name": "墨雨书院",
+      "environment": "INK RAIN ACADEMY: desaturated storm blue, slate navy and chalk white; blue-black scholarly atmosphere",
+      "ambient": "rain",
+      "palette": "academy_slate",
+      "light_color": "#a3bddd",
+      "ambient_color": "#99b6d5",
+      "floor_material": "blue-black lacquer boards with pale paper scroll inlays and loose brush-stroke patterns",
+      "architecture": "tall ink-stained bookcases, folded blue roof eaves, hanging blank scrolls and ink gutters; no lantern market palette",
+      "variants": [
+        "rain reading court: blue slate scroll floor with shelving bays and dripping eaves",
+        "calligraphy study: pale blue-gray parchment grid floor, inkstone trays and tall brush racks at the rim"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m05_a.png",
+        "res://assets/environment/expansion/m05_b.png"
+      ],
+      "enemy_ids": [
+        "e105",
+        "e106",
+        "e107",
+        "e108",
+        "e109",
+        "e110",
+        "e111",
+        "e112",
+        "e113",
+        "e114",
+        "e115",
+        "e116"
+      ],
+      "boss_ids": [
+        "b50",
+        "b51",
+        "b52"
+      ],
+      "random_boss_ids": [
+        "b50",
+        "b51",
+        "b52"
+      ]
+    },
+    {
+      "id": "m06",
+      "name": "赤绫戏楼",
+      "environment": "PLUM OPERA THEATRE: saturated magenta, mulberry purple, rose silk and charcoal stage wood",
+      "ambient": "silk",
+      "palette": "theatre_plum",
+      "light_color": "#ef8bdb",
+      "ambient_color": "#e5a0db",
+      "floor_material": "polished dark plum stage boards with a dusty rose circular stage medallion",
+      "architecture": "layered magenta theatrical curtains, scalloped silk proscenium, carved wooden mask racks and stage wings",
+      "variants": [
+        "front stage: purple rose radial stage floor and magenta draped side wings",
+        "backstage rehearsal: aubergine diagonal stage boards, rose canopy and tall folding scenery panels"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m06_a.png",
+        "res://assets/environment/expansion/m06_b.png"
+      ],
+      "enemy_ids": [
+        "e117",
+        "e118",
+        "e119",
+        "e120",
+        "e121",
+        "e122",
+        "e123",
+        "e124",
+        "e125",
+        "e126",
+        "e127",
+        "e128"
+      ],
+      "boss_ids": [
+        "b53",
+        "b54",
+        "b55"
+      ],
+      "random_boss_ids": [
+        "b53",
+        "b54",
+        "b55"
+      ]
+    },
+    {
+      "id": "m07",
+      "name": "烛骨礼堂",
+      "environment": "PALE WAX CHAPEL: bone ivory, cream, parchment beige and restrained amber; bright pale floor dominates",
+      "ambient": "wax",
+      "palette": "chapel_cream",
+      "light_color": "#ffe1a5",
+      "ambient_color": "#e7cc9e",
+      "floor_material": "smooth cream wax tiles with flowing drip-shaped seams",
+      "architecture": "melted ivory wax columns, soft rounded candle arches, low candle trays; no red cloth and no gray masonry",
+      "variants": [
+        "wax nave: pale cream long tiles, wax stalactite arches and many small amber candles",
+        "candle reliquary: ivory concentric wax floor with irregular drip-edged alcoves and short wax pillars"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m07_a.png",
+        "res://assets/environment/expansion/m07_b.png"
+      ],
+      "enemy_ids": [
+        "e129",
+        "e130",
+        "e131",
+        "e132",
+        "e133",
+        "e134",
+        "e135",
+        "e136",
+        "e137",
+        "e138",
+        "e139",
+        "e140"
+      ],
+      "boss_ids": [
+        "b56",
+        "b57",
+        "b58"
+      ],
+      "random_boss_ids": [
+        "b56",
+        "b57",
+        "b58"
+      ]
+    },
+    {
+      "id": "m08",
+      "name": "雷鼓山门",
+      "environment": "VIOLET THUNDER GATE: electric cobalt, violet rock and flashes of icy lilac; unmistakable purple-blue storm arena",
+      "ambient": "storm",
+      "palette": "thunder_violet",
+      "light_color": "#c3a7ff",
+      "ambient_color": "#9fbaff",
+      "floor_material": "cracked dark violet mountain slabs with thin luminous cobalt thunder veins",
+      "architecture": "jagged mountain gate silhouette, monumental violet ceremonial drums, zigzag thunder rods, storm-cloud rim; no warm red shrine",
+      "variants": [
+        "storm pass: jagged violet basalt floor and diagonal cobalt thunder veins, exposed cloud edges",
+        "drum summit: circular blue-violet drum-skin floor surrounded by rock teeth and large storm drums"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m08_a.png",
+        "res://assets/environment/expansion/m08_b.png"
+      ],
+      "enemy_ids": [
+        "e141",
+        "e142",
+        "e143",
+        "e144",
+        "e145",
+        "e146",
+        "e147",
+        "e148",
+        "e149",
+        "e150",
+        "e151",
+        "e152"
+      ],
+      "boss_ids": [
+        "b59",
+        "b60",
+        "b61"
+      ],
+      "random_boss_ids": [
+        "b59",
+        "b60",
+        "b61"
+      ]
+    },
+    {
+      "id": "m09",
+      "name": "灰窑遗坊",
+      "environment": "COPPER KILN WORKS: charcoal black, fired-clay terracotta and blazing copper-orange; industrial furnace identity",
+      "ambient": "ash",
+      "palette": "kiln_copper",
+      "light_color": "#f59a4f",
+      "ambient_color": "#d29a79",
+      "floor_material": "charcoal brick floor with muted copper heat seams and broad clay tiles",
+      "architecture": "round clay kilns, black chimney silhouettes, rusted kiln rails and orange furnace mouths; no temple altars",
+      "variants": [
+        "firing yard: long burnt-clay brick lanes with charcoal kiln mouths at the perimeter",
+        "pottery workshop: dark clay hexagonal slabs and low copper rails, glazed terracotta urn shelves"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m09_a.png",
+        "res://assets/environment/expansion/m09_b.png"
+      ],
+      "enemy_ids": [
+        "e153",
+        "e154",
+        "e155",
+        "e156",
+        "e157",
+        "e158",
+        "e159",
+        "e160",
+        "e161",
+        "e162",
+        "e163",
+        "e164"
+      ],
+      "boss_ids": [
+        "b62",
+        "b63",
+        "b64"
+      ],
+      "random_boss_ids": [
+        "b62",
+        "b63",
+        "b64"
+      ]
+    },
+    {
+      "id": "m10",
+      "name": "莲灯水阁",
+      "environment": "AQUAMARINE LOTUS PAVILION: luminous turquoise, mint-green jade and pearl-white lotus; a light watery theme",
+      "ambient": "lotus",
+      "palette": "lotus_aqua",
+      "light_color": "#a2f2dd",
+      "ambient_color": "#b5ecd9",
+      "floor_material": "pale turquoise jade deck with shallow translucent aquamarine water channels",
+      "architecture": "curved mint-painted pavilion rails, large pearl lotus lamps, lily ponds and gently arched jade bridges",
+      "variants": [
+        "lotus pool deck: mint jade petal floor and curved water channels, pearl lotus edge lamps",
+        "water pavilion: aquamarine geometric deck with shallow surrounding pools and sweeping jade railings"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m10_a.png",
+        "res://assets/environment/expansion/m10_b.png"
+      ],
+      "enemy_ids": [
+        "e165",
+        "e166",
+        "e167",
+        "e168",
+        "e169",
+        "e170",
+        "e171",
+        "e172",
+        "e173",
+        "e174",
+        "e175",
+        "e176"
+      ],
+      "boss_ids": [
+        "b65",
+        "b66",
+        "b67"
+      ],
+      "random_boss_ids": [
+        "b65",
+        "b66",
+        "b67"
+      ]
+    },
+    {
+      "id": "m11",
+      "name": "白绫桥院",
+      "environment": "SILVER FUNERAL BRIDGE: icy powder blue, frost white and silver-gray; cold airy high-key palette",
+      "ambient": "snow_silk",
+      "palette": "bridge_frost",
+      "light_color": "#d4eaff",
+      "ambient_color": "#d4e0f2",
+      "floor_material": "pale blue alabaster bridge deck, soft silver joints and a faint frost-paper pattern",
+      "architecture": "long suspended white silk ribbons, pale blue bridge railings and cold mist void beyond; no vermilion temple walls",
+      "variants": [
+        "silk bridge: long pale blue-white alabaster deck, flowing white funeral cloth at the sides",
+        "mourning terrace: silver-white diamond slabs, looped white silk canopy and blue-gray mist beneath"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m11_a.png",
+        "res://assets/environment/expansion/m11_b.png"
+      ],
+      "enemy_ids": [
+        "e177",
+        "e178",
+        "e179",
+        "e180",
+        "e181",
+        "e182",
+        "e183",
+        "e184",
+        "e185",
+        "e186",
+        "e187",
+        "e188"
+      ],
+      "boss_ids": [
+        "b68",
+        "b69",
+        "b70"
+      ],
+      "random_boss_ids": [
+        "b68",
+        "b69",
+        "b70"
+      ]
+    },
+    {
+      "id": "m12",
+      "name": "钟楼余响",
+      "environment": "SUNLIT BRASS BELL TOWER: mustard yellow, warm ochre timber and weathered golden brass; mechanical tower identity",
+      "ambient": "dust",
+      "palette": "belltower_ochre",
+      "light_color": "#f3d58a",
+      "ambient_color": "#d7b674",
+      "floor_material": "warm mustard oak boards and circular brass gear inlays",
+      "architecture": "huge round bells, interlocking paper-cut gear silhouettes, wooden clock beams and counterweight ropes",
+      "variants": [
+        "bell chamber: ochre oak radial planks and a broad brass circle, hanging bells at the rim",
+        "counterweight loft: yellow-brown checker timber floor, curved gears and suspended wooden weights"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m12_a.png",
+        "res://assets/environment/expansion/m12_b.png"
+      ],
+      "enemy_ids": [
+        "e189",
+        "e190",
+        "e191",
+        "e192",
+        "e193",
+        "e194",
+        "e195",
+        "e196",
+        "e197",
+        "e198",
+        "e199",
+        "e200"
+      ],
+      "boss_ids": [
+        "b71",
+        "b72",
+        "b73"
+      ],
+      "random_boss_ids": [
+        "b71",
+        "b72",
+        "b73"
+      ]
+    },
+    {
+      "id": "m13",
+      "name": "竹影契林",
+      "environment": "DEEP BAMBOO FOREST: bottle green, sap green and sharp yellow-green dappled light; vertical bamboo silhouette",
+      "ambient": "bamboo",
+      "palette": "bamboo_forest",
+      "light_color": "#a9d777",
+      "ambient_color": "#86c774",
+      "floor_material": "dark green packed forest earth, fine bamboo-leaf litter and dappled lime sunlight",
+      "architecture": "dense upright bamboo stems, segmented bamboo gates, woven reed fences and roots; no stone hall",
+      "variants": [
+        "bamboo glade: dark emerald earthen clearing with narrow lime light slashes and dense reed edges",
+        "pledge grove: olive-green leaf floor and bent bamboo archways, yellow-green canopy light patches"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m13_a.png",
+        "res://assets/environment/expansion/m13_b.png"
+      ],
+      "enemy_ids": [
+        "e201",
+        "e202",
+        "e203",
+        "e204",
+        "e205",
+        "e206",
+        "e207",
+        "e208",
+        "e209",
+        "e210",
+        "e211",
+        "e212"
+      ],
+      "boss_ids": [
+        "b74",
+        "b75",
+        "b76"
+      ],
+      "random_boss_ids": [
+        "b74",
+        "b75",
+        "b76"
+      ]
+    },
+    {
+      "id": "m14",
+      "name": "镜池回廊",
+      "environment": "MIDNIGHT MIRROR GALLERY: near-black navy, cold ice cyan and reflective indigo; smooth geometric mirror identity",
+      "ambient": "mirror",
+      "palette": "mirror_navy",
+      "light_color": "#80dcff",
+      "ambient_color": "#87c3eb",
+      "floor_material": "smooth navy obsidian mirror tiles with thin cyan seams and subtle reflections",
+      "architecture": "angular cyan mirror panels, dark reflecting pools and geometric crystalline archways; no ivory candle chapel",
+      "variants": [
+        "reflection hall: deep navy square mirror floor, cyan-lit triangular mirror walls",
+        "obsidian pool gallery: indigo diamond mirror floor with crescent pools and upright broken mirror fins"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m14_a.png",
+        "res://assets/environment/expansion/m14_b.png"
+      ],
+      "enemy_ids": [
+        "e213",
+        "e214",
+        "e215",
+        "e216",
+        "e217",
+        "e218",
+        "e219",
+        "e220",
+        "e221",
+        "e222",
+        "e223",
+        "e224"
+      ],
+      "boss_ids": [
+        "b77",
+        "b78",
+        "b79"
+      ],
+      "random_boss_ids": [
+        "b77",
+        "b78",
+        "b79"
+      ]
+    },
+    {
+      "id": "m15",
+      "name": "封印石牢",
+      "environment": "AMETHYST SEAL PRISON: deep grape purple, near-black plum and glowing magenta runes; heavy angular confinement",
+      "ambient": "seal",
+      "palette": "prison_amethyst",
+      "light_color": "#ed91ff",
+      "ambient_color": "#c485dd",
+      "floor_material": "large angular dark amethyst slabs with faint glowing violet geometric seal seams",
+      "architecture": "massive purple runestone blocks, chains, narrow angular cell doors and suspended magenta seal cords; no ordinary gray walls",
+      "variants": [
+        "sealed cell block: large purple slabs and square carved seals, massive angular cell rim",
+        "binding vault: plum polygonal floor and radiating magenta seal seams, chain-weight alcoves"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m15_a.png",
+        "res://assets/environment/expansion/m15_b.png"
+      ],
+      "enemy_ids": [
+        "e225",
+        "e226",
+        "e227",
+        "e228",
+        "e229",
+        "e230",
+        "e231",
+        "e232",
+        "e233",
+        "e234",
+        "e235",
+        "e236"
+      ],
+      "boss_ids": [
+        "b80",
+        "b81",
+        "b82"
+      ],
+      "random_boss_ids": [
+        "b80",
+        "b81",
+        "b82"
+      ]
+    },
+    {
+      "id": "m16",
+      "name": "万签焚堂",
+      "environment": "ASHEN PETITION PYRE: soot black, ash white and dry rusty ember-red; paper rubble and burned timber",
+      "ambient": "cinder",
+      "palette": "pyre_ash",
+      "light_color": "#ffac8d",
+      "ambient_color": "#c9b6ac",
+      "floor_material": "scorched black wooden boards covered in pale torn blank petition fragments",
+      "architecture": "charred timber ribs, curled burnt paper piles, slashed broken roof and ash chimneys; ruin rather than a neat temple courtyard",
+      "variants": [
+        "burned petition hall: black timber floor with white ash scatter, collapsed charred roof ribs",
+        "ash archive: ash-gray torn paper floor with long rust-red scorched seams and blackened scroll racks"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m16_a.png",
+        "res://assets/environment/expansion/m16_b.png"
+      ],
+      "enemy_ids": [
+        "e237",
+        "e238",
+        "e239",
+        "e240",
+        "e241",
+        "e242",
+        "e243",
+        "e244",
+        "e245",
+        "e246",
+        "e247",
+        "e248"
+      ],
+      "boss_ids": [
+        "b83",
+        "b84",
+        "b85"
+      ],
+      "random_boss_ids": [
+        "b83",
+        "b84",
+        "b85"
+      ]
+    },
+    {
+      "id": "m17",
+      "name": "绳塔悬阁",
+      "environment": "SKYBLUE ROPE SKY LOFT: clear cerulean, cloud white and pale blond timber; bright open sky around every edge",
+      "ambient": "wind",
+      "palette": "skyloft_blue",
+      "light_color": "#d9f3ff",
+      "ambient_color": "#c1e3f7",
+      "floor_material": "pale weathered suspended wooden platform with rope-seam square sections",
+      "architecture": "floating rope-tied timber platforms over a blue cloud abyss, rope balustrades and high suspension spars; NO enclosing masonry or shrine ceiling",
+      "variants": [
+        "hanging sky deck: pale blond timber platform, vivid blue sky and torn white cloud edges",
+        "rope loft: beige rope-weave floor panels, skyblue abyss and slanting suspension cable silhouettes"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m17_a.png",
+        "res://assets/environment/expansion/m17_b.png"
+      ],
+      "enemy_ids": [
+        "e249",
+        "e250",
+        "e251",
+        "e252",
+        "e253",
+        "e254",
+        "e255",
+        "e256",
+        "e257",
+        "e258",
+        "e259",
+        "e260"
+      ],
+      "boss_ids": [
+        "b86",
+        "b87",
+        "b88"
+      ],
+      "random_boss_ids": [
+        "b86",
+        "b87",
+        "b88"
+      ]
+    },
+    {
+      "id": "m18",
+      "name": "无名陵园",
+      "environment": "MOONLIT NAMELESS CEMETERY: desaturated moon-cyan, blue-green gray and silver fog; irregular quiet graveyard",
+      "ambient": "mist",
+      "palette": "cemetery_moon",
+      "light_color": "#c2dedf",
+      "ambient_color": "#aacbcf",
+      "floor_material": "blue-green moonlit gravel and moss with irregular blank slate grave markers at the rim",
+      "architecture": "low eroded headstones, crooked cypress silhouettes, broken moon gates and ground fog; open outdoor cemetery",
+      "variants": [
+        "moon grave court: cool cyan gravel clearing and staggered blank gravestones, mist behind cypress trees",
+        "forgotten burial garden: gray-teal moss earth and broken circular moon gate, scattered low blank stone plaques"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m18_a.png",
+        "res://assets/environment/expansion/m18_b.png"
+      ],
+      "enemy_ids": [
+        "e261",
+        "e262",
+        "e263",
+        "e264",
+        "e265",
+        "e266",
+        "e267",
+        "e268",
+        "e269",
+        "e270",
+        "e271",
+        "e272"
+      ],
+      "boss_ids": [
+        "b89",
+        "b90",
+        "b91"
+      ],
+      "random_boss_ids": [
+        "b89",
+        "b90",
+        "b91"
+      ]
+    },
+    {
+      "id": "m19",
+      "name": "守名判殿",
+      "environment": "REGAL MAGISTRATE COURT: deep ruby lacquer, ceremonial red-brown wood and old bronze-gold; massive solemn palace",
+      "ambient": "judgment",
+      "palette": "court_ruby",
+      "light_color": "#e6b47c",
+      "ambient_color": "#d7a667",
+      "floor_material": "dark ruby lacquer geometric court tiles with restrained symmetrical bronze lines",
+      "architecture": "monumental symmetrical bronze scales, tall ruby palace columns, huge seal-shaped throne alcove; more imposing than the small lantern market",
+      "variants": [
+        "name-weighing court: dark ruby rectangular tiles and a giant bronze balance behind the north entrance",
+        "verdict hall: ruby-black diamond court floor, bronze scale pillars and a broad monumental throne outline"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m19_a.png",
+        "res://assets/environment/expansion/m19_b.png"
+      ],
+      "enemy_ids": [
+        "e273",
+        "e274",
+        "e275",
+        "e276",
+        "e277",
+        "e278",
+        "e279",
+        "e280",
+        "e281",
+        "e282",
+        "e283",
+        "e284"
+      ],
+      "boss_ids": [
+        "b36",
+        "b92",
+        "b93"
+      ],
+      "random_boss_ids": [
+        "b92",
+        "b93"
+      ]
+    },
+    {
+      "id": "m20",
+      "name": "万愿天穹",
+      "environment": "COSMIC LEDGER VOID: midnight violet, starlight gold and pale lavender; celestial space, never an ordinary temple",
+      "ambient": "star",
+      "palette": "cosmos_violet",
+      "light_color": "#e8ccff",
+      "ambient_color": "#e8cf91",
+      "floor_material": "floating dark-violet paper-ledger plane with tiny gold constellation seams and lavender page corners",
+      "architecture": "disconnected floating ivory page islands, bronze celestial arcs, red-thread constellations and deep starry void beyond all four edges; NO masonry walls",
+      "variants": [
+        "constellation page: violet star-map floor and scattered floating ivory page islands, golden orbital perimeter arcs",
+        "ledger heart approach: midnight lavender folded paper plane, a bronze cosmic-heart silhouette and luminous thin constellation filaments"
+      ],
+      "backgrounds": [
+        "res://assets/environment/expansion/m20_a.png",
+        "res://assets/environment/expansion/m20_b.png"
+      ],
+      "enemy_ids": [
+        "e285",
+        "e286",
+        "e287",
+        "e288",
+        "e289",
+        "e290",
+        "e291",
+        "e292",
+        "e293",
+        "e294",
+        "e295",
+        "e296"
+      ],
+      "boss_ids": [
+        "b37",
+        "b94",
+        "b95",
+        "b96",
+        "b97",
+        "b98",
+        "b99"
+      ],
+      "random_boss_ids": [
+        "b94",
+        "b95",
+        "b96",
+        "b97",
+        "b98",
+        "b99"
+      ]
+    }
+  ],
+  "story": [
+    {
+      "id": "opening",
+      "title": "借来的灯",
+      "lines": [
+        "旧城每一个愿望，都在总账里借了一缕火。",
+        "还清债的人消失了。名字被撕下，成了下一盏灯的灯芯。",
+        "你带着一张空白愿页入夜，决定沿十一重旧账找回他们。"
+      ]
+    },
+    {
+      "id": "reveal",
+      "title": "第六重 · 守名判殿",
+      "lines": [
+        "守名大判守着一架永远不平的秤。",
+        "他不是在收债。他把归还的名字藏起来，拖延总账的苏醒。",
+        "要让所有人回来，你必须连自己的愿望也放上秤。"
+      ]
+    },
+    {
+      "id": "ordeal",
+      "title": "第七至十重 · 灯与影",
+      "lines": [
+        "判殿倒下，四重封契同时解开。",
+        "每一重旧账都有两位守债者；他们争夺同一盏心灯。",
+        "把路走完，才能回答：愿望属于许愿的人，还是记账的神？"
+      ]
+    },
+    {
+      "id": "final",
+      "title": "第十一重 · 万愿天穹",
+      "lines": [
+        "三十余间愿室悬在总账的空白页上。",
+        "六道守债者的连门之后，最后一笔账等待你的名字。",
+        "不是替所有人偿债，而是带他们重新做一次选择。"
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "账尽，灯未灭",
+      "lines": [
+        "万愿总账的铜心裂开，旧城的名字像纸雨一样落下。",
+        "你没有取得神的位子。你把空白愿页一张张还给夜归的人。",
+        "纸童找回父亲的称呼，铃师听见真正的回声，灯客终于熄灭借来的火。",
+        "傩面摘下面具，伞灵走出雨，墨吏写下第一行不需利息的字。",
+        "此后，灯下仍有人许愿。愿望不再是一笔债。"
+      ]
+    }
+  ],
+  "production_status": "all 64 Sub2 boards generated and integrated; verification is recorded separately",
+  "themed_encounters_version": 1
+}

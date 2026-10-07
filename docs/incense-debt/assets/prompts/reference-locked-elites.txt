@@ -1,0 +1,9 @@
+The attached images are binding art references for the SAME original Chinese folklore game Incense Debt. Preserve fibrous torn ivory paper, dry coarse woodblock contours, matte aged bronze, muted jade and vermilion cloth, warm small ember accents and the same upper-left light. No lettering, captions, frames, pixel art, glossy 3D, vector clipart, neon, or modern machinery. Output 1536x1024 true transparent PNG; no background or checkerboard. Each complete subject stays inside its assigned cell with generous transparent padding.
+SIX isolated elite enemies, exactly THREE columns by TWO rows. Each is an identifiable stronger variation of its supplied base enemy, with damaged vermilion debt seals and worn bronze ornament, not a new species. Same near-top-down camera, feet/ground position, line weight and paper texture. No auras, arrows, diagram, or baked UI. Row-major:
+1. Lantern ghost: larger cracked red lantern, jagged ivory debt scraps, dark hollow face, heavy old bronze lantern frame.
+2. Paper dog: same folded ivory low hound, sharper torn red debt strips, three small bronze back plates, split paper tail.
+3. Bell shooter: a hostile large bronze bell with angular ivory hands, extra red bindings and a torn seal over its hollow face.
+4. Abacus spider: same horizontal abacus body and six paper legs, doubled bronze bead rows, torn red paper seals, no giant body growth.
+5. Shrine paper caster: same hostile tall blank-paper face and hat, jade and charcoal robe, two folded paper seals and a broad vermilion chest binding.
+6. Heavy page warrior: same tall heavy ivory paper armor, deep charcoal hollow mask, jagged layered ledger pages and a red stamped shoulder strip.
+Use the three supplied regional enemy atlases to retain the corresponding species, proportions, material and visual identity.

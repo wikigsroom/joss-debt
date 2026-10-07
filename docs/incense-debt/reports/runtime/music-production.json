@@ -1,0 +1,205 @@
+{
+  "scores": {
+    "hub": {
+      "bpm": 76,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 101.052625,
+      "stems": [
+        "hub_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "region_1": {
+      "bpm": 88,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 87.27272916666666,
+      "stems": [
+        "paper_lane_loop",
+        "paper_lane_rhythm_loop",
+        "paper_lane_tension_loop",
+        "paper_lane_accent_loop",
+        "paper_lane_texture_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "region_2": {
+      "bpm": 102,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 75.294125,
+      "stems": [
+        "coin_vault_loop",
+        "coin_vault_rhythm_loop",
+        "coin_vault_tension_loop",
+        "coin_vault_accent_loop",
+        "coin_vault_texture_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "region_3": {
+      "bpm": 66,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 116.36364583333334,
+      "stems": [
+        "ownerless_temple_loop",
+        "ownerless_temple_rhythm_loop",
+        "ownerless_temple_tension_loop",
+        "ownerless_temple_accent_loop",
+        "ownerless_temple_texture_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "boss": {
+      "bpm": 114,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 67.36841666666666,
+      "stems": [
+        "boss_loop",
+        "boss_rhythm_loop",
+        "boss_tension_loop",
+        "boss_accent_loop",
+        "boss_texture_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "ending": {
+      "bpm": 72,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 106.66666666666667,
+      "stems": [
+        "ending_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "ending_burn": {
+      "bpm": 70,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 109.71429166666667,
+      "stems": [
+        "ending_burn_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "ending_repay": {
+      "bpm": 80,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 96.0,
+      "stems": [
+        "ending_repay_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    },
+    "ending_rewrite": {
+      "bpm": 76,
+      "beats_per_bar": 4,
+      "bars": 32,
+      "duration": 101.052625,
+      "stems": [
+        "ending_rewrite_loop"
+      ],
+      "phrases": [
+        "statement",
+        "answer",
+        "development",
+        "space",
+        "lift",
+        "answer",
+        "reprise",
+        "return"
+      ]
+    }
+  },
+  "audio_files": 112,
+  "music_stems": 25,
+  "sound_effects_preserved": 87,
+  "passed": true,
+  "external_texture_sources": 4,
+  "checks": [
+    "decoded lengths within 256 samples",
+    "encoded files do not clip",
+    "independent accent stem is present in combat contexts",
+    "SFX byte hashes preserved",
+    "CC0 texture hashes recorded"
+  ],
+  "composition_revision": "adaptive-score-v3",
+  "scope": "local deterministic composition plus CC0 texture beds; not physical speaker or human listening acceptance"
+}

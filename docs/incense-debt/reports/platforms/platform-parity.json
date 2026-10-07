@@ -1,0 +1,187 @@
+{
+  "recorded_at": "2026-10-07T09:19:55.353587+00:00",
+  "passed": true,
+  "scope": "Static shared-content parity only; no physical Android/iOS run and no opaque Windows executable PCK byte comparison",
+  "virtualization": "none",
+  "platforms": {
+    "windows_source": {
+      "path": "game",
+      "device_tested": true,
+      "native_runtime_tested": true,
+      "artifact": {
+        "path": "build/windows/IncenseDebt.exe",
+        "bytes": 561862192,
+        "sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+        "expected_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+        "device_tested": true
+      }
+    },
+    "android_apk": {
+      "path": "build/android/IncenseDebt.apk",
+      "bytes": 480710039,
+      "sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+      "expected_sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+      "device_tested": false
+    },
+    "ios_shared_source": {
+      "path": "build/ios-handoff/IncenseDebt-shared-source.zip",
+      "bytes": 561051501,
+      "sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+      "expected_sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+      "device_tested": false
+    }
+  },
+  "platform_reports": {
+    "android_verification": {
+      "passed": true,
+      "report": "docs/incense-debt/reports/platforms/android-verification.json"
+    },
+    "ios_handoff_verification": {
+      "passed": true,
+      "report": "docs/incense-debt/reports/platforms/ios-handoff-verification.json"
+    }
+  },
+  "source_tree": {
+    "windows_game_member_count": 7704,
+    "windows_game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f",
+    "ios_game_member_count": 7704,
+    "ios_game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f",
+    "all_members_match": true,
+    "missing_ios_members": [],
+    "extra_ios_members": [],
+    "mismatched_ios_members": []
+  },
+  "android_packaging": {
+    "verification_passed": true,
+    "runtime_registry_matches_source": true,
+    "imported_resource_count": 3665,
+    "all_imported_resources_packaged": true,
+    "weapon_rig_matches_source": true,
+    "music_configuration_matches_source": true,
+    "all_music_stems_packaged": true,
+    "compiled_ui_and_weapon_scripts_packaged": true
+  },
+  "core_files": {
+    "game/data/arena_boundaries.json": {
+      "source_sha256": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+      "android_apk_member": "assets/data/arena_boundaries.json",
+      "android_sha256": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+      "ios_zip_member": "game/data/arena_boundaries.json",
+      "ios_sha256": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 27349
+    },
+    "game/assets/fx/combat-revision/manifest.json": {
+      "source_sha256": "6257ed1ac6b1b876b8ab9b24dc68849731077ab9fb40180f6f217bf29d858292",
+      "android_apk_member": "assets/assets/fx/combat-revision/manifest.json",
+      "android_sha256": "6257ed1ac6b1b876b8ab9b24dc68849731077ab9fb40180f6f217bf29d858292",
+      "ios_zip_member": "game/assets/fx/combat-revision/manifest.json",
+      "ios_sha256": "6257ed1ac6b1b876b8ab9b24dc68849731077ab9fb40180f6f217bf29d858292",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 8304
+    },
+    "game/data/catalog.json": {
+      "source_sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+      "android_apk_member": "assets/data/catalog.json",
+      "android_sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+      "ios_zip_member": "game/data/catalog.json",
+      "ios_sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 407223
+    },
+    "game/data/expansion.json": {
+      "source_sha256": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+      "android_apk_member": "assets/data/expansion.json",
+      "android_sha256": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+      "ios_zip_member": "game/data/expansion.json",
+      "ios_sha256": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 29822
+    },
+    "game/data/achievements.json": {
+      "source_sha256": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+      "android_apk_member": "assets/data/achievements.json",
+      "android_sha256": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+      "ios_zip_member": "game/data/achievements.json",
+      "ios_sha256": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 8580
+    },
+    "game/data/rules.json": {
+      "source_sha256": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+      "android_apk_member": "assets/data/rules.json",
+      "android_sha256": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+      "ios_zip_member": "game/data/rules.json",
+      "ios_sha256": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 7738
+    },
+    "game/data/runtime_assets.json": {
+      "source_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "android_apk_member": "assets/data/runtime_assets.json",
+      "android_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "ios_zip_member": "game/data/runtime_assets.json",
+      "ios_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 566164
+    },
+    "game/data/music_scores.json": {
+      "source_sha256": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+      "android_apk_member": "assets/data/music_scores.json",
+      "android_sha256": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+      "ios_zip_member": "game/data/music_scores.json",
+      "ios_sha256": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 3916
+    },
+    "game/data/story.zh_CN.json": {
+      "source_sha256": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+      "android_apk_member": "assets/data/story.zh_CN.json",
+      "android_sha256": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+      "ios_zip_member": "game/data/story.zh_CN.json",
+      "ios_sha256": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 5652
+    },
+    "game/assets/weapon-rig.json": {
+      "source_sha256": "bbd7932677b5ddf5551cc857814673c78428b50371083d75c9e6c9fd3189cc65",
+      "android_apk_member": "assets/assets/weapon-rig.json",
+      "android_sha256": "bbd7932677b5ddf5551cc857814673c78428b50371083d75c9e6c9fd3189cc65",
+      "ios_zip_member": "game/assets/weapon-rig.json",
+      "ios_sha256": "bbd7932677b5ddf5551cc857814673c78428b50371083d75c9e6c9fd3189cc65",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 118814
+    }
+  },
+  "catalog_counts": {
+    "characters": 6,
+    "weapons": 32,
+    "skills": 18,
+    "relics": 54,
+    "talents": 36,
+    "synergies": 24,
+    "routes": 6,
+    "regions": 3,
+    "room_templates": 18,
+    "special_rooms": 4,
+    "enemies": 296,
+    "bosses": 99
+  },
+  "rules_baseline": {
+    "version": "0.1.0",
+    "orientation": "landscape",
+    "save_schema_version": 2,
+    "engine_baseline": "4.7.2"
+  },
+  "failures": []
+}

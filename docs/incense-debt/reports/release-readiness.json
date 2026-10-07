@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-06T14:29:00.971934+00:00",
+  "status": "playable_three_chapter_alpha",
+  "software_readiness": "passed",
+  "release_readiness": "pending_external_acceptance",
+  "checks": {
+    "design_validation": true,
+    "documentation_set": true,
+    "windows_native": true,
+    "native_audio": true,
+    "android_package": true,
+    "ios_handoff": true,
+    "shared_parity": true,
+    "native_interactions": true,
+    "native_keyboard_flow": true,
+    "choice_history": true,
+    "achievements": true,
+    "direction1_system_audit": true,
+    "human_matrix_structure": true,
+    "completion_audit": true
+  },
+  "pending_external_gates": [
+    {
+      "gate": "human_balance",
+      "status": "pending_human",
+      "reason": "六角色×两路线真人整局记录尚未归档"
+    },
+    {
+      "gate": "android_device",
+      "status": "pending_device",
+      "reason": "result must be passed after a real-device run；physical_device_tested must be true；missing device_model"
+    },
+    {
+      "gate": "ios_device",
+      "status": "pending_device",
+      "reason": "result must be passed after a real-device run；physical_device_tested must be true；missing device_model"
+    }
+  ],
+  "external_acceptance": "docs/incense-debt/reports/external-acceptance.json",
+  "evidence": {
+    "delivery": "docs/incense-debt/reports/current-product-status.json",
+    "coverage": "docs/incense-debt/reports/system-coverage.json",
+    "parity": "docs/incense-debt/reports/platforms/platform-parity.json",
+    "completion_audit": "docs/incense-debt/reports/product-completion-audit.json",
+    "direction1_audit": "docs/incense-debt/reports/runtime/direction1-system-audit.json"
+  },
+  "rule": "Do not promote Alpha until software checks and all external gates are directly evidenced."
+}

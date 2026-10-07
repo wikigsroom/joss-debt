@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<title>香火债PC布局线框</title>
+<desc>静态交互布局说明，不是可玩游戏或实际运行截图。</desc>
+<g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#242725" stroke="none" opacity="1"/>
+<rect x="64.0" y="72" width="1152" height="576" rx="0" fill="#53675C" stroke="#E7D8B6" opacity="1"/>
+<text x="640.0" y="345" font-size="28" fill="#E7D8B6" text-anchor="middle">战场中心保持空白</text>
+<text x="640.0" y="382" font-size="18" fill="#E7D8B6" text-anchor="middle">完整房间 / 统一规则 / 装饰低对比</text>
+<rect x="28" y="15" width="330" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="42" y="46" font-size="17" fill="#E7D8B6" text-anchor="start">心火  ●●●    香火  40/100    纸钱 10</text>
+<rect x="1036" y="15" width="160" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="1050" y="46" font-size="17" fill="#E7D8B6" text-anchor="start">地图   债约 0/2</text>
+<rect x="1206" y="15" width="54" height="47" rx="8" fill="#242725" stroke="#C39A51" opacity="1"/>
+<text x="1233" y="46" font-size="20" fill="#E7D8B6" text-anchor="middle">Ⅱ</text>
+<text x="640.0" y="703" font-size="18" fill="#E7D8B6" text-anchor="middle">布局线框 · 实机触控尺寸与安全区需运行验收</text>
+<rect x="24" y="657" width="510" height="33" rx="8" fill="#242725" stroke="none" opacity="1"/>
+<text x="32" y="679" font-size="17" fill="#E7D8B6" text-anchor="start">WASD 移动 · 左键射击 · 右键焚债 · Space 身法</text>
+<rect x="1036" y="657" width="220" height="33" rx="8" fill="#242725" stroke="none" opacity="1"/>
+<text x="1050" y="679" font-size="17" fill="#E7D8B6" text-anchor="start">E 交互 · Esc 暂停</text>
+</g>
+</svg>

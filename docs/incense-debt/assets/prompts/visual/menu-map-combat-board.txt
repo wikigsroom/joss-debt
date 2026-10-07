@@ -1,0 +1,9 @@
+Create a cohesive visual direction board for an original flat 2D roguelite game called Incense Debt. Arrange three equal vertical panels on one warm ivory paper sheet, with no written words, no logos, no UI labels, and no watermark.
+
+Panel 1: a modern game title and save-slot menu, dark soot-green rounded panels, generous rounded corners, icon-first controls, three save cards, a small paper lantern emblem, warm vermilion primary action, jade secondary actions, aged-gold focus ring, high readability at 1280x720. Keep the playfield feeling spacious and calm.
+
+Panel 2: an overhead room map slice with a square combat room, four physical exits in the north/south/east/west walls, a small player paper charm walking toward a glowing doorway, one optional torn-rope secret entrance hinted in the wall, a compact route map overlay in the corner. The room must communicate that the player physically walks through the doorway to change rooms.
+
+Panel 3: a combat feedback sheet showing the same paper character facing three directions with a different held weapon silhouette, warm orange-gold friendly projectiles, jade enemy telegraphs, paper fragments, ember sparks, ring-shaped impact bursts, a short hit-stop impression, and a readable charged slash arc. Keep every effect separated and legible at small game scale.
+
+Style: original Chinese folk woodblock and layered paper-cut illustration, chunky soot-black contour, visible ivory paper fiber, restrained flat 2–3 value shading, fixed near-overhead game perspective, consistent upper-left light, short shadows, vermilion #BC3C2F, soot #242725, ivory #E7D8B6, aged gold #C39A51, jade #53675C. Clean production concept board, crisp silhouettes, no realistic 3D, no anime, no pixel art, no borrowed characters, no text.

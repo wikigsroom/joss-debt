@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-07",
+  "version": "0.1.0",
+  "status": "design_constraints_passed",
+  "checks": 245242,
+  "errors": [],
+  "content_counts": {
+    "meta_unlocks": 22,
+    "npcs": 5,
+    "routes": 6,
+    "characters": 6,
+    "weapons": 32,
+    "skills": 18,
+    "relics": 54,
+    "talents": 36,
+    "debt_contracts": 9,
+    "enemies": 296,
+    "elite_variants": 6,
+    "bosses": 99,
+    "synergies": 24,
+    "regions": 3,
+    "room_templates": 18,
+    "special_rooms": 4,
+    "obstacles": 6
+  },
+  "design_chapters_including_index": 28,
+  "local_links_checked": 156,
+  "asset_status_counts": {
+    "reviewed_concept": 3,
+    "engine_verified": 709
+  },
+  "production_prompt_count": 191,
+  "simulations": {
+    "seed": 20261003,
+    "reward_offers_per_floor": 10000,
+    "initial_pool_offers_per_floor": 1000,
+    "first_draw_rarity_counts": {
+      "1": {
+        "common": 6587,
+        "uncommon": 2940,
+        "rare": 473
+      },
+      "2": {
+        "common": 4508,
+        "uncommon": 3513,
+        "rare": 1674,
+        "mythic": 305
+      },
+      "3": {
+        "uncommon": 4018,
+        "common": 2933,
+        "mythic": 500,
+        "rare": 2549
+      },
+      "4": {
+        "uncommon": 3806,
+        "common": 1589,
+        "rare": 3831,
+        "mythic": 774
+      },
+      "5": {
+        "mythic": 802,
+        "uncommon": 3778,
+        "rare": 3890,
+        "common": 1530
+      },
+      "6": {
+        "uncommon": 3790,
+        "common": 1488,
+        "rare": 3887,
+        "mythic": 835
+      },
+      "7": {
+        "rare": 3816,
+        "common": 1559,
+        "mythic": 819,
+        "uncommon": 3806
+      },
+      "8": {
+        "uncommon": 3796,
+        "common": 1462,
+        "rare": 3954,
+        "mythic": 788
+      },
+      "9": {
+        "mythic": 866,
+        "uncommon": 3769,
+        "common": 1435,
+        "rare": 3930
+      },
+      "10": {
+        "uncommon": 3783,
+        "common": 1498,
+        "rare": 3853,
+        "mythic": 866
+      },
+      "11": {
+        "uncommon": 3735,
+        "rare": 3926,
+        "common": 1538,
+        "mythic": 801
+      }
+    },
+    "low_health_clears": 10000,
+    "max_clears_between_heals": 3,
+    "guaranteed_heals": 2725,
+    "economy_runs": 10000,
+    "economy_model": "3 floors; 6 normal rooms with 4,4,5,5,5,6 enemies; 1 elite with 2 adds; fixed clear rewards",
+    "coins_mean": 210.35,
+    "coins_p10": 200,
+    "coins_p90": 221,
+    "first_store_guaranteed_coins": 16,
+    "full_exploration_xp": 324,
+    "minimum_main_path_xp": 264,
+    "scope": "Design formulas only; runtime drops and balancing are unverified."
+  },
+  "unverified_product_requirements": [
+    "每角色完整双路线与全部示例组合的人类手感和平衡验收",
+    "Android真实设备安装、三指触控、生命周期、文件选择器/软键盘/剪贴板和45分钟热稳定",
+    "iOS真实macOS/Xcode签名构建与iPhone/iPad运行",
+    "低端真机的透明边、屏幕安全区和完整UI触控范围",
+    "长局音乐与手机扬声器/耳机的人类听测",
+    "已实现96种手持搭配的真人动作观感与移动透明边验收"
+  ],
+  "completion_claim": "Design checks only. The full playable multi-platform product is not complete."
+}

@@ -1,0 +1,31 @@
+{
+	"checks": [
+		"all six approved identities and sixteen held weapon textures have a rig",
+		"576 actual body/hand frame pairs load for every state and facing",
+		"96 real equipped-weapon attack events select the matching pose without writing combat state",
+		"all 384 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth",
+		"four real aim directions update the player's body facing, shot direction and held-tool pose",
+		"an actual choice pause freezes the complete primary attack pose",
+		"a primary attack returns to the neutral equipped idle pose",
+		"the normal reward transaction equips a replacement weapon",
+		"equipping clears the previous tool's attack immediately",
+		"a delayed old-weapon event cannot animate the replacement",
+		"reduce-motion keeps equipment and attack identity while removing recoil and swinging",
+		"the existing injury pose takes priority over an active primary attack",
+		"a real dash cancels the primary presentation and uses its matching wrist frames",
+		"the signature-skill cast retains priority over a handheld attack",
+		"judgment-brush preparation follows real charging before any shot exists",
+		"releasing a partial charge clears the held preparation immediately",
+		"a completed real charge switches from preparation to its firing pose",
+		"the attack-time snapshot restores through the actual schema validator",
+		"loading a different world cannot replay an unsaved presentation event",
+		"death removes the separate held tool instead of leaving a floating weapon",
+		"restoring time backward clears a stale primary pose",
+		"360 real combat ticks with presentation enabled preserve damage, positions, drops, ledgers and every RNG stream"
+	],
+	"combinations": 96,
+	"failures": [],
+	"frame_pairs": 576,
+	"passed": true,
+	"scope": "shared native presentation and real combat/reward/restore interfaces; visual rig sheets reviewed separately"
+}

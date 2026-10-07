@@ -1,0 +1,3422 @@
+{
+  "recorded_at": "2026-10-06T16:48:12.607225+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "id": "specified_sub2_model",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "all_twenty_four_boards_processed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "thirty_two_additional_bosses_and_mobs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "sixteen_additional_weapons",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "twenty_biomes_each_two_backgrounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m01_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m01_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m02_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m02_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m03_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m03_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m04_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m04_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m05_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m05_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m06_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m06_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m07_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m07_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m08_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m08_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m09_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m09_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m10_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m10_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m11_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m11_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m12_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m12_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m13_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m13_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m14_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m14_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m15_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m15_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m16_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m16_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m17_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m17_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m18_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m18_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m19_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m19_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m20_a",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_m20_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b29",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b30",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b31",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b32",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b33",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b34",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b35",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b36",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_b37",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e29",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e30",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e31",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e32",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e33",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e34",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e35",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e36",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e37",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e38",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e39",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e40",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e41",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e43",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e44",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e45",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e46",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e47",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e48",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e49",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e50",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e51",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e52",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e53",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e54",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e55",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_e56",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w29",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w30",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w31",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_w32",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_amber_orb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_jade_needle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_paper_blade",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_ink_wave",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_lotus_petal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_ember_cluster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_smoke_cloud",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_red_seal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_beam_amber",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_beam_ink",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_beam_thread",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_beam_prism",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_blast_flame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_blast_ink",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_blast_lotus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_shockwave",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_powder_urn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_thorn_seal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_oil_lamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_bamboo_wall",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_stone_wall",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_rope_wall",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_broken_urn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_cold_thorn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "crop_scene_12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b06_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b06_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b06_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b06_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b06_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b06_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b06_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b06_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b06_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b07_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b07_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b07_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b07_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b07_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b07_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b07_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b07_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b07_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b08_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b08_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b08_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b08_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b08_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b08_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b08_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b08_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b08_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b09_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b09_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b09_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b09_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b09_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b09_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b09_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b09_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b09_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b10_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b10_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b10_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b10_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b10_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b10_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b10_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b10_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b10_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b11_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b11_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b11_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b11_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b11_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b11_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b11_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b11_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b11_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b12_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b12_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b12_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b12_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b12_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b12_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b12_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b12_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b12_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b13_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b13_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b13_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b13_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b13_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b13_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b13_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b13_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b13_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b14_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b14_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b14_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b14_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b14_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b14_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b14_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b14_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b14_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b15_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b15_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b15_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b15_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b15_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b15_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b15_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b15_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b15_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b16_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b16_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b16_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b16_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b16_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b16_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b16_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b16_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b16_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b17_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b17_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b17_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b17_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b17_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b17_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b17_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b17_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b17_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b18_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b18_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b18_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b18_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b18_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b18_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b18_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b18_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b18_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b19_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b19_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b19_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b19_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b19_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b19_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b19_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b19_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b19_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b20_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b20_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b20_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b20_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b20_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b20_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b20_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b20_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b20_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b21_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b21_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b21_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b21_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b21_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b21_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b21_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b21_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b21_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b22_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b22_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b22_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b22_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b22_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b22_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b22_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b22_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b22_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b23_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b23_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b23_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b23_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b23_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b23_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b23_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b23_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b23_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b24_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b24_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b24_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b24_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b24_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b24_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b24_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b24_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b24_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b25_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b25_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b25_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b25_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b25_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b25_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b25_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b25_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b25_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b26_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b26_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b26_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b26_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b26_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b26_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b26_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b26_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b26_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b27_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b27_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b27_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b27_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b27_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b27_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b27_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b27_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b27_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b28_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b28_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b28_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b28_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b28_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b28_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b28_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b28_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b28_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b29_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b29_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b29_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b29_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b29_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b29_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b29_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b29_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b29_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b30_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b30_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b30_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b30_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b30_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b30_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b30_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b30_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b30_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b31_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b31_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b31_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b31_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b31_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b31_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b31_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b31_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b31_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b32_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b32_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b32_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b32_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b32_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b32_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b32_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b32_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b32_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b33_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b33_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b33_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b33_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b33_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b33_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b33_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b33_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b33_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b34_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b34_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b34_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b34_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b34_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b34_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b34_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b34_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b34_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b35_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b35_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b35_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b35_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b35_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b35_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b35_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b35_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b35_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b36_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b36_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b36_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b36_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b36_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b36_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b36_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b36_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b36_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b37_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b37_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b37_attack_a",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b37_attack_b",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "b37_attack_c",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 7"
+    },
+    {
+      "id": "b37_phase",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "b37_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "b37_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b37_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e25_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e25_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e25_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e25_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e25_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e25_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e25_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e26_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e26_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e26_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e26_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e26_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e26_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e26_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e27_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e27_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e27_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e27_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e27_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e27_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e27_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e28_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e28_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e28_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e28_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e28_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e28_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e28_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e29_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e29_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e29_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e29_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e29_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e29_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e29_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e30_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e30_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e30_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e30_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 4"
+    },
+    {
+      "id": "e30_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e30_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e30_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e31_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e31_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e31_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e31_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e31_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e31_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e31_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e32_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e32_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e32_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e32_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e32_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e32_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e32_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e33_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e33_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e33_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e33_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e33_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e33_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e33_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e34_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e34_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e34_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e34_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e34_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e34_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e34_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e35_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e35_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e35_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e35_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e35_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e35_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e35_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e36_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e36_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e36_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e36_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e36_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e36_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e36_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e37_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e37_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e37_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e37_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e37_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e37_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e37_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e38_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e38_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e38_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e38_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e38_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e38_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e38_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e39_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e39_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e39_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e39_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e39_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e39_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e39_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e40_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e40_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e40_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e40_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e40_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e40_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e40_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e41_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e41_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e41_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e41_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e41_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e41_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e41_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e42_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e42_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e42_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e42_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e42_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e42_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e42_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e43_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e43_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e43_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e43_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e43_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e43_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e43_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e44_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e44_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e44_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e44_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e44_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e44_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e44_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e45_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e45_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e45_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e45_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e45_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e45_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e45_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e46_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e46_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e46_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e46_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e46_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e46_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e46_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e47_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e47_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e47_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e47_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e47_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e47_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e47_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e48_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e48_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e48_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e48_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e48_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e48_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e48_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e49_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e49_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e49_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e49_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e49_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e49_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e49_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e50_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e50_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e50_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e50_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e50_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e50_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e50_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e51_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e51_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e51_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e51_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e51_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e51_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e51_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e52_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e52_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e52_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e52_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e52_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e52_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e52_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e53_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e53_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e53_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e53_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e53_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e53_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e53_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e54_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e54_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e54_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e54_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e54_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e54_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e54_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e55_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e55_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e55_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e55_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e55_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e55_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e55_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "e56_idle",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e56_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "e56_tell",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 3"
+    },
+    {
+      "id": "e56_attack",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 5"
+    },
+    {
+      "id": "e56_hurt",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 2"
+    },
+    {
+      "id": "e56_death",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 6"
+    },
+    {
+      "id": "e56_death_dissolves",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "b01_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b02_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b03_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b04_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "b05_move",
+      "passed": true,
+      "detail": "distinct precomputed source-bound poses: 8"
+    },
+    {
+      "id": "all_thirty_two_equipment_rigs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "connected_bamboo_wall",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "connected_stone_wall",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "connected_rope_wall",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "failures": [],
+  "boards": 24,
+  "source_bound_crops": 156,
+  "additional_animation_strips": 453,
+  "additional_animation_frames": 2824,
+  "scope": "all generated sources/crops, distinct baked pose frames and equipment rigs; native interaction and full combat evidence are separate reports"
+}

@@ -1,0 +1,35 @@
+{
+  "animation_strips": 2730,
+  "direction_frames": 16628,
+  "native_assets_loaded": 3665,
+  "audio_files": 112,
+  "raster_files": 3487,
+  "vector_icons": 62,
+  "font_files": 4,
+  "music_stems": 25,
+  "music_themes": 9,
+  "checks": [
+    "strip dimensions and hashes",
+    "nonempty active frames",
+    "different animation frames",
+    "death dissolves to alpha zero",
+    "48kHz mono PCM effects and encoded Vorbis themes",
+    "full decoded loop length and quiet seam",
+    "compiled native resource loads",
+    "compiled native sample-aligned stem mixing",
+    "protected original RGBA pixels outside reviewed grip masks",
+    "shared body/hand animation anchors and thirty-two separately held equipment cutouts"
+  ],
+  "expanded_content_evidence": "docs/incense-debt/reports/platforms/windows/expansion/expansion-assets.json",
+  "failures": [],
+  "passed": true,
+  "asset_status_counts": {
+    "reviewed_concept": 3,
+    "engine_verified": 709
+  },
+  "limitations": [
+    "No physical mobile performance/transparent-edge or speaker check",
+    "Character/equipment motion uses paper-puppet deformation; the eight new VFX strips use 48 distinct AI-generated keyframes",
+    "Native mixer samples do not substitute for human listening acceptance"
+  ]
+}

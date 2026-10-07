@@ -1,0 +1,1153 @@
+{
+	"failures": [],
+	"limitations": [
+		"Automated route coverage is not human feel or final balance acceptance",
+		"Optional side bosses are excluded"
+	],
+	"method": "shared fixed-tick simulation, character-route-focused reward selection, normal stats and 72000-tick maximum",
+	"passed": true,
+	"runs": [
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"character_name": "纸童",
+			"cleared": 24,
+			"combat_seconds": 428.4,
+			"evolution": 0,
+			"focus_route": "ash",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r18",
+				"r01",
+				"r26",
+				"r17",
+				"r43",
+				"r02",
+				"r19"
+			],
+			"result": "victory",
+			"skill": "s02",
+			"stats": {
+				"ash_energy": 1431.0,
+				"damage_taken": 1,
+				"detonations": 74,
+				"dodges": 4,
+				"elapsed": 428.433333333272,
+				"hits": 1268,
+				"kills": 122,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 84,
+				"shots": 1439
+			},
+			"talents": [
+				"t_ash_1a",
+				"t_fire_1b",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3b",
+				"t_ash_3a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"character_name": "纸童",
+			"cleared": 24,
+			"combat_seconds": 460.5,
+			"evolution": 1,
+			"focus_route": "ash",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r17",
+				"r26",
+				"r02",
+				"r09",
+				"r43",
+				"r18",
+				"r19",
+				"r35"
+			],
+			"result": "victory",
+			"skill": "s03",
+			"stats": {
+				"ash_energy": 1482.0,
+				"damage_taken": 1,
+				"detonations": 55,
+				"dodges": 2,
+				"elapsed": 460.54999999991,
+				"hits": 1388,
+				"kills": 124,
+				"max_chain": 3,
+				"max_proc_events": 4,
+				"secondary_hits": 44,
+				"shots": 1568
+			},
+			"talents": [
+				"t_ash_1b",
+				"t_fire_1a",
+				"t_ash_2a",
+				"t_ash_2b",
+				"t_ash_3a",
+				"t_ash_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"character_name": "纸童",
+			"cleared": 24,
+			"combat_seconds": 401.7,
+			"evolution": 0,
+			"focus_route": "fire",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r01",
+				"r19",
+				"r34",
+				"r18",
+				"r17",
+				"r02"
+			],
+			"result": "victory",
+			"skill": "s02",
+			"stats": {
+				"ash_energy": 1134.0,
+				"damage_taken": 2,
+				"detonations": 75,
+				"dodges": 6,
+				"elapsed": 401.683333333297,
+				"hits": 1262,
+				"kills": 124,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 31,
+				"shots": 1397
+			},
+			"talents": [
+				"t_fire_1b",
+				"t_fire_1a",
+				"t_fire_2b",
+				"t_fire_2a",
+				"t_fire_3a",
+				"t_fire_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_paper",
+			"character_name": "纸童",
+			"cleared": 24,
+			"combat_seconds": 419.8,
+			"evolution": 1,
+			"focus_route": "fire",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r19",
+				"r01",
+				"r27",
+				"r18",
+				"r09",
+				"r35",
+				"r17",
+				"r02",
+				"r43"
+			],
+			"result": "victory",
+			"skill": "s03",
+			"stats": {
+				"ash_energy": 1154.0,
+				"damage_taken": 2,
+				"detonations": 57,
+				"dodges": 2,
+				"elapsed": 419.849999999947,
+				"hits": 1304,
+				"kills": 129,
+				"max_chain": 3,
+				"max_proc_events": 4,
+				"parries": 1,
+				"secondary_hits": 357,
+				"shots": 1421
+			},
+			"talents": [
+				"t_fire_1a",
+				"t_seal_1b",
+				"t_fire_2b",
+				"t_fire_2a",
+				"t_fire_3a",
+				"t_fire_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"character_name": "铃师",
+			"cleared": 24,
+			"combat_seconds": 431.3,
+			"evolution": 0,
+			"focus_route": "thread",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r09",
+				"r17",
+				"r33",
+				"r10",
+				"r35",
+				"r11",
+				"r43"
+			],
+			"result": "victory",
+			"skill": "s05",
+			"stats": {
+				"ash_energy": 1268.0,
+				"damage_taken": 5,
+				"detonations": 68,
+				"dodges": 0,
+				"elapsed": 431.349999999936,
+				"hits": 1576,
+				"kills": 125,
+				"max_chain": 5,
+				"max_proc_events": 8,
+				"secondary_hits": 1026,
+				"shots": 1710
+			},
+			"talents": [
+				"t_wind_1b",
+				"t_thread_1a",
+				"t_thread_2a",
+				"t_thread_2b",
+				"t_thread_3a",
+				"t_thread_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"character_name": "铃师",
+			"cleared": 24,
+			"combat_seconds": 513.0,
+			"evolution": 1,
+			"focus_route": "thread",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r09",
+				"r34",
+				"r10",
+				"r17",
+				"r35",
+				"r11",
+				"r18"
+			],
+			"result": "victory",
+			"skill": "s06",
+			"stats": {
+				"ash_energy": 1160.0,
+				"damage_taken": 1,
+				"detonations": 74,
+				"dodges": 1,
+				"elapsed": 513.016666666529,
+				"hits": 1614,
+				"kills": 120,
+				"max_chain": 5,
+				"max_proc_events": 6,
+				"secondary_hits": 797,
+				"shots": 1977
+			},
+			"talents": [
+				"t_thread_1b",
+				"t_thread_1a",
+				"t_thread_2a",
+				"t_thread_2b",
+				"t_thread_3a",
+				"t_thread_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"character_name": "铃师",
+			"cleared": 24,
+			"combat_seconds": 503.9,
+			"evolution": 0,
+			"focus_route": "wind",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r33",
+				"r26",
+				"r10",
+				"r34",
+				"r02",
+				"r11",
+				"r09",
+				"r17"
+			],
+			"result": "victory",
+			"skill": "s05",
+			"stats": {
+				"ash_energy": 1042.0,
+				"damage_taken": 0,
+				"detonations": 76,
+				"dodges": 2,
+				"elapsed": 503.883333333204,
+				"hits": 1846,
+				"kills": 122,
+				"max_chain": 4,
+				"max_proc_events": 12,
+				"secondary_hits": 118,
+				"shots": 1975
+			},
+			"talents": [
+				"t_wind_1b",
+				"t_wind_1a",
+				"t_wind_2a",
+				"t_wind_2b",
+				"t_wind_3a",
+				"t_wind_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_bell",
+			"character_name": "铃师",
+			"cleared": 24,
+			"combat_seconds": 430.0,
+			"evolution": 1,
+			"focus_route": "wind",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r11",
+				"r33",
+				"r43",
+				"r10",
+				"r26",
+				"r18",
+				"r09",
+				"r35",
+				"r02"
+			],
+			"result": "victory",
+			"skill": "s06",
+			"stats": {
+				"ash_energy": 1038.0,
+				"damage_taken": 3,
+				"detonations": 67,
+				"dodges": 0,
+				"elapsed": 430.033333333271,
+				"hits": 1545,
+				"kills": 121,
+				"max_chain": 5,
+				"max_proc_events": 6,
+				"secondary_hits": 640,
+				"shots": 1659
+			},
+			"talents": [
+				"t_thread_1b",
+				"t_thread_1a",
+				"t_wind_1b",
+				"t_wind_2b",
+				"t_wind_3b",
+				"t_wind_3a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"character_name": "灯客",
+			"cleared": 24,
+			"combat_seconds": 444.8,
+			"evolution": 0,
+			"focus_route": "fire",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r43",
+				"r41",
+				"r26",
+				"r42",
+				"r18",
+				"r03",
+				"r17",
+				"r02"
+			],
+			"result": "victory",
+			"skill": "s08",
+			"stats": {
+				"ash_energy": 1074.0,
+				"damage_taken": 0,
+				"detonations": 58,
+				"dodges": 2,
+				"elapsed": 444.766666666591,
+				"hits": 841,
+				"kills": 120,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"parries": 2,
+				"secondary_hits": 127,
+				"shots": 943
+			},
+			"talents": [
+				"t_ink_1a",
+				"t_seal_1b",
+				"t_ink_2b",
+				"t_ink_2a",
+				"t_fire_1b",
+				"t_ink_3a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"character_name": "灯客",
+			"cleared": 24,
+			"combat_seconds": 469.1,
+			"evolution": 1,
+			"focus_route": "fire",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r41",
+				"r33",
+				"r03",
+				"r01",
+				"r02",
+				"r43",
+				"r17"
+			],
+			"result": "victory",
+			"skill": "s09",
+			"stats": {
+				"ash_energy": 1038.0,
+				"damage_taken": 4,
+				"detonations": 62,
+				"dodges": 2,
+				"elapsed": 469.066666666569,
+				"hits": 924,
+				"kills": 120,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 80,
+				"shots": 1017
+			},
+			"talents": [
+				"t_fire_1b",
+				"t_ink_1a",
+				"t_fire_2b",
+				"t_fire_2a",
+				"t_fire_3a",
+				"t_fire_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"character_name": "灯客",
+			"cleared": 24,
+			"combat_seconds": 415.5,
+			"evolution": 0,
+			"focus_route": "ink",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r01",
+				"r43",
+				"r02",
+				"r41",
+				"r26",
+				"r42",
+				"r18"
+			],
+			"result": "victory",
+			"skill": "s08",
+			"stats": {
+				"ash_energy": 1046.0,
+				"damage_taken": 3,
+				"detonations": 52,
+				"dodges": 3,
+				"elapsed": 415.499999999951,
+				"hits": 806,
+				"kills": 120,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 100,
+				"shots": 919
+			},
+			"talents": [
+				"t_ink_1b",
+				"t_fire_1b",
+				"t_ink_2b",
+				"t_ink_2a",
+				"t_ink_3b",
+				"t_ink_3a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_lantern",
+			"character_name": "灯客",
+			"cleared": 24,
+			"combat_seconds": 485.2,
+			"evolution": 1,
+			"focus_route": "ink",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r43",
+				"r01",
+				"r11",
+				"r42",
+				"r09",
+				"r02",
+				"r41",
+				"r18"
+			],
+			"result": "victory",
+			"skill": "s09",
+			"stats": {
+				"ash_energy": 1184.0,
+				"damage_taken": 4,
+				"detonations": 62,
+				"dodges": 7,
+				"elapsed": 485.233333333221,
+				"hits": 908,
+				"kills": 128,
+				"max_chain": 3,
+				"max_proc_events": 6,
+				"secondary_hits": 195,
+				"shots": 1051
+			},
+			"talents": [
+				"t_ink_1b",
+				"t_ash_1a",
+				"t_ink_2a",
+				"t_ink_2b",
+				"t_ink_1a",
+				"t_ink_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"character_name": "傩面",
+			"cleared": 24,
+			"combat_seconds": 408.8,
+			"evolution": 0,
+			"focus_route": "seal",
+			"health": 11,
+			"highest_floor": 3,
+			"relics": [
+				"r19",
+				"r26",
+				"r09",
+				"r18",
+				"r17",
+				"r41",
+				"r27",
+				"r25",
+				"r43"
+			],
+			"result": "victory",
+			"skill": "s11",
+			"stats": {
+				"ash_energy": 1168.0,
+				"damage_taken": 1,
+				"detonations": 54,
+				"dodges": 0,
+				"elapsed": 408.766666666624,
+				"hits": 644,
+				"kills": 122,
+				"max_chain": 3,
+				"max_proc_events": 4,
+				"secondary_hits": 42,
+				"shots": 752
+			},
+			"talents": [
+				"t_ash_1b",
+				"t_fire_1a",
+				"t_ash_2a",
+				"t_ash_2b",
+				"t_ash_3b",
+				"t_seal_1a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"character_name": "傩面",
+			"cleared": 24,
+			"combat_seconds": 376.1,
+			"evolution": 1,
+			"focus_route": "seal",
+			"health": 11,
+			"highest_floor": 3,
+			"relics": [
+				"r26",
+				"r17",
+				"r33",
+				"r25",
+				"r19",
+				"r18",
+				"r27",
+				"r35"
+			],
+			"result": "victory",
+			"skill": "s12",
+			"stats": {
+				"ash_energy": 1482.0,
+				"damage_taken": 0,
+				"detonations": 42,
+				"dodges": 0,
+				"elapsed": 376.13333333332,
+				"hits": 602,
+				"kills": 121,
+				"max_chain": 2,
+				"max_proc_events": 2,
+				"secondary_hits": 20,
+				"shots": 689
+			},
+			"talents": [
+				"t_fire_1a",
+				"t_ash_1a",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3a",
+				"t_ash_1b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"character_name": "傩面",
+			"cleared": 24,
+			"combat_seconds": 403.1,
+			"evolution": 0,
+			"focus_route": "ash",
+			"health": 11,
+			"highest_floor": 3,
+			"relics": [
+				"r26",
+				"r43",
+				"r41",
+				"r18",
+				"r01",
+				"r33",
+				"r17",
+				"r19"
+			],
+			"result": "victory",
+			"skill": "s11",
+			"stats": {
+				"ash_energy": 1132.0,
+				"damage_taken": 1,
+				"detonations": 50,
+				"dodges": 0,
+				"elapsed": 403.083333333295,
+				"hits": 624,
+				"kills": 122,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 70,
+				"shots": 714
+			},
+			"talents": [
+				"t_ash_1b",
+				"t_fire_1a",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3a",
+				"t_ash_1a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_mask",
+			"character_name": "傩面",
+			"cleared": 24,
+			"combat_seconds": 383.0,
+			"evolution": 1,
+			"focus_route": "ash",
+			"health": 11,
+			"highest_floor": 3,
+			"relics": [
+				"r19",
+				"r25",
+				"r18",
+				"r02",
+				"r41",
+				"r27",
+				"r01"
+			],
+			"result": "victory",
+			"skill": "s12",
+			"stats": {
+				"ash_energy": 1088.0,
+				"damage_taken": 1,
+				"detonations": 42,
+				"dodges": 0,
+				"elapsed": 383.04999999998,
+				"hits": 627,
+				"kills": 125,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 46,
+				"shots": 687
+			},
+			"talents": [
+				"t_ash_1b",
+				"t_seal_1a",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3a",
+				"t_ash_1a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"character_name": "伞灵",
+			"cleared": 24,
+			"combat_seconds": 377.3,
+			"evolution": 0,
+			"focus_route": "wind",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r35",
+				"r26",
+				"r33",
+				"r34",
+				"r41",
+				"r17",
+				"r01"
+			],
+			"result": "victory",
+			"skill": "s14",
+			"stats": {
+				"ash_energy": 1252.0,
+				"damage_taken": 0,
+				"detonations": 70,
+				"dodges": 1,
+				"elapsed": 377.333333333319,
+				"hits": 1227,
+				"kills": 121,
+				"max_chain": 3,
+				"max_proc_events": 7,
+				"secondary_hits": 455,
+				"shots": 1276
+			},
+			"talents": [
+				"t_seal_1a",
+				"t_thread_1a",
+				"t_thread_2a",
+				"t_seal_2a",
+				"t_thread_3a",
+				"t_seal_3a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"character_name": "伞灵",
+			"cleared": 24,
+			"combat_seconds": 369.9,
+			"evolution": 1,
+			"focus_route": "wind",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r34",
+				"r18",
+				"r19",
+				"r33",
+				"r09",
+				"r35",
+				"r43",
+				"r41"
+			],
+			"result": "victory",
+			"skill": "s15",
+			"stats": {
+				"ash_energy": 1173.0,
+				"damage_taken": 0,
+				"detonations": 74,
+				"dodges": 1,
+				"elapsed": 369.949999999992,
+				"hits": 1217,
+				"kills": 122,
+				"max_chain": 3,
+				"max_proc_events": 5,
+				"secondary_hits": 321,
+				"shots": 1258
+			},
+			"talents": [
+				"t_wind_1b",
+				"t_ash_1b",
+				"t_wind_2b",
+				"t_wind_2a",
+				"t_wind_3b",
+				"t_wind_1a"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"character_name": "伞灵",
+			"cleared": 24,
+			"combat_seconds": 409.1,
+			"evolution": 0,
+			"focus_route": "ash",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r18",
+				"r17",
+				"r19",
+				"r33",
+				"r01",
+				"r43",
+				"r02"
+			],
+			"result": "victory",
+			"skill": "s14",
+			"stats": {
+				"ash_energy": 1648.0,
+				"damage_taken": 2,
+				"detonations": 80,
+				"dodges": 1,
+				"elapsed": 409.099999999957,
+				"hits": 1304,
+				"kills": 123,
+				"max_chain": 2,
+				"max_proc_events": 11,
+				"secondary_hits": 564,
+				"shots": 1357
+			},
+			"talents": [
+				"t_ash_1a",
+				"t_seal_1a",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3a",
+				"t_ash_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_umbrella",
+			"character_name": "伞灵",
+			"cleared": 24,
+			"combat_seconds": 385.3,
+			"evolution": 1,
+			"focus_route": "ash",
+			"health": 8,
+			"highest_floor": 3,
+			"relics": [
+				"r35",
+				"r02",
+				"r19",
+				"r34",
+				"r18",
+				"r33",
+				"r26"
+			],
+			"result": "victory",
+			"skill": "s15",
+			"stats": {
+				"ash_energy": 1254.0,
+				"damage_taken": 0,
+				"detonations": 74,
+				"dodges": 2,
+				"elapsed": 385.299999999978,
+				"hits": 1214,
+				"kills": 120,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 311,
+				"shots": 1255
+			},
+			"talents": [
+				"t_wind_1b",
+				"t_ash_1a",
+				"t_ash_2b",
+				"t_ash_2a",
+				"t_ash_3b",
+				"t_ash_1b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"character_name": "墨吏",
+			"cleared": 24,
+			"combat_seconds": 380.1,
+			"evolution": 0,
+			"focus_route": "ink",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r11",
+				"r26",
+				"r33",
+				"r10",
+				"r43",
+				"r09"
+			],
+			"result": "victory",
+			"skill": "s17",
+			"stats": {
+				"ash_energy": 1030.0,
+				"damage_taken": 3,
+				"detonations": 62,
+				"dodges": 4,
+				"elapsed": 380.06666666665,
+				"hits": 1005,
+				"kills": 119,
+				"max_chain": 4,
+				"max_proc_events": 8,
+				"secondary_hits": 217,
+				"shots": 973
+			},
+			"talents": [
+				"t_ink_1b",
+				"t_fire_1a",
+				"t_ink_2a",
+				"t_ink_2b",
+				"t_ink_3a",
+				"t_ink_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"character_name": "墨吏",
+			"cleared": 24,
+			"combat_seconds": 355.0,
+			"evolution": 1,
+			"focus_route": "ink",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r10",
+				"r43",
+				"r09",
+				"r41",
+				"r02",
+				"r42"
+			],
+			"result": "victory",
+			"skill": "s18",
+			"stats": {
+				"ash_energy": 1038.0,
+				"damage_taken": 4,
+				"detonations": 53,
+				"dodges": 1,
+				"elapsed": 355.016666666672,
+				"hits": 916,
+				"kills": 119,
+				"max_chain": 4,
+				"max_proc_events": 10,
+				"secondary_hits": 97,
+				"shots": 914
+			},
+			"talents": [
+				"t_ink_1b",
+				"t_seal_1a",
+				"t_ink_2a",
+				"t_ink_2b",
+				"t_ink_3a",
+				"t_ink_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"character_name": "墨吏",
+			"cleared": 24,
+			"combat_seconds": 383.1,
+			"evolution": 0,
+			"focus_route": "thread",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r42",
+				"r17",
+				"r26",
+				"r41",
+				"r10",
+				"r02",
+				"r09",
+				"r43",
+				"r11"
+			],
+			"result": "victory",
+			"skill": "s17",
+			"stats": {
+				"ash_energy": 1262.0,
+				"damage_taken": 0,
+				"detonations": 62,
+				"dodges": 3,
+				"elapsed": 383.066666666647,
+				"hits": 993,
+				"kills": 122,
+				"max_chain": 3,
+				"max_proc_events": 2,
+				"secondary_hits": 143,
+				"shots": 989
+			},
+			"talents": [
+				"t_fire_1a",
+				"t_thread_1b",
+				"t_thread_2b",
+				"t_thread_2a",
+				"t_thread_3a",
+				"t_thread_3b"
+			]
+		},
+		{
+			"bosses": [
+				"b01",
+				"b02",
+				"b03"
+			],
+			"character": "c_ink",
+			"character_name": "墨吏",
+			"cleared": 24,
+			"combat_seconds": 352.0,
+			"evolution": 1,
+			"focus_route": "thread",
+			"health": 9,
+			"highest_floor": 3,
+			"relics": [
+				"r09",
+				"r26",
+				"r41",
+				"r43",
+				"r10",
+				"r11",
+				"r18"
+			],
+			"result": "victory",
+			"skill": "s18",
+			"stats": {
+				"ash_energy": 1038.0,
+				"damage_taken": 2,
+				"detonations": 54,
+				"dodges": 1,
+				"elapsed": 352.016666666675,
+				"hits": 906,
+				"kills": 119,
+				"max_chain": 4,
+				"max_proc_events": 4,
+				"secondary_hits": 199,
+				"shots": 898
+			},
+			"talents": [
+				"t_thread_1b",
+				"t_seal_1a",
+				"t_thread_2b",
+				"t_thread_2a",
+				"t_thread_3a",
+				"t_thread_3b"
+			]
+		}
+	]
+}

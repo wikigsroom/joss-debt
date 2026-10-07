@@ -1,0 +1,355 @@
+{
+  "version": "0.1.0",
+  "units": "world units; seconds; integer health",
+  "combat": {
+    "tick_hz": 60,
+    "health_hit_radius": 12,
+    "health_max_cap": 12,
+    "energy_start": 40,
+    "energy_max": 100,
+    "energy_regen_combat_s": 3,
+    "first_mark_energy": 2,
+    "first_mark_icd_s": 2,
+    "natural_ash": 8,
+    "elite_ash": 16,
+    "boss_ash": 30,
+    "ash_delay_s": 0.6,
+    "ash_radius": 120,
+    "ash_radius_cap": 420,
+    "skill_cost_floor": 18,
+    "mark_cap": 3,
+    "mark_duration_s": 5,
+    "burn_cap": 3,
+    "burn_duration_s": 3,
+    "burn_damage_per_stack_s": 3,
+    "detonate_base": 20,
+    "detonate_per_mark": 8,
+    "chain_radius": 160,
+    "chain_group_base": 2,
+    "chain_group_cap": 6,
+    "chain_falloff": [
+      1,
+      0.85,
+      0.72
+    ],
+    "dash_distance": 160,
+    "dash_duration_s": 0.2,
+    "dash_invulnerable_s": 0.15,
+    "dash_cooldown_s": 2,
+    "hurt_invulnerable_s": 0.8,
+    "input_buffer_ms": 80,
+    "crit_chance": 0.05,
+    "crit_multiplier": 1.5,
+    "proc_depth_cap": 2,
+    "chain_event_cap": 48,
+    "boss_control_resistance": 0.85,
+    "telegraph_floor_ms": 350,
+    "active_enemies_cap": 8,
+    "boss_adds_cap": 6,
+    "summons_per_room_cap": 8,
+    "rewarded_summons_per_room_cap": 2,
+    "unrewarded_summon_ash": 4,
+    "control": {
+      "light_push_distance": 26,
+      "heavy_push_distance": 64,
+      "secondary_push_scale": 0.5,
+      "push_duration_s": 0.14,
+      "push_distance_cap": 112,
+      "elite_scale": 0.5,
+      "ordinary_root_cap_s": 0.8,
+      "elite_root_cap_s": 0.3
+    }
+  },
+  "progression": {
+    "initial_relic_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r09",
+      "r10",
+      "r11",
+      "r17",
+      "r18",
+      "r19",
+      "r25",
+      "r26",
+      "r27",
+      "r33",
+      "r34",
+      "r35",
+      "r41",
+      "r42",
+      "r43"
+    ],
+    "meta_purchases_repeatable": false,
+    "level_thresholds": [
+      20,
+      50,
+      90,
+      140,
+      200,
+      270,
+      350,
+      440,
+      540,
+      650,
+      770,
+      900,
+      1040,
+      1190,
+      1350,
+      1520,
+      1700,
+      1890
+    ],
+    "xp": {
+      "combat": 10,
+      "elite": 18,
+      "boss": 30,
+      "challenge": 24
+    },
+    "relic_slots": 12,
+    "level_choices": 3,
+    "evolution_floor": 2,
+    "meta_currency": {
+      "combat": 1,
+      "elite": 2,
+      "boss": 5,
+      "boss_first": 8
+    },
+    "route_affinity_increment": 0.15,
+    "route_affinity_cap": 1.6
+  },
+  "loot": {
+    "coin_pickup_radius": 120,
+    "coin_pickup_radius_cap": 160,
+    "coins_start": 10,
+    "enemy_coin_chance": 0.6,
+    "enemy_coin_range": [
+      1,
+      2
+    ],
+    "clear_coins": {
+      "combat": 3,
+      "elite": 8,
+      "boss": 12,
+      "challenge": 10
+    },
+    "heal": {
+      "base_chance": 0.12,
+      "per_missed_clear": 0.08,
+      "chance_cap": 0.44,
+      "low_health_ratio": 0.5,
+      "miss_limit": 3,
+      "amount": 2,
+      "eligible_rooms": [
+        "combat",
+        "elite",
+        "challenge"
+      ],
+      "full_health_compensation_coins": 3
+    },
+    "reward_choices": 3,
+    "boss_health_upgrade": 1,
+    "boss_fixed_heal_amount": 2,
+    "rerolls_start": 1,
+    "rerolls_cap": 3,
+    "rarity_by_floor": {
+      "1": {
+        "common": 0.65,
+        "uncommon": 0.3,
+        "rare": 0.05,
+        "mythic": 0
+      },
+      "2": {
+        "common": 0.45,
+        "uncommon": 0.35,
+        "rare": 0.17,
+        "mythic": 0.03
+      },
+      "3": {
+        "common": 0.3,
+        "uncommon": 0.4,
+        "rare": 0.25,
+        "mythic": 0.05
+      },
+      "4": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "5": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "6": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "7": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "8": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "9": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "10": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      },
+      "11": {
+        "common": 0.15,
+        "uncommon": 0.38,
+        "rare": 0.39,
+        "mythic": 0.08
+      }
+    },
+    "shop_prices": {
+      "common": 18,
+      "uncommon": 30,
+      "rare": 48,
+      "mythic": 72,
+      "weapon": 35,
+      "heal": 10,
+      "reroll": 12
+    },
+    "enemy_ledger_key": [
+      "run_id",
+      "room_id",
+      "enemy_uid"
+    ],
+    "reward_ledger_key": [
+      "run_id",
+      "room_id",
+      "reward_slot"
+    ]
+  },
+  "debt": {
+    "grant_locked_relic_for_current_run": true,
+    "exclude_rewards_at_stack_cap": true,
+    "active_contracts_cap": 2,
+    "risk_points_cap": 4,
+    "boss_extra_collectors": false,
+    "interest_per_floor": 6,
+    "max_interest": 12,
+    "repay_at": "safe_floor_checkpoint"
+  },
+  "floors": {
+    "count": 3,
+    "base_rooms": {
+      "combat": 6,
+      "elite": 1,
+      "reward": 1,
+      "shop": 1,
+      "debt": 1,
+      "boss": 1
+    },
+    "optional_rooms_range": [
+      0,
+      2
+    ],
+    "min_main_path_combat_rooms": 4,
+    "reward_before_combat_room": 3,
+    "room_grid": [
+      18,
+      9
+    ],
+    "tile_size": 64,
+    "canvas": [
+      1280,
+      720
+    ],
+    "walkable": [
+      1152,
+      576
+    ],
+    "spawn_player_distance": 220
+  },
+  "platforms": {
+    "engine": "Godot",
+    "engine_baseline": "4.7.2",
+    "language": "GDScript",
+    "renderer": "gl_compatibility",
+    "orientation": "landscape",
+    "pc_target_fps": 60,
+    "mobile_target_fps": 60,
+    "mobile_low_fps": 30,
+    "mobile_projectile_cap": 240,
+    "pc_projectile_cap": 240,
+    "mobile_vfx_particle_cap": 120,
+    "pc_vfx_particle_cap": 320,
+    "mobile_quality_auto": true,
+    "mobile_quality_low_particle_scale": 0.55,
+    "mobile_quality_low_effect_cap": 72,
+    "texture_memory_mb_budget": 128,
+    "working_set_mb_budget": 350,
+    "package_mb_budget": 180,
+    "android_touch_dp_min": 48,
+    "ios_touch_pt_min": 44,
+    "target_touch_size": 56,
+    "safe_area_runtime": true,
+    "ios_requires_macos_xcode": true,
+    "local_virtualization_allowed": false,
+    "runtime_verification_status": "verified_alpha"
+  },
+  "event_names": [
+    "armor_break",
+    "ash_pickup",
+    "burn_tick",
+    "chain_form",
+    "contract_repay",
+    "dash_path",
+    "dash_start",
+    "deflect",
+    "detonate_complete",
+    "detonate_hit",
+    "detonate_start",
+    "distance_moved",
+    "dodge_success",
+    "elite_clear",
+    "lethal_damage",
+    "mark_first",
+    "natural_kill",
+    "player_damage",
+    "primary_hit",
+    "room_clear",
+    "stat"
+  ],
+  "save": {
+    "schema_version": 2,
+    "mode": "joint_account_run_journal",
+    "copies": 2,
+    "checksum": "sha256",
+    "resume_paused": true,
+    "migrate_content_by_id": true,
+    "legacy_schema_versions": [
+      1
+    ],
+    "preserve_legacy_files": true,
+    "manual_transfer": [
+      "checked_json_file",
+      "compressed_text"
+    ],
+    "preview_before_import": true,
+    "import_undo_backup": true,
+    "keep_local_settings_by_default": true
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "jobs": [
+    {
+      "name": "ownerless-temple-arena",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-ownerless-temple-arena.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/ownerless-temple-arena.png",
+      "background": "opaque"
+    },
+    {
+      "name": "coin-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-coin-enemies.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "background": "transparent"
+    },
+    {
+      "name": "ownerless-enemies",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-ownerless-enemies.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "background": "transparent"
+    },
+    {
+      "name": "relics-mid",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-relics-mid.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/relics-initial.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "background": "transparent"
+    },
+    {
+      "name": "relics-end",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-relics-end.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/relics-initial.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "background": "transparent"
+    },
+    {
+      "name": "optional-bosses",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-optional-bosses.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/bosses.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/optional-bosses.png",
+      "background": "transparent"
+    },
+    {
+      "name": "hub-arena",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-hub-arena.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/hub-arena.png",
+      "background": "opaque"
+    },
+    {
+      "name": "npcs",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-npcs.txt",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png",
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/npcs.png",
+      "background": "transparent"
+    },
+    {
+      "name": "skills",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-skills.txt",
+      "references": [
+        "output/imagegen/incense-debt/characters-roster.png",
+        "output/imagegen/incense-debt/runtime/relics-initial.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/skills.png",
+      "background": "transparent"
+    },
+    {
+      "name": "elites",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-elites.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-enemies.png",
+        "output/imagegen/incense-debt/runtime/coin-enemies.png",
+        "output/imagegen/incense-debt/runtime/ownerless-enemies.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/elites.png",
+      "background": "transparent"
+    },
+    {
+      "name": "secret-entry",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-secret-entry.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+        "output/imagegen/incense-debt/characters-roster.png"
+      ],
+      "output": "output/imagegen/incense-debt/runtime/secret-entry.png",
+      "background": "transparent"
+    },
+    {
+      "name": "neutral-grips",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-neutral-grips.txt",
+      "references": [
+        "output/imagegen/incense-debt/held-weapons/approved-poses-edit-canvas.png"
+      ],
+      "output": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "background": "transparent",
+      "production_report": "docs/incense-debt/reports/runtime/held-weapons/image-production.json"
+    },
+    {
+      "name": "held-weapons",
+      "prompt": "docs/incense-debt/assets/prompts/reference-locked-held-weapons.txt",
+      "references": [
+        "output/imagegen/incense-debt/runtime/weapons.png"
+      ],
+      "output": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "background": "transparent",
+      "production_report": "docs/incense-debt/reports/runtime/held-weapons/image-production.json"
+    }
+  ]
+}

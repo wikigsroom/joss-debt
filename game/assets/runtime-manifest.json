@@ -1,0 +1,4537 @@
+{
+  "generator": "Sub2API / gpt-image-2.5",
+  "entries": [
+    {
+      "id": "c_paper_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_paper_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "f3bab5d6ddf347c9c81f32a0d0cfb41cc921bdb4d3531c90ac3cdd9b282a9aee",
+      "source_bbox": [
+        34,
+        42,
+        235,
+        273
+      ],
+      "shared_scale": 0.3022978723404255,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_bell_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_bell_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "1364cde69a4247b619426edf44b83e60bfd501a5d05a0e4291a95911eac81112",
+      "source_bbox": [
+        267,
+        47,
+        506,
+        273
+      ],
+      "shared_scale": 0.3062068965517241,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_lantern_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_lantern_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "ef4a0b4fb21562d961f0d7d5cf557de7dbb86a38f6c060edda3c34c48f344890",
+      "source_bbox": [
+        547,
+        17,
+        715,
+        274
+      ],
+      "shared_scale": 0.276420233463035,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_mask_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_mask_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "f23d7a0b701ce3c3059ecc042c1727e17fc8b69aeef435b7dc1567823b6a453b",
+      "source_bbox": [
+        753,
+        60,
+        1008,
+        279
+      ],
+      "shared_scale": 0.3137254901960784,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_umbrella_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_umbrella_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "0f0006c81bf7bd832630b7713947a6cc1f934ce5d1b68c03199ad89150861218",
+      "source_bbox": [
+        1018,
+        34,
+        1278,
+        280
+      ],
+      "shared_scale": 0.288780487804878,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_ink_down",
+      "kind": "heroes",
+      "path": "assets/heroes/c_ink_down.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "b51da65096b65826f09e9b5702d1d9df10a8e877d30b207846226f0f8f9397fa",
+      "source_bbox": [
+        1313,
+        34,
+        1508,
+        276
+      ],
+      "shared_scale": 0.29234567901234565,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_paper_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_paper_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "b81cf6675f982c6ac62be6f5ebb52deacc2e9f4e4f81e3aa3435193584164448",
+      "source_bbox": [
+        46,
+        292,
+        206,
+        527
+      ],
+      "shared_scale": 0.3022978723404255,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_bell_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_bell_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "67bed31a1977937921fab4162277117f30d28fce911e1b3c866938301ef8993c",
+      "source_bbox": [
+        276,
+        298,
+        463,
+        530
+      ],
+      "shared_scale": 0.3062068965517241,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_lantern_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_lantern_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "da7d97e1377a84fc67c8de48097c5ede19f5b462d9f52e5a676fcb73ce57a993",
+      "source_bbox": [
+        557,
+        278,
+        710,
+        527
+      ],
+      "shared_scale": 0.276420233463035,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_mask_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_mask_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "b3a5642e59dc17115fc8d577ff3f089836c6f64b877ec757f6cb38aabbd93732",
+      "source_bbox": [
+        758,
+        309,
+        992,
+        527
+      ],
+      "shared_scale": 0.3137254901960784,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_umbrella_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_umbrella_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "7bd73519140721ade85ae6e7e80014c5949888ee5673fb4c8102f89f0450fca4",
+      "source_bbox": [
+        1040,
+        291,
+        1283,
+        528
+      ],
+      "shared_scale": 0.288780487804878,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_ink_left",
+      "kind": "heroes",
+      "path": "assets/heroes/c_ink_left.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "247a63289bb6cc4aef69955894203f99d74025bc54bc788bbdd426e478856762",
+      "source_bbox": [
+        1341,
+        292,
+        1481,
+        535
+      ],
+      "shared_scale": 0.29234567901234565,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_paper_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_paper_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "69f2255da457f05d998919a28e47c5d0bddd6d0aba9301417b13f3c8d9a644ef",
+      "source_bbox": [
+        45,
+        544,
+        216,
+        769
+      ],
+      "shared_scale": 0.3022978723404255,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_bell_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_bell_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "63274c708bcc1ba8a6e6d9d1ad89c874001a5c1342afdb828391f4151deda1b1",
+      "source_bbox": [
+        296,
+        542,
+        481,
+        769
+      ],
+      "shared_scale": 0.3062068965517241,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_lantern_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_lantern_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "630c387370c06bf97970be6bb35d4cf1ea82c7a1498c9c0f0dfe355ae6100a08",
+      "source_bbox": [
+        548,
+        531,
+        693,
+        769
+      ],
+      "shared_scale": 0.276420233463035,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_mask_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_mask_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "51154ff2aa1a27fc97678d801443f831f04f919152399b35ff189d6b7315f0fc",
+      "source_bbox": [
+        766,
+        562,
+        1003,
+        773
+      ],
+      "shared_scale": 0.3137254901960784,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_umbrella_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_umbrella_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "c6b96e9ad26d3e14c7e26002bd29548c335222196cc2ca466e7ea9bad3d74600",
+      "source_bbox": [
+        1030,
+        532,
+        1279,
+        770
+      ],
+      "shared_scale": 0.288780487804878,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_ink_right",
+      "kind": "heroes",
+      "path": "assets/heroes/c_ink_right.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "aba5d173bd72eb0424397e36ebf2bf38d716e6d2917ebeba6055aeebc9dd800f",
+      "source_bbox": [
+        1338,
+        545,
+        1500,
+        777
+      ],
+      "shared_scale": 0.29234567901234565,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_paper_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_paper_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "40faee6a7784dd7c8dd2ff1d81d9c76af6617ef363457ec64fae878f00f64081",
+      "source_bbox": [
+        42,
+        778,
+        233,
+        999
+      ],
+      "shared_scale": 0.3022978723404255,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_bell_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_bell_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "c91c533ab59b33800b7fdbaf7be1a0da832103d575eb5eef05f0c43824e7370f",
+      "source_bbox": [
+        279,
+        782,
+        495,
+        999
+      ],
+      "shared_scale": 0.3062068965517241,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_lantern_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_lantern_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "3b6e177917da0f664122fddeaa9333d1107714af91dc217e76215781ca107faa",
+      "source_bbox": [
+        559,
+        772,
+        710,
+        1001
+      ],
+      "shared_scale": 0.276420233463035,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_mask_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_mask_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "36a610eaafdbc303ecdafce00b443cc1c65a896356e95df27f74f048778b733b",
+      "source_bbox": [
+        754,
+        802,
+        1000,
+        999
+      ],
+      "shared_scale": 0.3137254901960784,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_umbrella_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_umbrella_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "0917b314cc3cbff112013fd90ce3645f890bfc3c9a74198978c68f322c5a40d1",
+      "source_bbox": [
+        1027,
+        772,
+        1285,
+        998
+      ],
+      "shared_scale": 0.288780487804878,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "c_ink_up",
+      "kind": "heroes",
+      "path": "assets/heroes/c_ink_up.png",
+      "frame": [
+        96,
+        96
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/heroes-poses-locked.png",
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72",
+      "sha256": "ccb111ba6ec1dae282f33f5f45249f6d0d3b64828606a4fcdce88a89cee8f8df",
+      "source_bbox": [
+        1320,
+        784,
+        1499,
+        1002
+      ],
+      "shared_scale": 0.29234567901234565,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e01",
+      "kind": "enemies",
+      "path": "assets/enemies/e01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "8715b8feab1976fc525ea766388da2b10249d11504d4c8b2f7f529cd6a490509",
+      "source_bbox": [
+        54,
+        80,
+        350,
+        492
+      ],
+      "shared_scale": 0.23611650485436894,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e02",
+      "kind": "enemies",
+      "path": "assets/enemies/e02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "982b0c44e98b35878f127dd1b2c15bc7e128fa9eb2a2a27f457fc3f18719b0be",
+      "source_bbox": [
+        425,
+        148,
+        735,
+        470
+      ],
+      "shared_scale": 0.302111801242236,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e03",
+      "kind": "enemies",
+      "path": "assets/enemies/e03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "32418eac85dedbd2486370fabf564a81edaaf93beb31a71aa84b0d7ce3c6cf1a",
+      "source_bbox": [
+        782,
+        145,
+        1108,
+        461
+      ],
+      "shared_scale": 0.3078481012658228,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e04",
+      "kind": "enemies",
+      "path": "assets/enemies/e04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "0d1bb2956b8807fe4f2b7c711b92ce37a0dc68dfa5a9f586e960add750dfeb53",
+      "source_bbox": [
+        1117,
+        170,
+        1515,
+        417
+      ],
+      "shared_scale": 0.271356783919598,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e05",
+      "kind": "enemies",
+      "path": "assets/enemies/e05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "f76003515983e3d335dce2e245566579491936f8ee8562f7f0958a796a14a2ce",
+      "source_bbox": [
+        61,
+        544,
+        352,
+        932
+      ],
+      "shared_scale": 0.25072164948453607,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e06",
+      "kind": "enemies",
+      "path": "assets/enemies/e06.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "106dd3374f21fde86307a116651392f285332ebf0c38602df1f71f69f6046f39",
+      "source_bbox": [
+        394,
+        554,
+        769,
+        933
+      ],
+      "shared_scale": 0.2566754617414248,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e07",
+      "kind": "enemies",
+      "path": "assets/enemies/e07.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "88a0d40ac21f6e8820607477ef6a579d413b9cf4e9d0856977b1d7dbf9b0f5d0",
+      "source_bbox": [
+        787,
+        561,
+        1145,
+        930
+      ],
+      "shared_scale": 0.26363143631436314,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e08",
+      "kind": "enemies",
+      "path": "assets/enemies/e08.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/paper-enemies.png",
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8",
+      "sha256": "e2c9a9fddf5f3cbb0ed79efff9907b1119bd959f86fab37990db5be706b82869",
+      "source_bbox": [
+        1214,
+        561,
+        1486,
+        934
+      ],
+      "shared_scale": 0.2608042895442359,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "b01",
+      "kind": "bosses",
+      "path": "assets/bosses/b01.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/bosses.png",
+      "source_sha256": "aa0560328d826f212e2937815fba42611d829fdc59073d2d9a2c3ff567c764d5",
+      "sha256": "706ea9fa3fe61a99c7ad64298882ccafeb5ec5737605c0ca9b7f81d3262c1ae5",
+      "source_bbox": [
+        7,
+        177,
+        523,
+        835
+      ],
+      "shared_scale": 0.2956838905775076,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "b02",
+      "kind": "bosses",
+      "path": "assets/bosses/b02.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/bosses.png",
+      "source_sha256": "aa0560328d826f212e2937815fba42611d829fdc59073d2d9a2c3ff567c764d5",
+      "sha256": "46767248745e1297851c43493a12b9c959846d6ece00cc07fcc7093a896d2379",
+      "source_bbox": [
+        521,
+        213,
+        1064,
+        817
+      ],
+      "shared_scale": 0.32211920529801324,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "b03",
+      "kind": "bosses",
+      "path": "assets/bosses/b03.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/bosses.png",
+      "source_sha256": "aa0560328d826f212e2937815fba42611d829fdc59073d2d9a2c3ff567c764d5",
+      "sha256": "05481c6930d823b0fbeaabd74fecb4c141bf2a6d475869233e5b3c92538cd5c1",
+      "source_bbox": [
+        1052,
+        48,
+        1518,
+        883
+      ],
+      "shared_scale": 0.2330059880239521,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "r01",
+      "kind": "relics",
+      "path": "assets/relics/r01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "340e95e4da119748f76bd7b22de4d575dfd40094348b0cf41577d5edc9696112",
+      "source_bbox": [
+        35,
+        31,
+        229,
+        368
+      ],
+      "shared_scale": 0.2886646884272997,
+      "animation": "static icon"
+    },
+    {
+      "id": "r02",
+      "kind": "relics",
+      "path": "assets/relics/r02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "a637e4b23c919807f1382c2dcd909686b40c0fd1c2ce71a6340187f0610057cb",
+      "source_bbox": [
+        267,
+        45,
+        519,
+        379
+      ],
+      "shared_scale": 0.29125748502994014,
+      "animation": "static icon"
+    },
+    {
+      "id": "r03",
+      "kind": "relics",
+      "path": "assets/relics/r03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "5e1a22e860e3f1965f218004901a9e3e78a23c9b18f1143e09b24a083deae62f",
+      "source_bbox": [
+        539,
+        38,
+        766,
+        366
+      ],
+      "shared_scale": 0.2965853658536585,
+      "animation": "static icon"
+    },
+    {
+      "id": "r09",
+      "kind": "relics",
+      "path": "assets/relics/r09.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "69af82c65daeb0936e015db4ee4fb177c74001ae48f27376e8e1e6a3196a6f18",
+      "source_bbox": [
+        785,
+        74,
+        1020,
+        375
+      ],
+      "shared_scale": 0.3231893687707641,
+      "animation": "static icon"
+    },
+    {
+      "id": "r10",
+      "kind": "relics",
+      "path": "assets/relics/r10.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "988bbd52eaec802bd906b6b58d29a19039f2c6bb4131201d26bb9a7119ba0d16",
+      "source_bbox": [
+        1084,
+        36,
+        1232,
+        396
+      ],
+      "shared_scale": 0.27022222222222225,
+      "animation": "static icon"
+    },
+    {
+      "id": "r11",
+      "kind": "relics",
+      "path": "assets/relics/r11.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "d0f81564ce836fc69dc4c085f54904c4e47222a19b4038b99cb4c9f406c0080e",
+      "source_bbox": [
+        1262,
+        71,
+        1516,
+        362
+      ],
+      "shared_scale": 0.3342955326460481,
+      "animation": "static icon"
+    },
+    {
+      "id": "r17",
+      "kind": "relics",
+      "path": "assets/relics/r17.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "6f81b0ef76563be3a3588d38624b9cd2a081c34f15af8da392bf653541462ddd",
+      "source_bbox": [
+        19,
+        414,
+        264,
+        667
+      ],
+      "shared_scale": 0.38450592885375495,
+      "animation": "static icon"
+    },
+    {
+      "id": "r18",
+      "kind": "relics",
+      "path": "assets/relics/r18.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "8c434427899eab516337394f383ac4b0eebeea4b33e47c1a089cfb65004f7679",
+      "source_bbox": [
+        268,
+        432,
+        531,
+        649
+      ],
+      "shared_scale": 0.41064638783269963,
+      "animation": "static icon"
+    },
+    {
+      "id": "r19",
+      "kind": "relics",
+      "path": "assets/relics/r19.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "f253f534b970a039b01f16bd3a620dae717f7b2f6302173634799a2358416412",
+      "source_bbox": [
+        533,
+        426,
+        773,
+        659
+      ],
+      "shared_scale": 0.4175107296137339,
+      "animation": "static icon"
+    },
+    {
+      "id": "r25",
+      "kind": "relics",
+      "path": "assets/relics/r25.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "97a18991c060eaa06660b3d272fa1bcd5cfd20274dae7363acae0f56f83197ab",
+      "source_bbox": [
+        793,
+        404,
+        1024,
+        671
+      ],
+      "shared_scale": 0.36434456928838954,
+      "animation": "static icon"
+    },
+    {
+      "id": "r26",
+      "kind": "relics",
+      "path": "assets/relics/r26.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "3383bb1a20d84d61d33cbcf9811825f70e9b650decc1a83948b604668ff7e350",
+      "source_bbox": [
+        1030,
+        414,
+        1254,
+        684
+      ],
+      "shared_scale": 0.3602962962962963,
+      "animation": "static icon"
+    },
+    {
+      "id": "r27",
+      "kind": "relics",
+      "path": "assets/relics/r27.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "07cef3ddc8046fa6da8ea22f96caa23110961c30909efd898a0083ee785d13ea",
+      "source_bbox": [
+        1272,
+        436,
+        1518,
+        647
+      ],
+      "shared_scale": 0.43902439024390244,
+      "animation": "static icon"
+    },
+    {
+      "id": "r33",
+      "kind": "relics",
+      "path": "assets/relics/r33.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "ce4bd490d1263ea06a126ad59dff60dbed781e02fdbcde1b0e6f12ba5c27df6d",
+      "source_bbox": [
+        24,
+        681,
+        267,
+        988
+      ],
+      "shared_scale": 0.3168729641693811,
+      "animation": "static icon"
+    },
+    {
+      "id": "r34",
+      "kind": "relics",
+      "path": "assets/relics/r34.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "1df71b0e4ab838d5a8937764b1dba27103b2364c3c4d92ba086640650d7fef67",
+      "source_bbox": [
+        304,
+        681,
+        510,
+        984
+      ],
+      "shared_scale": 0.3210561056105611,
+      "animation": "static icon"
+    },
+    {
+      "id": "r35",
+      "kind": "relics",
+      "path": "assets/relics/r35.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "0332adf0e2dbe92620dd7b63fcf12e82291bbd1fce670f02413a40168e078d7d",
+      "source_bbox": [
+        529,
+        716,
+        747,
+        981
+      ],
+      "shared_scale": 0.36709433962264154,
+      "animation": "static icon"
+    },
+    {
+      "id": "r41",
+      "kind": "relics",
+      "path": "assets/relics/r41.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "d251078260a83c60287b1e38322cfc9a2c4916066b6e57f79f0666ee63f88b13",
+      "source_bbox": [
+        771,
+        760,
+        1024,
+        924
+      ],
+      "shared_scale": 0.4268774703557312,
+      "animation": "static icon"
+    },
+    {
+      "id": "r42",
+      "kind": "relics",
+      "path": "assets/relics/r42.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "5bac9e66b2ef5522d5b4b870b1d4f9b4500810ffbb16082f20f1de68bb151bf3",
+      "source_bbox": [
+        1050,
+        702,
+        1287,
+        973
+      ],
+      "shared_scale": 0.3589667896678967,
+      "animation": "static icon"
+    },
+    {
+      "id": "r43",
+      "kind": "relics",
+      "path": "assets/relics/r43.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-initial.png",
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71",
+      "sha256": "8f9a4c4befefb00131de1e4a3dfc1b6e10ec9979584412dd30a33a6a04820dc7",
+      "source_bbox": [
+        1339,
+        672,
+        1493,
+        988
+      ],
+      "shared_scale": 0.3078481012658228,
+      "animation": "static icon"
+    },
+    {
+      "id": "w01",
+      "kind": "weapons",
+      "path": "assets/weapons/w01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "b608803f58f720ff2fb775c6388cba24309bb4ac088fc2471772a45bc5c353d4",
+      "source_bbox": [
+        55,
+        51,
+        310,
+        328
+      ],
+      "shared_scale": 0.3511913357400722,
+      "animation": "static icon"
+    },
+    {
+      "id": "w02",
+      "kind": "weapons",
+      "path": "assets/weapons/w02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "d208f6c8ba8a4499c3b132118529016f6d6e287e94dac10cdd3a4ce508df5879",
+      "source_bbox": [
+        421,
+        62,
+        763,
+        335
+      ],
+      "shared_scale": 0.3157894736842105,
+      "animation": "static icon"
+    },
+    {
+      "id": "w03",
+      "kind": "weapons",
+      "path": "assets/weapons/w03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "7b58355a550983ca5e56438b54164c1d02acfd3a5d79a3cc45a2e03c2be452d6",
+      "source_bbox": [
+        886,
+        16,
+        1095,
+        347
+      ],
+      "shared_scale": 0.29389728096676737,
+      "animation": "static icon"
+    },
+    {
+      "id": "w04",
+      "kind": "weapons",
+      "path": "assets/weapons/w04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "8784db163a9374fdaf18d2b31b55d42667bf5647caaf67bd2e355461683c4ee8",
+      "source_bbox": [
+        1219,
+        48,
+        1495,
+        348
+      ],
+      "shared_scale": 0.32426666666666665,
+      "animation": "static icon"
+    },
+    {
+      "id": "w05",
+      "kind": "weapons",
+      "path": "assets/weapons/w05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "cb348eeedc8cf754e68cf3f9261b52e549df062c1d8adf9d814ae2d73b04cc5d",
+      "source_bbox": [
+        30,
+        365,
+        403,
+        668
+      ],
+      "shared_scale": 0.289544235924933,
+      "animation": "static icon"
+    },
+    {
+      "id": "w06",
+      "kind": "weapons",
+      "path": "assets/weapons/w06.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "08ddf992b36e04a657080cc2ba3b08368ba3fd028c63cd7afc07e5e88ffbfa47",
+      "source_bbox": [
+        517,
+        352,
+        708,
+        674
+      ],
+      "shared_scale": 0.302111801242236,
+      "animation": "static icon"
+    },
+    {
+      "id": "w07",
+      "kind": "weapons",
+      "path": "assets/weapons/w07.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "2bce03a17c01d245b678bd70f8f62008d49cc1033a0ba47343c99e2e8fab95b6",
+      "source_bbox": [
+        783,
+        397,
+        1137,
+        638
+      ],
+      "shared_scale": 0.3050847457627119,
+      "animation": "static icon"
+    },
+    {
+      "id": "w08",
+      "kind": "weapons",
+      "path": "assets/weapons/w08.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "41f91d0b60190591e6f554e1c8084cc12c9829161777adae990ca48e8a97a925",
+      "source_bbox": [
+        1212,
+        376,
+        1474,
+        639
+      ],
+      "shared_scale": 0.36988593155893534,
+      "animation": "static icon"
+    },
+    {
+      "id": "w09",
+      "kind": "weapons",
+      "path": "assets/weapons/w09.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "315100a5c74e147aa267bc2490c8d2f3ff0be0e199860cb7c2ab16a4be67c3d5",
+      "source_bbox": [
+        56,
+        698,
+        397,
+        996
+      ],
+      "shared_scale": 0.31671554252199413,
+      "animation": "static icon"
+    },
+    {
+      "id": "w10",
+      "kind": "weapons",
+      "path": "assets/weapons/w10.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "531ea2688d94dfa9f52be53f5d69ae44c379d5454c851bf14fcd86fae38c6577",
+      "source_bbox": [
+        497,
+        668,
+        752,
+        1000
+      ],
+      "shared_scale": 0.2930120481927711,
+      "animation": "static icon"
+    },
+    {
+      "id": "w11",
+      "kind": "weapons",
+      "path": "assets/weapons/w11.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "fde04d3ef11b2248720bb973d4ac5439e500a36a04dcf25a12a6d1d957a28701",
+      "source_bbox": [
+        799,
+        662,
+        1149,
+        987
+      ],
+      "shared_scale": 0.2993230769230769,
+      "animation": "static icon"
+    },
+    {
+      "id": "w12",
+      "kind": "weapons",
+      "path": "assets/weapons/w12.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/weapons.png",
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff",
+      "sha256": "df002b9b5f330c9ad9c7cfeed8fc3b9e5f3f60a0aadad9877d9a7ceaf7e6017c",
+      "source_bbox": [
+        1225,
+        647,
+        1485,
+        990
+      ],
+      "shared_scale": 0.28361516034985423,
+      "animation": "static icon"
+    },
+    {
+      "id": "e09",
+      "kind": "enemies",
+      "path": "assets/enemies/e09.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "172387869f3c2993c581a11d03d81151969a94708f8f6902a5447633cfb71c3e",
+      "source_bbox": [
+        31,
+        94,
+        371,
+        466
+      ],
+      "shared_scale": 0.26150537634408605,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e10",
+      "kind": "enemies",
+      "path": "assets/enemies/e10.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "b42de9c92f96521e16191e6b2c69a3c755ca4d0cb1e2a93c9363f391b3ca83a2",
+      "source_bbox": [
+        373,
+        169,
+        810,
+        484
+      ],
+      "shared_scale": 0.2471395881006865,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e11",
+      "kind": "enemies",
+      "path": "assets/enemies/e11.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "3898c4f8d73f66c6f28ff4e30e89d9622237114aea29a963e0ed67d2c946f599",
+      "source_bbox": [
+        788,
+        71,
+        1205,
+        479
+      ],
+      "shared_scale": 0.2384313725490196,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e12",
+      "kind": "enemies",
+      "path": "assets/enemies/e12.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "5ada9adf589c11651ca1f9a989713b261840b5d4dac9550fe1e057fa4f3e2e91",
+      "source_bbox": [
+        1195,
+        34,
+        1522,
+        470
+      ],
+      "shared_scale": 0.22311926605504587,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e13",
+      "kind": "enemies",
+      "path": "assets/enemies/e13.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "8c5d98444b0ad281c99479a7e93d56404c5324539024bc7cbe8660f5d21662d8",
+      "source_bbox": [
+        15,
+        562,
+        416,
+        948
+      ],
+      "shared_scale": 0.25202072538860104,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e14",
+      "kind": "enemies",
+      "path": "assets/enemies/e14.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "60ae3588933dfed9c3b7eda5a438db66e58b6fe609204d534eeeb7e95affdc1e",
+      "source_bbox": [
+        411,
+        494,
+        798,
+        941
+      ],
+      "shared_scale": 0.21762863534675617,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e15",
+      "kind": "enemies",
+      "path": "assets/enemies/e15.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "f1be03c11e6e94d8db135c193cb2ddbd3d5247899aa216750f38e8f1d2838880",
+      "source_bbox": [
+        813,
+        510,
+        1162,
+        958
+      ],
+      "shared_scale": 0.21714285714285714,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e16",
+      "kind": "enemies",
+      "path": "assets/enemies/e16.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/coin-enemies.png",
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe",
+      "sha256": "a63bcdc873ae8719aa11c176271121e26be4371f46e5fd99b94bd84fbd179d8a",
+      "source_bbox": [
+        1179,
+        491,
+        1519,
+        981
+      ],
+      "shared_scale": 0.19853061224489796,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e17",
+      "kind": "enemies",
+      "path": "assets/enemies/e17.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "3b7989bac0a8cf3ba99b0777a8a2958a7ccb5ae7f0a12a9371158c1ecfff180b",
+      "source_bbox": [
+        18,
+        20,
+        386,
+        491
+      ],
+      "shared_scale": 0.20653927813163483,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e18",
+      "kind": "enemies",
+      "path": "assets/enemies/e18.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "b3c6ab18537c92bf1e99917a967dfd20726b8f606707b9f8cb5386b48289e56e",
+      "source_bbox": [
+        408,
+        205,
+        768,
+        501
+      ],
+      "shared_scale": 0.3,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e19",
+      "kind": "enemies",
+      "path": "assets/enemies/e19.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "4d2140d0e6efc75cb9bf60da279f7ea21a4ba69a44882fca372d2155315084d0",
+      "source_bbox": [
+        790,
+        72,
+        1106,
+        500
+      ],
+      "shared_scale": 0.22728971962616823,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e20",
+      "kind": "enemies",
+      "path": "assets/enemies/e20.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "316e03ebfed7a4a80efb795bbe68f28da4dfb9af76c478a322aff032e8bfac9b",
+      "source_bbox": [
+        1146,
+        24,
+        1516,
+        500
+      ],
+      "shared_scale": 0.20436974789915965,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e21",
+      "kind": "enemies",
+      "path": "assets/enemies/e21.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "5f31deb5fcb790180ff14c9347643c60cd7ae55c9cd77f8976493568448a9319",
+      "source_bbox": [
+        23,
+        523,
+        369,
+        995
+      ],
+      "shared_scale": 0.20610169491525424,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e22",
+      "kind": "enemies",
+      "path": "assets/enemies/e22.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "09aac836fd84846078529c52b8caebfc822ac4af68e0ae25b3be24c954df7a9c",
+      "source_bbox": [
+        411,
+        519,
+        759,
+        992
+      ],
+      "shared_scale": 0.20566596194503173,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e23",
+      "kind": "enemies",
+      "path": "assets/enemies/e23.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "ccc2b37483c24e3c54a9aef42bf3ce5529e0b07f27f044d936000ba91479dd00",
+      "source_bbox": [
+        777,
+        604,
+        1210,
+        966
+      ],
+      "shared_scale": 0.24942263279445728,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "e24",
+      "kind": "enemies",
+      "path": "assets/enemies/e24.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/ownerless-enemies.png",
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d",
+      "sha256": "0e9503ebb875a5b4ba83f4675f3c08e2901957b6bbd4756580f43b21a549c871",
+      "source_bbox": [
+        1215,
+        552,
+        1507,
+        978
+      ],
+      "shared_scale": 0.2283568075117371,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "r04",
+      "kind": "relics",
+      "path": "assets/relics/r04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "b40eb19bec74c86d8a3e12079406c077b2f1054d9ce59910b9084ebc004800c5",
+      "source_bbox": [
+        36,
+        114,
+        282,
+        341
+      ],
+      "shared_scale": 0.4285462555066079,
+      "animation": "static icon"
+    },
+    {
+      "id": "r05",
+      "kind": "relics",
+      "path": "assets/relics/r05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "bdbf9abd5361cddb67a9287271a0da4604d0a67835c65878374404acaf94e060",
+      "source_bbox": [
+        294,
+        62,
+        506,
+        336
+      ],
+      "shared_scale": 0.355036496350365,
+      "animation": "static icon"
+    },
+    {
+      "id": "r06",
+      "kind": "relics",
+      "path": "assets/relics/r06.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "1b2065a119cc24bc3c47a0207f822fe74cf6d287f248f6c890043e6cd144bfc7",
+      "source_bbox": [
+        555,
+        64,
+        738,
+        353
+      ],
+      "shared_scale": 0.33660899653979237,
+      "animation": "static icon"
+    },
+    {
+      "id": "r07",
+      "kind": "relics",
+      "path": "assets/relics/r07.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "46bded7cebcaf4a841926eb7139e805952e8b06be44a25d24ad640476aedb543",
+      "source_bbox": [
+        808,
+        54,
+        1024,
+        353
+      ],
+      "shared_scale": 0.3253511705685619,
+      "animation": "static icon"
+    },
+    {
+      "id": "r08",
+      "kind": "relics",
+      "path": "assets/relics/r08.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "f5c49fb285df2e057a8b1ad18f9772d8d3ab406d0669ab29eae1de2e86e8c7d3",
+      "source_bbox": [
+        1045,
+        51,
+        1271,
+        353
+      ],
+      "shared_scale": 0.32211920529801324,
+      "animation": "static icon"
+    },
+    {
+      "id": "r12",
+      "kind": "relics",
+      "path": "assets/relics/r12.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "a154279aaeaa2422913e3521b771eecdfaee1c85db0b7d56778ecb5ca22f763b",
+      "source_bbox": [
+        1310,
+        60,
+        1505,
+        346
+      ],
+      "shared_scale": 0.34013986013986014,
+      "animation": "static icon"
+    },
+    {
+      "id": "r13",
+      "kind": "relics",
+      "path": "assets/relics/r13.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "3ec84a78c4922b1824c9d8da366a66a53c6e42a8fc3ddbdd78478744fac6f6d3",
+      "source_bbox": [
+        36,
+        416,
+        264,
+        666
+      ],
+      "shared_scale": 0.38912,
+      "animation": "static icon"
+    },
+    {
+      "id": "r14",
+      "kind": "relics",
+      "path": "assets/relics/r14.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "f30efd3ae6242c0c4b675a576b24ef1d9a91623775ff5373735eb022f69d7f3d",
+      "source_bbox": [
+        286,
+        399,
+        515,
+        653
+      ],
+      "shared_scale": 0.382992125984252,
+      "animation": "static icon"
+    },
+    {
+      "id": "r15",
+      "kind": "relics",
+      "path": "assets/relics/r15.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "b7e25f21368385475936473d0a4b4bf07ea17fc476b818b62b322825ab849135",
+      "source_bbox": [
+        525,
+        389,
+        778,
+        652
+      ],
+      "shared_scale": 0.36988593155893534,
+      "animation": "static icon"
+    },
+    {
+      "id": "r16",
+      "kind": "relics",
+      "path": "assets/relics/r16.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "a5a6879f6f26e84d39599535fd6757946fdf1ddd322794d22311d5e3ca2c3f41",
+      "source_bbox": [
+        787,
+        387,
+        1027,
+        649
+      ],
+      "shared_scale": 0.3712977099236641,
+      "animation": "static icon"
+    },
+    {
+      "id": "r20",
+      "kind": "relics",
+      "path": "assets/relics/r20.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "7c4594bee351b44984ee6d87e7126a9d61516cff593e859d8bd795fcce5b4c1c",
+      "source_bbox": [
+        1089,
+        372,
+        1210,
+        674
+      ],
+      "shared_scale": 0.32211920529801324,
+      "animation": "static icon"
+    },
+    {
+      "id": "r21",
+      "kind": "relics",
+      "path": "assets/relics/r21.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "fccd4800a74582a33ca9c02ec3da8bb73d129c7aa52f90e3fbcd073b4fd5db81",
+      "source_bbox": [
+        1257,
+        468,
+        1522,
+        631
+      ],
+      "shared_scale": 0.4075471698113208,
+      "animation": "static icon"
+    },
+    {
+      "id": "r22",
+      "kind": "relics",
+      "path": "assets/relics/r22.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "11da315e5cccb01ce25bc48b970493354316d2d793e9ad22ec584543ee83a8dc",
+      "source_bbox": [
+        10,
+        763,
+        308,
+        935
+      ],
+      "shared_scale": 0.3624161073825503,
+      "animation": "static icon"
+    },
+    {
+      "id": "r23",
+      "kind": "relics",
+      "path": "assets/relics/r23.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "6d6a2aef53cd254ce7791cf271b386cd21296461a5e6d17e654625e6603dd268",
+      "source_bbox": [
+        316,
+        729,
+        521,
+        937
+      ],
+      "shared_scale": 0.4676923076923077,
+      "animation": "static icon"
+    },
+    {
+      "id": "r24",
+      "kind": "relics",
+      "path": "assets/relics/r24.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "55847e3692152a346c7960de9eb4edf37f9127cb05a5746572298207617109b2",
+      "source_bbox": [
+        540,
+        675,
+        798,
+        959
+      ],
+      "shared_scale": 0.3425352112676056,
+      "animation": "static icon"
+    },
+    {
+      "id": "r28",
+      "kind": "relics",
+      "path": "assets/relics/r28.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "df3b03d3a6bc2c489ab0ad103d39ce2da740f0efcae84f8fbdd083cea72696f8",
+      "source_bbox": [
+        794,
+        745,
+        1033,
+        958
+      ],
+      "shared_scale": 0.45188284518828453,
+      "animation": "static icon"
+    },
+    {
+      "id": "r29",
+      "kind": "relics",
+      "path": "assets/relics/r29.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "de97c25698a5ad20ee6fd5a128b4ba826ad69ad09be143391ab62a986900cf2d",
+      "source_bbox": [
+        1037,
+        701,
+        1271,
+        977
+      ],
+      "shared_scale": 0.35246376811594204,
+      "animation": "static icon"
+    },
+    {
+      "id": "r30",
+      "kind": "relics",
+      "path": "assets/relics/r30.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-mid.png",
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4",
+      "sha256": "ac67636978b3dbe74d6eeaa93b998a2a1412c12a312b77d521a5e24e8bf15c1a",
+      "source_bbox": [
+        1298,
+        679,
+        1524,
+        963
+      ],
+      "shared_scale": 0.3425352112676056,
+      "animation": "static icon"
+    },
+    {
+      "id": "r31",
+      "kind": "relics",
+      "path": "assets/relics/r31.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "434b4799d0e12cb1d933fb04e8bc2bfc05c915db49e00f100aa4270780b5a887",
+      "source_bbox": [
+        23,
+        82,
+        259,
+        343
+      ],
+      "shared_scale": 0.37272030651341,
+      "animation": "static icon"
+    },
+    {
+      "id": "r32",
+      "kind": "relics",
+      "path": "assets/relics/r32.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "d7e9a13d00b0dd14edfcca51376548d90e1011317a44843ff4af8a5a761959e9",
+      "source_bbox": [
+        277,
+        58,
+        484,
+        341
+      ],
+      "shared_scale": 0.34374558303886926,
+      "animation": "static icon"
+    },
+    {
+      "id": "r36",
+      "kind": "relics",
+      "path": "assets/relics/r36.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "d2e9a74875d2fc040ea100e1a05e6a63f5822f3085a0db13bb2b8961794dd4a8",
+      "source_bbox": [
+        521,
+        28,
+        735,
+        353
+      ],
+      "shared_scale": 0.2993230769230769,
+      "animation": "static icon"
+    },
+    {
+      "id": "r37",
+      "kind": "relics",
+      "path": "assets/relics/r37.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "499b1fb833b351a3d943281db7aee9b94a7f4b10fb0925825105baaa1746de36",
+      "source_bbox": [
+        783,
+        88,
+        1038,
+        346
+      ],
+      "shared_scale": 0.3770542635658915,
+      "animation": "static icon"
+    },
+    {
+      "id": "r38",
+      "kind": "relics",
+      "path": "assets/relics/r38.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "c6ba6c223c3b9bf26c67470d1f083f051c5c15eeac2b4584757251d83356011e",
+      "source_bbox": [
+        1043,
+        47,
+        1271,
+        350
+      ],
+      "shared_scale": 0.3210561056105611,
+      "animation": "static icon"
+    },
+    {
+      "id": "r39",
+      "kind": "relics",
+      "path": "assets/relics/r39.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "31b3be746849a1c5e565e21d1cc3c39e0e43c234e723e9e1d3709832737916fc",
+      "source_bbox": [
+        1295,
+        30,
+        1509,
+        344
+      ],
+      "shared_scale": 0.30980891719745224,
+      "animation": "static icon"
+    },
+    {
+      "id": "r40",
+      "kind": "relics",
+      "path": "assets/relics/r40.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "8db337d6ee1233ae4070ea622ff84b93414f2997e0155745b7c29e69d649b19b",
+      "source_bbox": [
+        17,
+        366,
+        266,
+        684
+      ],
+      "shared_scale": 0.3059119496855346,
+      "animation": "static icon"
+    },
+    {
+      "id": "r44",
+      "kind": "relics",
+      "path": "assets/relics/r44.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "acdf13fa04f40d70bbfaae0de4729f6674813b2e3abd8a07a883aac529988014",
+      "source_bbox": [
+        306,
+        363,
+        483,
+        684
+      ],
+      "shared_scale": 0.30305295950155764,
+      "animation": "static icon"
+    },
+    {
+      "id": "r45",
+      "kind": "relics",
+      "path": "assets/relics/r45.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "e63552941885e5219a6e404d012109e345bd15414b3fb8c90f714c8445a196d3",
+      "source_bbox": [
+        526,
+        389,
+        770,
+        671
+      ],
+      "shared_scale": 0.34496453900709223,
+      "animation": "static icon"
+    },
+    {
+      "id": "r46",
+      "kind": "relics",
+      "path": "assets/relics/r46.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "9dc475575fe12c8ae0416569c7ae110e0d40d1425133139afb0f4f0c8eb0cb58",
+      "source_bbox": [
+        780,
+        399,
+        1040,
+        668
+      ],
+      "shared_scale": 0.361635687732342,
+      "animation": "static icon"
+    },
+    {
+      "id": "r47",
+      "kind": "relics",
+      "path": "assets/relics/r47.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "80a49e2de9fd02c11b02f3271ded43dedfe2f1ab5d5fe3ef870aa012673f7bb8",
+      "source_bbox": [
+        1055,
+        404,
+        1275,
+        663
+      ],
+      "shared_scale": 0.3755984555984556,
+      "animation": "static icon"
+    },
+    {
+      "id": "r48",
+      "kind": "relics",
+      "path": "assets/relics/r48.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "2390a0f330d119a212b653479509a7f184546cb59a102689fa124e9437ee70c6",
+      "source_bbox": [
+        1283,
+        379,
+        1516,
+        671
+      ],
+      "shared_scale": 0.33315068493150685,
+      "animation": "static icon"
+    },
+    {
+      "id": "r49",
+      "kind": "relics",
+      "path": "assets/relics/r49.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "c1e37516ec44d305ecf735bb95c2ea0b153a4542477ee6554fe66ffd00ff3bb1",
+      "source_bbox": [
+        16,
+        702,
+        260,
+        983
+      ],
+      "shared_scale": 0.34619217081850534,
+      "animation": "static icon"
+    },
+    {
+      "id": "r50",
+      "kind": "relics",
+      "path": "assets/relics/r50.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "35349aff73c4402158693eb4a9b34190b4596dd4df5f895a1756d2346a9e6de5",
+      "source_bbox": [
+        272,
+        732,
+        505,
+        962
+      ],
+      "shared_scale": 0.42295652173913045,
+      "animation": "static icon"
+    },
+    {
+      "id": "r51",
+      "kind": "relics",
+      "path": "assets/relics/r51.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "938dcb8cb35cd2e3c115ba79d42542a24605a6680c818e0f472e078e8c7aabfe",
+      "source_bbox": [
+        513,
+        718,
+        770,
+        956
+      ],
+      "shared_scale": 0.4087394957983193,
+      "animation": "static icon"
+    },
+    {
+      "id": "r52",
+      "kind": "relics",
+      "path": "assets/relics/r52.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "3356060b379c2b387928e3b32a74a9ea250c12ce84c34160e3790d3a30cb6f4c",
+      "source_bbox": [
+        797,
+        730,
+        1027,
+        948
+      ],
+      "shared_scale": 0.44623853211009173,
+      "animation": "static icon"
+    },
+    {
+      "id": "r53",
+      "kind": "relics",
+      "path": "assets/relics/r53.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "29295d24eabc6db9adb9c908b78b7ce41b064b54e83143900ec4fe67c7c1307f",
+      "source_bbox": [
+        1065,
+        669,
+        1245,
+        988
+      ],
+      "shared_scale": 0.30495297805642635,
+      "animation": "static icon"
+    },
+    {
+      "id": "r54",
+      "kind": "relics",
+      "path": "assets/relics/r54.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/relics-end.png",
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635",
+      "sha256": "6e36cb1e60811201e55766ab2f34de3ab2d3bdc8f8438b8862c8e6a1294dbe0a",
+      "source_bbox": [
+        1301,
+        691,
+        1513,
+        986
+      ],
+      "shared_scale": 0.3297627118644068,
+      "animation": "static icon"
+    },
+    {
+      "id": "b04",
+      "kind": "bosses",
+      "path": "assets/bosses/b04.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/optional-bosses.png",
+      "source_sha256": "9da91faf959426ce8ae01bb4e1b57e09f0cb9111c5ab253f135de875900c40ea",
+      "sha256": "06766f48ef78453ed4dd4bba57bacdb5c172d88015f19aea672137715e6a5d03",
+      "source_bbox": [
+        34,
+        16,
+        728,
+        978
+      ],
+      "shared_scale": 0.20224532224532224,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "b05",
+      "kind": "bosses",
+      "path": "assets/bosses/b05.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/optional-bosses.png",
+      "source_sha256": "9da91faf959426ce8ae01bb4e1b57e09f0cb9111c5ab253f135de875900c40ea",
+      "sha256": "6c1f1c03b3ec99fd8551d40206da0d20336d192adebcd1f79fe26dbc732a80ba",
+      "source_bbox": [
+        734,
+        8,
+        1534,
+        980
+      ],
+      "shared_scale": 0.20016460905349795,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "n01",
+      "kind": "npcs",
+      "path": "assets/npcs/n01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "2dbe5f6330c2f969790201493785f2e9455f1adcba2d29319da149c3990227c9",
+      "source_bbox": [
+        105,
+        22,
+        481,
+        502
+      ],
+      "shared_scale": 0.20266666666666666,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "n02",
+      "kind": "npcs",
+      "path": "assets/npcs/n02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "e11054469b21d9da456449a9366bd18e52bf05339268222751528571705d47e9",
+      "source_bbox": [
+        606,
+        39,
+        946,
+        497
+      ],
+      "shared_scale": 0.21240174672489084,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "n03",
+      "kind": "npcs",
+      "path": "assets/npcs/n03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "c12e5da0d980549b11de51744febba027ef27b9765663d23190bd0ddfb75ae31",
+      "source_bbox": [
+        1097,
+        21,
+        1475,
+        509
+      ],
+      "shared_scale": 0.19934426229508198,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "n04",
+      "kind": "npcs",
+      "path": "assets/npcs/n04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "ce985e6de5ef5146d01662fe7165dccd0b22e743c444799d4281a5293b23a8fb",
+      "source_bbox": [
+        76,
+        528,
+        503,
+        990
+      ],
+      "shared_scale": 0.21056277056277056,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "n05",
+      "kind": "npcs",
+      "path": "assets/npcs/n05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "3df33f4df5fbe60cac62c6ddac310252c006f63e22d650b2363d8267cccaaa1c",
+      "source_bbox": [
+        652,
+        528,
+        931,
+        988
+      ],
+      "shared_scale": 0.21147826086956523,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "training_stand",
+      "kind": "npcs",
+      "path": "assets/npcs/training_stand.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/npcs.png",
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4",
+      "sha256": "3ed116efb0acf2c70970f59010e3c542bf306304a5202b1586018295b91a37a6",
+      "source_bbox": [
+        1135,
+        533,
+        1407,
+        996
+      ],
+      "shared_scale": 0.21010799136069114,
+      "animation": "procedural paper-puppet deformation from a locked base pose"
+    },
+    {
+      "id": "s01",
+      "kind": "skills",
+      "path": "assets/skills/s01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "2a491d97a224e6119053692bbb72c9435f067408c0419b22932a346d41177eed",
+      "source_bbox": [
+        22,
+        74,
+        255,
+        349
+      ],
+      "shared_scale": 0.35374545454545453,
+      "animation": "static icon"
+    },
+    {
+      "id": "s02",
+      "kind": "skills",
+      "path": "assets/skills/s02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "6f0dcc30ff9df215a1b3f83608c99d4a2925e66581ab44abaf00ddc462f04ba0",
+      "source_bbox": [
+        266,
+        66,
+        524,
+        347
+      ],
+      "shared_scale": 0.34619217081850534,
+      "animation": "static icon"
+    },
+    {
+      "id": "s03",
+      "kind": "skills",
+      "path": "assets/skills/s03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "97d075d59c566bc05aa1dfe9ddc88bc3ee9a7f5ae614dec5261a78820c5839d8",
+      "source_bbox": [
+        535,
+        97,
+        756,
+        341
+      ],
+      "shared_scale": 0.39868852459016396,
+      "animation": "static icon"
+    },
+    {
+      "id": "s04",
+      "kind": "skills",
+      "path": "assets/skills/s04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "49dc27d8097b53d3200ab7636cee81eb3a1778f33d2e9994bf0414dc1990dfab",
+      "source_bbox": [
+        786,
+        58,
+        995,
+        344
+      ],
+      "shared_scale": 0.34013986013986014,
+      "animation": "static icon"
+    },
+    {
+      "id": "s05",
+      "kind": "skills",
+      "path": "assets/skills/s05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "8f8ff22cbc651962aecf820e03b16d1c31d967c645f59edacd68a32ab572977d",
+      "source_bbox": [
+        1017,
+        67,
+        1253,
+        350
+      ],
+      "shared_scale": 0.34374558303886926,
+      "animation": "static icon"
+    },
+    {
+      "id": "s06",
+      "kind": "skills",
+      "path": "assets/skills/s06.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "61e9664ae6964e8a3b498f6277d37d43bcc9e1eb4d7ab6d40827c4874705a0fc",
+      "source_bbox": [
+        1267,
+        89,
+        1526,
+        323
+      ],
+      "shared_scale": 0.4157264957264957,
+      "animation": "static icon"
+    },
+    {
+      "id": "s07",
+      "kind": "skills",
+      "path": "assets/skills/s07.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "94efa744902bb7c880ec0e2869421c6fe7edaf6cd69ed3b148535a3874fb5ed2",
+      "source_bbox": [
+        25,
+        363,
+        258,
+        650
+      ],
+      "shared_scale": 0.3389547038327526,
+      "animation": "static icon"
+    },
+    {
+      "id": "s08",
+      "kind": "skills",
+      "path": "assets/skills/s08.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "e32fd196767d5937e9f7d8aa31d05bcd15698169b9e7061429bdc4cb217acdf1",
+      "source_bbox": [
+        280,
+        359,
+        515,
+        649
+      ],
+      "shared_scale": 0.335448275862069,
+      "animation": "static icon"
+    },
+    {
+      "id": "s09",
+      "kind": "skills",
+      "path": "assets/skills/s09.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "0603b5eb872adab40c8181a6e5d319c06a9950f42e79659c6bf4a0213b13b880",
+      "source_bbox": [
+        523,
+        368,
+        779,
+        647
+      ],
+      "shared_scale": 0.34867383512544803,
+      "animation": "static icon"
+    },
+    {
+      "id": "s10",
+      "kind": "skills",
+      "path": "assets/skills/s10.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "df6fc4b0e82e6008ba2e75526360b490f71d9d2db0ea1d0f237be7f8d16af2b5",
+      "source_bbox": [
+        765,
+        382,
+        1001,
+        647
+      ],
+      "shared_scale": 0.36709433962264154,
+      "animation": "static icon"
+    },
+    {
+      "id": "s11",
+      "kind": "skills",
+      "path": "assets/skills/s11.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "8911797dd7e7b9a752fa9b463df77512de869cea701ad7d1ab7d3a98d07d86bb",
+      "source_bbox": [
+        1016,
+        388,
+        1253,
+        632
+      ],
+      "shared_scale": 0.39868852459016396,
+      "animation": "static icon"
+    },
+    {
+      "id": "s12",
+      "kind": "skills",
+      "path": "assets/skills/s12.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "5a724788e22510449d4230812aa66277e55b4fc23f5caa563fb7bb914c377a5a",
+      "source_bbox": [
+        1260,
+        372,
+        1519,
+        652
+      ],
+      "shared_scale": 0.3474285714285714,
+      "animation": "static icon"
+    },
+    {
+      "id": "s13",
+      "kind": "skills",
+      "path": "assets/skills/s13.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "42087811af536c7a37ad23d4beda8bf180bff5733646cf2bf269502b8d429c78",
+      "source_bbox": [
+        7,
+        678,
+        256,
+        958
+      ],
+      "shared_scale": 0.3474285714285714,
+      "animation": "static icon"
+    },
+    {
+      "id": "s14",
+      "kind": "skills",
+      "path": "assets/skills/s14.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "79903bc39d9c19bda734e7be38601815f05567b34d4df8cdc905503a11ddd670",
+      "source_bbox": [
+        269,
+        670,
+        503,
+        966
+      ],
+      "shared_scale": 0.3286486486486487,
+      "animation": "static icon"
+    },
+    {
+      "id": "s15",
+      "kind": "skills",
+      "path": "assets/skills/s15.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "a6b71da4e42f1f96be6baf7c64fff870298d25437dcb3e757a217f21acf6f6d5",
+      "source_bbox": [
+        506,
+        680,
+        752,
+        957
+      ],
+      "shared_scale": 0.3511913357400722,
+      "animation": "static icon"
+    },
+    {
+      "id": "s16",
+      "kind": "skills",
+      "path": "assets/skills/s16.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "9a20d6d6bd4a821475a4736c028f5a60e7d51278d67d305fe4b3e9468a09857d",
+      "source_bbox": [
+        757,
+        671,
+        1003,
+        958
+      ],
+      "shared_scale": 0.3389547038327526,
+      "animation": "static icon"
+    },
+    {
+      "id": "s17",
+      "kind": "skills",
+      "path": "assets/skills/s17.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "1bcffaacdf603ae92c4dc07a32b31696e9eb124873fddd8d2901dddd1595a272",
+      "source_bbox": [
+        1024,
+        669,
+        1251,
+        955
+      ],
+      "shared_scale": 0.34013986013986014,
+      "animation": "static icon"
+    },
+    {
+      "id": "s18",
+      "kind": "skills",
+      "path": "assets/skills/s18.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/skills.png",
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820",
+      "sha256": "0731d912922be2958b82868c67dd273b80a67fc8cd05a34dcef2dc0acc4134f3",
+      "source_bbox": [
+        1268,
+        699,
+        1527,
+        942
+      ],
+      "shared_scale": 0.4003292181069959,
+      "animation": "static icon"
+    },
+    {
+      "id": "x01",
+      "kind": "elites",
+      "path": "assets/elites/x01.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "4f3fbf2aac5af5058372b21fcebd5d66fac9711f2d7dd83416b68244239f5a4c",
+      "source_bbox": [
+        49,
+        22,
+        450,
+        505
+      ],
+      "shared_scale": 0.201407867494824,
+      "animation": "static icon"
+    },
+    {
+      "id": "x02",
+      "kind": "elites",
+      "path": "assets/elites/x02.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "9238b17b7bfb683a272d790a16b79637854d9b4f454ecdcbab36c28c1339a039",
+      "source_bbox": [
+        511,
+        39,
+        958,
+        498
+      ],
+      "shared_scale": 0.21193899782135076,
+      "animation": "static icon"
+    },
+    {
+      "id": "x03",
+      "kind": "elites",
+      "path": "assets/elites/x03.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "0953033f1edfa1c096bd806532f7f4978e9044c4d171fe456e89521e9649354a",
+      "source_bbox": [
+        1004,
+        8,
+        1497,
+        489
+      ],
+      "shared_scale": 0.20224532224532224,
+      "animation": "static icon"
+    },
+    {
+      "id": "x04",
+      "kind": "elites",
+      "path": "assets/elites/x04.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "bc903ddfcb523737834d4be0e30874e732abbb4db70bae4ece7a831c2cb31f60",
+      "source_bbox": [
+        15,
+        553,
+        524,
+        982
+      ],
+      "shared_scale": 0.21218074656188604,
+      "animation": "static icon"
+    },
+    {
+      "id": "x05",
+      "kind": "elites",
+      "path": "assets/elites/x05.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "8e9d2b3d5ed1ae05704d76e96cac68199102dfc530f00f1afb1ef7a406d6e44a",
+      "source_bbox": [
+        535,
+        476,
+        986,
+        1010
+      ],
+      "shared_scale": 0.18217228464419477,
+      "animation": "static icon"
+    },
+    {
+      "id": "x06",
+      "kind": "elites",
+      "path": "assets/elites/x06.png",
+      "frame": [
+        128,
+        128
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/elites.png",
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3",
+      "sha256": "d31a1798a7ba01cba85e1288e22d615bd81bb491fb8c27aa1f04a078c6664f38",
+      "source_bbox": [
+        1000,
+        484,
+        1524,
+        1007
+      ],
+      "shared_scale": 0.1860038240917782,
+      "animation": "static icon"
+    },
+    {
+      "id": "prop_incense",
+      "path": "assets/props/incense.png",
+      "source": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "source_sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "source_bbox": [
+        67,
+        804,
+        353,
+        1007
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "approved-art crop with edge-connected paper background removed"
+    },
+    {
+      "id": "prop_paper_stack",
+      "path": "assets/props/paper_stack.png",
+      "source": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "source_sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "source_bbox": [
+        446,
+        803,
+        716,
+        1008
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "approved-art crop with edge-connected paper background removed"
+    },
+    {
+      "id": "prop_chest",
+      "path": "assets/props/chest.png",
+      "source": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "source_sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "source_bbox": [
+        823,
+        817,
+        1113,
+        1007
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "approved-art crop with edge-connected paper background removed"
+    },
+    {
+      "id": "prop_bell",
+      "path": "assets/props/bell.png",
+      "source": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "source_sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "source_bbox": [
+        1197,
+        792,
+        1482,
+        1017
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "approved-art crop with edge-connected paper background removed"
+    },
+    {
+      "id": "paper_temple_arena",
+      "source": "output/imagegen/incense-debt/runtime/paper-temple-arena.png",
+      "source_sha256": "4bc2eb9729d0d0171dfc7f394a3b3c43a988eba4a7aa519012ff3c2e7a70027e",
+      "path": "assets/environment/paper-temple-arena.png",
+      "generation": "Sub2API reference edit",
+      "reference": "output/imagegen/concepts/01-incense-debt.png"
+    },
+    {
+      "id": "coin_vault_arena",
+      "source": "output/imagegen/incense-debt/runtime/coin-vault-arena.png",
+      "source_sha256": "f95a70ee9fa09aa4d5f46c538812f2043e0ceb47391f4723278423837eba07fb",
+      "path": "assets/environment/coin-vault-arena.png",
+      "generation": "Sub2API reference edit",
+      "reference": "output/imagegen/incense-debt/runtime/paper-temple-arena.png"
+    },
+    {
+      "id": "ownerless_temple_arena",
+      "source": "output/imagegen/incense-debt/runtime/ownerless-temple-arena.png",
+      "source_sha256": "cde969950bc67fe4aa1de6528c801c3a06daa6d9bd05b63653c5aaa8617b2784",
+      "path": "assets/environment/ownerless-temple-arena.png",
+      "generation": "Sub2API reference edit",
+      "reference": "output/imagegen/incense-debt/runtime/paper-temple-arena.png"
+    },
+    {
+      "id": "hub_arena",
+      "source": "output/imagegen/incense-debt/runtime/hub-arena.png",
+      "source_sha256": "2b5f705c4f0cc4aa234c278d434d665cb5b180c3d57ad8c224243ea317291d2b",
+      "path": "assets/environment/hub-arena.png",
+      "generation": "Sub2API reference edit",
+      "reference": "output/imagegen/incense-debt/runtime/paper-temple-arena.png"
+    },
+    {
+      "id": "c_paper_portrait",
+      "path": "assets/portraits/c_paper.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "c_bell_portrait",
+      "path": "assets/portraits/c_bell.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "c_lantern_portrait",
+      "path": "assets/portraits/c_lantern.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "c_mask_portrait",
+      "path": "assets/portraits/c_mask.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "c_umbrella_portrait",
+      "path": "assets/portraits/c_umbrella.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "c_ink_portrait",
+      "path": "assets/portraits/c_ink.png",
+      "source": "output/imagegen/incense-debt/characters-roster.png",
+      "source_sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "generation": "direct approved-art crop"
+    },
+    {
+      "id": "paper_lane_provisional_material",
+      "source": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "source_sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "status": "provisional concept crop",
+      "paths": [
+        "assets/environment/floor-paper.png",
+        "assets/environment/wall-paper.png"
+      ]
+    },
+    {
+      "id": "secret_clue",
+      "kind": "props",
+      "path": "assets/props/secret_clue.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/secret-entry.png",
+      "source_sha256": "89011d87ae4161d54f276381dd1a15b297a048352ee56b3cdb3273f832b3457a",
+      "sha256": "931d4a5a289e21ce08dc7d00a10f06c7a403fb33a04f2e5607e77666ea3fbc80",
+      "source_bbox": [
+        44,
+        186,
+        485,
+        836
+      ],
+      "shared_scale": 0.29493087557603687,
+      "animation": "three generated raster states; transition by native drawing"
+    },
+    {
+      "id": "secret_open",
+      "kind": "props",
+      "path": "assets/props/secret_open.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/secret-entry.png",
+      "source_sha256": "89011d87ae4161d54f276381dd1a15b297a048352ee56b3cdb3273f832b3457a",
+      "sha256": "9b69c0e3c8a8f26c37fcdc63e1b85030cf6637d9cd2d8b7fa51823476ffcd0a0",
+      "source_bbox": [
+        547,
+        185,
+        990,
+        836
+      ],
+      "shared_scale": 0.29493087557603687,
+      "animation": "three generated raster states; transition by native drawing"
+    },
+    {
+      "id": "secret_used",
+      "kind": "props",
+      "path": "assets/props/secret_used.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/runtime/secret-entry.png",
+      "source_sha256": "89011d87ae4161d54f276381dd1a15b297a048352ee56b3cdb3273f832b3457a",
+      "sha256": "6a81628902337f36d66bbaee36926eba52e825b727610bf28216e3a022940ca6",
+      "source_bbox": [
+        1050,
+        186,
+        1493,
+        836
+      ],
+      "shared_scale": 0.29493087557603687,
+      "animation": "three generated raster states; transition by native drawing"
+    },
+    {
+      "id": "c_paper_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_paper_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "9b29bb8a0fdbebfa09f1c6cfba072778421c659e0b9efd41240b5cb2cd0f6c4e",
+      "original": "game/assets/heroes/c_paper_down.png",
+      "original_sha256": "f3bab5d6ddf347c9c81f32a0d0cfb41cc921bdb4d3531c90ac3cdd9b282a9aee",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_paper_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_paper_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "5ae686a12d36795a1c0a0ee3bc62083157aa063328771fb27e1398861bb73d8c",
+      "original": "game/assets/heroes/c_paper_left.png",
+      "original_sha256": "b81cf6675f982c6ac62be6f5ebb52deacc2e9f4e4f81e3aa3435193584164448",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_paper_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_paper_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "93863af2399d2bbc448ab9762635201c6a13a5dcd71644b4df1137a453a1ed05",
+      "original": "game/assets/heroes/c_paper_right.png",
+      "original_sha256": "69f2255da457f05d998919a28e47c5d0bddd6d0aba9301417b13f3c8d9a644ef",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_paper_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_paper_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "b1035442be093fa030bd74a9ef31d5e0b7ec48fe85c919768f145cd3f1e219e4",
+      "original": "game/assets/heroes/c_paper_up.png",
+      "original_sha256": "40faee6a7784dd7c8dd2ff1d81d9c76af6617ef363457ec64fae878f00f64081",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_bell_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_bell_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "3069952634d6b059905a1f87dd17be0a05daad301b42faa2fee852b1ff5a1ef2",
+      "original": "game/assets/heroes/c_bell_down.png",
+      "original_sha256": "1364cde69a4247b619426edf44b83e60bfd501a5d05a0e4291a95911eac81112",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_bell_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_bell_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "9689f7b155a72ad719db135317dea9e7fe98c753032a5855acbb3d368eaeec0f",
+      "original": "game/assets/heroes/c_bell_left.png",
+      "original_sha256": "67bed31a1977937921fab4162277117f30d28fce911e1b3c866938301ef8993c",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_bell_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_bell_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "a6776c43e76bdfce053a883db0ff4c69d301875ca2f4903b117135b8025b8a96",
+      "original": "game/assets/heroes/c_bell_right.png",
+      "original_sha256": "63274c708bcc1ba8a6e6d9d1ad89c874001a5c1342afdb828391f4151deda1b1",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_bell_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_bell_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "bd30f12fb4af4e96ab3171069902d157e27516de67fcb5a35feec585988dbd20",
+      "original": "game/assets/heroes/c_bell_up.png",
+      "original_sha256": "c91c533ab59b33800b7fdbaf7be1a0da832103d575eb5eef05f0c43824e7370f",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_lantern_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_lantern_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "5475f9e091f0fe1e7c35f230cc7e0384eda724a0d4d07c0074741c832eaaddce",
+      "original": "game/assets/heroes/c_lantern_down.png",
+      "original_sha256": "ef4a0b4fb21562d961f0d7d5cf557de7dbb86a38f6c060edda3c34c48f344890",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_lantern_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_lantern_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "00fa3e1145c6d76a2d0cd4aab843cf5498bb8b049bb5112d6e8d19c452986434",
+      "original": "game/assets/heroes/c_lantern_left.png",
+      "original_sha256": "da7d97e1377a84fc67c8de48097c5ede19f5b462d9f52e5a676fcb73ce57a993",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_lantern_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_lantern_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "61123a1b421e2a03d7816db0feb4a541875065e3ea839af170a404b8353025e1",
+      "original": "game/assets/heroes/c_lantern_right.png",
+      "original_sha256": "630c387370c06bf97970be6bb35d4cf1ea82c7a1498c9c0f0dfe355ae6100a08",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_lantern_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_lantern_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "6701543392b453cb01a751e8ec64486bb60c3b44ba6df3cb61e3b73007ef339f",
+      "original": "game/assets/heroes/c_lantern_up.png",
+      "original_sha256": "3b6e177917da0f664122fddeaa9333d1107714af91dc217e76215781ca107faa",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_mask_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_mask_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "7363dd6f59df65b73c6a28f27d8ada195f656ef5d5223127e6d2a8e01318ef3d",
+      "original": "game/assets/heroes/c_mask_down.png",
+      "original_sha256": "f23d7a0b701ce3c3059ecc042c1727e17fc8b69aeef435b7dc1567823b6a453b",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_mask_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_mask_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "506aed8d34139752b8ea31d5df3ea29f58cd1081c63955cb5e526790da45af65",
+      "original": "game/assets/heroes/c_mask_left.png",
+      "original_sha256": "b3a5642e59dc17115fc8d577ff3f089836c6f64b877ec757f6cb38aabbd93732",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_mask_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_mask_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "743e9c24ecf7e0da6fc75eb8b1386f1fafeca15123a5a54659615cd6fa304823",
+      "original": "game/assets/heroes/c_mask_right.png",
+      "original_sha256": "51154ff2aa1a27fc97678d801443f831f04f919152399b35ff189d6b7315f0fc",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_mask_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_mask_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "dbdb5d2bf3c0b96b31c0f70f65039db7893751939ca6ac78f64a3d384f80791e",
+      "original": "game/assets/heroes/c_mask_up.png",
+      "original_sha256": "36a610eaafdbc303ecdafce00b443cc1c65a896356e95df27f74f048778b733b",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_umbrella_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_umbrella_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "9af0df2f93af74cae2d6d1c255b8341c2ae3142432bc61c8ee13e85a32faac66",
+      "original": "game/assets/heroes/c_umbrella_down.png",
+      "original_sha256": "0f0006c81bf7bd832630b7713947a6cc1f934ce5d1b68c03199ad89150861218",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_umbrella_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_umbrella_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "115940675abb19a5d003b4b7fa0ed3707697d56f6979f85817c0060ee959a21b",
+      "original": "game/assets/heroes/c_umbrella_left.png",
+      "original_sha256": "7bd73519140721ade85ae6e7e80014c5949888ee5673fb4c8102f89f0450fca4",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_umbrella_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_umbrella_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "f20d898b8fdf42bbc28d52d8f9d32def94cf6bf84ca4e11b57921e443edef744",
+      "original": "game/assets/heroes/c_umbrella_right.png",
+      "original_sha256": "c6b96e9ad26d3e14c7e26002bd29548c335222196cc2ca466e7ea9bad3d74600",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_umbrella_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_umbrella_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "f2e42847225f82fe5f6514c83404116c33feef3c4a406f170a53bf2213902016",
+      "original": "game/assets/heroes/c_umbrella_up.png",
+      "original_sha256": "0917b314cc3cbff112013fd90ce3645f890bfc3c9a74198978c68f322c5a40d1",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_ink_neutral_down",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_ink_down.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "9db9794179a0139823264912e948420b94d71d640748e8422bfe3762b9532acf",
+      "original": "game/assets/heroes/c_ink_down.png",
+      "original_sha256": "b51da65096b65826f09e9b5702d1d9df10a8e877d30b207846226f0f8f9397fa",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_ink_neutral_left",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_ink_left.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "46984a1093d98fad8dd89ae73a843ddf200ebb6bd91b6fdd8fda6931c059b89a",
+      "original": "game/assets/heroes/c_ink_left.png",
+      "original_sha256": "247a63289bb6cc4aef69955894203f99d74025bc54bc788bbdd426e478856762",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_ink_neutral_right",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_ink_right.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "eff85bb328fb11c36ab3f4158d40d31d4a62c6db793b8063f1d36f0da0f43d2f",
+      "original": "game/assets/heroes/c_ink_right.png",
+      "original_sha256": "aba5d173bd72eb0424397e36ebf2bf38d716e6d2917ebeba6055aeebc9dd800f",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "c_ink_neutral_up",
+      "kind": "weapon_body",
+      "path": "assets/weapon-bodies/base/c_ink_up.png",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "sha256": "3d09d84a7befe6df99b6055dfc9a29534739d5c1fb1e6899be7dc57d6a53eef7",
+      "original": "game/assets/heroes/c_ink_up.png",
+      "original_sha256": "ccb111ba6ec1dae282f33f5f45249f6d0d3b64828606a4fcdce88a89cee8f8df",
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "generation": "Sub2 reference edit, region-limited compositing over exact approved pose"
+    },
+    {
+      "id": "w01_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w01.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "0077dd3ec7c875edc309459ded2f702ddc3f99d404151982ac915b6a0124cbef",
+      "source_bbox": [
+        38,
+        105,
+        361,
+        348
+      ],
+      "grip": [
+        0.851344814241486,
+        0.49576722136222906
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w02_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w02.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "a8390da258f55e63ddb620f132f5fe4d8d31a6ef62087fb48151799f54bec9fe",
+      "source_bbox": [
+        492,
+        17,
+        645,
+        387
+      ],
+      "grip": [
+        0.5050253378378379,
+        0.2377533783783784
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w03_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w03.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "584f4986941273d90f6587a3a9eff82dad478548cd590bbf5ff9adbe51480c35",
+      "source_bbox": [
+        893,
+        17,
+        1050,
+        376
+      ],
+      "grip": [
+        0.4300139275766017,
+        0.7432538300835655
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w04_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w04.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "7d74dd34e234c2f1c1646397aca53d1c666d48a9002e8777e23a23786a9a5460",
+      "source_bbox": [
+        1141,
+        111,
+        1504,
+        359
+      ],
+      "grip": [
+        0.1943440082644628,
+        0.47359245867768596
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w05_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w05.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "ee18d39d01c053e56bee9c13c8e84d5e0f7de6dfa6ea9994ff74e5074ee501a2",
+      "source_bbox": [
+        25,
+        459,
+        390,
+        621
+      ],
+      "grip": [
+        0.23531678082191781,
+        0.44888698630136986
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w06_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w06.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "3848b57dbecb3d69a138f3db6ffc08aa6df6ae13f2b22d7489550cfcff8a09e0",
+      "source_bbox": [
+        414,
+        480,
+        774,
+        610
+      ],
+      "grip": [
+        0.29374999999999996,
+        0.4375
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w07_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w07.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "96f47a481fed4abb2714371d82cdf3f77f107562b39d6d413b34fb0a92564766",
+      "source_bbox": [
+        800,
+        391,
+        1146,
+        658
+      ],
+      "grip": [
+        0.3317377167630058,
+        0.6327673410404624
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w08_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w08.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "28be15fdbd760d62f307f09060308dd6f3e695f8f7d955a787736579cdaba370",
+      "source_bbox": [
+        1173,
+        392,
+        1505,
+        615
+      ],
+      "grip": [
+        0.22552710843373494,
+        0.5489457831325302
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w09_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w09.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "3f1b427410c1b570ee02e9d5e75a339961117aa27fb60b53191a8c7dd88595b7",
+      "source_bbox": [
+        63,
+        685,
+        401,
+        984
+      ],
+      "grip": [
+        0.43509615384615385,
+        0.509430473372781
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w10_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w10.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "819a9ea6f7fff6e3548dd67d7c82d0e6fcdda461fb84bb854ab889a9029910ce",
+      "source_bbox": [
+        484,
+        622,
+        728,
+        1001
+      ],
+      "grip": [
+        0.37794772427440637,
+        0.8016573218997362
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w11_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w11.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "dcec046108a7d30e498982f8e85cf012e44007ed372085a18d280998aee705c7",
+      "source_bbox": [
+        782,
+        757,
+        1150,
+        942
+      ],
+      "grip": [
+        0.2730129076086957,
+        0.44955842391304346
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w12_held",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w12.png",
+      "source": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "source_sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "sha256": "35e6bed61567881782864c893643a5505f86f1baa87afa02cc8a8f044a2e613d",
+      "source_bbox": [
+        1165,
+        721,
+        1506,
+        956
+      ],
+      "grip": [
+        0.2439057917888563,
+        0.47074321847507333
+      ],
+      "generation": "Sub2 single-reference local equipment edit; original inventory icon retained"
+    },
+    {
+      "id": "w13_weapon",
+      "kind": "weapon",
+      "path": "assets/weapons/w13.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "34f034e870c7211ff3701f613392fddac311f218f7bdd9c8b5368ecf302fa9ad",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w13_held_weapon",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w13.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "34f034e870c7211ff3701f613392fddac311f218f7bdd9c8b5368ecf302fa9ad",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w14_weapon",
+      "kind": "weapon",
+      "path": "assets/weapons/w14.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "39c317ebe7bf754aacffa27753e897d891667d55cab1a84be517ff43fd921935",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w14_held_weapon",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w14.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "39c317ebe7bf754aacffa27753e897d891667d55cab1a84be517ff43fd921935",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w15_weapon",
+      "kind": "weapon",
+      "path": "assets/weapons/w15.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "352d704568b43125765b268c264dfab9957aeeb770c02960a83821569d8ad9bc",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w15_held_weapon",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w15.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "352d704568b43125765b268c264dfab9957aeeb770c02960a83821569d8ad9bc",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w16_weapon",
+      "kind": "weapon",
+      "path": "assets/weapons/w16.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "2b7af65028f40f780ba4e21d48f2e22c9efc7be162a48458915a5c4cb5867ac7",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "w16_held_weapon",
+      "kind": "held_weapon",
+      "path": "assets/held-weapons/w16.png",
+      "source": "output/imagegen/incense-debt/weapon-expansion-board.png",
+      "source_sha256": "108c74ecd170f11ebaf9433c6f013af2e81d0fecebf788c06f68ff41f57eaf8f",
+      "sha256": "2b7af65028f40f780ba4e21d48f2e22c9efc7be162a48458915a5c4cb5867ac7",
+      "generation": "Sub2 gpt-image-2.5 transparent board, quadrant crop and normalized 128px cutout"
+    },
+    {
+      "id": "special_sacrifice",
+      "kind": "prop",
+      "path": "assets/props/special_sacrifice.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/special-room-prop-board.png",
+      "source_sha256": "8590ab0ff2e8d6850226bad1f1e5082507aa9645ef04f6a823d9595fcfb6382d",
+      "sha256": "4cf7d7c979f6e3061017b76d35f38f5f27a2bf1bd0ccc6f37465305ae3f73c32",
+      "source_bbox": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "generation": "Sub2 gpt-image-2.5 transparent three-cell board, atlas crop and normalized 256px cutout",
+      "room_kind": "sacrifice"
+    },
+    {
+      "id": "special_judge",
+      "kind": "prop",
+      "path": "assets/props/special_judge.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/special-room-prop-board.png",
+      "source_sha256": "8590ab0ff2e8d6850226bad1f1e5082507aa9645ef04f6a823d9595fcfb6382d",
+      "sha256": "c67e819844bd10fa46302d0e8ecce7091b6bfad55b0c36ae8e23c49646114c5c",
+      "source_bbox": [
+        724,
+        0,
+        1448,
+        724
+      ],
+      "generation": "Sub2 gpt-image-2.5 transparent three-cell board, atlas crop and normalized 256px cutout",
+      "room_kind": "judge"
+    },
+    {
+      "id": "special_angel",
+      "kind": "prop",
+      "path": "assets/props/special_angel.png",
+      "frame": [
+        256,
+        256
+      ],
+      "ground_anchor": [
+        0.5,
+        0.84
+      ],
+      "source": "output/imagegen/incense-debt/special-room-prop-board.png",
+      "source_sha256": "8590ab0ff2e8d6850226bad1f1e5082507aa9645ef04f6a823d9595fcfb6382d",
+      "sha256": "b0a9da0a6df7d5ab865287ce4c8c5bc82e8b6a1287af6c6b9580262fe17ea255",
+      "source_bbox": [
+        1448,
+        0,
+        2172,
+        724
+      ],
+      "generation": "Sub2 gpt-image-2.5 transparent three-cell board, atlas crop and normalized 256px cutout",
+      "room_kind": "angel"
+    }
+  ]
+}

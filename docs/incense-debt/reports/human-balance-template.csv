@@ -1,0 +1,13 @@
+character_id,character_name,route_id,route_name,build_version,player_id,session_id,platform,input_device,weapon_id,evolution_id,chapter_1_seconds,chapter_2_seconds,chapter_3_seconds,damage_taken,death_room,result,difficulty_1_5,build_readability_1_5,combat_feedback_1_5,control_comfort_1_5,failure_reason,notes
+c_paper,纸童,fire,烬火,,,,,,,,,,,,,,,
+c_paper,纸童,thread,红绳,,,,,,,,,,,,,,,
+c_bell,铃师,ash,归灰,,,,,,,,,,,,,,,
+c_bell,铃师,wind,游风,,,,,,,,,,,,,,,
+c_lantern,灯客,fire,烬火,,,,,,,,,,,,,,,
+c_lantern,灯客,ink,墨契,,,,,,,,,,,,,,,
+c_mask,傩面,seal,镇印,,,,,,,,,,,,,,,
+c_mask,傩面,ash,归灰,,,,,,,,,,,,,,,
+c_umbrella,伞灵,wind,游风,,,,,,,,,,,,,,,
+c_umbrella,伞灵,thread,红绳,,,,,,,,,,,,,,,
+c_ink,墨吏,ink,墨契,,,,,,,,,,,,,,,
+c_ink,墨吏,seal,镇印,,,,,,,,,,,,,,,

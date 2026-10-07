@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-10-06T06:24:28.988764+00:00",
+  "passed": true,
+  "rows": 12,
+  "completed_rows": 0,
+  "failures": [],
+  "scope": "structure-only worksheet validation; blank rows are intentional and do not claim human balance acceptance"
+}

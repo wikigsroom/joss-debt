@@ -1,0 +1,30 @@
+{
+  "compiled_windows_sha256": "d50e6f0e96e59e72f5e6e80a782cafbc68df8de34ff383db08c8b40afbfd8caf",
+  "captures": [
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/menu.png",
+      "sha256": "8eecae00e1fb3c03ae0ff298239092436e909569f7552d0f9a4867c45c6db383"
+    },
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/chains.png",
+      "sha256": "b2712b4cb8857860c34e48f7547c0f8ee4fc0b9ab5cb189a2d0f6920ccc7de1b"
+    },
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/settings.png",
+      "sha256": "2d2cc792d3340d26ef7492283fb688c7394cef1084fdf2cf0576ff8c6add217a"
+    },
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/inventory.png",
+      "sha256": "da5441b0f4010b76b009757da08d1fa8eb39a1a5073317138932b1ffcde68962"
+    },
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/choices.png",
+      "sha256": "789f536ac35a629f44fd5d78cf01ed4ac9209db481b83ad391dc65142c7bce0d"
+    },
+    {
+      "file": "docs/incense-debt/reports/runtime/ui-refresh/before/mobile-settings.png",
+      "sha256": "2148f0023e6a24b4ea0640ced54b7a0246ff9c5448e18c73dd576225dff5bfcf"
+    }
+  ],
+  "scope": "previous verified native UI before the requested rounded/icon refresh"
+}

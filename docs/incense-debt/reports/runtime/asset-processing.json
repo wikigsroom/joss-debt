@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "atlases": [
+    {
+      "atlas": "heroes-poses-locked.png",
+      "transparent_pixels": 805834,
+      "sprites": 24,
+      "all_cells_nonempty": true,
+      "source_sha256": "4015a356db423e0a5840ff219717e948d7f06f9af1af055254a5ff9184dfae72"
+    },
+    {
+      "atlas": "paper-enemies.png",
+      "transparent_pixels": 1042247,
+      "sprites": 8,
+      "all_cells_nonempty": true,
+      "source_sha256": "276856c3c1d3ff0b7193aebfa1ff3037fcbd83c7a48a7999d5754588e2ba76d8"
+    },
+    {
+      "atlas": "bosses.png",
+      "transparent_pixels": 777088,
+      "sprites": 3,
+      "all_cells_nonempty": true,
+      "source_sha256": "aa0560328d826f212e2937815fba42611d829fdc59073d2d9a2c3ff567c764d5"
+    },
+    {
+      "atlas": "relics-initial.png",
+      "transparent_pixels": 852936,
+      "sprites": 18,
+      "all_cells_nonempty": true,
+      "source_sha256": "a106eeeb6150b46f6113dd90957992cb1a86dbe61ac4beea4a57b5209ed6fa71"
+    },
+    {
+      "atlas": "weapons.png",
+      "transparent_pixels": 1046557,
+      "sprites": 12,
+      "all_cells_nonempty": true,
+      "source_sha256": "7e85c590a41fa54d5835252285114efbd00b613de6c067c4bdc4905ab01aedff"
+    },
+    {
+      "atlas": "coin-enemies.png",
+      "transparent_pixels": 830109,
+      "sprites": 8,
+      "all_cells_nonempty": true,
+      "source_sha256": "4f89f861fcd0fea0576e16e6a7e2ed164ced8de9747c5d7037c17fe2cd3d4cbe"
+    },
+    {
+      "atlas": "ownerless-enemies.png",
+      "transparent_pixels": 879835,
+      "sprites": 8,
+      "all_cells_nonempty": true,
+      "source_sha256": "d55060f01be10ae85179a3ff2bd06ce22e1716d19053ff13bd91a09821d2fc9d"
+    },
+    {
+      "atlas": "relics-mid.png",
+      "transparent_pixels": 927968,
+      "sprites": 18,
+      "all_cells_nonempty": true,
+      "source_sha256": "324ef866a585ebf1509ca49fcd6e0cac12774692681e466f5b86082ad72c63e4"
+    },
+    {
+      "atlas": "relics-end.png",
+      "transparent_pixels": 858452,
+      "sprites": 18,
+      "all_cells_nonempty": true,
+      "source_sha256": "29c416c1e0229fade273e3fea7f98e5e9891ebe006b1c64460508c29be2f5635"
+    },
+    {
+      "atlas": "optional-bosses.png",
+      "transparent_pixels": 575065,
+      "sprites": 2,
+      "all_cells_nonempty": true,
+      "source_sha256": "9da91faf959426ce8ae01bb4e1b57e09f0cb9111c5ab253f135de875900c40ea"
+    },
+    {
+      "atlas": "npcs.png",
+      "transparent_pixels": 909798,
+      "sprites": 6,
+      "all_cells_nonempty": true,
+      "source_sha256": "ebee686a7e674e2cbbfc9e585786d24bf16fc826c61fe228fa356890b3e405e4"
+    },
+    {
+      "atlas": "skills.png",
+      "transparent_pixels": 740348,
+      "sprites": 18,
+      "all_cells_nonempty": true,
+      "source_sha256": "013f862313e96747f998c33b256359ebac7be30541917964e12a5f782c97a820"
+    },
+    {
+      "atlas": "elites.png",
+      "transparent_pixels": 753806,
+      "sprites": 6,
+      "all_cells_nonempty": true,
+      "source_sha256": "aa92e23d10534031cc9d4f4f90e2d7abb13bb706020e9c773d51dc488da98de3"
+    }
+  ],
+  "sprites": 149,
+  "edge_padding_checked": true,
+  "needs_visual_review": "normalized-sprites.png and native runtime screenshots"
+}

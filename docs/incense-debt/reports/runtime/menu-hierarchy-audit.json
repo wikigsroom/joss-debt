@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-06T14:26:54.303790+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "title, files and main are three separate native layers",
+      "passed": true,
+      "detail": "InputEventKey Enter traverses splash -> files -> main"
+    },
+    {
+      "name": "three files switch with arrows and restore independent progress and defaults",
+      "passed": true,
+      "detail": "slot 2 progress survives a visit to empty slot 3; settings do not leak"
+    },
+    {
+      "name": "main keeps vertical actions and skips disabled continue",
+      "passed": true,
+      "detail": "directional focus skips a disabled Continue"
+    },
+    {
+      "name": "character children return one layer and their compact actions do not overlap",
+      "passed": true,
+      "detail": "detail/loadout/character buttons exercised with keyboard; native button and notice rectangles compared"
+    },
+    {
+      "name": "character selection exposes actual persistent completion marks",
+      "passed": true,
+      "detail": "four marks read stable character achievement IDs; filter does not change parent"
+    },
+    {
+      "name": "challenge rules and character selection precede a real daily start",
+      "passed": true,
+      "detail": "daily flag and date key checked after tutorial opens"
+    },
+    {
+      "name": "stats owns items, bestiary, endings, character statistics and story",
+      "passed": true,
+      "detail": "all Stats children entered and exited using keys"
+    },
+    {
+      "name": "reading, icons and full choice descriptions have keyboard paths",
+      "passed": true,
+      "detail": "PageDown/End change actual scroll values; F1 returns to the same candidate"
+    },
+    {
+      "name": "settings and its children preserve menu and pause origins",
+      "passed": true,
+      "detail": "Esc audio -> settings -> originating parent"
+    },
+    {
+      "name": "rebind capture, sliders and layout editing close without a pointer",
+      "passed": true,
+      "detail": "real native controls handle key input before combat bindings"
+    },
+    {
+      "name": "all number shortcuts and sequential skill decisions activate real choices",
+      "passed": true,
+      "detail": "candidate IDs and growth log checked after Enter/number events"
+    },
+    {
+      "name": "shop, practice, debt and all three special rooms close by keyboard",
+      "passed": true,
+      "detail": "wallet, original shop stock, rewards and replacement slot count checked"
+    },
+    {
+      "name": "combat, map and inventory form a keyboard loop through physical doors",
+      "passed": true,
+      "detail": "WASD walks through a real directional door; map never teleports"
+    },
+    {
+      "name": "pause records and achievements return to pause after filtering",
+      "passed": true,
+      "detail": "restore explicitly starts on Continue; settings and filters preserve parent"
+    },
+    {
+      "name": "finished build and review return through their real parents",
+      "passed": true,
+      "detail": "finished combat never resumes; ending is committed before archive viewing"
+    },
+    {
+      "name": "replacement confirmation and save transfer are keyboard safe",
+      "passed": true,
+      "detail": "overwrite cancel preserves snapshot; import and undo commit paired saves; failed writes hold menu"
+    },
+    {
+      "name": "design document records comparison, graph, save and keyboard boundaries",
+      "passed": true,
+      "detail": "remaining game-mode and completion-mark differences are explicit"
+    },
+    {
+      "name": "all native evidence verifies the same current compiled executable",
+      "passed": true,
+      "detail": "keyboard behavior, ordinary native GUI and viewport captures share the executable hash"
+    }
+  ],
+  "failures": [],
+  "compiled_windows_sha256": "b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0",
+  "native_interaction_checks": 75,
+  "keyboard_checks": 105,
+  "keyboard_driver": "native Input.parse_input_event key presses/releases; Tab navigation only; no mouse events, no grab_focus or button pressed emissions by the test driver",
+  "hierarchy": [
+    "splash -> files -> main -> character/challenges/stats/options",
+    "room -> pause -> history/achievements/settings -> room",
+    "result -> review -> build -> review -> result -> main",
+    "save transfer -> preview -> commit or independent undo"
+  ],
+  "scope": "source/document contract plus compiled native keyboard and GUI fixtures; optional rooms use arranged scenarios; not human balance or physical mobile acceptance"
+}

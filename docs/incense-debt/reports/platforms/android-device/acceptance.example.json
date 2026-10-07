@@ -1,0 +1,17 @@
+{
+  "platform": "android",
+  "result": "pending",
+  "physical_device_tested": false,
+  "device_model": "",
+  "os_version": "",
+  "artifact_sha256": "",
+  "install_ok": false,
+  "launch_ok": false,
+  "touch_ok": false,
+  "background_resume_ok": false,
+  "file_picker_ok": false,
+  "clipboard_ok": false,
+  "audio_ok": false,
+  "thermal_minutes": 0,
+  "evidence_files": []
+}

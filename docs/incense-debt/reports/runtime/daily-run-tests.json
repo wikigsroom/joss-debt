@@ -1,0 +1,18 @@
+{
+	"checks": [
+		"daily identity uses a readable local calendar key",
+		"the same date and rules version always produce the same bounded seed",
+		"adjacent dates receive different challenge seeds",
+		"daily runs carry their challenge identity into the authoritative snapshot",
+		"daily runs use the explicitly frozen relic pool",
+		"daily runs reproduce graph topology and independent random streams",
+		"daily runs remove account-dependent optional bosses and coin bonuses",
+		"daily results never credit meta merit, unlocks or route history",
+		"daily snapshots pass the normal save migration and restore path",
+		"daily identity survives a disk-shaped restore",
+		"a daily snapshot without a pool version is rejected instead of silently changing rules"
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "date-keyed deterministic daily run, fixed relic pool, account isolation and schema restore; no network clock or leaderboard claim"
+}

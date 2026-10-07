@@ -1,0 +1,12 @@
+{
+  "platform": "android",
+  "path": "build/android/IncenseDebt.apk",
+  "bytes": 480710039,
+  "sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+  "engine": "4.7.2",
+  "build": "debug",
+  "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",
+  "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
+  "device_tested": false,
+  "virtualization": "none"
+}

@@ -1,0 +1,1139 @@
+{
+	"active_pulse": "attack_54_60",
+	"attack_uid": 54,
+	"bullets": [],
+	"chains": [],
+	"choice_queue": [],
+	"choices": [],
+	"content_version": "0.1.0",
+	"delayed": [],
+	"enemies": [],
+	"enemy_ledger": {
+		"c_bell_6327/f1/r0/enemy_1": true,
+		"c_bell_6327/f1/r0/enemy_2": true,
+		"c_bell_6327/f1/r0/enemy_3": true,
+		"c_bell_6327/f1/r1/enemy_31": true,
+		"c_bell_6327/f1/r1/enemy_32": true,
+		"c_bell_6327/f1/r1/enemy_33": true
+	},
+	"mode": "clear",
+	"pair_cooldowns": {},
+	"pickups": [],
+	"player": {
+		"aim": {
+			"__vector2": [
+				0.776799917221069,
+				0.62974750995636
+			]
+		},
+		"armor": 0,
+		"attack_bonus": 0,
+		"attack_bonus_until": 0,
+		"buffer_dash": 0,
+		"buffer_skill": 0,
+		"charge": 0,
+		"dash_cd": 0,
+		"dash_dir": {
+			"__vector2": [
+				0.0,
+				-1.0
+			]
+		},
+		"dash_left": 0,
+		"dash_start": {
+			"__vector2": [
+				640.0,
+				585.0
+			]
+		},
+		"energy": {
+			"__float64": "b298999999794640"
+		},
+		"facing_direction": {
+			"__vector2": [
+				0.776799917221069,
+				0.62974750995636
+			]
+		},
+		"guard": 0,
+		"guard_count": 0,
+		"hp": 5,
+		"invulnerable": 0,
+		"last_shot_direction": {
+			"__vector2": [
+				0.824735283851624,
+				0.565519034862518
+			]
+		},
+		"max_hp": 5,
+		"move": {
+			"__vector2": [
+				-1.0,
+				0.0
+			]
+		},
+		"moved_distance": {
+			"__float64": "000080741bc77e40"
+		},
+		"passive_cd": 0,
+		"passive_hits": 0,
+		"pos": {
+			"__vector2": [
+				218.311660766602,
+				318.490631103516
+			]
+		},
+		"shot_cd": 0,
+		"skill": "s04",
+		"skill_cd": 0,
+		"still": 0,
+		"visual_cast_at": {
+			"__float64": "6babaaaaaaaa2e40"
+		},
+		"weapon": "w02"
+	},
+	"proc_ledger": {},
+	"pulse_serial": 61,
+	"reward_ledger": {
+		"c_bell_6327/f1/r0/clear": true,
+		"c_bell_6327/f1/r1/clear": true,
+		"c_bell_6327/f1/r1/offer_talent_86": true
+	},
+	"rng": 6328,
+	"room_flags": {
+		"ash_count": 3,
+		"chain_pairs": {},
+		"combat_kills": 3,
+		"dash_armor": 0,
+		"encounter_guest": "m19",
+		"encounter_local": "m07",
+		"forced_links": {},
+		"free_skill_pending": false,
+		"passive_detonate": false,
+		"skill_kills_skill_37": 1,
+		"skill_kills_skill_61": 1,
+		"summon_rewards": 0,
+		"summoned": 0,
+		"wave_count": 1,
+		"wave_index": 1,
+		"wave_pending_at": 0,
+		"waves": [
+			[
+				"e130",
+				"e129",
+				"e275"
+			]
+		]
+	},
+	"run": {
+		"bosses_defeated": [],
+		"campaign": true,
+		"character": "c_bell",
+		"cleared": 2,
+		"coin_pickup_bonus": 0,
+		"coins": 23,
+		"consumed": [],
+		"contract_combats": 0,
+		"contracts": [],
+		"daily": false,
+		"daily_key": "",
+		"daily_pool_version": "",
+		"damage_history": [],
+		"death_cause": {},
+		"ending": "",
+		"epilogue_seen": false,
+		"evolved": false,
+		"favors_used": {},
+		"floor": 1,
+		"floor_limit": 11,
+		"graph": {
+			"backgrounds": {
+				"0": 1,
+				"1": 1,
+				"10": 1,
+				"11": 0,
+				"12": 1,
+				"13": 1,
+				"14": 1,
+				"15": 1,
+				"16": 1,
+				"17": 1,
+				"18": 0,
+				"19": 1,
+				"2": 0,
+				"3": 1,
+				"4": 1,
+				"5": 0,
+				"6": 1,
+				"7": 0,
+				"8": 1,
+				"9": 0
+			},
+			"biome": "m07",
+			"boss_assignments": {
+				"11": [
+					"b56"
+				],
+				"12": [
+					"b92"
+				]
+			},
+			"campaign": 2,
+			"coords": [
+				{
+					"__vector2": [
+						0.0,
+						0.0
+					]
+				},
+				{
+					"__vector2": [
+						0.0,
+						1.0
+					]
+				},
+				{
+					"__vector2": [
+						-1.0,
+						1.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						1.0
+					]
+				},
+				{
+					"__vector2": [
+						-3.0,
+						1.0
+					]
+				},
+				{
+					"__vector2": [
+						-3.0,
+						0.0
+					]
+				},
+				{
+					"__vector2": [
+						-3.0,
+						-1.0
+					]
+				},
+				{
+					"__vector2": [
+						-3.0,
+						-2.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						-2.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						-1.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						0.0
+					]
+				},
+				{
+					"__vector2": [
+						-1.0,
+						0.0
+					]
+				},
+				{
+					"__vector2": [
+						-1.0,
+						-2.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						2.0
+					]
+				},
+				{
+					"__vector2": [
+						-4.0,
+						0.0
+					]
+				},
+				{
+					"__vector2": [
+						-1.0,
+						2.0
+					]
+				},
+				{
+					"__vector2": [
+						-4.0,
+						-2.0
+					]
+				},
+				{
+					"__vector2": [
+						-1.0,
+						-1.0
+					]
+				},
+				{
+					"__vector2": [
+						-2.0,
+						-3.0
+					]
+				},
+				{
+					"__vector2": [
+						-4.0,
+						-1.0
+					]
+				}
+			],
+			"edges": [
+				[
+					0,
+					1
+				],
+				[
+					1,
+					2
+				],
+				[
+					2,
+					3
+				],
+				[
+					3,
+					4
+				],
+				[
+					4,
+					5
+				],
+				[
+					5,
+					6
+				],
+				[
+					6,
+					7
+				],
+				[
+					7,
+					8
+				],
+				[
+					8,
+					9
+				],
+				[
+					9,
+					10
+				],
+				[
+					10,
+					11
+				],
+				[
+					8,
+					12
+				],
+				[
+					3,
+					13
+				],
+				[
+					5,
+					14
+				],
+				[
+					2,
+					15
+				],
+				[
+					7,
+					16
+				],
+				[
+					9,
+					17
+				],
+				[
+					8,
+					18
+				],
+				[
+					6,
+					19
+				]
+			],
+			"encounter_mix": {
+				"__float64": "9a9999999999d93f"
+			},
+			"guest_biome": "m19",
+			"optional_boss": "",
+			"optional_boss_room": -1,
+			"revealed": [],
+			"room_roles": {
+				"11": "floor_exit",
+				"12": "side_boss"
+			},
+			"secret_entries": [
+				{
+					"parent": 6,
+					"pos": {
+						"__vector2": [
+							192.0,
+							296.0
+						]
+					},
+					"room": 19,
+					"side": -1
+				}
+			],
+			"types": [
+				"combat",
+				"combat",
+				"reward",
+				"combat",
+				"debt",
+				"combat",
+				"combat",
+				"shop",
+				"combat",
+				"elite",
+				"combat",
+				"boss",
+				"optional_boss",
+				"sacrifice",
+				"challenge",
+				"reward",
+				"judge",
+				"event",
+				"angel",
+				"secret"
+			]
+		},
+		"growth_log": [
+			{
+				"at": 0,
+				"floor": 1,
+				"hp_cost": 0,
+				"id": "w02",
+				"price": 0,
+				"reward_id": "w02",
+				"reward_kind": "initial",
+				"room": "c_bell_6327/f1/r0",
+				"room_index": 0,
+				"room_type": "combat",
+				"source": "initial",
+				"type": "weapon"
+			},
+			{
+				"at": 0,
+				"floor": 1,
+				"hp_cost": 0,
+				"id": "s04",
+				"price": 0,
+				"reward_id": "s04",
+				"reward_kind": "initial",
+				"room": "c_bell_6327/f1/r0",
+				"room_index": 0,
+				"room_type": "combat",
+				"source": "initial",
+				"type": "skill"
+			},
+			{
+				"at": {
+					"__float64": "6babaaaaaaaa2e40"
+				},
+				"floor": 1,
+				"hp_cost": 0,
+				"id": "t_thread_1a",
+				"price": 0,
+				"reward_id": "t_thread_1a",
+				"reward_kind": "talent",
+				"room": "c_bell_6327/f1/r1",
+				"room_index": 1,
+				"room_type": "combat",
+				"source": "choice",
+				"type": "talent"
+			}
+		],
+		"heal_misses": 0,
+		"id": "c_bell_6327",
+		"interest_page": false,
+		"level": 1,
+		"merit": 2,
+		"name_page_ids": [],
+		"name_pages": 0,
+		"optional_bosses": [],
+		"pickup_radius_scale": 1,
+		"random_version": "incense-derived-v1",
+		"relic_pool": [
+			"r01",
+			"r02",
+			"r03",
+			"r09",
+			"r10",
+			"r11",
+			"r17",
+			"r18",
+			"r19",
+			"r25",
+			"r26",
+			"r27",
+			"r33",
+			"r34",
+			"r35",
+			"r41",
+			"r42",
+			"r43"
+		],
+		"relics": {},
+		"repay_effects": 0,
+		"repay_reward_pending": 0,
+		"repay_skill_refunds": 0,
+		"repayments": [],
+		"replacement": {},
+		"rerolls": 1,
+		"result": "",
+		"room": 1,
+		"room_history": {
+			"0": {
+				"flags": {
+					"ash_count": 3,
+					"chain_pairs": {},
+					"combat_kills": 3,
+					"dash_armor": 0,
+					"encounter_guest": "m19",
+					"encounter_local": "m07",
+					"forced_links": {},
+					"free_skill_pending": false,
+					"passive_detonate": false,
+					"summon_rewards": 0,
+					"summoned": 0,
+					"wave_count": 1,
+					"wave_index": 1,
+					"wave_pending_at": 0,
+					"waves": [
+						[
+							"e130",
+							"e129",
+							"e274"
+						]
+					]
+				},
+				"objects": [
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								13.0,
+								1.0
+							]
+						},
+						"fuse_until": 0,
+						"group": 2,
+						"hit_until": 0,
+						"hp": 34,
+						"key": "13,1",
+						"kind": "rope_wall",
+						"phase": {
+							"__float64": "925f262493cc1040"
+						},
+						"pos": {
+							"__vector2": [
+								928.0,
+								168.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								14.0,
+								1.0
+							]
+						},
+						"fuse_until": 0,
+						"group": 2,
+						"hit_until": 0,
+						"hp": 34,
+						"key": "14,1",
+						"kind": "rope_wall",
+						"phase": {
+							"__float64": "2a0ccf0cd17be33f"
+						},
+						"pos": {
+							"__vector2": [
+								992.0,
+								168.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								12.0,
+								1.0
+							]
+						},
+						"fuse_until": 0,
+						"group": 2,
+						"hit_until": 0,
+						"hp": 34,
+						"key": "12,1",
+						"kind": "rope_wall",
+						"phase": {
+							"__float64": "9e1f7eb45c211040"
+						},
+						"pos": {
+							"__vector2": [
+								864.0,
+								168.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": false,
+						"cell": {
+							"__vector2": [
+								11.0,
+								6.0
+							]
+						},
+						"fuse_until": {
+							"__float64": "643d0ad7a3701440"
+						},
+						"group": -1,
+						"hit_until": {
+							"__float64": "6e14ae47e17a1340"
+						},
+						"hp": 0,
+						"key": "11,6",
+						"kind": "oil_lamp",
+						"phase": {
+							"__float64": "763bd8883515fa3f"
+						},
+						"pos": {
+							"__vector2": [
+								800.0,
+								488.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": false,
+						"cell": {
+							"__vector2": [
+								12.0,
+								7.0
+							]
+						},
+						"fuse_until": {
+							"__float64": "dab4814e1be81540"
+						},
+						"group": -1,
+						"hit_until": {
+							"__float64": "e48b25bf58f21440"
+						},
+						"hp": -13,
+						"key": "12,7",
+						"kind": "powder_urn",
+						"phase": {
+							"__float64": "4ae50676e9580540"
+						},
+						"pos": {
+							"__vector2": [
+								864.0,
+								552.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								13.0,
+								2.0
+							]
+						},
+						"fuse_until": 0,
+						"group": -1,
+						"hit_until": 0,
+						"hp": 12,
+						"key": "13,2",
+						"kind": "powder_urn",
+						"phase": {
+							"__float64": "2b2675ef34281540"
+						},
+						"pos": {
+							"__vector2": [
+								928.0,
+								232.0
+							]
+						},
+						"solid": true
+					},
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								3.0,
+								2.0
+							]
+						},
+						"fuse_until": 0,
+						"group": -1,
+						"hit_until": 0,
+						"hp": 9999,
+						"key": "3,2",
+						"kind": "thorn_seal",
+						"phase": {
+							"__float64": "13efc6655efe0a40"
+						},
+						"pos": {
+							"__vector2": [
+								288.0,
+								232.0
+							]
+						},
+						"solid": false
+					},
+					{
+						"alive": true,
+						"cell": {
+							"__vector2": [
+								7.0,
+								5.0
+							]
+						},
+						"fuse_until": 0,
+						"group": -1,
+						"hit_until": 0,
+						"hp": 9999,
+						"key": "7,5",
+						"kind": "thorn_seal",
+						"phase": {
+							"__float64": "75d966073355da3f"
+						},
+						"pos": {
+							"__vector2": [
+								544.0,
+								424.0
+							]
+						},
+						"solid": false
+					}
+				],
+				"pickups": [],
+				"template": "procedural_m07"
+			}
+		},
+		"room_plan": [
+			"combat",
+			"combat",
+			"reward",
+			"combat",
+			"debt",
+			"combat",
+			"combat",
+			"shop",
+			"combat",
+			"elite",
+			"combat",
+			"boss",
+			"optional_boss",
+			"sacrifice",
+			"challenge",
+			"reward",
+			"judge",
+			"event",
+			"angel",
+			"secret"
+		],
+		"seed": 6327,
+		"seed_text": "000000006327",
+		"special_rooms": {},
+		"talents": [
+			"t_thread_1a"
+		],
+		"visited": [
+			0
+		],
+		"xp": 20
+	},
+	"scenery": [
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					4.0,
+					3.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 1,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "4,3",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "063c899572ee1640"
+			},
+			"pos": {
+				"__vector2": [
+					352.0,
+					296.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					3.0,
+					3.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 1,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "3,3",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "b06ad703592be03f"
+			},
+			"pos": {
+				"__vector2": [
+					288.0,
+					296.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					3.0,
+					2.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 1,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "3,2",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "289d28f9a2871740"
+			},
+			"pos": {
+				"__vector2": [
+					288.0,
+					232.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					4.0,
+					2.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 1,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "4,2",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "47247b7423370340"
+			},
+			"pos": {
+				"__vector2": [
+					352.0,
+					232.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					14.0,
+					5.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 2,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "14,5",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "3e939a8d320ff43f"
+			},
+			"pos": {
+				"__vector2": [
+					992.0,
+					424.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					14.0,
+					6.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 2,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "14,6",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "add8411925f91140"
+			},
+			"pos": {
+				"__vector2": [
+					992.0,
+					488.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					13.0,
+					6.0
+				]
+			},
+			"fuse_until": 0,
+			"group": 2,
+			"hit_until": 0,
+			"hp": 34,
+			"key": "13,6",
+			"kind": "bamboo_wall",
+			"phase": {
+				"__float64": "cd64a9cc2981e93f"
+			},
+			"pos": {
+				"__vector2": [
+					928.0,
+					488.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					6.0,
+					5.0
+				]
+			},
+			"fuse_until": 0,
+			"group": -1,
+			"hit_until": 0,
+			"hp": 12,
+			"key": "6,5",
+			"kind": "oil_lamp",
+			"phase": {
+				"__float64": "46c40c93dffb1740"
+			},
+			"pos": {
+				"__vector2": [
+					480.0,
+					424.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": false,
+			"cell": {
+				"__vector2": [
+					12.0,
+					3.0
+				]
+			},
+			"fuse_until": {
+				"__float64": "0e41a70d745a2540"
+			},
+			"group": -1,
+			"hit_until": {
+				"__float64": "932cf9c592df2440"
+			},
+			"hp": {
+				"__float64": "0ad7a3703dca33c0"
+			},
+			"key": "12,3",
+			"kind": "oil_lamp",
+			"phase": {
+				"__float64": "5bddd7508f451040"
+			},
+			"pos": {
+				"__vector2": [
+					864.0,
+					296.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": false,
+			"cell": {
+				"__vector2": [
+					12.0,
+					1.0
+				]
+			},
+			"fuse_until": {
+				"__float64": "0e41a70d745a2540"
+			},
+			"group": -1,
+			"hit_until": {
+				"__float64": "59e8b4814e9b2540"
+			},
+			"hp": {
+				"__float64": "85eb51b81e654ac0"
+			},
+			"key": "12,1",
+			"kind": "powder_urn",
+			"phase": {
+				"__float64": "75441b1c8ac7fa3f"
+			},
+			"pos": {
+				"__vector2": [
+					864.0,
+					168.0
+				]
+			},
+			"solid": true
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					11.0,
+					3.0
+				]
+			},
+			"fuse_until": 0,
+			"group": -1,
+			"hit_until": 0,
+			"hp": 9999,
+			"key": "11,3",
+			"kind": "thorn_seal",
+			"phase": {
+				"__float64": "83b78d3939590b40"
+			},
+			"pos": {
+				"__vector2": [
+					800.0,
+					296.0
+				]
+			},
+			"solid": false
+		},
+		{
+			"alive": true,
+			"cell": {
+				"__vector2": [
+					6.0,
+					3.0
+				]
+			},
+			"fuse_until": 0,
+			"group": -1,
+			"hit_until": 0,
+			"hp": 9999,
+			"key": "6,3",
+			"kind": "thorn_seal",
+			"phase": {
+				"__float64": "7ac7c69076ad1640"
+			},
+			"pos": {
+				"__vector2": [
+					480.0,
+					296.0
+				]
+			},
+			"solid": false
+		}
+	],
+	"stats": {
+		"ash_energy": 48,
+		"damage_taken": 0,
+		"detonations": 3,
+		"dodges": 0,
+		"elapsed": {
+			"__float64": "2531bbbbfb3fbf40"
+		},
+		"hits": 28,
+		"kills": 6,
+		"max_chain": 2,
+		"secondary_hits": 0,
+		"shots": 54
+	},
+	"streams": {
+		"f1/r0/attack_critical": 92416282,
+		"f1/r0/encounter/mix_v2": 907067167,
+		"f1/r0/enemy_timing_1": 292446884,
+		"f1/r0/enemy_timing_2": 1934832500,
+		"f1/r0/enemy_timing_3": 470810717,
+		"f1/r0/kill_drops": 1883607700,
+		"f1/r0/loot": 1689904473,
+		"f1/r0/wave_spawn_1": 1619441373,
+		"f1/r1/attack_critical": 1451044366,
+		"f1/r1/encounter/mix_v2": 1531225573,
+		"f1/r1/enemy_timing_31": 508678532,
+		"f1/r1/enemy_timing_32": 59927261,
+		"f1/r1/enemy_timing_33": 765111215,
+		"f1/r1/kill_drops": 1359453914,
+		"f1/r1/loot": 454590500,
+		"f1/r1/wave_spawn_1": 910385881
+	},
+	"template": "procedural_m07",
+	"time": {
+		"__float64": "2531bbbbfb3fbf40"
+	},
+	"uid": 95,
+	"version": 2,
+	"zones": []
+}

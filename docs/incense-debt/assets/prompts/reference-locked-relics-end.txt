@@ -1,0 +1,22 @@
+The supplied images are binding art references for the SAME original game Incense Debt. Match their coarse woodblock ink contour, torn fibrous ivory paper, vermilion ribbons, matte aged bronze, muted jade and upper-left light. Do not redesign the art style. No glossy 3D, no pixel art, no clean vector clipart, no science fiction, no lettering or labels. Tangible folklore paper-and-wood objects with readable silhouettes at gameplay scale.
+Output one 1536x1024 PNG with true transparent alpha. Each assigned grid cell contains exactly one complete isolated subject, centered with generous transparent padding and no crossing into another cell. No scene, no frame, no checkerboard, no caption. Consistent near-top-down game orientation with readable fronts and short shadows. Keep proportions coherent across the sheet.
+Exactly SIX columns by THREE rows; eighteen compact relic icons, one per cell. Match the supplied initial icon atlas closely. Row-major order:
+1. thick old bronze door nail with an ivory ward wrap.
+2. tiny seated ivory paper figure wrapped in bronze armor.
+3. one ivory feather with an ash-black tip and red binding.
+4. two small bronze bells linked by a curved ivory paper strip.
+5. small triangular ivory-and-red wish pennant.
+6. a curled torn ivory paper trail with a red cord tip.
+7. a three-blade folded ivory paper pinwheel with a bronze hub.
+8. long narrow ivory name slip pierced by an ink-black brush stroke.
+9. small square bronze cancellation stamp with a dark handle.
+10. a folded charcoal contract sheet sealed by a vermilion knot.
+11. two rolled ivory ledger scrolls crossed and bound in red.
+12. thick closed ivory ledger with charcoal cover and three bronze clasps.
+13. ivory cloth patch embroidered with a red debt cord and ash threads.
+14. pair of tiny vermilion paper shoes with amber lamp tassels.
+15. small dark bronze inkstone containing pale ash and a short ivory brush.
+16. square vermilion seal stamp with a black ink tip and red cord.
+17. a small ivory paper lantern protected by a thick red rope loop.
+18. a short tied bundle of incense with a bronze cash charm.
+Use humble tactile objects, not generic symbols. No letters or numbers in the image.

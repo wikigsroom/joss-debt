@@ -1,0 +1,14 @@
+{
+  "platform": "windows",
+  "path": "build/windows/IncenseDebt.exe",
+  "bytes": 561862192,
+  "sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "engine": "4.7.2",
+  "build": "release",
+  "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",
+  "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
+  "device_tested": true,
+  "virtualization": "none",
+  "native_runtime_tested": true,
+  "native_runtime_report": "docs/incense-debt/reports/platforms/windows/native-render.json"
+}

@@ -1,0 +1,4611 @@
+{
+  "captures": [
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "story-opening",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "pause-seed",
+      "room": 0,
+      "saved": true,
+      "screen": "pause"
+    },
+    {
+      "floor": 11,
+      "mode": "clear",
+      "name": "map-final-build",
+      "room": 31,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 11,
+      "mode": "clear",
+      "name": "map-build-last",
+      "room": 31,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 11,
+      "mode": "clear",
+      "name": "map-history-last",
+      "room": 31,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 1,
+      "mode": "transition",
+      "name": "transition-02",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 2,
+      "mode": "transition",
+      "name": "transition-03",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 3,
+      "mode": "transition",
+      "name": "transition-04",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 4,
+      "mode": "transition",
+      "name": "transition-05",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 5,
+      "mode": "transition",
+      "name": "transition-06",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 6,
+      "mode": "transition",
+      "name": "transition-07",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 7,
+      "mode": "transition",
+      "name": "transition-08",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 8,
+      "mode": "transition",
+      "name": "transition-09",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 9,
+      "mode": "transition",
+      "name": "transition-10",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 10,
+      "mode": "transition",
+      "name": "transition-11",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m01-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m01-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "mixed-m01",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "themed-m01-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m02-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m02-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "mixed-m02",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "themed-m02-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m03-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m03-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "mixed-m03",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "themed-m03-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m04-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m04-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "mixed-m04",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "themed-m04-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m05-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m05-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "mixed-m05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "themed-m05-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m06-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m06-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "mixed-m06",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "themed-m06-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m07-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m07-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "mixed-m07",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "themed-m07-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m08-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m08-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "mixed-m08",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "themed-m08-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m09-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m09-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "mixed-m09",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "themed-m09-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m10-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m10-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "mixed-m10",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "themed-m10-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m11-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m11-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "mixed-m11",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "themed-m11-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m12-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "environment-m12-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "mixed-m12",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "themed-m12-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m13-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "environment-m13-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "mixed-m13",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "themed-m13-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m14-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "environment-m14-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "mixed-m14",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "themed-m14-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m15-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "environment-m15-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "mixed-m15",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "themed-m15-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m16-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m16-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "mixed-m16",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "themed-m16-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m17-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m17-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "mixed-m17",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "themed-m17-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m18-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "environment-m18-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "mixed-m18",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "themed-m18-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "environment-m19-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "environment-m19-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "mixed-m19",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "themed-m19-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "environment-m20-a",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "environment-m20-b",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "mixed-m20",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "themed-m20-roster",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "early-1-boss-13",
+      "room": 13,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "early-1-boss-14",
+      "room": 14,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "early-1-two-boss-chambers-map",
+      "room": 14,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "early-2-boss-11",
+      "room": 11,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "early-2-boss-12",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "clear",
+      "name": "early-2-two-boss-chambers-map",
+      "room": 12,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "early-3-boss-11",
+      "room": 11,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "early-3-boss-12",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "clear",
+      "name": "early-3-two-boss-chambers-map",
+      "room": 12,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "early-4-boss-14",
+      "room": 14,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "early-4-boss-15",
+      "room": 15,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "clear",
+      "name": "early-4-two-boss-chambers-map",
+      "room": 15,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "early-5-boss-13",
+      "room": 13,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "early-5-boss-14",
+      "room": 14,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "clear",
+      "name": "early-5-two-boss-chambers-map",
+      "room": 14,
+      "saved": true,
+      "screen": "route"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-00",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-01",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-02",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-03",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-04",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-06",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-07",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-08",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-09",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-10",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-11",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-12",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-13",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-14",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-15",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-16",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-17",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-18",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-19",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-20",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-21",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-22",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-23",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-24",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-25",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-26",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-27",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-28",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-29",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-30",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "motion-revision-fx-31",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "revision-wall-area-0.0",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "revision-wall-area-0.35",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "revision-wall-area-0.75",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "revision-wall-area-1.05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "revision-wall-area-1.5",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "enemies-group-0",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "enemies-group-1",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "enemies-group-2",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "enemies-group-3",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b01",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b02",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b03",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b04",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b06",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b07",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b08",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b09",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b10",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b11",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b12",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b13",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b14",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b15",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b16",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b17",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b18",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b19",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b20",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b21",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b22",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b23",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b24",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b25",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b26",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b27",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b28",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b29",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b30",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b31",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b32",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b33",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b34",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b35",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b36",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b37",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b38",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b39",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b40",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b41",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b42",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b43",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b44",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b45",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b46",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b47",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b48",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b49",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b50",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b51",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b52",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b53",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b54",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b55",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b56",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b57",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b58",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b59",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b60",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b61",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b62",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b63",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b64",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b65",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b66",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b67",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b68",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b69",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b70",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b71",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b72",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "boss-b73",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b74",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b75",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 1,
+      "mode": "combat",
+      "name": "boss-b76",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b77",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b78",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "boss-b79",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b80",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b81",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "boss-b82",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b83",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b84",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b85",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b86",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b87",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b88",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b89",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b90",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "boss-b91",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "boss-b92",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "boss-b93",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b94",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b95",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b96",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b97",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b98",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "boss-b99",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w01",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w02",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w03",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w04",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w06",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w07",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w08",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w09",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w10",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w11",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w12",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w13",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w14",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w15",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w16",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w17",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w17-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w17-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w17-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w17-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w18",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w18-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w18-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w18-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w18-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w19",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w19-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w19-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w19-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w19-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w20",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w20-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w20-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w20-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w20-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w21",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w21-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w21-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w21-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w21-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w22",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w22-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w22-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w22-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w22-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w23",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w23-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w23-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w23-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w23-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w24",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w24-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w24-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w24-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w24-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w25",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w25-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w25-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w25-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w25-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w26",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w26-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w26-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w26-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w26-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w27",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w27-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w27-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w27-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w27-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w28",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w28-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w28-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w28-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w28-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w29",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w29-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w29-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w29-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w29-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w30",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w30-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w30-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w30-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w30-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w31",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w31-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w31-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w31-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w31-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "weapon-w32",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w32-up",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w32-right",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w32-down",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-w32-left",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-00",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-01",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-02",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-03",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-04",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-05",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-06",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-07",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-08",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-09",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-10",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "clear",
+      "name": "motion-scenery-11",
+      "room": 0,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "double-boss-room",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-00",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-01",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-02",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-03",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-04",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-05",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-06",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-07",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-08",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-09",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-10",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-11",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-12",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-13",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-14",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-15",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-16",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-17",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-18",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-19",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-20",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-21",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-22",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-23",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-24",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-25",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-26",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-27",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-28",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-29",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-30",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "motion-dual-31",
+      "room": 12,
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "floor": 11,
+      "mode": "epilogue",
+      "name": "ending-scene-00",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 11,
+      "mode": "epilogue",
+      "name": "ending-scene-01",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 11,
+      "mode": "epilogue",
+      "name": "ending-scene-02",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 11,
+      "mode": "epilogue",
+      "name": "ending-scene-03",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 11,
+      "mode": "epilogue",
+      "name": "ending-scene-04",
+      "room": 0,
+      "saved": true,
+      "screen": "cinematic"
+    },
+    {
+      "floor": 11,
+      "mode": "result",
+      "name": "ending-result",
+      "room": 0,
+      "saved": true,
+      "screen": "result"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "three_layers_to_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "seed_keyboard_entry",
+      "passed": true
+    },
+    {
+      "detail": "000123456789",
+      "id": "seed_native_digits_keep_leading_zeroes",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "seed_confirm_returns_character",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "normal_keyboard_start_eleven_floors_one_shot_seed",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cinematic_keyboard_help",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cinematic_help_returns_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "opening_cursor_persisted",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cinematic_escape_pauses",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_keyboard_seed_copy",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "opening_saved_to_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "opening_resumes_saved_cursor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "opening_keyboard_to_tutorial",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tutorial_keyboard_to_combat",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "final_map_keyboard_open",
+      "passed": true
+    },
+    {
+      "detail": "35",
+      "id": "map_full_build_not_truncated",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_help_returns_original_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_last_build_keyboard_visible",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_full_history_not_truncated",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tab_closes_map_without_changing_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_2_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "evolution_number_keyboard",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_2_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_3_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_3_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_4_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_4_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_5_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_5_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_6_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_6_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_7_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_7_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_8_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_8_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_9_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_9_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_10_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_10_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_11_is_cinematic",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "transition_11_enters_correct_floor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m01_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m01_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m01",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m01_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m01_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m02_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m02_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m02",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m02_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m02_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m03_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m03_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m03",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m03_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m03_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m04_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m04_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m04",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m04_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m04_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m05_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m05_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m05",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m05_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m05_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m06_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m06_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m06",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m06_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m06_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m07_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m07_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m07",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m07_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m07_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m08_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m08_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m08",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m08_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m08_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m09_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m09_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m09",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m09_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m09_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m10_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m10_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m10",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m10_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m10_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m11_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m11_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m11",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m11_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m11_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m12_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m12_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m12",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m12_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m12_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m13_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m13_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m13",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m13_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m13_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m14_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m14_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m14",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m14_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m14_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m15_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m15_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m15",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m15_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m15_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m16_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m16_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m16",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m16_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m16_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m17_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m17_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m17",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m17_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m17_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m18_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m18_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m18",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m18_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m18_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m19_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m19_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m19",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m19_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m19_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m20_0_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boundary_m20_1_matches_background",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "environment_m20",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m20_six_local_four_guests",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_m20_twelve_themed_mobs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_1_room_13_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_1_room_14_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_2_room_11_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_2_room_12_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_3_room_11_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_3_room_12_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_4_room_14_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_4_room_15_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_5_room_13_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "early_5_room_14_one_live_boss",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b01_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b02_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b03_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b04_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b05_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b06_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b07_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b08_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b09_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b10_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b11_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b12_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b13_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b14_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b15_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b16_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b17_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b18_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b19_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b20_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b21_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b22_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b23_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b24_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b25_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b26_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b27_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b28_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b29_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b30_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b31_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b32_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b33_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b34_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b35_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b36_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b37_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b38_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b39_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b40_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b41_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b42_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b43_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b44_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b45_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b46_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b47_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b48_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b49_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b50_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b51_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b52_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b53_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b54_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b55_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b56_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b57_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b58_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b59_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b60_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b61_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b62_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b63_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b64_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b65_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b66_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b67_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b68_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b69_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b70_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b71_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b72_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b73_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b74_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b75_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b76_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b77_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b78_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b79_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b80_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b81_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b82_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b83_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b84_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b85_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b86_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b87_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b88_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b89_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b90_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b91_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b92_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b93_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b94_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b95_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b96_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b97_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b98_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "boss_b99_visible_attack",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w01_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w02_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w03_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w04_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w05_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w06_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w07_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w08_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w09_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w10_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w11_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w12_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w13_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w14_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w15_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w16_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w17_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w18_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w19_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w20_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w21_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w22_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w23_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w24_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w25_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w26_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w27_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w28_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w29_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w30_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w31_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "weapon_w32_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_native_bosses_two_health_bars",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "full_epilogue_keyboard_to_mandatory_ending",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_final_ending_commit",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": false,
+  "scope": "native keyboard interactions + arranged scene visual fixtures; full combat campaign evidence is a separate simulation report",
+  "packaged": false
+}

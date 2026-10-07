@@ -1,0 +1,73 @@
+{
+	"failures": [
+		"no complete unmodified eleven-floor victory"
+	],
+	"limitations": [
+		"Action bot does not establish human feel or real-time device performance",
+		"Native cinematic/keyboard checks are recorded separately"
+	],
+	"method": "initial unlock pool, unchanged player health/damage/energy, 60 Hz combat and 30 Hz held action decisions for 16-unit navigation, physical door walking on the main route, mandatory double-boss floors 7–10, ten checkpoint save/restores; maximum 480000 ticks per attempt",
+	"passed": false,
+	"runs": [
+		{
+			"bosses": [
+				"b56",
+				"b57",
+				"b49"
+			],
+			"character": "c_paper",
+			"cleared": 36.0,
+			"combat_seconds": 682.5,
+			"double_boss_floors": [],
+			"epilogue_seen": false,
+			"health": 0,
+			"highest_floor": 4,
+			"last_enemy_ids": [
+				"e149",
+				"e148",
+				"e150",
+				"e183"
+			],
+			"last_mode": "result",
+			"last_room": 9,
+			"physical_doors": 45,
+			"result": "defeat",
+			"save_checks": [
+				{
+					"restored": true,
+					"to_floor": 2,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 3,
+					"validation": "ok"
+				},
+				{
+					"restored": true,
+					"to_floor": 4,
+					"validation": "ok"
+				}
+			],
+			"seed": "000000006327",
+			"stats": {
+				"ash_energy": 1901.0,
+				"damage_taken": 15.0,
+				"detonations": 100.0,
+				"dodges": 1.0,
+				"elapsed": 682.533333333041,
+				"hits": 1044.0,
+				"kills": 198.0,
+				"max_chain": 2,
+				"max_proc_events": 5,
+				"secondary_hits": 68.0,
+				"shots": 1363.0
+			},
+			"transitions": [
+				2,
+				3,
+				4
+			]
+		}
+	]
+}

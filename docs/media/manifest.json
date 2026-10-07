@@ -1,0 +1,165 @@
+{
+  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "records": [
+    {
+      "path": "docs/media/main-menu.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-main.png",
+      "source_sha256": "005176d612a7b6da88f118d3144ca4ddbabb7de8bd89529bc1e1c25bb20f1439",
+      "sha256": "54d145fa857346b89d9c6dcb021a7e328484c4ac425ac82cbf5970b1829d1aa6",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/save-slots.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-files.png",
+      "source_sha256": "878d69384cb5a7c124d08fcae8c70249ea2fa29e95cd062d52384970c1190ba5",
+      "sha256": "8b819fad815770521c3ddea86417039b8517da96ead0228e8d6f2c7781ab1066",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/characters.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-characters.png",
+      "source_sha256": "3fac48c65d4a96621f57ed03e15f9f254ac014d6f008f648975b2990e44dd1fd",
+      "sha256": "81c2cbe192db3aec57139b35434c0da55cde3a04e55b3a765c20d1aa52e6d6df",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/character-details.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/character-details.png",
+      "source_sha256": "90380eb121012ac9397fd3958dfd8c32de66bc0e096c6edcbe3572fc676bcc69",
+      "sha256": "be888f0b4ce7713a10dc4158a5627d3e34754cc746c032ea9eb6c06a883dcf29",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/pause.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/modern-pause.png",
+      "source_sha256": "f931b3f515d0acf2c5c3715b4c4e2c38c74f22898aa902737a5fd57b9cec85b2",
+      "sha256": "13f5d1b47c02a276ac6a1dfec871b1a9a8a6bdc9c6963da4fe65833c2c2a5977",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/build-map.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/map-final-build.png",
+      "source_sha256": "1d9c87ac503156a50b073d266224ae69a8848375ac6457d4f1b3738edeb2545c",
+      "sha256": "bc84d47a80a6003b71704cca5f7292f0ed1ae2edf6d633b5eb516bac368d16eb",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/early-boss-map.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/early-1-two-boss-chambers-map.png",
+      "source_sha256": "ca2029d2c26c39f0928c0c995fad068768fe92151a7718dd05b1531be73a876b",
+      "sha256": "27ae85b758e9c26c3f85f5b22ac8000394242ca8f992581533984ac430e472f4",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/shop.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-shop.png",
+      "source_sha256": "bf2b865cd212edb536d508136ca6850025a931d65d28ec1688ba1ca3cbbc0602",
+      "sha256": "51fadfd21caef746821a7ff0a54e44d3cc117ecea5f2c487ab45af2d8bb3d001",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/mixed-encounter.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m01.png",
+      "source_sha256": "f667963ac34ca537acfacce241ea0aac6f9b594da8309df8217386146b658fe6",
+      "sha256": "f24eefa75daa1f5bacec916906ecf4dfd1959c4c550dae09d265407b168823f4",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/ray.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w14.png",
+      "source_sha256": "5d7d8d761d20499d75691781b3f1eb85b0963bc9a91957eb81680048f934c22f",
+      "sha256": "1c1f4bddbc5c088e402b3661de6b8a1968ca4827d35dca6fea5fae1d78d3757c",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/boss.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/early-1-boss-13.png",
+      "source_sha256": "2737dceaa7d6d7b687d08af7a92d3be848f53c1fb65248a1737911de5b443cb5",
+      "sha256": "ae6140db3aa00b9ae00c0bf2df2595a1b2d25db4e8a18bb53fabe24b53c3146c",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/boss-alternative.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/early-1-boss-14.png",
+      "source_sha256": "45727c3e25a67d04f519142ea5842019332c0f2b51e51eced5a4b71c0b2fe27e",
+      "sha256": "04259fa890166009141ab739894da6bd171f295fdcd17f8f0508707dbed8daa8",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/themes.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/twenty-themes-overview.png",
+      "source_sha256": "75e04119c99f4a10cdb1eeead9acfe0e3e17d78000d22286a349e994d4c69367",
+      "sha256": "e625d362ec1dba250fda4c12aafa1f526dd83092e6deb615b01ff8ba8490ece6",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/final-floor.webp",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/environment-m20-a.png",
+      "source_sha256": "e6051fa118aa5a53d0d32d174cda87002bc39931f72e9b3bb7d000b8b6782f05",
+      "sha256": "2e181c211a29d5b182ef52483f1c412901a48a36278198b7d8f80b9f740797fd",
+      "kind": "native Windows screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/combat-fx.gif",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/revision-fx-motion.gif",
+      "source_sha256": "812bfb9729db358118ff939c01ab4e910272f764162f4a20e36eebccbcc3e96a",
+      "sha256": "1504b7c5b75756fc60442e02eccba0b5f390a1d9dbab4030b7f8b422a24436a7",
+      "frames": 32,
+      "kind": "native scripted combat demonstration",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/boss-motion.gif",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/dual-motion.gif",
+      "source_sha256": "62849b25b61dd76393f12996eebd81448eadb572a28e6b50cc4165e5bc97b630",
+      "sha256": "27871bd5beffc5aa8b8c522c2f46f60dbb6b638669e8fe6a617f8a0ffc919160",
+      "frames": 32,
+      "kind": "native scripted combat demonstration",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/scenery.gif",
+      "source": "docs/incense-debt/reports/platforms/windows/expansion/scenery-motion.gif",
+      "source_sha256": "14896b5382d38c4c77beedae36971c0be2785323eacd273ee8a90372819f44bd",
+      "sha256": "9bd54889e07b85b6b8ad189b5a968a82c615d11d79cc169a9e513a0e7d77f8e0",
+      "frames": 12,
+      "kind": "native scripted combat demonstration",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/gameplay.gif",
+      "sha256": "30430e2833796eb460edfb53cfe44935848f0bba149653f4377c1b6a98a50dc2",
+      "frames": 120,
+      "kind": "normal initial-stats native gameplay capture",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/gameplay.webp",
+      "sha256": "25ef5031ddb7cfa384ffe462a54825f91a5724a109bce712debeef25d27c44f6",
+      "kind": "normal gameplay screenshot",
+      "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+    },
+    {
+      "path": "docs/media/menu-flow.png",
+      "sha256": "0ed6fbe61314776a7ff88fd476e9208de53b10cd278eb0ad570f490ce7fa062f",
+      "kind": "bilingual documentation diagram",
+      "source": "docs/incense-debt/22-menu-save-achievements.md"
+    }
+  ],
+  "processing": "Screenshot WEBP compression; global-palette GIFs with transparent frame deltas, frame-by-frame decoded composition checked; original viewport geometry preserved",
+  "originals": "Original captures are preserved locally; images directly linked by design documents remain versioned"
+}

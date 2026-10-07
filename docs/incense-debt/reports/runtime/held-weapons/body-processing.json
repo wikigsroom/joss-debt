@@ -1,0 +1,1335 @@
+{
+  "status": "reviewed_local_edits",
+  "bodies": [
+    {
+      "actor": "c_paper",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_paper_down.png",
+      "sha256": "9b29bb8a0fdbebfa09f1c6cfba072778421c659e0b9efd41240b5cb2cd0f6c4e",
+      "original": "game/assets/heroes/c_paper_down.png",
+      "original_sha256": "f3bab5d6ddf347c9c81f32a0d0cfb41cc921bdb4d3531c90ac3cdd9b282a9aee",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          60,
+          42,
+          73,
+          51
+        ],
+        [
+          40,
+          51,
+          73,
+          75
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.02609161841767426,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          52,
+          59
+        ],
+        [
+          42,
+          59
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_paper_down-editable-mask.png"
+    },
+    {
+      "actor": "c_bell",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_bell_down.png",
+      "sha256": "3069952634d6b059905a1f87dd17be0a05daad301b42faa2fee852b1ff5a1ef2",
+      "original": "game/assets/heroes/c_bell_down.png",
+      "original_sha256": "1364cde69a4247b619426edf44b83e60bfd501a5d05a0e4291a95911eac81112",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          12,
+          45,
+          35,
+          87
+        ],
+        [
+          62,
+          45,
+          84,
+          87
+        ]
+      ],
+      "registration": [
+        0.9999999999999998,
+        0,
+        0
+      ],
+      "fit_error": 0.07876867996075633,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          70,
+          54
+        ],
+        [
+          26,
+          54
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_bell_down-editable-mask.png"
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_lantern_down.png",
+      "sha256": "5475f9e091f0fe1e7c35f230cc7e0384eda724a0d4d07c0074741c832eaaddce",
+      "original": "game/assets/heroes/c_lantern_down.png",
+      "original_sha256": "ef4a0b4fb21562d961f0d7d5cf557de7dbb86a38f6c060edda3c34c48f344890",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          56,
+          10,
+          75,
+          83
+        ],
+        [
+          30,
+          51,
+          57,
+          73
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.03498226379012193,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          61,
+          58
+        ],
+        [
+          37,
+          62
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_lantern_down-editable-mask.png"
+    },
+    {
+      "actor": "c_mask",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_mask_down.png",
+      "sha256": "7363dd6f59df65b73c6a28f27d8ada195f656ef5d5223127e6d2a8e01318ef3d",
+      "original": "game/assets/heroes/c_mask_down.png",
+      "original_sha256": "f23d7a0b701ce3c3059ecc042c1727e17fc8b69aeef435b7dc1567823b6a453b",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          9,
+          28,
+          36,
+          54
+        ],
+        [
+          9,
+          54,
+          42,
+          76
+        ]
+      ],
+      "registration": [
+        0.9999999999999998,
+        0,
+        0
+      ],
+      "fit_error": 0.01966562262707223,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          34,
+          60
+        ],
+        [
+          66,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_mask_down-editable-mask.png"
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_umbrella_down.png",
+      "sha256": "9af0df2f93af74cae2d6d1c255b8341c2ae3142432bc61c8ee13e85a32faac66",
+      "original": "game/assets/heroes/c_umbrella_down.png",
+      "original_sha256": "0f0006c81bf7bd832630b7713947a6cc1f934ce5d1b68c03199ad89150861218",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          29,
+          60,
+          67,
+          76
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.036299411528540944,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          54,
+          63
+        ],
+        [
+          40,
+          63
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_umbrella_down-editable-mask.png"
+    },
+    {
+      "actor": "c_ink",
+      "direction": "down",
+      "file": "game/assets/weapon-bodies/base/c_ink_down.png",
+      "sha256": "9db9794179a0139823264912e948420b94d71d640748e8422bfe3762b9532acf",
+      "original": "game/assets/heroes/c_ink_down.png",
+      "original_sha256": "b51da65096b65826f09e9b5702d1d9df10a8e877d30b207846226f0f8f9397fa",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          18,
+          18,
+          36,
+          52
+        ],
+        [
+          20,
+          52,
+          43,
+          77
+        ]
+      ],
+      "registration": [
+        0.9999999999999998,
+        0,
+        0
+      ],
+      "fit_error": 0.025584284229390533,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          37,
+          63
+        ],
+        [
+          65,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_ink_down-editable-mask.png"
+    },
+    {
+      "actor": "c_paper",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_paper_left.png",
+      "sha256": "5ae686a12d36795a1c0a0ee3bc62083157aa063328771fb27e1398861bb73d8c",
+      "original": "game/assets/heroes/c_paper_left.png",
+      "original_sha256": "b81cf6675f982c6ac62be6f5ebb52deacc2e9f4e4f81e3aa3435193584164448",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          22,
+          45,
+          31,
+          53
+        ],
+        [
+          22,
+          53,
+          51,
+          74
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.027704944887561426,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          37,
+          61
+        ],
+        [
+          46,
+          60
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_paper_left-editable-mask.png"
+    },
+    {
+      "actor": "c_bell",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_bell_left.png",
+      "sha256": "9689f7b155a72ad719db135317dea9e7fe98c753032a5855acbb3d368eaeec0f",
+      "original": "game/assets/heroes/c_bell_left.png",
+      "original_sha256": "67bed31a1977937921fab4162277117f30d28fce911e1b3c866938301ef8993c",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          22,
+          43,
+          44,
+          86
+        ],
+        [
+          45,
+          52,
+          58,
+          70
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.10249719309471411,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          32,
+          58
+        ],
+        [
+          51,
+          59
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_bell_left-editable-mask.png"
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_lantern_left.png",
+      "sha256": "00fa3e1145c6d76a2d0cd4aab843cf5498bb8b049bb5112d6e8d19c452986434",
+      "original": "game/assets/heroes/c_lantern_left.png",
+      "original_sha256": "da7d97e1377a84fc67c8de48097c5ede19f5b462d9f52e5a676fcb73ce57a993",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          55,
+          20,
+          74,
+          85
+        ],
+        [
+          28,
+          51,
+          52,
+          74
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.024567134904008112,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          37,
+          61
+        ],
+        [
+          60,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_lantern_left-editable-mask.png"
+    },
+    {
+      "actor": "c_mask",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_mask_left.png",
+      "sha256": "506aed8d34139752b8ea31d5df3ea29f58cd1081c63955cb5e526790da45af65",
+      "original": "game/assets/heroes/c_mask_left.png",
+      "original_sha256": "b3a5642e59dc17115fc8d577ff3f089836c6f64b877ec757f6cb38aabbd93732",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          9,
+          30,
+          37,
+          52
+        ],
+        [
+          9,
+          52,
+          42,
+          73
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.01642224936701667,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          34,
+          58
+        ],
+        [
+          57,
+          63
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_mask_left-editable-mask.png"
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_umbrella_left.png",
+      "sha256": "115940675abb19a5d003b4b7fa0ed3707697d56f6979f85817c0060ee959a21b",
+      "original": "game/assets/heroes/c_umbrella_left.png",
+      "original_sha256": "7bd73519140721ade85ae6e7e80014c5949888ee5673fb4c8102f89f0450fca4",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          29,
+          59,
+          58,
+          75
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.03131723661324108,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          38,
+          63
+        ],
+        [
+          48,
+          64
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_umbrella_left-editable-mask.png"
+    },
+    {
+      "actor": "c_ink",
+      "direction": "left",
+      "file": "game/assets/weapon-bodies/base/c_ink_left.png",
+      "sha256": "46984a1093d98fad8dd89ae73a843ddf200ebb6bd91b6fdd8fda6931c059b89a",
+      "original": "game/assets/heroes/c_ink_left.png",
+      "original_sha256": "247a63289bb6cc4aef69955894203f99d74025bc54bc788bbdd426e478856762",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          27,
+          18,
+          40,
+          45
+        ],
+        [
+          27,
+          45,
+          48,
+          77
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.02483428441051762,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          41,
+          61
+        ],
+        [
+          53,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_ink_left-editable-mask.png"
+    },
+    {
+      "actor": "c_paper",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_paper_right.png",
+      "sha256": "93863af2399d2bbc448ab9762635201c6a13a5dcd71644b4df1137a453a1ed05",
+      "original": "game/assets/heroes/c_paper_right.png",
+      "original_sha256": "69f2255da457f05d998919a28e47c5d0bddd6d0aba9301417b13f3c8d9a644ef",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          69,
+          43,
+          78,
+          55
+        ],
+        [
+          46,
+          55,
+          78,
+          75
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.028277613509683004,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          62,
+          59
+        ],
+        [
+          49,
+          60
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_paper_right-editable-mask.png"
+    },
+    {
+      "actor": "c_bell",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_bell_right.png",
+      "sha256": "a6776c43e76bdfce053a883db0ff4c69d301875ca2f4903b117135b8025b8a96",
+      "original": "game/assets/heroes/c_bell_right.png",
+      "original_sha256": "63274c708bcc1ba8a6e6d9d1ad89c874001a5c1342afdb828391f4151deda1b1",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          56,
+          42,
+          80,
+          88
+        ],
+        [
+          38,
+          53,
+          51,
+          69
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.09547165855691317,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          66,
+          54
+        ],
+        [
+          44,
+          59
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_bell_right-editable-mask.png"
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_lantern_right.png",
+      "sha256": "61123a1b421e2a03d7816db0feb4a541875065e3ea839af170a404b8353025e1",
+      "original": "game/assets/heroes/c_lantern_right.png",
+      "original_sha256": "630c387370c06bf97970be6bb35d4cf1ea82c7a1498c9c0f0dfe355ae6100a08",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          24,
+          19,
+          40,
+          85
+        ],
+        [
+          49,
+          54,
+          70,
+          75
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.015808622520827476,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          62,
+          60
+        ],
+        [
+          33,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_lantern_right-editable-mask.png"
+    },
+    {
+      "actor": "c_mask",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_mask_right.png",
+      "sha256": "743e9c24ecf7e0da6fc75eb8b1386f1fafeca15123a5a54659615cd6fa304823",
+      "original": "game/assets/heroes/c_mask_right.png",
+      "original_sha256": "51154ff2aa1a27fc97678d801443f831f04f919152399b35ff189d6b7315f0fc",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          66,
+          33,
+          89,
+          56
+        ],
+        [
+          61,
+          56,
+          89,
+          72
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.03171599064480599,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          63,
+          59
+        ],
+        [
+          45,
+          60
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_mask_right-editable-mask.png"
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_umbrella_right.png",
+      "sha256": "f20d898b8fdf42bbc28d52d8f9d32def94cf6bf84ca4e11b57921e443edef744",
+      "original": "game/assets/heroes/c_umbrella_right.png",
+      "original_sha256": "c6b96e9ad26d3e14c7e26002bd29548c335222196cc2ca466e7ea9bad3d74600",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          38,
+          59,
+          67,
+          76
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.027773845615139528,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          55,
+          63
+        ],
+        [
+          43,
+          64
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_umbrella_right-editable-mask.png"
+    },
+    {
+      "actor": "c_ink",
+      "direction": "right",
+      "file": "game/assets/weapon-bodies/base/c_ink_right.png",
+      "sha256": "eff85bb328fb11c36ab3f4158d40d31d4a62c6db793b8063f1d36f0da0f43d2f",
+      "original": "game/assets/heroes/c_ink_right.png",
+      "original_sha256": "aba5d173bd72eb0424397e36ebf2bf38d716e6d2917ebeba6055aeebc9dd800f",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          57,
+          18,
+          79,
+          52
+        ],
+        [
+          54,
+          52,
+          79,
+          77
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.03354289471575847,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          63,
+          60
+        ],
+        [
+          43,
+          63
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_ink_right-editable-mask.png"
+    },
+    {
+      "actor": "c_paper",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_paper_up.png",
+      "sha256": "b1035442be093fa030bd74a9ef31d5e0b7ec48fe85c919768f145cd3f1e219e4",
+      "original": "game/assets/heroes/c_paper_up.png",
+      "original_sha256": "40faee6a7784dd7c8dd2ff1d81d9c76af6617ef363457ec64fae878f00f64081",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          52,
+          50,
+          70,
+          69
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.029594707530335874,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          61,
+          57
+        ],
+        [
+          36,
+          57
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_paper_up-editable-mask.png"
+    },
+    {
+      "actor": "c_bell",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_bell_up.png",
+      "sha256": "bd30f12fb4af4e96ab3171069902d157e27516de67fcb5a35feec585988dbd20",
+      "original": "game/assets/heroes/c_bell_up.png",
+      "original_sha256": "c91c533ab59b33800b7fdbaf7be1a0da832103d575eb5eef05f0c43824e7370f",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          65,
+          48,
+          86,
+          87
+        ],
+        [
+          20,
+          58,
+          35,
+          73
+        ]
+      ],
+      "registration": [
+        0.9849999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.07397777579177603,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          71,
+          57
+        ],
+        [
+          27,
+          59
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_bell_up-editable-mask.png"
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_lantern_up.png",
+      "sha256": "6701543392b453cb01a751e8ec64486bb60c3b44ba6df3cb61e3b73007ef339f",
+      "original": "game/assets/heroes/c_lantern_up.png",
+      "original_sha256": "3b6e177917da0f664122fddeaa9333d1107714af91dc217e76215781ca107faa",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          55,
+          18,
+          75,
+          84
+        ],
+        [
+          30,
+          56,
+          57,
+          74
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.015560334112338195,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          62,
+          60
+        ],
+        [
+          36,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_lantern_up-editable-mask.png"
+    },
+    {
+      "actor": "c_mask",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_mask_up.png",
+      "sha256": "dbdb5d2bf3c0b96b31c0f70f65039db7893751939ca6ac78f64a3d384f80791e",
+      "original": "game/assets/heroes/c_mask_up.png",
+      "original_sha256": "36a610eaafdbc303ecdafce00b443cc1c65a896356e95df27f74f048778b733b",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          69,
+          28,
+          89,
+          52
+        ],
+        [
+          62,
+          52,
+          89,
+          71
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.02434948504814391,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          66,
+          51
+        ],
+        [
+          30,
+          58
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_mask_up-editable-mask.png"
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_umbrella_up.png",
+      "sha256": "f2e42847225f82fe5f6514c83404116c33feef3c4a406f170a53bf2213902016",
+      "original": "game/assets/heroes/c_umbrella_up.png",
+      "original_sha256": "0917b314cc3cbff112013fd90ce3645f890bfc3c9a74198978c68f322c5a40d1",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          30,
+          56,
+          69,
+          77
+        ]
+      ],
+      "registration": [
+        0.9699999999999998,
+        0,
+        -1
+      ],
+      "fit_error": 0.022746041425003194,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          60,
+          65
+        ],
+        [
+          36,
+          64
+        ]
+      ],
+      "finger_reuse": {
+        "source": "game/assets/weapon-bodies/base/c_umbrella_down.png",
+        "reason": "same generated paper fingers on the back-view free wrists"
+      },
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_umbrella_up-editable-mask.png"
+    },
+    {
+      "actor": "c_ink",
+      "direction": "up",
+      "file": "game/assets/weapon-bodies/base/c_ink_up.png",
+      "sha256": "3d09d84a7befe6df99b6055dfc9a29534739d5c1fb1e6899be7dc57d6a53eef7",
+      "original": "game/assets/heroes/c_ink_up.png",
+      "original_sha256": "ccb111ba6ec1dae282f33f5f45249f6d0d3b64828606a4fcdce88a89cee8f8df",
+      "source": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "source_sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "editable_regions": [
+        [
+          62,
+          20,
+          79,
+          50
+        ],
+        [
+          54,
+          50,
+          79,
+          77
+        ]
+      ],
+      "registration": [
+        0.9999999999999998,
+        0,
+        0
+      ],
+      "fit_error": 0.02368795655758389,
+      "protected_rgba_unchanged": true,
+      "grips": [
+        [
+          62,
+          60
+        ],
+        [
+          36,
+          61
+        ]
+      ],
+      "editable_mask": "docs/incense-debt/reports/runtime/held-weapons/development-masks/c_ink_up-editable-mask.png"
+    }
+  ],
+  "grips": [
+    {
+      "actor": "c_paper",
+      "direction": "down",
+      "points": [
+        [
+          50.12903225806452,
+          59.903225806451616
+        ],
+        [
+          50.12903225806452,
+          59.903225806451616
+        ]
+      ]
+    },
+    {
+      "actor": "c_paper",
+      "direction": "left",
+      "points": [
+        [
+          39.56666666666667,
+          61.166666666666664
+        ],
+        [
+          39.56666666666667,
+          61.166666666666664
+        ]
+      ]
+    },
+    {
+      "actor": "c_paper",
+      "direction": "right",
+      "points": [
+        [
+          65.57142857142857,
+          59.22857142857143
+        ],
+        [
+          38.42857142857143,
+          62.285714285714285
+        ]
+      ]
+    },
+    {
+      "actor": "c_paper",
+      "direction": "up",
+      "points": [
+        [
+          57.0,
+          63.87356321839081
+        ],
+        [
+          41.30769230769231,
+          55.19230769230769
+        ]
+      ]
+    },
+    {
+      "actor": "c_bell",
+      "direction": "down",
+      "points": [
+        [
+          66.39473684210526,
+          52.8421052631579
+        ],
+        [
+          27.675675675675677,
+          52.78378378378378
+        ]
+      ]
+    },
+    {
+      "actor": "c_bell",
+      "direction": "left",
+      "points": [
+        [
+          29.708333333333332,
+          51.625
+        ],
+        [
+          50.911764705882355,
+          58.0
+        ]
+      ]
+    },
+    {
+      "actor": "c_bell",
+      "direction": "right",
+      "points": [
+        [
+          61.74193548387097,
+          52.806451612903224
+        ],
+        [
+          44,
+          59
+        ]
+      ]
+    },
+    {
+      "actor": "c_bell",
+      "direction": "up",
+      "points": [
+        [
+          68.5,
+          52.705882352941174
+        ],
+        [
+          28.47826086956522,
+          55.26086956521739
+        ]
+      ]
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "down",
+      "points": [
+        [
+          56.205882352941174,
+          62.911764705882355
+        ],
+        [
+          37,
+          62
+        ]
+      ]
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "left",
+      "points": [
+        [
+          37,
+          61
+        ],
+        [
+          50.10526315789474,
+          60.0
+        ]
+      ]
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "right",
+      "points": [
+        [
+          62,
+          60
+        ],
+        [
+          36.73529411764706,
+          61.0
+        ]
+      ]
+    },
+    {
+      "actor": "c_lantern",
+      "direction": "up",
+      "points": [
+        [
+          59.285714285714285,
+          58.285714285714285
+        ],
+        [
+          36,
+          61
+        ]
+      ]
+    },
+    {
+      "actor": "c_mask",
+      "direction": "down",
+      "points": [
+        [
+          29.846153846153847,
+          55.743589743589745
+        ],
+        [
+          68.0,
+          60.5
+        ]
+      ]
+    },
+    {
+      "actor": "c_mask",
+      "direction": "left",
+      "points": [
+        [
+          42.0,
+          58.5
+        ],
+        [
+          54.0,
+          65.0
+        ]
+      ]
+    },
+    {
+      "actor": "c_mask",
+      "direction": "right",
+      "points": [
+        [
+          60.95454545454545,
+          59.34090909090909
+        ],
+        [
+          46.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "actor": "c_mask",
+      "direction": "up",
+      "points": [
+        [
+          74.33333333333333,
+          51.666666666666664
+        ],
+        [
+          34.23529411764706,
+          63.23529411764706
+        ]
+      ]
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "down",
+      "points": [
+        [
+          55.44117647058823,
+          61.294117647058826
+        ],
+        [
+          43.18840579710145,
+          67.30434782608695
+        ]
+      ]
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "left",
+      "points": [
+        [
+          40.78217821782178,
+          62.975247524752476
+        ],
+        [
+          42.933734939759034,
+          65.53614457831326
+        ]
+      ]
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "right",
+      "points": [
+        [
+          51.6751269035533,
+          62.5736040609137
+        ],
+        [
+          49.095238095238095,
+          66.17006802721089
+        ]
+      ]
+    },
+    {
+      "actor": "c_umbrella",
+      "direction": "up",
+      "points": [
+        [
+          57,
+          65
+        ],
+        [
+          38,
+          65
+        ]
+      ]
+    },
+    {
+      "actor": "c_ink",
+      "direction": "down",
+      "points": [
+        [
+          38.86363636363637,
+          62.09090909090909
+        ],
+        [
+          63.91266375545852,
+          61.157205240174676
+        ]
+      ]
+    },
+    {
+      "actor": "c_ink",
+      "direction": "left",
+      "points": [
+        [
+          40.7,
+          61.9
+        ],
+        [
+          57.375,
+          60.525
+        ]
+      ]
+    },
+    {
+      "actor": "c_ink",
+      "direction": "right",
+      "points": [
+        [
+          58.483870967741936,
+          58.29032258064516
+        ],
+        [
+          37.111111111111114,
+          67.18518518518519
+        ]
+      ]
+    },
+    {
+      "actor": "c_ink",
+      "direction": "up",
+      "points": [
+        [
+          62.82692307692308,
+          65.1923076923077
+        ],
+        [
+          32.19205298013245,
+          61.33774834437086
+        ]
+      ]
+    }
+  ],
+  "modular_animation_strips": 72,
+  "held_weapon_cutouts": 12,
+  "checks": [
+    "24 bodies preserve every RGBA byte outside the reviewed editable masks; original and generated sources match recorded hashes",
+    "72 body and hand strips share dimensions, states, timing, sources and transparent death endpoints",
+    "16 held cutouts have usable transparent edges and grips inside their textures; inventory images remain separate",
+    "all sixteen original inventory icons retain their previously verified bytes"
+  ],
+  "failures": [],
+  "passed": true
+}

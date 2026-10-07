@@ -1,0 +1,676 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-06T11:16:28.636707+00:00",
+  "source": "docs/incense-debt/reports/runtime/route-matrix-tests.json",
+  "source_samples": 24,
+  "source_victories": 24,
+  "method": "aggregate fixed-tick route matrix by character/route; two skill evolutions per route",
+  "route_rows": [
+    {
+      "key": "伞灵/ash",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 397.2,
+        "min": 385.3,
+        "max": 409.1,
+        "p10": 387.68,
+        "p90": 406.72
+      },
+      "damage_taken": {
+        "mean": 1.0,
+        "min": 0.0,
+        "max": 2.0,
+        "p10": 0.2,
+        "p90": 1.8
+      },
+      "kills": {
+        "mean": 121.5,
+        "min": 120.0,
+        "max": 123.0,
+        "p10": 120.3,
+        "p90": 122.7
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "伞灵",
+      "route": "ash",
+      "route_name": "归灰"
+    },
+    {
+      "key": "伞灵/wind",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 373.6,
+        "min": 369.9,
+        "max": 377.3,
+        "p10": 370.64,
+        "p90": 376.56
+      },
+      "damage_taken": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "p10": 0.0,
+        "p90": 0.0
+      },
+      "kills": {
+        "mean": 121.5,
+        "min": 121.0,
+        "max": 122.0,
+        "p10": 121.1,
+        "p90": 121.9
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "伞灵",
+      "route": "wind",
+      "route_name": "游风"
+    },
+    {
+      "key": "傩面/ash",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 393.05,
+        "min": 383.0,
+        "max": 403.1,
+        "p10": 385.01,
+        "p90": 401.09
+      },
+      "damage_taken": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "p10": 1.0,
+        "p90": 1.0
+      },
+      "kills": {
+        "mean": 123.5,
+        "min": 122.0,
+        "max": 125.0,
+        "p10": 122.3,
+        "p90": 124.7
+      },
+      "health_remaining": {
+        "mean": 11.0,
+        "min": 11.0,
+        "max": 11.0,
+        "p10": 11.0,
+        "p90": 11.0
+      },
+      "character": "傩面",
+      "route": "ash",
+      "route_name": "归灰"
+    },
+    {
+      "key": "傩面/seal",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 392.45,
+        "min": 376.1,
+        "max": 408.8,
+        "p10": 379.37,
+        "p90": 405.53
+      },
+      "damage_taken": {
+        "mean": 0.5,
+        "min": 0.0,
+        "max": 1.0,
+        "p10": 0.1,
+        "p90": 0.9
+      },
+      "kills": {
+        "mean": 121.5,
+        "min": 121.0,
+        "max": 122.0,
+        "p10": 121.1,
+        "p90": 121.9
+      },
+      "health_remaining": {
+        "mean": 11.0,
+        "min": 11.0,
+        "max": 11.0,
+        "p10": 11.0,
+        "p90": 11.0
+      },
+      "character": "傩面",
+      "route": "seal",
+      "route_name": "镇印"
+    },
+    {
+      "key": "墨吏/ink",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 367.55,
+        "min": 355.0,
+        "max": 380.1,
+        "p10": 357.51,
+        "p90": 377.59
+      },
+      "damage_taken": {
+        "mean": 3.5,
+        "min": 3.0,
+        "max": 4.0,
+        "p10": 3.1,
+        "p90": 3.9
+      },
+      "kills": {
+        "mean": 119.0,
+        "min": 119.0,
+        "max": 119.0,
+        "p10": 119.0,
+        "p90": 119.0
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "墨吏",
+      "route": "ink",
+      "route_name": "墨契"
+    },
+    {
+      "key": "墨吏/thread",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 367.55,
+        "min": 352.0,
+        "max": 383.1,
+        "p10": 355.11,
+        "p90": 379.99
+      },
+      "damage_taken": {
+        "mean": 1.0,
+        "min": 0.0,
+        "max": 2.0,
+        "p10": 0.2,
+        "p90": 1.8
+      },
+      "kills": {
+        "mean": 120.5,
+        "min": 119.0,
+        "max": 122.0,
+        "p10": 119.3,
+        "p90": 121.7
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "墨吏",
+      "route": "thread",
+      "route_name": "红绳"
+    },
+    {
+      "key": "灯客/fire",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 456.95,
+        "min": 444.8,
+        "max": 469.1,
+        "p10": 447.23,
+        "p90": 466.67
+      },
+      "damage_taken": {
+        "mean": 2.0,
+        "min": 0.0,
+        "max": 4.0,
+        "p10": 0.4,
+        "p90": 3.6
+      },
+      "kills": {
+        "mean": 120.0,
+        "min": 120.0,
+        "max": 120.0,
+        "p10": 120.0,
+        "p90": 120.0
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "灯客",
+      "route": "fire",
+      "route_name": "烬火"
+    },
+    {
+      "key": "灯客/ink",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 450.35,
+        "min": 415.5,
+        "max": 485.2,
+        "p10": 422.47,
+        "p90": 478.23
+      },
+      "damage_taken": {
+        "mean": 3.5,
+        "min": 3.0,
+        "max": 4.0,
+        "p10": 3.1,
+        "p90": 3.9
+      },
+      "kills": {
+        "mean": 124.0,
+        "min": 120.0,
+        "max": 128.0,
+        "p10": 120.8,
+        "p90": 127.2
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "灯客",
+      "route": "ink",
+      "route_name": "墨契"
+    },
+    {
+      "key": "纸童/ash",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 444.45,
+        "min": 428.4,
+        "max": 460.5,
+        "p10": 431.61,
+        "p90": 457.29
+      },
+      "damage_taken": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "p10": 1.0,
+        "p90": 1.0
+      },
+      "kills": {
+        "mean": 123.0,
+        "min": 122.0,
+        "max": 124.0,
+        "p10": 122.2,
+        "p90": 123.8
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "纸童",
+      "route": "ash",
+      "route_name": "归灰"
+    },
+    {
+      "key": "纸童/fire",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 410.75,
+        "min": 401.7,
+        "max": 419.8,
+        "p10": 403.51,
+        "p90": 417.99
+      },
+      "damage_taken": {
+        "mean": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "p10": 2.0,
+        "p90": 2.0
+      },
+      "kills": {
+        "mean": 126.5,
+        "min": 124.0,
+        "max": 129.0,
+        "p10": 124.5,
+        "p90": 128.5
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "纸童",
+      "route": "fire",
+      "route_name": "烬火"
+    },
+    {
+      "key": "铃师/thread",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 472.15,
+        "min": 431.3,
+        "max": 513.0,
+        "p10": 439.47,
+        "p90": 504.83
+      },
+      "damage_taken": {
+        "mean": 3.0,
+        "min": 1.0,
+        "max": 5.0,
+        "p10": 1.4,
+        "p90": 4.6
+      },
+      "kills": {
+        "mean": 122.5,
+        "min": 120.0,
+        "max": 125.0,
+        "p10": 120.5,
+        "p90": 124.5
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "铃师",
+      "route": "thread",
+      "route_name": "红绳"
+    },
+    {
+      "key": "铃师/wind",
+      "samples": 2,
+      "victories": 2,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 466.95,
+        "min": 430.0,
+        "max": 503.9,
+        "p10": 437.39,
+        "p90": 496.51
+      },
+      "damage_taken": {
+        "mean": 1.5,
+        "min": 0.0,
+        "max": 3.0,
+        "p10": 0.3,
+        "p90": 2.7
+      },
+      "kills": {
+        "mean": 121.5,
+        "min": 121.0,
+        "max": 122.0,
+        "p10": 121.1,
+        "p90": 121.9
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "铃师",
+      "route": "wind",
+      "route_name": "游风"
+    }
+  ],
+  "character_rows": [
+    {
+      "key": "伞灵",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 385.4,
+        "min": 369.9,
+        "max": 409.1,
+        "p10": 372.12,
+        "p90": 401.96
+      },
+      "damage_taken": {
+        "mean": 0.5,
+        "min": 0.0,
+        "max": 2.0,
+        "p10": 0.0,
+        "p90": 1.4
+      },
+      "kills": {
+        "mean": 121.5,
+        "min": 120.0,
+        "max": 123.0,
+        "p10": 120.3,
+        "p90": 122.7
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "伞灵"
+    },
+    {
+      "key": "傩面",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 392.75,
+        "min": 376.1,
+        "max": 408.8,
+        "p10": 378.17,
+        "p90": 407.09
+      },
+      "damage_taken": {
+        "mean": 0.75,
+        "min": 0.0,
+        "max": 1.0,
+        "p10": 0.3,
+        "p90": 1.0
+      },
+      "kills": {
+        "mean": 122.5,
+        "min": 121.0,
+        "max": 125.0,
+        "p10": 121.3,
+        "p90": 124.1
+      },
+      "health_remaining": {
+        "mean": 11.0,
+        "min": 11.0,
+        "max": 11.0,
+        "p10": 11.0,
+        "p90": 11.0
+      },
+      "character": "傩面"
+    },
+    {
+      "key": "墨吏",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 367.55,
+        "min": 352.0,
+        "max": 383.1,
+        "p10": 352.9,
+        "p90": 382.2
+      },
+      "damage_taken": {
+        "mean": 2.25,
+        "min": 0.0,
+        "max": 4.0,
+        "p10": 0.6,
+        "p90": 3.7
+      },
+      "kills": {
+        "mean": 119.75,
+        "min": 119.0,
+        "max": 122.0,
+        "p10": 119.0,
+        "p90": 121.1
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "墨吏"
+    },
+    {
+      "key": "灯客",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 453.65,
+        "min": 415.5,
+        "max": 485.2,
+        "p10": 424.29,
+        "p90": 480.37
+      },
+      "damage_taken": {
+        "mean": 2.75,
+        "min": 0.0,
+        "max": 4.0,
+        "p10": 0.9,
+        "p90": 4.0
+      },
+      "kills": {
+        "mean": 122.0,
+        "min": 120.0,
+        "max": 128.0,
+        "p10": 120.0,
+        "p90": 125.6
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "灯客"
+    },
+    {
+      "key": "纸童",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 427.6,
+        "min": 401.7,
+        "max": 460.5,
+        "p10": 407.13,
+        "p90": 450.87
+      },
+      "damage_taken": {
+        "mean": 1.5,
+        "min": 1.0,
+        "max": 2.0,
+        "p10": 1.0,
+        "p90": 2.0
+      },
+      "kills": {
+        "mean": 124.75,
+        "min": 122.0,
+        "max": 129.0,
+        "p10": 122.6,
+        "p90": 127.5
+      },
+      "health_remaining": {
+        "mean": 9.0,
+        "min": 9.0,
+        "max": 9.0,
+        "p10": 9.0,
+        "p90": 9.0
+      },
+      "character": "纸童"
+    },
+    {
+      "key": "铃师",
+      "samples": 4,
+      "victories": 4,
+      "victory_rate": 1.0,
+      "combat_seconds": {
+        "mean": 469.55,
+        "min": 430.0,
+        "max": 513.0,
+        "p10": 430.39,
+        "p90": 510.27
+      },
+      "damage_taken": {
+        "mean": 2.25,
+        "min": 0.0,
+        "max": 5.0,
+        "p10": 0.3,
+        "p90": 4.4
+      },
+      "kills": {
+        "mean": 122.0,
+        "min": 120.0,
+        "max": 125.0,
+        "p10": 120.3,
+        "p90": 124.1
+      },
+      "health_remaining": {
+        "mean": 8.0,
+        "min": 8.0,
+        "max": 8.0,
+        "p10": 8.0,
+        "p90": 8.0
+      },
+      "character": "铃师"
+    }
+  ],
+  "overall": {
+    "route_time_mean_min": 367.55,
+    "route_time_mean_max": 472.15,
+    "route_time_ratio": 1.285
+  },
+  "limitations": [
+    "Bot route preferences are coverage fixtures, not player behavior",
+    "The matrix excludes optional side bosses and human decision time",
+    "No balance status is promoted by this aggregation"
+  ]
+}

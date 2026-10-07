@@ -1,0 +1,15 @@
+Create a clean original enemy sprite atlas for Incense Debt, a 2D near-overhead action roguelite. PNG with genuine transparent background, 1536x1024, strict 4-column by 2-row grid with equal 384x512 cells. Exactly one complete enemy centered in each cell, no overlap, no scenery, no text, no numbers, no labels, no watermark. Keep at least 30px clear padding and one shared apparent scale. Face slightly front-right from an overhead game camera, so the creature's face and top surface are legible. Thick soot-black ink outlines, flat 2-3 shade values, matte paper fiber edges, Chinese folk woodblock and layered paper-cut style. Vermilion, ivory, soot, aged bronze, desaturated jade. No pixel art, no realistic 3D, no anime, no borrowed characters. These enemies must look visibly different from the friendly paper apprentice.
+
+Top row, left to right:
+1. Lantern ghost: torn red round paper lantern with dark jagged grinning mouth, two slanted ink eyes, short dangling paper tail and a loose cord. Compact round body.
+2. Paper hound: small four-legged ivory origami dog with sharp folded back, a dark hollow face, red paper straps and angular ears. Low long animal silhouette.
+3. Coin imp: short stack of two aged-bronze coins, big square center hole with angry ink eyes, tiny paper arms and legs. Round metallic silhouette.
+4. Folded bat: charcoal folded-paper bat, two broad triangular wings, vermilion inner folds and small ivory eyes. Wide flying silhouette.
+
+Bottom row, left to right:
+5. Offering doll: squat ivory paper doll mounted on a dark small shrine pedestal, with a chunky bronze offering cannon at chest level, dark mouth. Broad heavy silhouette.
+6. Knot grudge: a living red braided knot with a tiny broken ivory mask, two trailing thick cords curled like arms and paper tassels. Twisted lateral silhouette.
+7. Ash sack bearer: dark gray paper sack creature, bulging ivory sack, one small red hood, thick soot paws and a tied ash pouch. Heavy round silhouette, no loose particles outside its cell.
+8. Lamp-oil artisan: small jade-gray paper artisan with a crooked burnt lantern hat, squat red apron and one short bronze oil spout in its hand. Bent narrow silhouette.
+
+No shadows baked into the sprite. Keep silhouettes bold enough to read at 80 to 112 game pixels. Isolated subjects, consistent material and lighting, transparent background.

@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-10-06",
+  "purpose": "CC0 source audit for low-volume room-air texture stems in the direction-1 adaptive music system",
+  "policy": "External sources are reference textures only; all foreground music stems and all combat SFX are original local deterministic synthesis. Downloaded OGG files remain outside the shipped game package.",
+  "processing": {
+    "decoder": "ffmpeg",
+    "target_sample_rate": 48000,
+    "target_channels": 1,
+    "bandpass_hz": [
+      75,
+      4300
+    ],
+    "target_rms": 0.025,
+    "seam_fade_seconds": 0.45,
+    "tiling": "decode, mono mix, tile or truncate to the authored 32-bar score length, then apply slow modulation and seam fades"
+  },
+  "sources": [
+    {
+      "title": "Loopable Dungeon Ambience",
+      "author": "JaggedStone",
+      "license": "CC0",
+      "page_url": "https://opengameart.org/content/loopable-dungeon-ambience",
+      "file_url": "https://opengameart.org/sites/default/files/dungeon_ambient_1_0.ogg",
+      "filename": "dungeon_ambient_1_0.ogg",
+      "context": "region_1",
+      "role": "filtered low-volume texture bed; authored procedural music remains the foreground",
+      "local_path": "output/audio/references/oga-cc0/dungeon_ambient_1_0.ogg",
+      "sha256": "df491823e4877371c34dbda4e9321cd83a4a14fa7573cee0ebca1ae423b70e6e",
+      "bytes": 1626352,
+      "duration_seconds": 94.30975,
+      "codec": "vorbis",
+      "sample_rate": 48000,
+      "channels": 2
+    },
+    {
+      "title": "Dungeon Themes",
+      "author": "FazeDevWater",
+      "license": "CC0",
+      "page_url": "https://opengameart.org/content/dungeon-themes",
+      "file_url": "https://opengameart.org/sites/default/files/dungeonfire_1.ogg",
+      "filename": "dungeonfire_1.ogg",
+      "context": "region_2",
+      "role": "filtered low-volume texture bed; authored procedural music remains the foreground",
+      "local_path": "output/audio/references/oga-cc0/dungeonfire_1.ogg",
+      "sha256": "4e6ef7b8d49260fc5c6b7106781a710438b26a405c24c2d52ff8385e57af39f5",
+      "bytes": 2160658,
+      "duration_seconds": 66.856054,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2
+    },
+    {
+      "title": "Dungeon Themes",
+      "author": "FazeDevWater",
+      "license": "CC0",
+      "page_url": "https://opengameart.org/content/dungeon-themes",
+      "file_url": "https://opengameart.org/sites/default/files/dungeonmystic_1.ogg",
+      "filename": "dungeonmystic_1.ogg",
+      "context": "region_3",
+      "role": "filtered low-volume texture bed; authored procedural music remains the foreground",
+      "local_path": "output/audio/references/oga-cc0/dungeonmystic_1.ogg",
+      "sha256": "397b939af163cc3366e1ab8d6a2e1d1614cbc8df93f3cf2fb11ed332ba4a319b",
+      "bytes": 1351864,
+      "duration_seconds": 66.856054,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2
+    },
+    {
+      "title": "Whispers in the Fog",
+      "author": "Ruhinre",
+      "license": "CC0",
+      "page_url": "https://opengameart.org/content/whispers-in-the-fog",
+      "file_url": "https://opengameart.org/sites/default/files/whispers_in_the_fog.ogg",
+      "filename": "whispers_in_the_fog.ogg",
+      "context": "boss",
+      "role": "filtered low-volume texture bed; authored procedural music remains the foreground",
+      "local_path": "output/audio/references/oga-cc0/whispers_in_the_fog.ogg",
+      "sha256": "3900af8578b0a771f2362118c7885a5078ea2c65170cbd0c5cad64b3162ffffd",
+      "bytes": 204349,
+      "duration_seconds": 15.36,
+      "codec": "vorbis",
+      "sample_rate": 44100,
+      "channels": 2
+    }
+  ],
+  "online_research": [
+    {
+      "title": "Loopable Dungeon Ambience",
+      "url": "https://opengameart.org/content/loopable-dungeon-ambience",
+      "license": "CC0",
+      "decision": "已采用为第一章低音量房间空气参考，前景音乐重新本地编曲。"
+    },
+    {
+      "title": "Dark Cavern Ambient",
+      "url": "https://opengameart.org/content/dark-cavern-ambient",
+      "license": "CC0",
+      "decision": "作为首领/洞窟气氛候选审听，未直接打包，避免与首领原创动机冲突。"
+    },
+    {
+      "title": "JRPG - End Dungeon",
+      "url": "https://opengameart.org/content/jrpg-end-dungeon",
+      "license": "CC0",
+      "decision": "作为地下城旋律参考，未复用旋律；由本地 deterministic composer 生成独立主题。"
+    },
+    {
+      "title": "Noisy Battle",
+      "url": "https://opengameart.org/content/noisy-battle",
+      "license": "CC0",
+      "decision": "作为战斗层密度参考，未直接使用；首领应答层由本地 v3 编曲器生成。"
+    }
+  ],
+  "local_foreground_policy": "联网素材仅作CC0环境纹理或风格参考；前景BGM与全部攻击/命中/受击声效均为本地可复现合成，避免未审查旋律或声效进入正式包。"
+}

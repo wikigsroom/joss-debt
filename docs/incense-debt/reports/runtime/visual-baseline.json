@@ -1,0 +1,4623 @@
+{
+  "recorded_at": "2026-10-07T09:19:43.577229+00:00",
+  "references": [
+    {
+      "path": "output/imagegen/concepts/01-incense-debt.png",
+      "sha256": "17896bc523b72ab866261a00aaf38704796652d76f2bdbe0ca417189f1d584a8",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/characters-roster.png",
+      "sha256": "7a2cb5effb124a11cefde8d29c6b2523582362bd256df7584d9cb3f2d58a8645",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/paper-lantern-asset-board.png",
+      "sha256": "6b39201170f3019a38385e4ca13bc2cb99f6f8867d935ddaabb5f632a8d9b3eb",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/menu-map-combat-board.png",
+      "sha256": "0d91cf38dc023ee1593470c4f8de2a1d238e8e6a99057b48e70ac3d76fb35f11",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "additional_sources": [
+    {
+      "path": "output/imagegen/incense-debt/runtime/secret-entry.png",
+      "sha256": "89011d87ae4161d54f276381dd1a15b297a048352ee56b3cdb3273f832b3457a",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/held-weapons/neutral-grips-single-reference.png",
+      "sha256": "3ec961bb9431a0ad6faada482314e8cd624700ed73a8e7ee57dbffd8a358fc10",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/held-weapons/held-weapons-reference-edit.png",
+      "sha256": "c152cf28e9ca326ba39b9b851655f714db3a0f8cc3f153129a55330851e9cc8d",
+      "size": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "captures": [
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/menu.png",
+      "sha256": "30b228f25e21739438121159cb76e78a851a42753de7cda14a4960d00fd0bfb0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/chains.png",
+      "sha256": "3863730b96c35fbcdf91d59a800e368eabdbce986021ba1a839a08cfe1424653",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/detonate.png",
+      "sha256": "ba6e38e096fda260bb689a3ec376c5a37852a177e51a8cf2b3204d290c1a34c4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/choices.png",
+      "sha256": "26f0bd18f13f3c1ec68d127d415a1ccb5a0c709d26ed2c42d3ed98cb7bbccadc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/boss-touch.png",
+      "sha256": "46bdec8a57695432b029c0c8c79209618c53e73db4439f0e4f7405d91507c6c3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/inventory.png",
+      "sha256": "7a5743c6e6df2c2604e68162e5212c8b0218a7f9d8747ef7a8002afa8d957d65",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/settings.png",
+      "sha256": "b59c7fe58ebfa4154a33a4c5cb70834d9095b81ae92d587c487407a6d9e5073c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/obstacles.png",
+      "sha256": "96e5d973493751213c469e0b8fafda1565fc1a8c0f42a1d80a8dd817199d2c25",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/debt.png",
+      "sha256": "314d72426310c0fc5470c36aa8b1e45079ca6123948379936fa0028583d02494",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/evolution.png",
+      "sha256": "28cf914b0d4dd8ada57c766180c1035d0f39210bf6724e4c2e050231965448bb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/coin-vault.png",
+      "sha256": "a967098cc7898ba7ef5b22e3d8d75df72582bf32211240ac7cf8be15020f35e2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/ownerless-temple.png",
+      "sha256": "39cb4f67fb984695ae583dbac60e977af5d7ee77fca222b58f3c51e9953e32d3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/hub.png",
+      "sha256": "65bed0a0cff87e89860c447acebd6c22d7fd0a3e9171799f1efbdc3ecdc2dae7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/personal.png",
+      "sha256": "a833238e15d43783d5e493c0684dbcce5ea3c587b35ff677d5793a68f1939390",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/endings.png",
+      "sha256": "5bed1a5aa272f883d0f120894c5dddecfd30fa0ae758bc46f83a7bfc74816e63",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/route.png",
+      "sha256": "78c1a911176a6ac873bcb104dc88785e4cb29180678006563d27d923cffb3298",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-choice.png",
+      "sha256": "c438e7f26d7b1392483f91a293ebc28c54a7067400d25f837d879238d3002a5a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-settings.png",
+      "sha256": "bdcefbe6711981220ec106218b20b0f150bb3a28491e44e17effc075767d1276",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/audio-mix.png",
+      "sha256": "df0826f9a5b5b6e93a60c6037dd5ea471daa851a0bb171772ed593eb54fdec8b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/story.png",
+      "sha256": "aa2deae6108cb560e3e563c125734125faae415fb0f7bb5734956340bd31fd45",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/training-phase3.png",
+      "sha256": "e6447a9dc2dd6786454ed9e525f970ad8e29f2966d085ace2a34e43f53ccbfbf",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/debt-warning.png",
+      "sha256": "a62dcc67f361a12fce2a03db762d2147e6be62c317a6f6d990e00468efc375f8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-route.png",
+      "sha256": "ed57e28ce006a24e339fd19cf5dbf07357d25ce29ecf05564479dd76376df7ab",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/animation-sheet.png",
+      "sha256": "a54ef94776d05af9b30fb2367c0a7107d2899a65f83e91e0d02680cfbe12665b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/controls-mapping.png",
+      "sha256": "2137f6bb3b3e3fff5b5c71f6776b92bedc30fcab57a414fdc55da798065daa30",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/controls-pad.png",
+      "sha256": "b4eda4b93148e8eb9e5dfbacec2b883dbc1fd33fab2ca125dbca0b967be410c5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/assistance.png",
+      "sha256": "dd810d1db4b4be00dcdf179939221322b2fa7a0eab60df7f7a5368dffa52b735",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/touch-layout.png",
+      "sha256": "bf679d14c8cc498bfae166cf1cfe8aefa26ce77bac060cb80f50222f4e57cace",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/reading-settings.png",
+      "sha256": "7d0eb7424c40e1d8d1bf4231079bb30f7c12e484f21ed38a0d778d9ccd0b5e4b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/story-large.png",
+      "sha256": "1b4cfc6f280ef05f3eff72236945296563b2f4bdec24b55e5845ced6c591a1ca",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/rotation-guard.png",
+      "sha256": "b2926665f3f251aa47e999b17e13ef7cf5e52333b5edd07433dcb22d7713cab3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/wave-incoming.png",
+      "sha256": "df5ddcfe6691521f0e58d4d778ec87c44047b9c57f9aad503834e4da4562b34d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/wave-arrival.png",
+      "sha256": "34d3be5db2ced9d75ad09de4f698e7f2435e49f64dd3652c8b9eac23c4f925f8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/secret-clue.png",
+      "sha256": "3258044a52018cf5190ef6fd7677343270da682dc3f72a5d340c8c8da8c80e77",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/secret-open.png",
+      "sha256": "d427eeccfe3406d014f7f1419ed53204c303fac72b50e114d787e2001836dfa8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/secret-route.png",
+      "sha256": "f1a44b45c62a067ca72a17ed47010d70202172ccdedf3d71dc191b4fd7dbca34",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/secret-room.png",
+      "sha256": "43d9f96399131dcdbaa9e4992c6574477cd33b79e1487ba2b0af8a0712d9b184",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-secret-entry.png",
+      "sha256": "e5b8b34e33f6669fa4c07dc08d4000b235a1559997cef7f7e5afbad58e93b69d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/save-transfer.png",
+      "sha256": "bd2d50f391db4be591111fc09890d09b45676ee3a32b56a3a01cedb939034f5e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/save-paste.png",
+      "sha256": "5bb54850bf5b508f7f1e47152b2d4aa605dc2a06978454ace36285a7516df445",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/save-preview.png",
+      "sha256": "ad876e800f82e82dbc573c1e511ce622888163cc0ff3d0cc17933d8cb1347124",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-save-transfer.png",
+      "sha256": "36f16181223230288e7ee7e1aa3efdb4f111d62f923d2bf3de4d075cb73c2cb6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/mobile-save-preview.png",
+      "sha256": "956ebd0e7c09ff35b1cfdf5a9cbbf7f38c9c91fa7bd3ae02cf91ca935a773db6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-1.png",
+      "sha256": "c2cfe54fefd87f2c38c6be2c535a000331f766301b89f0901739a2fe6c3fb78f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-2.png",
+      "sha256": "6da60c5e1c30cc105baddf51d94acd3a4d1435667563e2d0b14ce96456504aac",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-back-1.png",
+      "sha256": "d96268418a5ee0a600cbfec164f4e32413e749c2de0d11d33603740a16ef0d98",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-back-2.png",
+      "sha256": "c2a0d1411e921d3cd8917d0621e60e8959b1dbc6b319e2cd562cab8f55e018ec",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-left.png",
+      "sha256": "6edaa5b3eb4bc772a66542f2ee67949b86882dc57e8f307510bc359330a62076",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-right.png",
+      "sha256": "81d905e897b1ccde49584101472dadcc797530b2392a40538172eab17ea6863a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-left-2.png",
+      "sha256": "c69386a2b587b2ad5f4b0b1b21844460a9aa71bff6f0453e33260e9cbc15552c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-tools-right-1.png",
+      "sha256": "c69c24638bedba0f77f3a95fa6c3420dd8498a0cbab88b34ad5e270b961d540d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-brush-charge.png",
+      "sha256": "097a561d4fe611ef2ca96d7669f5eecf2b9cb5e9edfef37148d19568d9642a67",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/held-brush-fire.png",
+      "sha256": "865b2e9ae5ce123dd12491912288a807d52d39a5b5be9bb268d33d8f10783d7f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/inventory-detail.png",
+      "sha256": "3dfb9e93338c027e8d60bac98c44be9f956e48734ea80ad00503d7c418e3eaca",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/modern-pause.png",
+      "sha256": "f931b3f515d0acf2c5c3715b4c4e2c38c74f22898aa902737a5fd57b9cec85b2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/run-history.png",
+      "sha256": "7e773b7959b36ac5a2c056c81c3f120c758790c88404fd44c15a94f5e0fe9fe8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/utility-help.png",
+      "sha256": "5af2e28873a4170439f8499ab4eaa0003a4a04ea198bbdcee332e6e2a1dd2b01",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/modern-menu-mobile.png",
+      "sha256": "2c644195d0ef4d909c6054af1a4a6b02a298bc3da8c73987dc9b7ed39c7bf922",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/modern-result.png",
+      "sha256": "d48b6df7500065aca8d9f16dd7ed0db0c5d3769b92c787ff393cc1a8a65db662",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/hud-extended.png",
+      "sha256": "68253488fd300d4345dfd26519af14d42f13db6781990e0c7abeb96f73b24dc6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/ui-style.png",
+      "sha256": "d65dd79732e1ead3dfb4d64bf9e7dcc2a1789aa01d5318f807e9c91e16e2693f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/door-navigation.png",
+      "sha256": "3f2970e9db477a4bf58ece31ee69547a602ea57e7961b348194f598e35bf1ad5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-details.png",
+      "sha256": "90380eb121012ac9397fd3958dfd8c32de66bc0e096c6edcbe3572fc676bcc69",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-evolution.png",
+      "sha256": "4d7083bdd032d94059193b7a2cdc9d6ba3822d65beb05c44402e0884cabfd9cd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-training.png",
+      "sha256": "215bd28a7f8652d21bafa66e83eec8c513095c5252bccc9bfc15fcff2d13cce3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-training-cast.png",
+      "sha256": "73fe8d6b12a56bafae5ebdcb4d3595bc343a78989ebece06fe50ed90e79f6125",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-locked-mobile.png",
+      "sha256": "96484a67273d901aae1b2c3bb1dae1215cd50b79ebc06f8ea971ddcf31ae34ea",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/character-skills-mobile.png",
+      "sha256": "7d4015ea5c045aaf5212a8a16d3244ac1f5623d8feed337a0e3dffa1a91175f7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/achievements.png",
+      "sha256": "a55d93a20e5ee8da3ed0b26177832d41a36c58435c2e37ce4e524cb203c0a9e2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/hurt-direction.png",
+      "sha256": "756e431825ac56a347f40400ce8408334563f76ed515a3c6860b61066a86e335",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/result-source.png",
+      "sha256": "bb9297288b5d4d422c4092e119010fca5a0b30041d595ebc7be2164dfca53ee9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/result-build.png",
+      "sha256": "06025369c7eff16735f42d841f34cffa6cd5bb4c1939c0cb1fa2d9b6c9448565",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/run-damage.png",
+      "sha256": "d485c73bd750cd0cd399e2e8b4f2b58350c64d788ee8dc49fdd54ece6db85e1d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/run-pages.png",
+      "sha256": "86f42368793c296b4cf598a74225542ec6f553ebc1b36a632a6f3892f3488935",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/result-source-mobile.png",
+      "sha256": "b5f48ff6ac85f32198dba627f452bdf7285c7c029fd392f56df8a58600afc9c3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/run-damage-mobile.png",
+      "sha256": "6f4015a1cc834641a4841685103cf75436113ffaf97a657bab49eaaa0f65796f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/run-pages-mobile.png",
+      "sha256": "3ef8d8f3a834d93c6e4323ff23316eb62ba95c16dd0868ff2bbb3b656d25d3cb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/impact-heavy-before.png",
+      "sha256": "86b2e7e8b4fecad242bf3fa6c41999d9c3fdaeac3a4da61a2ba2b7f31e9f25d5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/impact-heavy-after.png",
+      "sha256": "6c1be90e28fc009bfd043bdaf7d584ed446a2cbb58710b8eda854880370e2bcc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/root-bound.png",
+      "sha256": "c1830fc96b018862decf847dda73a7dc338da1ab70277387848c8a474e561ba7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/root-release.png",
+      "sha256": "80c730614baf2ffc2b2223e80410cdd84aead8ff9988fa149e6f025b63916dd1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/elite-source.png",
+      "sha256": "218543505a0b5fcde109bc02664dafea48f2d6577ce4a412380395b9b0302fda",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/shop-trial.png",
+      "sha256": "f77be0934ff06ae6d1922006eb73995428c6f74dcbbee8cfa3e8f869c08cc094",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/shop-trial-live.png",
+      "sha256": "fa91690d5710d796cf37e1ce088080c3628b29ec79704b441d31ee6c1ec338fa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/shop-trial-return.png",
+      "sha256": "335a1deabeb8e77ef7e673eaf6585f39eb08ffdb9e584014add0e38998714207",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/inventory-synergy.png",
+      "sha256": "e3e1fb84ec4e9b975f3de1a1aece65065228a8d7d817d4315f056c76934c3b8a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/special-sacrifice.png",
+      "sha256": "71c1c19a664db96a098428ea654256d9d9251ef9d204f4ba0c75c7c0334e80a3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/special-judge.png",
+      "sha256": "79fc58578ef082dd1d3a6821d66d681262c39b88bb3a97aeac0545e4a0af9638",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/special-angel.png",
+      "sha256": "cd7d15dc9b6ddfcf58999b6c666b712f60e9dbb253386a7a58e6c330cbd7e323",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/special-challenge.png",
+      "sha256": "443465891a0e2b04ea09e6ba8d3eed4d5ab36f3b03c5c2e602ccc95935e1e6f2",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "expanded_sources": [
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-01.png",
+      "sha256": "0f34a728bc2f5634ab6b271248b0076e378979ebb47a65d5e2dc8b819bb053ad",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-02.png",
+      "sha256": "d16f99a765a5a4ce9a2682f9ee275e3b5f64032145b5c178254e457622b5a88f",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-03.png",
+      "sha256": "0080c111aebc799d4c719f0b0b7081dbda0b864dc603ffd1c3e7c71a0ab533b6",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-04.png",
+      "sha256": "4a676610442ad3b1244792190a37389f10ad09df9cc53e8f470d478b81eeb30b",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-05.png",
+      "sha256": "a5ea6e267b31cc77a0109d336edc9d92eba95547d29268eedb67a382e209cf2f",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-06.png",
+      "sha256": "386a9f32e4b901644bca798d3d4d1ed7502188723eb7f9c58675f6c84d7fcc79",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-07.png",
+      "sha256": "04c5e6976f03462def628389f3c7000a437e4bed204ae6990f6daccece45ac35",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-08.png",
+      "sha256": "afe2117e47ededbf15970eab2b83ec978a1da0af352c506740896a5b83363382",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-09.png",
+      "sha256": "e6f46a70c856e73747213a519ea4435d7ff835f388e57901b17b9c596266bca8",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/themes-10.png",
+      "sha256": "aee3c17f5cb73df1f928e481558565cd8816e6a20b748e886dfaefe63de531ee",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/bosses-01.png",
+      "sha256": "4094f85d079a47427d97299d6c47ff56599a7952e5f379c2b676cc4a6f4bf9ce",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/bosses-02.png",
+      "sha256": "d403c4e543621d85e48fc597bf290c0055a0e33b25d75f81ff84b0233ec1fd51",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/bosses-03.png",
+      "sha256": "f1e623ac414723c729248e71cb915e2665fe351bae4795eff20c344478caab9e",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/bosses-04.png",
+      "sha256": "30c0913b4c34da74d48bf7c207a83a167e4fec9e9fbd240ff537ba3e1b4fbd0f",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/enemies-01.png",
+      "sha256": "ef205d239d352a5c74594f443bab92fd9d9ef29efea0c8c6153b6a361a0866f6",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/enemies-02.png",
+      "sha256": "1e1fdb4d4c95a81d6d83ab96a6fe6dbb430c8a607163000ff92bd2db98e402f0",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/enemies-03.png",
+      "sha256": "1465e0a158a3ecae82a903712a54731da5756f31ea50dc7a4da5271a31350937",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/enemies-04.png",
+      "sha256": "a9c561c77e461a33bdb037aa1a90d5c0e8eb2af181d354e15ff4d46722451638",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/weapons.png",
+      "sha256": "542bd1017ae6e1f2118f764066cd8b66c2704ad239eaaece74d2803c1d9d0698",
+      "size": [
+        1263,
+        1245
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/attack-fx.png",
+      "sha256": "5074dde1c0cf2d52467cb7d0ec0a1febfeee43d45954184d0e6bb63408c0bbd2",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/obstacles.png",
+      "sha256": "beb4997508b198b4df806731be13584b573874e02788a5ff3b9e57b1ba47b34e",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/story-01.png",
+      "sha256": "9bd6384652544daabae3e5a0f204f8d6dea4aecacc725e313273a3591e58d5c1",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/story-02.png",
+      "sha256": "c7ecff70b88befcc1dfd2bce59623dfed2004a768de5b57ca4dcabbdb1f1b1fd",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/story-03.png",
+      "sha256": "1aaf31e493d03a9105d75b6eaac412b7b07efb14a16493d9a77bdd318fc42060",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m01-enemies.png",
+      "sha256": "46742db42897ceef843b87a09a15dc0a6df514aef49d2a66ddb2ad0901bc890d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m01-bosses.png",
+      "sha256": "6cd157edafb83f7c5d43691a9702f1903800ba2e46e3f34b0d4f7c6bd5d08242",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m02-enemies.png",
+      "sha256": "b9b5d6645362cdc150bf406ec582c9eb37561fd884d3b8bf41b74f237eacbc0b",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m02-bosses.png",
+      "sha256": "681a3f4d1a84a9f1e52be109067f28045d99b284e8e89807c3feb3c91ab6a64d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m03-enemies.png",
+      "sha256": "ffcb132e201befe3c0564e6e32f3355e79e5fec94f500af0c429218df9c25718",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m03-bosses.png",
+      "sha256": "c882568f8196424c333bb8c47dd015ec3856e5dc545c5d39dc3cbb1b293caae7",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m04-enemies.png",
+      "sha256": "01466b1b715b02b7ef29512397db60e8e78bc4be86438df317800771292dd111",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m04-bosses.png",
+      "sha256": "4cdb1678650f7e42357225361077e9192a1f6f49f8195869d3a825a5547ea1eb",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m05-enemies.png",
+      "sha256": "5f654635a5b0fe919de5ad53a802a4a2647d495744326417797d543ff128fa63",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m05-bosses.png",
+      "sha256": "42f688317e5e559a0d81d584ef1f3244e2e38266f00165848fa82b43f862163c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m06-enemies.png",
+      "sha256": "e49584ff411c1560178164b6fe8434870eec203c8620c616eb2efb2f534bba2d",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m06-bosses-02.png",
+      "sha256": "8bdd46aa247db3d02704e74f3e6cf56c80e98e45238bd4f6fe7a030494707ded",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m07-enemies.png",
+      "sha256": "8625dba297798a4e3a77ccca150cb86932e6af2bcef7095126fdb28124cd1f31",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m07-bosses.png",
+      "sha256": "a9624beb7c23ec8ed79bbae0e1aefa315e9cf7ff3fad8d69b6cff7062cf71a0c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m08-enemies.png",
+      "sha256": "17c213e1f7077e82f1e9c472df8eb6ee30b4a1419b9d881ff17e3c634641e5d6",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m08-bosses.png",
+      "sha256": "014b9d597824bdcbfaeb86acddbbe4aeceb0aa813abf3acab042823924157434",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m09-enemies.png",
+      "sha256": "3777cc4600838013d403208bffbe20a37e5ab217c1e898b6251bdb865ba7c548",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m09-bosses.png",
+      "sha256": "f4f927076526e33346ec367adde8a11b31c4eac9c8beed796ac901aa7970d3c5",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m10-enemies.png",
+      "sha256": "70f22d30f597b13604fa570e804a49e90342bd0a2318ae6730fedb7d393065c2",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m10-bosses.png",
+      "sha256": "4cfb690e447aed930d9bb3660805ac7ed17ab2efb8f7a38ba6681ad127258b44",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m11-enemies.png",
+      "sha256": "7cba98b5ef5541a1f6e783ecea8219c21fd3054e8d9f07c3e67ec48d94509f04",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m11-bosses.png",
+      "sha256": "1775ac36a587224d56887603039451c19692ed7f89bff3b7f6159e48019b49ea",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m12-enemies.png",
+      "sha256": "01e31e8a530da8e220d798eb5daf70443eabe33b1d53bfe9676f3030e8d070ee",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m12-bosses.png",
+      "sha256": "260832c8c20e16121dd28422c61efcee71acd4feb218dc93a454ef936d22a649",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m13-enemies.png",
+      "sha256": "0c8c101d3842678d73c412ee717171e3dfd5679932b25d14455bf1a576eb6aed",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m13-bosses.png",
+      "sha256": "a4ba971648da1850ff5c64c056a0dd7aeae4afd63424c728348b56e4207a51bf",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m14-enemies.png",
+      "sha256": "19e6dabe974200fb9bc120e807e7423de31b78836dc31176820aac49e0bfc085",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m14-bosses.png",
+      "sha256": "8cfbddc39d929b1161129972cc479e48c9afc49c09a76a8b8829cb1ad6c96da9",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m15-enemies.png",
+      "sha256": "d180e6044e620d394647ffe8713c34660881a4580b98d1e47d7601cfe34e6957",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m15-bosses.png",
+      "sha256": "fae07f0e9a05279f4add2c9fd7cb66e08f0760795c14b72ceb134fcf940021a4",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m16-enemies.png",
+      "sha256": "3d0de5d5fd6612e6e702e81967b70f165a040eb502cf9f7522b85f079ca92d82",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m16-bosses.png",
+      "sha256": "3c27ffc0ec003cd0d339f5560095c643ee1bd16485a1ed24c2019fed12aaac5b",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m17-enemies.png",
+      "sha256": "e43f01a6e6ac1bf0dff958dde6c172c7c681e5eb54ce116c3a904f0f49573006",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m17-bosses.png",
+      "sha256": "9600ed37d881fd0d6d64bddcd809a10c75a648a987e40c1450f432db556c7414",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m18-enemies.png",
+      "sha256": "c06a191e7f0728c9cf0684625c8891c7e161e2d86876167f12da26f010022f37",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m18-bosses.png",
+      "sha256": "c62a2fb279edbe9c044d97084d316680336e2938443130771d10819a5d6810fc",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m19-enemies.png",
+      "sha256": "1d1fe6424063e7bc794184554da844fffb11b999e15c525f44b840586a9cf535",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m19-bosses.png",
+      "sha256": "08f843f41cafe3e3fbf091415fa33d8ac3f32e521b73374d3e3e325f0c07d88f",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m20-enemies.png",
+      "sha256": "97e0351333d7c103f92cc4647d91b396794eb8bc7183cc80cca959a6a950326b",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/expansion/creatures-m20-bosses.png",
+      "sha256": "cf1300c7ccff69f8f4dbeee02c477340d23dd5a856a2a3f847315d57d2e31040",
+      "size": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "combat_revision_sources": [
+    {
+      "path": "output/imagegen/incense-debt/combat-revision/areas.png",
+      "sha256": "34cc365ed9f6f35486a15348b5489970c3e99d6b1705ac98ca5259958f453b86",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "output/imagegen/incense-debt/combat-revision/beams.png",
+      "sha256": "78347176b4e24cdd71bcd6244e233215f173cfda13b3c8a55369a452b5c432d8",
+      "size": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "combat_revision_generated_keyframes": 48,
+  "combat_revision_inner_wall_review": "40 background-specific convex contours manually inspected; actual swept movement, projected entry gates and VFX wall clipping verified separately",
+  "expanded_captures": [
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/story-opening.png",
+      "sha256": "0474d109e96bbe0686a67ade1a0d76a603787fcf2981bbe4cee6ba4f5cded9e9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/pause-seed.png",
+      "sha256": "29f433aea752881d0571f6c7667a4cf9e80dd76a5af52ffd88b9e6768b5da79b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/map-final-build.png",
+      "sha256": "1d9c87ac503156a50b073d266224ae69a8848375ac6457d4f1b3738edeb2545c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/map-build-last.png",
+      "sha256": "ff4f866f6db8480215f3541de17ec80f8f22ccbad0e92de630e8666fcb64e814",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/map-history-last.png",
+      "sha256": "bb0660e62db3029690843766dab56972990a7e6288010c9adce21385c6ec7de0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-02.png",
+      "sha256": "b3b66d314523aa343ad1434604900af2e81eb521d6f0083e6b82e85f6f6f7e57",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-03.png",
+      "sha256": "1ea4cfd6078f6bf426c8261b8d198011a02cd967f0842dd61c696aa982aa7c22",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-04.png",
+      "sha256": "4d22b2da9b502b6755a51ca7b019c0b8a1cd9fdc6e1886a66cb4fe7aa34878ce",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-05.png",
+      "sha256": "116171fb6bf1a274627c814e77f1d927f35f999fa46c10862ca081bcc735b5f4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-06.png",
+      "sha256": "03e3829b5ed42a5a50a23178f2d5e242d2b671faf6f7604683219885cfa370a3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-07.png",
+      "sha256": "e14debc2c29438d7c786ce91398d8b6694068d3991f416f0ef4982b2631f34cd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-08.png",
+      "sha256": "a72c2a30309c4142c385cb2f19f145a4da019763fb4041a740982961d0359924",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-09.png",
+      "sha256": "a485d21a40222cad53c571b288b597c39b88582d7f4ef8619d99f646d704817f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-10.png",
+      "sha256": "cfec28577b3dd44445d4c2024fcb67d7a3169dbf41de57ad172fd4c6c3a14634",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/transition-11.png",
+      "sha256": "469bed4a040746b1d64ba60a422f0fa5ba771a6e125d0cfba20f15d80747fb6c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m01-a.png",
+      "sha256": "450987cc683e9225c47efede0a850ae1bd8107f9c562608ee19071a1bedb6254",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m01-b.png",
+      "sha256": "21197fe8686f815dbe65eb6da14209e783300f1e923f85dbebe1acfd9aaceab3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m01.png",
+      "sha256": "f667963ac34ca537acfacce241ea0aac6f9b594da8309df8217386146b658fe6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m01-roster.png",
+      "sha256": "22a154923731bfac500bcf65ff8aeb304018ad259f71d463f22d6a4a778daeb0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m02-a.png",
+      "sha256": "8fb565b8bc4a44f23bb2bff096506b3fdb01c24bb12bec3fdfcfb3bd160f7933",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m02-b.png",
+      "sha256": "7226733c40ea915ef41a24768839110bd1d0e289ca201512aa668178c926b677",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m02.png",
+      "sha256": "574bd6446bcb0e5e32def471c3086974019b200546b5d660db0f3987f2af9d15",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m02-roster.png",
+      "sha256": "68320c1b82597dbf54454ba1aea78bfaca79e70141edcf457c000f013dc5c48c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m03-a.png",
+      "sha256": "367f120c874677aff2ef15de89a82e48bd0bee8c8c29b22c64a38f09ed9cc072",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m03-b.png",
+      "sha256": "c81ae5ee2fc795a61c574c04b09bc104c2c74b698e42da0b00b1960d48754379",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m03.png",
+      "sha256": "15c12a856d758e0d850d8faf9f580b23b9a565b9fc01d71c348ea52081b9eb0c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m03-roster.png",
+      "sha256": "82d2001e4ed2ed74415f3419f2af06b5b37327d1d10d6ea362b0174f4778f147",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m04-a.png",
+      "sha256": "9c7111afe0de584493c0133f3e1fb01e1f1e9a8a99ebf699b286e2f3265f3787",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m04-b.png",
+      "sha256": "54eb2efa0d97584165303874fb6cb3f972324c39271b592d39fdd51e4e5c1c09",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m04.png",
+      "sha256": "c80648fbb3b9e1e273749d56a0dd45c1d05821d2693810f98764e1690cf29d6d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m04-roster.png",
+      "sha256": "18c5055926ff0bacc8fbc2c0377aa49c0076d64c8e2277b527e9563404c896c1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m05-a.png",
+      "sha256": "0ed8f98588185e25c465b98248299a06129eb7719774c5bf04ed564ff01ab4a1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m05-b.png",
+      "sha256": "3e81242b2fcc5f0b4d20308d5bb9de06e04a0332fe7a46b2a364967ae5f7442f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m05.png",
+      "sha256": "4d8aa623659db315cce6826b1dbc2ca7d716a89729abc8d912790cb1a36ed9e5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m05-roster.png",
+      "sha256": "7b8f2e832ac1af21a64c474d0e0a44e63cc6a929822e7ce966f5eb1560907cb6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m06-a.png",
+      "sha256": "fb48355fe2bd18e437db2a997aeb32324d2273e702e007470aedd01fc94e5b10",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m06-b.png",
+      "sha256": "5745d599e763cf81dfe500ab3317d160907fb7f8b968e873428a2697e850330a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m06.png",
+      "sha256": "1943e5f5e44d33dc6edf239aa9c550dccd07aac8e28e1772f33f24f9fbee6867",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m06-roster.png",
+      "sha256": "552473f66fb5af33cd67ed3ae3d4814426faea5ebe271b2520815d88c5d940b3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m07-a.png",
+      "sha256": "f568e1453df1f964e0512fcd6ba201696d025a91632a9e701caf9a73a9c67b30",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m07-b.png",
+      "sha256": "4084373f206dc551f61c4380d4f691275bf6287d0b17a0a0242bca5ce694a52f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m07.png",
+      "sha256": "aa4b6fd6637a2ef53eee03433abdbea06857bcb463d0456a44545c972c26dd58",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m07-roster.png",
+      "sha256": "40d6a6143abfb4e099dfb8cf8a23e2a27f91701c985b26311262496909767f16",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m08-a.png",
+      "sha256": "483576eb45f7b34168861e14d27f0355fe06c266943cc044a555f56533abf23b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m08-b.png",
+      "sha256": "fc717068e3a5d787713220d3b4bdad0fda6ca733f3dc23475a7a77cf77cb4ff6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m08.png",
+      "sha256": "53b43b1a6a88480db6a834c9143273ea68adb6f6e8c6bfd0e8b7880d9dfd521c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m08-roster.png",
+      "sha256": "5c5eee2b6c6e28e5d8cb0914869f6f411f7003e4ba88161ad3953c73bbbf41fe",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m09-a.png",
+      "sha256": "18e52d8439805e765e74fed1440240eb2adc6ddd56bda603f672d216b4178c07",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m09-b.png",
+      "sha256": "67ed52f0a3b45a073b481f6739bdc94e61178c449e8a796a6c15122bde39e445",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m09.png",
+      "sha256": "ca7ae66c80001840823b0966418bf4ff5f8a2686a11c5ce562bc73cf812feaf3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m09-roster.png",
+      "sha256": "0d376666d2f33f3a8d7e360641a29d04f82bb7bc5b4e54d17a140fd0b46273f2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m10-a.png",
+      "sha256": "723a7763912e3ab48b417afeda38f8b04ebc3c6fd0de272222c75dd9b3cd9335",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m10-b.png",
+      "sha256": "f3f914e658fd6d7918b6d0a8e046f2c8cf6e86de209a1b6abe18901769f276ef",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m10.png",
+      "sha256": "420aa64939093af3ef12120ce71afd8eb41a8f65108fcf0a9c8c5c061caaffe4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m10-roster.png",
+      "sha256": "aba2225f859824964444f6505720a343374c1f5d20200d357fca8f14e1498c79",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m11-a.png",
+      "sha256": "7c4eaf6b7ef144bbeaa04e33ce943a52bc6e797b116348970197a990ffafd3db",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m11-b.png",
+      "sha256": "848ae55ef335bdb542a1c939bf94be5763c40334eb9e4618aee7e9db9299eef5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m11.png",
+      "sha256": "ca37d9fbd30710464d42fe19d82ffe76cc9c6ad05df7a3557bb950fabe9cf414",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m11-roster.png",
+      "sha256": "08a639946e5f92d73c6e71c35be1626c5da2baa28d8c1fc15bf26c13e09dbdf6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m12-a.png",
+      "sha256": "58f0630ab5304cc90484522ed8886173914647789104cef0d4f9ab91cf64c876",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m12-b.png",
+      "sha256": "4f05b597301fcaac676e554b098606cab5fe651f2d4d8013dc2f8b8298ed6c96",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m12.png",
+      "sha256": "9135a41e6ab34e9850dfaf6862eb52dbc0e146a2e2723a0982308e7c9e5db1cc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m12-roster.png",
+      "sha256": "a1f0f83fa2d43b7bb5c032b343252206e54884151483f54964a8c9305d3ddba8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m13-a.png",
+      "sha256": "0dcde683e46169de99eff230453dd2153f49907e3168a571bfc7abd2b5e11ee0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m13-b.png",
+      "sha256": "2a317568be30b0f9116b6d6f115ea96160cc033dd4dcb0c071525228885d23a5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m13.png",
+      "sha256": "7f98c815f200bcdb022e6115b021df3ea5d808118af1d6249de853484c482c88",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m13-roster.png",
+      "sha256": "0de529ec7c672fd0d241a9643a4c8a3f7564cad9456024bb2be0bd151ca85272",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m14-a.png",
+      "sha256": "bedb5160ff4ce17d0bb2341af529cde502687eef491df2c8fac9bf585dc23ce1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m14-b.png",
+      "sha256": "21c122d04c668b212d83c3726e7dd7da9458a1921b724daf9f4c740bf76da587",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m14.png",
+      "sha256": "c16b2824600bd84f3fd33052cb397a5ec65c5af60e215bd688f9778a76b9cef8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m14-roster.png",
+      "sha256": "bf06a358d305ecb290b7cf6006442da2d94d6b7b72c782dc9d552db309819cbd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m15-a.png",
+      "sha256": "96de5db65a26f2655db58d6646d8875f2a9f43e5b087cbff7de07fc38de92d84",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m15-b.png",
+      "sha256": "66824c9a4e604138c3c8b2ae3d00d5dff90d951bebc58750a1bece7aded47c83",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m15.png",
+      "sha256": "025fd4e44e3a9a0e10af13cfb7f1bb9a9012a65c36c41349bf1d568c177e8719",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m15-roster.png",
+      "sha256": "cab8c0022de4695bcb6737675c6cbad66f1ab7392d1141f5604bebac34b8d9f3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m16-a.png",
+      "sha256": "3c10cd545d76eeabace518fad576532059ea7a2fbe6631264957e46f51e79bac",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m16-b.png",
+      "sha256": "fa9778fb262afe9a9ce1f1371a08659c9bb668908a0aaa563c004687aeffa383",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m16.png",
+      "sha256": "28e458e6f176e1a5a96bc05ac7a8400cfb8d3df34866965b6e7b16dbc1a11f64",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m16-roster.png",
+      "sha256": "3744cc381a1e122899fdcd29a7cfcf1daa2459c530d3ccf8b3b590b63bbad135",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m17-a.png",
+      "sha256": "821f27aeaa7eb80951d21eaf5c43957f0078286d0d0e5d89c9f445e94ce1f5f8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m17-b.png",
+      "sha256": "293e0459b94b0362cad679f7c25abeff7ac85728866231b8c5d09aa35229bd45",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m17.png",
+      "sha256": "71a5b45f9d0ddfa98c42718761a9c584b39bcb31b60b3cff87b9c9b5bc1e0d46",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m17-roster.png",
+      "sha256": "d3e67723d038749dc95d743f97cdc11db3afcdf441a3157a5f32c6b1917843a2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m18-a.png",
+      "sha256": "0c2b8360550d52aba13cc0d8d593151e3af12fe0316f8dc5daca3a4dc56a8f77",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m18-b.png",
+      "sha256": "f0d7f9c9b36d97c30068b08f6ef43a08d9b1b6525e7e00970f20f7bbf71014df",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m18.png",
+      "sha256": "4b0168aa4ab2868ff60494be2e890f8b1ebf7e6a42e801117654467293c2607a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m18-roster.png",
+      "sha256": "c7cd9462940f0caf8778625b020cc79bb9e8ff1f7bb04913d412d9943d978f70",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m19-a.png",
+      "sha256": "3bfc339b8084c2200b7a5085a07a845b7ac696bd6ce6f1cd6c34a5111dd7b34b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m19-b.png",
+      "sha256": "5e864e6df0a9f4cd2033594ca883d034f5ec4f2f7394c336ef1d6c4426803a30",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m19.png",
+      "sha256": "000e077d9d2415ddb559c20048ac08e7e58a4230bacad0853503935627bde744",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m19-roster.png",
+      "sha256": "d79700516cdccb2b2f51790a8ffd174c7ac696e03244c680f8793bc5a36009d5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m20-a.png",
+      "sha256": "e6051fa118aa5a53d0d32d174cda87002bc39931f72e9b3bb7d000b8b6782f05",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/environment-m20-b.png",
+      "sha256": "cc8e8b895548bf262f08a04e7d2c117c025f8bc9bf4d572a5a33420f17459403",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/mixed-m20.png",
+      "sha256": "5fbc4637611887e1637d8275b129837290dbc5932bcbc15ad3311ca2d2a2bf15",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/themed-m20-roster.png",
+      "sha256": "abd28618d5362edd0a12498b180363672d4ea8da69994a6b55cd7d47d6c20862",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-1-boss-13.png",
+      "sha256": "2737dceaa7d6d7b687d08af7a92d3be848f53c1fb65248a1737911de5b443cb5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-1-boss-14.png",
+      "sha256": "45727c3e25a67d04f519142ea5842019332c0f2b51e51eced5a4b71c0b2fe27e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-1-two-boss-chambers-map.png",
+      "sha256": "ca2029d2c26c39f0928c0c995fad068768fe92151a7718dd05b1531be73a876b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-2-boss-11.png",
+      "sha256": "ee1b46312ab87297a7366834d627986f1b6c0bc0a86ea2834f82dd3f4967cef6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-2-boss-12.png",
+      "sha256": "2f7a1bd01e58182cc92b4f08f02a87bde68e228faf1a4a5eb08b26711f36901e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-2-two-boss-chambers-map.png",
+      "sha256": "eca3cefc1d48322b887e886b90435ca8374561509fb37200a9dd46644bce6465",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-3-boss-11.png",
+      "sha256": "fd8ac8e2da341be5cc94c3b054c92ca27359d79f098dce70a34f9080e1921244",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-3-boss-12.png",
+      "sha256": "a849280c3c05819276a5bc4f3c18fe61be67cc73f14cb9bc84673b1db2750cb7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-3-two-boss-chambers-map.png",
+      "sha256": "885af08b01c1e5bb45c9c9a62002adaedf9adba8ae27c87c855016c3b87b3215",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-4-boss-14.png",
+      "sha256": "0111a86f3719205ba943f29f53e8ddcad3b58479d6218ec9fb7d4551bda320ee",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-4-boss-15.png",
+      "sha256": "65f61fec39c9af72d2c44ed5c33a9d1d06f9adbbd5e97b41c793d68265c9aae4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-4-two-boss-chambers-map.png",
+      "sha256": "97769f1be7c52a8f71e2ffe4edc898d47fb7a889b1dd9f976be5de5347a64d24",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-5-boss-13.png",
+      "sha256": "7da31ac4d3bc2b5a071e0c21ae5d285172deb5e29ee1f6e6a354adf8d543e67c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-5-boss-14.png",
+      "sha256": "548dc92f1538aec4c94a3e9c1d198f621a50fd0e5aa47ff144fe208a073e5c4c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/early-5-two-boss-chambers-map.png",
+      "sha256": "74834945966b684ecefbc90fbfa53f0b780465f44a9f459e231fa9275047f719",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-00.png",
+      "sha256": "a9ea78b11e973c9a2327e6484a2d09cf514561c1306596580819ffcf5704626d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-01.png",
+      "sha256": "e68912c6ec53d4c914fffaec3c3c12709fe767afefe9129290cc7df4f8e17b2d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-02.png",
+      "sha256": "6b69a82dc66a7029a849d5b7b7f4ff012298da6ee3bf4c18212625f65facc3dd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-03.png",
+      "sha256": "62ffa1a7a8509f85d4c946b92142035b15893446675593711a54f43ed90224b3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-04.png",
+      "sha256": "14d0c90124286b3183cabedd9991f8d2375320250d9309aad37c211f593f8b2c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-05.png",
+      "sha256": "af06b254e3c428cc904c74dbf366eaf90f91cd83957306671cf7058a15921eaf",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-06.png",
+      "sha256": "0c27662a4d7c6b270582f7184df0eea09f4a276c6f09238486443dbfe20eafc1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-07.png",
+      "sha256": "610320e1bcb7a683116f1e36a6606c1f78e2b938c42d042ba359f3404a0695ae",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-08.png",
+      "sha256": "ff493bc3b79ef757e85fe38ba8a8c87d188ce9a26822bb0edbb714b611fb82ba",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-09.png",
+      "sha256": "61861e6c92659f202f6f89bfc27909cbb24d185235c0e9873ea2fffc2d05f97f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-10.png",
+      "sha256": "1089869b49341327eb8f67f7053a1f488bab273e601365b81e61e77cfd83843f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-11.png",
+      "sha256": "8e45d91300868d7d609e47f0783ca4c868e1c752e24e7be6c43b5ea0aaff472f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-12.png",
+      "sha256": "4332b77e11eb55050ac575233bb12863be67f3f0006bb8d180ebaab1939ab943",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-13.png",
+      "sha256": "a1e0b6e6e9919563d1ee75394a20f17fd90fb23e003456b5e1904cad687c6527",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-14.png",
+      "sha256": "47e8629888239013be137c16ab28b0e3668f4f42e88346296c5b456c0f6c65d9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-15.png",
+      "sha256": "395229bf1fff0a1438962d5a0aa25e0679575399a9acd5c368986537f1c965fc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-16.png",
+      "sha256": "e75cbf48e92f9c933d1160bbe3a70f297473fd58a213f38c03cbdfcd837400a1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-17.png",
+      "sha256": "971dbda13538ad0897f66c3d5e81c40701570de54b7e41e109c2613a4cc14606",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-18.png",
+      "sha256": "5b2744c7a462348c6971ef41c38bd5aa7bf8508d69dac6049882c83c9746c3fc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-19.png",
+      "sha256": "262e1237dea050c28fd04031a3640c339a5d22c341fea82c39695528cf97027f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-20.png",
+      "sha256": "17f542df2288844ee6c4fbfd16c716929b99d674024ac20643ed2ac9462d61ae",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-21.png",
+      "sha256": "c35dc838fac9efb058b1075e19ff4b40a092882dffeed426dae677c84599518b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-22.png",
+      "sha256": "68e5bf1b7f9a88b06154670a50f7811890db77196f6c1fd603503f5b7e286dfe",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-23.png",
+      "sha256": "24e184ba05874a6148aaa3686678690dad2d9e16e6c60827881dcc091a698009",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-24.png",
+      "sha256": "d250cfac44774ff4df107702f8fceb9e5b5c15166d213b04bd300270d5c19ac0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-25.png",
+      "sha256": "ce0b4ced13190f7ca5e229d2279aac270234103ec5832b7925e219447f223c58",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-26.png",
+      "sha256": "243ad379c6ddc8f621bb8222d462ea67b2a7f09f07c6faa430dc2edcb1cc0f33",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-27.png",
+      "sha256": "5a4464922ca6a9aa4be8d791b7300be394867ed6b448d54ed88e747858f75e3c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-28.png",
+      "sha256": "9f6437194b844f24bff986f7a964cd10877a5d5a00eb9624e0f8781fa2f416a2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-29.png",
+      "sha256": "d0d818ba2e3bc3fe0e41d9fda48ee5d5e45acdffdccc65c9fab1f99dcba43773",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-30.png",
+      "sha256": "04ffa0af494e441db96fbd1c353eb1a81c0c9a7525e41fdf119898422b12a9c2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-revision-fx-31.png",
+      "sha256": "f23069c9e7aa96b7eec0a06f46f34f814b2dfc43bf88c378c01ba0246a80b1a2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/revision-wall-area-0.0.png",
+      "sha256": "158ea28bdb2957880e329c8c4a3d6236c45ffb83ba2d0fa2aabd9315410716b7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/revision-wall-area-0.35.png",
+      "sha256": "d7fe53e17525b56d4655ae592735b667d21e517a7fb249d0aa0ce2fffedbce5e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/revision-wall-area-0.75.png",
+      "sha256": "a63cedc5931e03d7b5e73b9f49a3d2a0872b7cab2bf69de6a3014ca05f9104a8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/revision-wall-area-1.05.png",
+      "sha256": "8e49467b26c0e0e34c0362ca1d25b35fbe4c56721982f79923d5c46d193a95c7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/revision-wall-area-1.5.png",
+      "sha256": "9f1d376bb76712062367d021cb14666efe1c4124961d1481ec542feacf1dd27c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/enemies-group-0.png",
+      "sha256": "04ba9f1aee7134f5718c3370b31d5e861c4398521d2db91654c7316b8fdad2d0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/enemies-group-1.png",
+      "sha256": "0a8b8ee4139dd846413a2a86629ba3fd4e6c2d448900f0935f08459fd123c8fa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/enemies-group-2.png",
+      "sha256": "4c2a311507352efbc9acc1042552faf872111a453c4fe46a3714356907f65c51",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/enemies-group-3.png",
+      "sha256": "34cb8f71bab93837c286feaef2e5feb1c06e52d369cbf936ac417b88a6e9597a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b01.png",
+      "sha256": "c22c19bbde2c8647f1d452bf5436c13e25c362c98205e716d131e32a40ce998b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b02.png",
+      "sha256": "10a901aa364e1fc3cf8aa979ddaa6f4f484ba32bd0813b421c8603a4c9f139a1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b03.png",
+      "sha256": "3d12eb26d46273f624c00cb5148eb72b7a2eb58b9496bb37afb5eee7651c5586",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b04.png",
+      "sha256": "fb48e16751385be0cb5d01ce916e3c3d9540c9cf4eda98d736f0323641a55804",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b05.png",
+      "sha256": "a513af81c94e4f5b70f3ae3008e41c213c9fde9d87f9cafbf3e37f29c48c66a5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b06.png",
+      "sha256": "a8dce8bf96d297c71659174e51627fd2329dbf3dcf93b8498522ed155a48f316",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b07.png",
+      "sha256": "b290dce1eda9db4e96524569e8bb7f6006791467b5839707df8f38bea8a57546",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b08.png",
+      "sha256": "085bf8d815c0839b58647b753bd4210bf3c83b0ae6986559d4c7f55707fe6670",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b09.png",
+      "sha256": "65e2a158bc509adca097020f692b1bca31c2757954c8ac62d74f4dd823795c90",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b10.png",
+      "sha256": "9a0e54ae1458361884f9d48bd1a833fb4f9671de1c368a758eaacc52779e19c1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b11.png",
+      "sha256": "652a3cb0b3f155e8ef0a9d0ef1c07a4414d5ee2ddb84cd919bd58b28e5470593",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b12.png",
+      "sha256": "7396a7f90a2cde6174c81be6e36f590414ba9d2058534115472031eda96aa01a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b13.png",
+      "sha256": "1f5a8e75b46f8b3edd14af04caa262ee1c46d3f05a0875fdf9711d06a1b06e50",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b14.png",
+      "sha256": "008b7e42e4f35cbff0a6efc4f5dc5423fd598ce3d751950ddad3600e03dd03ed",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b15.png",
+      "sha256": "ab4e86aedb7b671986afa1b25ca9b40fd56c9aaa7d9a87fe2fbd9703bd1fa184",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b16.png",
+      "sha256": "19cf14181bb77e3d10b91c77070d0f533a83d0eb3d3643fac03261f54f715cc1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b17.png",
+      "sha256": "b8337739f8cdf9f022ce3d4ee5dd2c804c087221c045cfa953e3d0494336eb26",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b18.png",
+      "sha256": "6634dc4451eaa15319e556a0f880d6d91c51961c272f7b6f651e5b38e59e1c0e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b19.png",
+      "sha256": "c67ba9c0c30b5290bf9fe4bb7f182fb2922070550587a55682eaefb73ec8a54d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b20.png",
+      "sha256": "84174b01d8f8af27c5643bcf56dd0fb8e67ca285d19861cc69e97dc3e9f11f91",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b21.png",
+      "sha256": "07bfd194f17707c7136af0adc88d4737d2e206538ea3a1904ab5aca35ad30b18",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b22.png",
+      "sha256": "2f96a33909253a7aa28102a423c678dec14853c76895f4eddf50e58c8121ff82",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b23.png",
+      "sha256": "f68b35b9c64b7cae02c1eb8a1653077b2beb455c3bf662b847539c0cbbd2316d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b24.png",
+      "sha256": "cc81bcc325b77f3c2007e245ddebf9e3ed06aa69c455011a8261a0f00d065baa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b25.png",
+      "sha256": "7adcdeb62256f48dc6986a79395a72fa8d9a6afb26cc41ee7f80c87a64d59ce5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b26.png",
+      "sha256": "0e7b1357493d75c0e4e9915a97f125fed4759a4709b0afddd33334652084a477",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b27.png",
+      "sha256": "674b939538e3f2a6b9f23333dd0c19f04bbbb8bf119da373d661cf758d78b67c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b28.png",
+      "sha256": "3b968a33e9bdace640b524fb09afd97ca4456b17c192464c6fa936b4b6089f6c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b29.png",
+      "sha256": "5de67613b241579c450fac5ac57186388af58ae8bd2fa4209dba2aed02b3e037",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b30.png",
+      "sha256": "38f7f8c662b1071b0142dcad80b3c20760c3b4d10606041a62160d28bf14fb1d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b31.png",
+      "sha256": "36f022bc7e82861c78e18f949b9c96001898b05705b5310cfe12baf423635f5b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b32.png",
+      "sha256": "03e366da7e679f9f81448837f8afc09dad671337c1377063548e40dc538ed5b9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b33.png",
+      "sha256": "cc88672510af02423068fb0d46c573b226c0fd543b8b316739cab9b6ddc6cc7f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b34.png",
+      "sha256": "bd457bdf6a9b502d462ac8a710281fa986cfd46c84d7b62af3347da657a8e621",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b35.png",
+      "sha256": "79f1bfb2c52b2239040d328a79788bac0d8619cb3a2d0a28b4931d23e7c28ed0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b36.png",
+      "sha256": "acdf3c40cb1387012d16f420062cb65f45fef93b780526da08179826ef7a3aab",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b37.png",
+      "sha256": "fa52ee8f164305d236b04f92acc585d50f22ba1b32060881ffdf1b1ea49e6256",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b38.png",
+      "sha256": "5935724d94354cb730c22890411e90496851ba664e5e51b3c76ebb5325aba602",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b39.png",
+      "sha256": "d1d72f7fd76efb327a4c11134d15c4ce0a14a2997bcfb64919df3e2e5e674583",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b40.png",
+      "sha256": "aba2d891104dddcd44804c85b3bad7e87471c82e66fc0a4e3bdcaa42b596a8b8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b41.png",
+      "sha256": "69ca035f3c35875c626ac81c4d9a4111bcd1a06a460cb44dd85d5c1d3a31b2c1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b42.png",
+      "sha256": "5d747270efacedd943d281d527051ef10ac8e9b087bd3de6f1a83bc58eedc2a8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b43.png",
+      "sha256": "14cf53926845a19b5f4228a619907dd04cf0fb21b66c307889e49e0578a4741f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b44.png",
+      "sha256": "a98796a6aae37118b422019e19c62ab58382fbb31d7612478de5487e1961cbe1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b45.png",
+      "sha256": "02f2b6048e6cf147d4273b7d334205e34340c0fa6ef6dacea3b3c0e08e5e2eca",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b46.png",
+      "sha256": "f13eb94d240524110ecd9cd8e6f7217f303c1a55779b2a7704c6e09056b5758f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b47.png",
+      "sha256": "8d4bb36b84dad014f9841f25a3e3a0543a23026bdc4bb8791a3c0e45594668a8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b48.png",
+      "sha256": "f03115499c3082d4a02f187edb5329cffacf6c0c7b06bdd2fcab232ce2c0e332",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b49.png",
+      "sha256": "1bed6b51d88d6d7a2640d1e1f6d1da97bca2912977144f6a683f1efcb237c0b3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b50.png",
+      "sha256": "5e3b39c2db60ff2dfa89cea85bd7d081480e8af306b3d8852fdddc957407f198",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b51.png",
+      "sha256": "df4122f4b86b8f6aba7786db4b8cbeba5d6f2f6ad698f0680ff9d3c90a8b9a23",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b52.png",
+      "sha256": "1d3c641e378d596e42136e4e3f0c1746c737335979ca961d5ccc6319fff88967",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b53.png",
+      "sha256": "52176c0e37737e0a369fdafbcc56e9e51436f36b416bf657aa9d0514f170598d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b54.png",
+      "sha256": "9823eac465a21c5e82f07df1939a1f94705e47b02121ed301d93ed3bf63efcf6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b55.png",
+      "sha256": "b59d9cf6665b8e34896016260109cde499092f2554786b5c68287fc8c6c477bd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b56.png",
+      "sha256": "b01a067f705c3054ce1959324282296bb22b0b07310bdb1e226be3e60a8c2146",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b57.png",
+      "sha256": "3f2927ec8020d674954d93c466ee65c148771f4aad27d51080a8d0c441893e04",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b58.png",
+      "sha256": "d873ad972438cce80621c1a12fd60fd32a6e78bfea0e3c98500de629c9f0911c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b59.png",
+      "sha256": "0e44092b9ebedfc6c000527fbe2bab7c1504c72f568bcc02f81c121236870701",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b60.png",
+      "sha256": "1d0a1a49b35fa9bfdb08f729c8540bea79a60d02f1516d3ee3b885a39f2e459b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b61.png",
+      "sha256": "9fd9f4802a2040b0114c71ef88a241b09c4923998b528b62772a98925a996363",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b62.png",
+      "sha256": "90e77ebd844a501288eb63566d4da05920d6449f5f2b29a0d637a0724c7bd84d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b63.png",
+      "sha256": "4d4f32b1570ee0e4c52ea32f0d8a369b03a4e20ab2aa09eafbf2c5901ae55ca3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b64.png",
+      "sha256": "3ac506ac799e039affcad4e4762ce5d4abbbe51d04e9090bf1d988d0dde8a620",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b65.png",
+      "sha256": "22153d5a3f2c7cf9cedbd149f8d10f1efdf0a8752f34b44cf39dc83146914883",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b66.png",
+      "sha256": "a826a90c43be9596a69001730a264d1fc5b9c8e29953f3eb1dc57273bdef4c1b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b67.png",
+      "sha256": "548efeaa521a0f728867ba6483c81c19c2130ddbce1b794d095dc785be068e0f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b68.png",
+      "sha256": "d675479db40cd9a8479b05bb6a9077de07bd39b352714d7759c736d602f7bca4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b69.png",
+      "sha256": "298cee7958442bd1b2f293d792e4e4748ba8a315c1752739f626d048c143b6df",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b70.png",
+      "sha256": "76e270060be7d4e6a5cd8f0130050ab3013094d739dccb960dbb10979b765740",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b71.png",
+      "sha256": "7ef2fd37297cc7c863695ff1bfd57aec83565130baf53aaaaa1c1376391b6ddc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b72.png",
+      "sha256": "679be20be55321e1babd958664c662d7b7da675040f5db7e05e57baa549f2f51",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b73.png",
+      "sha256": "ca398724fd9cdbabd65a6a84afb3d66dd5c104266a3db57e37fcd491e19928bd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b74.png",
+      "sha256": "56ca33b184bf444b49d83db210d593111be0fb4133fb6ace2b59ec714201f374",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b75.png",
+      "sha256": "47a45a3d7d14cedc05dd7d9e440d221610e6cd7c2bfefa35c2bdacf991681a47",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b76.png",
+      "sha256": "6966f46923805182adbdb6340884b91130b89700d9aafa871a9da31e072e0418",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b77.png",
+      "sha256": "94d56a42a294a62aa550d04d84071c327a5bec973c6570746a46600bc00f6f0b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b78.png",
+      "sha256": "43d8cb46114382b84de6905dd3737e07c4b681aaa176784b042ce81658c0bfd9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b79.png",
+      "sha256": "2615867418769c5a0666467839fc397f5bb4a3951b151b6a2b5cf20476c6271f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b80.png",
+      "sha256": "0337c95a3eb3cf844f37b80dc8a29e11224a88328bf8eb08be62b15a761cd237",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b81.png",
+      "sha256": "8e7d7e33f2bfc125326533655de77653dd9884e78fd0dfa57a46db8a77762ca7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b82.png",
+      "sha256": "9cf3bf9334934407ef5b7025a49662a85bc3cfe826781821153b3c0e26bd9ad6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b83.png",
+      "sha256": "424a7bec04c6079343b9b30997ac59d9b4202604371f80faf7c2fa7e901df071",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b84.png",
+      "sha256": "cd64e55bba06902d1e5c00019d7978780fcd1198e0080fead17157197d103c00",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b85.png",
+      "sha256": "abb41d6bcfec6abe1c00efa6ddaab198bbf9aea6f529ad152f6173736285596a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b86.png",
+      "sha256": "b10c3609fa01c13a50739e3b047b0243d3b9122e80836d5841a01911f5b384b1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b87.png",
+      "sha256": "29c1dc137962bf1866e02ebc26b74b7ed480128b179a21db0dcf855162626ffb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b88.png",
+      "sha256": "a80c7f619aa041670f0d4df23486b5b22b0a2da19494a4d295555382a428f663",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b89.png",
+      "sha256": "9dca817c3da66201fc8fd661bd49f413449978c3960630d66c7d3df8a0d061b9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b90.png",
+      "sha256": "1427d7561fa55b4e7e7dea5d4e81e531b2733b585678124435b89992f0d7bf1f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b91.png",
+      "sha256": "e20c2a34b8348b12c4b6dec357d51979ebc86f37ce8160b489971a1fb78cfdd5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b92.png",
+      "sha256": "210aa310e5567580eb38a793c7aee8728c083c373e40556c4bd69b1a2e82d506",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b93.png",
+      "sha256": "081d998780e20396dcf8fc6b8932209c8ce2eac31e01c92f9c67ae3421bffbcd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b94.png",
+      "sha256": "e59b8880b24c3e5f2b00f1eca06178968daddd7df1a3879a53d2111d56a5cad8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b95.png",
+      "sha256": "1780c7137bd6e66716729e29b99726c1e5a13d693369650bd65a89639f9a4891",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b96.png",
+      "sha256": "e361a2768557f2feb8eb842598d5ff033818d130540bb6b156efe4185534f61a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b97.png",
+      "sha256": "5590d7b6994b9d20df78aa91fd2a90239fcdb5706d257c1fe80e66b1e59545f3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b98.png",
+      "sha256": "b91e40060f0fd0b696a26d455d4001c3742a6b9eaeeb603aae57695849180ebf",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/boss-b99.png",
+      "sha256": "c49e17c2c42319cbbc164a98dfc6b520b0e5b20212066c7cf6ac36b43138b6b7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w01.png",
+      "sha256": "a71bfc5c7799d24853df6c4ebb1277d0d61ccc8d528f8bac8d05db5941f5de62",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w02.png",
+      "sha256": "0403c62a1748ddb57196a2363964c844f7fbd68d09cce4a7149b32e186b6284a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w03.png",
+      "sha256": "d317ad6a85a3fba13901add0e9c382f36925c09a202a5f8a76248d1f20a46625",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w04.png",
+      "sha256": "71e3de482a26bb73d9ea826738e27d6c2e9b00ac081308d9e9ba3634bf2ff78c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w05.png",
+      "sha256": "8b1ed3b04eadbef817cffc1e2258e764021c3d3abfc8bf0a087070bff415834c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w06.png",
+      "sha256": "8e62fb9f1c9569375746dd56b7e364eb8a47a600f2d45e6ddde0dcdac2b7f328",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w07.png",
+      "sha256": "3265d35ce354a1a8d42cd7f18ee11c2f6483fb2f70ba0e0a0350ba9e971ce76f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w08.png",
+      "sha256": "42af993a8c63a03571b52c478d424f314fb1ef5ddbea27fe9865080293f1b10c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w09.png",
+      "sha256": "3555369df2c8be9bb4abbcccd6e00b5af2975c5ae7121228195fe49e4aacef73",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w10.png",
+      "sha256": "5af28b0a0dbf6e50a00a51d61c65879fec9c4f8a14b995909ab7791e17055bba",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w11.png",
+      "sha256": "2bebb3e4a7cb74fbde736a5dad25481740cfe9d57288551f89391488f601427d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w12.png",
+      "sha256": "3f0accffa014f26456d68cf9b30c054b9dae252f2268dcdc0a7efd8c35b8ef8f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w13.png",
+      "sha256": "772f43b9034629e6b4e3912c2d7319e248813737abcc7be286f6c61ef5e09648",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w14.png",
+      "sha256": "5d7d8d761d20499d75691781b3f1eb85b0963bc9a91957eb81680048f934c22f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w15.png",
+      "sha256": "aa1b944f882425784cf4ad7ace12dca26aac7984d4d648b8578e9f59a489dcce",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w16.png",
+      "sha256": "798c7f00f6e21748042fa7c86329a79a247b84d5dad502db6edfedafc2318bdc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w17.png",
+      "sha256": "ea00432f330c4e1e735249aab2582ff88b5f2850adfad12b09200364824229ea",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w17-up.png",
+      "sha256": "939b296121b27af0b1f900564687dc8ba229940cf30dd940ac4e479b39efdd88",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w17-right.png",
+      "sha256": "dacb0e5616ce0dd247d85a4ffcdc031269d3d58c6e29204a672910ca6f4f365f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w17-down.png",
+      "sha256": "59bc6a346d14f68796a7e9870416b04aa644e787ed363b00277739bdf6556ecd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w17-left.png",
+      "sha256": "d18bd49400f57e2f20eb938c32fb6995e1c9de67d64a8110099956c22049b30a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w18.png",
+      "sha256": "6c903bf36817955e84b4a9ff9c11ad62b761e11b0083cceab2c6b68f97e06862",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w18-up.png",
+      "sha256": "359d17461bf9fa6d433f58a76c59b7534dab584613078328890cd488bb1fa520",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w18-right.png",
+      "sha256": "04512f8a9ae0391aa47e41e784a22427601cdbbfb32a9a9363a6d04e089d60f0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w18-down.png",
+      "sha256": "84507a06d94749cea9f8916d314d10d95188d9ee21a15b5204647848930fa243",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w18-left.png",
+      "sha256": "a044bd4270d0067cd5e379993fafea43a3d6d89c2c0dcdc6b1a3776f35ba459a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w19.png",
+      "sha256": "c3f255df9df377acd80155feadffbb670dc8f47724fb69e7b7b9444ceb927f70",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w19-up.png",
+      "sha256": "f6ba9c86962c1bb319c6592f6297994b8981a70f5438e965f22a18685d93c1f1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w19-right.png",
+      "sha256": "5586684f29fe0b62ab37c1d7a50e1f24ed277850a26925f665b74439aa798f98",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w19-down.png",
+      "sha256": "467c99daa9918ff11ba14c179e1717b2ad2c3b549c09a62620a11d09ddb9c97c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w19-left.png",
+      "sha256": "a90d8738ee6a55090d08b4585d7908ad42d5adadd7abf0bc62d74051ec834106",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w20.png",
+      "sha256": "948159c5911e6a8ce75f7eac60cade047cc472aa45ba5a3244aea583069d1dab",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w20-up.png",
+      "sha256": "6fb0f11efe3c84c111a88fca45f83328adc880bc8ad3cc22deb8ad0eff26be67",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w20-right.png",
+      "sha256": "63a9aa9657bdcb157b749abcde45926ca21da5141dbfbb82a2195634c80e1593",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w20-down.png",
+      "sha256": "49e8bbb4674c5c35f88bd2cefd7dfd06610bc7b3edbf3d33b0eebb68b375add6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w20-left.png",
+      "sha256": "d9dcdc93b72a18721589ca2bb0951c13e11a4296309b2d817beade24abd006a3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w21.png",
+      "sha256": "3bbc4c5c977984890da4b35cdb655aefb5afe8049b3b1e4bb284a6e71ffd46fa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w21-up.png",
+      "sha256": "ee10d2ebdaa198cbb6d1d980469dfc26e4be84d8e34a4dde513608aa4222e608",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w21-right.png",
+      "sha256": "f0fb14531b06544c892b8ef2366db4138db8d6be913285dc7244bcb360bc4979",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w21-down.png",
+      "sha256": "5a690c8dffd6505046aac700e39870fc9fd51bfc7ed13cf8758d2a5d59b8da62",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w21-left.png",
+      "sha256": "b744d403af939042f5738cb0724ea55c0b402ad4bf3068d39f848fe4f9fcc83a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w22.png",
+      "sha256": "fe46a754c48ffa555cebb39078a63db792f8a8ff1202c44ef0f8e52671741658",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w22-up.png",
+      "sha256": "002f7556802e05b3d7ab8c552be936b9482729cd8c2295a0664a85b44a297914",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w22-right.png",
+      "sha256": "76d8ca2bce3bd493be2cd62424bf563ad2dfaac40be8f5b0f7956fe68d47b68b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w22-down.png",
+      "sha256": "b210429a2f6e1399c212d8878809f7ea1f0e90900fc1c957aba091520ec5dff8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w22-left.png",
+      "sha256": "ac7d0adca24071305700a9283dd8b241669c2e0da738232dd1cafb976d26c142",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w23.png",
+      "sha256": "c61a0160ce5d6591a26421d79d22292f256f502c0c29d2078d6fc83fe0407bb7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w23-up.png",
+      "sha256": "4279031197b1801571e037c3bd9f4592252315f46cd21e16999f817a8de4a0ee",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w23-right.png",
+      "sha256": "6dedf0813c8ecce2e0b57aedefa1c121ddbdd0c44aa1982d339add18b66106bd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w23-down.png",
+      "sha256": "7bdc273fa690cc9022b9a3a08f026b4f2c8a7945313878fec5254b2b37eed28d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w23-left.png",
+      "sha256": "a3a1a82af03eabf193fdca23c33e11ee3c8e84d360d9c8d9ae8e113eb0f5252b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w24.png",
+      "sha256": "7b46676f206e1f6bbb285f3317a153131094a1f6f05e94d7a1d2754c8d20081c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w24-up.png",
+      "sha256": "907d23ce51c6b699d4a146329f98e577b4dbf58370c33459e3a89b1c26edef11",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w24-right.png",
+      "sha256": "84a12bef6dfe05dd97d7b95e49b90cda8602b8eab5508431a2d1d60e407aefed",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w24-down.png",
+      "sha256": "114414560b28133d056e9414b7f82d60e7db1159c1a2033f02abfde5c825a291",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w24-left.png",
+      "sha256": "e021c8d669b84521318e3155abcc66508e7214626c7531a6b332c63665bf04c9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w25.png",
+      "sha256": "9c8af2d6b83a064d5e8fc7bcb41d79db84e8e71e4ad7092211dd750359d11165",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w25-up.png",
+      "sha256": "ab7735a231233cadad7fd7ee47e3c5a6554d69f91ed810151e208a8b0b583bd5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w25-right.png",
+      "sha256": "949bdd3cd8263856737d08817ab7fa6e304e04343676d25619defb8c0c2cb30d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w25-down.png",
+      "sha256": "7468126e42e91a9798228b0232196bbf455bc6c2c5136b1378617774d1603334",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w25-left.png",
+      "sha256": "6f241a47f9cfb36c836f8eee7634e029c9f81f9a623e5a14bd4aa6897c338177",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w26.png",
+      "sha256": "29f3cf7bbd5ddbc0c86a6bbaa139ca2904fb8bc7f439b4f4390bf273bc9928d1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w26-up.png",
+      "sha256": "cd0055ff20629b869dd49cfb0620db004adf4c1916204bb9905eb4ac11435157",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w26-right.png",
+      "sha256": "539edc6724927b11cd3279295e535614e473879cafda83f8d10b77af1edcde3c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w26-down.png",
+      "sha256": "9f5c2ac6a6649a7da27a6b816088f63407221dbdbbbc7756a684bf681292471b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w26-left.png",
+      "sha256": "d4a4267ce5b7da3af138a028fa9be3b82f55160dded89e8222cca92b28b8658e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w27.png",
+      "sha256": "97862cfc3aa7940b86cf4ec02fb130e1ced36d71c675c4ee4721e1daff6ece99",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w27-up.png",
+      "sha256": "a937e09ca21f03497b53a6f63ecbe132ef7f06abefe3417336f1fc84a813c13e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w27-right.png",
+      "sha256": "be9bc174172b5fa9431f28f4f109955daa843ea9a6a67b5c421c8a9ed824722d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w27-down.png",
+      "sha256": "dde5763c47d3db9fc3c0b9290a0b57ec1f69ffe0dd4a076c9ae6630636df94d0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w27-left.png",
+      "sha256": "b7aaaa290a31f5e763c3fc8356b5f3f4d50926ae64eddfca7d43f2cda108c79b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w28.png",
+      "sha256": "4e185b96223f0348163da5666886f59d01fdd35a2afc7e46b698fdae846c6786",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w28-up.png",
+      "sha256": "1c1e96298a81e04fbbe2e247c993f3f4a918d2d1018283b319c997f7251c8b3e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w28-right.png",
+      "sha256": "a8ac6c61d9d384b66f212e01652a6dd27d4b7335fc821484889ce34067b9d23a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w28-down.png",
+      "sha256": "a15a4d3a586f69bdfa3e7fe15c55cc72e5bf467cf21342b2768530a79cfe83e5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w28-left.png",
+      "sha256": "30185e91849b7fcd447cb5be6de6fb903d54192c01fcc77d375e9dfb55fcb761",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w29.png",
+      "sha256": "ff9dcf35ebf618b02b4b18b6dc8826de8e6a2c8115027b43e984a6a287e38a1a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w29-up.png",
+      "sha256": "a3cf52cce9d727bbb097a9a1337e7c92eaea5e083e33337fe1205dae960282a1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w29-right.png",
+      "sha256": "e3d98143ec1d9d3a04ba398292f6ab582285a100e42aadf2a1d6f736bec07214",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w29-down.png",
+      "sha256": "b580b4de54d0871e334e412cd8f7ebeccab796e65c6d3c9fd16caee631915e23",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w29-left.png",
+      "sha256": "560721116e025f14788932547ebc5facef708ee90f49b16678e5bc7f85c1e56d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w30.png",
+      "sha256": "61b22516fb59bd43893dc4526acdf976de03b9df89c5ab358eedde5e544490cd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w30-up.png",
+      "sha256": "6b79cbbc4b6b020459145ade9cc47bc4839537352175e399c9f79b125a188f6d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w30-right.png",
+      "sha256": "0a5ab7581b133f3f166e0acb149bce80118ca30f5c2457c11605adb7dbfa0e99",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w30-down.png",
+      "sha256": "e44af8e956e66bc97f7dd920ab650ed0b50b61f57304cc9a0521719c43fbc12e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w30-left.png",
+      "sha256": "a4c60bf1983d807a8c1ecab6e3f7f23de3bd59d078a2ea871822f18866681fde",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w31.png",
+      "sha256": "2b93f6013f5958c0b77ebb6cb003657de4afdf0255bcb34d7256468ec20ba47c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w31-up.png",
+      "sha256": "247c533d0260fe023963f75648430d05e73ea87fefe76bd748bfe7a17019fc55",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w31-right.png",
+      "sha256": "306df584531cf47f6a4c44efb44a21fb6cefac1c5d848e3e9f95a55a600697ae",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w31-down.png",
+      "sha256": "828afed1dd26f6efb64d77405cc1d91a32dac308d443a69779dcb650942bc455",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w31-left.png",
+      "sha256": "b2264b761ebb822305bc0408d9a1d88b101c54f9699aa6f3e5917d79442530af",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/weapon-w32.png",
+      "sha256": "e2e812bb854b65c5c17cf744bbfa7970a0d7cdbe4eadff322b7807e710169514",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w32-up.png",
+      "sha256": "cea1e362e2047b32a1c94b95251f9be95b7156178a7aefef83bb822a7a2a183d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w32-right.png",
+      "sha256": "5cf96cc8d6c0a5ba85863309292521929a30587345961ccf401e6c5021fd398d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w32-down.png",
+      "sha256": "792ca1c49232ba8665b5bd5e11dc914375105f37f1875372507d44e1c5836a8f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/equipment-w32-left.png",
+      "sha256": "c2fd8a1310ed3439eec1f9971ba5475c549d10e1d7246c3421ded3363f6da679",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-00.png",
+      "sha256": "b23cf34583926d2ece3d86e354cc30fe832d4efc749f7c36ec366b3a141b1fc8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-01.png",
+      "sha256": "56c0f20430bce3f64728998c89f31f42179a3dcf1e64418b0675a47608ed2c0c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-02.png",
+      "sha256": "dbffcbd7b4b97d0ae6d11bbfdb413d4dd93033cb5eaab9f06caca8b3d8adf2dc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-03.png",
+      "sha256": "1f643d4cab9278f81409408080593081eede59c64afafbeb18c978ea6e376577",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-04.png",
+      "sha256": "1d261aa9fa25b552c8651f828b4e88ed72b26ee790b3e42406d71d7f66e0797a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-05.png",
+      "sha256": "43b90c3a328c3480d134ca6eb02b754fe3e64210f5378d61b19941c7ee056de1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-06.png",
+      "sha256": "400e03bb00f116b8de75bfefda99d4cd4b79aeeacdbc02f3cc712dcc9b009710",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-07.png",
+      "sha256": "c6cb849118cee5523966986ada12a1a6547e37aa8febcb5a02942d2197c17c60",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-08.png",
+      "sha256": "8d323d196423ee045de0f0bb56282ae4e4a052ef8eeb8762d22ee14bd2cb9816",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-09.png",
+      "sha256": "8ebfe9c6e8e51d5647876760dd2bf3e554dc7a9bffd6b5ae9e025fa2eb782144",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-10.png",
+      "sha256": "451838b0bc281c0ea902dc719ae80c6078594e623b3c0c9805f0f6093af2464b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-scenery-11.png",
+      "sha256": "d7009222ff767719d5e43b689998c3e5a2c2947c763f1f17b7b0f4a8886daac0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/double-boss-room.png",
+      "sha256": "ba2b43735026bd95e7a6f0b0ade19b3b1aacd6034843b3897ba367480390f94d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-00.png",
+      "sha256": "dbac6a207092752ba55e22e7bb0cbabb798268cfe5e1560df3189da439c986eb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-01.png",
+      "sha256": "11d6522b60e843f2081b9e457795442cd705a470b04d16b4d167ba51c5de14db",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-02.png",
+      "sha256": "69d14ad0f5e5caadd875754a12b6f2cff175725cbd2a47efd060ab870ce2e94b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-03.png",
+      "sha256": "3650c30f15bf3d9be64901c1bdb1bdc2e46fcfc74e305e1855ed4ee1a0dd3997",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-04.png",
+      "sha256": "c6cf34a2736c41ac12afbfe0576df73c08d6dd280a18d71fdef929eac7336272",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-05.png",
+      "sha256": "809d6e722ae30a2c47b129399136a1ab7dd02bccae38c85ff4c17f38869a620d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-06.png",
+      "sha256": "c29c9c058d2dd380f45a498e875bb99f53576483213f2855b78ba36aba2e9b1c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-07.png",
+      "sha256": "87874f49e0872ceb7bb3cf5f9426f0bc7074ed97075ab80243227d69aa3c2baa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-08.png",
+      "sha256": "054f0f0480c0db10f79d1d1f6b2ef2a15ec056487eded0e76a87c7a41608963a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-09.png",
+      "sha256": "eaddf94790215905c7271399d9d71f94145dc131dd03aabc9278127c9c93001f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-10.png",
+      "sha256": "f8ad4066047072073407fbaa8451e55780b6f57b501a06636d2d8c878c0b766c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-11.png",
+      "sha256": "3f1dfb5b65d14a0267cc8d6219a098a691bb606d67134744f7461372150b811b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-12.png",
+      "sha256": "e704e8bcb2f979d4528521d711eadf7ead53fb08d5c323a8bce526e10e5e837a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-13.png",
+      "sha256": "050faff2f739fd004b45bf5dd09689cfa4ee2befc8deb1e61a0ab2fa83ae7fc4",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-14.png",
+      "sha256": "ce2b98b37c81572ba667ce42e817918836381d9a4cbdd97985bcef2f613c7ae0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-15.png",
+      "sha256": "7c4ac07484da900ab05b7a31857e91a0e11d42551624b5b21b65bbc666f50222",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-16.png",
+      "sha256": "18137cca1ee2b7f9484598339482b2e867fa9ad826678a0c6c73ebd434706bd5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-17.png",
+      "sha256": "093707882a4ce8aa862255b124fe96ae4d7711e41490ef2f7fa9d597567a83da",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-18.png",
+      "sha256": "f988744c4a31d55b6f728d3596978cabaa8cbc10b4b6e2fc72a7af482e18a908",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-19.png",
+      "sha256": "6d29c6e42f96f8afbf6d609c7eaebc3b0ef08f80919159c43f63d1a63ab15579",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-20.png",
+      "sha256": "2204c3f737bb3974ce9b7da24861884380bab7804f02287c82ca9836fba73b86",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-21.png",
+      "sha256": "574f45f98bfc298fab99ab08f9eb3588bd05506985f06aee8cdbeac007837752",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-22.png",
+      "sha256": "50aeaff6dd7766adab4c61f861465bc69b6519382345ed3fa463193c321dc1b0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-23.png",
+      "sha256": "dac930fed8fef9a3714e7766e8ae5adda5297792946dc132039923d30706e994",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-24.png",
+      "sha256": "6f07e8f41b406e09c802b5757366b34f6b6608b033f199b6bf26914b2534ed4d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-25.png",
+      "sha256": "7f631ba8b602755582a1f1dfc66efd7620232786c5629deb9487df71747867df",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-26.png",
+      "sha256": "32c6c6bba8ca8e305527978ad4dcf3003cc6a479aedfae94a1098acfc8efe3bc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-27.png",
+      "sha256": "81e98f5107fc00a0f48ef457c8ffab778f4a1b828f3609a3b490b0c7d03f4e91",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-28.png",
+      "sha256": "2038302f8892be823d0c99cb509498742ddfbb9447e1ddda4dc69c176f0d7c33",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-29.png",
+      "sha256": "4de3db000677283b1265c8d4b94f7f1c20c87a6bae0ed8684036f0a2fb88306c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-30.png",
+      "sha256": "243d579d93bd4ae5fbbd79a1b025b73dae285d194d2cccdd177f8610151e4faa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/motion-dual-31.png",
+      "sha256": "fbc85ad7dd699f609040d62556979b256dce3c84971f1f4fde8a964279e4bddf",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-scene-00.png",
+      "sha256": "e6ba5a6994905aaeab9690c3365018249e2dbdf9dba3d966eeea2da1d827c3c9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-scene-01.png",
+      "sha256": "0bbf64e4b84186fbf2f788bbe422c6454097da6920147eb936c90c30ee1bc499",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-scene-02.png",
+      "sha256": "90afc5aed3edef8e7102079fbf796d2fd61d553654d44188108a74527f8fc6c9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-scene-03.png",
+      "sha256": "d94aa2ff7c03b13242cd7342c15ba118bd51de9436fcf82015327bbda5b9e162",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-scene-04.png",
+      "sha256": "17e03ea1719d94389e6f278db393153fa9c83601ee414da6257836b85fe7f776",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/expansion/ending-result.png",
+      "sha256": "c4cb155a705d3aefb4509761bd3e72672c46374d1e6a0d339c15bd3861ddd55a",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "expanded_environment_review": "20 independent themes, both variants, actual panel boundaries, distinct palettes/materials/architecture and 20 matching mob/boss contact sheets manually reviewed",
+  "engine": "4.7.2-stable (official)",
+  "renderer": "gl_compatibility",
+  "compiled_windows_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "capture_timing": "fixture clock frozen until two real viewport draws; screen/mode checked against named sheet expectations; fixture tick recorded",
+  "generation": "Illustrative art: Sub2API / gpt-image-2.5 reference edits and original crops. The menu/map/combat board is a reviewed concept reference; rounded runtime UI remains native components and licensed Lucide vector symbols.",
+  "ui_design_master": {
+    "path": "docs/incense-debt/reports/platforms/windows/ui-style.png",
+    "sha256": "d65dd79732e1ead3dfb4d64bf9e7dcc2a1789aa01d5318f807e9c91e16e2693f",
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "ui_font": {
+    "family": "Incense Rounded (Resource Han Rounded CN derivative)",
+    "body_weight": 500,
+    "hud_weight": 700,
+    "title_family": "Smiley Sans Oblique 2.0.1",
+    "fallback": "Noto Sans SC; rare-name CJK checked by the native engine",
+    "license": "SIL OFL 1.1",
+    "production": {
+      "fonts": [
+        {
+          "file": "game/assets/fonts/IncenseRounded-Medium.ttf",
+          "family": "Incense Rounded",
+          "upstream_family": "Resource Han Rounded CN",
+          "weight": "Medium",
+          "bytes": 3204088,
+          "sha256": "2b47bb8b6a225002e22c498d28d3da26b7f3739b2d84f40502aa2b5680f87c22",
+          "source_sha256": "b2ec1727fbc04b70255db6cb71be0eca3b7a7167ef11655059c5576cc920143f",
+          "glyphs": 7738,
+          "fallback_characters": [],
+          "unresolved_characters": [],
+          "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+          "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+        },
+        {
+          "file": "game/assets/fonts/IncenseRounded-Bold.ttf",
+          "family": "Incense Rounded",
+          "upstream_family": "Resource Han Rounded CN",
+          "weight": "Bold",
+          "bytes": 3116308,
+          "sha256": "a36b53f44e5721793632b3d110d550f6adcc39105d21722609d0749b92086ab1",
+          "source_sha256": "f713907a21a10701cd68a7ce3e345ccdce46c789e1809d65ace54e095d7107c3",
+          "glyphs": 7738,
+          "fallback_characters": [],
+          "unresolved_characters": [],
+          "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+          "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+        },
+        {
+          "file": "game/assets/fonts/SmileySans-Oblique.ttf",
+          "family": "Smiley Sans Oblique",
+          "version": "2.0.1",
+          "bytes": 2629764,
+          "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+          "source_sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+          "modified": false,
+          "license": "SIL OFL 1.1"
+        }
+      ],
+      "fallback": "game/assets/fonts/NotoSansSC.ttf",
+      "passed": true
+    }
+  },
+  "ui_palette": {
+    "BACKGROUND": "#171e20",
+    "SURFACE": "#242f32",
+    "INSET": "#1b2528",
+    "LIFTED": "#344341",
+    "EDGE": "#43534f",
+    "TEXT": "#edf2e7",
+    "MUTED": "#a7b5af",
+    "ACCENT": "#ee956f",
+    "JADE": "#9dd6bf",
+    "GOLD": "#ebc386"
+  },
+  "ui_vector_icons": 57,
+  "ui_radius": 24,
+  "visual_review": {
+    "method": "manual inspection of references, normalized alpha previews and real viewport images",
+    "retained": [
+      "upper shrine alcoves",
+      "torn vermilion drapes",
+      "guardian carvings",
+      "central low-contrast floor pattern",
+      "original six character identities and costume material",
+      "warm curled debt lines",
+      "modern type hierarchy"
+    ],
+    "fixed": [
+      "portrait overflow",
+      "thin-font default weight",
+      "flat obstacle placeholders",
+      "reward icon gaps",
+      "physical-entry actions overlapping the skill HUD",
+      "discovery message overlapping clear actions",
+      "previous-room death effects remaining after return",
+      "async screenshot advancing to the next UI sheet",
+      "mobile reward fixture accidentally returning to a visited room instead of an untaken offer",
+      "old baked handheld equipment staying visible after weapon replacement",
+      "HUD retaining a stale world after save import or backup restore",
+      "dense boxed menu and HUD text",
+      "text and button symbols overlapping",
+      "small mobile toggles",
+      "enlarged vector symbols looking soft",
+      "focused primary buttons losing their dark text and clear fill",
+      "TextureRect sizing before disabling intrinsic icon minimums",
+      "locked character information depending on hover",
+      "skill evolutions lacking an on-demand trial entry",
+      "result screen losing the actual lethal attack identity after emitter removal",
+      "reward notice covering result retry controls",
+      "integer result counts showing decimal suffixes after disk reload",
+      "shop cards lacking a visible weapon practice affordance",
+      "shop practice tray obscuring the playfield or returning with changed wallet",
+      "ranged impacts lacking short collision-aware displacement",
+      "root state relying on flashing-only feedback",
+      "elite death source validating against the wrong content table"
+    ],
+    "limitations": [
+      "Fixture screenshots do not prove full playthrough or device performance",
+      "2722 paper-puppet strips, including 72 modular body/grip strips from reviewed Sub2 local edits; not independently drawn AI frames",
+      "These are fixture states; actual unboosted eleven-floor simulation is recorded separately in expanded-full-run.json"
+    ]
+  }
+}

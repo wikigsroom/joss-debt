@@ -1,0 +1,145 @@
+{
+	"checks": [
+		"three fingers independently move, aim/fire, and cast",
+		"releasing movement preserves the aim finger and consumes one action pulse",
+		"pause/background clear removes held touch state",
+		"mirrored touch layout maps right-side movement",
+		"complete run reaches a real terminal result: c_paper",
+		"complete run reaches a real terminal result: c_bell",
+		"complete run reaches a real terminal result: c_lantern",
+		"complete run reaches a real terminal result: c_mask",
+		"complete run reaches a real terminal result: c_umbrella",
+		"complete run reaches a real terminal result: c_ink"
+	],
+	"failures": [],
+	"limitations": [
+		"Bots do not replace human feel testing",
+		"Touch events are synthetic; no physical mobile device tested"
+	],
+	"passed": true,
+	"playthroughs": [
+		{
+			"character": "c_paper",
+			"combat_seconds": 46.6,
+			"health": 0,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "defeat",
+			"rooms": 6,
+			"stats": {
+				"ash_energy": 200.0,
+				"damage_taken": 7,
+				"detonations": 4,
+				"dodges": 0,
+				"elapsed": 46.6166666666653,
+				"hits": 85,
+				"kills": 25,
+				"max_chain": 2,
+				"secondary_hits": 0,
+				"shots": 166
+			}
+		},
+		{
+			"character": "c_bell",
+			"combat_seconds": 46.3,
+			"health": 0,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "defeat",
+			"rooms": 6,
+			"stats": {
+				"ash_energy": 200.0,
+				"damage_taken": 6,
+				"detonations": 6,
+				"dodges": 0,
+				"elapsed": 46.283333333332,
+				"hits": 104,
+				"kills": 25,
+				"max_chain": 3,
+				"secondary_hits": 0,
+				"shots": 189
+			}
+		},
+		{
+			"character": "c_lantern",
+			"combat_seconds": 46.7,
+			"health": 0,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "defeat",
+			"rooms": 6,
+			"stats": {
+				"ash_energy": 200.0,
+				"damage_taken": 5,
+				"detonations": 2,
+				"dodges": 1,
+				"elapsed": 46.7499999999986,
+				"hits": 63,
+				"kills": 25,
+				"max_chain": 2,
+				"max_proc_events": 1,
+				"secondary_hits": 2,
+				"shots": 108
+			}
+		},
+		{
+			"character": "c_mask",
+			"combat_seconds": 84.8,
+			"health": 9,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "victory",
+			"rooms": 8,
+			"stats": {
+				"ash_energy": 306.0,
+				"damage_taken": 2,
+				"detonations": 7,
+				"dodges": 1,
+				"elapsed": 84.8333333333298,
+				"hits": 118,
+				"kills": 36,
+				"max_chain": 2,
+				"max_proc_events": 4,
+				"secondary_hits": 13,
+				"shots": 159
+			}
+		},
+		{
+			"character": "c_umbrella",
+			"combat_seconds": 35.7,
+			"health": 0,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "defeat",
+			"rooms": 6,
+			"stats": {
+				"ash_energy": 233.0,
+				"damage_taken": 5,
+				"detonations": 5,
+				"dodges": 0,
+				"elapsed": 35.6999999999993,
+				"hits": 83,
+				"kills": 25,
+				"max_chain": 2,
+				"max_proc_events": 2,
+				"secondary_hits": 33,
+				"shots": 127
+			}
+		},
+		{
+			"character": "c_ink",
+			"combat_seconds": 37.6,
+			"health": 0,
+			"method": "unmodified shared simulation; movement/aim bot, no invulnerability or damage cheats",
+			"result": "defeat",
+			"rooms": 6,
+			"stats": {
+				"ash_energy": 200.0,
+				"damage_taken": 6,
+				"detonations": 2,
+				"dodges": 0,
+				"elapsed": 37.6166666666658,
+				"hits": 66,
+				"kills": 25,
+				"max_chain": 2,
+				"secondary_hits": 0,
+				"shots": 101
+			}
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-10-06T14:27:40.839967+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "approved concept references are registered in the asset manifest",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "concept_roster has an existing Sub2 image with stable dimensions and hash",
+      "passed": true,
+      "detail": "file=output/imagegen/incense-debt/characters-roster.png; expected_size=[1536, 1024]; actual_size=[1536, 1024]; provider=sub2-image-gen; model=gpt-image-2.5"
+    },
+    {
+      "name": "concept_roster keeps a reproducible prompt source",
+      "passed": true,
+      "detail": "prompt=docs/incense-debt/assets/prompts/characters-roster.txt"
+    },
+    {
+      "name": "concept_paper_room has an existing Sub2 image with stable dimensions and hash",
+      "passed": true,
+      "detail": "file=output/imagegen/incense-debt/paper-lantern-asset-board.png; expected_size=[1536, 1024]; actual_size=[1536, 1024]; provider=sub2-image-gen; model=gpt-image-2.5"
+    },
+    {
+      "name": "concept_paper_room keeps a reproducible prompt source",
+      "passed": true,
+      "detail": "prompt=docs/incense-debt/assets/prompts/paper-lantern-asset-board.txt"
+    },
+    {
+      "name": "concept_menu_map_combat has an existing Sub2 image with stable dimensions and hash",
+      "passed": true,
+      "detail": "file=output/imagegen/incense-debt/menu-map-combat-board.png; expected_size=[1672, 941]; actual_size=[1672, 941]; provider=sub2-image-gen; model=gpt-image-2.5"
+    },
+    {
+      "name": "concept_menu_map_combat keeps a reproducible prompt source",
+      "passed": true,
+      "detail": "prompt=docs/incense-debt/assets/prompts/visual/menu-map-combat-board.txt"
+    },
+    {
+      "name": "visual contract names the character, room, menu, door and impact references",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "the new reference prompt covers all three visual anchors",
+      "passed": true,
+      "detail": "menu, physical room entry and combat feedback are explicit prompt sections"
+    },
+    {
+      "name": "visual baseline binds the new board to its current hash",
+      "passed": true,
+      "detail": "baseline_references=4"
+    },
+    {
+      "name": "runtime screenshots and UI evidence remain bound to the current executable",
+      "passed": true,
+      "detail": "compiled=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; native=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; ui=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0"
+    },
+    {
+      "name": "native asset and screenshot evidence is green",
+      "passed": true,
+      "detail": "assets=725; captures=90"
+    },
+    {
+      "name": "visual contract keeps concept references separate from runtime replacements",
+      "passed": true,
+      "detail": "concept direction is reviewed while runtime screenshots/assets remain authoritative"
+    }
+  ],
+  "failures": [],
+  "reviewed_concepts": [
+    "concept_roster",
+    "concept_paper_room",
+    "concept_menu_map_combat"
+  ],
+  "runtime_assets": 725,
+  "native_captures": 90,
+  "scope": "reviewed visual references, prompt provenance, visual contract and current native evidence; concept boards do not silently replace engine assets"
+}

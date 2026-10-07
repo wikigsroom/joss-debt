@@ -1,0 +1,202 @@
+{
+  "recorded_at": "2026-10-06T14:29:03.262366+00:00",
+  "version": "0.1.0",
+  "status": "playable_three_chapter_alpha",
+  "product_complete": false,
+  "windows": {
+    "platform": "windows",
+    "path": "build/windows/IncenseDebt.exe",
+    "bytes": 179193200,
+    "sha256": "b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0",
+    "engine": "4.7.2",
+    "build": "release",
+    "playable_scope": "three-chapter alpha: six unlockable characters, 18 skills, 54 relics, 36 talents, nine debts, 24 enemies, six elites, five bosses, hub and endings",
+    "source_status": "rule/content suites and native visual fixtures passed; human balance and physical mobile acceptance pending",
+    "device_tested": true,
+    "virtualization": "none",
+    "native_runtime_tested": true,
+    "native_runtime_report": "docs/incense-debt/reports/platforms/windows/native-render.json"
+  },
+  "android": {
+    "platform": "android",
+    "path": "build/android/IncenseDebt.apk",
+    "bytes": 97372314,
+    "sha256": "68e00d1ad1efd9d4fac8cb7a9c5c4229be6ceb821c2d7637b7b0c525b231e39a",
+    "engine": "4.7.2",
+    "build": "debug",
+    "playable_scope": "three-chapter alpha: six unlockable characters, 18 skills, 54 relics, 36 talents, nine debts, 24 enemies, six elites, five bosses, hub and endings",
+    "source_status": "rule/content suites and native visual fixtures passed; human balance and physical mobile acceptance pending",
+    "device_tested": false,
+    "virtualization": "none"
+  },
+  "ios": {
+    "platform": "ios",
+    "status": "native_mac_handoff_prepared",
+    "xcode_project_created": false,
+    "signed_ipa_created": false,
+    "physical_device_tested": false,
+    "source_zip": "build/ios-handoff/IncenseDebt-shared-source.zip",
+    "source_sha256": "1f4d100e7b4d42fa62f1b7dec0462de99d3d025d2d9f124c6c2d5b699f3aeb85",
+    "source_bytes": 76350614,
+    "ios_template": ".local-tools/export-templates-4.7.2/ios.zip",
+    "ios_template_sha256": "fd3280d10dc75356dded006f6f8813f40a5aebd32d128592b781256d8ffbdff4",
+    "source_template_archive_sha256": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011",
+    "minimum_ios_version": "15.0",
+    "required_external_environment": [
+      "real macOS host",
+      "Xcode",
+      "Godot 4.7.2 native macOS editor",
+      "owner's actual Apple development team",
+      "iPhone/iPad"
+    ],
+    "virtualization": "none"
+  },
+  "catalog_counts": {
+    "characters": 6,
+    "routes": 6,
+    "weapons": 16,
+    "skills": 18,
+    "relics": 54,
+    "talents": 36,
+    "debt_contracts": 9,
+    "synergies": 24,
+    "regions": 3,
+    "room_templates": 18,
+    "special_rooms": 4,
+    "enemies": 24,
+    "elite_variants": 6,
+    "bosses": 5
+  },
+  "ios_handoff_verification": {
+    "passed": true,
+    "member_count": 1796,
+    "report": "docs/incense-debt/reports/platforms/ios-handoff-verification.json"
+  },
+  "platform_parity": {
+    "passed": true,
+    "core_files": 7,
+    "game_member_count": 1795,
+    "game_tree_sha256": "e04ddd1d0a20aeb4d8dd7c06135d6f8f9a000cf1ac744fd7291bee79a3ffec54",
+    "android_imported_resources": 725,
+    "report": "docs/incense-debt/reports/platforms/platform-parity.json",
+    "scope": "Static shared-content parity only; no physical Android/iOS run and no opaque Windows executable PCK byte comparison"
+  },
+  "runtime_assertions": {
+    "core": 36,
+    "content": 97,
+    "campaign": 46,
+    "input": 10,
+    "advanced_input": 54,
+    "exploration": 45,
+    "route_navigation": 24,
+    "adaptive_music": 101,
+    "save_transfer": 51,
+    "weapon_motion": 22,
+    "weapon_special_rooms": 21,
+    "platform_contract": 36,
+    "run_history": 34,
+    "impact_resume": 54,
+    "shop_trial": 39,
+    "synergy_matrix": 35,
+    "daily_run": 11,
+    "choice_history": 7,
+    "achievements": 9,
+    "run_telemetry": 8,
+    "loot_sampling": 14,
+    "menu_hierarchy": 18,
+    "visual_contract": 13
+  },
+  "direction1_system_audit": {
+    "passed": true,
+    "systems": 15,
+    "report": "docs/incense-debt/reports/runtime/direction1-system-audit.json"
+  },
+  "route_matrix": {
+    "runs": 24,
+    "victories": 24,
+    "focus_routes": [
+      "ash",
+      "fire",
+      "ink",
+      "seal",
+      "thread",
+      "wind"
+    ]
+  },
+  "route_balance_baseline": {
+    "samples": 24,
+    "routes": 12,
+    "report": "docs/incense-debt/reports/runtime/route-balance-baseline.json"
+  },
+  "loot_sampling": {
+    "reward_samples_per_floor": 10000,
+    "economy_samples": 10000,
+    "report": "docs/incense-debt/reports/runtime/loot-sampling-tests.json"
+  },
+  "menu_hierarchy": {
+    "checks": 18,
+    "report": "docs/incense-debt/reports/runtime/menu-hierarchy-audit.json",
+    "hierarchy": [
+      "splash -> files -> main -> character/challenges/stats/options",
+      "room -> pause -> history/achievements/settings -> room",
+      "result -> review -> build -> review -> result -> main",
+      "save transfer -> preview -> commit or independent undo"
+    ]
+  },
+  "visual_contract": {
+    "checks": 13,
+    "report": "docs/incense-debt/reports/runtime/visual-contract-audit.json",
+    "reviewed_concepts": [
+      "concept_roster",
+      "concept_paper_room",
+      "concept_menu_map_combat"
+    ]
+  },
+  "full_run_outcomes": {
+    "victory": 12
+  },
+  "five_boss_victories": 2,
+  "native_captures": 90,
+  "native_resources_loaded": 725,
+  "native_interaction_checks": 75,
+  "native_keyboard_checks": 105,
+  "keyboard_report": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json",
+  "native_audio_checks": 22,
+  "native_audio_recordings": 6,
+  "animation_strips": 333,
+  "audio_files": 112,
+  "music_themes": 9,
+  "music_stems": 25,
+  "save_schema": 2,
+  "manual_save_transfer": [
+    "checked_json_file",
+    "compressed_text"
+  ],
+  "number_encoding": "ieee754-f64-v1; legacy decimal-json remains readable",
+  "held_weapon_combinations": 96,
+  "held_body_hand_frame_pairs": 576,
+  "ui_refresh": {
+    "panel_radius": 24,
+    "vector_icons": 57,
+    "body_font": "Incense Rounded",
+    "display_font": "Smiley Sans",
+    "font_files": 4,
+    "character_trial_forms": 18,
+    "report": "docs/incense-debt/reports/runtime/ui-refresh/ui-refresh.json"
+  },
+  "release_readiness": {
+    "software": "passed",
+    "release": "pending_external_acceptance",
+    "report": "docs/incense-debt/reports/release-readiness.json"
+  },
+  "external_acceptance": {
+    "release_ready": false,
+    "report": "docs/incense-debt/reports/external-acceptance.json"
+  },
+  "pending": [
+    "human balance and two-route acceptance for every character",
+    "physical Android installation, input, file picker, clipboard and thermal tests",
+    "native macOS/Xcode signing and physical iOS run"
+  ],
+  "virtualization": "none"
+}

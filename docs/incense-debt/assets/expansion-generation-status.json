@@ -1,0 +1,260 @@
+[
+  {
+    "name": "themes-01",
+    "status": "existing"
+  },
+  {
+    "name": "themes-02",
+    "status": "existing"
+  },
+  {
+    "name": "themes-03",
+    "status": "existing"
+  },
+  {
+    "name": "themes-04",
+    "status": "existing"
+  },
+  {
+    "name": "themes-05",
+    "status": "existing"
+  },
+  {
+    "name": "themes-06",
+    "status": "existing"
+  },
+  {
+    "name": "themes-07",
+    "status": "existing"
+  },
+  {
+    "name": "themes-08",
+    "status": "existing"
+  },
+  {
+    "name": "themes-09",
+    "status": "existing"
+  },
+  {
+    "name": "themes-10",
+    "status": "existing"
+  },
+  {
+    "name": "bosses-01",
+    "status": "existing"
+  },
+  {
+    "name": "bosses-02",
+    "status": "existing"
+  },
+  {
+    "name": "bosses-03",
+    "status": "existing"
+  },
+  {
+    "name": "bosses-04",
+    "status": "existing"
+  },
+  {
+    "name": "enemies-01",
+    "status": "existing"
+  },
+  {
+    "name": "enemies-02",
+    "status": "existing"
+  },
+  {
+    "name": "enemies-03",
+    "status": "existing"
+  },
+  {
+    "name": "enemies-04",
+    "status": "existing"
+  },
+  {
+    "name": "weapons",
+    "status": "existing"
+  },
+  {
+    "name": "attack-fx",
+    "status": "existing"
+  },
+  {
+    "name": "obstacles",
+    "status": "existing"
+  },
+  {
+    "name": "story-01",
+    "status": "existing"
+  },
+  {
+    "name": "story-02",
+    "status": "existing"
+  },
+  {
+    "name": "story-03",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m01-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m01-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m02-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m02-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m03-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m03-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m04-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m04-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m05-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m05-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m06-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m06-bosses-02",
+    "status": "generated",
+    "output": "output/imagegen/incense-debt/expansion/creatures-m06-bosses-02.png"
+  },
+  {
+    "name": "creatures-m07-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m07-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m08-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m08-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m09-enemies",
+    "status": "generated",
+    "output": "output/imagegen/incense-debt/expansion/creatures-m09-enemies.png"
+  },
+  {
+    "name": "creatures-m09-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m10-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m10-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m11-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m11-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m12-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m12-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m13-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m13-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m14-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m14-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m15-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m15-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m16-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m16-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m17-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m17-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m18-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m18-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m19-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m19-bosses",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m20-enemies",
+    "status": "existing"
+  },
+  {
+    "name": "creatures-m20-bosses",
+    "status": "existing"
+  }
+]

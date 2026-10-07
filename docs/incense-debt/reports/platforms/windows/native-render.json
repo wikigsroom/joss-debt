@@ -1,0 +1,1753 @@
+{
+  "asset_failures": [],
+  "asset_loads": 3665,
+  "captures": [
+    {
+      "expected_mode": "",
+      "expected_screen": "menu",
+      "fixture_tick": 12,
+      "mode": "idle",
+      "name": "menu",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/menu.png",
+      "saved": true,
+      "screen": "menu",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 33,
+      "mode": "combat",
+      "name": "chains",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/chains.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 50,
+      "mode": "combat",
+      "name": "detonate",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/detonate.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "choice",
+      "expected_screen": "game",
+      "fixture_tick": 71,
+      "mode": "choice",
+      "name": "choices",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/choices.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 90,
+      "mode": "combat",
+      "name": "boss-touch",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/boss-touch.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "inventory",
+      "fixture_tick": 111,
+      "mode": "combat",
+      "name": "inventory",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/inventory.png",
+      "saved": true,
+      "screen": "inventory",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "settings",
+      "fixture_tick": 131,
+      "mode": "combat",
+      "name": "settings",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/settings.png",
+      "saved": true,
+      "screen": "settings",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 151,
+      "mode": "combat",
+      "name": "obstacles",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/obstacles.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "debt",
+      "expected_screen": "game",
+      "fixture_tick": 169,
+      "mode": "debt",
+      "name": "debt",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/debt.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "choice",
+      "expected_screen": "game",
+      "fixture_tick": 186,
+      "mode": "choice",
+      "name": "evolution",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/evolution.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 200,
+      "mode": "combat",
+      "name": "coin-vault",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/coin-vault.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 214,
+      "mode": "combat",
+      "name": "ownerless-temple",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/ownerless-temple.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "hub",
+      "fixture_tick": 229,
+      "mode": "combat",
+      "name": "hub",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/hub.png",
+      "saved": true,
+      "screen": "hub",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "hub",
+      "fixture_tick": 243,
+      "mode": "combat",
+      "name": "personal",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/personal.png",
+      "saved": true,
+      "screen": "hub",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "endings",
+      "fixture_tick": 257,
+      "mode": "combat",
+      "name": "endings",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/endings.png",
+      "saved": true,
+      "screen": "endings",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 271,
+      "mode": "clear",
+      "name": "route",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/route.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "choice",
+      "expected_screen": "game",
+      "fixture_tick": 285,
+      "mode": "choice",
+      "name": "mobile-choice",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-choice.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "settings",
+      "fixture_tick": 299,
+      "mode": "choice",
+      "name": "mobile-settings",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-settings.png",
+      "saved": true,
+      "screen": "settings",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "audio_settings",
+      "fixture_tick": 313,
+      "mode": "choice",
+      "name": "audio-mix",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/audio-mix.png",
+      "saved": true,
+      "screen": "audio_settings",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "story",
+      "fixture_tick": 327,
+      "mode": "choice",
+      "name": "story",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/story.png",
+      "saved": true,
+      "screen": "story",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 341,
+      "mode": "combat",
+      "name": "training-phase3",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/training-phase3.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 355,
+      "mode": "combat",
+      "name": "debt-warning",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/debt-warning.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 369,
+      "mode": "clear",
+      "name": "mobile-route",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-route.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 383,
+      "mode": "clear",
+      "name": "animation-sheet",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/animation-sheet.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "controls",
+      "fixture_tick": 406,
+      "mode": "clear",
+      "name": "controls-mapping",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/controls-mapping.png",
+      "saved": true,
+      "screen": "controls",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "controls",
+      "fixture_tick": 420,
+      "mode": "clear",
+      "name": "controls-pad",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/controls-pad.png",
+      "saved": true,
+      "screen": "controls",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "assistance",
+      "fixture_tick": 434,
+      "mode": "clear",
+      "name": "assistance",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/assistance.png",
+      "saved": true,
+      "screen": "assistance",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "touch_layout",
+      "fixture_tick": 448,
+      "mode": "clear",
+      "name": "touch-layout",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/touch-layout.png",
+      "saved": true,
+      "screen": "touch_layout",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "assistance",
+      "fixture_tick": 464,
+      "mode": "clear",
+      "name": "reading-settings",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/reading-settings.png",
+      "saved": true,
+      "screen": "assistance",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "story",
+      "fixture_tick": 470,
+      "mode": "clear",
+      "name": "story-large",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/story-large.png",
+      "saved": true,
+      "screen": "story",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 478,
+      "mode": "clear",
+      "name": "rotation-guard",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/rotation-guard.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 695,
+      "mode": "combat",
+      "name": "wave-incoming",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/wave-incoming.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 708,
+      "mode": "combat",
+      "name": "wave-arrival",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/wave-arrival.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 730,
+      "mode": "clear",
+      "name": "secret-clue",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/secret-clue.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 738,
+      "mode": "clear",
+      "name": "door-navigation",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/door-navigation.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 742,
+      "mode": "clear",
+      "name": "secret-open",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/secret-open.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "route",
+      "fixture_tick": 748,
+      "mode": "clear",
+      "name": "secret-route",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/secret-route.png",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "choice",
+      "expected_screen": "game",
+      "fixture_tick": 757,
+      "mode": "choice",
+      "name": "secret-room",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/secret-room.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 767,
+      "mode": "clear",
+      "name": "mobile-secret-entry",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-secret-entry.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 785,
+      "mode": "clear",
+      "name": "save-transfer",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/save-transfer.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "save_paste",
+      "fixture_tick": 793,
+      "mode": "clear",
+      "name": "save-paste",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/save-paste.png",
+      "saved": true,
+      "screen": "save_paste",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "save_preview",
+      "fixture_tick": 803,
+      "mode": "clear",
+      "name": "save-preview",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/save-preview.png",
+      "saved": true,
+      "screen": "save_preview",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 835,
+      "mode": "idle",
+      "name": "mobile-save-transfer",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-save-transfer.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "save_preview",
+      "fixture_tick": 843,
+      "mode": "idle",
+      "name": "mobile-save-preview",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/mobile-save-preview.png",
+      "saved": true,
+      "screen": "save_preview",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 859,
+      "mode": "idle",
+      "name": "held-tools-1",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-1.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 867,
+      "mode": "idle",
+      "name": "held-tools-2",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-2.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 875,
+      "mode": "idle",
+      "name": "held-tools-back-1",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-back-1.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 883,
+      "mode": "idle",
+      "name": "held-tools-back-2",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-back-2.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 891,
+      "mode": "idle",
+      "name": "held-tools-left",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-left.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 899,
+      "mode": "idle",
+      "name": "held-tools-right",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-right.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 907,
+      "mode": "idle",
+      "name": "held-tools-left-2",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-left-2.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "saves",
+      "fixture_tick": 915,
+      "mode": "idle",
+      "name": "held-tools-right-1",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-tools-right-1.png",
+      "saved": true,
+      "screen": "saves",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 923,
+      "mode": "combat",
+      "name": "held-brush-charge",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-brush-charge.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 931,
+      "mode": "combat",
+      "name": "held-brush-fire",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/held-brush-fire.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "inventory",
+      "fixture_tick": 955,
+      "mode": "combat",
+      "name": "inventory-detail",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/inventory-detail.png",
+      "saved": true,
+      "screen": "inventory",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "pause",
+      "fixture_tick": 965,
+      "mode": "combat",
+      "name": "modern-pause",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/modern-pause.png",
+      "saved": true,
+      "screen": "pause",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "run_history",
+      "fixture_tick": 968,
+      "mode": "combat",
+      "name": "run-history",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/run-history.png",
+      "saved": true,
+      "screen": "run_history",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "assistance",
+      "fixture_tick": 985,
+      "mode": "combat",
+      "name": "utility-help",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/utility-help.png",
+      "saved": true,
+      "screen": "assistance",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "menu",
+      "fixture_tick": 993,
+      "mode": "combat",
+      "name": "modern-menu-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/modern-menu-mobile.png",
+      "saved": true,
+      "screen": "menu",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "achievements",
+      "fixture_tick": 997,
+      "mode": "combat",
+      "name": "achievements",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/achievements.png",
+      "saved": true,
+      "screen": "achievements",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "result",
+      "fixture_tick": 1001,
+      "mode": "combat",
+      "name": "modern-result",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/modern-result.png",
+      "saved": true,
+      "screen": "result",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 1009,
+      "mode": "combat",
+      "name": "hud-extended",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/hud-extended.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "ui_gallery",
+      "fixture_tick": 1017,
+      "mode": "combat",
+      "name": "ui-style",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/ui-style.png",
+      "saved": true,
+      "screen": "ui_gallery",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "character",
+      "fixture_tick": 1029,
+      "mode": "combat",
+      "name": "character-details",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-details.png",
+      "saved": true,
+      "screen": "character",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "character",
+      "fixture_tick": 1037,
+      "mode": "combat",
+      "name": "character-evolution",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-evolution.png",
+      "saved": true,
+      "screen": "character",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1045,
+      "mode": "combat",
+      "name": "character-training",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-training.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1057,
+      "mode": "combat",
+      "name": "character-training-cast",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-training-cast.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "character",
+      "fixture_tick": 1081,
+      "mode": "combat",
+      "name": "character-locked-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-locked-mobile.png",
+      "saved": true,
+      "screen": "character",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "character",
+      "fixture_tick": 1089,
+      "mode": "combat",
+      "name": "character-skills-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/character-skills-mobile.png",
+      "saved": true,
+      "screen": "character",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1110,
+      "mode": "combat",
+      "name": "hurt-direction",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/hurt-direction.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "result",
+      "fixture_tick": 1118,
+      "mode": "result",
+      "name": "result-source",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/result-source.png",
+      "saved": true,
+      "screen": "result",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "run_build",
+      "fixture_tick": 1126,
+      "mode": "result",
+      "name": "result-build",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/result-build.png",
+      "saved": true,
+      "screen": "run_build",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "run_review",
+      "fixture_tick": 1134,
+      "mode": "result",
+      "name": "run-damage",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/run-damage.png",
+      "saved": true,
+      "screen": "run_review",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "run_review",
+      "fixture_tick": 1142,
+      "mode": "result",
+      "name": "run-pages",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/run-pages.png",
+      "saved": true,
+      "screen": "run_review",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "result",
+      "fixture_tick": 1146,
+      "mode": "result",
+      "name": "result-source-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/result-source-mobile.png",
+      "saved": true,
+      "screen": "result",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "run_review",
+      "fixture_tick": 1154,
+      "mode": "result",
+      "name": "run-damage-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/run-damage-mobile.png",
+      "saved": true,
+      "screen": "run_review",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "run_review",
+      "fixture_tick": 1158,
+      "mode": "result",
+      "name": "run-pages-mobile",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/run-pages-mobile.png",
+      "saved": true,
+      "screen": "run_review",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1184,
+      "mode": "combat",
+      "name": "impact-heavy-before",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/impact-heavy-before.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1204,
+      "mode": "combat",
+      "name": "impact-heavy-after",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/impact-heavy-after.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1214,
+      "mode": "combat",
+      "name": "root-bound",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/root-bound.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1222,
+      "mode": "combat",
+      "name": "root-release",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/root-release.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "result",
+      "expected_screen": "result",
+      "fixture_tick": 1234,
+      "mode": "result",
+      "name": "elite-source",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/elite-source.png",
+      "saved": true,
+      "screen": "result",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "combat",
+      "expected_screen": "game",
+      "fixture_tick": 1244,
+      "mode": "combat",
+      "name": "shop-trial-live",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/shop-trial-live.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "shop",
+      "expected_screen": "game",
+      "fixture_tick": 1248,
+      "mode": "shop",
+      "name": "shop-trial-return",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/shop-trial-return.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "shop",
+      "expected_screen": "game",
+      "fixture_tick": 1250,
+      "mode": "shop",
+      "name": "shop-trial",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/shop-trial.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "inventory",
+      "fixture_tick": 1254,
+      "mode": "shop",
+      "name": "inventory-synergy",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/inventory-synergy.png",
+      "saved": true,
+      "screen": "inventory",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 1258,
+      "mode": "choice",
+      "name": "special-sacrifice",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/special-sacrifice.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 1262,
+      "mode": "choice",
+      "name": "special-judge",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/special-judge.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 1266,
+      "mode": "choice",
+      "name": "special-angel",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/special-angel.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "expected_mode": "",
+      "expected_screen": "game",
+      "fixture_tick": 1270,
+      "mode": "combat",
+      "name": "special-challenge",
+      "path": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows/special-challenge.png",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    }
+  ],
+  "driver": "gl_compatibility",
+  "engine": "4.7.2-stable (official)",
+  "frames": 1272,
+  "interaction_checks": [
+    {
+      "name": "the title sheet keeps save slots in their own layer before the main new run, continue and stats actions",
+      "passed": true
+    },
+    {
+      "name": "the PC number row directly commits the second skill evolution without an extra Enter press",
+      "passed": true
+    },
+    {
+      "name": "focused binding button opens capture through native GUI input",
+      "passed": true
+    },
+    {
+      "name": "capture consumes the new key and updates the visible binding",
+      "passed": true
+    },
+    {
+      "name": "GUI binding commit reaches the profile journal",
+      "passed": true
+    },
+    {
+      "name": "GUI narrative sizing reaches 150 percent and persists",
+      "passed": true
+    },
+    {
+      "name": "large narrative body uses the rounded game font in a fixed clipped viewport",
+      "passed": true
+    },
+    {
+      "name": "keyboard navigation scrolls enlarged narrative without moving its close button",
+      "passed": true
+    },
+    {
+      "name": "portrait guard clears touch capture and holds simulation despite menu input",
+      "passed": true
+    },
+    {
+      "name": "landscape restoration waits at explicit pause rather than firing or advancing",
+      "passed": true
+    },
+    {
+      "name": "route GUI omits the physically undiscovered secret node",
+      "passed": true
+    },
+    {
+      "name": "the route map is read-only and a physical walk into the selected door performs the actual cleared-room return",
+      "passed": true
+    },
+    {
+      "name": "physical reveal checkpoints its room ID without granting account merit",
+      "passed": true
+    },
+    {
+      "name": "physical reveal enables the actual secret route button",
+      "passed": true
+    },
+    {
+      "name": "native interaction key traverses the revealed physical entry into real reward choices",
+      "passed": true
+    },
+    {
+      "name": "mobile entry action safely returns to a visited secret without awarding it twice",
+      "passed": true
+    },
+    {
+      "name": "real transfer text field previews a checked incoming save without committing it",
+      "passed": true
+    },
+    {
+      "name": "canceling transfer preview keeps both original progress and its run",
+      "passed": true
+    },
+    {
+      "name": "focused import confirmation commits paired progress while returning safely to the title",
+      "passed": true
+    },
+    {
+      "name": "resuming an imported real room waits for confirmation with no automatic attack or simulation",
+      "passed": true
+    },
+    {
+      "name": "after real import the existing HUD reads the restored world rather than stale character, health, currency and skill state",
+      "passed": true
+    },
+    {
+      "name": "real undo confirmation restores the original account and room together",
+      "passed": true
+    },
+    {
+      "name": "restoring the pre-import backup rebinds both world renderer and the existing HUD to the same live world",
+      "passed": true
+    },
+    {
+      "equal_bundle": true,
+      "name": "native shipping code exports and rereads the complete checked file format",
+      "passed": true,
+      "read_message": "",
+      "read_ok": true,
+      "write_ok": true
+    },
+    {
+      "name": "mobile transfer preview back action clears the draft and preserves progress with usable controls",
+      "passed": true
+    },
+    {
+      "name": "the live shot direction selects the matching right-facing body, hand rig and muzzle presentation",
+      "passed": true
+    },
+    {
+      "name": "pointer click on the icon-only HUD book opens the paused inventory with a named control",
+      "passed": true
+    },
+    {
+      "name": "selecting an offering icon exposes its correct detail without changing the paused run",
+      "passed": true
+    },
+    {
+      "name": "the round inventory close control returns to the same live HUD and run",
+      "passed": true
+    },
+    {
+      "name": "pointer click on the pause icon hides the combat HUD and opens the round pause sheet",
+      "passed": true
+    },
+    {
+      "name": "the pause sheet opens a chronological record of all selected bonuses and skills without resuming combat",
+      "passed": true
+    },
+    {
+      "name": "Escape closes the modern pause sheet and restores gameplay without changing the equipped character",
+      "passed": true
+    },
+    {
+      "name": "the icon toggle changes live sound and keeps settings reachable",
+      "passed": true
+    },
+    {
+      "name": "the information icon expands the assistance explanation while preserving the actual option control",
+      "passed": true
+    },
+    {
+      "name": "the live achievements sheet opens from the menu with all thirty-two cards and character filtering",
+      "passed": true
+    },
+    {
+      "name": "Escape returns from the achievement sheet to the character layer without entering a run",
+      "passed": true
+    },
+    {
+      "name": "native rounded body, bold HUD and display fonts load with a rare-name CJK fallback",
+      "passed": true
+    },
+    {
+      "name": "the actual credits page loads full packaged font, vector and engine notices",
+      "passed": true
+    },
+    {
+      "name": "the character layer exposes a filtered achievement entry while its information icon opens the real character sheet",
+      "passed": true
+    },
+    {
+      "name": "selecting a skill icon discloses its own behavior and energy cost while preserving the paused run and checkpoint",
+      "passed": true
+    },
+    {
+      "name": "the trial action enters the actual simulator with the selected evolution, marked targets, round reset and return controls",
+      "passed": true
+    },
+    {
+      "name": "a trial skill input performs real damage and cooldown without committing rewards, character unlocks or the suspended run",
+      "passed": true
+    },
+    {
+      "name": "the round retry action retains the chosen evolution and resets targets without touching persisted progress",
+      "passed": true
+    },
+    {
+      "name": "the trial return action restores the selected skill detail and hides the combat interface",
+      "passed": true
+    },
+    {
+      "name": "Escape returns from character details to the menu with the original profile and suspended run intact",
+      "passed": true
+    },
+    {
+      "name": "an injected touch on a locked character opens its actual unlock count and mobile-sized trial control without relying on hover",
+      "passed": true
+    },
+    {
+      "name": "a mobile skill tab uses a sufficiently large touch area and exposes the selected heavy evolution's actual cost and cooldown",
+      "passed": true
+    },
+    {
+      "name": "a locked character can preview its real evolution while its unlock, account and suspended checkpoint remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "all eighteen character trial presets accept a real skill input and damage their targets without account or checkpoint writes",
+      "passed": true,
+      "trials": [
+        {
+          "passed": true,
+          "skill": "s01"
+        },
+        {
+          "passed": true,
+          "skill": "s02"
+        },
+        {
+          "passed": true,
+          "skill": "s03"
+        },
+        {
+          "passed": true,
+          "skill": "s04"
+        },
+        {
+          "passed": true,
+          "skill": "s05"
+        },
+        {
+          "passed": true,
+          "skill": "s06"
+        },
+        {
+          "passed": true,
+          "skill": "s07"
+        },
+        {
+          "passed": true,
+          "skill": "s08"
+        },
+        {
+          "passed": true,
+          "skill": "s09"
+        },
+        {
+          "passed": true,
+          "skill": "s10"
+        },
+        {
+          "passed": true,
+          "skill": "s11"
+        },
+        {
+          "passed": true,
+          "skill": "s12"
+        },
+        {
+          "passed": true,
+          "skill": "s13"
+        },
+        {
+          "passed": true,
+          "skill": "s14"
+        },
+        {
+          "passed": true,
+          "skill": "s15"
+        },
+        {
+          "passed": true,
+          "skill": "s16"
+        },
+        {
+          "passed": true,
+          "skill": "s17"
+        },
+        {
+          "passed": true,
+          "skill": "s18"
+        }
+      ]
+    },
+    {
+      "name": "a trial rejects another character's skill identifier before altering the simulator or persisted profile",
+      "passed": true
+    },
+    {
+      "name": "real projectile damage supplies an incoming direction that remains visible when flashing and motion are disabled",
+      "passed": true
+    },
+    {
+      "name": "a real terminal ground hit retains its removed boss and prior revival through an on-disk account/run reload and compact result",
+      "passed": true
+    },
+    {
+      "name": "an actual result relic icon opens the exact finished-build detail without advancing or crediting the run",
+      "passed": true
+    },
+    {
+      "name": "Escape from finished-build detail returns to the result and never resumes dead combat",
+      "passed": true
+    },
+    {
+      "name": "the result review icon opens the most recent actual injury with its HP and mitigation detail",
+      "passed": true
+    },
+    {
+      "name": "selecting a prior injury discloses the consumed revival without changing the finished world or committed ledger",
+      "passed": true
+    },
+    {
+      "name": "the wish-page disclosure shows only committed merit and personal pages after real disk reload",
+      "passed": true
+    },
+    {
+      "name": "closing the review returns to the compact result with identical combat history and earned progress",
+      "passed": true
+    },
+    {
+      "name": "the mobile result uses ninety-unit icon entry controls without a hover dependency",
+      "passed": true
+    },
+    {
+      "name": "an injected native touch opens the actual latest injury with usable mobile tabs and close target",
+      "passed": true
+    },
+    {
+      "name": "mobile page disclosure exposes committed merit without mutating the result or account",
+      "passed": true
+    },
+    {
+      "name": "the real retry touch retains the character while creating a new seed and ID and clearing old injury and death records",
+      "passed": true
+    },
+    {
+      "name": "the required final ending cannot be bypassed by Escape into dead combat or the result",
+      "passed": true
+    },
+    {
+      "name": "an actual seal attack damages and marks its target while beginning a bounded physical impulse instead of teleporting it",
+      "passed": true
+    },
+    {
+      "name": "the real saved mid-impact run reloads from disk into the native confirmation pause with identical simulator and bound HUD",
+      "passed": true
+    },
+    {
+      "name": "the actual continue button resumes the pending impulse without an automatic extra shot",
+      "passed": true
+    },
+    {
+      "name": "physical heavy displacement completes sixty-four units and visual accessibility changes leave its combat state intact",
+      "passed": true
+    },
+    {
+      "name": "the native red-net cast roots ordinary and elite targets for their different caps while its visible boss remains immune",
+      "passed": true
+    },
+    {
+      "name": "the elite binding releases after three tenths while the ordinary binding and delayed blast remain active with flashing and motion disabled",
+      "passed": true
+    },
+    {
+      "name": "a real removed elite's lethal projectile restores from disk and names the actual elite variant on the compact result",
+      "passed": true
+    },
+    {
+      "name": "the real shop exposes an icon-first weapon trial action without hiding its price or changing the candidate list",
+      "passed": true
+    },
+    {
+      "name": "the weapon trial switches to a live isolated room with the actual offered weapon while preserving the original shop snapshot",
+      "passed": true
+    },
+    {
+      "name": "returning from real shop practice restores the original stock, wallet and candidate RNG without charging the trial",
+      "passed": true
+    },
+    {
+      "name": "the live inventory exposes the icon-first synergy codex tab without changing the paused run",
+      "passed": true
+    },
+    {
+      "name": "the synergy codex renders relic progress and a selected route detail from the current build",
+      "passed": true
+    }
+  ],
+  "orientation_check_scope": "desktop fixture injects native surface dimensions; physical phone rotation remains pending",
+  "source": "real native viewport; fixture states for visual review",
+  "stress": {
+    "enemies": 8,
+    "frame_ms_p95": 17.1116666666683,
+    "godot_static_memory_bytes": null,
+    "physics_ms_p95": 61.1,
+    "projectiles": 240,
+    "sampled_render_frames": 241,
+    "scope": "native desktop renderer fixture; not mobile or long-duration profiling",
+    "world_tick_ms_p95": 4.195,
+    "static_memory_available": false
+  },
+  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+}

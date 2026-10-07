@@ -1,0 +1,231 @@
+{
+  "recorded_at": "2026-10-07T09:15:21.972440+00:00",
+  "passed": true,
+  "compiled_windows_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "native_interaction_checks": 75,
+  "palette": {
+    "BACKGROUND": "#171e20",
+    "SURFACE": "#242f32",
+    "INSET": "#1b2528",
+    "LIFTED": "#344341",
+    "EDGE": "#43534f",
+    "TEXT": "#edf2e7",
+    "MUTED": "#a7b5af",
+    "ACCENT": "#ee956f",
+    "JADE": "#9dd6bf",
+    "GOLD": "#ebc386"
+  },
+  "panel_radius": 24,
+  "selected_card_radius": 22,
+  "button_radius": "half of the smaller dimension; pills/circles",
+  "logical_canvas": [
+    1280,
+    720
+  ],
+  "native_design_master": {
+    "file": "docs/incense-debt/reports/platforms/windows/ui-style.png",
+    "sha256": "d65dd79732e1ead3dfb4d64bf9e7dcc2a1789aa01d5318f807e9c91e16e2693f"
+  },
+  "fonts": {
+    "fonts": [
+      {
+        "file": "game/assets/fonts/IncenseRounded-Medium.ttf",
+        "family": "Incense Rounded",
+        "upstream_family": "Resource Han Rounded CN",
+        "weight": "Medium",
+        "bytes": 3204088,
+        "sha256": "2b47bb8b6a225002e22c498d28d3da26b7f3739b2d84f40502aa2b5680f87c22",
+        "source_sha256": "b2ec1727fbc04b70255db6cb71be0eca3b7a7167ef11655059c5576cc920143f",
+        "glyphs": 7738,
+        "fallback_characters": [],
+        "unresolved_characters": [],
+        "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+        "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+      },
+      {
+        "file": "game/assets/fonts/IncenseRounded-Bold.ttf",
+        "family": "Incense Rounded",
+        "upstream_family": "Resource Han Rounded CN",
+        "weight": "Bold",
+        "bytes": 3116308,
+        "sha256": "a36b53f44e5721793632b3d110d550f6adcc39105d21722609d0749b92086ab1",
+        "source_sha256": "f713907a21a10701cd68a7ce3e345ccdce46c789e1809d65ace54e095d7107c3",
+        "glyphs": 7738,
+        "fallback_characters": [],
+        "unresolved_characters": [],
+        "subset": "GB2312 + game source/content + Latin/punctuation; arbitrary future wish names use Noto Sans SC fallback",
+        "license": "SIL OFL 1.1; original credits retained; derivative family renamed"
+      },
+      {
+        "file": "game/assets/fonts/SmileySans-Oblique.ttf",
+        "family": "Smiley Sans Oblique",
+        "version": "2.0.1",
+        "bytes": 2629764,
+        "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+        "source_sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+        "modified": false,
+        "license": "SIL OFL 1.1"
+      }
+    ],
+    "fallback": "game/assets/fonts/NotoSansSC.ttf",
+    "passed": true
+  },
+  "vector_icons": 57,
+  "licensed_sources": {
+    "file": "docs/incense-debt/reports/runtime/ui-refresh/licensed-sources.json",
+    "sha256": "fb7089baa801f776ff5d07c0839d19961346a5883f49bc63ba251eda9dffd3a1"
+  },
+  "contrast": [
+    {
+      "usage": "body",
+      "foreground": "#edf2e7",
+      "background": "#242f32",
+      "ratio": 12.081,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "usage": "description",
+      "foreground": "#a7b5af",
+      "background": "#242f32",
+      "ratio": 6.462,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "usage": "primary button",
+      "foreground": "#171e20",
+      "background": "#ee956f",
+      "ratio": 7.372,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "usage": "resource icon",
+      "foreground": "#9dd6bf",
+      "background": "#242f32",
+      "ratio": 8.382,
+      "minimum": 3.0,
+      "passed": true
+    }
+  ],
+  "contrast_scope": "specified opaque primary palette pairs; not a claim about all effects, custom touch opacity or device calibration",
+  "reviewed_views": [
+    "menu",
+    "chains",
+    "choices",
+    "debt",
+    "route",
+    "door-navigation",
+    "inventory-detail",
+    "inventory-synergy",
+    "settings",
+    "mobile-settings",
+    "modern-menu-mobile",
+    "achievements",
+    "modern-pause",
+    "modern-result",
+    "utility-help",
+    "hud-extended",
+    "audio-mix",
+    "character-details",
+    "character-evolution",
+    "character-training",
+    "character-training-cast",
+    "character-locked-mobile",
+    "character-skills-mobile",
+    "hurt-direction",
+    "result-source",
+    "result-build",
+    "run-damage",
+    "run-pages",
+    "result-source-mobile",
+    "run-damage-mobile",
+    "run-pages-mobile",
+    "impact-heavy-before",
+    "impact-heavy-after",
+    "root-bound",
+    "root-release",
+    "elite-source",
+    "shop-trial",
+    "shop-trial-live",
+    "shop-trial-return"
+  ],
+  "character_disclosure": {
+    "default_menu": "one information icon; locked character selection opens the same detail",
+    "skill_forms": 18,
+    "preview": "real simulator in an isolated training run; does not commit rewards or change the suspended checkpoint",
+    "mobile_scope": "native desktop injection of ScreenTouch events and enlarged controls; physical device still pending"
+  },
+  "run_disclosure": {
+    "default_result": "actual lethal source, six statistic cards, original equipment/relic icons and two disclosure entries",
+    "recent_hits": 12,
+    "damage_review": "before/after HP, actual mitigation, revival and attack-specific advice",
+    "earned_pages": "only committed per-run merit, bonus and newly completed personal pages; no retroactive attribution to legacy runs",
+    "feedback": "incoming arrow or ground diamond remains visible with flashing and motion disabled",
+    "retry": "same character; new seed and run ID; injury and death records cleared"
+  },
+  "physical_impact": {
+    "simulation": "bounded 0.14-second decelerating displacement through room collision; saved mid-push",
+    "root_cue": "existing warm-gold rope ring and knots, visible with flashing and motion disabled",
+    "elite_identity": "actual elite_variants source retained after emitter removal and disk reload",
+    "scope": "real native collision and checkpoint fixtures; not a human combat feel acceptance"
+  },
+  "generation_attempts": [
+    {
+      "operation": "edit",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "size": "1536x864",
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/ui-rounded-refresh.txt",
+        "sha256": "c17542c26a0b45955ef589508be0a872f3949a2d5bdb498c3ce93586bd07293b"
+      },
+      "reference": {
+        "file": "docs/incense-debt/reports/runtime/ui-refresh/before/menu.png",
+        "sha256": "8eecae00e1fb3c03ae0ff298239092436e909569f7552d0f9a4867c45c6db383"
+      },
+      "status": "failed",
+      "http_status": 400,
+      "output_created": false
+    },
+    {
+      "operation": "edit",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "size": "1536x864",
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/ui-rounded-refresh.txt",
+        "sha256": "c17542c26a0b45955ef589508be0a872f3949a2d5bdb498c3ce93586bd07293b"
+      },
+      "reference": {
+        "file": "docs/incense-debt/reports/runtime/ui-refresh/before/menu.png",
+        "sha256": "8eecae00e1fb3c03ae0ff298239092436e909569f7552d0f9a4867c45c6db383"
+      },
+      "status": "failed",
+      "http_status": 400,
+      "output_created": false
+    },
+    {
+      "operation": "generate",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "size": "1536x1024",
+      "prompt": {
+        "file": "docs/incense-debt/assets/prompts/ui-rounded-skin.txt",
+        "sha256": "6d01845df544473d57a5f87a19107f748815223e6a2213c814389d50dac0c8f6"
+      },
+      "status": "failed",
+      "http_status": 400,
+      "output_created": false
+    }
+  ],
+  "generation_error": "Tool choice 'image_generation' not found in 'tools' parameter.",
+  "generation_note": "No new AI UI reference was produced. Native rounded panels and utility vectors implement the explicit UI revision; original approved Sub2 character/map/item art is retained. No alternate image model or provider was used.",
+  "limits": [
+    "Physical phone touch, safe-area and thermal acceptance remains pending",
+    "Native viewport fixtures are not a human full-run acceptance",
+    "User approval of the revised visual direction remains separate"
+  ],
+  "virtualization": "none"
+}

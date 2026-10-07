@@ -1,0 +1,317 @@
+{
+  "version": "0.1.0",
+  "achievements": [
+    {
+      "id": "ach_c_paper_burn",
+      "scope": "character",
+      "character": "c_paper",
+      "name": "焚账成灰",
+      "description": "单局完成 6 次焚债爆发。",
+      "icon": "sparkles",
+      "metric": "detonations",
+      "target": 6
+    },
+    {
+      "id": "ach_c_paper_victory",
+      "scope": "character",
+      "character": "c_paper",
+      "name": "纸灯照路",
+      "description": "用纸童完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_paper_routes",
+      "scope": "character",
+      "character": "c_paper",
+      "name": "双线落款",
+      "description": "用纸童点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_paper_pages",
+      "scope": "character",
+      "character": "c_paper",
+      "name": "纸上有名",
+      "description": "完成纸童的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_c_bell_chain",
+      "scope": "character",
+      "character": "c_bell",
+      "name": "四响成阵",
+      "description": "单局连线峰值达到 4 名敌人。",
+      "icon": "link",
+      "metric": "max_chain",
+      "target": 4
+    },
+    {
+      "id": "ach_c_bell_victory",
+      "scope": "character",
+      "character": "c_bell",
+      "name": "钟声不息",
+      "description": "用铃师完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_bell_routes",
+      "scope": "character",
+      "character": "c_bell",
+      "name": "回声双轨",
+      "description": "用铃师点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_bell_pages",
+      "scope": "character",
+      "character": "c_bell",
+      "name": "余音入簿",
+      "description": "完成铃师的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_c_lantern_kills",
+      "scope": "character",
+      "character": "c_lantern",
+      "name": "提灯逐影",
+      "description": "单局击退 12 名恶愿。",
+      "icon": "flame",
+      "metric": "kills",
+      "target": 12
+    },
+    {
+      "id": "ach_c_lantern_victory",
+      "scope": "character",
+      "character": "c_lantern",
+      "name": "灯火通明",
+      "description": "用灯客完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_lantern_routes",
+      "scope": "character",
+      "character": "c_lantern",
+      "name": "流火双径",
+      "description": "用灯客点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_lantern_pages",
+      "scope": "character",
+      "character": "c_lantern",
+      "name": "灯下留名",
+      "description": "完成灯客的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_c_mask_defense",
+      "scope": "character",
+      "character": "c_mask",
+      "name": "面下不退",
+      "description": "单局完成 8 次招架或预警闪避。",
+      "icon": "shield",
+      "metric": "defenses",
+      "target": 8
+    },
+    {
+      "id": "ach_c_mask_victory",
+      "scope": "character",
+      "character": "c_mask",
+      "name": "傩面镇场",
+      "description": "用傩面完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_mask_routes",
+      "scope": "character",
+      "character": "c_mask",
+      "name": "双相护印",
+      "description": "用傩面点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_mask_pages",
+      "scope": "character",
+      "character": "c_mask",
+      "name": "面谱归档",
+      "description": "完成傩面的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_c_umbrella_ash",
+      "scope": "character",
+      "character": "c_umbrella",
+      "name": "伞收百灰",
+      "description": "单局回收 200 点香火。",
+      "icon": "wind",
+      "metric": "ash_energy",
+      "target": 200
+    },
+    {
+      "id": "ach_c_umbrella_victory",
+      "scope": "character",
+      "character": "c_umbrella",
+      "name": "伞下晴明",
+      "description": "用伞灵完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_umbrella_routes",
+      "scope": "character",
+      "character": "c_umbrella",
+      "name": "风雨双面",
+      "description": "用伞灵点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_umbrella_pages",
+      "scope": "character",
+      "character": "c_umbrella",
+      "name": "伞骨藏愿",
+      "description": "完成伞灵的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_c_ink_hits",
+      "scope": "character",
+      "character": "c_ink",
+      "name": "一笔四十响",
+      "description": "单局完成 40 次主攻击命中。",
+      "icon": "pencil",
+      "metric": "hits",
+      "target": 40
+    },
+    {
+      "id": "ach_c_ink_victory",
+      "scope": "character",
+      "character": "c_ink",
+      "name": "墨线贯通",
+      "description": "用墨吏完成 1 次胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_c_ink_routes",
+      "scope": "character",
+      "character": "c_ink",
+      "name": "双墨成章",
+      "description": "用墨吏点亮 2 条本职路线。",
+      "icon": "route",
+      "metric": "routes",
+      "target": 2
+    },
+    {
+      "id": "ach_c_ink_pages",
+      "scope": "character",
+      "character": "c_ink",
+      "name": "落笔成名",
+      "description": "完成墨吏的 3 页个人愿簿。",
+      "icon": "book-open",
+      "metric": "personal_stage",
+      "target": 3
+    },
+    {
+      "id": "ach_global_first_victory",
+      "scope": "global",
+      "name": "第一盏灯",
+      "description": "完成第一次三章胜利。",
+      "icon": "crown",
+      "metric": "victories",
+      "target": 1
+    },
+    {
+      "id": "ach_global_three_victories",
+      "scope": "global",
+      "name": "三盏连明",
+      "description": "累计完成 3 次胜利。",
+      "icon": "flame",
+      "metric": "victories",
+      "target": 3
+    },
+    {
+      "id": "ach_global_all_characters",
+      "scope": "global",
+      "name": "六人同席",
+      "description": "让六位还愿人都完成过胜利。",
+      "icon": "layers",
+      "metric": "character_victories",
+      "target": 6
+    },
+    {
+      "id": "ach_global_endings",
+      "scope": "global",
+      "name": "三种落款",
+      "description": "收集 3 种结局。",
+      "icon": "sun",
+      "metric": "endings",
+      "target": 3
+    },
+    {
+      "id": "ach_global_bosses",
+      "scope": "global",
+      "name": "首领名录",
+      "description": "击败 3 名不同首领。",
+      "icon": "crown",
+      "metric": "bosses",
+      "target": 3
+    },
+    {
+      "id": "ach_global_routes",
+      "scope": "global",
+      "name": "六路通行",
+      "description": "在账户中点亮 6 条路线。",
+      "icon": "map",
+      "metric": "routes",
+      "target": 6
+    },
+    {
+      "id": "ach_global_archive",
+      "scope": "global",
+      "name": "铜盘满录",
+      "description": "发现 12 件不同供物。",
+      "icon": "folder-open",
+      "metric": "relics",
+      "target": 12
+    },
+    {
+      "id": "ach_global_ten_runs",
+      "scope": "global",
+      "name": "十次回灯",
+      "description": "累计记录 10 局正式还愿。",
+      "icon": "layers",
+      "metric": "runs",
+      "target": 10
+    }
+  ]
+}
