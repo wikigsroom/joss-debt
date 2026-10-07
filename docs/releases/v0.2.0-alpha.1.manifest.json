@@ -1,0 +1,79 @@
+{
+  "tag": "v0.2.0-alpha.1",
+  "version": "0.2.0",
+  "prerelease": true,
+  "repository": "wikigsroom/joss-debt",
+  "engine": "Godot 4.7.2",
+  "built_from_commit": "14cbdb7cf6ec2398a185a6df97ddc26f5007061a",
+  "game_git_tree": "b8fc62af6c1e3b76328080e0e37a547946e25710",
+  "game_tree_sha256": "e507182eb8e303ce41aa44ddcddc31abd3a8ef07fb962a7b3c3b2d3361b857f4",
+  "game_member_count": 7956,
+  "windows_verification": {
+    "passed": true,
+    "windows_exe_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+    "native_interaction_checks": 75,
+    "native_captures": 90,
+    "native_resource_count": 3781,
+    "keyboard_checks": 107,
+    "keyboard_captures": 10,
+    "keyboard_render_cap_fps": 60,
+    "equipment_checks": 29,
+    "equipment_captures": 111,
+    "generated_equipment_fx_frames": 480,
+    "equipment_stress": {
+      "bullets": 205,
+      "draw_cpu_p95_ms": 16.495,
+      "fps_cap": 60,
+      "frames": 120,
+      "mean_ms": 29.0389916666667,
+      "note": "Native viewport with 205 styled projectiles; capped frame waits include idle time. Simulation timings are recorded separately.",
+      "p95_ms": 34.24,
+      "physics_paused_for_renderer_measurement": true
+    },
+    "temporary_native_windows_closed": true,
+    "evidence_reuse": "byte-identical native-tested executable",
+    "canonical_reports": [
+      "docs/incense-debt/reports/platforms/windows/native-render.json",
+      "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json",
+      "docs/incense-debt/reports/platforms/windows/equipment-polish/native.json"
+    ],
+    "game_tree_sha256": "e507182eb8e303ce41aa44ddcddc31abd3a8ef07fb962a7b3c3b2d3361b857f4"
+  },
+  "android": {
+    "build": "debug",
+    "signature_verified": true,
+    "physical_device_tested": false
+  },
+  "ios": {
+    "kind": "shared source handoff",
+    "signed_ipa_created": false,
+    "physical_device_tested": false
+  },
+  "files": [
+    {
+      "name": "IncenseDebt-v0.2.0-alpha.1-windows-x64.zip",
+      "bytes": 512499155,
+      "sha256": "5e50a5cab06fb5027f9a607c7240911c2587753db6ea1b6130a6af8dc2bb1a71"
+    },
+    {
+      "name": "IncenseDebt-v0.2.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 505992908,
+      "sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b"
+    },
+    {
+      "name": "IncenseDebt-v0.2.0-alpha.1-ios-shared-source.zip",
+      "bytes": 589843982,
+      "sha256": "8779491d4ff2773de099b31396d02beed6534c9846017c29a294d430ffe3a3f3"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 5120,
+      "sha256": "79389f7ca45cd447db5e176afe6a6d66378b0c16735917cb837a3dc5d95231be"
+    },
+    {
+      "name": "iOS-HANDOFF.md",
+      "bytes": 2692,
+      "sha256": "5136676e5a29bb31af4409d6f6a96851f95f5a0d12b2820715daa58ca069326c"
+    }
+  ]
+}
