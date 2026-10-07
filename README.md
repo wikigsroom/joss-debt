@@ -5,6 +5,8 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
+**[下载 v0.1.0-alpha.1 / Download the prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.1.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
@@ -391,7 +393,7 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与本地产物：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / 大型 ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。文档直接引用的原始截图保留；应用包请本机导出。[交付清单](build/delivery-manifest.json)记录的是已验证的本地产物，并不表示 GitHub 已上传二进制发行版。
+**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / 大型 ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。文档直接引用的原始截图保留。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1) 下载，也可本机导出。[交付清单](build/delivery-manifest.json)保留此前本地验证基线，[发布清单](docs/releases/v0.1.0-alpha.1.manifest.json)记录新 Windows release 导出与实际发布附件。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -461,7 +463,7 @@ python tools/runtime/run_audio_qa.py --packaged
 | 内容 | 十一层 Alpha 与上述系统、素材、自动流程证据 | 更多角色 / 种子的完整局和真人构筑平衡 |
 | 语言 | 完整中文界面；双语项目说明 | 英文游戏界面与叙事本地化 |
 
-版本仍为 Alpha；当前没有联网多人、在线账号、云同步或 GitHub 二进制发行包。项目级许可证尚未选定，第三方素材授权单独保留，见文末[授权说明](#licenses)。
+版本仍为 Alpha；当前没有联网多人、在线账号或云同步。GitHub 提供 Windows 运行包、Android 调试 APK 与 iOS 源码交接预发布。项目级许可证尚未选定，第三方素材授权单独保留，见文末[授权说明](#licenses)。
 
 <a id="en-guide"></a>
 ## English guide
@@ -748,7 +750,7 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. generated files:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/large export ZIPs, reproducible audio masters, and most raw QA frames are excluded. Original images directly referenced by documentation are retained. Build applications locally; the [delivery manifest](build/delivery-manifest.json) describes verified local artifacts, rather than a published GitHub binary release.
+**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/large export ZIPs, reproducible audio masters, and most raw QA frames are excluded. Original images directly referenced by documentation are retained. Download applications from the [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1) or build them locally. The [delivery manifest](build/delivery-manifest.json) retains the earlier verified local baseline; the [release manifest](docs/releases/v0.1.0-alpha.1.manifest.json) records the fresh Windows release export and published attachments.
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
@@ -793,7 +795,7 @@ Evidence is bound to its recorded source and artifact hashes. Rebuilding require
 | Content | Eleven-floor Alpha with the documented systems and automated route | More characters/seeds and human build balancing |
 | Language | Chinese game UI/story, bilingual repository guide | English game localization |
 
-The game remains an Alpha. It currently has no online multiplayer, online accounts, cloud sync, or published GitHub binary release. The project-wide license has not yet been selected; third-party notices remain separately applicable.
+The game remains an Alpha, with no online multiplayer, online accounts, or cloud sync. GitHub provides a prerelease with the Windows application, Android debug APK, and iOS shared-source handoff. The project-wide license has not yet been selected; third-party notices remain separately applicable.
 
 <a id="references"></a>
 ## 资料与证据 / Documentation and evidence

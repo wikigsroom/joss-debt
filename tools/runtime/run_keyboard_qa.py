@@ -17,7 +17,9 @@ def main():
     REPORTS.mkdir(parents=True, exist_ok=True)
     report_path = REPORTS / "keyboard-flow.json"
     report_path.unlink(missing_ok=True)
-    args = [str(ENGINE), "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3",
+    # Match rendered fixture waits to the fixed physics clock. Unbounded
+    # offscreen rendering can otherwise send Enter during a modal rebuild.
+    args = [str(ENGINE), "--max-fps", "60", "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3",
             "--resolution", "1280x720", "--position", "-16000,-16000"]
     if not PACKAGED:
         args += ["--path", str(ROOT / "game")]
@@ -56,6 +58,7 @@ def main():
         report["failures"].append({"id": "native_execution", "passed": False, "detail": "See keyboard-flow.log"})
     report["recorded_at"] = datetime.now(timezone.utc).isoformat()
     report["packaged"] = PACKAGED
+    report["render_cap_fps"] = 60
     if PACKAGED:
         report["artifact_sha256"] = hashlib.file_digest(ENGINE.open("rb"), "sha256").hexdigest()
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")

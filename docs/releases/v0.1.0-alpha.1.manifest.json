@@ -1,0 +1,60 @@
+{
+  "tag": "v0.1.0-alpha.1",
+  "version": "0.1.0",
+  "prerelease": true,
+  "repository": "wikigsroom/joss-debt",
+  "engine": "Godot 4.7.2",
+  "built_from_commit": "080d5bd51048126ab24baae2ca353877b3627bb9",
+  "game_git_tree": "808673554769adada97687f83715200e783b81f7",
+  "game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f",
+  "game_member_count": 7704,
+  "windows_verification": {
+    "passed": true,
+    "windows_exe_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+    "native_interaction_checks": 75,
+    "native_captures": 90,
+    "native_resource_count": 3665,
+    "keyboard_checks": 105,
+    "keyboard_captures": 8,
+    "keyboard_render_cap_fps": 60,
+    "temporary_native_windows_closed": true,
+    "game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f"
+  },
+  "android": {
+    "build": "debug",
+    "signature_verified": true,
+    "physical_device_tested": false
+  },
+  "ios": {
+    "kind": "shared source handoff",
+    "signed_ipa_created": false,
+    "physical_device_tested": false
+  },
+  "files": [
+    {
+      "name": "IncenseDebt-v0.1.0-alpha.1-windows-x64.zip",
+      "bytes": 487318444,
+      "sha256": "31c4cd3305e3f8078b5a0a26e9c5a3b37dd46d303707eee6ffe5c802d537821e"
+    },
+    {
+      "name": "IncenseDebt-v0.1.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 480710039,
+      "sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287"
+    },
+    {
+      "name": "IncenseDebt-v0.1.0-alpha.1-ios-shared-source.zip",
+      "bytes": 561051501,
+      "sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 4873,
+      "sha256": "83c0395f143d089c32c19f44a027ce9512baa626f9a360854fd546a976ebaacd"
+    },
+    {
+      "name": "iOS-HANDOFF.md",
+      "bytes": 2692,
+      "sha256": "f1b56f4cbb80c1162e873b3fa92d1240bcf407b17052d01654ce3a527156e686"
+    }
+  ]
+}
