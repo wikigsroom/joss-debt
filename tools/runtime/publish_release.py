@@ -105,7 +105,7 @@ def main():
         print("Creating the prerelease draft at the verified tag...", flush=True)
         command("release", "create", TAG, "--repo", REPO, "--draft", "--prerelease",
                 "--verify-tag", "--target", head, "--title",
-                "香火债 / Incense Debt v0.1.0-alpha.1 · Eleven-floor Alpha",
+                f"香火债 / Incense Debt {TAG} · Equipment & Combat Alpha",
                 "--notes-file", str(notes))
         state = release()
     if not state["draft"]:

@@ -1,6 +1,6 @@
 {
   "asset_failures": [],
-  "asset_loads": 3665,
+  "asset_loads": 3781,
   "captures": [
     {
       "expected_mode": "",
@@ -1482,7 +1482,7 @@
       "passed": true
     },
     {
-      "name": "the pause sheet opens a chronological record of all selected bonuses and skills without resuming combat",
+      "name": "the pause sheet opens a chronological record of the initial weapon, skill and active item without resuming combat",
       "passed": true
     },
     {
@@ -1740,14 +1740,14 @@
   "source": "real native viewport; fixture states for visual review",
   "stress": {
     "enemies": 8,
-    "frame_ms_p95": 17.1116666666683,
+    "frame_ms_p95": 50.0,
     "godot_static_memory_bytes": null,
-    "physics_ms_p95": 61.1,
+    "physics_ms_p95": 48.382,
     "projectiles": 240,
-    "sampled_render_frames": 241,
+    "sampled_render_frames": 70,
     "scope": "native desktop renderer fixture; not mobile or long-duration profiling",
-    "world_tick_ms_p95": 4.195,
+    "world_tick_ms_p95": 3.032,
     "static_memory_available": false
   },
-  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
 }

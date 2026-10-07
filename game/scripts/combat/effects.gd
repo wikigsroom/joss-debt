@@ -202,7 +202,7 @@ static func dash_end(w) -> void:
 				pickup.delay = 0.0
 				pickup.magnet = true
 
-static func after_shot(w, damage: float) -> void:
+static func after_shot(w, damage: float, resolved: Dictionary = {}) -> void:
 	if w.room_flags.get("side_shot_pending", false):
 		w.room_flags.side_shot_pending = false
 		for sign_value in [-1, 1]: w.secondary_bullet(w.player.pos, w.player.aim.rotated(sign_value * .32), damage * .5)
@@ -210,8 +210,14 @@ static func after_shot(w, damage: float) -> void:
 		w.room_flags.dodge_return_pending = false
 		w.secondary_bullet(w.player.pos, -w.player.aim, damage * .4)
 	if w.stack("r40") > 0 and int(w.stats.shots) % 2 == 0:
-		w.delayed.append({"time": w.time + .3, "type": "repeat_attack", "weapon": w.player.weapon, "pos": w.player.pos,
-			"aim": w.player.aim, "damage": damage * .45, "pulse": w.active_pulse})
+		if w.delayed.size() >= 120: return
+		var repeat = {"time": w.time + .3, "type": "repeat_attack", "weapon": w.player.weapon, "pos": w.player.pos,
+			"aim": w.player.aim, "damage": damage * .45, "pulse": w.active_pulse}
+		if not resolved.is_empty():
+			repeat.recipe = resolved.duplicate(true)
+			repeat.recipe.primary = false
+			repeat.recipe.wave = 3
+		w.delayed.append(repeat)
 
 static func clear_room(w, type: String) -> void:
 	if type != "elite": return

@@ -1,0 +1,491 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "a01",
+      "passed": true
+    },
+    {
+      "id": "a02",
+      "passed": true
+    },
+    {
+      "id": "a03",
+      "passed": true
+    },
+    {
+      "id": "a04",
+      "passed": true
+    },
+    {
+      "id": "a05",
+      "passed": true
+    },
+    {
+      "id": "a06",
+      "passed": true
+    },
+    {
+      "id": "a07",
+      "passed": true
+    },
+    {
+      "id": "a08",
+      "passed": true
+    },
+    {
+      "id": "a09",
+      "passed": true
+    },
+    {
+      "id": "a10",
+      "passed": true
+    },
+    {
+      "id": "a11",
+      "passed": true
+    },
+    {
+      "id": "a12",
+      "passed": true
+    },
+    {
+      "id": "tr01",
+      "passed": true
+    },
+    {
+      "id": "tr02",
+      "passed": true
+    },
+    {
+      "id": "tr03",
+      "passed": true
+    },
+    {
+      "id": "tr04",
+      "passed": true
+    },
+    {
+      "id": "tr05",
+      "passed": true
+    },
+    {
+      "id": "tr06",
+      "passed": true
+    },
+    {
+      "id": "tr07",
+      "passed": true
+    },
+    {
+      "id": "tr08",
+      "passed": true
+    },
+    {
+      "id": "tr09",
+      "passed": true
+    },
+    {
+      "id": "tr10",
+      "passed": true
+    },
+    {
+      "id": "tr11",
+      "passed": true
+    },
+    {
+      "id": "tr12",
+      "passed": true
+    },
+    {
+      "id": "r55",
+      "passed": true
+    },
+    {
+      "id": "r56",
+      "passed": true
+    },
+    {
+      "id": "r57",
+      "passed": true
+    },
+    {
+      "id": "r58",
+      "passed": true
+    },
+    {
+      "id": "r59",
+      "passed": true
+    },
+    {
+      "id": "r60",
+      "passed": true
+    },
+    {
+      "id": "r61",
+      "passed": true
+    },
+    {
+      "id": "r62",
+      "passed": true
+    },
+    {
+      "id": "r63",
+      "passed": true
+    },
+    {
+      "id": "r64",
+      "passed": true
+    },
+    {
+      "id": "r65",
+      "passed": true
+    },
+    {
+      "id": "r66",
+      "passed": true
+    },
+    {
+      "id": "ember_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "ember_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "ember_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "ember_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "ember_blast",
+      "passed": true
+    },
+    {
+      "id": "ember_ring",
+      "passed": true
+    },
+    {
+      "id": "ember_vortex",
+      "passed": true
+    },
+    {
+      "id": "ember_field",
+      "passed": true
+    },
+    {
+      "id": "ink_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "ink_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "ink_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "ink_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "ink_blast",
+      "passed": true
+    },
+    {
+      "id": "ink_ring",
+      "passed": true
+    },
+    {
+      "id": "ink_vortex",
+      "passed": true
+    },
+    {
+      "id": "ink_field",
+      "passed": true
+    },
+    {
+      "id": "thread_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "thread_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "thread_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "thread_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "thread_blast",
+      "passed": true
+    },
+    {
+      "id": "thread_ring",
+      "passed": true
+    },
+    {
+      "id": "thread_vortex",
+      "passed": true
+    },
+    {
+      "id": "thread_field",
+      "passed": true
+    },
+    {
+      "id": "prism_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "prism_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "prism_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "prism_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "prism_blast",
+      "passed": true
+    },
+    {
+      "id": "prism_ring",
+      "passed": true
+    },
+    {
+      "id": "prism_vortex",
+      "passed": true
+    },
+    {
+      "id": "prism_field",
+      "passed": true
+    },
+    {
+      "id": "lotus_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "lotus_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "lotus_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "lotus_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "lotus_blast",
+      "passed": true
+    },
+    {
+      "id": "lotus_ring",
+      "passed": true
+    },
+    {
+      "id": "lotus_vortex",
+      "passed": true
+    },
+    {
+      "id": "lotus_field",
+      "passed": true
+    },
+    {
+      "id": "smoke_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "smoke_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "smoke_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "smoke_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "smoke_blast",
+      "passed": true
+    },
+    {
+      "id": "smoke_ring",
+      "passed": true
+    },
+    {
+      "id": "smoke_vortex",
+      "passed": true
+    },
+    {
+      "id": "smoke_field",
+      "passed": true
+    },
+    {
+      "id": "frost_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "frost_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "frost_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "frost_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "frost_blast",
+      "passed": true
+    },
+    {
+      "id": "frost_ring",
+      "passed": true
+    },
+    {
+      "id": "frost_vortex",
+      "passed": true
+    },
+    {
+      "id": "frost_field",
+      "passed": true
+    },
+    {
+      "id": "storm_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "storm_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "storm_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "storm_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "storm_blast",
+      "passed": true
+    },
+    {
+      "id": "storm_ring",
+      "passed": true
+    },
+    {
+      "id": "storm_vortex",
+      "passed": true
+    },
+    {
+      "id": "storm_field",
+      "passed": true
+    },
+    {
+      "id": "void_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "void_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "void_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "void_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "void_blast",
+      "passed": true
+    },
+    {
+      "id": "void_ring",
+      "passed": true
+    },
+    {
+      "id": "void_vortex",
+      "passed": true
+    },
+    {
+      "id": "void_field",
+      "passed": true
+    },
+    {
+      "id": "brass_beam_lance",
+      "passed": true
+    },
+    {
+      "id": "brass_beam_tether",
+      "passed": true
+    },
+    {
+      "id": "brass_beam_wave",
+      "passed": true
+    },
+    {
+      "id": "brass_beam_fork",
+      "passed": true
+    },
+    {
+      "id": "brass_blast",
+      "passed": true
+    },
+    {
+      "id": "brass_ring",
+      "passed": true
+    },
+    {
+      "id": "brass_vortex",
+      "passed": true
+    },
+    {
+      "id": "brass_field",
+      "passed": true
+    },
+    {
+      "id": "480_distinct_generated_frames",
+      "passed": true
+    },
+    {
+      "id": "23_actual_source_boards",
+      "passed": true
+    },
+    {
+      "id": "395_projectile_profiles",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "source_boards": 23,
+  "icons": 36,
+  "fx_strips": 80,
+  "unique_frames": 480,
+  "projectile_profiles": 395,
+  "packaged": true,
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
+}

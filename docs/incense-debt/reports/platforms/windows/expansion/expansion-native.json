@@ -3254,7 +3254,7 @@
       "passed": true
     },
     {
-      "detail": "35",
+      "detail": "36",
       "id": "map_full_build_not_truncated",
       "passed": true
     },
@@ -4608,5 +4608,5 @@
   "passed": true,
   "scope": "native keyboard interactions + arranged scene visual fixtures; full combat campaign evidence is a separate simulation report",
   "packaged": true,
-  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
 }

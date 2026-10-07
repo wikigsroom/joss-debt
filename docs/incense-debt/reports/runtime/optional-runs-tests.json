@@ -13,7 +13,7 @@
 			],
 			"character": "c_paper",
 			"clears": 26,
-			"combat_seconds": 516.8,
+			"combat_seconds": 504.0,
 			"floor": 3,
 			"health": 11,
 			"result": "victory"
@@ -28,7 +28,7 @@
 			],
 			"character": "c_mask",
 			"clears": 26,
-			"combat_seconds": 635.4,
+			"combat_seconds": 627.0,
 			"floor": 3,
 			"health": 12,
 			"result": "victory"

@@ -1,7 +1,7 @@
 extends RefCounted
 ## Keyboard/mouse, controller, and three independent touch IDs yield one ActionFrame.
 const Profile = preload("res://scripts/ui/input_profile.gd")
-const DEFAULT_LAYOUT = {"move": [.11328125, .7916667], "aim": [.7109375, .7916667], "dash": [.8125, .8402778], "skill": [.9140625, .75]}
+const DEFAULT_LAYOUT = {"move": [.11328125, .7916667], "aim": [.6875, .7777778], "dash": [.8125, .8402778], "skill": [.9140625, .7055556], "active_item": [.9140625, .9]}
 var profile = Profile.new()
 var layout: Dictionary = DEFAULT_LAYOUT.duplicate(true)
 var control_scale = 1.0
@@ -27,6 +27,7 @@ var move_touch = Vector2.ZERO
 var aim_touch = Vector2.ZERO
 var pending_dash = false
 var pending_skill = false
+var pending_active_item = false
 var pending_interact = false
 var previous_pad: Dictionary = {}
 var held_action_ids: Dictionary = {}
@@ -48,6 +49,7 @@ func clear() -> void:
 	aim_touch = Vector2.ZERO
 	pending_dash = false
 	pending_skill = false
+	pending_active_item = false
 	pending_interact = false
 	previous_pad.clear()
 	fire_latched = false
@@ -95,6 +97,13 @@ func configure(data: Dictionary) -> void:
 			var values = incoming.get(action, layout[action])
 			if values is Array and values.size() == 2 and (values[0] is float or values[0] is int) and (values[1] is float or values[1] is int):
 				layout[action] = [clampf(float(values[0]), .02, .98), clampf(float(values[1]), .35, .96)]
+		if not incoming.has("active_item") and not valid_layout():
+			# Keep older customized controls when adding a fifth touch target.
+			for y in [.89, .70, .52]:
+				for x in [.91, .72, .52, .32, .12]:
+					layout.active_item = [x, y]
+					if valid_layout(): break
+				if valid_layout(): break
 	if not valid_layout():
 		control_scale = 1.0
 		layout = DEFAULT_LAYOUT.duplicate(true)
@@ -114,6 +123,7 @@ func event(event_value: InputEvent) -> void:
 	if profile.event_matches("dash", event_value): pending_dash = true
 	if profile.event_matches("interact", event_value): pending_interact = true
 	if profile.event_matches("skill", event_value): pending_skill = true
+	if profile.event_matches("active_item", event_value): pending_active_item = true
 	if profile.event_matches("fire", event_value): release_gate = false
 	for action in ["aim_up", "aim_down", "aim_left", "aim_right"]:
 		if profile.event_matches(action, event_value):
@@ -131,6 +141,9 @@ func event(event_value: InputEvent) -> void:
 			elif event_value.position.distance_to(skill_center()) <= control_radius("skill") + 2:
 				pending_skill = true
 				held_action_ids[event_value.index] = "skill"
+			elif event_value.position.distance_to(control_center("active_item")) <= control_radius("active_item") + 2:
+				pending_active_item = true
+				held_action_ids[event_value.index] = "active_item"
 			elif ((event_value.position.x < 640) != mirror) and move_id < 0:
 				move_id = event_value.index
 				left_origin = control_center("move") if fixed_sticks else safe_point(event_value.position, control_radius("move") + 2)
@@ -184,10 +197,11 @@ func sample(mouse: Vector2, player_position: Vector2) -> Dictionary:
 		var pad_fire = profile.strength("controller", "fire", pad) > .22
 		if pad_fire: last_device = "controller"
 		firing = firing or pad_fire
-		var buttons = {"skill": profile.strength("controller", "skill", pad) > .25, "dash": profile.strength("controller", "dash", pad) > .25, "interact": profile.strength("controller", "interact", pad) > .5}
+		var buttons = {"skill": profile.strength("controller", "skill", pad) > .25, "dash": profile.strength("controller", "dash", pad) > .25, "interact": profile.strength("controller", "interact", pad) > .5, "active_item": profile.strength("controller", "active_item", pad) > .5}
 		pending_skill = pending_skill or (buttons.skill and not previous_pad.get("skill", false))
 		pending_dash = pending_dash or (buttons.dash and not previous_pad.get("dash", false))
 		pending_interact = pending_interact or (buttons.interact and not previous_pad.get("interact", false))
+		pending_active_item = pending_active_item or (buttons.active_item and not previous_pad.get("active_item", false))
 		previous_pad = buttons
 	if touch_mode:
 		if move_touch.length() > deadzone:
@@ -205,8 +219,9 @@ func sample(mouse: Vector2, player_position: Vector2) -> Dictionary:
 		previous_fire = firing
 		firing = fire_latched
 	var result = {"move": movement.limit_length(), "aim": aim, "fire": firing,
-		"dash": pending_dash, "skill": pending_skill, "interact": pending_interact}
+		"dash": pending_dash, "skill": pending_skill, "interact": pending_interact, "active_item": pending_active_item}
 	pending_dash = false
 	pending_skill = false
+	pending_active_item = false
 	pending_interact = false
 	return result

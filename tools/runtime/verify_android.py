@@ -50,7 +50,7 @@ def main():
     devices = run([str(sdk / "platform-tools/adb.exe"), "devices", "-l"])
     with zipfile.ZipFile(apk) as bundle:
         names = bundle.namelist()
-        required = {name: any(p.endswith(name) for p in names) for name in ["story.zh_CN.json", "arena_boundaries.json", "fx/combat-revision/manifest.json", "expansion.json", "achievements.json", "runtime_assets.json", "music_scores.json", "rules.json", "OFL.txt", "ResourceHanRounded-OFL.txt", "SmileySans-OFL.txt", "Lucide-LICENSE.txt", "Godot-THIRDPARTY.txt", "weapon-rig.json"]}
+        required = {name: any(p.endswith(name) for p in names) for name in ["equipment.json", "projectile_profiles.json", "fx_presets.json", "fx/equipment-polish/manifest.json", "story.zh_CN.json", "arena_boundaries.json", "fx/combat-revision/manifest.json", "expansion.json", "achievements.json", "runtime_assets.json", "music_scores.json", "rules.json", "OFL.txt", "ResourceHanRounded-OFL.txt", "SmileySans-OFL.txt", "Lucide-LICENSE.txt", "Godot-THIRDPARTY.txt", "weapon-rig.json"]}
         registry = json.loads(bundle.read("assets/data/runtime_assets.json"))
         registry_matches = registry == json.loads((ROOT / "game/data/runtime_assets.json").read_text("utf8"))
         imported_resources = {}
@@ -61,7 +61,7 @@ def main():
             imported_resources[row["file"]] = target is not None and "assets/" + target[1].removeprefix("res://") in names
         rig_matches = json.loads(bundle.read("assets/assets/weapon-rig.json")) == json.loads((ROOT / "game/assets/weapon-rig.json").read_text("utf8"))
         ui_scripts = {name: all(any(p.endswith(name + suffix) for p in names) for suffix in [".gdc", ".gd.remap"])
-                      for name in ["game_theme", "modern_ui", "rounded_button", "character_sheet", "run_review", "weapon_trial_ui", "damage_record", "impact_control", "weapon_trial", "game_hud", "route_map", "weapon_motion", "expanded_campaign", "derived_seed", "expanded_patterns", "expanded_weapons", "interactive_scenery", "expanded_visuals", "combat_fx", "room_geometry", "campaign_cinematic"]}
+                      for name in ["game_theme", "modern_ui", "rounded_button", "character_sheet", "run_review", "weapon_trial_ui", "damage_record", "impact_control", "weapon_trial", "game_hud", "route_map", "weapon_motion", "expanded_campaign", "derived_seed", "expanded_patterns", "expanded_weapons", "interactive_scenery", "expanded_visuals", "combat_fx", "room_geometry", "campaign_cinematic", "equipment", "attack_composer", "projectile_styles", "polished_fx", "equipment_ui", "floor_timeline", "input_profile", "input_adapter"]}
         license_bytes_match = all("assets/" + path in names and bundle.read("assets/" + path) == (ROOT / "game" / path).read_bytes() for path in ["assets/fonts/ResourceHanRounded-OFL.txt", "assets/fonts/SmileySans-OFL.txt", "assets/ui/icons/Lucide-LICENSE.txt"])
         rules_path = next((p for p in names if p.endswith("data/rules.json")), None)
         packed_rules = json.loads(bundle.read(rules_path)) if rules_path else {}
@@ -79,13 +79,15 @@ def main():
         music_stems_packaged = {stem: any(Path(p).name.startswith(stem + ".ogg-") and p.endswith(".oggvorbisstr") for p in names) for stem in stems}
         forbidden = [p for p in names if any(t in p.lower() for t in [".codex", "sub2_image_gen", "api_key", "keystore", "production-prompts", "tests/smoke_core", "tests/full_run"])]
         libraries = [p for p in names if p.startswith("lib/")]
-    passed = all(r.returncode == 0 for r in [badging, permissions, signing]) and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match
+    expected_version = re.search(r'config/version="([^"]+)"', (ROOT / "game/project.godot").read_text("utf8")).group(1)
+    version_matches = "versionName='" + expected_version + "'" in badging.stdout
+    passed = all(r.returncode == 0 for r in [badging, permissions, signing]) and version_matches and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match
     with apk.open("rb") as file: digest = hashlib.file_digest(file, "sha256").hexdigest()
     report = {"passed": passed, "apk_sha256": digest, "signature_verified": signing.returncode == 0,
               "signature_diagnostics": signing.stdout.strip(), "package": next((l for l in badging.stdout.splitlines() if l.startswith("package:")), ""),
               "platform_fields": [l for l in badging.stdout.splitlines() if l.startswith(("sdkVersion", "targetSdkVersion", "native-code", "supports-screens"))],
               "permissions": permissions.stdout.strip(), "manifest_diagnostics": badging.stderr.strip(), "required_data_and_licenses": required, "native_libraries": libraries,
-              "unexpected_sensitive_files": forbidden, "adb_devices": devices.stdout.strip(), "physical_device_tested": False, "virtualization": "none"}
+              "unexpected_sensitive_files": forbidden, "adb_devices": devices.stdout.strip(), "physical_device_tested": False, "virtualization": "none", "version_matches_source": version_matches}
     report.update({"music_configuration_matches_source": music_config_matches, "music_themes": len(scores.get("scores", {})), "music_stems_expected": expected_stem_count, "music_stems_packaged": music_stems_packaged})
     report.update({"save_schema": 2, "save_rules_match_source": save_rules_match, "compiled_save_scripts_packaged": save_scripts})
     report.update({"all_rules_match_source": rules_match, "combat_control_rules": packed_rules.get("combat", {}).get("control", {})})

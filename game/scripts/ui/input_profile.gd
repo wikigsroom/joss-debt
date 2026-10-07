@@ -2,9 +2,9 @@ extends RefCounted
 ## Device bindings are local profile data. Conflicts swap atomically.
 const ACTION_NAMES = {"up": "向上移动", "down": "向下移动", "left": "向左移动", "right": "向右移动",
 	"aim_up": "向上瞄准", "aim_down": "向下瞄准", "aim_left": "向左瞄准", "aim_right": "向右瞄准",
- 	"fire": "主攻击", "skill": "焚债", "dash": "身法", "interact": "行路", "pause": "暂停 / 返回", "map": "行路图", "inventory": "愿簿", "fullscreen": "全屏"}
-const KEYBOARD_ACTIONS = ["up", "down", "left", "right", "aim_up", "aim_down", "aim_left", "aim_right", "fire", "skill", "dash", "interact", "map", "inventory", "pause", "fullscreen"]
-const PAD_ACTIONS = ["up", "down", "left", "right", "aim_up", "aim_down", "aim_left", "aim_right", "fire", "skill", "dash", "interact", "map", "inventory", "pause", "fullscreen"]
+	"fire": "主攻击", "skill": "焚债", "active_item": "主动道具", "dash": "身法", "interact": "拾取 / 交互", "pause": "暂停 / 返回", "map": "行路图", "inventory": "愿簿", "fullscreen": "全屏"}
+const KEYBOARD_ACTIONS = ["up", "down", "left", "right", "aim_up", "aim_down", "aim_left", "aim_right", "fire", "skill", "active_item", "dash", "interact", "map", "inventory", "pause", "fullscreen"]
+const PAD_ACTIONS = ["up", "down", "left", "right", "aim_up", "aim_down", "aim_left", "aim_right", "fire", "skill", "active_item", "dash", "interact", "map", "inventory", "pause", "fullscreen"]
 const ALTERNATES = {"up": KEY_UP, "down": KEY_DOWN, "left": KEY_LEFT, "right": KEY_RIGHT, "skill": KEY_Q}
 static var pristine = defaults()
 var bindings: Dictionary = defaults()
@@ -15,6 +15,7 @@ static func defaults() -> Dictionary:
 		"aim_up": {"type": "key", "code": KEY_UP}, "aim_down": {"type": "key", "code": KEY_DOWN},
 		"aim_left": {"type": "key", "code": KEY_LEFT}, "aim_right": {"type": "key", "code": KEY_RIGHT},
 		"fire": {"type": "mouse", "code": MOUSE_BUTTON_LEFT}, "skill": {"type": "mouse", "code": MOUSE_BUTTON_RIGHT},
+		"active_item": {"type": "key", "code": KEY_F},
 		"dash": {"type": "key", "code": KEY_SPACE}, "interact": {"type": "key", "code": KEY_E},
 		"map": {"type": "key", "code": KEY_TAB}, "inventory": {"type": "key", "code": KEY_I},
 		"pause": {"type": "key", "code": KEY_ESCAPE}, "fullscreen": {"type": "key", "code": KEY_F11}},
@@ -23,6 +24,7 @@ static func defaults() -> Dictionary:
 		"aim_up": {"type": "axis", "code": JOY_AXIS_RIGHT_Y, "sign": -1}, "aim_down": {"type": "axis", "code": JOY_AXIS_RIGHT_Y, "sign": 1},
 		"aim_left": {"type": "axis", "code": JOY_AXIS_RIGHT_X, "sign": -1}, "aim_right": {"type": "axis", "code": JOY_AXIS_RIGHT_X, "sign": 1},
 		"fire": {"type": "axis", "code": JOY_AXIS_TRIGGER_RIGHT, "sign": 1}, "skill": {"type": "button", "code": JOY_BUTTON_RIGHT_SHOULDER},
+		"active_item": {"type": "button", "code": JOY_BUTTON_X},
 		"dash": {"type": "axis", "code": JOY_AXIS_TRIGGER_LEFT, "sign": 1}, "interact": {"type": "button", "code": JOY_BUTTON_A},
 		"map": {"type": "button", "code": JOY_BUTTON_LEFT_STICK}, "inventory": {"type": "button", "code": JOY_BUTTON_BACK},
 		"pause": {"type": "button", "code": JOY_BUTTON_START}, "fullscreen": {"type": "button", "code": JOY_BUTTON_Y}}}
@@ -35,6 +37,19 @@ func load_data(data) -> void:
 		if not incoming is Dictionary: continue
 		var used: Array = []
 		var candidate = bindings[device].duplicate(true)
+		# Adding an action must preserve older custom bindings that already use F/X.
+		if not incoming.has("active_item"):
+			var occupied: Array = []
+			for action in candidate:
+				if action == "active_item": continue
+				var value = incoming.get(action, candidate[action])
+				if valid_binding(device, value): occupied.append(normalize_binding(value))
+			var alternatives = [KEY_F, KEY_G, KEY_V, KEY_R] if device == "keyboard" else [JOY_BUTTON_X, JOY_BUTTON_RIGHT_STICK, JOY_BUTTON_DPAD_UP]
+			for code in alternatives:
+				var binding = {"type": "key" if device == "keyboard" else "button", "code": code}
+				if not occupied.has(binding):
+					candidate.active_item = binding
+					break
 		var valid = true
 		for action in candidate:
 			var value = incoming.get(action, candidate[action])

@@ -24,6 +24,12 @@ SOURCES={
     "boss-alternative":"expansion/early-1-boss-14.png",
     "themes":"expansion/twenty-themes-overview.png",
     "final-floor":"expansion/environment-m20-a.png",
+    "equipment-inventory":"equipment-polish/equipment-inventory.png",
+    "equipment-timeline":"equipment-polish/equipment-map-floor-06.png",
+    "equipment-ground":"equipment-polish/equipment-ground-prompt.png",
+    "equipment-five-beams":"equipment-polish/equipment-five-explosive-beams.png",
+    "equipment-history":"equipment-polish/equipment-history.png",
+    "equipment-touch":"equipment-polish/equipment-touch-hud.png",
 }
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -104,8 +110,8 @@ def diagram():
     d.rounded_rectangle((68,1144,1932,1328),radius=30,fill="#26383b",outline=line,width=2)
     center("房间 → 行路图 / 构筑 / 成长选择 / 商店 / 特殊房 / 暂停",1000,1162,34)
     center("Combat → map · build · rewards · shop · special rooms · pause",1000,1224,25,muted)
-    center("清房后走入方向门 · Enter 确认 · Esc 逐层返回 · 1—4 选择",1000,1352,29,peach)
-    center("Walk through doors after clearing · Confirm · Return one layer · Number choices",1000,1400,21,muted)
+    center("清房后走入方向门 · F 主动 · E 换装 · Enter 确认 · Esc 返回 · 1—4 选择",1000,1352,29,peach)
+    center("Walk through doors · F active · E swap · Confirm · Back · Number choices",1000,1400,21,muted)
     path=MEDIA/"menu-flow.png"; image.save(path,optimize=True)
     return {"path":path.relative_to(ROOT).as_posix(),"sha256":digest(path),"kind":"bilingual documentation diagram","source":"docs/incense-debt/22-menu-save-achievements.md"}
 
@@ -117,8 +123,9 @@ def main():
         source=NATIVE/relative; target=MEDIA/(name+".webp")
         Image.open(source).convert("RGB").save(target,quality=92,method=6)
         records.append({"path":target.relative_to(ROOT).as_posix(),"source":source.relative_to(ROOT).as_posix(),"source_sha256":digest(source),"sha256":digest(target),"kind":"native Windows screenshot","artifact_sha256":build["sha256"]})
-    for name,filename in [("combat-fx","revision-fx-motion.gif"),("boss-motion","dual-motion.gif"),("scenery","scenery-motion.gif")]:
-        source=NATIVE/"expansion"/filename
+    for name,filename in [("combat-fx","expansion/revision-fx-motion.gif"),("boss-motion","expansion/dual-motion.gif"),("scenery","expansion/scenery-motion.gif"),
+                          ("equipment-combination","equipment-polish/motion-combined.gif"),("equipment-storm","equipment-polish/fx-storm.gif")]:
+        source=NATIVE/filename
         with Image.open(source) as im:
             frames=[frame.convert("RGB").resize((768,432),Image.Resampling.LANCZOS) for frame in ImageSequence.Iterator(im)]
             duration=im.info.get("duration",100)

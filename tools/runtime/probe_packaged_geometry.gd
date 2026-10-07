@@ -23,5 +23,15 @@ func _initialize():
 		if argument.begins_with("--android-artifact="): report.android_artifact_sha256=FileAccess.get_sha256(argument.trim_prefix("--android-artifact="))
 	print(JSON.stringify(report))
 	for argument in OS.get_cmdline_user_args():
+		if argument.begins_with("--compiled-scripts="):
+			var scripts = JSON.parse_string(FileAccess.get_file_as_string(argument.trim_prefix("--compiled-scripts=")))
+			var mismatches: Array = []
+			for row in scripts:
+				if FileAccess.get_sha256(row.file) != row.android_sha256: mismatches.append(row.file)
+			report.compiled_script_count = scripts.size()
+			report.compiled_script_mismatches = mismatches
+			report.passed = report.passed and not scripts.is_empty() and mismatches.is_empty()
+			print("Compiled-script parity: ", scripts.size(), " checked; mismatches ", mismatches)
+	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--report="): FileAccess.open(argument.trim_prefix("--report="),FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
 	quit(0 if report.passed else 1)

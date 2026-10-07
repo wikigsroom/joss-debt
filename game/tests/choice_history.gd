@@ -35,7 +35,7 @@ func logical_key(code: int, pressed: bool = true, echo: bool = false) -> InputEv
 func run_suite() -> void:
 	var w = World.new()
 	w.start("c_paper", 6621, 3)
-	expect(w.run.growth_log.size() == 2 and w.run.growth_log[0].type == "weapon" and w.run.growth_log[1].type == "skill" and w.run.growth_log.all(func(entry): return entry.source == "initial"), "a fresh run records its starting weapon and base skill in chronological growth history")
+	expect(w.run.growth_log.size() == 3 and w.run.growth_log[2].type == "active" and w.run.growth_log[2].id == "a01" and w.run.growth_log[0].type == "weapon" and w.run.growth_log[1].type == "skill" and w.run.growth_log.all(func(entry): return entry.source == "initial"), "a fresh run records its starting weapon, base skill and active item in chronological growth history")
 	w.mode = "choice"
 	w.choices = [{"kind": "relic", "id": "r01", "price": 0, "slot": "history_relic"}]
 	expect(w.take_choice(0) and w.run.growth_log[-1].type == "relic" and w.run.growth_log[-1].id == "r01" and w.run.growth_log[-1].source == "choice", "a normal offering appends its real bonus to the same history ledger")

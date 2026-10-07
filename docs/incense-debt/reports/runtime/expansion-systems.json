@@ -2366,7 +2366,7 @@
 			"passed": true
 		},
 		{
-			"detail": "128.0",
+			"detail": "96.0",
 			"id": "weapon_w17_real_damage",
 			"passed": true
 		},
@@ -2446,7 +2446,7 @@
 			"passed": true
 		},
 		{
-			"detail": "136.5",
+			"detail": "119.6",
 			"id": "weapon_w25_real_damage",
 			"passed": true
 		},
@@ -2466,7 +2466,7 @@
 			"passed": true
 		},
 		{
-			"detail": "187.6",
+			"detail": "162.4",
 			"id": "weapon_w27_real_damage",
 			"passed": true
 		},
@@ -2476,7 +2476,7 @@
 			"passed": true
 		},
 		{
-			"detail": "144.0",
+			"detail": "112.0",
 			"id": "weapon_w28_real_damage",
 			"passed": true
 		},
@@ -2506,7 +2506,7 @@
 			"passed": true
 		},
 		{
-			"detail": "112.0",
+			"detail": "56.0",
 			"id": "weapon_w31_real_damage",
 			"passed": true
 		},

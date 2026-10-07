@@ -4,17 +4,15 @@ const SOURCE = "res://assets/fx/combat-revision/"
 
 static func line(r, from: Vector2, to: Vector2, color: Color, width: float) -> void:
 	var geometry = r.world.geometry
-	if not geometry.contains_floor(from,width*.5) or not geometry.contains_floor(to,width*.5):
+	if not r.fx_safe_draw and (not geometry.contains_floor(from,width*.5) or not geometry.contains_floor(to,width*.5)):
 		# Convex arena: trim against every radius-offset inward wall plane.
 		var start = 0.0
 		var end = 1.0
 		var delta = to-from
-		var polygon = geometry.floor_polygon
-		for i in polygon.size():
-			var edge = polygon[(i+1)%polygon.size()]-polygon[i]
-			var inward = Vector2(-edge.y,edge.x).normalized()
-			var distance = (from-polygon[i]).dot(inward)-width*.5
-			var rate = delta.dot(inward)
+		if geometry.floor_planes.size() != geometry.floor_polygon.size(): geometry.cache_floor_planes()
+		for plane in geometry.floor_planes:
+			var distance = from.x * plane.x + from.y * plane.y - plane.z - width * .5
+			var rate = delta.x * plane.x + delta.y * plane.y
 			if absf(rate)<.00001:
 				if distance<0: return
 			elif rate>0: start=maxf(start,-distance/rate)
@@ -25,7 +23,7 @@ static func line(r, from: Vector2, to: Vector2, color: Color, width: float) -> v
 	r.draw_line(from,to,color,width,true)
 
 static func arc(r, point: Vector2, radius: float, start: float, end: float, count: int, color: Color, width: float) -> void:
-	if r.world.geometry.contains_floor(point,radius+width*.5):
+	if r.fx_safe_draw or r.world.geometry.contains_floor(point,radius+width*.5):
 		r.draw_arc(point,radius,start,end,count,color,width,true)
 		return
 	for i in count:
@@ -34,7 +32,7 @@ static func arc(r, point: Vector2, radius: float, start: float, end: float, coun
 		line(r,from,to,color,width)
 
 static func disk(r, point: Vector2, radius: float, color: Color) -> void:
-	if r.world.geometry.contains_floor(point,radius):
+	if r.fx_safe_draw or r.world.geometry.contains_floor(point,radius):
 		r.draw_circle(point,radius,color)
 		return
 	var circle = PackedVector2Array()
@@ -65,16 +63,16 @@ static func frame(r, id: String, index: int) -> Texture2D:
 	return image
 
 static func sprite(r, image: Texture2D, point: Vector2, size: Vector2, angle: float = 0, tint: Color = Color.WHITE) -> void:
-	if tint.a < .004 or size.x < .1 or size.y < .1: return
+	if image == null or tint.a < .004 or size.x < .1 or size.y < .1: return
 	var transform = Transform2D(angle, point)
-	var quad = PackedVector2Array()
-	for corner in [Vector2(-.5,-.5),Vector2(.5,-.5),Vector2(.5,.5),Vector2(-.5,.5)]: quad.append(transform * (corner * size))
 	var floor = r.world.geometry.floor_polygon
-	if floor.is_empty() or r.world.geometry.contains_floor(point,size.length()*.5):
+	if r.fx_safe_draw or floor.is_empty() or r.world.geometry.contains_floor(point,size.length()*.5):
 		r.draw_set_transform_matrix(r.stage * transform)
 		r.draw_texture_rect(image,Rect2(-size*.5,size),false,tint)
 		r.draw_set_transform_matrix(r.stage)
 		return
+	var quad = PackedVector2Array()
+	for corner in [Vector2(-.5,-.5),Vector2(.5,-.5),Vector2(.5,.5),Vector2(-.5,.5)]: quad.append(transform * (corner * size))
 	# Texture UVs follow the cut polygon. Blasts never paint over the outer walls.
 	for piece in Geometry2D.intersect_polygons(quad, floor):
 		piece = convex_piece(piece)

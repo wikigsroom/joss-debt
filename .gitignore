@@ -21,6 +21,7 @@
 /docs/incense-debt/reports/**/*.gif
 /docs/incense-debt/reports/**/*.wav
 /docs/incense-debt/reports/**/*.log
+/docs/incense-debt/reports/**/isolated-saves/
 
 # Credentials and machine-local editor settings.
 .env

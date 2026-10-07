@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-07T09:19:55.353587+00:00",
+  "recorded_at": "2026-10-07T15:16:02.184170+00:00",
   "passed": true,
   "scope": "Static shared-content parity only; no physical Android/iOS run and no opaque Windows executable PCK byte comparison",
   "virtualization": "none",
@@ -10,24 +10,24 @@
       "native_runtime_tested": true,
       "artifact": {
         "path": "build/windows/IncenseDebt.exe",
-        "bytes": 561862192,
-        "sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
-        "expected_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+        "bytes": 587325936,
+        "sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+        "expected_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
         "device_tested": true
       }
     },
     "android_apk": {
       "path": "build/android/IncenseDebt.apk",
-      "bytes": 480710039,
-      "sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
-      "expected_sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+      "bytes": 505992908,
+      "sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b",
+      "expected_sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b",
       "device_tested": false
     },
     "ios_shared_source": {
       "path": "build/ios-handoff/IncenseDebt-shared-source.zip",
-      "bytes": 561051501,
-      "sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
-      "expected_sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+      "bytes": 589843982,
+      "sha256": "8779491d4ff2773de099b31396d02beed6534c9846017c29a294d430ffe3a3f3",
+      "expected_sha256": "8779491d4ff2773de099b31396d02beed6534c9846017c29a294d430ffe3a3f3",
       "device_tested": false
     }
   },
@@ -42,10 +42,10 @@
     }
   },
   "source_tree": {
-    "windows_game_member_count": 7704,
-    "windows_game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f",
-    "ios_game_member_count": 7704,
-    "ios_game_tree_sha256": "ec984aec7d28d608236ba8a8d7ef0cfca418759b46e97e13ff8292b32b70961f",
+    "windows_game_member_count": 7956,
+    "windows_game_tree_sha256": "e507182eb8e303ce41aa44ddcddc31abd3a8ef07fb962a7b3c3b2d3361b857f4",
+    "ios_game_member_count": 7956,
+    "ios_game_tree_sha256": "e507182eb8e303ce41aa44ddcddc31abd3a8ef07fb962a7b3c3b2d3361b857f4",
     "all_members_match": true,
     "missing_ios_members": [],
     "extra_ios_members": [],
@@ -54,7 +54,7 @@
   "android_packaging": {
     "verification_passed": true,
     "runtime_registry_matches_source": true,
-    "imported_resource_count": 3665,
+    "imported_resource_count": 3781,
     "all_imported_resources_packaged": true,
     "weapon_rig_matches_source": true,
     "music_configuration_matches_source": true,
@@ -62,6 +62,46 @@
     "compiled_ui_and_weapon_scripts_packaged": true
   },
   "core_files": {
+    "game/data/equipment.json": {
+      "source_sha256": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+      "android_apk_member": "assets/data/equipment.json",
+      "android_sha256": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+      "ios_zip_member": "game/data/equipment.json",
+      "ios_sha256": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 14220
+    },
+    "game/data/projectile_profiles.json": {
+      "source_sha256": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+      "android_apk_member": "assets/data/projectile_profiles.json",
+      "android_sha256": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+      "ios_zip_member": "game/data/projectile_profiles.json",
+      "ios_sha256": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 139707
+    },
+    "game/data/fx_presets.json": {
+      "source_sha256": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+      "android_apk_member": "assets/data/fx_presets.json",
+      "android_sha256": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+      "ios_zip_member": "game/data/fx_presets.json",
+      "ios_sha256": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 14965
+    },
+    "game/assets/fx/equipment-polish/manifest.json": {
+      "source_sha256": "065a37ede0c104095a0209cd231e06a713bc04543c6279b03a3899b390a68fbd",
+      "android_apk_member": "assets/assets/fx/equipment-polish/manifest.json",
+      "android_sha256": "065a37ede0c104095a0209cd231e06a713bc04543c6279b03a3899b390a68fbd",
+      "ios_zip_member": "game/assets/fx/equipment-polish/manifest.json",
+      "ios_sha256": "065a37ede0c104095a0209cd231e06a713bc04543c6279b03a3899b390a68fbd",
+      "raw_bytes_match": true,
+      "parsed_json_match": true,
+      "bytes": 105712
+    },
     "game/data/arena_boundaries.json": {
       "source_sha256": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
       "android_apk_member": "assets/data/arena_boundaries.json",
@@ -123,14 +163,14 @@
       "bytes": 7738
     },
     "game/data/runtime_assets.json": {
-      "source_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "source_sha256": "bc7fd0405bda02e3168a21f26ac2a6bfe8b16f2ea7628df6fec550a21f765e7b",
       "android_apk_member": "assets/data/runtime_assets.json",
-      "android_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "android_sha256": "bc7fd0405bda02e3168a21f26ac2a6bfe8b16f2ea7628df6fec550a21f765e7b",
       "ios_zip_member": "game/data/runtime_assets.json",
-      "ios_sha256": "9b542814e9f3364f776de268c424503f95ea85be3a6d132362787c49a192258c",
+      "ios_sha256": "bc7fd0405bda02e3168a21f26ac2a6bfe8b16f2ea7628df6fec550a21f765e7b",
       "raw_bytes_match": true,
       "parsed_json_match": true,
-      "bytes": 566164
+      "bytes": 584446
     },
     "game/data/music_scores.json": {
       "source_sha256": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
@@ -167,7 +207,7 @@
     "characters": 6,
     "weapons": 32,
     "skills": 18,
-    "relics": 54,
+    "relics": 66,
     "talents": 36,
     "synergies": 24,
     "routes": 6,
@@ -175,7 +215,10 @@
     "room_templates": 18,
     "special_rooms": 4,
     "enemies": 296,
-    "bosses": 99
+    "bosses": 99,
+    "base_relics": 54,
+    "active_items": 12,
+    "trinkets": 12
   },
   "rules_baseline": {
     "version": "0.1.0",

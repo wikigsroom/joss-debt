@@ -2,6 +2,7 @@ extends Control
 const Graph = preload("res://scripts/core/room_graph.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Modern = preload("res://scripts/ui/modern_ui.gd")
+const FloorTimeline = preload("res://scripts/ui/floor_timeline.gd")
 var world
 var mobile_graph = false
 var origin = Vector2.ZERO
@@ -26,7 +27,7 @@ func _draw() -> void:
 static func list_view(ui, sheet: Control, page: String) -> void:
 	var scroll = ScrollContainer.new()
 	scroll.position = Vector2(18, 84)
-	scroll.size = Vector2(312, 440)
+	scroll.size = Vector2(312, 410)
 	sheet.add_child(scroll)
 	var list = VBoxContainer.new()
 	list.add_theme_constant_override("separation", 12)
@@ -40,6 +41,11 @@ static func list_view(ui, sheet: Control, page: String) -> void:
 	else:
 		entries.append({"name": ui.world.db.name_of("weapons", ui.world.player.weapon), "body": ui.world.db.row("weapons", ui.world.player.weapon).behavior, "icon": "sword", "art": "res://assets/weapons/" + ui.world.player.weapon + ".png"})
 		entries.append({"name": ui.world.db.name_of("skills", ui.world.player.skill), "body": "当前焚债", "icon": "flame", "art": "res://assets/skills/" + ui.world.player.skill + ".png"})
+		var active = ui.world.Equipment.active_row(ui.world)
+		if not active.is_empty(): entries.append({"name": active.name, "body": active.behavior + " · %d/%d充能" % [int(ui.world.run.active_item.charge), int(active.charge_rooms)], "icon": "zap", "art": "res://assets/active_items/" + active.id + ".png"})
+		if not str(ui.world.run.trinket).is_empty():
+			var trinket = ui.world.db.row("trinkets", ui.world.run.trinket)
+			entries.append({"name": trinket.name, "body": trinket.behavior, "icon": "circle-dot", "art": "res://assets/trinkets/" + trinket.id + ".png"})
 		for id in ui.world.run.relics:
 			entries.append({"name": ui.world.db.name_of("relics", id) + " ×%d" % int(ui.world.run.relics[id]), "body": ui.world.db.row("relics", id).behavior, "icon": "sparkles", "art": "res://assets/relics/" + id + ".png"})
 		for id in ui.world.run.talents:
@@ -72,8 +78,9 @@ static func show_sheet(ui, page: String = "build") -> void:
 	ui.hud.visible = false
 	ui.modal.set_meta("navigation_page", "map_" + page)
 	ui.label(ui.modal, "行路", Rect2(42, 30, 1090, 60), 38)
-	ui.label(ui.modal, "%s · 第%d重 / %d" % [ui.world.region_spec().name, int(ui.world.run.floor), int(ui.world.run.floor_limit)], Rect2(45, 95, 880, 36), 20, UI.MUTED)
-	var stats = ui.panel(ui.modal, Rect2(32, 151, 220, 536), UI.INSET, Color.TRANSPARENT)
+	ui.label(ui.modal, "%s · 第%d重" % [ui.world.region_spec().name, int(ui.world.run.floor)], Rect2(45, 101, 212, 36), 18, UI.MUTED)
+	FloorTimeline.attach(ui, Rect2(276, 86, 852, 78))
+	var stats = ui.panel(ui.modal, Rect2(32, 178, 220, 509), UI.INSET, Color.TRANSPARENT)
 	ui.label(stats, "还愿人", Rect2(18, 16, 180, 42), 24)
 	var rows = ui.world.player_stat_rows()
 	for i in rows.size():
@@ -81,11 +88,11 @@ static func show_sheet(ui, page: String = "build") -> void:
 		ui.icon(stats, str(row.icon), Rect2(19, 80 + i * 62, 22, 22), UI.JADE)
 		ui.label(stats, str(row.label), Rect2(51, 67 + i * 62, 150, 32), 17, UI.MUTED)
 		ui.label(stats, str(row.value), Rect2(51, 95 + i * 62, 150, 31), 23)
-	ui.label(stats, str(ui.world.run.get("seed_text", ui.Seed.text(int(ui.world.run.seed)))), Rect2(18, 474, 189, 36), 18, UI.JADE)
-	var map_panel = ui.panel(ui.modal, Rect2(268, 151, 612, 536), UI.INSET, Color.TRANSPARENT)
+	ui.label(stats, str(ui.world.run.get("seed_text", ui.Seed.text(int(ui.world.run.seed)))), Rect2(18, 448, 189, 36), 18, UI.JADE)
+	var map_panel = ui.panel(ui.modal, Rect2(268, 178, 612, 509), UI.INSET, Color.TRANSPARENT)
 	var scroll = ScrollContainer.new()
 	scroll.position = Vector2(10, 10)
-	scroll.size = Vector2(592, 470)
+	scroll.size = Vector2(592, 443)
 	map_panel.add_child(scroll)
 	var canvas = Control.new()
 	var minimum = Vector2.INF
@@ -118,8 +125,8 @@ static func show_sheet(ui, page: String = "build") -> void:
 		if current: current_action = action
 		if visited: ui.icon(action, "check", Rect2(diameter - 16, -2, 18, 18), UI.JADE)
 	if current_action != null: scroll.ensure_control_visible.call_deferred(current_action)
-	ui.label(map_panel, "地图只读 · 沿房间方向门前行", Rect2(22, 490, 560, 34), 17, UI.MUTED)
-	var build = ui.panel(ui.modal, Rect2(896, 151, 352, 536), UI.INSET, Color.TRANSPARENT)
+	ui.label(map_panel, "沿房间方向门前行", Rect2(22, 463, 560, 34), 17, UI.MUTED)
+	var build = ui.panel(ui.modal, Rect2(896, 178, 352, 509), UI.INSET, Color.TRANSPARENT)
 	ui.icon_button(build, "完整当前构筑", "layers", Rect2(20, 16, 144, 52), func(): show_sheet(ui, "build"), page == "build", "构筑")
 	ui.icon_button(build, "所有历史选择", "scroll-text", Rect2(178, 16, 154, 52), func(): show_sheet(ui, "history"), page == "history", "已选")
 	list_view(ui, build, page)

@@ -1,0 +1,7876 @@
+{
+	"checks": [
+		{
+			"detail": "",
+			"id": "starter_active_fully_charged_and_empty_single_trinket",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a01_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a01_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a01_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_4",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a01_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "151.199999999999",
+			"id": "a01_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a02_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a02_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a02_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_10",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a02_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a03_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a03_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a03_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_15",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a03_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a04_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a04_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a04_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_20",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a04_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "36.4000000000015",
+			"id": "a04_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a05_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a05_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a05_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_26",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a05_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "84.0",
+			"id": "a05_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a06_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a06_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a06_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_32",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a06_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "112.0",
+			"id": "a06_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a07_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a07_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a07_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_38",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a07_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a08_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a08_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a08_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_43",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a08_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "36.4000000000015",
+			"id": "a08_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a09_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a09_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a09_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_49",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a09_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a10_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a10_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a10_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_54",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a10_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a11_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a11_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a11_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_59",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a11_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "expired_haste_removes_all_bonuses",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a12_activation_consumes_charge_once",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a12_repeated_press_has_no_free_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a12_real_authored_effect",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_65",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "a12_inflight_effect_restore_deterministic",
+			"passed": true
+		},
+		{
+			"detail": "134.399999999998",
+			"id": "a12_deals_real_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "full_health_heal_does_not_spend_charge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "empty_room_reroll_does_not_spend_charge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "charge_efficiency_preserves_fractional_charge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "battery_adds_one_charge_not_amplified",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "full_charge_battery_stays_on_ground",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "active_swap_places_actual_depleted_old_item_on_ground",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "picking_old_active_does_not_refill_charge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "repeat_pickup_cannot_duplicate_inventory",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "clearing_room_charges_once_and_keeps_equipment",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_77",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "restored_room_cannot_farm_charge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr01_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_80",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr01_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr02_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_83",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr02_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr03_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_86",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr03_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr04_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_89",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr04_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr05_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_92",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr05_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr06_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_95",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr06_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr07_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_98",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr07_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr08_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_101",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr08_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr09_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_104",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr09_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr10_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_107",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr10_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr11_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_110",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr11_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr12_one_slot_swap_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_113",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "tr12_restored_slot_and_attribute",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "eighty_swaps_do_not_accumulate_attributes",
+			"passed": true
+		},
+		{
+			"detail": "170/20000",
+			"id": "normal_low_probability_actual_sampling",
+			"passed": true
+		},
+		{
+			"detail": "503/20000",
+			"id": "elite_low_probability_actual_sampling",
+			"passed": true
+		},
+		{
+			"detail": "1521/20000",
+			"id": "boss_low_probability_actual_sampling",
+			"passed": true
+		},
+		{
+			"detail": "699/20000",
+			"id": "room_low_probability_actual_sampling",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "rare_rng_does_not_change_ordinary_loot",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "summons_cannot_roll_rare_equipment",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "training_cannot_produce_loot",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "same_enemy_roll_and_restored_ledger_are_once_only",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_124",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "restore_cannot_reroll_enemy_drop",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "treasure_room_authored_trinket_pedestal",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "treasure_pedestal_cannot_duplicate",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "room_return_keeps_ground_equipment_identity",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "12.0",
+			"id": "w01/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.9599999999991",
+			"id": "w01/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.9599999999991",
+			"id": "w01/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.2799999999988",
+			"id": "w01/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "39.6287999999986",
+			"id": "w01/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999983",
+			"id": "w01/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "70.5887999999977",
+			"id": "w01/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "73.4400000000041",
+			"id": "w01/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w01/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "8.0",
+			"id": "w02/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.6399999999976",
+			"id": "w02/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.6399999999976",
+			"id": "w02/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "27.5199999999968",
+			"id": "w02/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "26.4191999999985",
+			"id": "w02/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.2799999999952",
+			"id": "w02/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "47.0591999999961",
+			"id": "w02/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.9600000000046",
+			"id": "w02/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w02/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "36.0",
+			"id": "w03/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999983",
+			"id": "w03/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999983",
+			"id": "w03/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "77.3999999999978",
+			"id": "w03/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "59.4431999999979",
+			"id": "w03/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "108.359999999997",
+			"id": "w03/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "105.883199999997",
+			"id": "w03/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "110.160000000002",
+			"id": "w03/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w03/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.0",
+			"id": "w04/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.7103999999999",
+			"id": "w04/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.7103999999999",
+			"id": "w04/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.7103999999999",
+			"id": "w04/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "69.1687679999995",
+			"id": "w04/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "123.839999999997",
+			"id": "w04/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "141.177599999995",
+			"id": "w04/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "184.896000000001",
+			"id": "w04/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w04/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "16.5",
+			"id": "w05/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.760000000002",
+			"id": "w05/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.760000000002",
+			"id": "w05/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "70.9500000000025",
+			"id": "w05/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "63.9840000000004",
+			"id": "w05/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "51.6000000000022",
+			"id": "w05/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "58.8240000000005",
+			"id": "w05/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "57.7799999999988",
+			"id": "w05/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w05/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "16.0",
+			"id": "w06/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "52.9760000000006",
+			"id": "w06/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "52.9760000000006",
+			"id": "w06/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "66.7360000000008",
+			"id": "w06/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "64.5344000000023",
+			"id": "w06/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "82.5600000000013",
+			"id": "w06/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "94.118400000003",
+			"id": "w06/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "73.7279999999955",
+			"id": "w06/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w06/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.0",
+			"id": "w07/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.0",
+			"id": "w07/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.0",
+			"id": "w07/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.0",
+			"id": "w07/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.2000000000007",
+			"id": "w07/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.0",
+			"id": "w07/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "34.2000000000007",
+			"id": "w07/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.6800000000148",
+			"id": "w07/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w07/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "64.0",
+			"id": "w08/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "110.080000000002",
+			"id": "w08/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "110.080000000002",
+			"id": "w08/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "137.600000000002",
+			"id": "w08/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "105.676800000001",
+			"id": "w08/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "192.640000000003",
+			"id": "w08/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "188.236800000002",
+			"id": "w08/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "195.839999999998",
+			"id": "w08/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w08/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "9.0",
+			"id": "w09/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "23.2199999999993",
+			"id": "w09/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "23.2199999999993",
+			"id": "w09/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.9599999999991",
+			"id": "w09/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "29.7215999999989",
+			"id": "w09/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "46.4399999999987",
+			"id": "w09/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "52.9415999999983",
+			"id": "w09/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "55.0799999999981",
+			"id": "w09/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w09/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "14.0",
+			"id": "w10/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "36.1200000000026",
+			"id": "w10/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.1600000000035",
+			"id": "w10/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.1600000000035",
+			"id": "w10/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "46.2336000000032",
+			"id": "w10/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "72.2400000000052",
+			"id": "w10/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "106.433600000008",
+			"id": "w10/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.6800000000039",
+			"id": "w10/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w10/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "26.0",
+			"id": "w11/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "86.0860000000012",
+			"id": "w11/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "86.0860000000012",
+			"id": "w11/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "108.446000000002",
+			"id": "w11/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "104.868400000001",
+			"id": "w11/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "134.160000000003",
+			"id": "w11/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "152.942400000004",
+			"id": "w11/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "119.808000000005",
+			"id": "w11/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w11/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.0",
+			"id": "w12/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.2960000000003",
+			"id": "w12/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.2960000000003",
+			"id": "w12/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "20.2960000000003",
+			"id": "w12/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "37.3446400000012",
+			"id": "w12/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "103.200000000004",
+			"id": "w12/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "117.648000000005",
+			"id": "w12/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "92.1599999999999",
+			"id": "w12/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w12/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "21.0",
+			"id": "w13/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "21.0",
+			"id": "w13/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "18.0600000000013",
+			"id": "w13/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0800000000017",
+			"id": "w13/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "26.880000000001",
+			"id": "w13/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0800000000017",
+			"id": "w13/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.1768000000011",
+			"id": "w13/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "83.9159999999974",
+			"id": "w13/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w13/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "22.0",
+			"id": "w14/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "47.2999999999956",
+			"id": "w14/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.7599999999948",
+			"id": "w14/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.7599999999948",
+			"id": "w14/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "55.2463999999964",
+			"id": "w14/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.7599999999948",
+			"id": "w14/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "64.7063999999955",
+			"id": "w14/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "84.7440000000024",
+			"id": "w14/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w14/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "10.0",
+			"id": "w15/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "33.1100000000006",
+			"id": "w15/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "33.1100000000006",
+			"id": "w15/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.7100000000009",
+			"id": "w15/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "40.3339999999989",
+			"id": "w15/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "51.6000000000022",
+			"id": "w15/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "58.8240000000005",
+			"id": "w15/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "46.0799999999981",
+			"id": "w15/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w15/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "84.0",
+			"id": "w16/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.2432000000008",
+			"id": "w16/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.2432000000008",
+			"id": "w16/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.2432000000008",
+			"id": "w16/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "121.045344000002",
+			"id": "w16/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "216.720000000005",
+			"id": "w16/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "247.060800000007",
+			"id": "w16/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "323.568000000003",
+			"id": "w16/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w16/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0",
+			"id": "w17/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999928",
+			"id": "w17/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999928",
+			"id": "w17/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "82.5599999999904",
+			"id": "w17/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "79.2575999999954",
+			"id": "w17/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "27.5199999999968",
+			"id": "w17/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "47.0591999999961",
+			"id": "w17/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "146.880000000014",
+			"id": "w17/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w17/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "60.8000000000029",
+			"id": "w18/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "104.575999999992",
+			"id": "w18/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "104.575999999992",
+			"id": "w18/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "118.335999999992",
+			"id": "w18/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "102.374399999995",
+			"id": "w18/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "118.335999999992",
+			"id": "w18/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "143.654399999996",
+			"id": "w18/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "149.759999999991",
+			"id": "w18/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w18/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "33.0",
+			"id": "w19/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "33.0",
+			"id": "w19/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "37.8399999999965",
+			"id": "w19/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "55.3409999999949",
+			"id": "w19/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "42.2400000000016",
+			"id": "w19/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "37.8399999999965",
+			"id": "w19/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "64.7063999999955",
+			"id": "w19/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "119.235599999998",
+			"id": "w19/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w19/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "68.0",
+			"id": "w20/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "87.7199999999993",
+			"id": "w20/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "87.7199999999993",
+			"id": "w20/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "102.34",
+			"id": "w20/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "85.3808000000008",
+			"id": "w20/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "102.34",
+			"id": "w20/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "129.240800000003",
+			"id": "w20/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "165.24",
+			"id": "w20/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w20/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "36.0",
+			"id": "w21/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "92.8800000000028",
+			"id": "w21/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "123.840000000004",
+			"id": "w21/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "154.800000000005",
+			"id": "w21/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "107.328000000003",
+			"id": "w21/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "68.8000000000029",
+			"id": "w21/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "117.648000000005",
+			"id": "w21/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "141.695999999996",
+			"id": "w21/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w21/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "9.0",
+			"id": "w22/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "9.0",
+			"id": "w22/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "9.0",
+			"id": "w22/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "9.0",
+			"id": "w22/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "16.5600000000013",
+			"id": "w22/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "18.0",
+			"id": "w22/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "25.5600000000013",
+			"id": "w22/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "66.7439999999951",
+			"id": "w22/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w22/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "25.8999999999996",
+			"id": "w23/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "46.354000000003",
+			"id": "w23/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "46.354000000003",
+			"id": "w23/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "58.3940000000039",
+			"id": "w23/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "56.4676000000036",
+			"id": "w23/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.1600000000035",
+			"id": "w23/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "82.3536000000058",
+			"id": "w23/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "101.354400000006",
+			"id": "w23/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w23/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "14.0",
+			"id": "w24/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.1000000000022",
+			"id": "w24/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0800000000017",
+			"id": "w24/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "36.1200000000026",
+			"id": "w24/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "35.1568000000007",
+			"id": "w24/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0800000000017",
+			"id": "w24/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.1768000000011",
+			"id": "w24/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "53.9279999999999",
+			"id": "w24/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w24/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "23.9199999999983",
+			"id": "w25/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "57.0179999999964",
+			"id": "w25/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "52.3223999999973",
+			"id": "w25/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "72.8935999999958",
+			"id": "w25/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "66.4091999999946",
+			"id": "w25/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "44.7200000000012",
+			"id": "w25/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "76.4712",
+			"id": "w25/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "79.5599999999959",
+			"id": "w25/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w25/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "22.9500000000007",
+			"id": "w26/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "59.211000000003",
+			"id": "w26/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "59.211000000003",
+			"id": "w26/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "78.948000000004",
+			"id": "w26/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "71.4918000000034",
+			"id": "w26/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "58.4800000000032",
+			"id": "w26/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "100.000800000005",
+			"id": "w26/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "114.750000000002",
+			"id": "w26/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w26/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "106.400000000001",
+			"id": "w27/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "139.663999999999",
+			"id": "w27/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "139.663999999999",
+			"id": "w27/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "163.743999999999",
+			"id": "w27/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "139.663999999999",
+			"id": "w27/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "163.743999999999",
+			"id": "w27/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "211.903999999999",
+			"id": "w27/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "270.143999999998",
+			"id": "w27/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w27/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "32.0",
+			"id": "w28/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "32.0",
+			"id": "w28/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "34.3999999999978",
+			"id": "w28/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "34.3999999999978",
+			"id": "w28/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "30.7200000000012",
+			"id": "w28/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "48.1599999999962",
+			"id": "w28/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "60.8191999999945",
+			"id": "w28/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "95.9040000000059",
+			"id": "w28/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w28/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "50.0",
+			"id": "w29/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "50.7400000000016",
+			"id": "w29/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "50.7400000000016",
+			"id": "w29/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "50.7400000000016",
+			"id": "w29/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "72.0508000000009",
+			"id": "w29/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "86.0",
+			"id": "w29/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "147.060000000001",
+			"id": "w29/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "192.600000000002",
+			"id": "w29/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w29/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "60.0",
+			"id": "w30/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "60.0",
+			"id": "w30/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.2799999999988",
+			"id": "w30/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "61.9199999999983",
+			"id": "w30/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "70.0800000000017",
+			"id": "w30/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.2799999999988",
+			"id": "w30/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "70.5887999999977",
+			"id": "w30/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "157.248000000009",
+			"id": "w30/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w30/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "21.0",
+			"id": "w31/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "21.0",
+			"id": "w31/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "21.0",
+			"id": "w31/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "24.0800000000017",
+			"id": "w31/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "26.880000000001",
+			"id": "w31/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "28.0",
+			"id": "w31/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "41.1768000000011",
+			"id": "w31/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "102.059999999998",
+			"id": "w31/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w31/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/0_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "50.6666666666642",
+			"id": "w32/0_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/0_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/0_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/1_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "65.3600000000006",
+			"id": "w32/1_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/1_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/1_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/2_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "65.3600000000006",
+			"id": "w32/2_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/2_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/2_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/3_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "65.3600000000006",
+			"id": "w32/3_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/3_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/3_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/4_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "92.8111999999965",
+			"id": "w32/4_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/4_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/4_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/5_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "130.720000000001",
+			"id": "w32/5_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/5_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/5_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/6_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "223.531200000001",
+			"id": "w32/6_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/6_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/6_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/7_one_composed_root_shot_count",
+			"passed": true
+		},
+		{
+			"detail": "195.167999999983",
+			"id": "w32/7_real_combined_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/7_combined_effects_saveable",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "w32/7_bounded_without_recursion",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "five_beams_not_sixty_and_payload_damage_deduplicated",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "flight_and_echo_keep_original_recipe_after_swap",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "roundtrip_1155",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "combined_split_explosion_echo_resume_identical_damage",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "controlled_homing_scatter_steers_each_lane",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "old_v2_run_gains_safe_equipment_defaults",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "dual_trinket_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "unknown_active_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "negative_charge_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "over_charge_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "unknown_drop_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "invalid_recipe_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "invalid_ground_transaction_rejected_atomically",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e01_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e02_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e03_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e04_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e05_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e06_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e07_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e08_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e09_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e10_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e11_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e12_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e13_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e14_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e15_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e16_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e17_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e18_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e19_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e20_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e21_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e22_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e23_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e24_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e25_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e26_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e27_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e28_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e29_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e30_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e31_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e32_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e33_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e34_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e35_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e36_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e37_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e38_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e39_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e40_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e41_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e42_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e43_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e44_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e45_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e46_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e47_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e48_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e49_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e50_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e51_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e52_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e53_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e54_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e55_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e56_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e57_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e58_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e59_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e60_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e61_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e62_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e63_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e64_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e65_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e66_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e67_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e68_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e69_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e70_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e71_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e72_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e73_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e74_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e75_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e76_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e77_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e78_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e79_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e80_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e81_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e82_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e83_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e84_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e85_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e86_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e87_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e88_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e89_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e90_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e91_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e92_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e93_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e94_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e95_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e96_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e97_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e98_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e99_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e100_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e101_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e102_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e103_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e104_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e105_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e106_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e107_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e108_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e109_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e110_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e111_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e112_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e113_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e114_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e115_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e116_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e117_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e118_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e119_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e120_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e121_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e122_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e123_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e124_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e125_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e126_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e127_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e128_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e129_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e130_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e131_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e132_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e133_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e134_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e135_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e136_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e137_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e138_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e139_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e140_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e141_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e142_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e143_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e144_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e145_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e146_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e147_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e148_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e149_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e150_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e151_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e152_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e153_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e154_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e155_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e156_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e157_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e158_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e159_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e160_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e161_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e162_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e163_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e164_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e165_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e166_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e167_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e168_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e169_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e170_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e171_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e172_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e173_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e174_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e175_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e176_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e177_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e178_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e179_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e180_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e181_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e182_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e183_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e184_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e185_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e186_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e187_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e188_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e189_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e190_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e191_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e192_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e193_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e194_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e195_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e196_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e197_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e198_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e199_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e200_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e201_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e202_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e203_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e204_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e205_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e206_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e207_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e208_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e209_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e210_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e211_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e212_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e213_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e214_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e215_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e216_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e217_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e218_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e219_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e220_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e221_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e222_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e223_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e224_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e225_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e226_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e227_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e228_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e229_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e230_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e231_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e232_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e233_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e234_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e235_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e236_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e237_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e238_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e239_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e240_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e241_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e242_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e243_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e244_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e245_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e246_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e247_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e248_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e249_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e250_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e251_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e252_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e253_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e254_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e255_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e256_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e257_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e258_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e259_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e260_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e261_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e262_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e263_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e264_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e265_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e266_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e267_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e268_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e269_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e270_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e271_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e272_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e273_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e274_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e275_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e276_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e277_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e278_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e279_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e280_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e281_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e282_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e283_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e284_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e285_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e286_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e287_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e288_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e289_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e290_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e291_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e292_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e293_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e294_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e295_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "e296_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b01_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b02_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b03_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b04_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b05_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b06_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b07_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b08_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b09_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b10_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b11_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b12_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b13_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b14_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b15_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b16_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b17_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b18_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b19_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b20_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b21_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b22_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b23_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b24_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b25_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b26_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b27_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b28_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b29_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b30_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b31_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b32_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b33_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b34_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b35_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b36_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b37_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b38_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b39_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b40_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b41_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b42_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b43_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b44_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b45_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b46_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b47_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b48_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b49_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b50_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b51_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b52_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b53_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b54_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b55_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b56_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b57_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b58_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b59_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b60_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b61_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b62_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b63_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b64_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b65_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b66_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b67_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b68_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b69_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b70_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b71_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b72_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b73_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b74_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b75_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b76_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b77_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b78_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b79_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b80_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b81_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b82_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b83_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b84_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b85_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b86_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b87_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b88_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b89_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b90_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b91_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b92_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b93_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b94_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b95_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b96_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b97_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b98_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "b99_bullet_profile_and_real_wall_radius",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "395_unique_source_signatures_and_16_shapes",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "keyboard_active_press_is_single_edge",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "five_touch_targets_nonoverlap_0.75",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "five_touch_targets_nonoverlap_1.0",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "five_touch_targets_nonoverlap_1.25",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "legacy_f_and_x_bindings_keep_custom_action_and_get_free_active",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "malformed_legacy_binding_recovers_without_crash",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"samples": {
+		"boss": {
+			"authored": 0.08,
+			"drops": 1521,
+			"observed": 0.07605,
+			"trials": 20000
+		},
+		"elite": {
+			"authored": 0.025,
+			"drops": 503,
+			"observed": 0.02515,
+			"trials": 20000
+		},
+		"normal": {
+			"authored": 0.008,
+			"drops": 170,
+			"observed": 0.0085,
+			"trials": 20000
+		},
+		"projectile_radii": 395,
+		"projectile_shapes": 16,
+		"projectile_signatures": 395,
+		"room": {
+			"authored": 0.035,
+			"drops": 699,
+			"observed": 0.03495,
+			"trials": 20000
+		}
+	},
+	"scope": "real active effects, one-slot swaps, once-only low-rate loot, composed attacks across all 32 weapons, old and current saves, actual projectile radii and input edges"
+}

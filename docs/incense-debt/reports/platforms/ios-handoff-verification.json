@@ -2,12 +2,18 @@
   "passed": true,
   "platform": "ios",
   "source_zip": "build/ios-handoff/IncenseDebt-shared-source.zip",
-  "source_sha256": "2884f6d1f34927d1bc1997a7e5fa56342fd18357c916b6fb0c8b714b77ddfe5a",
+  "source_sha256": "8779491d4ff2773de099b31396d02beed6534c9846017c29a294d430ffe3a3f3",
   "template": ".local-tools/export-templates-4.7.2/ios.zip",
   "template_sha256": "fd3280d10dc75356dded006f6f8813f40a5aebd32d128592b781256d8ffbdff4",
   "required_members": [
     "game/project.godot",
     "game/data/catalog.json",
+    "game/data/equipment.json",
+    "game/data/fx_presets.json",
+    "game/data/projectile_profiles.json",
+    "game/scripts/combat/equipment.gd",
+    "game/scripts/combat/attack_composer.gd",
+    "game/scripts/ui/polished_fx.gd",
     "game/data/rules.json",
     "game/data/runtime_assets.json",
     "game/data/music_scores.json",
@@ -17,7 +23,7 @@
     "game/scripts/ui/orientation_guard.gd",
     "tools/runtime/export_ios_on_mac.py"
   ],
-  "member_count": 7705,
+  "member_count": 7957,
   "forbidden_tokens_checked": [
     ".codex",
     "api_key",

@@ -1,0 +1,238 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "passed": true,
+  "records": [
+    {
+      "id": "active_items",
+      "path": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "brass-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/brass-areas.png",
+      "sha256": "47fda659df543d10bf4845d4ff202ec80de99ad662b6be764740872369b618ce",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "brass-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/brass-beams.png",
+      "sha256": "0fced2cc4977473a6daae1edaa9a7e5e2d2da3a38b1d47ad0b300352741c1874",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ember-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/ember-areas.png",
+      "sha256": "6d7265c24cb873b5caa5d3fa1ea744c2e15ff3973f996152428c523a9266bb98",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ember-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/ember-beams.png",
+      "sha256": "a6a18c04d3c452cea75226eac4e9af9823860102f41db3a61203ca3233e66319",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "frost-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/frost-areas.png",
+      "sha256": "26a410577ab8fb77f266c83e11a0d0e8d6d9dd2f7e644a97df4c2f747ce6f793",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "frost-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/frost-beams.png",
+      "sha256": "d1e3a45ff28b1b1223b3d0643f93f2b1afb99e70deb793ba39f373469e122e04",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ink-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/ink-areas.png",
+      "sha256": "8bf4609fa372b80734c51843a3619ba2125fc14c4b27b6e1c9957ff889c15fe8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ink-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/ink-beams.png",
+      "sha256": "38a4af620e3acc20fc5944d59a3b4365fd12e3c6e4111bddbbeae2ca9b1766b6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "lotus-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/lotus-areas.png",
+      "sha256": "a41df2e10dc9a29d9efcfadd1e3b9b994defe2843ef643c01c22a2dccac2f6d4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "lotus-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/lotus-beams.png",
+      "sha256": "44c72ad2ff2f972c138b6b663d4c5f88282a23b220bcc7eec1769f1224f496fa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "modifiers",
+      "path": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "prism-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/prism-areas.png",
+      "sha256": "c77df66dd70b6b13bc45156e0ccad6aaf14d39dd9649fcd26403dcf1794b0dc9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "prism-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/prism-beams.png",
+      "sha256": "3b82f08d4d9038bbfca965b19d285389e65f164dc1cbfa982b45252b4c60651d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "smoke-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/smoke-areas.png",
+      "sha256": "67a989e28cde99ddf75f43f376019389164ee1c4e7a37628c32fe67e10667290",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "smoke-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/smoke-beams.png",
+      "sha256": "e69634edfb8bfe31c5b4635396b261c832cd6c8ea843e5abc5e7417b23555f30",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "storm-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/storm-areas.png",
+      "sha256": "09be96e41188e3e998453383bd16eda7a358d87265d851e5f4b4daf411950afd",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "storm-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/storm-beams.png",
+      "sha256": "7bf9c96203190b55600978283a1fd9edfc61fe5fa8a2901d51899c0ade8b9454",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "thread-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/thread-areas.png",
+      "sha256": "e3e146c3b12727443601d5e16aed6f1c6e984700fa283c3270fa02ed715e1db4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "thread-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/thread-beams.png",
+      "sha256": "eef3443deca22a6761f0f178f309012e4f5316bd0a610870790cd87722f82fdb",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "trinkets",
+      "path": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "void-areas",
+      "path": "output/imagegen/incense-debt/equipment-polish/void-areas.png",
+      "sha256": "e73db22e9ce3a55a52282e5d7e4ea982b9987bfe717ee4d64f851ec6a4b2ccb9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "void-beams",
+      "path": "output/imagegen/incense-debt/equipment-polish/void-beams.png",
+      "sha256": "082a4da03d7ae1762beafc129a8f64cbfdb240939a907ec22590c0270ee3d498",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "failures": []
+}

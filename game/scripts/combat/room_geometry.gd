@@ -15,6 +15,7 @@ var region = 1
 var objects: Array = []
 var bounds = AREA
 var floor_polygon = PackedVector2Array()
+var floor_planes = PackedVector3Array()
 var boundary_key = "legacy"
 var fine_navigation: Dictionary = {}
 static var boundary_specs: Dictionary = {}
@@ -29,16 +30,27 @@ func configure_biome(biome_id: String, variant: int) -> void:
 		floor_polygon.append(STAGE.affine_inverse() * Vector2(point[0], point[1]))
 	bounds = Rect2(floor_polygon[0], Vector2.ZERO)
 	for point in floor_polygon: bounds = bounds.expand(point)
+	cache_floor_planes()
+
+func cache_floor_planes() -> void:
+	floor_planes.clear()
+	var middle = bounds.get_center()
+	for i in floor_polygon.size():
+		var a = floor_polygon[i]
+		var inward = (floor_polygon[(i + 1) % floor_polygon.size()] - a).orthogonal().normalized()
+		if (middle - a).dot(inward) < 0: inward = -inward
+		floor_planes.append(Vector3(inward.x, inward.y, a.dot(inward)))
 
 func contains_floor(point: Vector2, radius: float = 0) -> bool:
 	if minf(bounds.size.x,bounds.size.y)<=radius*2: return false
 	if not bounds.grow(-radius).has_point(point): return false
 	if floor_polygon.is_empty(): return true
-	if not Geometry2D.is_point_in_polygon(point, floor_polygon): return false
-	if radius <= 0: return true
-	for i in floor_polygon.size():
-		var closest = Geometry2D.get_closest_point_to_segment(point, floor_polygon[i], floor_polygon[(i + 1) % floor_polygon.size()])
-		if point.distance_squared_to(closest) < radius * radius - .01: return false
+	# The authored inner walls are convex. Cached inward planes describe the
+	# same radius-eroded floor without thousands of per-frame segment queries.
+	if floor_planes.size() != floor_polygon.size(): cache_floor_planes()
+	var margin = sqrt(maxf(0, radius * radius - .01))
+	for plane in floor_planes:
+		if point.x * plane.x + point.y * plane.y - plane.z < margin: return false
 	return true
 
 func constrain_floor(point: Vector2, radius: float = 0) -> Vector2:
@@ -84,6 +96,7 @@ func doorway(direction: String, inset: float = 22) -> Vector2:
 func build(id: String, region_id: int = 1) -> void:
 	bounds = AREA
 	floor_polygon.clear()
+	floor_planes.clear()
 	boundary_key = "legacy"
 	objects.clear()
 	template_id = id

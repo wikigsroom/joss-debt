@@ -1,0 +1,2209 @@
+{
+  "passed": true,
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "generated_boards": 23,
+  "icons": 36,
+  "fx_strips": 80,
+  "independent_keyframes": 480,
+  "enemy_projectile_profiles": 395,
+  "source_bound_records": 116,
+  "records": [
+    {
+      "id": "a01",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a01.png",
+      "sha256": "9784a692f2711c3c3a712bd497d232b5a2a051b86e48e16c6fb5e67d1c116c6d",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a02",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a02.png",
+      "sha256": "7d506b7554befc7088cf767b1c8df12f1e4dee5868c280b6e2d4287e34427a05",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a03",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a03.png",
+      "sha256": "d5f3643b8b4cb730bfaeaa0451ac9c86ee636cae79aa29fdf439aec75df7d52d",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a04",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a04.png",
+      "sha256": "aa301c99e3c676cf2e524b4f2601c31515a39f78499030965d1a5efcc0191448",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a05",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a05.png",
+      "sha256": "cf558778ae3abc09afc208e01e1432ba98d296832b508f14740e6874ac85dfb3",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a06",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a06.png",
+      "sha256": "b9854d2f03944125ed87dc4218db38daba21912fc12d1720f3b1e881d41b4d20",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a07",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a07.png",
+      "sha256": "ebd91a5d27ac41992ac4395e59f01102f63bdbd9ef9d386a926b0f2356e5b107",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a08",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a08.png",
+      "sha256": "bf8726152e02665b0f5214c21e358d0ad025701cfa7ccfffc0ee1d1d82d8dd36",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a09",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a09.png",
+      "sha256": "d719e5df075d89dd4221358135e29952a1f4b62625411514fe5a6c8465fac2b9",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a10",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a10.png",
+      "sha256": "094b3dcf2dcd07666f1695f23174d331ad808af04dd611de01f6014ca91b627b",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a11",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a11.png",
+      "sha256": "ed0fb231f3e70cad36c95dfe4c8be74ef8923bb020a768c61c61252839e0bbf1",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "a12",
+      "kind": "active_items",
+      "source": "output/imagegen/incense-debt/equipment-polish/active_items.png",
+      "source_sha256": "4ecc84121f4fd8b9a25e5eb32071d4838484a6ebfce4320c9acc50217bf4bcfc",
+      "file": "game/assets/active_items/a12.png",
+      "sha256": "e0c25a2b571bad2339bfe0f13a1a0508685cde4b3565d689b8e3a57a6cd57aeb",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr01",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr01.png",
+      "sha256": "e0b33a0f65a1183da8591589fe8ca59f73301fd90022770a1f43409c8c127b2a",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr02",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr02.png",
+      "sha256": "d401a9838f81ea8450c4d8422652e82028c1e2133bba7a3db64729911d5a19a5",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr03",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr03.png",
+      "sha256": "ac0ecfe354dc83d845d07a6fb46ab957fe687aa0e9c4df13618c6c048c89d0ee",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr04",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr04.png",
+      "sha256": "fcabf64caaef40d4f8a862263fb606e07bad17f80667c2fb42c9bdeb02abe05e",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr05",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr05.png",
+      "sha256": "c36e115f964795fd9e544431d57cb7d8c65d6379ee2b893f55352231dfe083a6",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr06",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr06.png",
+      "sha256": "775687fa33a420a25cd230ee0bd7309c89fa931125d07e42c7690fdef198fcdf",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr07",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr07.png",
+      "sha256": "06032468733d2df6e5ec6c1bbc0bbdaf04eadc041a84e8e163667921f3777af2",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr08",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr08.png",
+      "sha256": "6d27a44f00ec9972a4d1d8260bdeb341678e30a8cc6d5b62efdef321cacad2a1",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr09",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr09.png",
+      "sha256": "f94ca554fa3b5170fd176092d0c0b5b67d323c9de2b7c66d5f8fd0bac8f36145",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr10",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr10.png",
+      "sha256": "15a394fe0240900eb594a194cd2d30ea074da69838f84133b708ee995e32790a",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr11",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr11.png",
+      "sha256": "2fbe6680065e07a02b7aed7f72061783b32968acad0500c543526b88959a3700",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "tr12",
+      "kind": "trinkets",
+      "source": "output/imagegen/incense-debt/equipment-polish/trinkets.png",
+      "source_sha256": "1da39d87a813fc3feca376e4865ddb958530f090f9e26ba5768e78aa476c31b7",
+      "file": "game/assets/trinkets/tr12.png",
+      "sha256": "6d5a2c2b1620091cd0e8ab31431806e0955321b7e685f7eb57349436c2b3c1d2",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r55",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r55.png",
+      "sha256": "3f6d760f0514def1874c68c404a00e79f60f9bfa82f727da9148006d1596290f",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r56",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r56.png",
+      "sha256": "a7ee1c58528ed73e520558f9d906ab2a96031a7c872a362635f5334463ad33f3",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r57",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r57.png",
+      "sha256": "14ce1d7492a0201e011592ee5f0d7b6b6e4b8db24243dd3c2baaae7521b2fb7f",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r58",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r58.png",
+      "sha256": "84fd8e902379e2f39a855405f6621cd84303d492926817349d6c33d640687851",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r59",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r59.png",
+      "sha256": "a574ab90c36600d12f246d919389ea57924b3ad1744fe09a1ff0af99e56b75c1",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r60",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r60.png",
+      "sha256": "fa138856c7243df0fe00242cb6266e714e6bc9eeb1488f4480dc9e973134733d",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r61",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r61.png",
+      "sha256": "d89af827b82fc065ba86f3b933079abc74947e9d787fc13ad6044f9c8e9147c3",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r62",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r62.png",
+      "sha256": "16840313f68a515ec2a3b1c7770dff582610ecae733c4fe34cc7aad942d27767",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r63",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r63.png",
+      "sha256": "f2dad5e2ecbc2100c3e6b0f1328933fc127ecffd84a92bb56468f617ea45ab3a",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r64",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r64.png",
+      "sha256": "c9563bc47088a4d3a16ea72d34316138463f355264f72e54f576302736572fdf",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r65",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r65.png",
+      "sha256": "8b7b2eef96c9c46ae6079a722451de86b2d4d86892b2946395a876039e6aa96f",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "r66",
+      "kind": "modifiers",
+      "source": "output/imagegen/incense-debt/equipment-polish/modifiers.png",
+      "source_sha256": "13869a38aaaff1e1b958093a1b12ac765a094da24a0de659fdd0582fef93a1a5",
+      "file": "game/assets/relics/r66.png",
+      "sha256": "c6b06d526c4007b003f60f704dc8414f4a6cff6cacd4816fdfed55c5457309f1",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "normalized from one generated grid cell, transparent centered anchor"
+    },
+    {
+      "id": "ember_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-beams.png",
+      "sha256": "1b67187088c499d74db3b843cc58c7b5d00add0b8e7f44fda5903299cc0bfef6",
+      "source_sha256": "a6a18c04d3c452cea75226eac4e9af9823860102f41db3a61203ca3233e66319",
+      "frames": 6,
+      "frame_hashes": [
+        "e231f294150be09671daf242eee894fbba7c9870414e2ceda6d0f1109deec957",
+        "c9f2541baeb597212daf4e28b2edf23aa213199d0cdf611a008c0b57351bffa1",
+        "6e82fd8782e531aeae39de1bcf73507e99daafab9b888b98257521c1cd0209e7",
+        "1e91753e8ebd3c72c99c46498cff2078a1e86c90c636ab9c42c13ab919710e0c",
+        "7ac98ed512e1c4b82b45f6e941ce587cb8f9d1380e02e9bf53a83360d833c31d",
+        "48f3e323fced35ccf4594d684a9a9ff78a895d4686db223ec2989916e42f8667"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-beams.png",
+      "sha256": "7549d84a04dc268ad2dd39ac04526876176d33939fba6fcf0f6fc66b0aa68763",
+      "source_sha256": "a6a18c04d3c452cea75226eac4e9af9823860102f41db3a61203ca3233e66319",
+      "frames": 6,
+      "frame_hashes": [
+        "a7ba23b638126f5dee4bd5c92086814e3cbec460f73bf3305f36395d16e04698",
+        "6af9503f5056f80eb33de3af478c1428b7fe8bb5d359b2a46074e955072674eb",
+        "40ea91addd497ffc3588c63cd5164389b5d5ade61136600f7cb3f910914548b1",
+        "679112393ddf9b6ef48cf4cc89362fb0527515ba2ce43256ce131b19dcc5099d",
+        "9444d3433465fb17f7fe38062e902825ee1afbf8173a40457c19dc3b057e957e",
+        "876cfa06ecfe26567e566026d9c6cc7d541080a353023119e982d4997fc3754d"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-beams.png",
+      "sha256": "88967c68abfa8676d2d41d13a71993848f65acc6f798fb1f1f35190204d26dd1",
+      "source_sha256": "a6a18c04d3c452cea75226eac4e9af9823860102f41db3a61203ca3233e66319",
+      "frames": 6,
+      "frame_hashes": [
+        "aa1d0648c4e82b89d93ce116b98d61b38b9250ccd8f74f898b855c49cd1a4192",
+        "1864d6e6f42ef99ce6f165f1ee0688faff17bbc9de3961a63e3215f6be43bc43",
+        "3617c3907e7f3fdf5791e26c8d1ab65a7887acf533a2cfb5579040e6b32b0479",
+        "034dc14c334fa4735f2b3efb2126deb5f8a240f784bc34872b22276d4a3b724c",
+        "46cbbd174ad63097ddd545c6fae703a53e02357c6bfac5302ad78579a2282e8d",
+        "3ddab0fb20b2d6c01c93be39e09042786ad9b74fc4a1e8fabe530e6046d82b10"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-beams.png",
+      "sha256": "eee2f142c4d8a285e21c2fa45203be681b144328b332a59c0a6132df2df4ab6a",
+      "source_sha256": "a6a18c04d3c452cea75226eac4e9af9823860102f41db3a61203ca3233e66319",
+      "frames": 6,
+      "frame_hashes": [
+        "ec8aac1ed301b4a7f3fce680cfed3e4e1e2bb3dd9fc30b32d86c8fb68b70e32b",
+        "acf27c04dc49d3492ff6f318afc8ab81866b42e84274f16ddcb212e4ce765147",
+        "a36da9b34cc219ee09b6048c60642f36ded40b00d4f988d3d17b5e21514850ce",
+        "af44fe452aee7366cacb486e69c5aedb373f53b49c622591b16c7d4553562315",
+        "68febdfe66556ba03e597500fbb0c08e7dd1d0fce3b394d6b8ef28df580c014e",
+        "c73544cbf58a9357f2e27f526120b85c16319c28327d58da4adae127b36b20b5"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-areas.png",
+      "sha256": "348c021ca79f893d800a909b94c8a8977cee9b940304fdf663ea65f51c369310",
+      "source_sha256": "6d7265c24cb873b5caa5d3fa1ea744c2e15ff3973f996152428c523a9266bb98",
+      "frames": 6,
+      "frame_hashes": [
+        "e1f8162845e1f196d4c3ad1ea87f0a766cc99baa6f2980948026737214133da2",
+        "49a36aee471a80e474063bed48db9d62058ab86b9dd2d570d570d50006b510c9",
+        "014ff2cd5eb47db8f08c20866fe2545dc4fe2c9d1433320af1af7a669d11a4ec",
+        "93e42f1c0be8d3bb25131aa3819e961a11b0b5b5fd9d231b34422c7b64e6823b",
+        "214a12b4a4f36a541f10f0fde0e65a414dfba2c141216382cbb6a0ac1e6daafa",
+        "583898a1135ec3d73b9442e068daec12ffe2c40cfd6bda783304e397afa99e91"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-areas.png",
+      "sha256": "4b2cc77d23acf3c03c221b8b552724c61f2db59d7d00e39dfdb3f11645c7608f",
+      "source_sha256": "6d7265c24cb873b5caa5d3fa1ea744c2e15ff3973f996152428c523a9266bb98",
+      "frames": 6,
+      "frame_hashes": [
+        "a74d3c14c20cfe5501545590137220ca6c1dcdc549805892d31fd44b68626591",
+        "f7a1adca193e0df6443ae15a8eca6194045ad7e45be8cbf98b717374919436b7",
+        "08654d1f6746df4908e3aac141992d42477bf39a1dde311953206594989b9c19",
+        "31fa87b22ab10c0c5d63f73115acdcf6072b23525ce707b152de9328c5b786a7",
+        "e99e9abb6cd12ac2d1e1f0a3da1906b7316cfa554b8fd91f1c31f67e5ed168fc",
+        "2990abf4f50b132185ce7c3f70923520e370603d7cb8467505b00b3e46e9849e"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-areas.png",
+      "sha256": "1c204a37ffb9e8c9236bee1f47ce9f9a7222b11909d7d299bd51aa9d7f8d2e3e",
+      "source_sha256": "6d7265c24cb873b5caa5d3fa1ea744c2e15ff3973f996152428c523a9266bb98",
+      "frames": 6,
+      "frame_hashes": [
+        "f7ed90aa6df2760946b4a1bc4d0cf23864724080f81e50b70972d21d4d62f768",
+        "8d5a1398413461686e7d7c959ba012e54c30d846a928c84bc1b17b97fce3d59b",
+        "65a5a1ecff80f56d54b6d75a64338da74c1cb289113085bb1ca1009c5dadbfeb",
+        "a0aaa91c2d979d3dac99b3743a1c0f95be798b55db0b53c8192b2a6fb0766673",
+        "14e549661b3bb7e1aa154c850ceebea4c21fa25f7940f1cf6ade281d090e93c4",
+        "145519843e395a9b973b84bfaea916877d3673fa7b28208f945340f5938ce4c3"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ember_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ember_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ember-areas.png",
+      "sha256": "604e066acb476f829e78893d0ffb24e8aa9651bc3e992375698c79dc1e783331",
+      "source_sha256": "6d7265c24cb873b5caa5d3fa1ea744c2e15ff3973f996152428c523a9266bb98",
+      "frames": 6,
+      "frame_hashes": [
+        "1ea0f8bc45bedf4247a98ac97c0544d07fb3bfbdb7ef7716d2e8e4881bbbc55d",
+        "e86ddf5c227e2d53a15ea98c2fa9a28cc5cb18a29fb96930fbf357dad120acda",
+        "fc646bf6be58944b556a84f42330507f391520f9b365d093d68163016fcb3bbc",
+        "f0dfb8a37efb10b2660a0b071e28b8f874155954ec77f400aec8cb24e2e53f8e",
+        "58b1227ee027007d697701c547fa5dda6691a1717bc3d2ad620390896e26ca15",
+        "8b85904b5a48c405175eb6198c69cecd58e165b2aae8fd2bc4a3c65f05a56bff"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-beams.png",
+      "sha256": "1cd1f9d40d098685f6dcca0f10ce478ed6bf2f6088408ac122935c3c001642a8",
+      "source_sha256": "38a4af620e3acc20fc5944d59a3b4365fd12e3c6e4111bddbbeae2ca9b1766b6",
+      "frames": 6,
+      "frame_hashes": [
+        "4e4b232f2487242df87047fbcce757f901e31b6f2b3bd1ebafff81a4a262540f",
+        "70daaa7c41b5a7a7ae8cd17ea83071a2c35ab2d6b0c0947666ee3c95fe18a54d",
+        "2ed04ec74bdcebba190891c352cfb022d8382b766ddfa49661900d1cfb0f04ff",
+        "ce952e24235d4a8c783895d5d6c25bddb819560b88f1c29b2c8de90208077ec8",
+        "5ce6bb8129406f93e17244f9e77e14c04a843a53a23b54b176ec2cedaf47bb11",
+        "16f6896fc413a4aa2e2ab2dbb01b178d82cc50c00c4ba14b66b93a88372fe276"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-beams.png",
+      "sha256": "d1d8595e3cf80ecb7237bcaaad0775fb80a816e20ce49ec5bd6331753929d28b",
+      "source_sha256": "38a4af620e3acc20fc5944d59a3b4365fd12e3c6e4111bddbbeae2ca9b1766b6",
+      "frames": 6,
+      "frame_hashes": [
+        "a7f0b05cb7c8c3c73261e78e4b12f02f26e9da9928fb54da2ad35f8cdcbf893a",
+        "ea9b8e0c71231adc386e814df6c6272bb3d84a7a6295c0603548f0307e8a3b1b",
+        "a001c0a2b9c45691919386e88a792e4226a48fdd943048cad5fc7f4fecb8253f",
+        "5197d65dfdd98657d51f39b4b546ccb7b485ee0b5c536fe538f025519cc7e39f",
+        "d3c42d8ee096426c0db7ddd3825adf6a6310657e00a202dea331ca35ce663957",
+        "b36029abcfcded65b2e11e232948b34965c220f67d61ea7057797cb8fc357346"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-beams.png",
+      "sha256": "39c5c8ee7d568889326bde99f60468d156ed492f1fee3deb08851e7af7dc019a",
+      "source_sha256": "38a4af620e3acc20fc5944d59a3b4365fd12e3c6e4111bddbbeae2ca9b1766b6",
+      "frames": 6,
+      "frame_hashes": [
+        "edcaff53ebee346169e772ed85457989544352bfee8f8442851f0a717a6cf4a5",
+        "7a7c4445f3782926b7f7027f92da39138e2e6b8275d79261fc110f6d9a38ee28",
+        "34f07c3255dc0bf67ef2c321ad6da8682891c9c893fb563c5eb5b7fd97c2604b",
+        "6a436ea7a0e93f69fe2db13c23bb43ab0dd956d1317e583b398efd6b74b170c7",
+        "3e995d22f0150e40359795ac6a67abaf3b37911f4a991978b45b3170c61307aa",
+        "4da09bae9ecdae7fc12896180f19c02a25f7fdacd1288ff680bad660faed0883"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-beams.png",
+      "sha256": "f0f764eb57351cded1d7e6b36c555e536daa3b2b0b2d86df1333dda66aebbff6",
+      "source_sha256": "38a4af620e3acc20fc5944d59a3b4365fd12e3c6e4111bddbbeae2ca9b1766b6",
+      "frames": 6,
+      "frame_hashes": [
+        "fd0b7b836e8f0a526de6a376116a74bfd9bf28e2f364d9cc3f7495fb6c4fa67c",
+        "154d7c4f70eaaece7d21da4eed3f9fed1565adf625f8d7f9ccb16820594b30ac",
+        "c420cc1774bfbdd01b635a25e1c58be3ccd607517030ebf7832ded26bf9cee02",
+        "e9a0deff53f44fcab1b17ed9b67f0a48f89fb7a8122c444ae38424f6940fdc8e",
+        "9e193c20a1be8b2e323cf083f0600c151b549a6d270c2cfcc721444b00ef16ed",
+        "3b76c64cf93f3f8e7b58f83906aa6b4c3d2934aacb5e5c9469c10e15181b8a33"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-areas.png",
+      "sha256": "ddf1bae00804e6a2449d56cfad0e00c00b9194b688e6628f0ce6c8f54ff47244",
+      "source_sha256": "8bf4609fa372b80734c51843a3619ba2125fc14c4b27b6e1c9957ff889c15fe8",
+      "frames": 6,
+      "frame_hashes": [
+        "a6d6b824b4b9708f0d02713819276ceeae368d848855849b204982d80578a493",
+        "826618a0355485d7a236d500edfa9b6afef892e78a3ce63855139b7a9940ba1c",
+        "d50372e83cb5000764c2d7562defe586a004f3cb66be846dc3626f8c8ac4df49",
+        "f8a3a6bb83fb193c3813b157cae5b12d719ce8ffac66e362cee6a5ce9d76ca46",
+        "e703946b249126affbc9adea2e9abb9c62359f574505815b4989e3bd52620baa",
+        "65bb6105c064e76380f237d890768a48871eed9e18b99fba48f9b6579425e4fa"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-areas.png",
+      "sha256": "4bd0d23596c83d9b6fe55819fc739f1f06e7b30b33be327992301e688f486cb8",
+      "source_sha256": "8bf4609fa372b80734c51843a3619ba2125fc14c4b27b6e1c9957ff889c15fe8",
+      "frames": 6,
+      "frame_hashes": [
+        "e905eac00f19c3cf7353de37008eea084a2005b83b402a883a273e5f035aeba7",
+        "a5235bc98c5f323dd53080dad302c35040ed04f4535d3f454ad12f70d2f4c490",
+        "1796ced2bb74ea5415aeb8ec88ba3533b7a71315dee8e7c5b72acb456f2500e5",
+        "8bd6067ab43c01b4c476e1c0cb711d0a81fc7354d080739e174de03d1a3c8e09",
+        "bff756510af110d298e732eaf41a803afad629f90fa57d4dd145dae5b32a4056",
+        "46bd0a041cbc8ec6fff7276154180bfda6266c8be4b858b22547f01d0a1bd708"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-areas.png",
+      "sha256": "5ff4dd626b5f29eb50e02faedfb08fa1b3fc42b0855eb0e668fd4b3f2b84fd7d",
+      "source_sha256": "8bf4609fa372b80734c51843a3619ba2125fc14c4b27b6e1c9957ff889c15fe8",
+      "frames": 6,
+      "frame_hashes": [
+        "1b3011703704acab52139ef5fc3bd5690e0813e23dbac501096641755df3b0a7",
+        "d8fbc62643ce2bb329dea29b2bc6e88add2a7402b812f8ae4326ae6e5015d8ae",
+        "0ecf07bcfd0a404706f26b4bea150df8b5349d7f96023d5800a27add020ddd7e",
+        "20835a09ab76aceb160a9dcdc071cb43f8aa079515f83e045e59e226e7a31427",
+        "b430ed17bfbe26a7ac1da161419b8c99e7c61dc4a522f5cf1092f493d457054a",
+        "2a0ceb2aaac45d7ea2ae3844c463e4b2c8043d1625c0bde1f4d1d8275dbf6341"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "ink_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/ink_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/ink-areas.png",
+      "sha256": "d15cfe5def9b1a7a085dfe8c4aceafc8894a68699d3a0ffbed5d93c7a9054150",
+      "source_sha256": "8bf4609fa372b80734c51843a3619ba2125fc14c4b27b6e1c9957ff889c15fe8",
+      "frames": 6,
+      "frame_hashes": [
+        "e59aaf0e34a7b5e8995e68d18972035390e380825b6a603a812880a4321e722e",
+        "dc02f309fe910d5fa2d47525fca2a00b59d63a5275905fc250b9bfb0a68286a5",
+        "36443e5807d1c19558990f944a9efe05ee2751d8a434c10d794b0d6a451f3b12",
+        "5faf9442c726c91376be8675409be3c8482d173c99f97ca1e8be12022f549cba",
+        "d023d30d62f3b3ff83395fdede0e62b0aec8bee730702ce5152284c8d4a196cd",
+        "54f6453eec52180e31f1e10500d93f9b49cdb7ec0c17e74bb31bb90ca4fea2a5"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-beams.png",
+      "sha256": "ea64b05626de4d217ace9a1e4131a007530d2d576f8c392fe7c6f796cce53ad1",
+      "source_sha256": "eef3443deca22a6761f0f178f309012e4f5316bd0a610870790cd87722f82fdb",
+      "frames": 6,
+      "frame_hashes": [
+        "15c21a45fdaaf8bf3fbc8d893ef70174fd28d541c071fa04c2f629bd1f1f8ece",
+        "35e98fd57f6da0aea6fff7ae66d68f6216f429414df5074f34e698ccd26e94ab",
+        "016835dbb6b4be51d767e1bc7eb1535242b03842d34fa8356a0aa9790fe5bf02",
+        "b656cd041805fb897e4edc31a417ab5ec1933b1fb7fb4423989f483fd83c9415",
+        "f3883eb229bdf90030b6f90ecdcbf5ea85212a26803e0e9b2ac1c89cdc8d048e",
+        "f30ef09f2e7dcf09664b6e40824546d210a5a7a293c41f99c690013d0c08c6ea"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-beams.png",
+      "sha256": "2cb55de2c273fb7b89e4388405f7dad5b5de9c4022ddde69907a6d55a1a19a34",
+      "source_sha256": "eef3443deca22a6761f0f178f309012e4f5316bd0a610870790cd87722f82fdb",
+      "frames": 6,
+      "frame_hashes": [
+        "2a781d3df5acfe473813a5807f30abcd995fe78e3b193c9ab2f74e38c3e841da",
+        "b367516310898becc074e0eb62e6e46b0fbbfcf510f4c51dde33c91a644fcb51",
+        "ff8a81ab6a6f9728eabdb906d937b6825fd65fd8ce8b0bab98085a709ffbcf8c",
+        "3e7bbe8a78b6346c1a9a895ba93cccd531c663b3b4f8a41a3fd8bdf22a8acd3f",
+        "294bf63130caccbad4eee5c403371bd7a889abcb119c4797907ca806afe4d9bc",
+        "31a0d22c45dc94addb71b185f6a2efcb826d1e9ae1d22a4f0a4d44b747445a80"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-beams.png",
+      "sha256": "31b69222a8a7612fef2391df1a8b10c72d52328289f4612153cb57f685544346",
+      "source_sha256": "eef3443deca22a6761f0f178f309012e4f5316bd0a610870790cd87722f82fdb",
+      "frames": 6,
+      "frame_hashes": [
+        "fc05b4bdd87ccd72cc698351b6596a3478d9f96b0234d5123a4d7a4b345158fa",
+        "7033816ffa8ce6d5d2adb38b2fb12063b3ca82657eeeea0e8ac297bd52ac0e91",
+        "cdf1bda34831268b00d36a405a4fac6a94f0e365531724ac3cc4f04b192d644e",
+        "0e1cc470374d943ec86c5219e3522b46e065dd3156d3a8102cd5c37aa7acae8f",
+        "b21dfb9bbb6fd687c7c096422657b98a5ff0aed939d0ff9112fc1a7dbd101c8c",
+        "35cd915f2c4db4ea170d0b2fe83382b01b2783cc82297f84a2a407784df73486"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-beams.png",
+      "sha256": "4acf3c0ebe5a710c2e77b26c41ab1346b38e6ad93db5713f3fa157249ff7bf97",
+      "source_sha256": "eef3443deca22a6761f0f178f309012e4f5316bd0a610870790cd87722f82fdb",
+      "frames": 6,
+      "frame_hashes": [
+        "26f915c31a875ca3706bb78fbe4c190f1f2160da6c4edffe4cdd3c3f9352fd2e",
+        "638231efc154587e771a1dca42dbcde3d986119c5337f8730769081049dc2f9c",
+        "acbc514217e40a7521ec9eba0f97bba92ac41bd8656f37957b89f1096c6a1d9e",
+        "d38a91b16c8d83d4af06b26ae81f796b34af107a8e758c592bd65e14cd99fa81",
+        "241cf2aeb6a3c818949c2c625fa253a63515637335b79b353a3f3c7f692e8096",
+        "099053eb6797a3c4a43f35e51e6b499296819da49574e712f7fe87829ff9c579"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-areas.png",
+      "sha256": "cb66ec8e303f63831e096b5f25c133bb09be0581cae3202d2ce5fb14bdfe8a95",
+      "source_sha256": "e3e146c3b12727443601d5e16aed6f1c6e984700fa283c3270fa02ed715e1db4",
+      "frames": 6,
+      "frame_hashes": [
+        "6282f1cc1b7a8190e432e3b5420a8b9b80edc08cc5d6b499583d396977229498",
+        "3d2fb6c6531a61449992e1f8cb63ff431526860d11400328e07c8fd55c336714",
+        "d7408c53015946d8820c2b17f79e9d290129ef6139b331c5e5b8e5f53fce8ff6",
+        "73304e3b166968d6f704d30cb64c449126ad54ead45ac65565ea0ce61b3a3e71",
+        "8ef136bf2523cd368f264a20923adae20d76c625e47d76fbdc716af0c7f5ea95",
+        "93220220e5a8b3b34505f988b1f7164086544d9e5d193e88d956ef10ae03fd5b"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-areas.png",
+      "sha256": "ff21586b76b63f470239dd416d27860f1448512a1d392ca629adc5f8f67fcfd7",
+      "source_sha256": "e3e146c3b12727443601d5e16aed6f1c6e984700fa283c3270fa02ed715e1db4",
+      "frames": 6,
+      "frame_hashes": [
+        "2f634dc9e9ea03808c92fb106bb95352513028bf19be443dad7b15660d35548c",
+        "e2194b985af1be6beac5f1579202763802c96f96c6d6c34259c6b70a788258df",
+        "6318f4caec651295803a5fb08ac5f2f4b94f219b49ce72f8b7973cc35980846a",
+        "0d9d03a203245e8795bc07b11b084060a58aa85fae80e05a6551d70260c6db1d",
+        "5b844de29f927dced99172b478d0fe6a17185382fa3e832a072dab28fc96b782",
+        "1fa1c528c5ef7e05c9c8ba801aa1b6d641c86d73cf8917ebd65bdfb6786aa86f"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-areas.png",
+      "sha256": "3f3fc574d51ebf6ece4b8fe4b6d0253ac4af5f320fdb53ac6924d51496d2223c",
+      "source_sha256": "e3e146c3b12727443601d5e16aed6f1c6e984700fa283c3270fa02ed715e1db4",
+      "frames": 6,
+      "frame_hashes": [
+        "8d0bc6453f8efff16eb0bc64083a340f1bf2f42aeef27c0975673381fe4daf2a",
+        "059bdc38a326fb7fde993d012bf9ccea005cfa239c27afc2eab6dd176d7a2fc8",
+        "2750e7acce3d31a4c1fdf4b4ca3c75ad5bdac023d673a3f1cdff03864a7ad575",
+        "78435a7e5479dbed3a30580be7fd8adc7ed20cb21b73f97861962c3da6c8224f",
+        "b33e171dc3544163150e1f1aa030f4067ef46b63ea3fdc573a9bb308a98494c7",
+        "9802750d12d49e5dd257a5f96ce83a02830616cfb1003ba6fd79bd26ac22b958"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "thread_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/thread_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/thread-areas.png",
+      "sha256": "065de50a285b51a4555894782df12c2eaed95b23ddd78244dfd0585a252ebae5",
+      "source_sha256": "e3e146c3b12727443601d5e16aed6f1c6e984700fa283c3270fa02ed715e1db4",
+      "frames": 6,
+      "frame_hashes": [
+        "8ff581a9e8b4eb7e21b2f47cbc61c2e049efc25187e10ca0136c8ec140704d81",
+        "0d0e5d294ef686d616bd6adb5682121f93cc68f82937719eef50e23dd06f9abd",
+        "cc54f34540e6dbc1a4c2620f1a1627cbbfe8ffd5769534204f75c220ce1e3bc2",
+        "85ee1ae8cf46d2acd8ff0585538207d5fb8e031985670284e501b254b2c64412",
+        "1b23eb1b2485300764fc8639ca92e0397f0df3e6b7f17eb03dbb53c64e62ec88",
+        "45658f6346f82caa4f69f627da9d10d1885be85c06536c984a759d60b618b8b4"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-beams.png",
+      "sha256": "59881c761dd9e59907a2f337295125aa0497c45c9970f676c8a7348a11f0fcbe",
+      "source_sha256": "3b82f08d4d9038bbfca965b19d285389e65f164dc1cbfa982b45252b4c60651d",
+      "frames": 6,
+      "frame_hashes": [
+        "22421c845b7cb2a63b5c818cc31046297e8a21e3b15284539b4f79496b7029d7",
+        "ee74a7c3e127dacf7ce72e7f85554e9e6e7866d64c6efbcd4be706aa9192619d",
+        "9c9401c5708056aaa466573e3a93ed349d5f6dc37d95d8400ae03cbc3d7930b4",
+        "fe0a2455e0819f13fae237fecef929e20d4ac600f949173c3b663fb4ddba9e32",
+        "c615eb48682cab6b9713ddcc27a5cc8648de70ff77cc2a55cc5bca13bfe54967",
+        "fa2d476d3ec6bdca3b0011911c89732240db96b089471dc98ce03729dc0bf1f5"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-beams.png",
+      "sha256": "d984be01630aa2bb9efa225b95f8f91de4994e620575c6c748c5db0d337225db",
+      "source_sha256": "3b82f08d4d9038bbfca965b19d285389e65f164dc1cbfa982b45252b4c60651d",
+      "frames": 6,
+      "frame_hashes": [
+        "6f07c9273bd59482aaa203afed431809c20e2808c073b320f93734c7d1d744d8",
+        "6b0a165f3c2cfd5fcdd1d684146976894f136a6add9e37fdd8334d0a93dad0b3",
+        "395d9afa829d93eb14e4e809e9c2ae4e95066b9e9313ebf33abe5378cf8304d7",
+        "d84baf2a1a945742a47da87624d529c76895d488257f0830010df77a08398ec7",
+        "60bab915dc799ccd2fc212c9fdbd37602c28e1bcc8dcc6ad6e1ef8d8fc334c67",
+        "954c7612d068674e68b511131554d9302e85a173f4898bbe39b1604e0a548eeb"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-beams.png",
+      "sha256": "e4b00c89ad82a2502d1b17b68451c3414e9ddb7f9c76286d69f33dc4c8670a53",
+      "source_sha256": "3b82f08d4d9038bbfca965b19d285389e65f164dc1cbfa982b45252b4c60651d",
+      "frames": 6,
+      "frame_hashes": [
+        "3efce79a28d62438973ec7f6af920d3b9d4d1421e97703ff5406faefb2a814a5",
+        "10f5631a94ea582756b4e7e1c6335eda9e7a37a3f03b663f3811f16362fc08a7",
+        "2909ccabe60bdb62b88ff41a707e976dc9bf6bf2ef86fbca18d7247da8185bf0",
+        "b0f3b25f4a2c3144cb586bb13c3c8836f12b59364a6ecb9b8b4918bcdd1bf5d7",
+        "9968385f484db402256e5779fe4f786da8488aa0f4881c5c8e3165cb8d2024b0",
+        "bcdb1034f589fb528bdefc4dee52b45ea762f0cdad5bb5bd17601c3340453f5a"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-beams.png",
+      "sha256": "71944cfb65c1ba70f9c1e4cad4fda636869dd4ec70f23198718f08f21e483655",
+      "source_sha256": "3b82f08d4d9038bbfca965b19d285389e65f164dc1cbfa982b45252b4c60651d",
+      "frames": 6,
+      "frame_hashes": [
+        "e98e921243e3a418246e390a5c75d696d37d24003dc0b0b728f50f04e2b6a290",
+        "5fc5d04468a62f79ef98fb4461a50b9d69ca69fcdf3a35e41616bf191e327c23",
+        "ee2b255a953d9488db05ec39e235ed042a050cc0adb77e9d0e93690fd0f9005a",
+        "d74638f27ba8967622cc15094980a21473b3fb5616c8373acd617e3bf5b8af62",
+        "50bc622c4cc01e513cdc557a11c7a384edacd648685cfc754a0701b7070bf175",
+        "f452967add26a63c1d77f55b5f3390d60417bef7ad3102de37f47caddeb577bf"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-areas.png",
+      "sha256": "f5cb3f3cc608603dee3af08c116cbdd7cc002ed7631d218b5d40a022b39e9ea3",
+      "source_sha256": "c77df66dd70b6b13bc45156e0ccad6aaf14d39dd9649fcd26403dcf1794b0dc9",
+      "frames": 6,
+      "frame_hashes": [
+        "422423797f85b331a71fffaf24d29242b9cb8a818217f6431de406c7dc3d0a4a",
+        "ae68f73029d1b7d0071d42b40ad0cea63b135ece21a54f53879252ea9b676c57",
+        "1c15d22b7576d4dbb29f0cf99c186d03f882247a83e61482baca2f3898e788ba",
+        "e1ceac8f91231a58b3f2bb4c0e304f58b33c23bac823be52d1a9b19fd522952c",
+        "bf7d21ef86349c8e4cc249df99836547b238431c6ea2f6d3ddbba7821c9706dc",
+        "527d10419d947f0735a2b4e63d959e5333bd4df719f0f37006046125fbffb4a1"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-areas.png",
+      "sha256": "0b9ef632015c97afd574af14ec2237a788146e838c9810f4a641a13cc4e89854",
+      "source_sha256": "c77df66dd70b6b13bc45156e0ccad6aaf14d39dd9649fcd26403dcf1794b0dc9",
+      "frames": 6,
+      "frame_hashes": [
+        "55dba7fb65661eb621c1ca56d9eb9f4e989509d3a8e5f6257168bf7c2855754b",
+        "7ae91dce0a07431b36d49a76017b0ca27c2c577f7be9f0c03823297e83e9a124",
+        "a35024f0730976b4ac7559037d34f0bbac0817c990c0b6594584ad327682ec0b",
+        "84434a40290aaf573d2c0fd5e9df33e33cf3098e56a5c09a595bb98a8f81f102",
+        "242172140f043d7e24f9bb15daba6823ed683e29320202e1a7dccaa50c9f6034",
+        "d8c499e2e39213338694cc0788669ff9cd7b179d4145f0cd794b65e96eb225b1"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-areas.png",
+      "sha256": "afc59cde9d5ec8e6bd4a888b9624ebb0e3cd3cea023a97a7ae4db56067dec94e",
+      "source_sha256": "c77df66dd70b6b13bc45156e0ccad6aaf14d39dd9649fcd26403dcf1794b0dc9",
+      "frames": 6,
+      "frame_hashes": [
+        "cc951f945da43fcec8e8cd6198ae9fff3d3f0b159e20f8d4c6d9447fa9edeef5",
+        "63f8d3d1d1934f4eb06853a1703f88070ef70215e3134730f4095059ece73f42",
+        "83ed697b65425d62c256c0c28b94432406bb0d194f8d4fe28dde9c9a65b9fac8",
+        "96aaaf35cc3f6e51a33bd8c9b22ee1209e3e57f4aca11ff97e1d262ef7d51d87",
+        "b2b472cf514778301168a5eaa05fe206f0db787bba014f9c3e126bc682ac8956",
+        "59ebf42b504450982fbff7065886137023f22b63818a047cfe5e36a18447df5d"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "prism_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/prism_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/prism-areas.png",
+      "sha256": "0727208bc22ddfbdd12b27cb03ebae29b1489dcf64edaa7b2b2ae185113504f3",
+      "source_sha256": "c77df66dd70b6b13bc45156e0ccad6aaf14d39dd9649fcd26403dcf1794b0dc9",
+      "frames": 6,
+      "frame_hashes": [
+        "02265aba70682e9294ae5478fbc44b518ea995798f775c695f381889fa9982eb",
+        "cfb1d41e4aa93ac86c5a0bff39c8685cf96feb7e19cf9a7839fd350bcfd9c899",
+        "96ad557a211218f1f436c7cad132ea4e15206bfa0e65154527b01107e0587026",
+        "0ca4b1a9322c9b97df4f880e819f4e5fec0019941ed7797944cf3529174a62ff",
+        "dedfc52ffeb771b6b39d557ca32a4c41ce30ab394722fe9e7c332e5020e4b3a3",
+        "cb4e346b4824823b2244dc4aac4b1672a20622e175515a9a3dc3572163f90e28"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-beams.png",
+      "sha256": "8ffb504e3f1fada53d0c3aae63b7b9eee76b789f6be8e1937b61fe0e843bfe1a",
+      "source_sha256": "44c72ad2ff2f972c138b6b663d4c5f88282a23b220bcc7eec1769f1224f496fa",
+      "frames": 6,
+      "frame_hashes": [
+        "1fafb6628ed98ee968e4e1dc869147c324b71e12ad9536333949a50ac129a7b7",
+        "0fa1ec7c1ef64564d6e06712c5fbd8ee69c81cc99e1f1cc516a03a2bbf028706",
+        "b73dcc818182b78915beb575af2491a87dbb701da8556fd67d9b79537d70941b",
+        "acbfad901006d7b00382fb330dab3060d9dff4be364139e15bf103f9ab479b87",
+        "3fa7ab66077cd4ca5430b3f3311384b9496ed886e8cdfa6bbe2fe7c93f576c08",
+        "df062e4fb9c47ef408c2c994351ea821351f14ae22b0e937b758598a699cd646"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-beams.png",
+      "sha256": "0d0fc0bd458ef6e2f8d85495935376e255d2bb32e1540fca6a983fb897b21b3a",
+      "source_sha256": "44c72ad2ff2f972c138b6b663d4c5f88282a23b220bcc7eec1769f1224f496fa",
+      "frames": 6,
+      "frame_hashes": [
+        "883b7b5ec7d772fe939512593a3812919bfd93e3266f8e141f1a2b751c4eda5b",
+        "ede0199a47ec1758c4e44ab2dc6fad3c6b5b0f37da26ffcc0fb88699e533bf11",
+        "5adbe430766e591e41d3f9b053e89baad3e1477986033f5fa1bdc9e471342185",
+        "c805774cfdd2c732f7c48d29f5ba2560c1066f84d3d3560358a20131a604b100",
+        "06385938237f04db7f70673b5b84b2e9b4aa022bbdcf2c70bde33ffeed05efbb",
+        "161d086e58f7a6e4789dd98f988461c7eb294b8f7ff7ba084e806cf3c9ba248c"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-beams.png",
+      "sha256": "72070d1120933dcaef7c6806ed7a2fc3b01527683791987ebdadbc334d312f26",
+      "source_sha256": "44c72ad2ff2f972c138b6b663d4c5f88282a23b220bcc7eec1769f1224f496fa",
+      "frames": 6,
+      "frame_hashes": [
+        "f41506735a22122d66a909f70ef1b7996b7e1a81e7b697ce9f5e1eed375df1d8",
+        "7ca8b1405e955ac7d7d57c3adda4513d1a787c974790d59c5afe765d7f28e2aa",
+        "8633b19bc27cbc06bfadacd551fe8c78a0cc4c4aa7a204bcc399a10ebbc701a1",
+        "8723d2e2ed5111a72c079ef033a7291ecde3e03991155bc82c32d590de6096a2",
+        "6b1b69edb14b689101c56d1c4776e6b7dd1de205b4ca763a4a88f9286112712f",
+        "9a49c30a7a36a6ee7e4708247c6d7a2d52c58e1a5312720d2725cef624669878"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-beams.png",
+      "sha256": "2e1fd2b097f1bfbcec5549482d181e9db86c643fe76fa5a793bf8673bebc08d3",
+      "source_sha256": "44c72ad2ff2f972c138b6b663d4c5f88282a23b220bcc7eec1769f1224f496fa",
+      "frames": 6,
+      "frame_hashes": [
+        "98b3d13e07bdfc0d1cd3e19bf98b199c370d3c4dd76885d6662a40c3a9a22f75",
+        "e8c5ca4e5bee6a48932f7c720328c939927e6bf01815cd30475d5b6e48913160",
+        "0b9ca9b2fa412c6e2d62a29a569c1437dbd82ecc02bad82d06fbcc09dbae8a87",
+        "3cc390e036ea7a2144e9ff3be7e5e303935b484a63eadd4558c059f11b1bc466",
+        "bd13d014ff4af69209b9917efc0e9b24ff12ebb39c8cfe82b39fbe0ba37fd308",
+        "5d548454a551e74ef357992c1e392fa942278bb1a20f1c5ecbb0d995755b0898"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-areas.png",
+      "sha256": "ce9d493346d7da9fa43872a0b2057b243f2e8e20d6d9647f6aa87210b56868b8",
+      "source_sha256": "a41df2e10dc9a29d9efcfadd1e3b9b994defe2843ef643c01c22a2dccac2f6d4",
+      "frames": 6,
+      "frame_hashes": [
+        "f449f609221b1ec9346a8f18fa919e3240ff52be2ea2ffd8bad8f08cfe584f7f",
+        "62333dded15166808d710f6e1e60844c2819a912252340852b957aa000f52fc4",
+        "ed0fe837a3ee56b5ffc3d1a6fdc4597551dca949c0bb63926c22e515f2249ce2",
+        "d972aed43d3b50a495625d90f89c208cc7b7e00942d349e7e11f0da8414ccd6e",
+        "6bb6f0a76f25e66236ef116118c42a987d5e82f041394945c616ed2e33278879",
+        "03e0da2532096058e169fa03baeb53b90c7578a4ced8946e2df2084ab182fbc1"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-areas.png",
+      "sha256": "ad246eaf650b0458cca3a201f19e2a906d664cb7c62959e778f4c9ae4fe359b4",
+      "source_sha256": "a41df2e10dc9a29d9efcfadd1e3b9b994defe2843ef643c01c22a2dccac2f6d4",
+      "frames": 6,
+      "frame_hashes": [
+        "1c384b07e4267fa20dcd953b63544f1ac7b9d863ddfdc8345f9f031796a7f26c",
+        "8b5d3d5e8efa67d7a9b755391f1dfc5c34cd229055c7f4d6231ba8fd2a696014",
+        "f1e8f66260499d14012f0f85ca9185cc45d81f7e179f7d8f37e95770b951b6df",
+        "e00e609325cc3b15bc18e95f79293b6275e499bf605695fbd0b3633229fa8889",
+        "da188b0fd20b8bdeeff776f3aaa03ae2da30a264566c7fa0f475f6533668e9e6",
+        "2f72b4739ff12d9d3a810a0a49d0219667e58cb9967150225a6ab3dd9cc03c60"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-areas.png",
+      "sha256": "0e550406106b47a160324aec6643f5f282ec3548c80f93b1080daa74bc6b2778",
+      "source_sha256": "a41df2e10dc9a29d9efcfadd1e3b9b994defe2843ef643c01c22a2dccac2f6d4",
+      "frames": 6,
+      "frame_hashes": [
+        "f28c7263f77892d383592084d64f5ccb10865d73f0afedeeb5c68d466f1281d7",
+        "adf9485030c0addfaf2c9620c672ed6cc4106cc3f7c3aa1f0b8f77ec97bc0b2c",
+        "bd735e7da76af720295f03f029c8db7dbbbb1c62d11b8f5e435201df099ac7eb",
+        "4b7506500f2cfb7d39f13ccade3e742b0a856b7dd312dd06b70166baaf828854",
+        "f56f5d1ec9559c44f02bb6c8b8460e1cbb7dc21be840ff53ad85460a17cdc4d4",
+        "ad95ad88b09ab4767b8ca95e7bde94c0c83bd728fbce01cdad27a0c441542317"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "lotus_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/lotus_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/lotus-areas.png",
+      "sha256": "35346f931318a08e41cbdde2eeabb31b8620915f2c371c53cbf1021592783404",
+      "source_sha256": "a41df2e10dc9a29d9efcfadd1e3b9b994defe2843ef643c01c22a2dccac2f6d4",
+      "frames": 6,
+      "frame_hashes": [
+        "51fd2bb8c751d13a09d35e8bc644e21c8d74b7922e8042dc02379c47b732de45",
+        "c51210c0ac9f01db197548dee618eae577373c4a5ee6db8ffe217c57759d1f9a",
+        "84755d45e7334011312beb74e7827ab986cf3dc98b418fdfbe3dbef21e75d868",
+        "53e49561ba1283a349507d02d754b497ea77449abade4ce2f39d1250a6966ec3",
+        "4e5885534308ac6db7bbd890170e72ed98de3dde9f40a276d773c6f39853d881",
+        "3fe09a3b3422b62efa9b61a61d3b9b6a8c9d2b99ee138eb57d13a229ea124931"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-beams.png",
+      "sha256": "739607b3b916c1091bc6127dc151f04d89becb0958111846c5383e800cbb2e29",
+      "source_sha256": "e69634edfb8bfe31c5b4635396b261c832cd6c8ea843e5abc5e7417b23555f30",
+      "frames": 6,
+      "frame_hashes": [
+        "3f70d6e42204213203953ce6770f7d507a6559b2f1c222e39a3dd808f1a1350c",
+        "300220cb92b9d05ff6c214981d09ad2f869c91f0a40e11e2b1aa9db9a7d09df2",
+        "dd67a5765ff9806fcb4d584620531404af357a4b57a1b166e869aa99d1abcbef",
+        "fe25036fcd328339be6232d787fda72c37a6b1c5a02c87327c5b2fa9e9dd5edd",
+        "ca11e67594c56642e977819ba283460ef1b818907e63e51b1392b00e4308d740",
+        "10d891814c4a7d7b11376c0078fc14c78c2cce564e1c2d15a130f1e21de9f510"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-beams.png",
+      "sha256": "65d245611f64531ccce48601fe38a6174f80c9c17995a32cb1d9e2a6255625b6",
+      "source_sha256": "e69634edfb8bfe31c5b4635396b261c832cd6c8ea843e5abc5e7417b23555f30",
+      "frames": 6,
+      "frame_hashes": [
+        "3fbb6a6d668c3ae44ed2cd3d53140bdac14e693558adbe9e1f79ee30c05ea6f7",
+        "6ceeb03f1072d2d591159c1a3f0844df958369f26bfab364607a89b55b387057",
+        "d68a489baee898e98fdc14eec6469c18b47da6a8a2bd5fa890f2c833d9b0eb3f",
+        "c6cdd2dba6b42fac3a1dca8e96f26e50b00c07c90a97f29e86034623c6ad9b05",
+        "f01f751ef5b66f7aa81444930d644809fcca6487983894ab6facfdd7c271f8b9",
+        "b1d45740741162824ffa2ff0c58e405103da6fd22eeb8dc46a38c5d9dd928445"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-beams.png",
+      "sha256": "8a45d56453953fb5e8ceb02f71e91539f8d49fb93ad28260042e3927bb9e5906",
+      "source_sha256": "e69634edfb8bfe31c5b4635396b261c832cd6c8ea843e5abc5e7417b23555f30",
+      "frames": 6,
+      "frame_hashes": [
+        "acd9112d78a383fd9658467deb59edf86acc2256251c4a8c873119c06bc52573",
+        "93aa276881fea05ab6ee32362597bf42175071e335026ec2914268416546316d",
+        "78cef7263a0924b09d6e7c0f05e15223b7d8d5ca43db9e142f419b14ab2af0a2",
+        "1548dd719575eae7187aa6af668ae6ca1c63bf1bf2d480c83d0210542e6e712c",
+        "5bc46a3857831a3649312366adb41cac26ab201a1292d18cc7fc708065f6ca55",
+        "2cdd426019b5396025482c9a6361fe1d507475c6315c998a60fe0d810e2a6938"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-beams.png",
+      "sha256": "5016cfb17f12d0ef93e075aa5970f23762ab394544f0578306a430b6ebfcac39",
+      "source_sha256": "e69634edfb8bfe31c5b4635396b261c832cd6c8ea843e5abc5e7417b23555f30",
+      "frames": 6,
+      "frame_hashes": [
+        "4e936f171f2bdd4f7df68b0ca33358c679e923a830bf5cecc4f41c0cdf7119c2",
+        "7dde22e5ae7317ffd10d426339a30549a7f37b8e2749f93cd41b3765f9ff8487",
+        "70881d74c4e118417085100bf8ff1465b91814406130fb444d7c887485e2a5dc",
+        "e57bc7dcbc5fa9ed0c7e0f6e294d2c6e21c047988553e8bf0fa16d8f604233dd",
+        "d09f78b1ddc2d059adc44c860ab6f643f67ae1b90ad37e60df63dfcb9a0858c6",
+        "af79076b6f8fd7dd1276f78f2a3cc662c03af37e6f24f71bc0381d239b07df63"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-areas.png",
+      "sha256": "78563782555c50eabd035c5538faa4555798a199ca8d88011722440fb6dbd002",
+      "source_sha256": "67a989e28cde99ddf75f43f376019389164ee1c4e7a37628c32fe67e10667290",
+      "frames": 6,
+      "frame_hashes": [
+        "11099640bc970aef971402bd8949c2f37eeb19b6f978cc7cfb8bd96d4f0a9ccc",
+        "d8a49ea18282bd7e099b9f6cd5e809accb4b3b79bb3280383154d7b002fc5de9",
+        "360f582bc5c47bad7fce539385f73f46feaa98a869c2858b3deab77a9abd9d52",
+        "bdfbfae3bff9b01a169ec779a4c5d796aad1bae9f4361523e96355bfd2459d1e",
+        "ba0320b826ac7fe5a739fea1f3c7bb56b16e4ed42bdedcbe27b1e3fe0f6443e1",
+        "8eb99b2f9fa9d54ff3471663346b8e3809bcbc3b9a40ae4403b38adde219d045"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-areas.png",
+      "sha256": "16e572847c1f3133ea6b88a2607f54a488c7a8c02abbfd8493d3f97e8c4ee7dd",
+      "source_sha256": "67a989e28cde99ddf75f43f376019389164ee1c4e7a37628c32fe67e10667290",
+      "frames": 6,
+      "frame_hashes": [
+        "1cd224d06d3d509e98c251727cade0c956c0d371a5d3a028a3aae0ac92bba373",
+        "99f2c4334655076c8bae9b0ba25793bceed37be8b9eacdf5c4e5e850a5b796ac",
+        "4525a105b5f96a73929c9252eeba10ab6c547231eaf03120111652f108f132e2",
+        "b5771046b2baebaf03e22578ec64a81145f23eb8780e0c72ae0c7c22a07c243d",
+        "64940dee3d5687aeb0df548b9109db8a5a8087a075d5b65d74056fd464a4186a",
+        "171fd20f629c9ec9a0317754a1face19422a449d50364858132ebd51c51b7d96"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-areas.png",
+      "sha256": "104c52e19a04e4ce397b9f52066a6c87e25f19c6bdd621b15423dcb776df3b76",
+      "source_sha256": "67a989e28cde99ddf75f43f376019389164ee1c4e7a37628c32fe67e10667290",
+      "frames": 6,
+      "frame_hashes": [
+        "43876cc771b06c012caf8d027daa130be497e20a73a9a07fc9e980b6eeeb1dd1",
+        "0a0e9f7029563c01ffacaff5f13688fc3167ddfbc30899ea51cc7f5ace923c91",
+        "b306e3949ad6755b411c2c1e673df72a739c9898006f68c02d503b5bdc0438d8",
+        "cc09c22f41ab37dc324b8471becf534114d8d133f480368ea1b75c074950751b",
+        "ce7240a0f66aed378cffeb861657cde13228afb9e356fffaa718d6cef9a53dc4",
+        "27ff3f2c01d3a3645a054b850a8736dda97378f85b1001696e2e69e05c944653"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "smoke_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/smoke_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/smoke-areas.png",
+      "sha256": "c67899fb641a49fb09af320a8683c22fa4df091409118307af3f06135272b8d8",
+      "source_sha256": "67a989e28cde99ddf75f43f376019389164ee1c4e7a37628c32fe67e10667290",
+      "frames": 6,
+      "frame_hashes": [
+        "23ceb903e3b81e1561bab7c409205e872aeaa70bb0d5b2ace34a6046ed567c08",
+        "2a0815f5795e33d97b27e6f80133922bb771c6f3d6c222be9658ea38c90dfcd8",
+        "a6ef959c9fc8b453d27f568c288e3341b13679f8885f3c4397c941d51e3f7d38",
+        "75408c958238859a7a109b7aaa5b6f8b95b45d6eeb75d9768ddf0686b3ab1296",
+        "5ac6d6ca954f26bc39b3edc07f8379ed1ee7ec8837a8cc23bfe80ab72e08e110",
+        "4bea837126199aa5911165b95802846d7bd860d2b0f90343168b8100a0dec6f6"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-beams.png",
+      "sha256": "4dac328ab3758b9cce825e2367eb4ef6f6b4ad58d0ee878533747b229ba340e5",
+      "source_sha256": "d1e3a45ff28b1b1223b3d0643f93f2b1afb99e70deb793ba39f373469e122e04",
+      "frames": 6,
+      "frame_hashes": [
+        "cabc6549148ed315764316cf950288a6faf8502a35b7a1b2f7278e3e9a65fcc9",
+        "ff3d611f3d90fc1c523d3125684a4bc9d396609a346a11f677dc29527ce2269b",
+        "0db9da0c0eea05c9cc1be93f4eee27bd40f1b6f7c6874922b6796e2eef489fb4",
+        "324137802ecfabe96a535a3cacfc7929baef6d4587219378d70d5c07785cefba",
+        "58a9b1afded346e1a5957e6e9201afe533a70a2cc4a3888b62671643013d6d99",
+        "29883921cd65d1225427b2cf030a3b8719ca3aab7aebee7c0bd99192eb9fb21c"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-beams.png",
+      "sha256": "d3a22b0995b0ecc1195237f1adf9ed6afc5592fdff7af8e0800913f0d680c4a3",
+      "source_sha256": "d1e3a45ff28b1b1223b3d0643f93f2b1afb99e70deb793ba39f373469e122e04",
+      "frames": 6,
+      "frame_hashes": [
+        "3942db6cbaf14a74601778ba50ab39d4664f10744afcd4e8fda45fe26bf85f74",
+        "c8fe3bed96dd8347c80b627e8c732bbd87c1dfcaf917c626a20a247abd4d3251",
+        "38458fa1decca0645f18aa480799f721f9546276df7287dad8de1cfa685cc768",
+        "4373942dfcad3b27db1b38d6e3696a2c61215ed2cab737459d42ef268a0288da",
+        "cc06be8568fef968d2515e4227759883e0fe4c80f5a0a9d842fd4b84dacaa216",
+        "de8141c53bc085618f0c8fa3b2278fa40b98870a3f3f6bbba878c0d0ff351ba8"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-beams.png",
+      "sha256": "4ecf4a507f572156ba9eba904c449ebe660611c36b84fe56cf8da722d4440c68",
+      "source_sha256": "d1e3a45ff28b1b1223b3d0643f93f2b1afb99e70deb793ba39f373469e122e04",
+      "frames": 6,
+      "frame_hashes": [
+        "fa5a4b0e864e2a05cd60e215b6d5f27bc15601f54c6d9d94e8e51d7d237dc438",
+        "ca97f1a625099c3e1d56b452f0d7a11a052319c2c3af884e0915efa981b42f43",
+        "182f04bec269ca2fc5b5accb708af0417713ab59865c63bff0a04cbbabd89ff8",
+        "13f584d668fb9e993db385a6aefea493e083279f48e696e9fcb4ff3e6faa0478",
+        "04d997b755529d44cd8bf1fc7012de1d8ef38c65301a4dc793070437564c27a4",
+        "25752fabefdd9db01803d0a9f0501f109ad23e115336884c42e70b94f9b15530"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-beams.png",
+      "sha256": "6332de26874a831d8bf71eb69b93b03136e455a52eb425c85143795819e12a79",
+      "source_sha256": "d1e3a45ff28b1b1223b3d0643f93f2b1afb99e70deb793ba39f373469e122e04",
+      "frames": 6,
+      "frame_hashes": [
+        "bc9693cb75bc21051c2a1df808b2f8c53b145bc5ff3436c6ccdf59c4537e7806",
+        "8aa9882b5a7e25e4a79395aeaf8d4a00d65b859540e553bcabeab1a5ad9ce2e8",
+        "b6aa96154333f62f7f8bf9e9d36dbf79fb7dc75f9ef3cb60408780b24f0e264b",
+        "ff4bf4c9d05ae456de724ad38a1eabc3aa16ff3c20b212a8d01b45b23949168d",
+        "5d2324bfc1e8c06ae27e9ee284a65299ee760c4c88a7390379268f8a1690e5be",
+        "67ecfaddd38b02bafac79c339c055915b3ecd456dcc17a7bbfac92ae0b731ce6"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-areas.png",
+      "sha256": "ad8c40e4099758adcf395a8b9fc68a7e1db37f8297105e2f351fc245fa134683",
+      "source_sha256": "26a410577ab8fb77f266c83e11a0d0e8d6d9dd2f7e644a97df4c2f747ce6f793",
+      "frames": 6,
+      "frame_hashes": [
+        "c49397622ee3e0c1b8c61556c63bc5a11aece965adc273fee99f2d1b8c4ea1d0",
+        "f139f477e49be4a4663fc0c5ae7cbfa40acf68106cccbe42d653a36ca16fee98",
+        "953351e3d87fef04847f311fbe67775b811a9dc9ffac105b31e825fd0ce8e2f3",
+        "bd01bd6203abc9791bd78ece0e9c39dfb402684061a77204a063a964f0017442",
+        "e270009d3b49e7bddcda24481537dd9327b840bcd40858d34f1dd6e8036e9fd7",
+        "5c5e8c4197c5ac60b9ccc26d6ad6341875de23bd94470f47212f8a3dcd1eacee"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-areas.png",
+      "sha256": "b2fd8ec42200b852bd2329ee00d8f76644f9a7449cff61515fb0825b7f5f9abe",
+      "source_sha256": "26a410577ab8fb77f266c83e11a0d0e8d6d9dd2f7e644a97df4c2f747ce6f793",
+      "frames": 6,
+      "frame_hashes": [
+        "924ab685766d734dd8b85e3dcfa685c886a0bf4f63cc533575f5463b7e9871a4",
+        "0e6765713768b45965b8ddc17904748a22cb601c2cbe5a3aebe3439599186bd6",
+        "106a61b50a3f45da6ebe6b9ee1df037f164cb013a30e30bb6fd3acf839e59163",
+        "053b8439b5492638ecff0e27e5f4fb1e08dd301de713e3d179f12d96a6b02445",
+        "e36c738e20c69daa4a5a1c5e2eae98927760afb47eabf77ddc6ce992fdb638fe",
+        "686b7a22267691aa3e04921f090cbc089f0a086560c5ebe49ebf283d18dae295"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-areas.png",
+      "sha256": "2b71449b7ba99ae521f1b4a21a38f60d6d4fd66b8395577f0c498990de53257a",
+      "source_sha256": "26a410577ab8fb77f266c83e11a0d0e8d6d9dd2f7e644a97df4c2f747ce6f793",
+      "frames": 6,
+      "frame_hashes": [
+        "d8cf538ad53b34d5bb7a868cad8557a69fe5b98fa7c346a970777426dd453d44",
+        "747fae0145c06786fb60ba952b9d2f22abb34336679d93974b77519df765a3d3",
+        "413f293b52e36405353929ee5ac78e6d25d6d19ae53b5d7b01ac9491643a6b17",
+        "a60108b83d0a311af6406d5767f48f0d68192530d3fdabf507ec0dcc5a950ddc",
+        "14349180136d856ddba68dcf91cba8096118cd5973cde4392f155dff99e144af",
+        "f58d745a7cc6879baa48b59106c93099ee4e2610d38db09f4d224cdd669e5e55"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "frost_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/frost_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/frost-areas.png",
+      "sha256": "295307b88a2c91a9f9d31734ba6e7bfdc240398776fbde41c5296a7434362100",
+      "source_sha256": "26a410577ab8fb77f266c83e11a0d0e8d6d9dd2f7e644a97df4c2f747ce6f793",
+      "frames": 6,
+      "frame_hashes": [
+        "82d7110e47a6da81adabb7dd1016d87bd0d822199aebedc2a80c9747d9300df7",
+        "bb39440df50e7486ac0b0ec050c9d8b0e9dc02d68ebeb5a387f5975f77c357ab",
+        "b24a7cc3d4d9ebeaebba6c5683d6f4a03704aefdbf460f4395ffd8320a75223f",
+        "a6fe6c44e8aa5fe6b2734b43286c88f79c902d8e2747d7ee0384453446fd8a76",
+        "44a7937f01d27e349413a053bf3c940fc5d62308c6b32a880b32f3651b04623d",
+        "38f648de6bd04560f05dcfb0803d1cb20e767888f1d39495bfce74768e07c4c7"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-beams.png",
+      "sha256": "deb19f90f8412208435f9ceaa581ca66b7acb5c460b9feec13939c7fc33243fc",
+      "source_sha256": "7bf9c96203190b55600978283a1fd9edfc61fe5fa8a2901d51899c0ade8b9454",
+      "frames": 6,
+      "frame_hashes": [
+        "1aa1b3c566a4827930f2116a35d4abfab6dc629b23ff88c952b5f513bc751fef",
+        "a2702579cf8993d02950b215c03219fba09d4e1dbb6697052a1ad25557a4ba9d",
+        "2db1f5ccd067f065c91d6b7c277120162f127706f36011b3bd027c504bf1f887",
+        "240a87def672c389bd09138b69634ae15cba4a92e90fc351bd766accd2696e14",
+        "dbf2748724f25f4ef71b9ee79d8c46df63928b7b64f9d09876306ad8c8cc4efd",
+        "c827a67225e7f41f736022010e5dc64a1dd7f7a41218db19ef1b2b946c2d53f9"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-beams.png",
+      "sha256": "2a7cdb6520a7cb5b6aff169153e2abddfe51be7e9c3c555766d157ce6757b538",
+      "source_sha256": "7bf9c96203190b55600978283a1fd9edfc61fe5fa8a2901d51899c0ade8b9454",
+      "frames": 6,
+      "frame_hashes": [
+        "7670dddf2c192b13491d7f064ea02e3b9a455d1875bed9ea4c68dd2f67e27360",
+        "5c907f87532fef71085c53d20208389260bd63cc4c69bd3175d8dd990b0d7d2b",
+        "2a16093e932255e13ed7d9371914012d19da912020d5c96d810b1246fa77017d",
+        "857c957c71b61cd20a553ad6bd4f10afa62286fd5d603384ecc6bf1473498a17",
+        "67a5b0b6dce0ee15f30dd7e6b125f6205121632848ed9ee4994e34a4f3ae67ea",
+        "ab34521173cdc5c2d7ed634a3c8eeb3155fa86f7279a5dba9bdd96eba7039d85"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-beams.png",
+      "sha256": "bd9d68da390853d6ef126880fab7cb07c5a7390ccf73cce2a563416122a8672f",
+      "source_sha256": "7bf9c96203190b55600978283a1fd9edfc61fe5fa8a2901d51899c0ade8b9454",
+      "frames": 6,
+      "frame_hashes": [
+        "90862a9d09128706732ea3f72b8f5d73e736570c5b0aab08bb2863daca124f1b",
+        "fb512ae5656a420b5a41297d85e336546726baf1508ac1c4e637a041a5fd4408",
+        "893a11172c8f3ce6ecc6148161e04c9991620a31c7590323adfa30b12735ad6d",
+        "0e52a6206fd94b419609291e40af20abc3daf50be472f73c7c59e99712dec936",
+        "ebe53a38308416f899f065dc84e93214dd08f458dac36985ff2fa1342217a8c0",
+        "c0f3316b71952ce02d26f7f4acddb96c15c9809854141fe85945f7c2c1aaa53f"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-beams.png",
+      "sha256": "eb5fd741e586c5c292fef7198d01b256ca3843bd6955169bcddb19e95a02d887",
+      "source_sha256": "7bf9c96203190b55600978283a1fd9edfc61fe5fa8a2901d51899c0ade8b9454",
+      "frames": 6,
+      "frame_hashes": [
+        "94292bd21c9720664755b9d40e8347861fd25c82cfb6e09acae62e7771a0fef7",
+        "4e7090d2a97e149a9cebae6ce01f0feea442ea142f9dfb34048463ff5108789e",
+        "386c3e42a47e8f66dadbd88a5ae142158dded424e10cdb04110e8f42c0d82ca9",
+        "489b58b06783f711fc1cef62794127b0b45eb7d565082e26eb9c3200504392d4",
+        "2ebd358992ad6bf7a868f6724be1b526cc44658905a1ac57c9e437d12b87e463",
+        "6244da8030866edf24b211b7b4749043cb47be6b48a73898782380d804917f59"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-areas.png",
+      "sha256": "689a965abd51d2fd4ddb0447ca8a4194f90860284071509e1a1d27cd9db295a7",
+      "source_sha256": "09be96e41188e3e998453383bd16eda7a358d87265d851e5f4b4daf411950afd",
+      "frames": 6,
+      "frame_hashes": [
+        "5273f0f7c15da9a2fd2f9930680fe2297ed80f0552b5fdebcf82c69194ca84dc",
+        "cbee605ec870854fce4bc93b254901a81324c42d3bd38c0d3f7531c41b0fa4ee",
+        "94c3dcc4220e435a6095baed873ceaafb5c8e4fb5399d341abc74fadb3aabb21",
+        "710ae6de8fb7879fcd666aaf99ec96c4192d0033f015e319bd99ee036a1152c4",
+        "4812465814e1dc00938636af06519ff29bba4b30938ce1502d0836fbe1f7f052",
+        "aea65398ba2bcada64f65b8701134b88df991705d3a75bc18b3e7f9bc32f1425"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-areas.png",
+      "sha256": "0d1ed820a881d98d6918bae293b070f4287f3b32d83a079a85ac26abdc4d5a11",
+      "source_sha256": "09be96e41188e3e998453383bd16eda7a358d87265d851e5f4b4daf411950afd",
+      "frames": 6,
+      "frame_hashes": [
+        "1ba74edc78b8f6e37527f80274753673b00745985018336b9eb9a8a2d4b2118c",
+        "daf7757c1abffd3d0b01812406d0bba5f3d62dfba817017a2e088d14007847f2",
+        "70fb4dd16adf5af54d0a3dc942b52ffecb3cc1eeaffd13d1567ec00af2d928f3",
+        "c61a58e24c113d2f0184fccb170c123a59e9f99ec9eb8c4f7ed0d4266b4ee4f4",
+        "a33c0885453618d807e977d305a1c81ddb98f92cc8ea1bc4d192d7ddd9114d40",
+        "edd2ebc9ad6e5cca06750c4d33c7cb5705a03bc6d0c3eb6b9c2af2a753d6b44c"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-areas.png",
+      "sha256": "fdef80b52e70d452f5d40f2164b7ae71db03b6350196eee51b2d613504f69fd7",
+      "source_sha256": "09be96e41188e3e998453383bd16eda7a358d87265d851e5f4b4daf411950afd",
+      "frames": 6,
+      "frame_hashes": [
+        "d3fa73d8c3dfee008085ad6cd6bf1a7274fc6fd2e1c55af5115d1fc74b30bc25",
+        "a036bb6dde28cef4c9a5e6350216568dcf073257287f9b6e800fe304d5fb46d9",
+        "adbd0bf985d509dade4852c8f9e620ff6ef939720591944502be8d56aea9096a",
+        "03c3a5be465e3b34dfe044618c16f738f75d9eb126215ea0c9ffad5b0f5b307a",
+        "5b5af11005947d95f5fae0a5ff33d40a8be4617df934efe0e78ff69d4d4453a4",
+        "66dfdb6f16f487b52e46992c58c857576c5e99581fb1676a31fc602ef0083fb6"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "storm_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/storm_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/storm-areas.png",
+      "sha256": "3b6f4c235cc15cb3b1f1a443f604f27b826df4ced720a7049c8228cf8cb1f2f4",
+      "source_sha256": "09be96e41188e3e998453383bd16eda7a358d87265d851e5f4b4daf411950afd",
+      "frames": 6,
+      "frame_hashes": [
+        "eed79ded617b0247165a070f27e30d99cc17257cd19d28fbf1ea5f5e1c019349",
+        "e56d60b0b744ed8bc422ba1c66d27f8f1cbf1bf13525aa9869e00db22c4761d1",
+        "3ceaa5c9b44c65005420652440a1155978ceaeb2f98cd5d8f75ad78aea6f37af",
+        "bbe69f7cca16facf608be3297efc2d6830df50de4312bbe10769db88882f0b9b",
+        "074a7c2ed25c6563e1c429157a01ecb75b74af9f3b21c5d4b0ca083463d64328",
+        "5becc52d1a1c5b0cdfdbf985f12cd6ab1c79c26df6dfcee57a4b76611e4f53fb"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-beams.png",
+      "sha256": "4385c5e3f8750c67682bde64680f6e52155007f71228ef492b1e723ac0e90031",
+      "source_sha256": "082a4da03d7ae1762beafc129a8f64cbfdb240939a907ec22590c0270ee3d498",
+      "frames": 6,
+      "frame_hashes": [
+        "07050d767cbdb7668afc8a363ff96a945de3409fc7ca09cdb71e39113d9634f7",
+        "a92b9f93524f077946e085d5d9217ea4907930e0e703af3be31f0d2f37f7277e",
+        "9b1405ca6ab2f89a53a19844de3f1eff563fd19e304a3c8166cc92ff236d070f",
+        "bda9fd8259759513f54a536b936a5651aa8d565c2aab6d0d8f4b7b2a6100d279",
+        "9198d8057a84f0dff172d8532d8c66fa5322e3e4cd14dd8043bcba3e518cdd8b",
+        "d3a6af99842f15754c60a49a6e37a81b143a88b0d945bf71f3b76c786c11edc2"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-beams.png",
+      "sha256": "da75c9a93730d3ebefcf83990b9fe7bc0e58ca85deeaa79b5cf7fbe62ffd6c85",
+      "source_sha256": "082a4da03d7ae1762beafc129a8f64cbfdb240939a907ec22590c0270ee3d498",
+      "frames": 6,
+      "frame_hashes": [
+        "c498d64393a06a582f0d1f7edd2b6ed73a7b17426209c2fa7f0be2316cacd3d9",
+        "d183e9d3cc9ece05a78f6739ba1d49f3e1472ded9cfca4ebaae7bc5814447e75",
+        "4eee47aa387db2115cc0f705b47902a3e84a9cf6133d985e36d0a527569f192c",
+        "4c17229caf09694f3c8cbee75d5970d12df1b048a3c4d1a9de3faa52aa69ca0e",
+        "a362901d7b0f0d5f22b6705fddea17de185dfae89917304d40008b2cf24b6393",
+        "c2b9b29efbf9f98a37d494a4769682d721b7fca26dc9e519194d2fee7bc43933"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-beams.png",
+      "sha256": "a672d2493ba1b334eb1cd293605a7ce02cfee5e0262dbc411194605bbe8705c6",
+      "source_sha256": "082a4da03d7ae1762beafc129a8f64cbfdb240939a907ec22590c0270ee3d498",
+      "frames": 6,
+      "frame_hashes": [
+        "b0085c9f81f0a81595b82b11e7742d1c0cb07fa94b06a8455701b9c2802ed5f4",
+        "6f50c47fc1bf9f4caa3788ea6566de4d91ad264705cf0fef909a8185961f901b",
+        "a369f7bfef821608f81320a6264419dfcb1ac2322c3ec00918f9909824dc1687",
+        "6a4926faae747f5af91a57e86d13a167fff1cc43a9a62f3ae04840a55991b1ee",
+        "0ef71dc07ddb3f7c57b24203d059f796bb4e915ff9cfea4d6479e16b8c6b5e2e",
+        "61bedf0107f1ddac8380422126c7b959c16ea2cf1c30b6a2f939dc293c358b1e"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-beams.png",
+      "sha256": "0abf2aed4b59363c386b3b75ada55d3a7827a34fd1303efb331a405216f506a6",
+      "source_sha256": "082a4da03d7ae1762beafc129a8f64cbfdb240939a907ec22590c0270ee3d498",
+      "frames": 6,
+      "frame_hashes": [
+        "68bbe2740a511a2513b2538ecfdbbc1c34e5c05968df4fa83dfdca5e95dac99a",
+        "78f3300e2cc4be1b53e9035f10e2099d381593e922ed5e0b0a86bbd556714bf1",
+        "c69edea2ddb912f952259e15d5ceae452771ad7b460739924dbaaa197bcf7739",
+        "6e31139cf482b84b4033a006161405cfc5ee4071b5cd00403a03c5496061efd1",
+        "314fcfee89a7bf6f21e94eb52aab7fd222a825c6a0f45d14e39dabf2270a5a8d",
+        "ae101631b989337e97bf49ec110accfdc1ec129ee03e5eef6e521219b00b2b82"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-areas.png",
+      "sha256": "eb3515d2d50eba7544bc9a407e4b81973b606158a3526d11d11d6bc21a740f1f",
+      "source_sha256": "e73db22e9ce3a55a52282e5d7e4ea982b9987bfe717ee4d64f851ec6a4b2ccb9",
+      "frames": 6,
+      "frame_hashes": [
+        "574329f7ce08c686a398dbf74eb909feff3cd215899a9feb05aed27e258dac67",
+        "fe31467604500f5b52dd6af90c621559ac21c30d3cd73c30a933cdc1bb38893d",
+        "1ad63aaca7b3c17da8333e3ab60907859ba54e22b23351a4ee3639efd9b38820",
+        "24c68fc61a77d47b5f07bac1436bd0c81a75d0e382b99d493d05ef8b0c3088c7",
+        "450800dd8371206b8617fcb26ebac8d729617cb91c2e9afb7957c36cf86152bc",
+        "f888d37f8dd1c6466d55a459210ca70fb11c50a0e169fe0c9c7c3d873bcdd5aa"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-areas.png",
+      "sha256": "ec334e740c8905110ccb86c5582cc5fb953ea78fe3ee72c0c3602988f82489ac",
+      "source_sha256": "e73db22e9ce3a55a52282e5d7e4ea982b9987bfe717ee4d64f851ec6a4b2ccb9",
+      "frames": 6,
+      "frame_hashes": [
+        "4d8574d7e6affad82d5074fd8399ec9c30a3b93b632563f9c0f11e57c6dd47f6",
+        "6856b3237163c9027f6c45b90dfbedf995ffacde480ea833bc6e0cf36239517e",
+        "a63b917618975cf52266ad3b3e0bd46e8d14c22bc5c1a19a423fa63fe08683e6",
+        "959888df83e829c63c7b8ce08f9ef80e54588b09ca6acebbda83a9cd05cec186",
+        "98cd8585aaafccea9349ff66827651956ac73ad44b413201b9cd08f445f51faa",
+        "417efe99ffd7a7757ad399ec31bd19d4aa1c4dbef2ed9ad01b07f9e7b7cfab4c"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-areas.png",
+      "sha256": "123729f85660e175b925a15c1f1ff2c05d23810a720105acba7f6b723b805069",
+      "source_sha256": "e73db22e9ce3a55a52282e5d7e4ea982b9987bfe717ee4d64f851ec6a4b2ccb9",
+      "frames": 6,
+      "frame_hashes": [
+        "05dce59427f58d304515b8addd1459d069b35a4331b004660efbb0455d6c971c",
+        "d7dad3f1d8813751c083ead9ee17188f968a3f6bffab0716dc9b2ec80846c4ae",
+        "806d5a82687a8bf810b7365ba7abe7ef1605866cb202946e4b60cba4863c63aa",
+        "e5eb45c88ac31535f647a44d0feb9bfc31a91207516f2adb7f8e2e4c1abcb936",
+        "da33dfc2b50337298a4553ce86578e7913f08907e3243e33530b1c56732e4e5f",
+        "c2f4204dbf787a89509de5dd7e9b3cbd60d6c895753b25eaf8e68be2ed6bc03b"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "void_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/void_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/void-areas.png",
+      "sha256": "7645b081bf91b22798a22cc4e1b9ea81ebfa7e3988ae779200ce3e3c9adfb53b",
+      "source_sha256": "e73db22e9ce3a55a52282e5d7e4ea982b9987bfe717ee4d64f851ec6a4b2ccb9",
+      "frames": 6,
+      "frame_hashes": [
+        "074142c766f0c01d741b109972a88aa8f305d439ae3741742a7079c652eb33fc",
+        "ff328ac8c0b7306cb9394d5ea1853d0afd9a2f9df9199dd72d1b9ade5273de6e",
+        "ce661d3e8a42df4bb75e670b56d079762311f7725b9e76c4abac81bd389ea855",
+        "99042c96d8d86c322d933257c0902b7601a0e49efbd4353d12666e338765d7d6",
+        "ac65801a5c77e0c54890655019df860decb3ac5b23f05bfdc987a448c9dd088d",
+        "da68dd805f3e285f0c306cb659bb79bd356dc73f257437a5b541a9705ed83d4b"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_beam_lance",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_beam_lance.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-beams.png",
+      "sha256": "19a61a5a556a042e9bbec5ee3a9ece87e86453a4f07607dc49dad7ebb59cf48d",
+      "source_sha256": "0fced2cc4977473a6daae1edaa9a7e5e2d2da3a38b1d47ad0b300352741c1874",
+      "frames": 6,
+      "frame_hashes": [
+        "ac469f8c3a75e70f47093a7408827658bac16255f5031dd9ab9bf422cda41ee0",
+        "032a66daf37ce6ea932d9c9dee04458f16b8f76ed9c8b019352f8151e7fcd279",
+        "368a0786be67a0165c5031dba1badc453f001492e8a3b1ee77c4328486f2d946",
+        "83aac555d00580b60d8587c3b9ff8f746fe4e89ac036e3e3a49091ec5cc2e853",
+        "bf67881b24e760648559eee2ecdde499496facb067ae0fa1328e05bae48a226f",
+        "f0ff793226c6516238010888b66c2babca7719b859926ae589cf23c65ee2d112"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_beam_tether",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_beam_tether.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-beams.png",
+      "sha256": "ad396c5dd62687688961c81e565c6c7a2faf1f0b8b341854219db2ec76ccd7f2",
+      "source_sha256": "0fced2cc4977473a6daae1edaa9a7e5e2d2da3a38b1d47ad0b300352741c1874",
+      "frames": 6,
+      "frame_hashes": [
+        "e957fefdd68a851ae74794c24e8dc1761db6abcead3bca95f1b511975a47b069",
+        "508d5be0cb822eb1905d00862687c5bbb22e84f90c90fc12f199e8246fdbc995",
+        "59bb9b4b25af09ab7c38a0fd68e364a670306162d53e52567b24b0de0e5ee337",
+        "a2b917d6c3db93f8a49f495cb9bc7087739bc85759077408eb435249f5ffc134",
+        "910c5178ca1d4ebc330b1ffc0a262c13c45297be20af29d7a929a3e468043d47",
+        "ae90873cdabbce5c95f5a9c5a689d4c0f61f341398434db3c21d96fabc0bf659"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_beam_wave",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_beam_wave.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-beams.png",
+      "sha256": "ed7c288f35573ca36cea49a86778ee8cc374c78ffb2b2cd8e224e953de72ecf7",
+      "source_sha256": "0fced2cc4977473a6daae1edaa9a7e5e2d2da3a38b1d47ad0b300352741c1874",
+      "frames": 6,
+      "frame_hashes": [
+        "699dbaf18768680e5e371342ef42617a7fdd7aea09901fa1ee21ff84720f83e6",
+        "b5b22ad68eefe232a40cf25f1de19916f38afe7aaeec4e42a3f9b5c248c1a9e4",
+        "cec6f2affb6b17a1bcba1d094ae52a7ea094aa616a60b5d8bcd386be49c8a00b",
+        "e17278be88f6fe153b9d2d0358196bf98e95be5926a1117b8250c4b77538e548",
+        "30ec0ac954b1e0f7e816d767e08f26befc2ec12cea56820a378b6845dbebc996",
+        "d3a3203a5e56688e6ba72cbe75dfc4bfa021347ba5302d5fc841b4b573bfb980"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_beam_fork",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_beam_fork.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-beams.png",
+      "sha256": "d6036bb01031e57b117522c4533bc49905e657cf7678382b37c4f5d54297290f",
+      "source_sha256": "0fced2cc4977473a6daae1edaa9a7e5e2d2da3a38b1d47ad0b300352741c1874",
+      "frames": 6,
+      "frame_hashes": [
+        "a9fe94dfdde26d370b26cbb2cb886e692d6a6e98247d13c843b864095cc86bfd",
+        "107d037b046bb7508f3bb1f5754ee89f03cfdb30d449de8f4806ea6ce0f3e5cb",
+        "ce3a63ddc0850fc10001771436a2ac0f9247d35bfb07653b84b77dc2853257b3",
+        "ac5818f0dac9d495a77061e7d6fbf6f21ab6a5faf9265135e903e945247bf9a8",
+        "460e2eb43081c3bcbc925fe21d102e847c5610e388f8dbf532fcb641ec84a5b1",
+        "3eb20060064e18c86217cd549717280e06c970bcc3d5d53ff572ea6c789a3201"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_blast",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_blast.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-areas.png",
+      "sha256": "a64306708d57ababeb625043e757cc16b8eae9b2546a194b62c17a2b2bc92f9f",
+      "source_sha256": "47fda659df543d10bf4845d4ff202ec80de99ad662b6be764740872369b618ce",
+      "frames": 6,
+      "frame_hashes": [
+        "476952dbee29bb40b0b4d4e4727f24197a8fc150c3c5bfbf01d82f3234aa45fc",
+        "18af9f922940158741338369a21cf32d5df617b2a13070cf8f118d1e40e098af",
+        "c3dfea2fdcdfa5546de265b319b2686e2b3f3b409cc19e68b7767345c7916275",
+        "9ce78501a497d069055dc5418f66004ca40dfa61e72616660593e814230029c3",
+        "9b9ea417c903fdd47c2d792c84ce6a9806180be1cd7362c8462c1aa117a5d2b3",
+        "5b42b2e7010b9d7205717e419c1f06d4498888d5b641cf1f49299049c4978910"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_ring",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_ring.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-areas.png",
+      "sha256": "9c51332e9935fbd3b2ee049c0bede4b48f42e9b4d10ec75f162cca912b485474",
+      "source_sha256": "47fda659df543d10bf4845d4ff202ec80de99ad662b6be764740872369b618ce",
+      "frames": 6,
+      "frame_hashes": [
+        "54f5b77b0e01fc54586c544c834cd9d7eba070b3e44e826131329efa24544c5b",
+        "c123a7d6b383ed8220638073296c148535cbdda04e7dcc9ca4acd5adcfc26961",
+        "2b3d1ba8415c15c1cb2ccbe5a55780ef304c3b40186b93eafde55ac6d310f0aa",
+        "cdf4ade4e10436aa0f0ca54063da9931d4334af2d3e5fd2a3740684eb8df69a3",
+        "48ba8d5659a62039defc484bb66a28bba94b3a275ca8e3d9a50604abee52add0",
+        "b00115aa695f19d793544e7349885a950bcb2a7b5a875e65d16553eb743fc19e"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_vortex",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_vortex.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-areas.png",
+      "sha256": "4e224aa3c5b9383438d2766f72ff083105eb536fcb00a9992f3c2ef59bbaaba6",
+      "source_sha256": "47fda659df543d10bf4845d4ff202ec80de99ad662b6be764740872369b618ce",
+      "frames": 6,
+      "frame_hashes": [
+        "0e39c0727c7a00adfb05cd8a439bef389710271071a6280e19f7bb06c2add25e",
+        "cb8880d0091338a8b462f7af4edaee94c6361999f55e7ad023a973f7d79901a9",
+        "ddbf85e2b4463f5be49b010cffca7a608582236354fb31ee5f9081acefce1dc1",
+        "ea17d900f64700d79189d4dfdf16511c21ba72b711e388d502ea856aa4c777c5",
+        "5ba8e26cfd79d39ed2b3e8d7e8ec3bbd2612ff8f5aa882b53e82aba03898ee7b",
+        "29fd8e48cbe2c10ab597a12add068a2ab10daabdb3d4c3a17b1d8a2dd33dade0"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    },
+    {
+      "id": "brass_field",
+      "kind": "fx",
+      "file": "game/assets/fx/equipment-polish/brass_field.png",
+      "source": "output/imagegen/incense-debt/equipment-polish/brass-areas.png",
+      "sha256": "ec2930a3d5cf0edf4ba6a187df93c484934b0b1f6eecc0365562e9792f7d518f",
+      "source_sha256": "47fda659df543d10bf4845d4ff202ec80de99ad662b6be764740872369b618ce",
+      "frames": 6,
+      "frame_hashes": [
+        "c403539d50027d112df01ec5d0c62202c660233abc606970e8c1cc1cc0e28834",
+        "c5bf06f96adb398bad212ed06c240f6ccba6c97debbb4ef8913a5fbe5ccf88ac",
+        "a36533c3a9407d46709af1beaba193d7c62d755c11a6e5bea49de24d00494893",
+        "52cfce7bce9778155c0ce34284f64223c1f9878d9f7731050b564c2204feb63c",
+        "103a22081884d83e7ae908c85b6bc43550c684dee64fd9f0c1a394514b6c441b",
+        "27ded7bfb3ce2f1e715d9bbf0b445940c0cc4f86ed98af6b4dc394241c14d5ff"
+      ],
+      "method": "six independent AI-generated keyframes; one shared row scale, centered anchors, low-alpha spill cleanup"
+    }
+  ]
+}

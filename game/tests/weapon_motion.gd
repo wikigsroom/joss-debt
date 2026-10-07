@@ -27,7 +27,7 @@ func sandbox(actor: String = "c_paper"):
 func run_suite() -> void:
 	var motion = Motion.new()
 	var paper = Paper.new()
-	expect(motion.manifest.actors.size() == 6 and motion.manifest.weapons.size() == 16, "all six approved identities and sixteen held weapon textures have a rig")
+	expect(motion.manifest.actors.size() == 6 and motion.manifest.weapons.size() == 32, "all six approved identities and thirty-two held weapon textures have a rig")
 	var states_ok = true
 	var frame_count = 0
 	for actor in motion.manifest.actors:
@@ -48,11 +48,11 @@ func run_suite() -> void:
 			var world = sandbox(actor)
 			world.player.weapon = weapon
 			world.time = 4
-			world.shoot_input(true, .26)
+			world.shoot_input(true, 1.0)
 			var shot = world.events.filter(func(e): return e.kind == "shot")
 			shots_ok = shots_ok and shot.size() == 1 and shot[0].weapon == weapon
 			motion.accept(world.events, world)
-			world.time += .07
+			world.time += .03
 			var before = digest(world)
 			var pose = motion.sample(world)
 			shots_ok = shots_ok and pose.weapon == weapon and pose.attack and pose.state == "cast" and digest(world) == before
@@ -63,8 +63,8 @@ func run_suite() -> void:
 					geometry_ok = geometry_ok and grip.point.is_finite() and absf(grip.point.x) < 49 and grip.point.y >= -81 and grip.point.y < 16 and grip.size > 0
 					geometry_ok = geometry_ok and grip.behind == (direction == "up") and grip.weapon == weapon
 			combos += 1
-	expect(combos == 96 and shots_ok, "96 real equipped-weapon attack events select the matching pose without writing combat state")
-	expect(geometry_ok, "all 384 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth")
+	expect(combos == 192 and shots_ok, "192 real equipped-weapon attack events select the matching pose without writing combat state")
+	expect(geometry_ok, "all 768 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth")
 	var directional_shots_ok = true
 	for direction in [Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT, Vector2.UP]:
 		var directional_world = sandbox()

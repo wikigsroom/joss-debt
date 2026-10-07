@@ -13,11 +13,11 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	body = UI.body_font()
 	strong = UI.body_font(true)
-	for kind in ["relics", "weapons", "skills", "characters"]:
+	for kind in ["relics", "weapons", "skills", "characters", "active_items", "trinkets"]:
 		for row in world.db.rows(kind):
 			var path = "res://assets/heroes/" + row.id + "_down.png" if kind == "characters" else "res://assets/" + kind + "/" + row.id + ".png"
 			if ResourceLoader.exists(path): icons[row.id] = load(path)
-	for key in ["health", "region", "weapon", "skill", "dash"]:
+	for key in ["health", "region", "weapon", "skill", "dash", "active_item", "trinket"]:
 		var area = Control.new()
 		area.mouse_filter = Control.MOUSE_FILTER_PASS
 		add_child(area)
@@ -37,6 +37,10 @@ func _process(_delta: float) -> void:
 	set_hint("weapon", Rect2(24, 638, 56, 56), world.db.name_of("weapons", player.weapon) + "\n" + world.db.row("weapons", player.weapon).behavior)
 	set_hint("skill", Rect2(1172, 623, 76, 76), world.db.name_of("skills", player.skill) + "\n香火 %d · %s" % [world.skill_cost(), adapter.profile.hint("skill", "controller" if adapter.last_device == "controller" else "keyboard")], not adapter.touch_mode)
 	set_hint("dash", Rect2(1094, 637, 58, 58), "身法 · " + adapter.profile.hint("dash", "controller" if adapter.last_device == "controller" else "keyboard"), not adapter.touch_mode)
+	var active = world.Equipment.active_row(world)
+	set_hint("active_item", Rect2(928, 637, 64, 60), str(active.get("name", "主动道具")) + "\n" + str(active.get("behavior", "")) + "\n" + adapter.profile.hint("active_item", "controller" if adapter.last_device == "controller" else "keyboard"), not adapter.touch_mode)
+	var trinket = world.db.row("trinkets", str(world.run.get("trinket", "")))
+	set_hint("trinket", Rect2(672 if adapter.touch_mode else 1010, 646, 44, 44), str(trinket.get("name", "饰品空槽")) + "\n" + str(trinket.get("behavior", "靠近饰品按 E 换装")))
 	var ids = world.run.relics.keys()
 	for i in 12:
 		var valid = i < ids.size()
@@ -106,7 +110,24 @@ func _draw() -> void:
 		image(ids[i], Rect2(97 + i * 45, 648, 38, 38))
 		if world.stack(ids[i]) > 1:
 			text(str(world.stack(ids[i])), Vector2(124 + i * 45, 683), 13, UI.TEXT, true)
+	var trinket_id = str(world.run.get("trinket", ""))
+	var trinket_x = 672 if adapter.touch_mode else 1010
+	plate(Rect2(trinket_x, 646, 44, 44), UI.INSET, 17)
+	if trinket_id.is_empty(): glyph("circle-dot", Rect2(trinket_x + 11, 657, 22, 22), UI.EDGE)
+	else: image(trinket_id, Rect2(trinket_x + 1, 647, 42, 42))
 	if adapter.touch_mode: return
+	var active = world.Equipment.active_row(world)
+	if not active.is_empty():
+		var amount = float(world.run.active_item.charge)
+		var maximum = float(active.charge_rooms)
+		var item_ready = amount >= maximum and player.item_cd <= 0
+		plate(Rect2(928, 637, 64, 60), UI.INSET, 23)
+		draw_arc(Vector2(960, 662), 25, -PI * .5, -PI * .5 + TAU * clampf(amount / maximum, 0, 1), 40, UI.JADE if item_ready else UI.GOLD, 2.5, true)
+		image(active.id, Rect2(940, 642, 40, 40), Color.WHITE if item_ready else Color(.6, .65, .65))
+		var key = adapter.profile.hint("active_item", "controller" if adapter.last_device == "controller" else "keyboard")
+		text(key, Vector2(953, 694), 13, UI.JADE if item_ready else UI.MUTED, true)
+		for i in int(maximum):
+			plate(Rect2(934 + i * 54 / maximum, 703, 54 / maximum - 3, 3), UI.JADE if amount >= i + 1 else UI.EDGE, 2)
 	var ready = player.skill_cd <= 0 and player.energy >= world.skill_cost()
 	plate(Rect2(1172, 623, 76, 76), UI.INSET, 38)
 	var cooldown = maxf(.01, float(world.db.row("skills", player.skill).cooldown_s))

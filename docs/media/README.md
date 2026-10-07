@@ -1,8 +1,8 @@
 # README 媒体说明 / README media notes
 
-这里存放项目首页的 16 张静态图片和 4 段 GIF。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)。
+这里存放项目首页的 22 张静态图片和 6 段 GIF。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)。
 
-This directory contains the 16 still images and 4 GIFs used by the repository README. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records source paths, output hashes, and the captured build.
+This directory contains the 22 still images and 6 GIFs used by the repository README. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records source paths, output hashes, and the captured build.
 
 ## 实机来源 / Native provenance
 
@@ -11,7 +11,7 @@ This directory contains the 16 still images and 4 GIFs used by the repository RE
 All runtime media comes from the verified native Windows Godot application, with build SHA-256:
 
 ```text
-7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85
+51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9
 ```
 
 `menu-flow.png` 是基于实际菜单实现绘制的中英双语说明图，不是游戏截图。其他静态图保持原生视口布局，仅转为 WEBP；`themes.webp` 是原生环境捕获的总览拼图。
@@ -21,6 +21,10 @@ All runtime media comes from the verified native Windows Godot application, with
 | 文件 / File | 内容与方法 / Content and method |
 | --- | --- |
 | `gameplay.gif` / `gameplay.webp` | 正常初始数值的纸童，行动机器人操作，真实敌人与物理门口；24 秒、120 帧、5 fps。/ Paper Child with unchanged initial stats, action-bot controls, real enemies and doorway movement; 24 seconds, 120 frames, 5 fps. |
+| `equipment-inventory.webp` / `equipment-ground.webp` / `equipment-history.webp` | 主动槽、单槽饰品、E交换与完整历史。/ Active slot, one trinket, E exchange, and full history. |
+| `equipment-timeline.webp` / `equipment-touch.webp` | 十一层路线与触控主动道具。/ Eleven-floor timeline and touch active control. |
+| `equipment-five-beams.webp` / `equipment-combination.gif` | 真实组合命中与动态采样。/ Actual composed attacks and damage. |
+| `equipment-storm.gif` | 只读雷霆家族的六阶段图。/ Read-only six-phase storm gallery. |
 | `combat-fx.gif` | 原生脚本场景展示射线和范围攻击阶段。/ Native scripted demonstration of beam and area-attack phases. |
 | `scenery.gif` | 原生脚本场景展示地图环境动态。/ Native scripted demonstration of scenery motion. |
 | `boss-motion.gif` | 后段双首领原生脚本演示；不表示前五层把两个 Boss 放在同一房。/ Later-floor paired-boss demonstration; early-floor bosses occupy separate chambers. |

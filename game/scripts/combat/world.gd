@@ -16,6 +16,9 @@ const Campaign = preload("res://scripts/core/expanded_campaign.gd")
 const Scenery = preload("res://scripts/combat/interactive_scenery.gd")
 const ExpandedPattern = preload("res://scripts/combat/expanded_patterns.gd")
 const ExpandedWeapons = preload("res://scripts/combat/expanded_weapons.gd")
+const Composer = preload("res://scripts/combat/attack_composer.gd")
+const Equipment = preload("res://scripts/combat/equipment.gd")
+const ProjectileStyles = preload("res://scripts/combat/projectile_styles.gd")
 const ROOM_ORDER = ["combat", "combat", "reward", "combat", "debt", "combat", "elite", "shop", "combat", "combat", "boss", "sacrifice", "judge", "angel", "challenge"]
 
 var db = Content.new()
@@ -92,6 +95,8 @@ func start(character_id: String, seed_value: int = 1, floors: int = 1, options: 
 	record_growth_choice("skill", player.skill, "initial", player.skill, 0, 0, "initial")
 	stats = {"shots": 0, "hits": 0, "kills": 0, "detonations": 0, "max_chain": 0, "dodges": 0,
 		"damage_taken": 0, "ash_energy": 0.0, "secondary_hits": 0, "elapsed": 0.0}
+	Equipment.normalize(self)
+	record_growth_choice("active", run.active_item.id, "initial", run.active_item.id, 0, 0, "initial")
 	time = 0.0
 	uid = 0
 	attack_uid = 0
@@ -180,14 +185,30 @@ func build_geometry(template: String, saved_objects: Array = []) -> void:
 
 func player_stat_rows() -> Array:
 	var weapon = db.row("weapons", player.weapon)
-	var speed = float(db.row("characters", run.character).speed) * (1 + .06 * stack("r33") + .05 * talent("t_wind_1a"))
+	var recipe = Composer.recipe(self, weapon)
+	var speed = float(db.row("characters", run.character).speed) * (1 + .06 * stack("r33") + .05 * talent("t_wind_1a")) * stat_multiplier("move_speed")
 	if room_flags.get("goldbody_slow", false): speed *= .9
-	return [{"id": "damage", "label": "伤害", "value": "%.1f" % (float(weapon.damage) * Effects.primary_multiplier(self)), "icon": "sword"},
-		{"id": "fire_rate", "label": "攻速", "value": "%.2f/s" % (1.0 / maxf(.01, weapon.interval_s)), "icon": "zap"},
-		{"id": "shot_speed", "label": "弹速", "value": str(int(weapon.projectile_speed)), "icon": "arrow-up-right"},
+	return [{"id": "damage", "label": "伤害", "value": "%.1f" % (float(weapon.damage) * Effects.primary_multiplier(self) * stat_multiplier("damage") * float(recipe.damage_factor)), "icon": "sword"},
+		{"id": "fire_rate", "label": "攻速", "value": "%.2f/s" % (1.0 / maxf(.01, recipe.interval)), "icon": "zap"},
+		{"id": "shot_speed", "label": "弹速", "value": str(int(recipe.speed)), "icon": "arrow-up-right"},
 		{"id": "move_speed", "label": "移速", "value": str(roundi(speed)), "icon": "wind"},
 		{"id": "max_health", "label": "血量上限", "value": str(int(player.max_hp)), "icon": "heart"},
-		{"id": "range", "label": "射程", "value": str(int(weapon.range)), "icon": "crosshair"}]
+		{"id": "range", "label": "射程", "value": str(int(recipe.range)), "icon": "crosshair"}]
+
+func stat_bonus(stat: String) -> float:
+	return Equipment.bonus(self, stat)
+
+func stat_multiplier(stat: String) -> float:
+	return Equipment.multiplier(self, stat)
+
+func nearby_pickup() -> Dictionary:
+	return Equipment.nearest(self)
+
+func interact_pickup() -> bool:
+	return Equipment.interact(self)
+
+func use_active_item() -> bool:
+	return Equipment.activate(self)
 
 func stack(id: String) -> int:
 	return int(run.get("relics", {}).get(id, 0))
@@ -374,6 +395,7 @@ func enter_room() -> void:
 			spawn_room_bosses()
 		"reward":
 			mode = "choice"
+			Equipment.treasure_cache(self)
 			choices = relic_offer(2, true)
 			choices.append({"kind": "weapon", "id": roll("loot").choose(["w07", "w08", "w09", "w10", "w11", "w12"]), "price": 0})
 		"shop":
@@ -654,8 +676,10 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	stats.elapsed += delta
 	for key in proc_ledger.keys():
 		if time > float(proc_ledger[key].expires): proc_ledger.erase(key)
-	for cooldown in ["shot_cd", "skill_cd", "dash_cd", "invulnerable", "guard", "passive_cd", "buffer_dash", "buffer_skill"]:
+	for cooldown in ["shot_cd", "skill_cd", "dash_cd", "invulnerable", "guard", "passive_cd", "buffer_dash", "buffer_skill", "item_cd"]:
 		player[cooldown] = maxf(0.0, player[cooldown] - delta)
+	for key in room_flags.get("composition_ledger", {}).keys():
+		if time > float(room_flags.composition_ledger[key]): room_flags.composition_ledger.erase(key)
 	if frame.get("dash", false):
 		player.buffer_dash = 0.08
 	if frame.get("skill", false):
@@ -672,7 +696,7 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	if player.buffer_skill > 0.0 and player.skill_cd <= 0.0:
 		if cast_skill():
 			player.buffer_skill = 0.0
-	var speed = float(db.row("characters", run.character).speed) * (1.0 + 0.06 * stack("r33") + 0.05 * talent("t_wind_1a"))
+	var speed = float(db.row("characters", run.character).speed) * (1.0 + 0.06 * stack("r33") + 0.05 * talent("t_wind_1a")) * stat_multiplier("move_speed")
 	if room_flags.get("goldbody_slow", false): speed *= .9
 	if time < float(room_flags.get("entry_slow_until", 0)): speed *= .88
 	var previous_position = Vector2(player.pos)
@@ -686,6 +710,9 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	else:
 		player.pos = geometry.slide(player.pos, move * speed * delta, 12)
 	player.moved_distance = float(player.get("moved_distance", 0)) + previous_position.distance_to(player.pos)
+	var picked_up = Equipment.interact(self) if frame.get("interact", false) else false
+	if frame.get("active_item", false): Equipment.activate(self)
+	if mode not in ["combat", "clear"]: return
 	if mode == "combat":
 		player.energy = minf(100.0, player.energy + (3.0 + talent("t_ash_2b")) * delta)
 		navigation_timer -= delta
@@ -710,7 +737,7 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 			advance_room(int(door.destination))
 		elif player.move.length() > .08 and not try_enter_secret(true):
 			pass
-		elif frame.get("interact", false):
+		elif frame.get("interact", false) and not picked_up:
 			if not try_enter_secret(): emit("route_hint")
 
 func start_dash(direction: Vector2) -> void:
@@ -730,79 +757,27 @@ func shoot_input(fire: bool, delta: float) -> void:
 	if not fire:
 		player.charge = 0.0
 		return
-	if player.shot_cd > 0.0 or player.dash_left > 0.0:
-		return
-	if weapon.mode in ["charged_line", "charged_arc", "nova"]:
+	if player.shot_cd > 0.0 or player.dash_left > 0.0: return
+	var charge_time = .65 if weapon.mode == "nova" else (.35 if stack("r66") > 0 else (.25 if weapon.mode in ["charged_line", "charged_arc"] else 0.0))
+	if charge_time > 0:
 		player.charge += delta
-		if player.charge < (.65 if weapon.mode == "nova" else .25):
-			return
+		if player.charge < charge_time: return
 	player.charge = 0.0
-	player.shot_cd = float(weapon.interval_s)
 	attack_uid += 1
 	begin_pulse("attack_%d" % attack_uid)
+	var recipe = Composer.recipe(self, weapon)
+	player.shot_cd = float(recipe.interval)
 	player.last_shot_direction = player.aim
 	stats.shots += 1
-	var damage = float(weapon.damage)
-	if player.attack_bonus_until >= time:
-		damage *= 1.0 + player.attack_bonus
+	var damage = float(weapon.damage) * stat_multiplier("damage")
+	if player.attack_bonus_until >= time: damage *= 1.0 + player.attack_bonus
 	player.attack_bonus = 0.0
-	var crit = roll("attack_critical").unit() < 0.05
-	if crit:
-		damage *= 1.5
-	if ExpandedWeapons.execute(self, weapon, damage, crit):
-		Effects.after_shot(self, damage)
-		emit("shot", {"pos": player.pos, "dir": player.aim, "weapon": player.weapon, "mode": weapon.mode, "heavy": weapon.mode in ["nova", "mine", "sweep", "prism"]})
-		return
-	if weapon.mode in ["cone", "arc", "charged_arc"]:
-		var width = 0.8 * (1.0 + 0.1 * stack("r41") + 0.1 * talent("t_ink_1a"))
-		if weapon.mode == "charged_arc": width = 1.05
-		for enemy in enemies.duplicate():
-			if enemy.pos.distance_to(player.pos) <= float(weapon.range) and player.aim.dot(player.pos.direction_to(enemy.pos)) >= cos(width):
-				primary_hit(enemy, damage, attack_uid, crit)
-		if stack("r35") > 0:
-			for enemy in enemies.duplicate():
-				if enemy.pos.distance_to(player.pos) <= float(weapon.range) and player.aim.dot(player.pos.direction_to(enemy.pos)) < -0.5:
-					damage_enemy(enemy, damage * 0.25, "secondary")
-		for object in geometry.objects:
-			if object.alive and object.pos.distance_to(player.pos) < weapon.range and player.aim.dot(player.pos.direction_to(object.pos)) >= cos(width): Scenery.hit(self, object, damage)
-		emit("slash", {"pos": player.pos, "dir": player.aim, "range": weapon.range, "weapon": player.weapon, "mode": weapon.mode, "charged": weapon.mode == "charged_arc"})
-	elif weapon.mode == "ray":
-		# A ray is an authored line attack: it stops at the first solid wall and
-		# resolves every enemy standing inside its width in deterministic order.
-		var ray_width = 14.0 + 4.0 * stack("r41")
-		var ray_origin = geometry.constrain_floor(player.pos,ray_width)
-		var ray_end = geometry.clipped_ray(ray_origin, ray_origin + player.aim * float(weapon.range), ray_width)
-		for enemy in enemies.duplicate():
-			if enemy.dead or not geometry.clear_segment(ray_origin, enemy.pos): continue
-			if Geometry.segment_circle(ray_origin, ray_end, enemy.pos, enemy.radius + ray_width):
-				primary_hit(enemy, damage, attack_uid, crit, player.aim, Impact.distance(self, "primary", crit, weapon.id))
-		Scenery.segment_hit(self, ray_origin, ray_end + player.aim * (ray_width + 4), damage)
-		emit("ray", {"pos": ray_origin, "end": ray_end, "dir": player.aim, "range": ray_origin.distance_to(ray_end), "width": ray_width, "weapon": player.weapon, "heavy": true, "style": "beam_ink"})
-	else:
-		var count = int(weapon.pellets)
-		for i in count:
-			if bullets.size() >= 240:
-				break
-			var angle = (i - (count - 1) / 2.0) * float(weapon.get("spread", 0.15))
-			var direction = player.aim.rotated(angle)
-			var pierce = int(weapon.pierce)
-			if weapon.mode in ["orb", "bell", "piercing", "charged_line", "seeker", "fan", "triple", "controlled"]:
-				pierce += stack("r41") + talent("t_ink_1a") + int(run.character == "c_ink")
-			bullets.append({"uid": next_uid(), "pos": geometry.constrain_floor(player.pos + direction * 22, 7), "dir": direction,
-				"speed": float(weapon.projectile_speed), "range": float(weapon.range), "travel": 0.0,
-				"damage": damage, "radius": 5.0 if weapon.mode in ["piercing", "charged_line"] else 7.0,
-				"friendly": true, "primary": true, "attack": attack_uid, "crit": crit, "mode": weapon.mode,
-				"pierce": pierce, "hits": [], "returning": false, "bounces": 0, "age": 0.0,
-				"can_return": weapon.mode == "returning" or stack("r35") > 0, "pulse": active_pulse, "target_index": 0,
-				"push_distance": Impact.distance(self, "primary", crit, weapon.id),
-				"controllable": weapon.mode == "controlled"})
-			bullets[-1].weapon = weapon.id
-			bullets[-1].style = ExpandedWeapons.style(str(weapon.mode))
-	Effects.after_shot(self, damage)
-	emit("shot", {"pos": player.pos, "dir": player.aim, "weapon": player.weapon, "mode": weapon.mode,
-		"heavy": weapon.mode in ["cone", "arc", "charged_arc", "explosive", "charged_line", "ray"]})
+	var crit = roll("attack_critical").unit() < clampf(.05 + stat_bonus("crit"), 0, .65)
+	if crit: damage *= 1.5
+	Composer.fire(self, weapon, recipe, damage, crit, player.pos, player.aim)
+	Effects.after_shot(self, damage, recipe)
 
-func primary_hit(enemy: Dictionary, damage: float, attack: int, crit: bool = false, travel_direction: Vector2 = Vector2.ZERO, push_distance: float = -1.0) -> void:
+func primary_hit(enemy: Dictionary, damage: float, attack: int, crit: bool = false, travel_direction: Vector2 = Vector2.ZERO, push_distance: float = -1.0, recipe: Dictionary = {}) -> void:
 	if enemy.dead or time < float(enemy.get("arrival", 0)):
 		return
 	damage *= Effects.primary_multiplier(self, enemy)
@@ -830,7 +805,7 @@ func primary_hit(enemy: Dictionary, damage: float, attack: int, crit: bool = fal
 				player.passive_hits = 0
 				player.passive_cd = 12.0
 				player.armor = 1
-		if player.weapon == "w02":
+		if str(recipe.get("weapon", player.weapon)) == "w02":
 			var neighbor = nearest_enemy(enemy.pos, 52, [enemy.uid])
 			if not neighbor.is_empty():
 				add_mark(neighbor, 1, false)
@@ -841,12 +816,7 @@ func primary_hit(enemy: Dictionary, damage: float, attack: int, crit: bool = fal
 		push_distance *= .2
 		emit("deflect", {"pos": enemy.pos})
 	damage_enemy(enemy, damage, "primary", crit, travel_direction, push_distance if first else 0.0)
-	if player.weapon in ["w03", "w08"]:
-		var radius = 42.0 if player.weapon == "w03" else 80.0
-		for other in enemies.duplicate():
-			if other.uid != enemy.uid and not other.dead and other.pos.distance_to(enemy.pos) <= radius:
-				damage_enemy(other, damage * 0.5, "secondary")
-		emit("burst", {"pos": enemy.pos, "radius": radius, "small": true})
+	if first and not recipe.is_empty(): Composer.hit_effects(self, enemy.pos, damage, recipe)
 
 func add_mark(enemy: Dictionary, count: int, grants_energy: bool = true) -> void:
 	if enemy.dead or time < float(enemy.get("arrival", 0)):
@@ -1140,6 +1110,7 @@ func kill_enemy(enemy: Dictionary, source: String) -> void:
 		room_flags.passive_detonate = true
 		player.energy = minf(100.0, player.energy + 4.0)
 	Effects.on_death(self, enemy, source)
+	Equipment.death_drop(self, enemy)
 	BossPattern.guard_destroyed(self, enemy)
 	if enemy.boss:
 		for guard in enemies:
@@ -1161,11 +1132,13 @@ func source_of(enemy: Dictionary, kind: String) -> Dictionary:
 func enemy_bullet(position: Vector2, direction: Vector2, speed: float, damage: int = 1, radius: float = 7.0, source: Dictionary = {}) -> void:
 	if bullets.size() >= 240:
 		return
+	var profile = ProjectileStyles.enemy(source)
+	radius = ProjectileStyles.radius(profile, radius)
 	bullets.append({"uid": next_uid(), "pos": geometry.constrain_floor(position, radius), "dir": direction.normalized(), "speed": speed,
 		"range": 1600.0, "travel": 0.0, "damage": damage, "radius": radius, "friendly": false,
 		"primary": false, "attack": -1, "crit": false, "mode": "enemy", "pierce": 0,
 		"hits": [], "returning": false, "bounces": 0, "age": 0.0, "can_return": false,
-		"source": Damage.normalize(source, position, "projectile")})
+		"source": Damage.normalize(source, position, "projectile"), "visual_profile": profile})
 
 func update_bullets(delta: float) -> void:
 	var next: Array = []
@@ -1175,14 +1148,15 @@ func update_bullets(delta: float) -> void:
 		active_pulse = str(bullet.get("pulse", ""))
 		bullet.age += delta
 		ExpandedPattern.projectile(bullet, delta)
-		ExpandedWeapons.tick(self, bullet, delta)
+		var composed_steering = Composer.tick(self, bullet, delta)
+		if not composed_steering: ExpandedWeapons.tick(self, bullet, delta)
 		if bullet.returning:
 			bullet.dir = bullet.pos.direction_to(player.pos)
-		elif bullet.mode == "controlled" and bullet.get("controllable", false) and player.aim.length_squared() > .01:
+		elif not composed_steering and bullet.mode == "controlled" and bullet.get("controllable", false) and player.aim.length_squared() > .01:
 			# The paper moth follows the live aim vector with a short, readable
 			# steering lag. It remains deterministic because the input frame is fixed.
 			bullet.dir = bullet.dir.slerp(player.aim.normalized(), minf(1.0, delta * 7.0)).normalized()
-		elif bullet.mode == "seeker" and bullet.age > 0.2:
+		elif not composed_steering and bullet.mode == "seeker" and bullet.age > 0.2:
 			var target = nearest_enemy(bullet.pos, 300)
 			if not target.is_empty():
 				bullet.dir = bullet.dir.slerp(bullet.pos.direction_to(target.pos), 0.04).normalized()
@@ -1194,7 +1168,8 @@ func update_bullets(delta: float) -> void:
 			projectile_impact(bullet, bullet.pos)
 			continue
 		if not geometry.clear_swept_segment(previous, bullet.pos, bullet.radius):
-			projectile_impact(bullet, previous)
+			var bounce_limit = int(bullet.get("recipe", {}).get("bounces", 2 if bullet.mode == "ricochet" else 0))
+			if not bullet.friendly or int(bullet.bounces) >= bounce_limit: projectile_impact(bullet, previous)
 			if not bullet.friendly and int(bullet.get("hostile_bounces", 0)) > 0:
 				bullet.dir = -Vector2(bullet.dir)
 				bullet.pos = previous
@@ -1205,7 +1180,7 @@ func update_bullets(delta: float) -> void:
 				var source = Damage.normalize(bullet.get("source", {}), previous, "split")
 				source.kind = "split"
 				for angle in [-.65, 0, .65]: enemy_bullet(previous, -bullet.dir.rotated(angle), 145, int(bullet.damage), 6, source)
-			if bullet.mode == "ricochet" and int(bullet.bounces) < 2:
+			if bullet.friendly and int(bullet.bounces) < bounce_limit:
 				var clamped = geometry.constrain_floor(bullet.pos, bullet.radius)
 				if not is_equal_approx(clamped.x, bullet.pos.x):
 					bullet.dir.x *= -1
@@ -1230,10 +1205,11 @@ func update_bullets(delta: float) -> void:
 				bullet.hits.append(enemy.uid)
 				bullet.target_index = int(bullet.get("target_index", 0)) + 1
 				if bullet.primary:
-					primary_hit(enemy, bullet.damage, bullet.attack, bullet.crit, bullet.dir, float(bullet.get("push_distance", -1.0)))
+					primary_hit(enemy, bullet.damage, bullet.attack, bullet.crit, bullet.dir, float(bullet.get("push_distance", -1.0)), bullet.get("recipe", {}))
 					if bullet.target_index == 3 and stack("r48") > 0 and Effects.ready(self, "empty_ledger", 3.0): add_mark(enemy, 3, false)
 				else:
 					damage_enemy(enemy, bullet.damage, "secondary", false, bullet.dir)
+					if bullet.has("recipe"): Composer.hit_effects(self, enemy.pos, bullet.damage, bullet.recipe)
 					if bullet.get("applies_mark", false): add_mark(enemy, 1, false)
 				if bullet.mode == "returning":
 					continue
@@ -1276,7 +1252,7 @@ func update_bullets(delta: float) -> void:
 	bullets = next
 
 func projectile_impact(bullet: Dictionary, point: Vector2) -> void:
-	ExpandedWeapons.impact(self, bullet, point)
+	if not Composer.impact(self, bullet, point): ExpandedWeapons.impact(self, bullet, point)
 
 func start_return(bullet: Dictionary) -> void:
 	bullet.returning = true
@@ -1442,11 +1418,13 @@ func update_zones(unused_delta: float) -> void:
 			continue
 		if time < zone.active or time < zone.next:
 			continue
+		if zone.get("anticipation_only", false): continue
 		zone.next = time + (1.0 if zone.friendly else 0.6)
 		if zone.friendly:
 			for enemy in enemies.duplicate():
 				var inside = Geometry.segment_circle(zone.from, zone.to, enemy.pos, float(zone.width) + enemy.radius) if zone.get("shape", "") == "line" else enemy.pos.distance_to(zone.pos) < enemy.radius + zone.radius
 				if not enemy.dead and inside and geometry.clear_segment(zone.pos, enemy.pos):
+					if zone.get("item_slow", false): enemy.slow_until = maxf(enemy.slow_until, time + 1.1)
 					if zone.get("mark_once", false) and not zone.marked.has(enemy.uid):
 						zone.marked.append(enemy.uid)
 						add_mark(enemy, 1, false)
@@ -1461,6 +1439,7 @@ func update_delayed(unused_delta: float) -> void:
 			continue
 		delayed.erase(action)
 		active_pulse = str(action.get("pulse", ""))
+		if Composer.delayed(self, action): continue
 		if ExpandedWeapons.delayed(self, action): continue
 		if action.type == "fixed_damage":
 			for enemy in enemies.duplicate():
@@ -1494,6 +1473,9 @@ func update_delayed(unused_delta: float) -> void:
 
 func replay_attack(action: Dictionary) -> void:
 	var weapon = db.row("weapons", action.weapon)
+	if action.has("recipe"):
+		Composer.fire(self, weapon, action.recipe, action.damage, false, action.pos, action.aim)
+		return
 	if weapon.mode in ["cone", "arc", "charged_arc"]:
 		for enemy in enemies.duplicate():
 			var width = 1.05 if weapon.mode == "charged_arc" else .8
@@ -1525,7 +1507,7 @@ func set_pickup_scale(value: float) -> void:
 func update_pickups(delta: float) -> void:
 	for pickup in pickups.duplicate():
 		pickup.delay = maxf(0.0, pickup.delay - delta)
-		if pickup.delay > 0:
+		if pickup.delay > 0 or pickup.kind in Equipment.MANUAL_KINDS:
 			continue
 		var radius = 120.0
 		if pickup.kind == "ash":
@@ -1533,7 +1515,7 @@ func update_pickups(delta: float) -> void:
 		elif pickup.kind == "coin": radius = minf(160, 120 + float(run.get("coin_pickup_bonus", 0)))
 		elif pickup.kind == "heal":
 			radius = 24.0
-		if pickup.kind != "heal": radius *= clampf(float(run.get("pickup_radius_scale", 1.0)), .5, 1.25)
+		if pickup.kind != "heal": radius *= clampf(float(run.get("pickup_radius_scale", 1.0)), .5, 1.25) * stat_multiplier("pickup_radius")
 		if pickup.magnet or pickup.pos.distance_to(player.pos) < radius or (mode == "clear" and pickup.kind != "heal"):
 			pickup.magnet = true
 			pickup.pos = pickup.pos.move_toward(player.pos, 650 * delta)
@@ -1576,11 +1558,13 @@ func clear_room() -> void:
 	if stack("r26") > 0:
 		player.armor = 1
 	Effects.clear_room(self, type)
+	Equipment.charge(self, 2.0 if type == "boss" else 1.0)
 	for pickup in pickups:
-		if pickup.kind != "heal":
+		if pickup.kind in ["ash", "coin"]:
 			pickup.delay = 0.0
 			collect(pickup)
-	pickups = pickups.filter(func(p): return p.kind == "heal")
+	pickups = pickups.filter(func(p): return p.kind not in ["ash", "coin"])
+	Equipment.rare_drop(self, "room_clear", "room", geometry.nearest_free(player.pos + Vector2(42, -30), 16))
 	if type in ["combat", "elite", "challenge"]:
 		generate_heal()
 	while int(run.level) < db.rules.progression.level_thresholds.size() and int(run.xp) >= db.rules.progression.level_thresholds[int(run.level)]:
@@ -1929,6 +1913,15 @@ func replace_relic(old_id: String = "") -> bool:
 	var pending = run.replacement
 	mode = pending.return_mode
 	run.replacement = {}
+	if pending.has("ground_uid"):
+		if old_id.is_empty():
+			emit("save_requested")
+			return true
+		var found = pickups.filter(func(drop): return int(drop.uid) == int(pending.ground_uid))
+		if not found.is_empty() and Equipment.take(self, found[0], old_id): return true
+		mode = "replace"
+		run.replacement = pending
+		return false
 	if old_id.is_empty():
 		emit("save_requested")
 		return true
@@ -2048,6 +2041,7 @@ func restore(data: Dictionary) -> bool:
 	var defaults = {"relic_pool": db.rules.progression.initial_relic_ids.duplicate(), "replacement": {}, "bosses_defeated": [], "ending": "", "contract_combats": 0, "optional_bosses": [], "name_pages": 0, "name_page_ids": [], "interest_page": false, "visited": [], "damage_history": [], "death_cause": {}, "growth_log": [], "special_rooms": {}}
 	for key in defaults:
 		if not run.has(key): run[key] = defaults[key]
+	Equipment.normalize(self)
 	set_pickup_scale(float(run.get("pickup_radius_scale", 1.0)))
 	if not run.has("room_history"): run.room_history = {}
 	if not run.has("graph"):
@@ -2062,6 +2056,8 @@ func restore(data: Dictionary) -> bool:
 	player.pos = geometry.nearest_free(player.pos, 12)
 	for enemy in enemies:
 		if not enemy.dead: enemy.pos = geometry.nearest_free(enemy.pos, enemy.radius)
+	for bullet in bullets:
+		if not bullet.friendly: bullet.visual_profile = ProjectileStyles.enemy(bullet.get("source", {}))
 	geometry.rebuild_flow(player.pos)
 	player.buffer_dash = 0.0
 	player.buffer_skill = 0.0

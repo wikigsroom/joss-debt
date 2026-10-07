@@ -34,6 +34,7 @@ const KeyboardNavigation = preload("res://scripts/ui/keyboard_navigation.gd")
 const Seed = preload("res://scripts/core/derived_seed.gd")
 const SeedUI = preload("res://scripts/ui/seed_ui.gd")
 const Cinematic = preload("res://scripts/ui/campaign_cinematic.gd")
+const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
 const PAPER = UI.TEXT
 const GOLD = UI.MUTED
 const INK = UI.BACKGROUND
@@ -102,6 +103,7 @@ var shop_trial_focus = -1
 var qa_active = false
 var qa_capture_enabled = false
 var qa_keyboard_enabled = false
+var qa_equipment_enabled = false
 var qa_expansion_enabled = false
 var qa_tick = 0
 var qa_capture_busy = false
@@ -143,7 +145,8 @@ func _ready() -> void:
 	qa_capture_enabled = OS.get_cmdline_user_args().has("--qa-capture")
 	qa_keyboard_enabled = OS.get_cmdline_user_args().has("--qa-keyboard")
 	qa_expansion_enabled = OS.get_cmdline_user_args().has("--qa-expansion")
-	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled
+	qa_equipment_enabled = OS.get_cmdline_user_args().has("--qa-equipment")
+	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
 	if qa_active:
@@ -152,7 +155,7 @@ func _ready() -> void:
 			if argument.begins_with("--qa-output="):
 				qa_directory = argument.trim_prefix("--qa-output=")
 		DirAccess.make_dir_recursive_absolute(qa_directory)
-	if qa_keyboard_enabled or qa_expansion_enabled:
+	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled:
 		save_slots = SaveSlots.new(qa_directory.path_join("isolated-saves").path_join(str(Time.get_ticks_usec())))
 		save_slot = save_slots.selected_slot()
 		save_session = SaveSession.new(save_slots.base_path(save_slot), save_slots.legacy_profile_path(save_slot), save_slots.legacy_run_path(save_slot))
@@ -222,6 +225,11 @@ func _ready() -> void:
 		add_child(fixture)
 	elif qa_expansion_enabled:
 		var fixture = preload("res://scripts/ui/expansion_native_qa.gd").new()
+		fixture.app = self
+		fixture.directory = qa_directory
+		add_child(fixture)
+	elif qa_equipment_enabled:
+		var fixture = preload("res://scripts/ui/equipment_native_qa.gd").new()
 		fixture.app = self
 		fixture.directory = qa_directory
 		add_child(fixture)
@@ -524,7 +532,7 @@ func begin_run(character: String, seed_value: int = 0, tutorial: bool = true, ru
 		options.optional_bosses = []
 		options.pickup_radius_scale = 1.0
 		options.weapon = world.db.row("characters", character).weapon
-	world.start(character, seed_value, 11 if not qa_active or qa_expansion_enabled else 3, options)
+	world.start(character, seed_value, 11 if not qa_active or qa_expansion_enabled or qa_equipment_enabled else 3, options)
 	world.run.opening_seen = not tutorial
 	seed_draft = ""
 	world.run.id = ("daily_%s_%s_%d" % [str(options.get("daily_key", "")), character, seed_value]) if bool(options.get("daily", false)) else ("%s_%d_%d" % [character, seed_value, Time.get_ticks_usec()])
@@ -635,14 +643,14 @@ func _physics_process(delta: float) -> void:
 		if adapter.last_device in ["touch", "controller"]:
 			var radius = float(world.db.row("weapons", world.player.weapon).range)
 			frame.aim = aim_assist.apply(frame.aim, world.player.pos, world.enemies, world.geometry, world.time, str(settings.aim_mode), radius, world.room_key())
-		if world.mode == "clear" and frame.interact and not world.run.get("training", false):
+		if world.mode == "clear" and frame.interact and world.nearby_pickup().is_empty() and not world.run.get("training", false):
 			if not world.try_enter_secret(): RouteMap.show_sheet(self)
 		else:
 			var begin = Time.get_ticks_usec()
 			world.tick(frame, delta)
 			if qa_active and qa_tick >= 500 and qa_tick < 680: qa_stress_ticks.append((Time.get_ticks_usec() - begin) / 1000.0)
 		flush_events()
-		var signature = world.mode + ":" + JSON.stringify(world.choices) + ":" + str(world.run.room) + ":" + str(world.nearby_secret_room())
+		var signature = world.mode + ":" + JSON.stringify(world.choices) + ":" + str(world.run.room) + ":" + str(world.nearby_secret_room()) + ":" + str(world.nearby_pickup().get("uid", -1))
 		if signature != ui_signature:
 			ui_signature = signature
 			sync_game_modal()
@@ -673,6 +681,8 @@ func flush_events() -> void:
 			telemetry.record(world, event)
 		if event.kind == "secret_discovered": notice("断绳松开了。靠近后，可以回应里面的愿。")
 		if event.kind == "route_hint": notice("清房后，走到发光的门口进入下一张地图。")
+		if event.kind == "item_notice": notice(str(event.text))
+		if event.kind == "equipment_taken": notice(world.db.name_of({"active": "active_items", "trinket": "trinkets", "relic": "relics"}.get(event.type, "active_items"), str(event.id)) if event.type != "battery" else "火芯 · 充能 +1")
 		if event.kind == "save_requested":
 			if world.run.get("training", false): continue
 			var previous = progress.data.duplicate(true)
@@ -689,7 +699,8 @@ func flush_events() -> void:
 				notice("这页账没能存下，请稍后再试。")
 
 func sync_game_modal() -> void:
-	adapter.clear()
+	# Ground prompts must not cancel held aim, firing, or a touch movement gesture.
+	if world.mode not in ["combat", "clear"]: adapter.clear()
 	haptics.stop()
 	clear_modal()
 	hud.visible = true
@@ -720,6 +731,7 @@ func sync_game_modal() -> void:
 	if world.run.get("training", false) and world.mode in ["combat", "clear"]:
 		if shop_trial.active(): TrialUI.controls(self)
 		else: CharacterSheet.training_controls(self)
+	if world.mode in ["combat", "clear"]: EquipmentUI.ground_hint(self)
 
 func show_choices() -> void:
 	Modern.choices(self)
@@ -1726,7 +1738,7 @@ func qa_step() -> void:
 	elif qa_tick == 966:
 		qa_click(qa_button(modal, "本局记录"))
 	elif qa_tick == 968:
-		qa_interaction_checks.append({"name": "the pause sheet opens a chronological record of all selected bonuses and skills without resuming combat", "passed": screen == "run_history" and paused and qa_find_meta(modal, "history_entry_count", "2") != null and qa_button(modal, "返回暂停") != null})
+		qa_interaction_checks.append({"name": "the pause sheet opens a chronological record of the initial weapon, skill and active item without resuming combat", "passed": screen == "run_history" and paused and qa_find_meta(modal, "history_entry_count", "3") != null and qa_button(modal, "返回暂停") != null})
 		capture("run-history")
 	elif qa_tick == 969:
 		qa_key(KEY_ESCAPE)

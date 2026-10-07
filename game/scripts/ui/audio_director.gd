@@ -195,6 +195,10 @@ func accept(events: Array) -> void:
 			"scenery_warning": play("warning")
 			"scenery_break": play("hit_heavy")
 			"choice_taken": play("contract" if event.type == "contract" else "bell")
+			"equipment_taken": play_compound("pickup", "bell", .13, 1.12)
+			"active_item": play_compound("skill", "bell", .18, .88)
+			"item_charge":
+				if event.get("ready", false): play("bell", .35, 1.18)
 			"special_choice": play("contract" if event.type in ["sacrifice", "judgment"] else "bell")
 			"pickup":
 				if event.type != "ash": play("pickup")

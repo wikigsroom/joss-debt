@@ -91,10 +91,15 @@ func run() -> void:
 	await capture("stats")
 	expect("stats_layer", app.menu_page == "stats")
 	await action("物品图鉴")
-	await key(KEY_DOWN)
-	await key(KEY_ENTER)
+	# Extra equipment tabs change geometric focus neighbors. Select a real
+	# offering through Tab navigation before measuring its long-list scrolling.
+	if await target("nav_id", "catalog_r01"): await key(KEY_ENTER)
 	await key(KEY_PAGEDOWN)
 	expect("collection_keyboard_page", app.menu_page == "items" and app.keyboard.first_scroll(app.modal).scroll_vertical > 0)
+	for kind in ["active_items", "trinkets"]:
+		if await target("nav_id", "collection_" + kind): await key(KEY_ENTER)
+		expect("collection_keyboard_" + kind, app.menu_page == "items" and app.collection_kind == kind and app.keyboard.candidates(app.modal).filter(func(c): return str(c.get_meta("nav_id", "")).begins_with("catalog_")).size() == 12)
+		await capture("collection-" + kind)
 	await key(KEY_ESCAPE)
 	await action("怪物图鉴")
 	expect("bestiary_under_stats", app.menu_page == "bestiary")

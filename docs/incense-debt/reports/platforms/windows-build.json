@@ -1,8 +1,8 @@
 {
   "platform": "windows",
   "path": "build/windows/IncenseDebt.exe",
-  "bytes": 561862192,
-  "sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
+  "bytes": 587325936,
+  "sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
   "engine": "4.7.2",
   "build": "release",
   "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",

@@ -1,0 +1,1498 @@
+{
+  "atlas_frames_loaded": 480,
+  "captures": [
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-ground-prompt",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-swapped-ground",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-active-bombs",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-map-floor-01",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-inventory",
+      "saved": true,
+      "screen": "inventory",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-history",
+      "saved": true,
+      "screen": "run_history",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 6,
+      "mode": "combat",
+      "name": "equipment-map-floor-06",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 11,
+      "mode": "combat",
+      "name": "equipment-map-floor-11",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "replace",
+      "name": "equipment-replacement",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-touch-hud",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 1,
+      "mode": "clear",
+      "name": "equipment-touch-map",
+      "saved": true,
+      "screen": "route",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ember-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-ink-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-thread-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-prism-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-lotus-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-smoke-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-frost-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-storm-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-void-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 3,
+      "mode": "combat",
+      "name": "fx-brass-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-06",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-07",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-08",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-09",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-10",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-11",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 4,
+      "mode": "combat",
+      "name": "projectiles-12",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "equipment-combination-inventory",
+      "saved": true,
+      "screen": "inventory",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 7,
+      "mode": "combat",
+      "name": "equipment-five-explosive-beams",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-00",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-01",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-02",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-03",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-04",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-05",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-06",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-07",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-08",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-09",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-10",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-11",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-12",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-13",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-14",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-15",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-16",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-17",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-18",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-19",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-20",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-21",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-22",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 2,
+      "mode": "combat",
+      "name": "motion-combined-23",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    },
+    {
+      "floor": 5,
+      "mode": "combat",
+      "name": "equipment-stress",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "state_stable": true
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "ground_prompt_for_pickup",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_e_swaps_trinket_and_does_not_open_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_f_uses_active_in_cleared_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tab_map_complete_eleven_floor_line",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "escape_map_to_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "inventory_equipment_tab_keyboard",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_opens_with_keyboard",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_history_contains_active_and_trinket",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_floor_6_states",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_floor_11_states",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "ground_relic_full_inventory_opens_replacement",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "replacement_cancel_keeps_ground_drop",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "touch_active_item_after_clear",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "touch_controls_safe_and_separate",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_ember_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_ink_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_thread_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_prism_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_lotus_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_smoke_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_frost_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_storm_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_void_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "family_brass_rendered_all_real_frames",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "395_native_projectile_profiles_rendered",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "five_explosive_beams_real_damage_and_effects",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "guided_explosive_scatter_real_damage",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "bounded_render_budget_keeps_all_collision_cores",
+      "passed": true
+    },
+    {
+      "detail": "{ \"bullets\": 205, \"frames\": 120, \"mean_ms\": 27.1692166666667, \"p95_ms\": 31.896, \"draw_cpu_p95_ms\": 17.317, \"physics_paused_for_renderer_measurement\": true, \"fps_cap\": 60, \"note\": \"Native viewport with 205 styled projectiles; capped frame waits include idle time. Simulation timings are recorded separately.\" }",
+      "id": "native_205_projectiles_p95_under_50ms",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "scope": "native OpenGL; actual keyboard and touch actions; actual combined combat motion; declared read-only animation and projectile galleries; isolated save slots",
+  "stress": {
+    "bullets": 205,
+    "draw_cpu_p95_ms": 17.317,
+    "fps_cap": 60,
+    "frames": 120,
+    "mean_ms": 27.1692166666667,
+    "note": "Native viewport with 205 styled projectiles; capped frame waits include idle time. Simulation timings are recorded separately.",
+    "p95_ms": 31.896,
+    "physics_paused_for_renderer_measurement": true
+  },
+  "packaged": false
+}

@@ -153,11 +153,12 @@ static func history_source_label(entry: Dictionary) -> String:
 	if source == "initial": return "初始"
 	if source == "special": return "特殊房"
 	if source == "repay": return "偿还"
+	if source == "ground": return "拾取"
 	return "已选"
 
 static func history_icon(kind: String) -> String:
 	return {"weapon": "sword", "skill": "flame", "relic": "sparkles", "talent": "leaf", "contract": "scroll-text",
-		"sacrifice": "flame", "judgment": "circle-dot", "blessing": "sun", "repay": "check", "heal": "heart", "event": "book-open"}.get(kind, "layers")
+		"sacrifice": "flame", "judgment": "circle-dot", "blessing": "sun", "repay": "check", "heal": "heart", "event": "book-open", "active": "zap", "trinket": "circle-dot"}.get(kind, "layers")
 
 static func history_tint(kind: String) -> Color:
 	return {"weapon": UI.GOLD, "skill": UI.ACCENT, "relic": UI.JADE, "talent": UI.GOLD, "contract": Color("d99bd5"),
@@ -168,7 +169,7 @@ static func history_row(app, entry: Dictionary) -> Dictionary:
 	var id = str(entry.get("id", ""))
 	var reward_kind = str(entry.get("reward_kind", kind))
 	var reward_id = str(entry.get("reward_id", id))
-	var table = {"weapon": "weapons", "skill": "skills", "relic": "relics", "talent": "talents", "contract": "debt_contracts", "repay": "debt_contracts"}.get(kind, "")
+	var table = {"weapon": "weapons", "skill": "skills", "relic": "relics", "talent": "talents", "contract": "debt_contracts", "repay": "debt_contracts", "active": "active_items", "trinket": "trinkets"}.get(kind, "")
 	var row: Dictionary = app.world.db.row(table, id) if not table.is_empty() else {}
 	var title = str(row.get("name", id))
 	var description = str(row.get("behavior", ""))
@@ -184,7 +185,7 @@ static func history_row(app, entry: Dictionary) -> Dictionary:
 		art = "res://assets/relics/%s.png" % str(app.world.db.row("debt_contracts", id).get("reward", "r17"))
 	elif kind == "talent":
 		art = "res://assets/relics/%s.png" % ROUTE_ART.get(str(row.get("route", "ash")), "r17")
-	elif kind in ["weapon", "skill", "relic"]:
+	elif kind in ["weapon", "skill", "relic", "active", "trinket"]:
 		art = "res://assets/%s/%s.png" % [table, id]
 	else:
 		var special_names = {"max_hp": "添一页 · 最大心火", "heal": "续心香", "rest": "歇一盏", "remember": "记住这一页", "interest": "翻开利息页"}
@@ -595,22 +596,28 @@ static func inventory(app, page: String, selected_id: String) -> void:
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 56.0
 	var close: Callable = func(): app.return_to_parent("inventory")
 	app.icon_button(app.modal, "收起愿簿", "x", Rect2(1208 - height, 57, height, height), close)
-	var equipment = app.panel(app.modal, Rect2(64, 158, 282, 438), UI.INSET, Color.TRANSPARENT)
+	var equipment = app.panel(app.modal, Rect2(64, 158, 282, 480), UI.INSET, Color.TRANSPARENT)
 	var weapon = app.world.db.row("weapons", app.world.player.weapon)
 	app.add_art(equipment, "res://assets/weapons/" + weapon.id + ".png", Rect2(71, 20, 140, 140))
 	var name = app.label(equipment, weapon.name, Rect2(20, 172, 242, 40), 26)
 	name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	app.add_art(equipment, "res://assets/skills/" + app.world.player.skill + ".png", Rect2(32, 225, 62, 62))
 	app.label(equipment, app.world.db.name_of("skills", app.world.player.skill), Rect2(112, 240, 150, 39), 21, UI.JADE)
+	var active = app.world.Equipment.active_row(app.world)
+	if not active.is_empty():
+		app.add_art(equipment, "res://assets/active_items/" + active.id + ".png", Rect2(38, 300, 58, 58))
+		app.label(equipment, "%d/%d" % [int(app.world.run.active_item.charge), int(active.charge_rooms)], Rect2(43, 360, 60, 24), 15, UI.JADE)
+	if not str(app.world.run.trinket).is_empty(): app.add_art(equipment, "res://assets/trinkets/" + app.world.run.trinket + ".png", Rect2(169, 305, 48, 48))
+	else: app.icon(equipment, "circle-dot", Rect2(181, 317, 24, 24), UI.EDGE)
 	var routes = app.world.db.rows("routes")
 	for i in routes.size():
 		var route = routes[i]
 		var count = app.world.run.talents.filter(func(id): return app.world.db.row("talents", id).route == route.id).size()
 		var x = 30 + (i % 3) * 83
-		var y = 315 + int(i / 3) * 61
+		var y = 395 + int(i / 3) * 41
 		app.icon(equipment, ROUTE_ICONS[route.id], Rect2(x, y, 24, 24), UI.ACCENT if count > 0 else UI.EDGE)
 		app.label(equipment, str(count), Rect2(x + 33, y - 4, 41, 34), 18, UI.TEXT if count > 0 else UI.MUTED)
-	var tabs = [["供物", "relics", "sparkles"], ["成长", "talents", "leaf"], ["债约", "contracts", "scroll-text"], ["组合册", "synergies", "layers"]]
+	var tabs = [["供物", "relics", "sparkles"], ["装备", "equipment", "zap"], ["成长", "talents", "leaf"], ["债约", "contracts", "scroll-text"], ["组合册", "synergies", "layers"]]
 	var tab_gap = 12.0
 	var tab_width = (826.0 - tab_gap * (tabs.size() - 1)) / tabs.size()
 	for i in tabs.size():
@@ -619,7 +626,11 @@ static func inventory(app, page: String, selected_id: String) -> void:
 		var action = app.icon_button(app.modal, tab[0], tab[2], Rect2(382 + i * (tab_width + tab_gap), 158, tab_width, height), func(): app.show_inventory(tab[1]), false, caption)
 		if page == tab[1]: UI.select(action)
 	var entries: Array = app.world.run.relics.keys() if page == "relics" else (app.world.run.talents if page == "talents" else (app.world.run.contracts if page == "contracts" else app.world.synergy_rows()))
-	var ids = entries.map(func(entry): return str(entry.id) if page in ["contracts", "synergies"] else str(entry))
+	if page == "equipment":
+		entries = []
+		if not active.is_empty(): entries.append({"id": active.id, "table": "active_items"})
+		if not str(app.world.run.trinket).is_empty(): entries.append({"id": app.world.run.trinket, "table": "trinkets"})
+	var ids = entries.map(func(entry): return str(entry.id) if page in ["contracts", "synergies", "equipment"] else str(entry))
 	if not ids.has(selected_id): selected_id = str(ids[0]) if not ids.is_empty() else ""
 	var scroll = ScrollContainer.new()
 	scroll.position = Vector2(382, 174 + height)
@@ -636,6 +647,7 @@ static func inventory(app, page: String, selected_id: String) -> void:
 			synergy_card(app, grid, synergy, selected_id)
 			continue
 		var kind = "debt_contracts" if page == "contracts" else page
+		if page == "equipment": kind = entries[ids.find(id)].table
 		var row = app.world.db.row(kind, id)
 		var tile = app.button(grid, "", Rect2(0, 0, 121, 96), func(): app.show_inventory(page, id))
 		tile.custom_minimum_size = Vector2(121, 96)
@@ -644,25 +656,35 @@ static func inventory(app, page: String, selected_id: String) -> void:
 		tile.tooltip_text = row.name + "\n" + str(row.get("behavior", row.get("penalty", "")))
 		if id == selected_id: UI.select(tile)
 		var art_id = ROUTE_ART[row.route] if page == "talents" else (row.reward if page == "contracts" else id)
-		app.add_art(tile, "res://assets/relics/" + art_id + ".png", Rect2(24, 7, 74, 74))
+		app.add_art(tile, "res://assets/%s/%s.png" % [kind if page == "equipment" else "relics", art_id], Rect2(24, 7, 74, 74))
 		if page == "relics" and app.world.stack(id) > 1:
 			app.label(tile, str(app.world.stack(id)), Rect2(92, 66, 25, 26), 17)
 	var detail = app.panel(app.modal, Rect2(382, 478, 826, 118), UI.SURFACE, Color.TRANSPARENT)
 	if selected_id.is_empty():
 		app.icon(detail, "layers", Rect2(29, 42, 30, 30), UI.MUTED)
-		app.label(detail, "组合会在持有供物后显影。", Rect2(83, 42, 689, 43), 22, UI.MUTED)
+		app.label(detail, "靠近地面装备即可拾取。" if page == "equipment" else "组合会在持有供物后显影。", Rect2(83, 42, 689, 43), 22, UI.MUTED)
 	elif page == "synergies":
 		var synergy = entries[ids.find(selected_id)]
 		synergy_detail(app, detail, synergy)
 	else:
-		var row = app.world.db.row("debt_contracts" if page == "contracts" else page, selected_id)
+		var detail_kind = entries[ids.find(selected_id)].table if page == "equipment" else ("debt_contracts" if page == "contracts" else page)
+		var row = app.world.db.row(detail_kind, selected_id)
 		var item_name = app.label(detail, row.name, Rect2(25, 17, 775, 34), 25)
 		item_name.set_meta("detail_item_id", selected_id)
 		var description = str(row.get("behavior", ""))
+		if detail_kind == "active_items": description += "  ·  %d/%d 清房充能" % [int(app.world.run.active_item.charge), int(row.charge_rooms)]
 		if page == "contracts":
 			var contract = entries[ids.find(selected_id)]
 			description = "%s · 偿还 %d · 风险 %d" % [row.penalty, row.repay_price + contract.interest, row.risk_points]
 		app.label(detail, description, Rect2(25, 61, 775, 48), 18, UI.MUTED)
+	var composed = app.world.Composer.summary(app.world)
+	for i in composed.size():
+		var row = composed[i]
+		var chip = app.panel(app.modal, Rect2(382 + i % 6 * 90, 610 + int(i / 6) * 40, 82, 34), UI.INSET, Color.TRANSPARENT)
+		chip.tooltip_text = row.detail
+		chip.mouse_filter = Control.MOUSE_FILTER_PASS
+		app.icon(chip, row.icon, Rect2(9, 9, 16, 16), UI.JADE)
+		app.label(chip, row.name, Rect2(30, 3, 50, 28), 13, UI.TEXT)
 	app.icon_button(app.modal, "收起", "arrow-left", Rect2(952, 620, 256, height), close, false, "返回")
 
 static func result(app) -> void:

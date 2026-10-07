@@ -99,7 +99,7 @@ static func profile(source: Dictionary) -> Dictionary:
 		if not data.personal.has(character.id): data.personal[character.id] = {"stage": 0, "progress": 0, "cross": false, "final": false}
 		var page = data.personal[character.id]
 		if not page is Dictionary or not fields(page, ["stage", "progress"], [], [], [], [], ["cross", "final"]) or page.stage < 0 or page.stage > 3 or page.progress < 0: return failure("个人愿页进度损坏。")
-	for kind in ["enemies", "bosses", "relics", "weapons"]:
+	for kind in ["enemies", "bosses", "relics", "weapons", "active_items", "trinkets"]:
 		if not data.seen.has(kind): data.seen[kind] = []
 		if not data.seen[kind] is Array or not ids(data.seen[kind], kind, db): return failure("图鉴包含无法识别的内容。")
 	for character in data.loadouts:
@@ -122,6 +122,13 @@ static func world(source: Dictionary) -> Dictionary:
 	if not fields(run, ["seed", "floor", "floor_limit", "room", "coins", "xp", "level", "merit", "heal_misses", "cleared", "rerolls"], [], ["talents", "contracts", "consumed", "repayments", "room_plan"], ["relics"], ["id", "character", "result"]): return failure("还愿路线或库存损坏。")
 	if not run.has("growth_log"): run.growth_log = []
 	if not run.has("special_rooms"): run.special_rooms = {}
+	if not run.has("active_item"): run.active_item = {"id": "a01", "charge": 3.0}
+	if not run.has("trinket"): run.trinket = ""
+	if not run.has("equipment_seen"): run.equipment_seen = {"active_items": [], "trinkets": []}
+	if not valid_active(run.active_item, db) or not run.trinket is String or (not run.trinket.is_empty() and db.row("trinkets", run.trinket).is_empty()): return failure("主动道具或单槽饰品记录损坏。")
+	if not run.equipment_seen is Dictionary: return failure("装备发现记录损坏。")
+	for kind in ["active_items", "trinkets"]:
+		if not run.equipment_seen.get(kind) is Array or not ids(run.equipment_seen[kind], kind, db): return failure("装备发现记录损坏。")
 	if not run.has("daily"): run.daily = false
 	if not run.has("daily_key"): run.daily_key = ""
 	if not run.has("daily_pool_version"): run.daily_pool_version = ""
@@ -138,6 +145,12 @@ static func world(source: Dictionary) -> Dictionary:
 	if data.mode == "transition" and (not run.get("transition") is Dictionary or not fields(run.transition, ["to_floor", "cursor"]) or int(run.transition.to_floor) != int(run.floor) + 1 or run.transition.to_floor > 11): return failure("层间过场记录损坏。")
 	if data.rng < 1 or data.rng >= 2147483647 or data.time < 0 or data.uid < 0 or data.attack_uid < 0: return failure("还愿随机流或时间记录无效。")
 	if not fields(player, ["hp", "max_hp", "energy", "shot_cd", "skill_cd", "dash_cd", "dash_left", "invulnerable", "guard", "armor", "still", "passive_cd", "passive_hits", "charge", "attack_bonus", "attack_bonus_until"], ["pos", "aim", "move", "dash_dir"], [], [], ["weapon", "skill"]): return failure("还愿人状态损坏。")
+	if not player.has("item_cd"): player.item_cd = 0.0
+	if not player.has("item_buffs"): player.item_buffs = {}
+	if not Store.number(player.item_cd) or player.item_cd < 0 or player.item_cd > 2 or not player.item_buffs is Dictionary: return failure("主动道具收招或增益记录损坏。")
+	for stat in player.item_buffs:
+		var buff = player.item_buffs[stat]
+		if stat not in ["move_speed", "fire_rate", "damage"] or not buff is Dictionary or not fields(buff, ["value", "until"]) or buff.value < 0 or buff.value > 1 or buff.until < 0: return failure("主动道具增益记录损坏。")
 	if db.row("weapons", player.weapon).is_empty() or db.row("skills", player.skill).is_empty() or player.max_hp < 1 or player.hp > player.max_hp or player.hp < 0 or player.energy < 0 or player.energy > 100: return failure("当前器具、焚债或心火无法恢复。")
 	for id in run.relics:
 		var row = db.row("relics", id)
@@ -167,6 +180,9 @@ static func world(source: Dictionary) -> Dictionary:
 	if run.get("replacement", {}).size() > 0:
 		var replacement = run.replacement
 		if not fields(replacement, ["index"], [], [], ["choice"], ["return_mode"]) or not validate_choice(replacement.choice, db): return failure("待替换供物记录损坏。")
+		if replacement.has("ground_uid"):
+			if not Store.integer(replacement.ground_uid) or replacement.ground_uid < 1 or replacement.return_mode not in ["combat", "clear"]: return failure("地面换装事务损坏。")
+			if not data.pickups.any(func(drop): return drop is Dictionary and drop.get("uid", -1) == replacement.ground_uid and drop.get("kind", "") == "relic" and drop.get("id", "") == replacement.choice.id): return failure("换装供物已不在地面。")
 	for history in run.get("room_history", {}).values():
 		if not history is Dictionary or not fields(history, [], [], ["pickups"], ["flags"], ["template"]) or not history.pickups.all(valid_pickup) or not valid_flags(history.flags, db): return failure("已行房间记录损坏。")
 	for key in ["visited", "name_page_ids", "optional_bosses", "relic_pool"]:
@@ -188,6 +204,7 @@ static func world(source: Dictionary) -> Dictionary:
 		if bullet.friendly and bullet.get("mode", "") == "ash" and bullet.get("primary", true) == false and not bullet.has("target_index"):
 			bullet.target_index = 0
 		if bullet.has("source") and not Damage.valid_source(bullet.source, db): return failure("弹道来源无法识别。")
+		if bullet.has("recipe") and not valid_recipe(bullet.recipe, db): return failure("弹道组合快照损坏。")
 		if bullet.has("push_distance") and (not Store.number(bullet.push_distance) or bullet.push_distance < 0 or bullet.push_distance > db.rules.combat.control.push_distance_cap): return failure("弹道击退记录损坏。")
 		if bullet.friendly and not fields(bullet, ["attack", "pierce", "bounces", "age", "target_index"], [], ["hits"], [], ["mode"], ["primary", "crit", "returning", "can_return"]): return failure("主攻弹道记录损坏。")
 	for pickup in data.pickups:
@@ -201,7 +218,12 @@ static func world(source: Dictionary) -> Dictionary:
 	for action in data.delayed:
 		if not action is Dictionary or not fields(action, ["time"], [], [], [], ["type"]): return failure("延迟效果记录损坏。")
 		if action.time < 0 or (action.has("pulse") and not action.pulse is String): return failure("延迟效果时钟损坏。")
-		if action.type == "expanded_area":
+		if action.type == "composition_fire":
+			if not fields(action, ["damage"], ["pos", "aim"], [], ["recipe"], ["weapon"], ["crit", "burst_part"]) or not valid_recipe(action.recipe, db) or db.row("weapons", action.weapon).is_empty() or action.damage < 0: return failure("组合攻击延期快照损坏。")
+		elif action.type == "composition_area":
+			if not fields(action, ["radius", "damage"], ["pos"], [], [], ["fx_preset", "key"]) or action.radius < 0 or action.radius > 380 or action.damage < 0: return failure("道具或组合范围快照损坏。")
+			if action.has("recipe") and not valid_recipe(action.recipe, db): return failure("组合范围效果快照损坏。")
+		elif action.type == "expanded_area":
 			if not fields(action, ["radius", "damage"], ["pos"], [], [], ["style"]) or action.radius < 0 or action.radius > 420 or action.damage < 0: return failure("场域爆发记录损坏。")
 		elif action.type == "expanded_burst":
 			if not fields(action, ["damage", "attack"], ["pos", "dir"], [], [], ["weapon"], ["crit", "last"]) or db.row("weapons", action.weapon).is_empty(): return failure("器具连发记录损坏。")
@@ -216,6 +238,7 @@ static func world(source: Dictionary) -> Dictionary:
 				if not item is Dictionary or not fields(item, ["uid", "damage", "marks", "burn", "chain_index", "group_uid"], ["pos"]): return failure("焚债目标快照损坏。")
 		elif action.type == "repeat_attack":
 			if not fields(action, ["damage"], ["pos", "aim"], [], [], ["weapon"]) or db.row("weapons", action.weapon).is_empty() or action.damage <= 0: return failure("器具重演记录损坏。")
+			if action.has("recipe") and not valid_recipe(action.recipe, db): return failure("器具回声组合快照损坏。")
 		elif action.type == "enemy_fan":
 			if not fields(action, ["uid", "count", "spread", "speed"]) or not Store.integer(action.uid) or action.uid < 1 or not Store.integer(action.count) or action.count < 1 or action.count > 32 or action.spread < 0 or action.spread > PI or action.speed <= 0 or action.speed > 2000: return failure("恶愿延期弹记录损坏。")
 			for key in ["pos", "aim"]:
@@ -272,9 +295,36 @@ static func validate_choice(choice, db) -> bool:
 	return choice.kind == "heal" or (choice.kind == "event" and choice.id in ["remember", "interest", "rest"])
 
 static func valid_pickup(pickup) -> bool:
-	return pickup is Dictionary and fields(pickup, ["uid", "value", "delay"], ["pos"], [], [], ["kind"], ["natural", "magnet"]) and pickup.kind in ["coin", "ash", "heal"]
+	if not pickup is Dictionary or not fields(pickup, ["uid", "value", "delay"], ["pos"], [], [], ["kind"], ["natural", "magnet"]): return false
+	if not Store.integer(pickup.uid) or pickup.uid < 1 or not pickup.pos.is_finite() or pickup.delay < 0 or pickup.delay > 5 or pickup.value < 0: return false
+	if pickup.kind in ["coin", "ash", "heal"]: return true
+	if pickup.kind not in ["active", "trinket", "relic", "battery"] or not fields(pickup, [], [], [], ["gear_state"], ["id"]) or pickup.magnet or pickup.natural: return false
+	if pickup.kind == "battery": return pickup.id == "battery" and pickup.value == 1
+	var db = Content.new()
+	var table = {"active": "active_items", "trinket": "trinkets", "relic": "relics"}[pickup.kind]
+	if db.row(table, pickup.id).is_empty(): return false
+	if pickup.kind == "active": return valid_active(pickup.gear_state, db) and pickup.gear_state.id == pickup.id
+	return Store.integer(pickup.value) and pickup.value >= 1 and pickup.value <= (2 if pickup.kind == "relic" else 1)
+
+static func valid_active(value, db) -> bool:
+	if not value is Dictionary or not fields(value, ["charge"], [], [], [], ["id"]): return false
+	if value.id.is_empty(): return value.charge == 0
+	var row = db.row("active_items", value.id)
+	return not row.is_empty() and value.charge >= 0 and value.charge <= row.charge_rooms
+
+static func valid_recipe(value, db) -> bool:
+	if not value is Dictionary or not fields(value, ["version", "pellets", "base_pellets", "spread", "pierce", "blast_radius", "blast_factor", "bounces", "damage_factor", "interval", "speed", "range", "width", "push", "attack", "depth", "wave"], [], [], [], ["weapon", "mode", "carrier", "fx_family", "pulse"], ["explosive", "homing", "controlled", "split", "linger", "return", "primary"]): return false
+	if db.row("weapons", value.weapon).is_empty() or (value.mode != db.row("weapons", value.weapon).mode and not (value.depth == 1 and value.mode == "piercing" and not value.primary and not value.explosive and not value.split and not value.linger)) or value.version != 1 or value.carrier not in ["beam", "chain", "arc", "area", "projectile"] or value.fx_family not in ["ember", "ink", "thread", "prism", "lotus", "smoke", "frost", "storm", "void", "brass"]: return false
+	for key in ["pellets", "base_pellets", "pierce", "bounces", "attack", "depth", "wave"]:
+		if not Store.integer(value[key]) or value[key] < 0: return false
+	return value.pellets >= 1 and value.pellets <= 8 and value.base_pellets >= 1 and value.base_pellets <= 8 and value.pierce <= 32 and value.wave <= 4 and value.depth <= 1 and value.bounces <= 3 and value.blast_radius >= 0 and value.blast_radius <= 380 and value.interval > 0 and value.interval <= 10 and value.speed >= 0 and value.speed <= 3000 and value.range > 0 and value.range <= 3000 and value.width > 0 and value.width <= 80 and value.damage_factor > 0 and value.damage_factor <= 3 and value.blast_factor > 0 and value.blast_factor <= 2 and value.spread >= 0 and value.spread <= PI and value.push >= 0 and value.push <= db.rules.combat.control.push_distance_cap
 
 static func valid_flags(flags: Dictionary, db) -> bool:
+	if flags.has("rare_drop_count") and (not Store.integer(flags.rare_drop_count) or flags.rare_drop_count < 0 or flags.rare_drop_count > 2): return false
+	if flags.has("composition_ledger"):
+		if not flags.composition_ledger is Dictionary or flags.composition_ledger.size() > 8192: return false
+		for key in flags.composition_ledger:
+			if not key is String or not Store.number(flags.composition_ledger[key]) or flags.composition_ledger[key] < 0: return false
 	for key in ["combat_kills", "dash_armor", "summoned", "summon_rewards", "wave_index", "wave_count", "wave_pending_at", "secret_inspect", "debt_fire_at", "entry_slow_until"]:
 		if flags.has(key) and not Store.number(flags[key]): return false
 	for key in ["chain_pairs", "forced_links"]:

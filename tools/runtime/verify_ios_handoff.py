@@ -29,6 +29,12 @@ def main() -> None:
     required = [
         "game/project.godot",
         "game/data/catalog.json",
+        "game/data/equipment.json",
+        "game/data/fx_presets.json",
+        "game/data/projectile_profiles.json",
+        "game/scripts/combat/equipment.gd",
+        "game/scripts/combat/attack_composer.gd",
+        "game/scripts/ui/polished_fx.gd",
         "game/data/rules.json",
         "game/data/runtime_assets.json",
         "game/data/music_scores.json",

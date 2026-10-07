@@ -5,12 +5,12 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[下载 v0.1.0-alpha.1 / Download the prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.1.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+**[下载 v0.2.0-alpha.1 / Download the prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
 
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **0.1.0 · 十一层可玩 Alpha / playable eleven-floor Alpha** |
+| 版本 / Version | **0.2.0 · 十一层可玩 Alpha / playable eleven-floor Alpha** |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
@@ -24,8 +24,23 @@ Current scope is defined by the [delivery status](docs/incense-debt/reports/curr
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
 
-以下截图来自当前 Windows 原生版本，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
-Screenshots come from the native Windows build. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+以下菜单、装备和地图截图来自当前 Windows 原生版本，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
+Menu, equipment, and map screenshots come from the current native Windows build. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+
+### 装备与组合攻击 / Equipment and composed attacks
+
+![单槽饰品与主动道具 / Single-slot trinket and active item](docs/media/equipment-inventory.webp)
+
+![地图顶部十一层路线 / Eleven-floor progress timeline](docs/media/equipment-timeline.webp)
+
+![五发射线与爆炸组合 / Five beams with explosion payloads](docs/media/equipment-five-beams.webp)
+
+![追踪、操控、散射、爆炸和持续场组合 / Guided scatter, explosions and lingering fields](docs/media/equipment-combination.gif)
+
+![十类特效之一：雷霆射线与范围阶段 / Storm-family beam and area phases](docs/media/equipment-storm.gif)
+
+截图和组合 GIF 来自原生装备测试场景，实际执行攻击与伤害；阶段 GIF 是只读特效展示。新增素材有 23 张模型原图、36 个装备图标、80 条六帧动画；所有来源和帧哈希随仓库保存。普通游玩、菜单和环境画面均已按本次构建重新捕获，详见每项媒体的构建记录。  
+Screenshots and the combination GIF use native equipment fixtures with real attacks and damage; the phase GIF is a read-only effects gallery. New art includes 23 generated boards, 36 equipment icons, and 80 six-frame strips, with source/frame hashes retained. Ordinary gameplay, menus, and environments have also been recaptured from this build; each media record identifies its executable hash.
 
 ### 普通游玩 / Normal gameplay
 
@@ -60,7 +75,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 
 ### 阅读导航
 
-[世界与核心循环](#zh-loop) · [内容规模](#zh-content) · [角色与技能](#zh-characters) · [武器](#zh-weapons) · [地图与房间](#zh-maps) · [菜单与 UI](#zh-menus) · [操作](#zh-controls) · [成长与成就](#zh-progression) · [存档](#zh-saves) · [美术与声音](#zh-art) · [运行与构建](#zh-run) · [工程与验证](#zh-engineering) · [当前边界](#zh-status)
+[世界与核心循环](#zh-loop) · [内容规模](#zh-content) · [主动 / 饰品 / 掉落 / 叠加](#zh-equipment) · [角色与技能](#zh-characters) · [武器](#zh-weapons) · [地图与房间](#zh-maps) · [菜单与 UI](#zh-menus) · [操作](#zh-controls) · [成长与成就](#zh-progression) · [存档](#zh-saves) · [美术与声音](#zh-art) · [运行与构建](#zh-run) · [工程与验证](#zh-engineering) · [当前边界](#zh-status)
 
 <a id="zh-loop"></a>
 ### 世界观与核心战斗循环
@@ -87,16 +102,57 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 | 环境 | 20 套独立主题、每套 A/B 两张背景，共 40 张 |
 | 角色 / 路线 | 6 名角色、6 条成长路线 |
 | 武器 / 技能 | 32 件器具、18 种角色技能形态，每人 3 种 |
-| 局内成长 | 54 件遗物、36 个行愿节点、24 套登记的联动组合 |
+| 局内成长 | 66 件遗物、36 个行愿节点、24 套登记的联动组合 |
 | 风险与局外 | 9 类债约、22 项局外解锁、5 位功能 NPC |
 | 遭遇库 | 296 种普通敌人、99 名首领、6 种精英变体；含原始通用与兼容内容 |
 | 主题专属池 | 每主题 12 种小怪与 3 名 Boss；最终天穹为 7 名 Boss，即每主题 15—19 种专属遭遇 |
 | 成就与愿簿 | 32 项成就，其中每名角色 4 项、另有 8 项共享成就；3 个独立存档槽 |
-| 动画与资源 | 2,730 条动画、16,628 张方向动作帧；3,665 项实际运行资源 |
-| 战斗关键帧 | 新增 8 条射线 / 范围特效条，共 48 张生成关键帧 |
+| 动画与资源 | 2,810 条动画、16,628 张方向动作帧；3,781 项实际运行资源 |
+| 战斗关键帧 | 88 条分阶段射线 / 范围动画，共 528 张生成关键帧（本次新增 80 条 / 480 帧） |
 | 声音 | 9 套音乐主题、25 条音乐分层；运行音频共 112 项 |
 
 主题数量表示地图池的规模，不表示一局有二十层；敌人与首领数量是整个库的数量，不表示每局全部出现。登记的 24 套联动也不是所有搭配的穷举。完整条目见[内容数据库](game/data/catalog.json)、[扩展规则](game/data/expansion.json)与[生成目录](docs/incense-debt/16-content-catalog.generated.md)。
+
+<a id="zh-equipment"></a>
+### 主动道具、饰品、稀有掉落与攻击叠加
+
+每局初始携带满充能的**火签筒**。主动道具占一个槽，`F` 使用；普通清房充能 1，首领清房充能 2，火芯额外补 1。回访已清房、读档、召唤怪和训练都不能刷充能或稀有掉落。换主动道具会把旧装备连同真实剩余充能放回地面；恢复和换装不重置充能。满血用归心灯、无装备用转愿骰等无效操作不会扣除充能。
+
+| 主动道具 | 满充能 | 作用 |
+| --- | --- | --- |
+| 火签筒 | 3 | 向瞄准方向抛出三枚延迟火签，逐段爆发。 |
+| 归心灯 | 6 | 恢复2心火；满血时不消耗充能。 |
+| 无债铜镜 | 4 | 短暂护身并反射周围敌弹。 |
+| 墨砚 | 4 | 铺下墨池，持续伤害并减速恶愿。 |
+| 红线卷 | 3 | 朝前织出五道贯穿红线，兼容爆炸供物。 |
+| 纸鹤匣 | 3 | 放出追踪纸鹤；兼容散射与命中修饰。 |
+| 引灰铃 | 2 | 收拢香灰、纸钱，并恢复20香火。 |
+| 莲台印 | 5 | 生成跟随身边的莲印，护身并持续扫荡。 |
+| 转愿骰 | 6 | 重掷当前房内未拾取的装备；无装备时不消耗。 |
+| 停雨符 | 4 | 消除周围敌弹并短暂冻结普通恶愿。 |
+| 风行履 | 3 | 短时提升移速与攻速，并缩短身法冷却。 |
+| 雷霆签 | 6 | 释放三轮跳跃雷签，逐个追击邻近目标。 |
+
+**饰品只能持有一件。** 靠近装备按 `E`，原饰品掉在身后，并短暂延迟再次拾取。加成从当前装备实时计算，来回交换不会累积；装备和火芯不会被香灰吸引自动拾取。主动道具、饰品、火芯、修饰供物有各自的图标、发光底座和快捷键提示，`I` → 装备可看详情，暂停页本局记录保留拾取、替换和成长历史。
+
+| 饰品 | 单一属性加成 | 饰品 | 单一属性加成 |
+| --- | --- | --- | --- |
+| 铜钱坠 | 伤害 +15% | 灯芯扣 | 攻速 +18% |
+| 羽铃 | 移速 +12% | 墨尺 | 射程 +25% |
+| 风串 | 弹速 +20% | 玉珠 | 暴击率 +8个百分点 |
+| 红珀 | 爆炸半径 +28% | 铜环 | 射线宽度 +32% |
+| 小莲 | 香灰拾取范围 +35% | 福袋 | 稀有掉落概率 +25% |
+| 丝穗 | 清房充能 +50%（余数保留） | 纸扣 | 主攻击击退 +20% |
+
+**稀有掉落**与原来的香灰、纸钱、回血并存：普通敌人基础概率 0.8%，精英 2.5%，首领 8%，首次清房 3.5%；每房最多两件稀有掉落。掉落类型权重为火芯 35%、主动道具 20%、饰品 30%、攻击修饰 15%。福袋将概率乘以 1.25，仍受每房上限限制。宝藏房另有一次性装备底座，奇数层供饰品、偶数层供主动道具，保证单局能接触换装。地上物品、旧装备充能、房间领取记录和低概率来源账本都进入存档。供物槽满时进入替换页；取消保留地上物品，确认后旧供物落回地面。
+
+**叠加采用“攻击载体 + 修饰”的明确规则。** 三叠灯 / 四方纸 / 五瓣签分别给出至少三 / 四 / 五发，取最高档且最多八发；三种同时持有得到五发。爆香核给命中或终点爆炸，光墨匣改为射线，两者能并存，故五瓣签＋光墨匣＋爆香核产生五道带爆炸的射线。穿透、追踪、操控、反弹、分裂、持续场和蓄力也接入全部三十二器具。飞行弹可随瞄准方向转向；即时射线和近战按释放时方向结算。原武器的延迟、火场和多轮脉冲在载体转换后保留。
+
+同一次爆炸 / 范围波次对同一目标只结算一次范围伤害；同次主攻击的供物触发按目标去重。分裂子代最多一层，不能再递归分裂或爆炸，回响保存原攻击构成且不重复触发主攻击钩子。控制弹、延迟弹、回响和范围去重状态也随存档恢复。构筑页底部图标说明当前载体、发数与生效修饰。
+
+`Tab` 地图顶部显示完整十一层节点，已过层、当前层、未来层分色，第六及十一层有首领标识。战斗新增十个特效家族，每家族四种射线和四种范围形态；80 条新动画 / 480 个独立生成关键帧，与原 8 条组成 88 条分阶段战斗动画，是原数量的 **11 倍**。395 个小怪 / 首领来源各有弹丸参数，结合 16 种基础形态、尺寸、旋转、颜色、纹理光晕与尾迹；实际碰撞半径同步尺寸，敌弹保留稳定的玉色危险外沿。轮廓缓存有上限，二次触发与场域均有预算；减少动态、粒子密度与闪光设置继续生效。
+
+[完整规则与验收](docs/incense-debt/27-equipment-loot-attack-polish.md) · [装备数据](game/data/equipment.json) · [原生装备证据](docs/incense-debt/reports/platforms/windows/equipment-polish/native.json)
 
 <a id="zh-characters"></a>
 ### 六名角色与十八种技能
@@ -276,6 +332,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 | 移动 | `W / A / S / D` | 左摇杆 |
 | 瞄准与主攻击 | 鼠标瞄准 + 按住左键，或按住方向键瞄准并射击 | 右摇杆瞄准 + `RT` |
 | 焚债 / 角色技能 | `Q` / 鼠标右键 | `RB` |
+| 主动道具 | `F`；满充能使用 | `X` |
 | 身法 | `Space` | `LT` |
 | 交互 | `E`；相邻房间由实际走门进入 | `A` |
 | 奖励、技能、商店、债约候选 | `1 / 2 / 3 / 4` 直接选择；或方向键 + `Enter` | 焦点选择与确认 |
@@ -288,7 +345,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 
 方向键松开即停止主攻击，但保留最后瞄准方向；实际移动鼠标才重新切回鼠标瞄准。技能多选、供物替换、特殊房、偿债、层间叙事、结局与试射返回都有键盘路径。
 
-手机采用左移动 / 右瞄准双摇杆和独立身法、焚债按钮，可第三指同时施术；触控布局支持左右镜像、拖动调整或方向键编辑。竖屏 / 窄屏触发暂停保护。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、固定摇杆、切换攻击、拾取范围、触觉、震动 / 强闪 / 粒子与愿页字号设置。手柄和移动端的真实设备验收仍见[当前边界](#zh-status)。
+手机采用左移动 / 右瞄准双摇杆和独立身法、焚债、主动道具按钮，可第三指同时施术；触控布局支持左右镜像、拖动调整或方向键编辑。竖屏 / 窄屏触发暂停保护。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、固定摇杆、切换攻击、拾取范围、触觉、震动 / 强闪 / 粒子与愿页字号设置。手柄和移动端的真实设备验收仍见[当前边界](#zh-status)。
 
 ### 种子与每日挑战
 
@@ -393,7 +450,7 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / 大型 ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。文档直接引用的原始截图保留。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1) 下载，也可本机导出。[交付清单](build/delivery-manifest.json)保留此前本地验证基线，[发布清单](docs/releases/v0.1.0-alpha.1.manifest.json)记录新 Windows release 导出与实际发布附件。
+**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / 大型 ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。文档直接引用的原始截图保留。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) 下载，也可本机导出。[交付清单](build/delivery-manifest.json)记录当前本地验证产物，[发布清单](docs/releases/v0.2.0-alpha.1.manifest.json)记录新 Windows release 导出与实际发布附件。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -445,7 +502,7 @@ python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
 ```
 
-当前记录包括 373 项边界 / 混编 / 房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、105 项纯键盘流程、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击 / 恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
+本次另有 1,568 项装备 / 掉落 / 攻击组合检查、80,000 次低概率抽样、29 项编译装备实机检查及 111 张截图，覆盖全部 480 个生成帧。原有记录包括 373 项边界 / 混编 / 房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、107 项纯键盘流程、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击 / 恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
 
 当前完整局证据为 **1 次正常初始数值的伞灵行动机器人十一层胜利**，包含 129 次清房、153 次物理门口切房和 10 次层间保存恢复。它证明软件流程可达，真人难度、手感与平衡仍需评测。来源哈希与结果见[完整局记录](docs/incense-debt/reports/runtime/expanded-full-run.json)。
 
@@ -470,7 +527,7 @@ python tools/runtime/run_audio_qa.py --packaged
 
 ### Navigation
 
-[World and combat loop](#en-loop) · [Content](#en-content) · [Characters](#en-characters) · [Weapons](#en-weapons) · [Maps and rooms](#en-maps) · [Menus and controls](#en-controls) · [Progression](#en-progression) · [Saves](#en-saves) · [Art and audio](#en-art) · [Run and build](#en-build) · [Architecture and validation](#en-engineering) · [Delivery status](#en-status)
+[World and combat loop](#en-loop) · [Content](#en-content) · [Equipment and composition](#en-equipment) · [Characters](#en-characters) · [Weapons](#en-weapons) · [Maps and rooms](#en-maps) · [Menus and controls](#en-controls) · [Progression](#en-progression) · [Saves](#en-saves) · [Art and audio](#en-art) · [Run and build](#en-build) · [Architecture and validation](#en-engineering) · [Delivery status](#en-status)
 
 <a id="en-loop"></a>
 ### World and combat loop
@@ -497,16 +554,48 @@ Shooting changes character facing and held-weapon pose. Hits, charging, dodging,
 | Environments | 20 themes, two A/B backgrounds each, 40 backgrounds total |
 | Characters and routes | 6 playable characters and 6 progression routes |
 | Weapons and skills | 32 weapons, 18 character skill forms, three per character |
-| Run progression | 54 relics, 36 talent nodes, 24 registered synergy combinations |
+| Run progression | 66 relics, 36 talent nodes, 24 registered synergy combinations |
 | Risk and meta progression | 9 debt contracts, 22 persistent unlocks, 5 functional NPCs |
 | Encounter library | 296 regular enemies, 99 bosses, 6 elite variants; includes original/common compatibility content |
 | Theme-specific pools | 12 mobs + 3 bosses per theme; the final sky theme has 7 bosses, giving 15–19 native encounter types per theme |
 | Achievements and saves | 32 achievements: 4 per character plus 8 shared achievements; 3 independent save slots |
-| Animation and assets | 2,730 strips, 16,628 directional action frames, 3,665 runtime resources |
+| Animation and assets | 2,810 strips, 16,628 directional action frames, 3,781 runtime resources |
 | New combat keyframes | 8 beam/area strips derived from 48 generated keyframes |
 | Audio | 9 musical themes, 25 stems, 112 runtime audio resources in total |
 
 These are library counts, rather than the number of encounters in one run. Twenty environment themes do not mean twenty campaign floors. The 24 registered synergies are examples with explicit definitions, rather than an exhaustive list of possible builds. See the [catalog](game/data/catalog.json), [expansion data](game/data/expansion.json), and [generated reference](docs/incense-debt/16-content-catalog.generated.md).
+
+<a id="en-equipment"></a>
+### Active items, one trinket slot, rare loot, and attack composition
+
+Each run starts with a fully charged **Fire-Tag Cylinder**. One active slot uses `F` on PC, `X` on gamepad, or its own touch button. A first room clear grants one charge, a boss clear two, and a battery one. Revisits, loading saves, summons, and training cannot farm charge or rare equipment. Swapping drops the old active with its actual remaining charge. Invalid uses, such as healing at full health or rerolling an empty room, spend no charge.
+
+| Active item | Full charge | Effect |
+| --- | --- | --- |
+| 火签筒 · Fire-Tag Cylinder | 3 | Three delayed bombs along the aim direction |
+| 归心灯 · Returning-Heart Lamp | 6 | Restore two health points |
+| 无债铜镜 · Debtless Mirror | 4 | Brief protection and nearby bullet reflection |
+| 墨砚 · Inkstone | 4 | Damaging slow field |
+| 红线卷 · Red-Thread Spool | 3 | Five piercing beams, compatible with explosion modifiers |
+| 纸鹤匣 · Paper-Crane Box | 3 | Seeking cranes with attack modifiers |
+| 引灰铃 · Ash Bell | 2 | Collect ash/coins and restore 20 Incense |
+| 莲台印 · Lotus Seal | 5 | Following defensive damage field |
+| 转愿骰 · Wish Die | 6 | Reroll uncollected equipment in the room |
+| 停雨符 · Rain-Stopping Charm | 4 | Clear nearby bullets and briefly freeze ordinary enemies |
+| 风行履 · Wind Shoes | 3 | Temporary speed, fire rate, and dodge-cooldown buffs |
+| 雷霆签 · Thunder Tags | 6 | Three chain-lightning waves |
+
+**Exactly one trinket can be held.** Press `E` near equipment to exchange it; the previous item drops behind the player with a short pickup delay. Bonuses derive from the currently held item, preventing cumulative swap exploits. The twelve single-stat trinkets improve damage (15%), fire rate (18%), movement (12%), range (25%), shot speed (20%), critical chance (8 percentage points), blast radius (28%), beam width (32%), ash pickup radius (35%), rare-drop probability (25%), room-charge efficiency (50%, retaining fractions), or knockback (20%). Equipment and batteries require deliberate pickup. Inventory → Equipment and the pause history expose slots, charges, pickups, and replacements.
+
+**Rare loot** supplements normal ash/coins/healing: base probabilities are 0.8% for ordinary kills, 2.5% for elites, 8% for bosses, and 3.5% for a first room clear, capped at two rare drops per room. Loot weights are battery 35%, active 20%, trinket 30%, and attack modifier 15%. The luck trinket multiplies probability by 1.25. Treasure rooms additionally provide a once-only equipment pedestal: trinkets on odd floors, active items on even floors. Ground items, charges, collection ledgers, and rare-roll source IDs persist in saves. Full relic inventories open a replacement transaction; cancel preserves the ground item and confirmation drops the replaced relic.
+
+**Attacks combine a carrier with modifiers.** Three/four/five-shot offerings take the highest minimum rather than multiplying; holding all three gives five shots, with an eight-shot ceiling. Beam conversion retains explosion payloads, so five-shot + beam + explosion yields five explosive beams. Piercing, homing, controlled flight, bounce, split, lingering fields, and charging integrate with all 32 weapons. Controlled flight follows aim; instant beams/melee settle at release direction. Delayed bombs, fields, and repeated pulses survive carrier conversion.
+
+An overlapping area wave damages a target once, and primary offering triggers deduplicate by attack/target. Split children stop at generation one and do not recursively split/explode; echoes preserve the original recipe without replaying primary triggers. Delayed recipes and deduplication state survive save/restore. The inventory shows the current carrier, shot count, and modifier chips.
+
+The map now displays all eleven floor nodes, marking completed/current/future floors and major bosses. Ten effects families add four beam and four area forms each: **80 new strips / 480 distinct generated keyframes**, making **88 staged combat strips, 11× the prior eight**. All 395 enemy/boss sources have profile parameters built from 16 shapes, size, spin, color, textured aura, and trails. Actual collision radii follow size; hostile shots retain jade danger outlines. Bounded geometry caches, secondary-effect budgets, reduced motion, and particle/flash controls limit rendering cost.
+
+[Detailed rules and evidence](docs/incense-debt/27-equipment-loot-attack-polish.md) · [Equipment definitions](game/data/equipment.json) · [Packaged native evidence](docs/incense-debt/reports/platforms/windows/equipment-polish/native.json)
 
 <a id="en-characters"></a>
 ### Characters and skill evolutions
@@ -633,6 +722,7 @@ Replacing an unfinished run requires confirmation; canceling preserves it. Loade
 | Move | `W / A / S / D` | Left stick |
 | Aim and primary fire | Mouse aim + held left button, or held arrow keys to aim and fire | Right stick + `RT` |
 | Burn Debt / skill | `Q` / right mouse | `RB` |
+| Active item | `F`; requires full charge | `X` |
 | Dodge | `Space` | `LT` |
 | Interact | `E`; adjacent rooms require walking through doors | `A` |
 | Reward / skill / shop / contract options | `1 / 2 / 3 / 4`, or arrows + `Enter` | Focus and confirm |
@@ -645,7 +735,7 @@ Replacing an unfinished run requires confirmation; canceling preserves it. Loade
 
 Releasing arrow keys stops firing while retaining the last aim until the mouse actually moves. Sequential skill choices, relic replacement, special rooms, repayment, floor narratives, ending choices, and trial returns have keyboard paths.
 
-Touch uses separate movement and aiming sticks plus dodge and Burn Debt buttons, including third-finger casting. Layout supports mirroring, drag editing, and directional editing. Portrait or narrow-screen layouts pause combat. Settings include remapping with conflict swaps, aim assistance, deadzones, fixed sticks, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size. Physical gamepad and mobile acceptance remains pending.
+Touch uses separate movement and aiming sticks plus dodge, Burn Debt, and active-item buttons, including third-finger casting. Layout supports mirroring, drag editing, and directional editing. Portrait or narrow-screen layouts pause combat. Settings include remapping with conflict swaps, aim assistance, deadzones, fixed sticks, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size. Physical gamepad and mobile acceptance remains pending.
 
 **Seeds and daily challenges:** A 12-digit seed entry preserves leading zeros and applies to the next run only; it clears after starting. Pause displays and copies the active seed. Daily challenges have separate rules and character selection. Map/content/combat randomness is separated, and saves preserve the running state. Identical seeds across different versions or unlock states do not guarantee identical content.
 
@@ -750,7 +840,7 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/large export ZIPs, reproducible audio masters, and most raw QA frames are excluded. Original images directly referenced by documentation are retained. Download applications from the [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1) or build them locally. The [delivery manifest](build/delivery-manifest.json) retains the earlier verified local baseline; the [release manifest](docs/releases/v0.1.0-alpha.1.manifest.json) records the fresh Windows release export and published attachments.
+**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/large export ZIPs, reproducible audio masters, and most raw QA frames are excluded. Original images directly referenced by documentation are retained. Download applications from the [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) or build them locally. The [delivery manifest](build/delivery-manifest.json) records the current verified local artifacts; the [release manifest](docs/releases/v0.2.0-alpha.1.manifest.json) records the fresh Windows release export and published attachments.
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
@@ -777,7 +867,7 @@ python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
 ```
 
-Recorded checks include 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 105 keyboard-flow checks, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
+New evidence adds 1,568 equipment/loot/composition checks, 80,000 rare-roll samples, 29 packaged equipment checks, and 111 captures covering all 480 generated frames. Baseline checks include 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 107 keyboard-flow checks, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
 
 The current full-run evidence is **one eleven-floor Umbrella Spirit action-bot victory with unchanged initial player stats**, including 129 cleared rooms, 153 physical doorway transitions, and ten floor-transition save/restores. It establishes a reachable software route, rather than human balance or feel. Read the [full-run record and source hashes](docs/incense-debt/reports/runtime/expanded-full-run.json).
 

@@ -1,6 +1,6 @@
 {
 	"checks": [
-		"a fresh run records its starting weapon and base skill in chronological growth history",
+		"a fresh run records its starting weapon, base skill and active item in chronological growth history",
 		"a normal offering appends its real bonus to the same history ledger",
 		"a weapon replacement records both the selected item and the live equipped state",
 		"a skill evolution records the chosen skill instead of only exposing the current skill",

@@ -1,8 +1,8 @@
-# 《香火债》0.1.0 · 运行与操作
+# 《香火债》0.2.0 · 运行与操作
 
-[GitHub 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.1.0-alpha.1)提供 Windows ZIP、Android 调试 APK、iOS 共享源码和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.1.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
+[GitHub 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)提供 Windows ZIP、Android 调试 APK、iOS 共享源码和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.2.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
 
-当前为十一层单人离线Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击加入48帧生成特效。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
+当前为十一层单人离线Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击资源库合计88条分阶段动画、528帧生成特效（本次新增80条480帧）。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
 
 ## Windows
 
@@ -18,6 +18,7 @@
 | 瞄准 | 方向键或鼠标 | 右摇杆 |
 | 主攻击 | 按住方向键或鼠标左键 | RT |
 | 焚债 | 鼠标右键或Q | RB |
+| 主动道具 | F，满充能使用；E拾取/交换装备，饰品最多一件 | X |
 | 身法 | Space | LT |
 | 场景交互 | E；清房后走入对应方向门切换房间 | A |
 | 行路图 | Tab打开/收起，只读地图 | 界面按钮 |

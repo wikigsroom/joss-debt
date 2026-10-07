@@ -200,6 +200,8 @@ func observe(w) -> Array:
 	data.runs[id] = record
 	for enemy in w.enemies: discover("bosses" if enemy.boss else "enemies", enemy.id)
 	for relic in w.run.relics: discover("relics", relic)
+	for kind in ["active_items", "trinkets"]:
+		for item in w.run.get("equipment_seen", {}).get(kind, []): discover(kind, item)
 	discover("weapons", w.player.weapon)
 	var routes = _routes_for_world(w)
 	for a in routes.size():

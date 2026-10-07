@@ -412,19 +412,31 @@
 		"combo22 迟账重书 executes its authored relic paths",
 		"combo23 黑契回炉 executes its authored relic paths",
 		"combo24 红墨余灰 executes its authored relic paths",
-		"the seven non-combination relic hooks remain explicitly addressable",
+		"the nineteen non-combination relic hooks remain explicitly addressable",
 		"r08 executes its standalone authored relic path",
 		"r16 executes its standalone authored relic path",
 		"r24 executes its standalone authored relic path",
 		"r32 executes its standalone authored relic path",
 		"r40 executes its standalone authored relic path",
 		"r48 executes its standalone authored relic path",
-		"r54 executes its standalone authored relic path"
+		"r54 executes its standalone authored relic path",
+		"r55 executes its standalone authored relic path",
+		"r56 executes its standalone authored relic path",
+		"r57 executes its standalone authored relic path",
+		"r58 executes its standalone authored relic path",
+		"r59 executes its standalone authored relic path",
+		"r60 executes its standalone authored relic path",
+		"r61 executes its standalone authored relic path",
+		"r62 executes its standalone authored relic path",
+		"r63 executes its standalone authored relic path",
+		"r64 executes its standalone authored relic path",
+		"r65 executes its standalone authored relic path",
+		"r66 executes its standalone authored relic path"
 	],
-	"count": 35,
+	"count": 47,
 	"failures": [],
 	"passed": true,
-	"scope": "twenty-four authored combinations plus seven standalone relic hooks through real primary, detonation, ash, dash, parry, clear, repayment and delayed replay paths; no hidden set bonus",
+	"scope": "twenty-four authored combinations plus nineteen standalone relic hooks through real primary, detonation, ash, dash, parry, clear, repayment and delayed replay paths; no hidden set bonus",
 	"standalone": [
 		{
 			"evidence": [
@@ -482,6 +494,94 @@
 				"repayment relic offer token"
 			],
 			"id": "r54",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real scattered primary projectiles"
+			],
+			"id": "r55",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real scattered primary projectiles"
+			],
+			"id": "r56",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real scattered primary projectiles"
+			],
+			"id": "r57",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"actual hit payload",
+				"neighbor damage"
+			],
+			"id": "r58",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"actual beam carrier conversion and damage"
+			],
+			"id": "r59",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"actual hit payload",
+				"second pierced target"
+			],
+			"id": "r60",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"off-axis target bends projectile toward itself"
+			],
+			"id": "r61",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"live steering changes actual trajectory"
+			],
+			"id": "r62",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"actual radius-aware wall bounce"
+			],
+			"id": "r63",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real primary contact spawns bounded secondary fragments"
+			],
+			"id": "r64",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"actual hit payload",
+				"persistent ground field"
+			],
+			"id": "r65",
+			"passed": true
+		},
+		{
+			"evidence": [
+				"real charge preparation",
+				"charged damage after release"
+			],
+			"id": "r66",
 			"passed": true
 		}
 	]

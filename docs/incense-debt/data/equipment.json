@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "active_items": [
+    {
+      "id": "a01",
+      "name": "火签筒",
+      "effect": "bombs",
+      "charge_rooms": 3,
+      "behavior": "向瞄准方向抛出三枚延迟火签，逐段爆发。",
+      "icon": "res://assets/active_items/a01.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a02",
+      "name": "归心灯",
+      "effect": "heal",
+      "charge_rooms": 6,
+      "behavior": "恢复2心火；满血时不消耗充能。",
+      "icon": "res://assets/active_items/a02.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a03",
+      "name": "无债铜镜",
+      "effect": "mirror",
+      "charge_rooms": 4,
+      "behavior": "短暂护身并反射周围敌弹。",
+      "icon": "res://assets/active_items/a03.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a04",
+      "name": "墨砚",
+      "effect": "ink_field",
+      "charge_rooms": 4,
+      "behavior": "铺下墨池，持续伤害并减速恶愿。",
+      "icon": "res://assets/active_items/a04.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a05",
+      "name": "红线卷",
+      "effect": "thread_beams",
+      "charge_rooms": 3,
+      "behavior": "朝前织出五道贯穿红线，兼容爆炸供物。",
+      "icon": "res://assets/active_items/a05.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a06",
+      "name": "纸鹤匣",
+      "effect": "seekers",
+      "charge_rooms": 3,
+      "behavior": "放出追踪纸鹤；兼容散射与命中修饰。",
+      "icon": "res://assets/active_items/a06.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a07",
+      "name": "引灰铃",
+      "effect": "ash_bell",
+      "charge_rooms": 2,
+      "behavior": "收拢香灰、纸钱，并恢复20香火。",
+      "icon": "res://assets/active_items/a07.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a08",
+      "name": "莲台印",
+      "effect": "lotus_guard",
+      "charge_rooms": 5,
+      "behavior": "生成跟随身边的莲印，护身并持续扫荡。",
+      "icon": "res://assets/active_items/a08.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a09",
+      "name": "转愿骰",
+      "effect": "reroll_ground",
+      "charge_rooms": 6,
+      "behavior": "重掷当前房内未拾取的装备；无装备时不消耗。",
+      "icon": "res://assets/active_items/a09.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a10",
+      "name": "停雨符",
+      "effect": "freeze",
+      "charge_rooms": 4,
+      "behavior": "消除周围敌弹并短暂冻结普通恶愿。",
+      "icon": "res://assets/active_items/a10.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a11",
+      "name": "风行履",
+      "effect": "haste",
+      "charge_rooms": 3,
+      "behavior": "短时提升移速与攻速，并缩短身法冷却。",
+      "icon": "res://assets/active_items/a11.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "a12",
+      "name": "雷霆签",
+      "effect": "chain_lightning",
+      "charge_rooms": 6,
+      "behavior": "释放三轮跳跃雷签，逐个追击邻近目标。",
+      "icon": "res://assets/active_items/a12.png",
+      "min_floor": 1,
+      "max_floor": 11
+    }
+  ],
+  "trinkets": [
+    {
+      "id": "tr01",
+      "name": "铜钱坠",
+      "stat": "damage",
+      "value": 0.15,
+      "behavior": "伤害 +15%",
+      "icon": "res://assets/trinkets/tr01.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr02",
+      "name": "灯芯扣",
+      "stat": "fire_rate",
+      "value": 0.18,
+      "behavior": "攻速 +18%",
+      "icon": "res://assets/trinkets/tr02.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr03",
+      "name": "羽铃",
+      "stat": "move_speed",
+      "value": 0.12,
+      "behavior": "移速 +12%",
+      "icon": "res://assets/trinkets/tr03.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr04",
+      "name": "墨尺",
+      "stat": "range",
+      "value": 0.25,
+      "behavior": "射程 +25%",
+      "icon": "res://assets/trinkets/tr04.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr05",
+      "name": "风串",
+      "stat": "shot_speed",
+      "value": 0.2,
+      "behavior": "弹速 +20%",
+      "icon": "res://assets/trinkets/tr05.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr06",
+      "name": "玉珠",
+      "stat": "crit",
+      "value": 0.08,
+      "behavior": "暴击率 +8个百分点",
+      "icon": "res://assets/trinkets/tr06.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr07",
+      "name": "红珀",
+      "stat": "blast_radius",
+      "value": 0.28,
+      "behavior": "爆炸半径 +28%",
+      "icon": "res://assets/trinkets/tr07.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr08",
+      "name": "铜环",
+      "stat": "beam_width",
+      "value": 0.32,
+      "behavior": "射线宽度 +32%",
+      "icon": "res://assets/trinkets/tr08.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr09",
+      "name": "小莲",
+      "stat": "pickup_radius",
+      "value": 0.35,
+      "behavior": "香灰拾取范围 +35%",
+      "icon": "res://assets/trinkets/tr09.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr10",
+      "name": "福袋",
+      "stat": "luck",
+      "value": 0.25,
+      "behavior": "稀有掉落概率 +25%",
+      "icon": "res://assets/trinkets/tr10.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr11",
+      "name": "丝穗",
+      "stat": "charge_efficiency",
+      "value": 0.5,
+      "behavior": "清房充能 +50%（余数保留）",
+      "icon": "res://assets/trinkets/tr11.png",
+      "min_floor": 1,
+      "max_floor": 11
+    },
+    {
+      "id": "tr12",
+      "name": "纸扣",
+      "stat": "knockback",
+      "value": 0.2,
+      "behavior": "主攻击击退 +20%",
+      "icon": "res://assets/trinkets/tr12.png",
+      "min_floor": 1,
+      "max_floor": 11
+    }
+  ],
+  "relics": [
+    {
+      "id": "r55",
+      "name": "三叠灯",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "common",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "spread",
+      "modifier_value": 3,
+      "behavior": "主攻击至少三发散射；多档散射取最高档。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r56",
+      "name": "四方纸",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "spread",
+      "modifier_value": 4,
+      "behavior": "主攻击至少四发散射；适用于射线。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r57",
+      "name": "五瓣签",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "rare",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "spread",
+      "modifier_value": 5,
+      "behavior": "主攻击至少五发散射；适用于爆炸与射线。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r58",
+      "name": "爆香核",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "explosive",
+      "modifier_value": 1,
+      "behavior": "命中或终点触发一次爆香；射线也保留爆炸。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r59",
+      "name": "光墨匣",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "rare",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "beam",
+      "modifier_value": 1,
+      "behavior": "将弹道改为射线，保留散射、爆香、蓄力与追踪。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r60",
+      "name": "弯月钉",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "common",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "pierce",
+      "modifier_value": 2,
+      "behavior": "弹道穿透 +2；射线获得更远射程。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r61",
+      "name": "寻愿蝶",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "homing",
+      "modifier_value": 1,
+      "behavior": "弹道向附近目标追踪；射线朝瞄准扇区内目标修正。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r62",
+      "name": "浮光绳",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "controlled",
+      "modifier_value": 1,
+      "behavior": "飞行弹道跟随瞄准方向；散射保留各自偏角。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r63",
+      "name": "回音折",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "bounce",
+      "modifier_value": 1,
+      "behavior": "增加一次反弹；射线在墙边折返。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r64",
+      "name": "雨花纸",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "uncommon",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "split",
+      "modifier_value": 1,
+      "behavior": "首次落点裂出两片纸锋；子代不再次分裂。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r65",
+      "name": "长明炭",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "rare",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "linger",
+      "modifier_value": 1,
+      "behavior": "爆炸或射线落点留下短暂火场。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    },
+    {
+      "id": "r66",
+      "name": "蓄月珠",
+      "routes": [
+        "ink",
+        "fire"
+      ],
+      "rarity": "rare",
+      "stack_limit": 1,
+      "trigger": "attack_recipe",
+      "modifier": "charge",
+      "modifier_value": 1,
+      "behavior": "主攻击短时蓄力，强化伤害、爆炸和射线宽度。",
+      "min_floor": 1,
+      "max_floor": 11,
+      "proc_policy": {
+        "primary_only": true,
+        "secondary_can_proc": false,
+        "max_generation_depth": 1,
+        "once_per_target_per_pulse": true
+      },
+      "implementation_status": "implemented"
+    }
+  ],
+  "rare_drops": {
+    "normal": 0.008,
+    "elite": 0.025,
+    "boss": 0.08,
+    "room": 0.035,
+    "weights": {
+      "battery": 35,
+      "active": 20,
+      "trinket": 30,
+      "modifier": 15
+    }
+  }
+}

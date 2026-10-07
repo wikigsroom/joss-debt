@@ -1,9 +1,9 @@
 {
 	"checks": [
-		"all six approved identities and sixteen held weapon textures have a rig",
+		"all six approved identities and thirty-two held weapon textures have a rig",
 		"576 actual body/hand frame pairs load for every state and facing",
-		"96 real equipped-weapon attack events select the matching pose without writing combat state",
-		"all 384 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth",
+		"192 real equipped-weapon attack events select the matching pose without writing combat state",
+		"all 768 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth",
 		"four real aim directions update the player's body facing, shot direction and held-tool pose",
 		"an actual choice pause freezes the complete primary attack pose",
 		"a primary attack returns to the neutral equipped idle pose",
@@ -23,7 +23,7 @@
 		"restoring time backward clears a stale primary pose",
 		"360 real combat ticks with presentation enabled preserve damage, positions, drops, ledgers and every RNG stream"
 	],
-	"combinations": 96,
+	"combinations": 192,
 	"failures": [],
 	"frame_pairs": 576,
 	"passed": true,

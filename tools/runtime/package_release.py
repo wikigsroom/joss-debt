@@ -16,7 +16,7 @@ from run_native_qa import CAPTURE_NAMES, INTERACTION_CHECKS
 
 ROOT = Path(__file__).resolve().parents[2]
 ENGINE = ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"
-TAG = "v0.1.0-alpha.1"
+TAG = "v0.2.0-alpha.1"
 
 
 def digest(path):
@@ -79,6 +79,32 @@ def verify_baseline():
 
 
 def native_qa(executable, directory):
+    # Exporting an identical binary does not invalidate actual native tests.
+    # Reuse only evidence bound to these exact bytes, with every check/capture
+    # complete; otherwise run the fresh export through the native fixtures.
+    canonical = ROOT / "build/windows/IncenseDebt.exe"
+    current_sha = digest(executable)
+    reports = ROOT / "docs/incense-debt/reports/platforms/windows"
+    if current_sha == digest(canonical):
+        gui_report = json.loads((reports / "native-render.json").read_text("utf8"))
+        key_report = json.loads((reports / "keyboard/keyboard-flow.json").read_text("utf8"))
+        gear_report = json.loads((reports / "equipment-polish/native.json").read_text("utf8"))
+        exact = all(r.get("artifact_sha256") == current_sha for r in [gui_report, key_report, gear_report])
+        valid = not gui_report.get("asset_failures") and len(gui_report["interaction_checks"]) == 75 and all(c["passed"] for c in gui_report["interaction_checks"])
+        valid = valid and len(gui_report["captures"]) == 90 and all(c["saved"] and c["state_stable"] for c in gui_report["captures"])
+        valid = valid and key_report["passed"] and len(key_report["checks"]) == 107 and all(c["passed"] for c in key_report["checks"]) and all(c["saved"] for c in key_report["captures"])
+        valid = valid and gear_report["passed"] and len(gear_report["checks"]) == 29 and all(c["passed"] for c in gear_report["checks"]) and len(gear_report["captures"]) == 111 and all(c["saved"] and c["state_stable"] for c in gear_report["captures"])
+        valid = valid and gear_report["atlas_frames_loaded"] == 480 and gear_report["stress"]["p95_ms"] < 50
+        expected_assets = len(json.loads((ROOT / "game/data/runtime_assets.json").read_text("utf8"))["assets"])
+        if exact and valid and gui_report["asset_loads"] == expected_assets:
+            print("Release export is byte-identical to the fully tested application; reusing exact-SHA native evidence.", flush=True)
+            return {"passed": True, "windows_exe_sha256": current_sha, "native_interaction_checks": 75, "native_captures": 90,
+                    "native_resource_count": expected_assets, "keyboard_checks": 107, "keyboard_captures": len(key_report["captures"]),
+                    "keyboard_render_cap_fps": 60, "equipment_checks": 29, "equipment_captures": 111,
+                    "generated_equipment_fx_frames": 480, "equipment_stress": gear_report["stress"],
+                    "temporary_native_windows_closed": True, "evidence_reuse": "byte-identical native-tested executable",
+                    "canonical_reports": ["docs/incense-debt/reports/platforms/windows/" + name for name in
+                                          ["native-render.json", "keyboard/keyboard-flow.json", "equipment-polish/native.json"]]}
     base = [str(executable), "--rendering-method", "gl_compatibility",
             "--rendering-driver", "opengl3", "--resolution", "1280x720",
             "--position", "-16000,-16000", "--"]
@@ -103,8 +129,19 @@ def native_qa(executable, directory):
             "--qa-output=" + str(keyboard)], directory / "keyboard.log")
     keys = json.loads((keyboard / "keyboard-flow.json").read_text("utf8"))
     assert keys["passed"] and not keys.get("failures")
-    assert len(keys["checks"]) == 105 and all(row["passed"] for row in keys["checks"])
+    assert len(keys["checks"]) == 107 and all(row["passed"] for row in keys["checks"])
     assert all(row["saved"] for row in keys["captures"])
+    equipment = directory / "equipment"
+    equipment.mkdir(parents=True, exist_ok=True)
+    print("Checking active items, single trinket slot, floor timeline and generated effects...", flush=True)
+    native([base[0], "--max-fps", "60", *base[1:], "--qa-equipment",
+            "--qa-output=" + str(equipment)], directory / "equipment.log")
+    gear = json.loads((equipment / "native.json").read_text("utf8"))
+    assert gear["passed"] and not gear.get("failures")
+    assert len(gear["checks"]) == 29 and all(row["passed"] for row in gear["checks"])
+    assert len(gear["captures"]) == 111 and all(row["saved"] and row["state_stable"] for row in gear["captures"])
+    assert gear["atlas_frames_loaded"] == 480
+    assert gear["stress"]["p95_ms"] < 50.0
     return {"passed": True, "windows_exe_sha256": digest(executable),
             "native_interaction_checks": len(report["interaction_checks"]),
             "native_captures": len(report["captures"]),
@@ -112,6 +149,10 @@ def native_qa(executable, directory):
             "keyboard_checks": len(keys["checks"]),
             "keyboard_captures": len(keys["captures"]),
             "keyboard_render_cap_fps": 60,
+            "equipment_checks": len(gear["checks"]),
+            "equipment_captures": len(gear["captures"]),
+            "generated_equipment_fx_frames": gear["atlas_frames_loaded"],
+            "equipment_stress": gear["stress"],
             "temporary_native_windows_closed": True}
 
 
@@ -179,7 +220,7 @@ def main():
     for name in names:
         path = payload / name
         files.append({"name": name, "bytes": path.stat().st_size, "sha256": digest(path)})
-    manifest = {"tag": TAG, "version": "0.1.0", "prerelease": True,
+    manifest = {"tag": TAG, "version": "0.2.0", "prerelease": True,
                 "repository": "wikigsroom/joss-debt", "engine": "Godot 4.7.2",
                 **provenance, "windows_verification": verification,
                 "android": {"build": "debug", "signature_verified": True, "physical_device_tested": False},

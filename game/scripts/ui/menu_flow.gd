@@ -125,9 +125,9 @@ static func stats(app) -> void:
 
 static func collection(app, bestiary: bool) -> void:
 	var sheet = shell(app, "怪物图鉴" if bestiary else "物品图鉴")
-	var kinds = ["enemies", "bosses"] if bestiary else ["relics", "weapons"]
+	var kinds = ["enemies", "bosses"] if bestiary else ["relics", "weapons", "active_items", "trinkets"]
 	if not kinds.has(app.collection_kind): app.collection_kind = kinds[0]
-	var names = {"enemies": "恶愿", "bosses": "首领", "relics": "供物", "weapons": "器具"}
+	var names = {"enemies": "恶愿", "bosses": "首领", "relics": "供物", "weapons": "器具", "active_items": "主动", "trinkets": "饰品"}
 	for i in kinds.size():
 		var kind = kinds[i]
 		var tab = app.icon_button(sheet, names[kind], "sword" if bestiary else "sparkles", Rect2(38 + i * 204, 103, 188, 56 if not app.mobile_ui else 72), func(): app.collection_kind = kind; app.collection_id = ""; app.show_menu(app.menu_page), false, names[kind])

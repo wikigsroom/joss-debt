@@ -6,7 +6,7 @@ var dragged = ""
 var active_finger = -1
 var status: Label
 var selected = "move"
-const LABELS = {"move": "移动", "aim": "瞄准", "dash": "身法", "skill": "焚债"}
+const LABELS = {"move": "移动", "aim": "瞄准", "dash": "身法", "skill": "焚债", "active_item": "道具"}
 
 func _draw() -> void:
 	if adapter == null: return

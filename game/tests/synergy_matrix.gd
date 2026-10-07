@@ -474,6 +474,38 @@ func standalone_r54() -> Dictionary:
 	return {"ok": repaid and w.run.contracts.is_empty() and w.run.repayments.has("d01") and w.run.repay_effects == 1 and w.run.repay_skill_refunds == 1 and w.run.repay_reward_pending == 1,
 		"evidence": ["real debt repayment", "skill refund", "repayment relic offer token"]}
 
+func standalone_modifier(id: String) -> Dictionary:
+	var w = sandbox([id])
+	w.geometry.restore_objects([])
+	var enemy = dummy(w, Vector2(640, 445))
+	var neighbor = dummy(w, Vector2(690, 445))
+	if id == "r60": neighbor.pos = Vector2(640, 390)
+	if id == "r61": enemy.pos = Vector2(705, 410)
+	if id == "r63":
+		w.enemies.clear(); w.player.pos = Vector2(100, 300); w.player.aim = Vector2.LEFT
+	if id == "r66":
+		w.shoot_input(true, .2)
+		var charging = w.bullets.is_empty() and w.player.charge > 0
+		w.shoot_input(true, .2)
+		return {"ok": charging and w.bullets.size() == 1 and w.bullets[0].damage > w.db.row("weapons", "w01").damage, "evidence": ["real charge preparation", "charged damage after release"]}
+	fire_once(w)
+	if id in ["r55", "r56", "r57"]:
+		var count = {"r55": 3, "r56": 4, "r57": 5}[id]
+		return {"ok": w.bullets.size() == count and w.bullets[0].dir != w.bullets[-1].dir, "evidence": ["real scattered primary projectiles"]}
+	if id == "r59": return {"ok": enemy.hp < 5000 and w.events.any(func(e): return e.kind == "ray") and w.bullets.is_empty(), "evidence": ["actual beam carrier conversion and damage"]}
+	if id == "r62":
+		w.player.aim = Vector2.RIGHT; w.update_bullets(.12)
+		return {"ok": not w.bullets.is_empty() and w.bullets[0].dir.x > 0, "evidence": ["live steering changes actual trajectory"]}
+	if id == "r63":
+		w.update_bullets(.12)
+		return {"ok": not w.bullets.is_empty() and w.bullets[0].bounces == 1 and w.bullets[0].dir.x > 0, "evidence": ["actual radius-aware wall bounce"]}
+	for i in 24:
+		w.time += 1.0 / 60; w.update_bullets(1.0 / 60)
+		if id == "r61" and not w.bullets.is_empty() and w.bullets[0].dir.x > .02: return {"ok": true, "evidence": ["off-axis target bends projectile toward itself"]}
+		if id == "r64" and w.bullets.any(func(b): return b.has("recipe") and b.recipe.depth == 1 and not b.primary): return {"ok": true, "evidence": ["real primary contact spawns bounded secondary fragments"]}
+	var ok = (enemy.hp < 5000 and neighbor.hp < 5000) if id in ["r58", "r60"] else (enemy.hp < 5000 and not w.zones.is_empty())
+	return {"ok": ok, "evidence": ["actual hit payload", "neighbor damage" if id == "r58" else ("second pierced target" if id == "r60" else "persistent ground field")]}
+
 func run_standalone(id: String) -> Dictionary:
 	match id:
 		"r08": return standalone_r08()
@@ -483,6 +515,7 @@ func run_standalone(id: String) -> Dictionary:
 		"r40": return standalone_r40()
 		"r48": return standalone_r48()
 		"r54": return standalone_r54()
+	if int(id.trim_prefix("r")) >= 55: return standalone_modifier(id)
 	return {"ok": false, "evidence": []}
 
 func run_combo(id: String) -> Dictionary:
@@ -539,14 +572,14 @@ func run_suite() -> void:
 	for row in probe.db.rows("relics"):
 		if not combo_relic_ids.has(row.id): standalone_ids.append(str(row.id))
 	standalone_ids.sort()
-	expect(standalone_ids == ["r08", "r16", "r24", "r32", "r40", "r48", "r54"], "the seven non-combination relic hooks remain explicitly addressable")
+	expect(standalone_ids == ["r08", "r16", "r24", "r32", "r40", "r48", "r54", "r55", "r56", "r57", "r58", "r59", "r60", "r61", "r62", "r63", "r64", "r65", "r66"], "the nineteen non-combination relic hooks remain explicitly addressable")
 	for id in standalone_ids:
 		var result = run_standalone(id)
 		standalone_cases.append({"id": id, "evidence": result.evidence, "passed": result.ok})
 		expect(result.ok, "%s executes its standalone authored relic path" % id)
 	var file = FileAccess.open(ProjectSettings.globalize_path("res://../docs/incense-debt/reports/runtime/synergy-matrix-tests.json"), FileAccess.WRITE)
 	file.store_string(JSON.stringify({"passed": failures.is_empty(), "checks": checks, "failures": failures,
-		"cases": cases, "standalone": standalone_cases, "count": checks.size(), "scope": "twenty-four authored combinations plus seven standalone relic hooks through real primary, detonation, ash, dash, parry, clear, repayment and delayed replay paths; no hidden set bonus"}, "\t"))
+		"cases": cases, "standalone": standalone_cases, "count": checks.size(), "scope": "twenty-four authored combinations plus nineteen standalone relic hooks through real primary, detonation, ash, dash, parry, clear, repayment and delayed replay paths; no hidden set bonus"}, "\t"))
 	file.close()
 	print("Synergy matrix: %d checks; %d failures" % [checks.size(), failures.size()])
 	quit(0 if failures.is_empty() else 1)

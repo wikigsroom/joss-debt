@@ -83,6 +83,11 @@ def main():
         build_variant = "release"
         report_name = "windows-build.json"
         log_name = "windows-export.log"
+    # Export to a fresh file: an existing Android APK can retain old ZIP data
+    # even when the native exporter exits successfully. Preserve one previous
+    # generated package for recovery; verification still checks the new output.
+    if args.platform == "android" and output.exists():
+        output.replace(output.with_name(output.stem + "-previous" + output.suffix))
     commands = [[str(ENGINE), "--headless", "--editor", "--path", str(ROOT / "game"), "--import", "--quit"],
                 [str(ENGINE), "--headless", "--path", str(ROOT / "game"),
                  export_flag, "Windows Desktop" if args.platform == "windows" else "Android", str(output)]]

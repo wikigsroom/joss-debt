@@ -1,0 +1,180 @@
+[
+  {
+    "id": "active_items",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\active_items.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\active_items.png",
+    "kind": "equipment"
+  },
+  {
+    "id": "trinkets",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\trinkets.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\trinkets.png",
+    "kind": "equipment"
+  },
+  {
+    "id": "modifiers",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\modifiers.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\modifiers.png",
+    "kind": "equipment"
+  },
+  {
+    "id": "ember-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\ember-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\ember-beams.png",
+    "kind": "fx",
+    "family": "ember",
+    "group": "beams"
+  },
+  {
+    "id": "ember-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\ember-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\ember-areas.png",
+    "kind": "fx",
+    "family": "ember",
+    "group": "areas"
+  },
+  {
+    "id": "ink-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\ink-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\ink-beams.png",
+    "kind": "fx",
+    "family": "ink",
+    "group": "beams"
+  },
+  {
+    "id": "ink-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\ink-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\ink-areas.png",
+    "kind": "fx",
+    "family": "ink",
+    "group": "areas"
+  },
+  {
+    "id": "thread-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\thread-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\thread-beams.png",
+    "kind": "fx",
+    "family": "thread",
+    "group": "beams"
+  },
+  {
+    "id": "thread-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\thread-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\thread-areas.png",
+    "kind": "fx",
+    "family": "thread",
+    "group": "areas"
+  },
+  {
+    "id": "prism-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\prism-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prism-beams.png",
+    "kind": "fx",
+    "family": "prism",
+    "group": "beams"
+  },
+  {
+    "id": "prism-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\prism-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prism-areas.png",
+    "kind": "fx",
+    "family": "prism",
+    "group": "areas"
+  },
+  {
+    "id": "lotus-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\lotus-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\lotus-beams.png",
+    "kind": "fx",
+    "family": "lotus",
+    "group": "beams"
+  },
+  {
+    "id": "lotus-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\lotus-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\lotus-areas.png",
+    "kind": "fx",
+    "family": "lotus",
+    "group": "areas"
+  },
+  {
+    "id": "smoke-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\smoke-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\smoke-beams.png",
+    "kind": "fx",
+    "family": "smoke",
+    "group": "beams"
+  },
+  {
+    "id": "smoke-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\smoke-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\smoke-areas.png",
+    "kind": "fx",
+    "family": "smoke",
+    "group": "areas"
+  },
+  {
+    "id": "frost-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\frost-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\frost-beams.png",
+    "kind": "fx",
+    "family": "frost",
+    "group": "beams"
+  },
+  {
+    "id": "frost-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\frost-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\frost-areas.png",
+    "kind": "fx",
+    "family": "frost",
+    "group": "areas"
+  },
+  {
+    "id": "storm-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\storm-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\storm-beams.png",
+    "kind": "fx",
+    "family": "storm",
+    "group": "beams"
+  },
+  {
+    "id": "storm-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\storm-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\storm-areas.png",
+    "kind": "fx",
+    "family": "storm",
+    "group": "areas"
+  },
+  {
+    "id": "void-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\void-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\void-beams.png",
+    "kind": "fx",
+    "family": "void",
+    "group": "beams"
+  },
+  {
+    "id": "void-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\void-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\void-areas.png",
+    "kind": "fx",
+    "family": "void",
+    "group": "areas"
+  },
+  {
+    "id": "brass-beams",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\brass-beams.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\brass-beams.png",
+    "kind": "fx",
+    "family": "brass",
+    "group": "beams"
+  },
+  {
+    "id": "brass-areas",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\prompts\\brass-areas.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\incense-debt\\equipment-polish\\brass-areas.png",
+    "kind": "fx",
+    "family": "brass",
+    "group": "areas"
+  }
+]

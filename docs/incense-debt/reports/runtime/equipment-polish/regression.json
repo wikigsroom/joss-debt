@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "weapon_and_special_rooms",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.88
+    },
+    {
+      "suite": "advanced_input",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.86
+    },
+    {
+      "suite": "impact_and_resume",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 2.31
+    },
+    {
+      "suite": "save_transfer",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 2.48
+    },
+    {
+      "suite": "run_history",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 11.63
+    },
+    {
+      "suite": "platform_contract",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.77
+    },
+    {
+      "suite": "campaign_rules",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.37
+    },
+    {
+      "suite": "expanded_content",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 8.57
+    },
+    {
+      "suite": "achievements",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.85
+    },
+    {
+      "suite": "input_and_run",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.81
+    },
+    {
+      "suite": "shop_trial",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 4.02
+    },
+    {
+      "suite": "exploration_encounters",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.03
+    },
+    {
+      "suite": "optional_runs",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 67.8
+    },
+    {
+      "suite": "daily_run",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.77
+    },
+    {
+      "suite": "route_navigation",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.84
+    },
+    {
+      "suite": "smoke_core",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.02
+    },
+    {
+      "suite": "choice_history",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.84
+    },
+    {
+      "suite": "weapon_motion",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 6.46
+    },
+    {
+      "suite": "synergy_matrix",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.56
+    },
+    {
+      "suite": "combat_revision",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 17.12
+    },
+    {
+      "suite": "equipment_polish",
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 18.99
+    }
+  ]
+}

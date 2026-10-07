@@ -32,72 +32,72 @@
       "name": "exploration",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 2.016,
-      "rms": 0.00857130632292667,
+      "seconds": 2.00533333333333,
+      "rms": 0.008578460102500695,
       "peak": 0.032623291015625,
       "channels": 2,
-      "frames": 96768,
-      "sha256": "def0360515fc0faafc97347e7d56695c548ffc4aea1125db0d1a56ba2ad3bad6"
+      "frames": 96256,
+      "sha256": "6209630a1a0417f45bc992135e125a09ffeced272d0633818460a7b3140fa9cf"
     },
     {
       "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows\\audio/combat.wav",
       "name": "combat",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 2.00533333333333,
-      "rms": 0.008650541772018917,
+      "seconds": 2.016,
+      "rms": 0.008629320085379364,
       "peak": 0.038543701171875,
       "channels": 2,
-      "frames": 96256,
-      "sha256": "bfce42dba535731869809f5d4804bf088ad7a5f9741fe70fa0831541d9bd0098"
+      "frames": 96768,
+      "sha256": "1bed4bbd1250463332cb996a3b134bd26afbff79debc1e8b7e56ec89bbcaba51"
     },
     {
       "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows\\audio/tension.wav",
       "name": "tension",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 1.99466666666667,
-      "rms": 0.008899432350543603,
+      "seconds": 2.00533333333333,
+      "rms": 0.008876863997852834,
       "peak": 0.04266357421875,
       "channels": 2,
-      "frames": 95744,
-      "sha256": "298e8059457c8be2d72f4ab978d639a17d14b0a0eccbe1a4dd79d922e3aee28d"
+      "frames": 96256,
+      "sha256": "e227d3520724a28d0159435ab1c08bd2d6beecea2bca27f34b34e9ab06fce8eb"
     },
     {
       "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows\\audio/menu-pause.wav",
       "name": "menu-pause",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 1.99466666666667,
-      "rms": 0.002749086858876659,
+      "seconds": 1.984,
+      "rms": 0.0027514696304206067,
       "peak": 0.01043701171875,
       "channels": 2,
-      "frames": 95744,
-      "sha256": "0009ab6d09e1b50d3030453aee6ebcdabb8969f08526f3fd6e5d41ca5c684ef6"
+      "frames": 95232,
+      "sha256": "eb94d40ee9feb7c2cb3f37d62fca97f4bdda65a79667cb24f6fb1fcac9bb0ae0"
     },
     {
       "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows\\audio/loop-seam.wav",
       "name": "loop-seam",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 1.20533333333333,
-      "rms": 0.012351202574279718,
+      "seconds": 1.19466666666667,
+      "rms": 0.012382272286697886,
       "peak": 0.051483154296875,
       "channels": 2,
-      "frames": 57856,
-      "sha256": "f1603dfee42bdfb452784fdd55a848d654c8719bd39e16b07d273f1147457cc5"
+      "frames": 57344,
+      "sha256": "07c6ac6c6c9b77987f96fd181ada9fffd69057bfbc75bd7bba26ee2d428be1c0"
     },
     {
       "file": "E:\\dev\\vibe-game\\以撒类\\docs\\incense-debt\\reports\\platforms\\windows\\audio/muted.wav",
       "name": "muted",
       "sample_rate": 48000,
       "saved": true,
-      "seconds": 0.992,
+      "seconds": 1.00266666666667,
       "rms": 0.0,
       "peak": 0.0,
       "channels": 2,
-      "frames": 47616,
-      "sha256": "ce2d5a1158d2bfd6e9dc1fb1fc4706dcb972d0e72ef49cb693a91488ffb5f10d"
+      "frames": 48128,
+      "sha256": "9d7758eb937130b288a0897532267a700a5921ad99c7b174384aec124641bdf7"
     }
   ],
   "scope": "native Windows audio mixer with authored stems plus filtered CC0 room-air texture; comparison clips seek the same source interval; no microphone, physical phone or human listening claim",
@@ -105,7 +105,7 @@
     {
       "audio": {
         "bar": 11,
-        "beat": 47.8924842268252,
+        "beat": 47.9026686040388,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -116,7 +116,7 @@
           0.22
         ],
         "paused": false,
-        "position": 32.6586685180664,
+        "position": 32.6800003051758,
         "requested_tier": 0,
         "score_transitions": 2,
         "suspended": false,
@@ -128,7 +128,7 @@
     {
       "audio": {
         "bar": 43,
-        "beat": 175.887585404603,
+        "beat": 175.90681911515,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -139,7 +139,7 @@
           0.22
         ],
         "paused": false,
-        "position": 32.6586685180664,
+        "position": 32.6800003051758,
         "requested_tier": 1,
         "score_transitions": 2,
         "suspended": false,
@@ -151,7 +151,7 @@
     {
       "audio": {
         "bar": 75,
-        "beat": 303.881113276945,
+        "beat": 303.898137915714,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -174,7 +174,7 @@
     {
       "audio": {
         "bar": 107,
-        "beat": 431.865175010842,
+        "beat": 431.869865254722,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -197,7 +197,7 @@
     {
       "audio": {
         "bar": 32,
-        "beat": 129.385483366764,
+        "beat": 129.369401853089,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -208,7 +208,7 @@
           0.22
         ],
         "paused": false,
-        "position": 0.957312524318695,
+        "position": 0.946645855903625,
         "requested_tier": 0,
         "score_transitions": 4,
         "suspended": false,
@@ -220,7 +220,7 @@
     {
       "audio": {
         "bar": 32,
-        "beat": 131.135770723573,
+        "beat": 131.139783523573,
         "context": "region_1",
         "gap": false,
         "layer_gains": [
@@ -243,85 +243,85 @@
   ],
   "stem_measurements": {
     "exploration": {
-      "source_start_seconds": 30.638625,
+      "source_start_seconds": 30.649291666666667,
       "weights": [
-        0.3635218429634125,
-        4.246133781424244e-05,
-        8.122023026115553e-05,
-        1.9693128266767693e-05,
-        0.07989869068806454
+        0.36352247056862275,
+        4.259802470162055e-05,
+        8.100943448642595e-05,
+        1.9688824482960927e-05,
+        0.07989850052150357
       ],
       "relative_weights": [
         1.0,
-        0.00011680546475034256,
-        0.00022342599718094556,
-        5.417316358827372e-05,
-        0.21979061845839656
+        0.0001171812697987792,
+        0.00022284574144676886,
+        5.416123094719184e-05,
+        0.2197897158778827
       ],
-      "residual_rms_fraction": 0.0015356487143591761,
-      "reference_condition": 4.712147175436912,
+      "residual_rms_fraction": 0.0015349651124288253,
+      "reference_condition": 4.705772707326876,
       "method": "sample-aligned least-squares fit of four authored score stems plus filtered room-air texture to real native PCM"
     },
     "combat": {
       "source_start_seconds": 30.649291666666667,
       "weights": [
-        0.36352603908836134,
-        0.21089849335688066,
-        6.53668279599548e-05,
-        0.10902747023683018,
-        0.07989595060857305
+        0.3635257607087336,
+        0.2108983530289409,
+        6.523268362730594e-05,
+        0.10902746789928695,
+        0.07989308692973937
       ],
       "relative_weights": [
         1.0,
-        0.5801468689444227,
-        0.00017981333090713277,
-        0.29991653558090553,
-        0.2197805439437942
+        0.5801469271882446,
+        0.00017944445945213794,
+        0.2999167588198588,
+        0.21977283473385484
       ],
-      "residual_rms_fraction": 0.0015299346177196763,
-      "reference_condition": 4.705772707326876,
+      "residual_rms_fraction": 0.0015347314150659654,
+      "reference_condition": 4.706482634880375,
       "method": "sample-aligned least-squares fit of four authored score stems plus filtered room-air texture to real native PCM"
     },
     "tension": {
       "source_start_seconds": 30.649291666666667,
       "weights": [
-        0.3635435824621068,
-        0.21086980093814955,
-        0.16358419094495572,
-        0.10902459259673306,
-        0.07992045221143307
+        0.3635432878504467,
+        0.21086966328664714,
+        0.16358407965676114,
+        0.10902459051341092,
+        0.07991767009113296
       ],
       "relative_weights": [
         1.0,
-        0.5800399487457027,
-        0.4499713344878164,
-        0.29989414710159823,
-        0.21983733468810004
+        0.5800400401654343,
+        0.44997139301896794,
+        0.29989438440206084,
+        0.21982986005234467
       ],
-      "residual_rms_fraction": 0.0014887920679199367,
-      "reference_condition": 4.705343754249905,
+      "residual_rms_fraction": 0.0014942526609530691,
+      "reference_condition": 4.705772707326876,
       "method": "sample-aligned least-squares fit of four authored score stems plus filtered room-air texture to real native PCM"
     },
     "menu-pause": {
-      "source_start_seconds": 30.638625,
+      "source_start_seconds": 30.649291666666667,
       "weights": [
-        0.11600305771712523,
-        2.1877158530379803e-05,
-        6.358741285288376e-05,
-        -1.2131222395695578e-07,
-        0.025449197309749483
+        0.1160036430184747,
+        2.2008205903575884e-05,
+        6.337543665812942e-05,
+        -1.2531055554739986e-07,
+        0.025449067763804418
       ],
       "relative_weights": [
         1.0,
-        0.00018859122303247817,
-        0.0005481529030721102,
-        -1.0457674680677558e-06,
-        0.21938384910342312
+        0.00018971995474375633,
+        0.0005463228137416018,
+        -1.0802294849261152e-06,
+        0.219381625452499
       ],
-      "residual_rms_fraction": 0.004766912126016929,
-      "reference_condition": 4.711311964430553,
+      "residual_rms_fraction": 0.004764948876378473,
+      "reference_condition": 4.704920980600091,
       "method": "sample-aligned least-squares fit of four authored score stems plus filtered room-air texture to real native PCM"
     }
   },
-  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
 }

@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-07T09:20:15.209639+00:00",
+  "recorded_at": "2026-10-07T15:27:26.252171+00:00",
   "passed": true,
   "checks": [
     {
@@ -16819,5 +16819,5 @@
   ],
   "environment_review": "All 20 native theme pairs visually inspected for colour, floor material, silhouette and playfield legibility; mean RGB is descriptive data, not proof of aesthetic quality.",
   "scope": "all generated sources/crops, distinct baked pose frames and equipment rigs; native interaction and full combat evidence are separate reports",
-  "artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
 }

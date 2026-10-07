@@ -4,6 +4,8 @@ const PaperMotion = preload("res://scripts/ui/paper_animation.gd")
 const WeaponMotion = preload("res://scripts/ui/weapon_motion.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const ExpandedVisuals = preload("res://scripts/ui/expanded_visuals.gd")
+const PolishedFX = preload("res://scripts/ui/polished_fx.gd")
+const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
 const Geometry = preload("res://scripts/combat/room_geometry.gd")
 var animation = PaperMotion.new()
 var weapon_motion = WeaponMotion.new()
@@ -24,6 +26,10 @@ var shake_scale = 1.0
 var hitstop = true
 var flash_scale = 1.0
 var particle_scale = 1.0
+var fx_budget = 900
+var fx_safe_draw = false
+var last_draw_us = 0
+var projectile_meshes: Dictionary = {}
 var effect_limit = 120
 var shape_cues = false
 var combat_text_scale = 1.0
@@ -79,13 +85,16 @@ func accept(events: Array) -> void:
 		if event.kind == "player_hurt" and event.get("hp", 1) <= 0: player_death_clock = clock
 		if hitstop and event.kind == "hit" and (event.get("heavy", false) or event.get("crit", false)):
 			actor_freeze[event.uid] = {"until": clock + (.035 if event.get("heavy", false) else .020), "time": world.time, "pos": event.pos}
-		if event.kind in ["shot", "ray", "hit", "impact", "burst", "death", "dash", "slash", "pickup", "deflect", "skill", "scenery_explosion", "scenery_break"]:
+		if event.kind in ["shot", "ray", "hit", "impact", "burst", "death", "dash", "slash", "pickup", "deflect", "skill", "scenery_explosion", "scenery_break", "active_item", "equipment_taken", "loot_spawn"]:
 			var effect = event.duplicate()
 			effect["left"] = 0.88 if event.kind == "death" else (0.62 if event.kind == "ray" else (0.58 if event.kind == "skill" else (0.34 if event.kind == "impact" else (0.24 if event.kind == "shot" else (0.42 if event.kind != "hit" else 0.6)))))
 			effect["total"] = effect.left
 			if event.kind in ["burst","scenery_explosion","scenery_break"]:
 				effect.left = .72
 				effect.total = .72
+			if event.kind in ["active_item", "equipment_taken", "loot_spawn"]:
+				effect.left = .65
+				effect.total = .65
 			visual_effects.append(effect)
 		if event.kind == "skill":
 			shake = 4.0
@@ -111,6 +120,8 @@ func _process(delta: float) -> void:
 	queue_redraw()
 
 func _draw() -> void:
+	var draw_started = Time.get_ticks_usec()
+	fx_budget = roundi(900 * particle_scale)
 	draw_floor()
 	if hub: return
 	draw_set_transform_matrix(stage)
@@ -122,6 +133,7 @@ func _draw() -> void:
 	ExpandedVisuals.ambient(self)
 	ExpandedVisuals.scenery(self)
 	for zone in world.zones:
+		if PolishedFX.zone(self, zone): continue
 		if not textures.has("res://assets/fx/expansion/animation/beam_prism.png"): ExpandedVisuals.texture(self, "res://assets/fx/expansion/animation/beam_prism.png")
 		if textures.has("res://assets/fx/expansion/animation/beam_prism.png"):
 			ExpandedVisuals.zone(self, zone)
@@ -180,6 +192,9 @@ func _draw() -> void:
 				draw_circle(point, 3, Color("ffe0a0"))
 	for pickup in world.pickups:
 		var p = pickup.pos + Vector2(0, sin(clock * 5 + pickup.uid) * 3 - 6)
+		if pickup.kind in world.Equipment.MANUAL_KINDS:
+			draw_equipment_pickup(pickup, p)
+			continue
 		match pickup.kind:
 			"ash":
 				draw_circle(p, 9, Color(INK, 0.9))
@@ -206,6 +221,7 @@ func _draw() -> void:
 	for effect in visual_effects:
 		if effect.kind not in ["ray","burst","scenery_explosion"]: draw_effect(effect)
 	for bullet in world.bullets:
+		if PolishedFX.projectile(self, bullet): continue
 		if ExpandedVisuals.projectile(self, bullet): continue
 		var p = bullet.pos - Vector2(0, 14)
 		if bullet.friendly:
@@ -259,6 +275,21 @@ func _draw() -> void:
 	if adapter != null and adapter.touch_mode and combat_interface_visible:
 		draw_set_transform_matrix(Transform2D.IDENTITY)
 		draw_touch_controls()
+	last_draw_us = Time.get_ticks_usec() - draw_started
+
+func draw_equipment_pickup(drop: Dictionary, point: Vector2) -> void:
+	var tint = UI.JADE if drop.kind == "trinket" else (UI.ACCENT if drop.kind == "active" else UI.GOLD)
+	PolishedFX.Clip.disk(self, drop.pos, 22, Color("101b25", .82))
+	PolishedFX.Clip.arc(self, drop.pos, 23, 0, TAU, 32, Color(tint, .78), 2)
+	if drop.kind == "battery":
+		PolishedFX.Clip.sprite(self, UI.icon("zap"), point, Vector2(28, 34), 0, tint)
+	else:
+		var path = EquipmentUI.art(drop.kind, str(drop.id))
+		if not textures.has(path): textures[path] = load(path)
+		PolishedFX.Clip.sprite(self, textures[path], point - Vector2(0, 15), Vector2(50, 59))
+	if not reduce_motion and PolishedFX.spend(self):
+		var orbit = drop.pos + Vector2.RIGHT.rotated(clock * .6 + drop.uid) * 24
+		PolishedFX.Clip.disk(self, orbit, 2.1, tint)
 
 func draw_secret_entry() -> void:
 	var entry = world.secret_entry()
@@ -542,8 +573,11 @@ func to_world(canvas_position: Vector2) -> Vector2:
 func draw_effect(effect: Dictionary) -> void:
 	var progress = 1.0 - effect.left / effect.total
 	var color = Color(FIRE, 1.0 - progress)
-	if effect.kind == "ray" and ExpandedVisuals.beam(self, effect, progress): return
-	if effect.kind in ["burst", "scenery_explosion", "scenery_break"] and ExpandedVisuals.burst(self, effect, progress): return
+	if effect.kind == "ray" and PolishedFX.beam(self, effect, progress): return
+	if effect.kind in ["burst", "scenery_explosion", "scenery_break"] and PolishedFX.burst(self, effect, progress): return
+	if effect.kind in ["active_item", "equipment_taken", "loot_spawn"]:
+		PolishedFX.equipment_event(self, effect, progress)
+		return
 	match effect.kind:
 		"shot":
 			var direction = Vector2(effect.get("dir", Vector2.UP)).normalized()
@@ -704,18 +738,27 @@ func draw_touch_controls() -> void:
 		draw_circle(center, radius, Color(INK, .35 * opacity))
 		draw_arc(center, radius, 0, TAU, 40, Color(PAPER, .5 * opacity), 2, true)
 	draw_circle(left + adapter.move_touch * 50 * adapter.control_scale, 25 * adapter.control_scale, Color(PAPER, .45 * opacity))
-	if clearing: return
-	draw_circle(right + adapter.aim_touch * 50 * adapter.control_scale, 25 * adapter.control_scale, Color(FIRE, .45 * opacity))
-	for entry in [[adapter.dash_center(), "dash", world.player.dash_cd], [adapter.skill_center(), "skill", world.player.skill_cd]]:
+	if not clearing: draw_circle(right + adapter.aim_touch * 50 * adapter.control_scale, 25 * adapter.control_scale, Color(FIRE, .45 * opacity))
+	var entries = [[adapter.control_center("active_item"), "active_item", world.player.item_cd]]
+	if not clearing: entries.append_array([[adapter.dash_center(), "dash", world.player.dash_cd], [adapter.skill_center(), "skill", world.player.skill_cd]])
+	for entry in entries:
 		var center = Vector2(entry[0])
-		var action_radius = adapter.control_radius("dash")
+		var action_radius = adapter.control_radius(str(entry[1]))
 		draw_circle(center, action_radius, Color(UI.INSET, .92 * opacity))
-		draw_arc(center, action_radius - 3, 0, TAU, 40, Color(UI.JADE, opacity if entry[2] <= 0 else .3 * opacity), 3, true)
+		var ready = entry[2] <= 0
+		var active = world.Equipment.active_row(world)
+		if entry[1] == "active_item": ready = ready and not active.is_empty() and world.run.active_item.charge >= active.charge_rooms
+		draw_arc(center, action_radius - 3, 0, TAU, 40, Color(UI.JADE, opacity if ready else .3 * opacity), 3, true)
 		if entry[1] == "dash":
 			draw_texture_rect(UI.icon("wind"), Rect2(center - Vector2.ONE * 17, Vector2.ONE * 34), false, Color(UI.TEXT, opacity))
 		else:
-			var id = str(world.player.skill)
-			if not textures.has(id): textures[id] = load("res://assets/skills/" + id + ".png")
-			draw_texture_rect(textures[id], Rect2(center - Vector2.ONE * 25, Vector2.ONE * 50), false, Color(1, 1, 1, opacity))
+			var id = str(world.player.skill) if entry[1] == "skill" else str(world.run.active_item.id)
+			var path = "res://assets/skills/" + id + ".png" if entry[1] == "skill" else "res://assets/active_items/" + id + ".png"
+			if not id.is_empty():
+				if not textures.has(path): textures[path] = load(path)
+				draw_texture_rect(textures[path], Rect2(center - Vector2.ONE * 25, Vector2.ONE * 50), false, Color(1, 1, 1, opacity))
+			if entry[1] == "active_item" and not active.is_empty():
+				var fraction = clampf(float(world.run.active_item.charge) / float(active.charge_rooms), 0, 1)
+				draw_arc(center, action_radius - 7, -PI * .5, -PI * .5 + TAU * fraction, 40, Color(UI.ACCENT, opacity), 3, true)
 		if entry[2] > 0:
 			draw_string(font, center + Vector2(-13, 30), "%.1f" % entry[2], HORIZONTAL_ALIGNMENT_LEFT, -1, 15, GOLD)

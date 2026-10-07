@@ -10,6 +10,16 @@ var failures: Array = []
 func _initialize() -> void: call_deferred("suite")
 
 func travel(w) -> Dictionary:
+	var equipment = w.pickups.filter(func(drop):
+		if drop.kind == "battery": return w.run.active_item.charge < w.Equipment.active_row(w).charge_rooms
+		if drop.kind == "trinket": return not w.run.equipment_seen.trinkets.has(drop.id)
+		if drop.kind == "active": return not w.run.equipment_seen.active_items.has(drop.id)
+		if drop.kind == "relic": return w.stack(drop.id) == 0 and not w.run.growth_log.any(func(entry): return entry.type == "relic" and entry.id == drop.id)
+		return false)
+	if not equipment.is_empty():
+		var drop = equipment[0]
+		w.geometry.rebuild_flow(drop.pos)
+		return {"move": w.geometry.toward(w.player.pos, drop.pos) if w.player.pos.distance_to(drop.pos) > 48 else Vector2.ZERO, "interact": w.player.pos.distance_to(drop.pos) <= 64}
 	if w.player.hp < w.player.max_hp:
 		for pickup in w.pickups:
 			if pickup.kind == "heal":
@@ -97,6 +107,9 @@ func suite() -> void:
 				if w.mode=="clear" or tick_id % 2 == 0 or input_mode != w.mode:
 					held_input = travel(w) if w.mode == "clear" else Bot.frame(w)
 					input_mode = w.mode
+				if w.mode == "combat" and w.Equipment.use_reason(w).is_empty() and (w.enemies.size() >= 3 or w.enemies.any(func(e): return e.boss)):
+					held_input.active_item = true
+				else: held_input.active_item = false
 				w.tick(held_input)
 			if int(w.run.room) != before_room and int(w.run.floor) == before_floor: doors_crossed += 1
 			for event in w.take_events():
@@ -117,6 +130,6 @@ func suite() -> void:
 		if w.run.result not in ["victory", "defeat"]: failures.append("stalled " + character)
 	if not reports.any(func(row): return row.result == "victory" and row.bosses.has("b36") and row.bosses.has("b37") and row.transitions.size() == 10 and row.epilogue_seen): failures.append("no complete unmodified eleven-floor victory")
 	FileAccess.open(ProjectSettings.globalize_path("res://../docs/incense-debt/reports/runtime/expanded-full-run"+report_suffix+".json"), FileAccess.WRITE).store_string(JSON.stringify({"passed": failures.is_empty(), "runs": reports, "failures": failures,
-		"method": "initial unlock pool, unchanged player health/damage/energy, 60 Hz combat and 30 Hz held action decisions for adaptive fine navigation, physical door walking on the main route, mandatory double-boss floors 7–10, ten checkpoint save/restores; maximum 480000 ticks per attempt with a 60-second no-progress diagnostic cutoff",
+		"method": "initial unlock pool, unchanged player health/damage/energy, 60 Hz combat and 30 Hz held action decisions for adaptive fine navigation, physical door walking and once-per-discovery equipment pickup on the main route, charged active-item use in combat, mandatory double-boss floors 7–10, ten checkpoint save/restores; maximum 480000 ticks per attempt with a 60-second no-progress diagnostic cutoff",
 		"limitations": ["Action bot does not establish human feel or real-time device performance", "Native cinematic/keyboard checks are recorded separately"]}, "\t"))
 	quit(0 if failures.is_empty() else 1)

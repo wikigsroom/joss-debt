@@ -3,7 +3,9 @@
 		true,
 		true
 	],
-	"android_artifact_sha256": "1848dd0a5915b2bd4129335f1b81b547a4dd530ecdfcb3e12eed8e86b95a7287",
+	"android_artifact_sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b",
+	"compiled_script_count": 69,
+	"compiled_script_mismatches": [],
 	"identical_compiled_geometry": true,
 	"passed": true,
 	"scope": "Windows embedded PCK and Android compiled geometry executed on the desktop engine; this is not an Android device test",
@@ -11,6 +13,6 @@
 		true,
 		true
 	],
-	"windows_artifact_sha256": "7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85",
-	"windows_geometry_sha256": "b310788f316f09067254236b25cb6d41f9b198201cfd64959fd0dd156851a077"
+	"windows_artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+	"windows_geometry_sha256": "034b3f5b62cf061559c45ba14b206530976713e06ea00910f72585ee6693b872"
 }

@@ -19,6 +19,10 @@ OUT = ROOT / "docs/incense-debt/reports/platforms/platform-parity.json"
 REPORTS = ROOT / "docs/incense-debt/reports/platforms"
 
 CORE_FILES = {
+    "game/data/equipment.json": "assets/data/equipment.json",
+    "game/data/projectile_profiles.json": "assets/data/projectile_profiles.json",
+    "game/data/fx_presets.json": "assets/data/fx_presets.json",
+    "game/assets/fx/equipment-polish/manifest.json": "assets/assets/fx/equipment-polish/manifest.json",
     "game/data/arena_boundaries.json": "assets/data/arena_boundaries.json",
     "game/assets/fx/combat-revision/manifest.json": "assets/assets/fx/combat-revision/manifest.json",
     "game/data/catalog.json": "assets/data/catalog.json",
@@ -205,6 +209,13 @@ def main() -> None:
     counts = {key: len(catalog.get(key, [])) for key in ["characters", "weapons", "skills", "relics", "talents", "synergies", "routes", "regions", "room_templates", "special_rooms", "enemies", "bosses"]}
     if counts["characters"] != 6 or counts["skills"] != 18 or counts["relics"] != 54 or counts["special_rooms"] != 4:
         failures.append("source catalog does not contain the Direction 01 content baseline")
+    equipment = load_json_bytes(source_data.get("game/data/equipment.json", b"{}"), "equipment catalog")
+    counts["base_relics"] = counts["relics"]
+    counts["relics"] += len(equipment.get("relics", []))
+    counts["active_items"] = len(equipment.get("active_items", []))
+    counts["trinkets"] = len(equipment.get("trinkets", []))
+    if counts["relics"] != 66 or counts["active_items"] != 12 or counts["trinkets"] != 12:
+        failures.append("equipment extension does not match the current gameplay catalog")
     if rules.get("platforms", {}).get("orientation") != "landscape" or rules.get("save", {}).get("schema_version") != 2:
         failures.append("source rules do not expose the pinned landscape/schema2 baseline")
     if not android_check.get("passed") or android_check.get("apk_sha256") != android_report.get("sha256"):

@@ -48,7 +48,7 @@ func sample(world, reduce_motion: bool = false) -> Dictionary:
 	var duration = minf(.334, float(weapon.get("interval_s", .4)) * .85)
 	var age = world.time - float(last_shot.get("at", -999))
 	var attack = not last_shot.is_empty() and age >= 0 and age < duration
-	var charging = weapon.get("mode", "") in ["charged_line", "charged_arc", "nova"] and player.charge > 0 and player.hp > 0
+	var charging = (weapon.get("mode", "") in ["charged_line", "charged_arc", "nova"] or world.stack("r66") > 0) and player.charge > 0 and player.hp > 0
 	var state = "run" if player.move.length() > .1 else "idle"
 	var elapsed = world.time
 	var active = attack or charging
@@ -99,7 +99,8 @@ func sample(world, reduce_motion: bool = false) -> Dictionary:
 					"cloud", "rain", "mine", "nova": angle = impulse * -.28
 					_: angle = impulse * .24
 		if charging:
-			angle = -.16 * clampf(player.charge / .25, 0, 1)
+			var charge_time = .65 if weapon.mode == "nova" else (.35 if world.stack("r66") > 0 else .25)
+			angle = -.16 * clampf(player.charge / charge_time, 0, 1)
 		scale = 1.0 - impulse * .045
 	return {"weapon": equipped, "state": state, "elapsed": elapsed, "attack": attack and active,
 		"charging": charging and active, "angle": angle, "scale": scale,

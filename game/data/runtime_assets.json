@@ -1,6 +1,102 @@
 {
   "assets": [
     {
+      "file": "res://assets/active_items/a01.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a02.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a03.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a04.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a05.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a06.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a07.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a08.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a09.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a10.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a11.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/active_items/a12.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
       "file": "res://assets/boss-animation/b01/attack_a.png",
       "kind": "texture",
       "size": [
@@ -24761,6 +24857,646 @@
       ]
     },
     {
+      "file": "res://assets/fx/equipment-polish/brass_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/brass_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ember_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/frost_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/ink_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/lotus_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/prism_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/smoke_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/storm_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/thread_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_beam_fork.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_beam_lance.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_beam_tether.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_beam_wave.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_blast.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_field.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_ring.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/fx/equipment-polish/void_vortex.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        256
+      ]
+    },
+    {
       "file": "res://assets/fx/expansion/amber_orb.png",
       "kind": "texture",
       "size": [
@@ -26601,6 +27337,102 @@
       ]
     },
     {
+      "file": "res://assets/relics/r55.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r56.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r57.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r58.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r59.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r60.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r61.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r62.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r63.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r64.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r65.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/relics/r66.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
       "file": "res://assets/skills/s01.png",
       "kind": "texture",
       "size": [
@@ -26838,6 +27670,102 @@
       "size": [
         1280,
         720
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr01.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr02.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr03.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr04.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr05.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr06.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr07.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr08.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr09.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr10.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr11.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/trinkets/tr12.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
       ]
     },
     {

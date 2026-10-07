@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "presets": [
+    {
+      "id": "ember_beam_lance",
+      "family": "ember",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_beam_lance.png"
+    },
+    {
+      "id": "ember_beam_tether",
+      "family": "ember",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_beam_tether.png"
+    },
+    {
+      "id": "ember_beam_wave",
+      "family": "ember",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_beam_wave.png"
+    },
+    {
+      "id": "ember_beam_fork",
+      "family": "ember",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_beam_fork.png"
+    },
+    {
+      "id": "ember_blast",
+      "family": "ember",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_blast.png"
+    },
+    {
+      "id": "ember_ring",
+      "family": "ember",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_ring.png"
+    },
+    {
+      "id": "ember_vortex",
+      "family": "ember",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_vortex.png"
+    },
+    {
+      "id": "ember_field",
+      "family": "ember",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ember_field.png"
+    },
+    {
+      "id": "ink_beam_lance",
+      "family": "ink",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_beam_lance.png"
+    },
+    {
+      "id": "ink_beam_tether",
+      "family": "ink",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_beam_tether.png"
+    },
+    {
+      "id": "ink_beam_wave",
+      "family": "ink",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_beam_wave.png"
+    },
+    {
+      "id": "ink_beam_fork",
+      "family": "ink",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_beam_fork.png"
+    },
+    {
+      "id": "ink_blast",
+      "family": "ink",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_blast.png"
+    },
+    {
+      "id": "ink_ring",
+      "family": "ink",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_ring.png"
+    },
+    {
+      "id": "ink_vortex",
+      "family": "ink",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_vortex.png"
+    },
+    {
+      "id": "ink_field",
+      "family": "ink",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/ink_field.png"
+    },
+    {
+      "id": "thread_beam_lance",
+      "family": "thread",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_beam_lance.png"
+    },
+    {
+      "id": "thread_beam_tether",
+      "family": "thread",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_beam_tether.png"
+    },
+    {
+      "id": "thread_beam_wave",
+      "family": "thread",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_beam_wave.png"
+    },
+    {
+      "id": "thread_beam_fork",
+      "family": "thread",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_beam_fork.png"
+    },
+    {
+      "id": "thread_blast",
+      "family": "thread",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_blast.png"
+    },
+    {
+      "id": "thread_ring",
+      "family": "thread",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_ring.png"
+    },
+    {
+      "id": "thread_vortex",
+      "family": "thread",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_vortex.png"
+    },
+    {
+      "id": "thread_field",
+      "family": "thread",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/thread_field.png"
+    },
+    {
+      "id": "prism_beam_lance",
+      "family": "prism",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_beam_lance.png"
+    },
+    {
+      "id": "prism_beam_tether",
+      "family": "prism",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_beam_tether.png"
+    },
+    {
+      "id": "prism_beam_wave",
+      "family": "prism",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_beam_wave.png"
+    },
+    {
+      "id": "prism_beam_fork",
+      "family": "prism",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_beam_fork.png"
+    },
+    {
+      "id": "prism_blast",
+      "family": "prism",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_blast.png"
+    },
+    {
+      "id": "prism_ring",
+      "family": "prism",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_ring.png"
+    },
+    {
+      "id": "prism_vortex",
+      "family": "prism",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_vortex.png"
+    },
+    {
+      "id": "prism_field",
+      "family": "prism",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/prism_field.png"
+    },
+    {
+      "id": "lotus_beam_lance",
+      "family": "lotus",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_beam_lance.png"
+    },
+    {
+      "id": "lotus_beam_tether",
+      "family": "lotus",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_beam_tether.png"
+    },
+    {
+      "id": "lotus_beam_wave",
+      "family": "lotus",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_beam_wave.png"
+    },
+    {
+      "id": "lotus_beam_fork",
+      "family": "lotus",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_beam_fork.png"
+    },
+    {
+      "id": "lotus_blast",
+      "family": "lotus",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_blast.png"
+    },
+    {
+      "id": "lotus_ring",
+      "family": "lotus",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_ring.png"
+    },
+    {
+      "id": "lotus_vortex",
+      "family": "lotus",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_vortex.png"
+    },
+    {
+      "id": "lotus_field",
+      "family": "lotus",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/lotus_field.png"
+    },
+    {
+      "id": "smoke_beam_lance",
+      "family": "smoke",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_beam_lance.png"
+    },
+    {
+      "id": "smoke_beam_tether",
+      "family": "smoke",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_beam_tether.png"
+    },
+    {
+      "id": "smoke_beam_wave",
+      "family": "smoke",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_beam_wave.png"
+    },
+    {
+      "id": "smoke_beam_fork",
+      "family": "smoke",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_beam_fork.png"
+    },
+    {
+      "id": "smoke_blast",
+      "family": "smoke",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_blast.png"
+    },
+    {
+      "id": "smoke_ring",
+      "family": "smoke",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_ring.png"
+    },
+    {
+      "id": "smoke_vortex",
+      "family": "smoke",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_vortex.png"
+    },
+    {
+      "id": "smoke_field",
+      "family": "smoke",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/smoke_field.png"
+    },
+    {
+      "id": "frost_beam_lance",
+      "family": "frost",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_beam_lance.png"
+    },
+    {
+      "id": "frost_beam_tether",
+      "family": "frost",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_beam_tether.png"
+    },
+    {
+      "id": "frost_beam_wave",
+      "family": "frost",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_beam_wave.png"
+    },
+    {
+      "id": "frost_beam_fork",
+      "family": "frost",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_beam_fork.png"
+    },
+    {
+      "id": "frost_blast",
+      "family": "frost",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_blast.png"
+    },
+    {
+      "id": "frost_ring",
+      "family": "frost",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_ring.png"
+    },
+    {
+      "id": "frost_vortex",
+      "family": "frost",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_vortex.png"
+    },
+    {
+      "id": "frost_field",
+      "family": "frost",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/frost_field.png"
+    },
+    {
+      "id": "storm_beam_lance",
+      "family": "storm",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_beam_lance.png"
+    },
+    {
+      "id": "storm_beam_tether",
+      "family": "storm",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_beam_tether.png"
+    },
+    {
+      "id": "storm_beam_wave",
+      "family": "storm",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_beam_wave.png"
+    },
+    {
+      "id": "storm_beam_fork",
+      "family": "storm",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_beam_fork.png"
+    },
+    {
+      "id": "storm_blast",
+      "family": "storm",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_blast.png"
+    },
+    {
+      "id": "storm_ring",
+      "family": "storm",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_ring.png"
+    },
+    {
+      "id": "storm_vortex",
+      "family": "storm",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_vortex.png"
+    },
+    {
+      "id": "storm_field",
+      "family": "storm",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/storm_field.png"
+    },
+    {
+      "id": "void_beam_lance",
+      "family": "void",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_beam_lance.png"
+    },
+    {
+      "id": "void_beam_tether",
+      "family": "void",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_beam_tether.png"
+    },
+    {
+      "id": "void_beam_wave",
+      "family": "void",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_beam_wave.png"
+    },
+    {
+      "id": "void_beam_fork",
+      "family": "void",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_beam_fork.png"
+    },
+    {
+      "id": "void_blast",
+      "family": "void",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_blast.png"
+    },
+    {
+      "id": "void_ring",
+      "family": "void",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_ring.png"
+    },
+    {
+      "id": "void_vortex",
+      "family": "void",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_vortex.png"
+    },
+    {
+      "id": "void_field",
+      "family": "void",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/void_field.png"
+    },
+    {
+      "id": "brass_beam_lance",
+      "family": "brass",
+      "shape": "beam_lance",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_beam_lance.png"
+    },
+    {
+      "id": "brass_beam_tether",
+      "family": "brass",
+      "shape": "beam_tether",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_beam_tether.png"
+    },
+    {
+      "id": "brass_beam_wave",
+      "family": "brass",
+      "shape": "beam_wave",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_beam_wave.png"
+    },
+    {
+      "id": "brass_beam_fork",
+      "family": "brass",
+      "shape": "beam_fork",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_beam_fork.png"
+    },
+    {
+      "id": "brass_blast",
+      "family": "brass",
+      "shape": "blast",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_blast.png"
+    },
+    {
+      "id": "brass_ring",
+      "family": "brass",
+      "shape": "ring",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_ring.png"
+    },
+    {
+      "id": "brass_vortex",
+      "family": "brass",
+      "shape": "vortex",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_vortex.png"
+    },
+    {
+      "id": "brass_field",
+      "family": "brass",
+      "shape": "field",
+      "frames": 6,
+      "file": "res://assets/fx/equipment-polish/brass_field.png"
+    }
+  ]
+}
