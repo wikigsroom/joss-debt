@@ -1,0 +1,847 @@
+{
+	"checks": [
+		"three fingers independently move, aim/fire and cast",
+		"right-hand dash preserves the held left movement stick, right aim and movement-based dash direction",
+		"the real world dashes along movement rather than the other thumb's aim",
+		"phone default leaves only movement on the left and all combat targets on the right",
+		"tablet default leaves only movement on the left and all combat targets on the right",
+		"saved old phone defaults upgrade after JSON reload while retaining size and opacity",
+		"saved four-control tablet defaults upgrade and acquire a separated right-hand item target",
+		"a customized old layout and its sizes survive the update unchanged",
+		"an enlarged legacy layout is retained when migrating it would cause overlapping targets",
+		"two-thumb aim-to-dash transfer keeps left movement, confirms charge handoff and triggers the dash once",
+		"fixed sticks cannot capture an upper-playfield press",
+		"floating sticks cannot capture menu or upper-playfield taps",
+		"aim stick can be placed on the other half of the screen",
+		"custom position captures its visible aim stick without a half-screen rule",
+		"high deadzone prevents blind fire inside the aim deadzone",
+		"a deliberate outward aim starts fire",
+		"fire hysteresis avoids flicker near its start threshold",
+		"returning inside the deadzone stops fire immediately",
+		"a canceled finger clears firing and cannot initiate charge transfer",
+		"floating origin leaves a separate skill-button exclusion area",
+		"choice overlays disable both invisible sticks and action buttons",
+		"cleared rooms expose only the movement and dash actions that can work",
+		"no equipped item means no ghost item capture area",
+		"changing the aim-stick size changes only that control",
+		"individual sizes and positions survive a JSON settings round trip",
+		"overlapping capture targets are rejected without damaging the layout",
+		"touch-emulated mouse events preserve touch identity and cannot fire from movement",
+		"touch-emulated clicks cannot become mouse bindings or gameplay shortcuts",
+		"lifecycle reset clears every touch owner and pending action",
+		"releasing a charged touch immediately stops visible charging and never fires",
+		"a confirmed skill/button handoff restores partial charge inside 150 ms",
+		"expired transfers cannot retain charge after a long release",
+		"pause/lifecycle reset removes transient charge transfer",
+		"automatic aim never turns manual rightward aim toward an enemy behind the player",
+		"controlled bullets keep their authored manual steering",
+		"default layout respects the expanded safe surface",
+		"wide/tablet surfaces preserve battlefield aspect ratio",
+		"HUD and touch controls use the full safe surface",
+		"a dedicated touch map button exists during combat",
+		"combat has a native rendered frame",
+		"the actual application input path captures the shown movement stick",
+		"release over a HUD button reaches its existing movement owner",
+		"a real canceled touch over the HUD clears the aim owner and invalidates charge handoff",
+		"tutorial touch controls fit the surface without overlapping",
+		"tutorial has a native rendered frame",
+		"all four alternatives are visible together for direct comparison",
+		"choice-four touch controls fit the surface without overlapping",
+		"choice-four has a native rendered frame",
+		"touching a candidate previews it without committing a reward",
+		"four skill candidates remain visible and mandatory evolution has no skip action",
+		"skill-four touch controls fit the surface without overlapping",
+		"skill-four has a native rendered frame",
+		"the sacrifice confirmation shows its actual health payment before committing",
+		"sacrifice touch controls fit the surface without overlapping",
+		"sacrifice has a native rendered frame",
+		"a thirteenth offering enters the real replacement state",
+		"replacement touch controls fit the surface without overlapping",
+		"replacement has a native rendered frame",
+		"selecting an old offering previews both effects and removes nothing",
+		"replacement-confirm touch controls fit the surface without overlapping",
+		"replacement-confirm has a native rendered frame",
+		"Android back leaves the replacement preview without losing the old offering",
+		"an explicit touch confirmation commits exactly one offering swap",
+		"pause touch controls fit the surface without overlapping",
+		"pause has a native rendered frame",
+		"growth touch controls fit the surface without overlapping",
+		"growth has a native rendered frame",
+		"map touch controls fit the surface without overlapping",
+		"map has a native rendered frame",
+		"seed touch controls fit the surface without overlapping",
+		"seed has a native rendered frame",
+		"an on-screen keyboard moves the active text field above the keyboard and provides a close button",
+		"seed-keyboard-guard has a native rendered frame",
+		"closing the virtual keyboard restores the normal menu position",
+		"save-paste touch controls fit the surface without overlapping",
+		"save-paste has a native rendered frame",
+		"assistance touch controls fit the surface without overlapping",
+		"assistance has a native rendered frame",
+		"controller-bindings touch controls fit the surface without overlapping",
+		"controller-bindings has a native rendered frame",
+		"settings touch controls fit the surface without overlapping",
+		"settings has a native rendered frame",
+		"touch-layout touch controls fit the surface without overlapping",
+		"touch-layout has a native rendered frame",
+		"settings persist per-control sizing without changing other controls",
+		"audio touch controls fit the surface without overlapping",
+		"audio has a native rendered frame",
+		"tryout has a native rendered frame",
+		"settings can launch a full-surface touch sandbox",
+		"Android system back returns from the sandbox to layout editing",
+		"room transitions immediately synchronize the visible and active touch actions",
+		"clear-room has a native rendered frame"
+	],
+	"failures": [],
+	"geometry": [
+		{
+			"complete": true,
+			"count": 1,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 338.0,
+					"x": 720.0,
+					"y": 473.0
+				}
+			],
+			"screen": "tutorial"
+		},
+		{
+			"complete": true,
+			"count": 7,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 96.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 372.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 648.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 924.0,
+					"y": 181.0
+				},
+				{
+					"h": 96.0,
+					"w": 334.0,
+					"x": 850.0,
+					"y": 608.0
+				},
+				{
+					"h": 96.0,
+					"w": 210.0,
+					"x": 96.0,
+					"y": 608.0
+				},
+				{
+					"h": 96.0,
+					"w": 268.0,
+					"x": 440.0,
+					"y": 608.0
+				}
+			],
+			"screen": "choice-four"
+		},
+		{
+			"complete": true,
+			"count": 5,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 96.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 372.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 648.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 260.0,
+					"x": 924.0,
+					"y": 181.0
+				},
+				{
+					"h": 96.0,
+					"w": 334.0,
+					"x": 850.0,
+					"y": 608.0
+				}
+			],
+			"screen": "skill-four"
+		},
+		{
+			"complete": true,
+			"count": 5,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 172.0,
+					"w": 352.0,
+					"x": 96.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 352.0,
+					"x": 464.0,
+					"y": 181.0
+				},
+				{
+					"h": 172.0,
+					"w": 352.0,
+					"x": 832.0,
+					"y": 181.0
+				},
+				{
+					"h": 96.0,
+					"w": 334.0,
+					"x": 850.0,
+					"y": 608.0
+				},
+				{
+					"h": 96.0,
+					"w": 268.0,
+					"x": 440.0,
+					"y": 608.0
+				}
+			],
+			"screen": "sacrifice"
+		},
+		{
+			"complete": true,
+			"count": 13,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 76.0,
+					"y": 216.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 363.0,
+					"y": 216.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 650.0,
+					"y": 216.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 937.0,
+					"y": 216.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 76.0,
+					"y": 341.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 363.0,
+					"y": 341.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 650.0,
+					"y": 341.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 937.0,
+					"y": 341.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 76.0,
+					"y": 466.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 363.0,
+					"y": 466.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 650.0,
+					"y": 466.0
+				},
+				{
+					"h": 110.0,
+					"w": 269.0,
+					"x": 937.0,
+					"y": 466.0
+				},
+				{
+					"h": 96.0,
+					"w": 334.0,
+					"x": 860.0,
+					"y": 604.0
+				}
+			],
+			"screen": "replacement"
+		},
+		{
+			"complete": true,
+			"count": 2,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 458.0,
+					"x": 166.0,
+					"y": 526.0
+				},
+				{
+					"h": 96.0,
+					"w": 458.0,
+					"x": 656.0,
+					"y": 526.0
+				}
+			],
+			"screen": "replacement-confirm"
+		},
+		{
+			"complete": true,
+			"count": 6,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 796.0,
+					"x": 242.0,
+					"y": 254.0
+				},
+				{
+					"h": 96.0,
+					"w": 796.0,
+					"x": 242.0,
+					"y": 364.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 482.0,
+					"y": 474.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 592.0,
+					"y": 474.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 702.0,
+					"y": 474.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 986.0,
+					"y": 588.0
+				}
+			],
+			"screen": "pause"
+		},
+		{
+			"complete": true,
+			"count": 2,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 1114.0,
+					"y": 54.0
+				},
+				{
+					"h": 96.0,
+					"w": 368.0,
+					"x": 842.0,
+					"y": 580.0
+				}
+			],
+			"screen": "growth"
+		},
+		{
+			"complete": true,
+			"count": 14,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 502.0,
+					"y": 192.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 502.0,
+					"y": 302.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 502.0,
+					"y": 412.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 502.0,
+					"y": 522.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 612.0,
+					"y": 522.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 612.0,
+					"y": 412.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 722.0,
+					"y": 522.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 916.0,
+					"y": 194.0
+				},
+				{
+					"h": 96.0,
+					"w": 154.0,
+					"x": 1074.0,
+					"y": 194.0
+				},
+				{
+					"h": 96.0,
+					"w": 292.0,
+					"x": 914.0,
+					"y": 306.0
+				},
+				{
+					"h": 96.0,
+					"w": 292.0,
+					"x": 914.0,
+					"y": 414.0
+				},
+				{
+					"h": 96.0,
+					"w": 292.0,
+					"x": 914.0,
+					"y": 522.0
+				},
+				{
+					"h": 43.0,
+					"w": 292.0,
+					"x": 914.0,
+					"y": 630.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 1142.0,
+					"y": 40.0
+				}
+			],
+			"screen": "map"
+		},
+		{
+			"complete": true,
+			"count": 2,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 296.0,
+					"x": 654.0,
+					"y": 484.0
+				},
+				{
+					"h": 96.0,
+					"w": 296.0,
+					"x": 330.0,
+					"y": 484.0
+				}
+			],
+			"screen": "seed"
+		},
+		{
+			"complete": true,
+			"count": 3,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 326.0,
+					"x": 96.0,
+					"y": 506.0
+				},
+				{
+					"h": 96.0,
+					"w": 398.0,
+					"x": 786.0,
+					"y": 506.0
+				},
+				{
+					"h": 96.0,
+					"w": 1088.0,
+					"x": 96.0,
+					"y": 614.0
+				}
+			],
+			"screen": "save-paste"
+		},
+		{
+			"complete": true,
+			"count": 8,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 1118.0,
+					"y": 50.0
+				},
+				{
+					"h": 96.0,
+					"w": 318.0,
+					"x": 814.0,
+					"y": 192.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 702.0,
+					"y": 194.0
+				},
+				{
+					"h": 96.0,
+					"w": 318.0,
+					"x": 814.0,
+					"y": 332.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 702.0,
+					"y": 334.0
+				},
+				{
+					"h": 90.0,
+					"w": 318.0,
+					"x": 814.0,
+					"y": 472.0
+				},
+				{
+					"h": 88.0,
+					"w": 96.0,
+					"x": 702.0,
+					"y": 474.0
+				},
+				{
+					"h": 96.0,
+					"w": 398.0,
+					"x": 786.0,
+					"y": 612.0
+				}
+			],
+			"screen": "assistance"
+		},
+		{
+			"complete": true,
+			"count": 8,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 1118.0,
+					"y": 50.0
+				},
+				{
+					"h": 96.0,
+					"w": 250.0,
+					"x": 96.0,
+					"y": 162.0
+				},
+				{
+					"h": 96.0,
+					"w": 250.0,
+					"x": 366.0,
+					"y": 162.0
+				},
+				{
+					"h": 96.0,
+					"w": 366.0,
+					"x": 766.0,
+					"y": 286.0
+				},
+				{
+					"h": 96.0,
+					"w": 366.0,
+					"x": 766.0,
+					"y": 412.0
+				},
+				{
+					"h": 26.0,
+					"w": 366.0,
+					"x": 766.0,
+					"y": 538.0
+				},
+				{
+					"h": 96.0,
+					"w": 326.0,
+					"x": 96.0,
+					"y": 612.0
+				},
+				{
+					"h": 96.0,
+					"w": 398.0,
+					"x": 786.0,
+					"y": 612.0
+				}
+			],
+			"screen": "controller-bindings"
+		},
+		{
+			"complete": true,
+			"count": 11,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 954.0,
+					"y": 70.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 468.0,
+					"y": 179.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 468.0,
+					"y": 291.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 468.0,
+					"y": 403.0
+				},
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 468.0,
+					"y": 515.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 614.0,
+					"y": 174.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 828.0,
+					"y": 174.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 614.0,
+					"y": 328.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 828.0,
+					"y": 328.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 614.0,
+					"y": 482.0
+				},
+				{
+					"h": 138.0,
+					"w": 198.0,
+					"x": 828.0,
+					"y": 482.0
+				}
+			],
+			"screen": "settings"
+		},
+		{
+			"complete": true,
+			"count": 11,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 96.0,
+					"x": 1118.0,
+					"y": 50.0
+				},
+				{
+					"h": 96.0,
+					"w": 256.0,
+					"x": 928.0,
+					"y": 232.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 64.0,
+					"y": 570.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 224.0,
+					"y": 570.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 384.0,
+					"y": 570.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 544.0,
+					"y": 570.0
+				},
+				{
+					"h": 96.0,
+					"w": 144.0,
+					"x": 704.0,
+					"y": 570.0
+				},
+				{
+					"h": 96.0,
+					"w": 256.0,
+					"x": 928.0,
+					"y": 388.0
+				},
+				{
+					"h": 96.0,
+					"w": 120.0,
+					"x": 928.0,
+					"y": 500.0
+				},
+				{
+					"h": 96.0,
+					"w": 120.0,
+					"x": 1064.0,
+					"y": 500.0
+				},
+				{
+					"h": 96.0,
+					"w": 256.0,
+					"x": 928.0,
+					"y": 608.0
+				}
+			],
+			"screen": "touch-layout"
+		},
+		{
+			"complete": true,
+			"count": 5,
+			"overlap": false,
+			"rectangles": [
+				{
+					"h": 96.0,
+					"w": 365.0,
+					"x": 497.0,
+					"y": 165.0
+				},
+				{
+					"h": 96.0,
+					"w": 365.0,
+					"x": 497.0,
+					"y": 273.0
+				},
+				{
+					"h": 96.0,
+					"w": 365.0,
+					"x": 497.0,
+					"y": 381.0
+				},
+				{
+					"h": 96.0,
+					"w": 688.0,
+					"x": 296.0,
+					"y": 485.0
+				},
+				{
+					"h": 96.0,
+					"w": 688.0,
+					"x": 296.0,
+					"y": 589.0
+				}
+			],
+			"screen": "audio"
+		}
+	],
+	"passed": true,
+	"scope": "native desktop Godot at actual viewport ratios, synthetic multi-touch, real input dispatch and settings; physical Android acceptance remains pending"
+}

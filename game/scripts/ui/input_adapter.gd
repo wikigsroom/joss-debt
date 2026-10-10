@@ -1,8 +1,12 @@
 extends RefCounted
 ## Keyboard/mouse, controller, and three independent touch IDs yield one ActionFrame.
 const Profile = preload("res://scripts/ui/input_profile.gd")
-const DEFAULT_LAYOUT = {"move": [.105, .80], "aim": [.895, .80], "dash": [.25, .65], "skill": [.75, .65], "active_item": [.70, .88]}
-const PRESETS = {"phone": DEFAULT_LAYOUT, "tablet": {"move": [.12, .81], "aim": [.88, .81], "dash": [.27, .66], "skill": [.73, .66], "active_item": [.68, .88]}}
+# The left thumb owns movement; combat actions sit around the right aim stick.
+const DEFAULT_LAYOUT = {"move": [.105, .80], "aim": [.895, .80], "dash": [.755, .61], "skill": [.895, .52], "active_item": [.70, .88]}
+const PRESETS = {"phone": DEFAULT_LAYOUT, "tablet": {"move": [.12, .81], "aim": [.88, .81], "dash": [.74, .63], "skill": [.88, .54], "active_item": [.68, .88]}}
+const LEGACY_PRESETS = {
+	"phone": {"move": [.105, .80], "aim": [.895, .80], "dash": [.25, .65], "skill": [.75, .65], "active_item": [.70, .88]},
+	"tablet": {"move": [.12, .81], "aim": [.88, .81], "dash": [.27, .66], "skill": [.73, .66], "active_item": [.68, .88]}}
 var profile = Profile.new()
 var layout: Dictionary = DEFAULT_LAYOUT.duplicate(true)
 var control_scale = 1.0
@@ -127,6 +131,25 @@ func valid_layout() -> bool:
 			if control_center(actions[i]).distance_to(control_center(actions[j])) < control_radius(actions[i]) + control_radius(actions[j]) + control_gap: return false
 	return true
 
+static func legacy_default_preset(incoming: Dictionary) -> String:
+	for preset in LEGACY_PRESETS:
+		var matches = true
+		for action in LEGACY_PRESETS[preset]:
+			# Older four-control profiles did not yet contain an item target.
+			if action == "active_item" and not incoming.has(action): continue
+			var point = incoming.get(action, [])
+			var expected = LEGACY_PRESETS[preset][action]
+			if not point is Array or point.size() != 2:
+				matches = false
+				break
+			for axis in 2:
+				if not (point[axis] is float or point[axis] is int) or absf(float(point[axis]) - expected[axis]) > .000001:
+					matches = false
+					break
+			if not matches: break
+		if matches: return preset
+	return ""
+
 func configure(data: Dictionary) -> void:
 	profile.load_data(data.get("bindings", {}))
 	deadzone = clampf(float(data.get("deadzone", .18)), .08, .35)
@@ -144,6 +167,12 @@ func configure(data: Dictionary) -> void:
 			var values = incoming.get(action, layout[action])
 			if values is Array and values.size() == 2 and (values[0] is float or values[0] is int) and (values[1] is float or values[1] is int):
 				layout[action] = [clampf(float(values[0]), .02, .98), clampf(float(values[1]), .35, .96)]
+		var legacy = legacy_default_preset(incoming)
+		if not legacy.is_empty():
+			var previous = layout.duplicate(true)
+			layout = PRESETS[legacy].duplicate(true)
+			# Keep individually enlarged controls if they cannot fit the new preset.
+			if not valid_layout(): layout = previous
 		if not incoming.has("active_item") and not valid_layout():
 			# Keep older customized controls when adding a fifth touch target.
 			for y in [.89, .70, .52]:

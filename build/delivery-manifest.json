@@ -1,17 +1,17 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "status": "local_verified_alpha",
-  "recorded_at": "2026-10-10T18:11:02.513989+00:00",
+  "recorded_at": "2026-10-10T18:36:58.530935+00:00",
   "files": [
     {
       "path": "build/windows/IncenseDebt.exe",
-      "sha256": "c1bcd02a86ea9e0d3d629d8fbe84418c24dbfa1da1a9f76cacf6692228729995",
-      "bytes": 1108668128
+      "sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90",
+      "bytes": 1108668912
     },
     {
       "path": "build/android/IncenseDebt.apk",
-      "sha256": "41ecdb45185f24a110b6546646b1c3cd64cfd32f7ae028b5dad12188995e3b8b",
-      "bytes": 1025213664
+      "sha256": "bb2e3a32ddf849d50a4f655d1c1456ab013d1b71e5585c7d5e3e9eb6272b60eb",
+      "bytes": 1025238240
     }
   ],
   "revision_report": "docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json",
@@ -31,16 +31,18 @@
   "consumable_native_evidence": "docs/incense-debt/reports/consumables-2026-10-11/windows/native.json",
   "runtime_assets": 3810,
   "matching_compiled_scripts": 76,
-  "prior_package_receipts": "docs/incense-debt/reports/widescreen-2026-10-11/prior-package-receipts",
-  "revision_document": "docs/incense-debt/37-mobile-widescreen-adaptation.md",
-  "widescreen_native_evidence": "docs/incense-debt/reports/widescreen-2026-10-11/windows-matrix.json",
-  "widescreen_source_checks": 274,
-  "widescreen_packaged_checks": 274,
+  "prior_package_receipts": "docs/incense-debt/reports/touch-right-2026-10-11/prior-package-receipts",
+  "revision_document": "docs/incense-debt/38-right-hand-touch-layout.md",
+  "widescreen_native_evidence": "docs/incense-debt/reports/touch-right-2026-10-11/windows-matrix.json",
+  "widescreen_source_checks": 282,
+  "widescreen_packaged_checks": 282,
   "widescreen_captures_per_matrix": 51,
-  "mobile_regression_checks": 340,
-  "android_version_code": 4,
+  "mobile_regression_checks": 368,
+  "android_version_code": 5,
   "android_edge_to_edge": true,
   "android_upgrade_signer_matches_previous": true,
   "consumable_evidence_version": "0.2.1",
-  "creature_evidence_version": "0.2.1"
+  "creature_evidence_version": "0.2.1",
+  "right_hand_touch_default": true,
+  "legacy_default_layouts_upgraded": true
 }

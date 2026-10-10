@@ -1,0 +1,99 @@
+{
+  "source": "Actual exported Windows packs, 0.2.2 before and 0.2.3 after",
+  "physical_android_device_tested": false,
+  "sources": [
+    {
+      "path": "docs/incense-debt/reports/widescreen-2026-10-11/windows/phone-20x9/combat.png",
+      "sha256": "e54626de7acc68e1597005d304fbbe362328d8adc9d248363ce6237fef5f0a3b",
+      "version": "0.2.2",
+      "artifact_sha256": "c1bcd02a86ea9e0d3d629d8fbe84418c24dbfa1da1a9f76cacf6692228729995"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9/combat.png",
+      "sha256": "cf34bd64ea1bd3223a8183267f468c32fa42073f3f5031c835eee65df195f5bb",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9/splash.png",
+      "sha256": "e3a7e31e693d510c49506afb78d3defd45ca0c76219ec0f32e68befff428e126",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-left-cutout/combat.png",
+      "sha256": "261993ce4deb40755607fa2a85087a9bee34b75e5ea4e060828a93b02b564942",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-left-cutout/rotated-combat.png",
+      "sha256": "53772196643696ec2e265c200f1a0820aae91bae3e7ae3b556978313589fff1c",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-punch-hole/combat.png",
+      "sha256": "56b07dea7c0c2a471b94e498b3bc79bc89d26d484d758ec73dad36bf4ba56f9b",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-16x9/combat.png",
+      "sha256": "8757f7413ace45406ee5998d8be717ecfcb702de9d89490683ad9c8e34faaa99",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9/combat.png",
+      "sha256": "cf34bd64ea1bd3223a8183267f468c32fa42073f3f5031c835eee65df195f5bb",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-left-cutout/combat.png",
+      "sha256": "261993ce4deb40755607fa2a85087a9bee34b75e5ea4e060828a93b02b564942",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-right-cutout/combat.png",
+      "sha256": "53772196643696ec2e265c200f1a0820aae91bae3e7ae3b556978313589fff1c",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-punch-hole/combat.png",
+      "sha256": "56b07dea7c0c2a471b94e498b3bc79bc89d26d484d758ec73dad36bf4ba56f9b",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-19_5x9/combat.png",
+      "sha256": "00506ad67a84d570a7bfce248dabc0ee0cf62196ca871de66c11cf7a3f49d0b4",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-21x9/combat.png",
+      "sha256": "b3da285f5a3caf17ad53963737955bbaf93f9532cc3c739e3cd5f616b3d2de6a",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows/tablet-4x3/combat.png",
+      "sha256": "0b7943d50b753c2b05b3cfd4720f7920d454bfc4590bf97b6556a2711681491e",
+      "version": "0.2.3",
+      "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+    }
+  ],
+  "outputs_sha256": {
+    "before-after.jpg": "dcb9bbfb79847db052e73f162d66430953efd2c03f63db46ceff723b2a3be707",
+    "combat.jpg": "a38fb7d5966f14cfbc26773402a3f9bff172439ecce5f137c64b2121a0c79966",
+    "left-cutout.jpg": "b3b5b7b6933a569431cdd23b9317a96c9433699320858d86a8cc9b0d4611398a",
+    "punch-hole.jpg": "c2761ef13e03b6c5685032afe5780fd8e8aaad8769d3585d1730ac6e6f180626",
+    "rotated-cutout.jpg": "7fdb70eb670890830d5851626c3fdd196940a90204b4788c5d32e1f3fb4dd293",
+    "screen-matrix.jpg": "3df15a7e788a5ed736de8f2af9749932209b7e8433e53c2e7f057e7dcc1b16ca",
+    "splash.jpg": "04e0e0c8cb4b821a351d92dd09ddfd4735b8c6a8e584ce22fa3d23fc0da67cf2"
+  }
+}

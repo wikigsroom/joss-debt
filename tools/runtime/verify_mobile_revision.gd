@@ -50,14 +50,45 @@ func core_input() -> void:
 	touch(a, 3, a.skill_center())
 	var f = sample(a)
 	expect(f.fire and f.skill and f.move.x > .99 and f.aim.y < -.99, "three fingers independently move, aim/fire and cast")
-	touch(a, 1, a.control_center("move"), false)
-	touch(a, 1, a.dash_center())
+	touch(a, 3, a.skill_center(), false)
+	touch(a, 3, a.dash_center())
 	f = sample(a)
-	expect(f.dash and f.fire and f.dash_direction.x > .99, "left-thumb dash preserves right-thumb fire and recent movement direction")
+	expect(f.dash and f.fire and f.move.x > .99 and a.move_id == 1 and a.aim_id == 2 and f.dash_direction.x > .99, "right-hand dash preserves the held left movement stick, right aim and movement-based dash direction")
 	var w = World.new()
 	w.start("c_paper", 20261009)
 	w.tick(f)
 	expect(w.player.dash_dir.x > .99, "the real world dashes along movement rather than the other thumb's aim")
+	var defaults = Adapter.new()
+	for preset in ["phone", "tablet"]:
+		defaults.reset_layout(preset)
+		var split = defaults.safe_rect.get_center().x
+		var right_only = defaults.valid_layout() and defaults.control_center("move").x + defaults.control_radius("move") < split
+		for action in ["aim", "dash", "skill", "active_item"]:
+			right_only = right_only and defaults.control_center(action).x - defaults.control_radius(action) > split
+		expect(right_only, "%s default leaves only movement on the left and all combat targets on the right" % preset)
+	var old_phone = {"move": [.105, .80], "aim": [.895, .80], "dash": [.25, .65], "skill": [.75, .65], "active_item": [.70, .88]}
+	defaults.configure(JSON.parse_string(JSON.stringify({"touch_layout": old_phone, "touch_sizes": {"skill": 1.1}, "control_opacity": .6})))
+	expect(defaults.dash_center().x > 640 and defaults.skill_center().x > 640 and is_equal_approx(defaults.control_sizes.skill, 1.1) and is_equal_approx(defaults.control_opacity, .6), "saved old phone defaults upgrade after JSON reload while retaining size and opacity")
+	var old_tablet = {"move": [.12, .81], "aim": [.88, .81], "dash": [.27, .66], "skill": [.73, .66]}
+	defaults.configure({"touch_layout": old_tablet})
+	expect(defaults.dash_center().x > 640 and defaults.skill_center().x > 640 and defaults.valid_layout(), "saved four-control tablet defaults upgrade and acquire a separated right-hand item target")
+	var custom = old_phone.duplicate(true)
+	custom.move = [.16, .78]
+	defaults.configure({"touch_layout": custom, "touch_sizes": {"move": 1.1}})
+	expect(defaults.layout == custom and is_equal_approx(defaults.control_sizes.move, 1.1), "a customized old layout and its sizes survive the update unchanged")
+	var enlarged = {"move": 1.75, "aim": 1.75, "dash": 1.75, "skill": 1.75, "active_item": 1.75}
+	defaults.configure({"touch_layout": old_phone, "touch_sizes": enlarged})
+	expect(defaults.layout == old_phone and defaults.control_sizes == enlarged and defaults.valid_layout(), "an enlarged legacy layout is retained when migrating it would cause overlapping targets")
+	a.clear()
+	touch(a, 1, a.control_center("move"))
+	drag(a, 1, a.control_center("move") + Vector2.RIGHT * a.control_travel("move"))
+	touch(a, 2, a.control_center("aim"))
+	drag(a, 2, a.control_center("aim") + Vector2.UP * a.control_travel("aim"))
+	sample(a)
+	touch(a, 2, a.control_center("aim"), false)
+	touch(a, 2, a.dash_center())
+	f = sample(a)
+	expect(f.dash and f.charge_hold and not f.fire and f.move.x > .99 and a.move_id == 1 and not sample(a).dash, "two-thumb aim-to-dash transfer keeps left movement, confirms charge handoff and triggers the dash once")
 	a.clear()
 	touch(a, 4, Vector2(900,180))
 	expect(a.aim_id == -1 and a.move_id == -1 and not sample(a).fire, "fixed sticks cannot capture an upper-playfield press")

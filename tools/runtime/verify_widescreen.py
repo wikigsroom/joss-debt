@@ -30,7 +30,10 @@ def main():
     parser.add_argument("--baseline", action="store_true", help="Render the preserved IncenseDebt-previous.exe pack.")
     parser.add_argument("--packaged", action="store_true")
     parser.add_argument("--fixture", choices=[row[0] for row in MATRIX])
+    parser.add_argument("--report-dir", default=str(REPORTS.relative_to(ROOT)))
     args = parser.parse_args()
+    report_root = Path(args.report_dir)
+    if not report_root.is_absolute(): report_root = ROOT / report_root
     packaged = args.packaged or args.baseline
     artifact = ROOT / "build/windows" / ("IncenseDebt-previous.exe" if args.baseline else "IncenseDebt.exe")
     if packaged and not artifact.is_file():
@@ -42,7 +45,7 @@ def main():
             continue
         if args.baseline and name != "phone-20x9":
             continue
-        folder = REPORTS / mode / name
+        folder = report_root / mode / name
         folder.mkdir(parents=True, exist_ok=True)
         command = [str(ENGINE), "--max-fps", "60", "--rendering-method", "gl_compatibility",
                    "--rendering-driver", "opengl3", "--audio-driver", "Dummy", "--resolution", resolution,
@@ -81,7 +84,8 @@ def main():
         report.update(recorded_at=datetime.now(timezone.utc).isoformat(), packaged=packaged)
         if not args.baseline:
             report["source_script_sha256"] = {p.relative_to(ROOT).as_posix(): digest(p) for p in
-                [ROOT / "game/scripts/main.gd", ROOT / "game/scripts/ui/game_renderer.gd", ROOT / "game/scripts/ui/mobile_surface.gd"]}
+                [ROOT / "game/scripts/main.gd", ROOT / "game/scripts/ui/game_renderer.gd", ROOT / "game/scripts/ui/mobile_surface.gd",
+                 ROOT / "game/scripts/ui/input_adapter.gd", ROOT / "game/scripts/ui/control_settings.gd"]}
         if packaged:
             report["artifact_sha256"] = digest(artifact)
         (folder / "native.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")
@@ -89,7 +93,7 @@ def main():
                        "checks": len(report["checks"]), "captures": len(report["captures"]), "passed": True,
                        "report": (folder / "native.json").relative_to(ROOT).as_posix()})
         print(f"{name}: {len(report['checks'])} checks passed, {len(report['captures'])} native captures", flush=True)
-    (REPORTS / (mode + "-matrix.json")).write_text(json.dumps({"passed": True, "fixtures": matrix,
+    (report_root / (mode + "-matrix.json")).write_text(json.dumps({"passed": True, "fixtures": matrix,
         "scope": "Actual native graphics and touch events; handset insets simulated; physical handset acceptance pending"},
         ensure_ascii=False, indent=2) + "\n", "utf8")
 

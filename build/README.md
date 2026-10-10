@@ -1,10 +1,10 @@
-# 《香火债》0.2.2 · 运行与操作
+# 《香火债》0.2.3 · 运行与操作
 
 [GitHub 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)提供 Windows ZIP、Android 调试 APK、iOS 共享源码和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.2.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
 
-本机 EXE / APK 为 0.2.2；上方 GitHub 链接保留 0.2.0 公开版本。新包已修复手机长屏两侧的纯色留边，启用边到边显示，完善前摄安全区与横屏翻转，见 [手机适配修订](../docs/incense-debt/37-mobile-widescreen-adaptation.md)。此前的角色动作、移动交互、四首随机音乐和隐私主体说明见 [0.2.1 修订](../docs/incense-debt/33-action-mobile-update.md)。旧 iOS 交接未在本轮更新。
+本机 EXE / APK 为 0.2.3；上方 GitHub 链接保留 0.2.0 公开版本。新包默认左手只移动，身法与焚债／爆炸技能均在右侧，旧默认布局自动升级，见 [默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。同时包含手机长屏黑边修复、边到边显示、前摄安全区与横屏翻转，见 [手机适配修订](../docs/incense-debt/37-mobile-widescreen-adaptation.md)。此前的角色动作、移动交互、四首随机音乐和隐私主体说明见 [0.2.1 修订](../docs/incense-debt/33-action-mobile-update.md)。旧 iOS 交接未在本轮更新。
 
-当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与屏幕检查见 [0.2.2 交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示主角、小怪和 Boss 动作。
+当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与屏幕检查见 [0.2.3 交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示主角、小怪和 Boss 动作。
 
 当前为十一层单人离线Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击资源库合计88条分阶段动画、528帧生成特效（本次新增80条480帧）。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
 

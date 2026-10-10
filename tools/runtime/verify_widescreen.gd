@@ -88,6 +88,11 @@ func run() -> void:
 		expect("complete-room-in-safe-area", app.adapter.safe_rect.grow(6.2).encloses(arena))
 		expect("uniform-room-scale", is_equal_approx(app.renderer.arena_transform.x.length(), app.renderer.arena_transform.y.length()))
 		expect("valid-touch-layout", app.adapter.valid_layout())
+		var split = app.adapter.safe_rect.get_center().x
+		var right_actions = app.adapter.control_center("move").x + app.adapter.control_radius("move") < split
+		for action in ["aim", "dash", "skill", "active_item"]:
+			right_actions = right_actions and app.adapter.control_center(action).x - app.adapter.control_radius(action) > split
+		expect("default-left-movement-right-combat", right_actions)
 		if cutout_side == "punch-left":
 			expect("punch-hole-reserved-with-full-os-safe-rect", app.adapter.safe_rect.position.x >= 56 / root.get_screen_transform().x.length())
 		for action in ["move", "aim", "dash", "skill", "active_item"]:

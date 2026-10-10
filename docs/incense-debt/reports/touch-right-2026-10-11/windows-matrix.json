@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "fixture": "phone-16x9",
+      "resolution": "1280x720",
+      "dpi": 160,
+      "cutout": "none",
+      "checks": 34,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-16x9/native.json"
+    },
+    {
+      "fixture": "phone-20x9",
+      "resolution": "2400x1080",
+      "dpi": 400,
+      "cutout": "none",
+      "checks": 34,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9/native.json"
+    },
+    {
+      "fixture": "phone-20x9-left-cutout",
+      "resolution": "2400x1080",
+      "dpi": 400,
+      "cutout": "left",
+      "checks": 37,
+      "captures": 7,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-left-cutout/native.json"
+    },
+    {
+      "fixture": "phone-20x9-right-cutout",
+      "resolution": "2400x1080",
+      "dpi": 400,
+      "cutout": "right",
+      "checks": 37,
+      "captures": 7,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-right-cutout/native.json"
+    },
+    {
+      "fixture": "phone-20x9-punch-hole",
+      "resolution": "2400x1080",
+      "dpi": 400,
+      "cutout": "punch-left",
+      "checks": 38,
+      "captures": 7,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-20x9-punch-hole/native.json"
+    },
+    {
+      "fixture": "phone-19_5x9",
+      "resolution": "2340x1080",
+      "dpi": 400,
+      "cutout": "none",
+      "checks": 34,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-19_5x9/native.json"
+    },
+    {
+      "fixture": "phone-21x9",
+      "resolution": "2520x1080",
+      "dpi": 480,
+      "cutout": "none",
+      "checks": 34,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/phone-21x9/native.json"
+    },
+    {
+      "fixture": "tablet-4x3",
+      "resolution": "1024x768",
+      "dpi": 160,
+      "cutout": "none",
+      "checks": 34,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/touch-right-2026-10-11/windows/tablet-4x3/native.json"
+    }
+  ],
+  "scope": "Actual native graphics and touch events; handset insets simulated; physical handset acceptance pending"
+}

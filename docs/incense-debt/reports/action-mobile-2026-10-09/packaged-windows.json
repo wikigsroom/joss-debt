@@ -1,6 +1,6 @@
 {
 	"checks": [
-		"the executable loads the current 0.2.2 project from its embedded pack",
+		"the executable loads the current 0.2.3 project from its embedded pack",
 		"the generated pickup bitmap loads with its dimensions and transparent background: heal",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin_pair",

@@ -1,0 +1,250 @@
+{
+  "baseline": false,
+  "captures": [
+    {
+      "name": "combat",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "00506ad67a84d570a7bfce248dabc0ee0cf62196ca871de66c11cf7a3f49d0b4",
+      "side_band_variance": [
+        4161.886788989429,
+        4199.333623413422
+      ]
+    },
+    {
+      "name": "pause",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "c5a2a1941e082b22c38e2a1f74a994c56e7fde3a164f04f36b406392b910357f"
+    },
+    {
+      "name": "splash",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "7ec0db639a3d0e51776bb28090fd6945fb59390c355b93c99c5a1f91fa11463b"
+    },
+    {
+      "name": "files",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "7431b441a1d78c8987e743662eee67d98782426d3982e03c4c29ab11689749bc"
+    },
+    {
+      "name": "title",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "05cc9e30be411788286334c888225fc1dc3e0088b79311228d13347ccc1741b9"
+    },
+    {
+      "name": "skill-choice",
+      "size": [
+        2340,
+        1080
+      ],
+      "sha256": "44e150e4d489da40b8a7d9071cb132e63feb11e17a57ee569344999ce9a5a5b6"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "capture/combat",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "complete-room-in-safe-area",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "uniform-room-scale",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "valid-touch-layout",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "default-left-movement-right-combat",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/move",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/aim",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/dash",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/active_item",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(64.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(1216.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 72.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 648.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/inventory",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/inventory",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-move-input",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-aim-input",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-touch-release",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/pause/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/splash/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/splash",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/files/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/files",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/title/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/title",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/skill-choice/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/skill-choice",
+      "passed": true
+    }
+  ],
+  "cutout": "none",
+  "dpi": 400.0,
+  "passed": true,
+  "physical_pixels": [
+    2340,
+    1080
+  ],
+  "safe_area": "[P: (6.0, 6.0), S: (1548.0, 708.0)]",
+  "scope": "Native desktop graphics, real touch dispatch, simulated handset dimensions/insets; no physical Android claim",
+  "version": "0.2.3",
+  "viewport": "[P: (0.0, 0.0), S: (1560.0, 720.0)]",
+  "recorded_at": "2026-10-10T18:31:47.611371+00:00",
+  "packaged": true,
+  "source_script_sha256": {
+    "game/scripts/main.gd": "b625663e073775b45c090adfbbf5e9ad8ff9732352ece4ff9b2174c6a2950108",
+    "game/scripts/ui/game_renderer.gd": "a05371a36633bee538b2325965a4c5275622c116e560df8bc524b4406eb71a47",
+    "game/scripts/ui/mobile_surface.gd": "c15c2db2d7070cc9a6115024921ed6af2a74bbdb97a90b9994bd1febfd0239b3",
+    "game/scripts/ui/input_adapter.gd": "fd7217bb7404727f347959a284f4998276bcf5b5929e17b24e398206aa96c510",
+    "game/scripts/ui/control_settings.gd": "4e3e9e6db2cdec6be49bcf3c983d448eef075ad31529b44c91870fb98033e86e"
+  },
+  "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+}

@@ -28,8 +28,8 @@ def require(condition, detail):
         raise RuntimeError(detail)
 
 
-def check_matrix(filename, version, artifact=None):
-    matrix = read(REVISION / filename)
+def check_matrix(filename, version, artifact=None, revision=REVISION):
+    matrix = read(revision / filename)
     require(matrix["passed"] and len(matrix["fixtures"]) == 8, "Incomplete screen matrix: " + filename)
     for row in matrix["fixtures"]:
         report = read(ROOT / row["report"])

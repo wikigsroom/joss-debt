@@ -114,7 +114,7 @@ static func show_assistance(app, scroll_y: int = 0) -> void:
 
 static func show_layout(app) -> void:
 	app.screen = "touch_layout"
-	sheet(app, "触点位置与大小", "选一个触点，拖动位置；每个触点可独立调大小。")
+	sheet(app, "触点位置与大小", "默认左手移动、右手战斗；拖动位置，独立调整大小。")
 	var ratio = app.adapter.safe_rect.size.x / app.adapter.safe_rect.size.y
 	var preview_size = Vector2(800, minf(360, 800 / ratio))
 	var preview = TextureRect.new()
