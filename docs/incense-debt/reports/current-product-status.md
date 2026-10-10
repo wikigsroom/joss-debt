@@ -22,4 +22,4 @@ Android 0.3.0／code 6、arm64 调试签名，与前一本机 0.2.3 APK 的签�
 
 本轮无 Docker、WSL、虚拟化或浏览器。仍需物理 Android／手柄、长期平衡、真实 WAN 与目标主机长时运行，以及发行签名／iOS 验收。
 
-发布状态：附件正在准备，公开发布回执将在完成上传和服务器哈希核验后补充。
+发布状态：**v0.3.0-alpha.1 已公开**，标签提交 `9755f28c5e43167d1ca823ac4abc00522fafba7a`，6 个附件已逐一通过 GitHub 完整 SHA-256 与大小核验；8 项匿名 HTTPS 检查通过。见[发布回执](../../releases/v0.3.0-alpha.1.publication.json)与[公开访问记录](../../releases/v0.3.0-alpha.1.https.json)。

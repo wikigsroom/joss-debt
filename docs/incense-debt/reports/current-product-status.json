@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-10T21:22:46.415193+00:00",
+  "recorded_at": "2026-10-10T21:40:11.501017+00:00",
   "version": "0.3.0",
   "status": "playable_offline_and_two_player_online_alpha",
   "product_complete": false,
@@ -213,6 +213,48 @@
       "widescreen_packaged_checks": 282
     }
   },
-  "public_release_state": "prepared_not_yet_published",
-  "privacy_policy_version": "1.4"
+  "public_release_state": "published",
+  "privacy_policy_version": "1.4",
+  "public_release_commit": "9755f28c5e43167d1ca823ac4abc00522fafba7a",
+  "public_release_published_at": "2026-10-10T21:35:10Z",
+  "publication_receipt": "docs/releases/v0.3.0-alpha.1.publication.json",
+  "anonymous_https_report": "docs/releases/v0.3.0-alpha.1.https.json",
+  "public_release_assets": [
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025354672,
+      "digest": "sha256:7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-android-arm64-debug.apk"
+    },
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-server-windows-x64.zip",
+      "bytes": 38495019,
+      "digest": "sha256:16c5006494a13155f0f2db449c7b44ef8cdd614f7b352ec8403f4ee886acb704",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-server-windows-x64.zip"
+    },
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-windows-x64.zip",
+      "bytes": 1031643325,
+      "digest": "sha256:65a978824a67b7e4f344c2cab5b81ea474b70962ff64f51c7534274ff232a2a8",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-windows-x64.zip"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 5053,
+      "digest": "sha256:24cc2c4d3d114ada727a450469c1aa6e125cffbd18fa66a07248481df7edf3bd",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/release-manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 515,
+      "digest": "sha256:86c5b297437cc999ef3283bcbd67402cbdbaeb7e2fa5eaaad215ceb0557e3682",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/SHA256SUMS.txt"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 11123,
+      "digest": "sha256:fdbf28cdb7db94cab0b4876596fd2192b77e2636695024df3e5c2e94ab630920",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/START-HERE.md"
+    }
+  ]
 }

@@ -6,6 +6,7 @@ uses no credentials, bounds response reads and confirms public download access.
 from pathlib import Path
 from datetime import datetime, timezone
 import argparse
+import base64
 import hashlib
 import json
 import urllib.request
@@ -51,10 +52,13 @@ def main():
             valid = valid and (data.startswith(b"PK") if item["name"].endswith((".zip", ".apk")) else True)
         checks.append({"id": "anonymous_asset", "name": item["name"], "url": item["url"], "status": status,
                        "expected_bytes": item["bytes"], "prefix_only": not small, "passed": valid})
-    readme_url = f"https://raw.githubusercontent.com/wikigsroom/joss-debt/{args.tag}/README.md"
-    status, _, readme = fetch(readme_url, 1024 * 1024)
+    readme_url = f"https://api.github.com/repos/wikigsroom/joss-debt/contents/README.md?ref={args.tag}"
+    status, _, readme_response = fetch(readme_url, 1024 * 1024)
+    readme_document = json.loads(readme_response)
+    readme = base64.b64decode(readme_document["content"], validate=False)
     checks.append({"id": "tagged_readme_has_online_gif", "url": readme_url, "status": status,
-                   "passed": status == 200 and b"online-2026-10-11/media/duel-native.gif" in readme})
+                   "git_blob_sha": readme_document["sha"],
+                   "passed": status == 200 and readme_document["encoding"] == "base64" and b"online-2026-10-11/media/duel-native.gif" in readme})
     report = {"passed": all(item["passed"] for item in checks), "tag": args.tag, "release_url": receipt["url"],
               "commit": receipt["commit"], "verified_at": datetime.now(timezone.utc).isoformat(), "checks": checks,
               "anonymous": True, "tls_verification": "system default; enabled", "browser_used": False,

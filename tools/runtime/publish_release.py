@@ -152,7 +152,9 @@ def main():
     if state["draft"] or not state["prerelease"] or set(assets) != set(expected) or \
             not all(matching(assets.get(name), name) for name in expected):
         raise RuntimeError("Published release does not match the verified Alpha")
-    if state["body"].strip() != notes.read_text("utf8").strip():
+    # gh may preserve the Windows file's CRLF in GitHub's JSON response,
+    # while Python's text reader normalizes it to LF.
+    if state["body"].replace("\r\n", "\n").strip() != notes.read_text("utf8").strip():
         raise RuntimeError("Published notes differ from the reviewed bilingual notes")
     receipt = {"url": state["html_url"], "tag": tag, "commit": head,
                "draft": state["draft"], "prerelease": state["prerelease"],
