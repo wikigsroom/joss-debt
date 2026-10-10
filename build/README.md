@@ -1,8 +1,8 @@
 # 《香火债》0.2.3 · 运行与操作
 
-[GitHub 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)提供 Windows ZIP、Android 调试 APK、iOS 共享源码和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.2.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
+[GitHub 0.2.3 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)提供 Windows ZIP、Android 调试 APK、中英指南和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.2.3-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
 
-本机 EXE / APK 为 0.2.3；上方 GitHub 链接保留 0.2.0 公开版本。新包默认左手只移动，身法与焚债／爆炸技能均在右侧，旧默认布局自动升级，见 [默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。同时包含手机长屏黑边修复、边到边显示、前摄安全区与横屏翻转，见 [手机适配修订](../docs/incense-debt/37-mobile-widescreen-adaptation.md)。此前的角色动作、移动交互、四首随机音乐和隐私主体说明见 [0.2.1 修订](../docs/incense-debt/33-action-mobile-update.md)。旧 iOS 交接未在本轮更新。
+本机与本次发布的 EXE / APK 均为 0.2.3，安装包复用实际验收的同字节应用。新包默认左手只移动，身法与焚债／爆炸技能均在右侧，旧默认布局自动升级，见 [默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。同时包含手机长屏黑边修复、边到边显示、前摄安全区与横屏翻转，见 [手机适配修订](../docs/incense-debt/37-mobile-widescreen-adaptation.md)。此前的角色动作、移动交互、四首随机音乐和隐私主体说明见 [0.2.1 修订](../docs/incense-debt/33-action-mobile-update.md)。旧 iOS 交接保留在 0.2.0 历史 Release。
 
 当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与屏幕检查见 [0.2.3 交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示主角、小怪和 Boss 动作。
 
@@ -47,7 +47,7 @@
 
 如需在真实发布前做一次 Godot release 模式导出，可运行 `python tools/runtime/build_native.py android --android-build release`。该命令会使用 `build/android/IncenseDebt-release.apk` 作为独立输出，并在缺少产品所有者发布密钥时安全删除未签名半成品；当前工作区没有提交任何 keystore，因此该命令只会留下导出日志，不会把调试包冒充发行包。签名发行包必须由产品所有者在本机注入自己的密钥后完成。
 
-横屏左杆移动、右杆瞄准／攻击；身法默认在左杆内上侧，焚债在右杆内上侧，道具装备后显示。设置 → 触控可分别调整五项触点的位置与大小（75%～175%，保留最小热区），调整透明度、左右镜像，并保存后直接试操作。固定／浮动摇杆可切换。顶部地图在战斗中可点开，仍需走进场景中的门切房。技能候选同屏比较，满槽替换先预览旧、新效果，再确认。数字软键盘和输入框避让已实现；系统返回先收起键盘，再关闭界面或暂停。
+横屏左侧只有移动摇杆，右侧为瞄准／攻击摇杆、身法位移、焚债／爆炸技能，道具装备后也在右侧显示。设置 → 触控可分别调整五项触点的位置与大小（75%～175%，保留最小热区），调整透明度、左右镜像，并保存后直接试操作。固定／浮动摇杆可切换。顶部地图在战斗中可点开，仍需走进场景中的门切房。技能候选同屏比较，满槽替换先预览旧、新效果，再确认。数字软键盘和输入框避让已实现；系统返回先收起键盘，再关闭界面或暂停。
 
 APK已通过结构及签名检查，尚未在连接的真实手机安装或运行。手机表现、温控与生命周期结论见交付记录的待验收部分。
 

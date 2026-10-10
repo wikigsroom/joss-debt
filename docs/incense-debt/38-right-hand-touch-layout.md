@@ -34,7 +34,7 @@
 - 八组原生屏幕／切口：源码和导出包各 **282 项检查、51 张捕获**，覆盖 16:9、19.5:9、20:9、21:9、4:3、左右前摄及独立打孔；直接验证左半屏仅有移动热区、战斗触点均位于右半屏，以及安全区和间距。
 - 当前 Windows EXE、APK 签名和编译脚本核对以[当前交付](reports/current-product-status.md)及[本轮收据](reports/touch-right-2026-10-11/delivery.json)为准。
 
-新版 [IncenseDebt.apk](../../build/android/IncenseDebt.apk) 为 **0.2.3 / versionCode 5**，与上一份本地 0.2.2 APK 同签名，可覆盖升级保留数据。公开 GitHub Release 仍为历史 `v0.2.0-alpha.1`，不含此次改动。当前未连接 X30，真机拇指舒适度和系统手势仍需实际安装验证。
+新版 [IncenseDebt.apk](../../build/android/IncenseDebt.apk) 为 **0.2.3 / versionCode 5**，与上一份本地 0.2.2 APK 同签名，可覆盖升级保留数据。本次 [GitHub v0.2.3-alpha.1 发布包](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1) 包含此次键位改动与长屏修复，附中英升级说明和 SHA-256。当前未连接 X30，真机拇指舒适度和系统手势仍需实际安装验证。
 
 [移动回归](reports/touch-right-2026-10-11/mobile-regression/mobile-matrix.json) · [源码布局矩阵](reports/touch-right-2026-10-11/native-matrix.json) · [实际导出包矩阵](reports/touch-right-2026-10-11/windows-matrix.json) · [图片来源与哈希](reports/touch-right-2026-10-11/media.json) · [0.2.2 历史交付](reports/touch-right-2026-10-11/prior-package-receipts/build/delivery-manifest.json)
 

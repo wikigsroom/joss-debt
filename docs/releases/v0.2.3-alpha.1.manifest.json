@@ -1,0 +1,88 @@
+{
+  "tag": "v0.2.3-alpha.1",
+  "version": "0.2.3",
+  "prerelease": true,
+  "repository": "wikigsroom/joss-debt",
+  "engine": "Godot 4.7.2",
+  "built_from_commit": "31ccf48d5c0e730650d018e5b1006b859ebab7df",
+  "game_git_tree": "63b718d1786566f454444e93ccf6f680bc6650a5",
+  "game_member_count": 8036,
+  "windows_verification": {
+    "passed": true,
+    "windows_exe_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90",
+    "keyboard_checks": 107,
+    "package_checks": 2157,
+    "native_screen_checks": 282,
+    "native_screen_captures": 51,
+    "source_screen_checks": 282,
+    "source_mobile_checks": 368,
+    "runtime_resources": 3810,
+    "matching_compiled_android_scripts": 76,
+    "evidence_reuse": "exact verified canonical application; no new export"
+  },
+  "android": {
+    "build": "debug",
+    "apk_sha256": "bb2e3a32ddf849d50a4f655d1c1456ab013d1b71e5585c7d5e3e9eb6272b60eb",
+    "version_code": 5,
+    "signature_verified": true,
+    "upgrade_signer_matches_previous": true,
+    "signer_certificate_sha256": [
+      "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c"
+    ],
+    "edge_to_edge": true,
+    "physical_device_tested": false
+  },
+  "ios": {
+    "included": false,
+    "historical_handoff_version": "0.2.0",
+    "signed_ipa_created": false
+  },
+  "save_schema": 2,
+  "verification_reports": [
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/delivery.json",
+      "sha256": "b54881e4e212f299aca3169d26b987c84b11cf24c4ee931efeb2b024582bce3f"
+    },
+    {
+      "path": "docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json",
+      "sha256": "e2c49875a5a5277595afc7b2efb60f1d1d01d5f7da210700a9d2522aaab6ac1c"
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/android-verification.json",
+      "sha256": "fa2fe4791e669beb8eaa098c7b8a4ef7f16214616dc7a75d01beeca780dbfb1c"
+    },
+    {
+      "path": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json",
+      "sha256": "697eedbba9b350877d0ca5a0d96e0e4006a030a9c9407f60e05321be247155f2"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/native-matrix.json",
+      "sha256": "b5cf06fba6a1bfcb59e4c3f31f7f4affea57ad879eeebcd10d90a88cc2513a5e"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/windows-matrix.json",
+      "sha256": "76a6b66d64b57171558fa300385f2be184da47635e14e51e519208d1bda00b91"
+    },
+    {
+      "path": "docs/incense-debt/reports/touch-right-2026-10-11/mobile-regression/mobile-matrix.json",
+      "sha256": "eab1a19401b10d1272c23517a1812380489bf16f5335e9743d62064c8b684e65"
+    }
+  ],
+  "files": [
+    {
+      "name": "IncenseDebt-v0.2.3-alpha.1-windows-x64.zip",
+      "bytes": 1031531026,
+      "sha256": "5de1e1491757db375b034f05237542da06beda41267766c0efd648f552a7125b"
+    },
+    {
+      "name": "IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025238240,
+      "sha256": "bb2e3a32ddf849d50a4f655d1c1456ab013d1b71e5585c7d5e3e9eb6272b60eb"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 6493,
+      "sha256": "efcc8526a92e111ed1254e25b49ce9b8b17bd397a29ff31823b840f4156de14f"
+    }
+  ]
+}

@@ -5,7 +5,9 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[公开旧版 v0.2.0-alpha.1 / Previous public prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+**[v0.2.3-alpha.1 发布包 / Release package](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.3-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+
+[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-windows-x64.zip) · [Android arm64 APK（调试签名 / debug signed）](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/SHA256SUMS.txt)
 
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
@@ -18,8 +20,8 @@
 | 游戏语言 / Game language | 当前界面与叙事为简体中文；本 README 为中英双语 / the game currently uses Simplified Chinese; this README is bilingual |
 | 平台 / Platforms | Windows 0.2.3 已原生验证；Android 0.2.3 APK 已检查；iOS 保留 0.2.0 源码交接 / native Windows 0.2.3 verified; Android 0.2.3 APK inspected; historical iOS 0.2.0 source handoff |
 
-当前源码及本机 **0.2.3** 包含独立角色动作、可单独调整大小／位置的触控、四首随机 BGM 与公开隐私主体；覆盖全部 **402 个怪物身份、24,048 帧独立攻击／受击动作**。[操作修订](docs/incense-debt/33-action-mobile-update.md)与[全量怪物动作验收](docs/incense-debt/35-creature-action-completion.md)保留 0.2.1 的历史证据；当前交付见下方默认触控修订。上方 GitHub 发布链接仍为旧版。  
-The current source and local **0.2.3** builds include independently drawn hero actions, individually adjustable touch controls, a four-song shuffle playlist, the corrected privacy operator, and independently drawn attack/hurt animations for **all 402 creature identities, totaling 24,048 poses**. The [control revision](docs/incense-debt/33-action-mobile-update.md) and [creature-action delivery](docs/incense-debt/35-creature-action-completion.md) retain their 0.2.1 evidence; current delivery is documented in the default-control revision below. The public release link above remains historical.
+当前源码及 **0.2.3** 发布包包含独立角色动作、可单独调整大小／位置的触控、四首随机 BGM 与公开隐私主体；覆盖全部 **402 个怪物身份、24,048 帧独立攻击／受击动作**。[操作修订](docs/incense-debt/33-action-mobile-update.md)与[全量怪物动作验收](docs/incense-debt/35-creature-action-completion.md)保留 0.2.1 的历史证据；当前交付见下方默认触控修订。  
+The current source and **0.2.3** release packages include independently drawn hero actions, individually adjustable touch controls, a four-song shuffle playlist, the corrected privacy operator, and independently drawn attack/hurt animations for **all 402 creature identities, totaling 24,048 poses**. The [control revision](docs/incense-debt/33-action-mobile-update.md) and [creature-action delivery](docs/incense-debt/35-creature-action-completion.md) retain their 0.2.1 evidence; current delivery is documented in the default-control revision below.
 
 2026-10-11 的 0.2.1 修订更新六件生成消耗品、同源资源 UI 和 Windows / Android 包，附实际拾取 GIF 与 40 张背景辨识度检查。[消耗品修订](docs/incense-debt/36-consumable-art-update.md)。  
 The 2026-10-11 pickup revision adds six generated collectible objects and shared resource UI, with real collection GIFs and readability checks across 40 backgrounds. See the [0.2.1 pickup revision](docs/incense-debt/36-consumable-art-update.md).
@@ -410,7 +412,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 
 方向键松开即停止主攻击，但保留最后瞄准方向；实际移动鼠标才重新切回鼠标瞄准。技能多选、供物替换、特殊房、偿债、层间叙事、结局与试射返回都有键盘路径。
 
-手机采用左移动 / 右瞄准双摇杆。身法默认在左杆内上侧，焚债在右杆内上侧，装备道具后显示独立按钮，支持第三指同时施术。**设置 → 触控**允许五项触点分别保存位置与大小（75%～175%，保留最小热区），支持左右镜像、透明度、固定／浮动摇杆及“保存·试操作”。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、切换攻击、拾取范围、触觉、震动／强闪／粒子与愿页字号设置。
+手机默认左侧只有移动摇杆；右侧为瞄准／射击摇杆、身法位移、焚债／爆炸技能，装备道具后也在右侧显示独立按钮，支持第三指同时施术。旧手机／平板默认位置自动升级，自定义布局保留。**设置 → 触控**允许五项触点分别保存位置与大小（75%～175%，保留最小热区），支持左右镜像、透明度、固定／浮动摇杆及“保存·试操作”。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、切换攻击、拾取范围、触觉、震动／强闪／粒子与愿页字号设置。
 
 战斗中可点顶部地图；技能候选同屏比较，满槽替换先预览旧、新效果再确认。软键盘会避让输入区域，系统返回先收起键盘，再关闭界面或暂停；竖屏／窄屏触发暂停保护。[移动审查与修复](docs/incense-debt/33-action-mobile-update.md)保留原因、截图和测试矩阵；真实设备验收见[当前边界](#zh-status)。
 
@@ -519,7 +521,9 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。README 引用的截图与 GIF 保留在 Git 中。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) 下载历史 0.2.0，也可按当前源码导出 0.2.3。[交付清单](build/delivery-manifest.json)记录当前本地验证产物，[发布清单](docs/releases/v0.2.0-alpha.1.manifest.json)记录已公开的旧版附件。
+**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。README 引用的截图与 GIF 保留在 Git 中。[GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1) 提供 0.2.3 Windows ZIP、Android APK、中英指南和校验文件；也可按当前源码导出。[交付清单](build/delivery-manifest.json)记录当前验证产物，[发布清单](docs/releases/v0.2.3-alpha.1.manifest.json)绑定本次附件与实际包体验收。旧版 iOS 交接保留在 [0.2.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)。
+
+发布当前已验收的包时，`python tools/runtime/package_verified_release.py --tag v0.2.3-alpha.1` 会核对原 EXE／APK、验收哈希与原生捕获，生成 ZIP、指南及校验清单。提交发布文档并推送对应 annotated tag 后，`python tools/runtime/publish_release.py --tag v0.2.3-alpha.1` 使用本机 GitHub CLI 登录态上传草稿，逐项验证服务器摘要再公开；该流程保留原应用包和存档。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -812,7 +816,7 @@ Replacing an unfinished run requires confirmation; canceling preserves it. Loade
 
 Releasing arrow keys stops firing while retaining the last aim until the mouse actually moves. Sequential skill choices, relic replacement, special rooms, repayment, floor narratives, ending choices, and trial returns have keyboard paths.
 
-Touch uses separate movement and aiming sticks. Dodge sits above the inner edge of the left stick, Burn Debt above the right stick, and the active-item button appears when equipped; third-finger casting is supported. **Settings → Touch** stores each of five controls' position and size independently (75%–175%, with a minimum hit area), with mirroring, opacity, fixed/floating sticks, and a save-and-try screen. Settings also include remapping with conflict swaps, aim assistance, deadzones, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size.
+The default mobile layout reserves the left side for movement. Aim/fire, dodge, Burn Debt/explosion and the equipped active-item button sit on the right; third-finger casting is supported. Saved phone/tablet defaults upgrade while custom positions remain intact. **Settings → Touch** stores each of five controls' position and size independently (75%–175%, with a minimum hit area), with mirroring, opacity, fixed/floating sticks, and a save-and-try screen. Settings also include remapping with conflict swaps, aim assistance, deadzones, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size.
 
 The top map button works during combat. Skill candidates appear together; full-slot replacement previews old/new effects before confirmation. Inputs avoid the soft keyboard, and system Back dismisses it before closing an overlay or pausing. Portrait/narrow layouts pause combat. The [mobile revision](docs/incense-debt/33-action-mobile-update.md) records causes, captures, and the test matrix. Physical gamepad and mobile acceptance remains pending.
 
@@ -921,7 +925,9 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/ZIP files, reproducible audio masters, and most raw QA frames are excluded. README-linked captures and GIFs are tracked. The [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) contains historical 0.2.0 applications; current source builds 0.2.3. The [delivery manifest](build/delivery-manifest.json) records current verified local artifacts; the [release manifest](docs/releases/v0.2.0-alpha.1.manifest.json) records the published older attachments.
+**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/ZIP files, reproducible audio masters, and most raw QA frames are excluded. README-linked captures and GIFs are tracked. The [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1) provides 0.2.3 Windows/Android packages, bilingual instructions and checksums; current source also builds 0.2.3. The [delivery manifest](build/delivery-manifest.json) records verified artifacts; the [release manifest](docs/releases/v0.2.3-alpha.1.manifest.json) binds these attachments to native verification. The old iOS handoff remains in the [0.2.0 release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1).
+
+For verified builds, `python tools/runtime/package_verified_release.py --tag v0.2.3-alpha.1` checks exact application hashes and native evidence, then produces the ZIP, guide and checksums. Commit release documentation and push the annotated tag before running `python tools/runtime/publish_release.py --tag v0.2.3-alpha.1`. It uses the local GitHub CLI session, uploads to a draft, verifies server digests and then publishes. Existing applications and saves are retained.
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
