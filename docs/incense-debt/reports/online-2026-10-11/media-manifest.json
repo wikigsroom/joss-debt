@@ -1,0 +1,120 @@
+{
+  "version": "0.3.0",
+  "windows_sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a",
+  "real_transport": true,
+  "physical_android": false,
+  "records": [
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/hub.webp",
+      "sha256": "a54b7e95ad7924e7477fcf5e157da93943d6311e8fa7715a95e9e71568f0f245",
+      "source_png_sha256": "26f50057472b19644790a87c48136561a37518812deeabe0a2aa74287620966e",
+      "capture": "hub",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/connection-consent.webp",
+      "sha256": "880e717bb68158b6b9c2c222b770a457ab1a60fd8c2b4ac5ddd63ac493ed109b",
+      "source_png_sha256": "cfd30aab6906e95a91844694d890c09e67aa151d233b3424572d6946e0999502",
+      "capture": "connection-consent",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/lobby.webp",
+      "sha256": "1b65042b4e89a7ada5ee12444bd4b5dedeaf398111ed4ccd5ccb9a0a0b16a1af",
+      "source_png_sha256": "e526bd353c71751112cd6f19daafed6de6118e6e30342ec8146f94917bf1a021",
+      "capture": "lobby",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/draft.webp",
+      "sha256": "c7ae079cc17cbf54719af0232535dc95716ace067765d551c7dc04c36abb952a",
+      "source_png_sha256": "3d6071541af002fec30bcd5d6c61133b5818183f3fd4feacbb0fda13550a661f",
+      "capture": "draft",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/combat.webp",
+      "sha256": "deb9833f4366dfe6aac55051d09040514fabe8d6e60e24f182eb810566f6b4bf",
+      "source_png_sha256": "c5d5865ca64c2f41a6a41f5075d3beb681a47800f77977826c2d4f0263dee1dc",
+      "capture": "combat",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/build.webp",
+      "sha256": "5f4a1ad51f09d6cc00ba6eb5fda3875c7fc30bf8d1949b89c9b30a84123d2c85",
+      "source_png_sha256": "c88bc54811627d820531d27ff0aaa1f5a3b6d8a81992e8f76de11eeb29eb83bf",
+      "capture": "build",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/wide-mobile.webp",
+      "sha256": "49c023393c68784751a34a41c457e4977ea76b7189a7518993d4a6c10a1d7658",
+      "source_png_sha256": "d79f2b07b4990c4600e937ad16164f55e0475c401a3ecd3873e52ddbeefc32f0",
+      "capture": "wide-mobile",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/reconnect.webp",
+      "sha256": "dfddcc75f5a89c1abb0d6e29a61cfbfc2149a87d588e65d583253aaf993fc9e5",
+      "source_png_sha256": "2fbdcb5185b70dcb88adc13e8894158e9a72106ec76ed1d9ce51cc045a2b7eab",
+      "capture": "reconnect",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/result.webp",
+      "sha256": "34d779c5bf55b37011e3643c2550263477677ce31b671d79ca3be6100d6da260",
+      "source_png_sha256": "782c0f07a96bfbb88e1f05c7e212481a0bc70616787c7b54dcb9efe729b1a3aa",
+      "capture": "result",
+      "codec": "WebP quality 88",
+      "execution": "actual Windows EXE; automated native flow",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/online-2026-10-11/media/duel-native.gif",
+      "sha256": "3261f98225729bc33c83083449c516e77581a93df23a0792e3a2e990a95d8197",
+      "frames": 20,
+      "source_png_sha256": [
+        "ded9eea3c2800573f0ebccbfda83276f8e58261cb8bc0498cab1f3d0122b134c",
+        "92be52996559aa8b167add518027db5315040c218ab5a5f1ff5841cdbba3ad1c",
+        "d2f13f68b7b7918b9459a13ea5a018d76f45af8eea1099e728c47edb7ba5811b",
+        "da0689b16f73f873df4f5ebdc9a24e1ce9a2b377ab785817605520167de54f10",
+        "c6f59e31749d42e53961b0890664c4fb70bd063deb12820619d2f11def7c602f",
+        "9a1971513ca5e67f87ba411730d30d0b6b3fea057e4a7f2d62c492d0c3f75a27",
+        "f71d928df7ec85219d0401a3650242daf9a3a2117bdd65d47116288f325c57a7",
+        "0b1787efc30d0373bd094d1174ce234b06de275002ced6d427bd065758ff3827",
+        "b62c389aedb63bf19ef8dd73b5e2ec98fd87f81911e0b47887e2bb78a0563ba4",
+        "d78509a3bf2e8f8bfd121db24d6372dc58960e3542c3c9ec1ed8ceefd465dc93",
+        "787b344ec54faa06e39fb568b5cef1b28ed3c45bc555964359cb0f9084505525",
+        "3a81670cfdc6fbbb7fd52d8f7d21bcf23e282b4a5ac2623a7d2f1d3080d50b32",
+        "7f4a33a1ec0155c324df6290400b65e3f6fa98a23f58769adc248f5b18328243",
+        "b9a7815610cdb8b2b9b37bec850ff2856712ce82f06ac7bb0b69f6b8cb49e149",
+        "0356a7e436c4f00fe239d97d12ed0a8a120b5ddd5ff809905b32d39fce1f61f8",
+        "31f6edcd52d80dc02fafa9116427c1f299d62a48ed1372a96eda10ebae47fb34",
+        "448431df709be06aaa4073b20aa3bc7fd7367148208307b3f042299c6ae636eb",
+        "15b810960c44c540ae0ce2e886c6028d685c6697beb2cd73af8ab27d6f769ace",
+        "1b272147f9ac3d3774775c9b3db21b981bb7c407b9ab6e59a31f5f665a5700ed",
+        "831bf6fa2406177ff62d61c09362669a5be932e2e9fd246bdc311efe05588af8"
+      ],
+      "capture": "native live combat; real right touchscreen stick; silent; 100 ms comparison playback",
+      "execution": "matching native Godot runner opens accepted EXE pack; compiled game; external touchscreen capture driver",
+      "proof": "native-touch.json",
+      "driver_sha256": "60582b2bff718a7c730d840ae92f910f5c0f78ed8cf1648704b4949014bfe450"
+    }
+  ]
+}

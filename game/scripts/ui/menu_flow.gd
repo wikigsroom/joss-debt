@@ -68,6 +68,7 @@ static func main_menu(app) -> void:
 		["新局", "play", func(): app.open_character_select("normal")],
 		["继续", "rotate-ccw", app.restore_run],
 		["挑战", "sword", func(): app.show_menu("challenges")],
+		["对灯", "shuffle", func(): app.online.open()],
 		["记录", "scroll-text", func(): app.show_menu("stats")],
 		["还愿庭", "house", func(): app.show_hub()],
 		["设置", "settings-2", app.show_settings],
@@ -86,7 +87,7 @@ static func main_menu(app) -> void:
 		var entry = entries[i]
 		var action = app.icon_button(list, entry[0], entry[1], Rect2(0, 0, 474, height), entry[2], i == 0, entry[0])
 		action.custom_minimum_size = Vector2(474, height)
-		action.set_meta("nav_id", ["new", "continue", "challenges", "stats", "hub", "settings", "quit"][i])
+		action.set_meta("nav_id", ["new", "continue", "challenges", "online", "stats", "hub", "settings", "quit"][i])
 		action.set_meta("nav_default", i == 0)
 		if i == 1:
 			action.disabled = app.save_session.read_only or not has_run

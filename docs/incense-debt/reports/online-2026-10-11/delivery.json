@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "version": "0.3.0",
+  "recorded_at": "2026-10-10T21:22:46.415193+00:00",
+  "windows_sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a",
+  "android_sha256": "7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
+  "server_sha256": "61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8",
+  "checks": {
+    "combat": 271,
+    "transport": 26,
+    "recovery": 57,
+    "storage": 7,
+    "native_online": 30,
+    "native_source": 30,
+    "native_touch": 33,
+    "offline_keyboard": 107,
+    "package_parity": 2167
+  },
+  "native_captures": 33,
+  "native_touch_captures": 33,
+  "runtime_resources": 3810,
+  "matching_compiled_scripts": 86,
+  "source_sha256": {
+    "game/data/achievements.json": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+    "game/data/arena_boundaries.json": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+    "game/data/catalog.json": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+    "game/data/equipment.json": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+    "game/data/expansion.json": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+    "game/data/fx_presets.json": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+    "game/data/music_playlist.json": "343da68241e31ad93ab88a1b19deb5d98969ba626e32d9d4e6ac6cf886cba4c6",
+    "game/data/music_scores.json": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+    "game/data/projectile_profiles.json": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+    "game/data/rules.json": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+    "game/data/runtime_assets.json": "2e64aad01ff87314fdee7dcda09bdffe31920cde5f55dc6fd6d15218aa5a5e97",
+    "game/data/story.zh_CN.json": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+    "game/export_presets.cfg": "f28904e4fd396d20dcff1a81f20bb98e8b77779a12d9aca1077ea741f1eb7d6f",
+    "game/main.tscn": "64e9776695155ef7a02ad5c2ffece3f9a7d0a8a41aba84fa661de13a815ce61a",
+    "game/project.godot": "d6810b52cefdc3912158d2e4f186ab928f8c2c9871a4a455548beb6959e6ab27",
+    "game/scripts/combat/attack_composer.gd": "197d5bef1c1b1ec083603267954250cf6f6c9d5613669753c87a69212af126c5",
+    "game/scripts/combat/boss_patterns.gd": "c38a6a528fe77caa40f0e37216d4c78d73853aa6a5d97e4d9f59b6e0ccc40dac",
+    "game/scripts/combat/creature_actions.gd": "616ca42856dde0bba1809271225eb4f0d5ebc0a0196b05a67c9867c52e20a78a",
+    "game/scripts/combat/effects.gd": "feedd2650de0950c73ef4b19d8f62f83e36be322b02f957f9ce577abc72a5ad9",
+    "game/scripts/combat/enemy_patterns.gd": "6d95a909c24a02638bc86aa95b06e50518fda5d96f04dac0944b3ebb762bc0c6",
+    "game/scripts/combat/equipment.gd": "67e3aecf37f93c01c57d63fd1907826ab97fe2f2a2fb8c40b78fded671aa79f7",
+    "game/scripts/combat/expanded_patterns.gd": "022ce950598e1a3633bcc6c7e4d3598c6a89f15a7fb4bf84065e8b3e1e16ea3f",
+    "game/scripts/combat/expanded_weapons.gd": "e6ee1095a7ca5421df83f0c94aa1e31c659135a82ca094df2685841488ff24ee",
+    "game/scripts/combat/impact_control.gd": "a0e60caf9e97539d8a34270a941bb50cdb408a28ac0a26154908d3e2ce9dbe35",
+    "game/scripts/combat/interactive_scenery.gd": "540e6f0b6cbef0a510a1bff6087a208328e55dac4b0c1ef86b1abb20e91082af",
+    "game/scripts/combat/projectile_styles.gd": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
+    "game/scripts/combat/room_geometry.gd": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
+    "game/scripts/combat/world.gd": "a8b85f6a4ddef5c65679304aadea3c6e6e4dd20ccc77295feebb0b7fd8e1f7a3",
+    "game/scripts/core/choice_shortcuts.gd": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
+    "game/scripts/core/content_db.gd": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
+    "game/scripts/core/daily_seed.gd": "8a585b5ac2da16ecbf3aa58fadae936e34dc1bd43a7cfa1383cb6e095932bd16",
+    "game/scripts/core/damage_record.gd": "9e2a4afa8bfc0776293c96c5d5cae301a5508a4b90f8f1645d2d4bbe063b1fd2",
+    "game/scripts/core/derived_seed.gd": "7783920e2ccfc6ac6a8dd7f0e1636df75bf05a07d1da6566e1b3dbc29b7e0479",
+    "game/scripts/core/expanded_campaign.gd": "500dbc8fdf4b0200095083019f0f3c23cc9a3d4de625d3fed668357533b060ab",
+    "game/scripts/core/meta_progress.gd": "c5fdabaf600bbf84b04b041d78801c8e7101fe7a509afff1f188b394fd2adda0",
+    "game/scripts/core/room_graph.gd": "ce83956ee4e5504ff35ebf0c642efb9f2a13e88d252ab4ed8886da3da8b63c10",
+    "game/scripts/core/run_rng.gd": "ff1166c38a78494761f1a9b2e4ff21e700b60c114882cf4972edd0c003f91964",
+    "game/scripts/core/run_telemetry.gd": "c745524142e2419cbc4dd4f768ff3bf31f0154a6f45fe9851382f321b605e7c9",
+    "game/scripts/core/save_migrations.gd": "353c114d2f4de1c0e3c77196eed592fe65dc71e1d172ed3867fb0c9177aac15e",
+    "game/scripts/core/save_session.gd": "7fa31059c7321ac7b744ef9e7e94f5cc1b1ead0e2835850fa51a65aa974d421b",
+    "game/scripts/core/save_slots.gd": "1a11b528d2072cb03590fcbb5896b753b90d9d2c63368402bb54282603afc368",
+    "game/scripts/core/save_store.gd": "10d694ef55ca9090c6231008af6afc12f8750016cc1eb2fcb804352d6392633b",
+    "game/scripts/core/save_transfer.gd": "a77ba6d3eea48fb92b7a0ddc41077b1e91014779fffd9010950612609b6a52d7",
+    "game/scripts/core/story_book.gd": "80e2e0f25a4e3c6b655e6c30911f9dbaae0aecdbeb54c17422d66c51be4e7804",
+    "game/scripts/core/weapon_trial.gd": "71cb8d31218d82a5f7aeadf6c6063f711cb8bb5572a6f010d28699a53d13cf27",
+    "game/scripts/main.gd": "c805f0e2e21c0017003f8bfa2dc92d98d21cf9927955c6bcce3c16f977a73552",
+    "game/scripts/network/duel_actor.gd": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
+    "game/scripts/network/duel_match.gd": "2717475cd31e2bd4982ba94a0838c0388827ae387bd70e6e4f6178be3ea23a21",
+    "game/scripts/network/motion_prediction.gd": "b2a53d333d5b7764299bb58591ffdebc0053d4e971776fd2a67f992c60cc3405",
+    "game/scripts/network/online_controller.gd": "45b26dbca8ea3bd81895f89e054e201d1597ac764a6ebf9532e1e7d37ba70bde",
+    "game/scripts/network/online_session.gd": "116d15a70bbf25307f3494cb4a65b1381f3dc37ddc95b113d559baa8a1069e14",
+    "game/scripts/network/protocol.gd": "371977266bec9469e9ec1b651de60b41b9242282128c2973698bbea73f5112e3",
+    "game/scripts/network/server_entry.gd": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
+    "game/scripts/network/server_runtime.gd": "55af6a104b408a888943df66a9a85acbb2ea0d0df2aaf8163a144f84152be1a8",
+    "game/scripts/ui/aim_assist.gd": "23dedf5b6cad44681cd8d75d61fcf58aedfdc180590446667148cfad907b8aae",
+    "game/scripts/ui/audio_capture_qa.gd": "02b7478998058b7574a01c9f06df426068df574e44276d23b3b2137a6185cb85",
+    "game/scripts/ui/audio_director.gd": "0df5f78a74254099daa7dc30eb0b6179d5358dd5e057f6c2be6e2b540ed56465",
+    "game/scripts/ui/campaign_cinematic.gd": "cb4ec7712c0173e34f26a7c079b040c78e5809893e634dd5082489c403b1032b",
+    "game/scripts/ui/character_sheet.gd": "15c443c9dfe4f5e88951e90056ee1ef41086d0c90b733f7d054b0c93ffd323ad",
+    "game/scripts/ui/combat_fx.gd": "be7179027fac518b7324315f7190e6dacc0c95b55ce6a0b41ffea04546dad597",
+    "game/scripts/ui/consumable_native_qa.gd": "7484f589cf001981a2d3aa43a26a43029d45d4a6ce4000efeb8d9ada9bfd0c78",
+    "game/scripts/ui/control_settings.gd": "4e3e9e6db2cdec6be49bcf3c983d448eef075ad31529b44c91870fb98033e86e",
+    "game/scripts/ui/drawn_action_fx.gd": "0d233022f747094aef3b39d3d384e5d6e03efcaff141f9e90eb0653ca10bdcdf",
+    "game/scripts/ui/equipment_native_qa.gd": "f890c7f3d1996f853a22fea696296bac1daa64ba0ad614aa9d11a1bb26a641b9",
+    "game/scripts/ui/equipment_ui.gd": "a3d803fa4ddd235e6bc8fbf7ee61f6822c978259bd70f8d0c539a5439a297ceb",
+    "game/scripts/ui/expanded_visuals.gd": "6a24e51d2a8067aaed3d911b8db07f582551c1299e63900528cd2be6fcf3bce5",
+    "game/scripts/ui/expansion_native_qa.gd": "d268acabc101e71062ae3c1ddd079af23d975345b1eaf10ec0d5951ed4a96616",
+    "game/scripts/ui/floor_timeline.gd": "2f164cd7bdd445e5634be07eb57b519e8e0e751c7f012f52b03b128cdd21d20b",
+    "game/scripts/ui/game_hud.gd": "87dd35d19e86f7a4b82ac20caddd7994556a12af058a6704e5c39ce62f72a030",
+    "game/scripts/ui/game_renderer.gd": "bd775421e6575dcde1779c9e106d3ad0f19379b81854a1bf92eedfe97d59be6a",
+    "game/scripts/ui/game_theme.gd": "9e137e6d7fda1335b79651bc622f493543e177b54a175b4d9399a19ed89d1107",
+    "game/scripts/ui/haptic_feedback.gd": "d9e2e59720009c17f995474ee070eda94878fc8f181633a59106fbf136ef9a89",
+    "game/scripts/ui/hub_ui.gd": "5223d02f8bad486e7392d050b17983dfb42ae9eb06b6f7bbaba2017b9f479108",
+    "game/scripts/ui/input_adapter.gd": "fd7217bb7404727f347959a284f4998276bcf5b5929e17b24e398206aa96c510",
+    "game/scripts/ui/input_profile.gd": "f3f07c503e3b1ed90f5c8e729b3f61cacbbc9ef88709093bfdf6181dce5cfd8a",
+    "game/scripts/ui/keyboard_flow_qa.gd": "1f76ad577dda5aa2fc31eb70db6c486db2f66dcd5a0d2accb63e9b5d7000a952",
+    "game/scripts/ui/keyboard_navigation.gd": "5f8663e60e01ed3c1ac93d9b8cadbbaed36c2e0b64536d0c6906fc45d9ae3a80",
+    "game/scripts/ui/menu_flow.gd": "ed74dfd557628c94979d50e5f199eddb3ae08e1a1031f16bbc84d2e600f48642",
+    "game/scripts/ui/mobile_surface.gd": "c15c2db2d7070cc9a6115024921ed6af2a74bbdb97a90b9994bd1febfd0239b3",
+    "game/scripts/ui/modern_ui.gd": "4d5dd0d2d19afe1ec9de01ab02bcb3d4908e9ca555226cf4b5f66cd57dedefcd",
+    "game/scripts/ui/music_playlist.gd": "93635c51d19b97f8ca0065c65618cff854b24b7b63ca19a2574f2436df21d5ce",
+    "game/scripts/ui/music_state.gd": "e3c98e71146de7da3fec9ec31c067372fdbadfca4c5493c289165070569e4e9e",
+    "game/scripts/ui/narrative_reader.gd": "d1aef19c826f8529c6e2b732eaea0f250f07fa943c60d1fd8c812c6d2a093a81",
+    "game/scripts/ui/npc_portrait.gd": "1c40fcfa0c21221577312bf3015387491777487c19f15d05212af9a0669a0c05",
+    "game/scripts/ui/online_native_qa.gd": "47454fa88727b01a8c01fd1e98e406b501db23dec150b33fee975ca2866f55ea",
+    "game/scripts/ui/online_ui.gd": "41e307b33b694104c37a112bc36f1b112c9983fa89ca34e462b6870de311ba14",
+    "game/scripts/ui/orientation_guard.gd": "cb6633be55ebbb51acc3e0853f2b2ad91ce1b4e9d2cb3b6ce125529deb19fc01",
+    "game/scripts/ui/paper_animation.gd": "08743dfd0ce040cb3cb32543b595f46a6e13983fc04d6402ee17fbbe2b29c265",
+    "game/scripts/ui/pickup_art.gd": "12ebac22a94c5f482b513f713a201e2e5aec985fd9b196249edaf987522647d7",
+    "game/scripts/ui/polished_fx.gd": "06cb02d4c8d3edaeff98e9e0f9538d5384202c78885a69c40684fdbe15dc8e52",
+    "game/scripts/ui/rounded_button.gd": "2b89ff10b753e4ecb3962204240edc842fba338251a054aa774a7638c506076d",
+    "game/scripts/ui/route_map.gd": "60876fbc32d1e02b8a367befe2410ad6a13c52b55bf31477dd43aea516e502e9",
+    "game/scripts/ui/run_review.gd": "4903469f7b8cfb3f57414fe71f2a136b42acaf5d6f4c928bb1d95aa9c274c67b",
+    "game/scripts/ui/runtime_quality.gd": "700aba662ebbb24911a5569ca0f662a7fc47d6d706beba57673ed025c78d6b04",
+    "game/scripts/ui/save_transfer_ui.gd": "f190a5216c698503f2cb334736d5a84d3a9747bea824854789c1cb02b1ae1241",
+    "game/scripts/ui/seed_ui.gd": "562ff96b3f23de136e1e6e5a597fdfb9dd6e432237e307eb95c13f7c9cf8dfe5",
+    "game/scripts/ui/touch_layout_editor.gd": "b327646888221ffc4d9bf755fb08bfbf1337f36e92672e8e16d645e50972c102",
+    "game/scripts/ui/touch_tryout.gd": "b8ff4524213d1b25a72c77f3d8988fbcbdee1993525f58f0b550a2cc1bb39f8e",
+    "game/scripts/ui/weapon_gallery.gd": "cd3e2503a0a64b1b4bcfb0521172d445f6ec5abc32b2d1a9977e5ac6ac5b6729",
+    "game/scripts/ui/weapon_motion.gd": "25e0860fbba6efbd2a82d0419c655cc6412c05cc8e7d7ab26341ba7666c63463",
+    "game/scripts/ui/weapon_trial_ui.gd": "490838008678d3f9eb604ab05ce6a8d1964ba909b9a50a37318ff4221ea75239"
+  },
+  "proofs": [
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/combat.json",
+      "sha256": "0c9bed3ab6648b841791f299666f2dd58f35944286cdd87a6ca0416f475c792c"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/transport.json",
+      "sha256": "9711a3134d143194b33d858963df2d3b642f73821e54adce9c3d2aa23c8e7eed"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/recovery.json",
+      "sha256": "1d04133f4e0b66e00c11a63b9c988e36bd6470ff25bcdd87cfcd566afb767747"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/storage.json",
+      "sha256": "79086a2589de86727adfea909229c578b6ee6bae9425750cfac9732b6d4d7c40"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/load.json",
+      "sha256": "e78cb16b38298752f895fb62c5913e0a960f481a7e7b5a25622d92f3ee2749ac"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native.json",
+      "sha256": "5b8fab59aabea3392728e8f51a55155ea27dd43f0fd33e8b1565fcce62b63b81"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native-source.json",
+      "sha256": "2c76285da11236fb034b15a4f82403a3db0ac0b423ff0b4d03e894beaff8b6f5"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native-touch.json",
+      "sha256": "c03706f25de0d9a69d0a3969777e7042cc4679f5f4ce9afb927495f53bcf3cd1"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/package-parity.json",
+      "sha256": "d0cf41b830bdc4cf7869d4faf214262b8416e3f3e46886745e2208e280a2e4df"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/android.json",
+      "sha256": "6f82ba8e2c7764d995a3ef0b75124ac2832157284d955c519354d1d1abb57de5"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/keyboard.json",
+      "sha256": "f6e4595f84ac978db52bf16a6347e71eabbb6dae895bf1cf24eeeb40d7426bd9"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/server-build.json",
+      "sha256": "7f3691f85c1cddb007d8a79f301edef347a03d080a9d180399f3764bc3ff1668"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/privacy-https.json",
+      "sha256": "51af8708583daa11106bd40de5295e1b15300d975935fb2aa0c150bfdd3b3ab1"
+    }
+  ],
+  "limits": {
+    "default_rooms": 2,
+    "default_connections": 16,
+    "public_game_server_deployed": false,
+    "physical_android_tested": false,
+    "wan_latency_tested": false,
+    "human_balance_tested": false
+  },
+  "virtualization": "none",
+  "browser_used": false
+}

@@ -1,0 +1,76 @@
+{
+  "verified_at": "2026-10-10T20:39:41.688004+00:00",
+  "public_url": "https://xhz.sidcloud.cn",
+  "docx_sha256": "c1f270bd959619c156e5dd6a1d9e5df27f68629b03b30d688b76b596058ee84a",
+  "operator_name": "吴国黎",
+  "policy_version": "1.4",
+  "unauthenticated_https_checks": [
+    {
+      "url": "https://xhz.sidcloud.cn/",
+      "resolved_url": "https://xhz.sidcloud.cn/",
+      "status": 200,
+      "bytes": 28598
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy",
+      "resolved_url": "https://xhz.sidcloud.cn/privacy",
+      "status": 200,
+      "bytes": 28598
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy-policy",
+      "resolved_url": "https://xhz.sidcloud.cn/privacy-policy",
+      "status": 200,
+      "bytes": 28598
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-11",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-11",
+      "status": 200,
+      "bytes": 28598
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-08",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-08",
+      "status": 200,
+      "bytes": 24877
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-09",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-09",
+      "status": 200,
+      "bytes": 24898
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-08.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-08.docx",
+      "status": 200,
+      "bytes": 27904
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-09.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-09.docx",
+      "status": 200,
+      "bytes": 27900
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11.docx",
+      "status": 200,
+      "bytes": 29790
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/assets/privacy.css",
+      "resolved_url": "https://xhz.sidcloud.cn/assets/privacy.css",
+      "status": 200,
+      "bytes": 7870
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/assets/paper-spirit.png",
+      "resolved_url": "https://xhz.sidcloud.cn/assets/paper-spirit.png",
+      "status": 200,
+      "bytes": 33711
+    }
+  ],
+  "hosting": "Vercel"
+}

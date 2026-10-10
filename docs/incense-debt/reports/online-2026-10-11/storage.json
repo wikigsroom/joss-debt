@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "id": "two_real_clients_connected",
+      "passed": true
+    },
+    {
+      "id": "live_match_started",
+      "passed": true
+    },
+    {
+      "id": "write_failure_notifies_both_without_user_action",
+      "passed": true
+    },
+    {
+      "id": "fault_stops_play_and_clears_input",
+      "passed": true
+    },
+    {
+      "id": "fault_keeps_battle_frozen",
+      "passed": true
+    },
+    {
+      "id": "repaired_storage_resumes_original_room",
+      "passed": true
+    },
+    {
+      "id": "old_held_move_not_replayed_after_repair",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "server_sha256": "61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8",
+  "packaged_server": true,
+  "recorded_at": "2026-10-10T20:41:50.387675+00:00",
+  "virtualization": "none"
+}

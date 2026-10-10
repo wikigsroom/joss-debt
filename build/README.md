@@ -1,12 +1,16 @@
-# 《香火债》0.2.3 · 运行与操作
+# 《香火债》0.3.0 · 运行与操作
 
-[GitHub 0.2.3 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)提供 Windows ZIP、Android 调试 APK、中英指南和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.2.3-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
+[GitHub 0.3.0 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.3.0-alpha.1)提供 Windows 客户端 ZIP、Android 调试 APK、独立 Windows 服务端 ZIP、中英指南和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.3.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
 
-本机与本次发布的 EXE / APK 均为 0.2.3，安装包复用实际验收的同字节应用。新包默认左手只移动，身法与焚债／爆炸技能均在右侧，旧默认布局自动升级，见 [默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。同时包含手机长屏黑边修复、边到边显示、前摄安全区与横屏翻转，见 [手机适配修订](../docs/incense-debt/37-mobile-widescreen-adaptation.md)。此前的角色动作、移动交互、四首随机音乐和隐私主体说明见 [0.2.1 修订](../docs/incense-debt/33-action-mobile-update.md)。旧 iOS 交接保留在 0.2.0 历史 Release。
+本机与本次发布的 EXE / APK 为 0.3.0，新导出并原生验收。新增独立双人对灯、快速匹配、六位开房、每轮构筑与完整暂停／断线恢复，见[联机交付](../docs/incense-debt/40-online-delivery.md)。继承 0.2.3 的左手移动、右手战斗、长屏与安全区，旧布局与自定义保存规则见[默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。旧 iOS 交接保留 0.2.0。
 
-当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与屏幕检查见 [0.2.3 交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示主角、小怪和 Boss 动作。
+当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与联机检查见 [当前交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示实际双人战斗、主角、小怪与 Boss 动作。
 
-当前为十一层单人离线Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击资源库合计88条分阶段动画、528帧生成特效（本次新增80条480帧）。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
+离线模式为十一层单人肉鸽 Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击资源库合计88条分阶段动画、528帧生成特效（本次新增80条480帧）。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
+
+## 对灯服务端
+
+原生服务端位于 [IncenseDebtServer.exe](server/IncenseDebtServer.exe)，发布 ZIP 内包含配置与 StartServer.cmd / StopServer.ps1。默认两房、16 连接，游戏端口 TCP 18777，健康端口 18778。双方在对灯服务器设置中填写同一地址，再快速匹配或输入同一六位数字；首连有数据告知。同电脑用 ws://127.0.0.1:18777，手机或其他电脑用主机 LAN IPv4。详细说明见 [服务端运维](../server/README.md)。当前没有默认公网主机；Vercel 仅托管政策。
 
 ## Windows
 
@@ -43,7 +47,7 @@
 
 ## Android
 
-将[IncenseDebt.apk](android/IncenseDebt.apk)传到真实arm64手机，使用系统安装器安装。它是调试签名包，适合本地试玩；最低Android 7/API 24，目标API 36。APK仅启用短促震动需要的VIBRATE权限，不启用网络权限，不依赖联网或账号。
+将[IncenseDebt.apk](android/IncenseDebt.apk)传到真实 arm64 手机安装。0.3.0 / code 6 为调试签名试玩包，最低 Android 7/API 24、目标 API 36，启用 VIBRATE 与对灯需要的 INTERNET。离线肉鸽无需服务器或账号，对灯使用独立匿名恢复身份。
 
 如需在真实发布前做一次 Godot release 模式导出，可运行 `python tools/runtime/build_native.py android --android-build release`。该命令会使用 `build/android/IncenseDebt-release.apk` 作为独立输出，并在缺少产品所有者发布密钥时安全删除未签名半成品；当前工作区没有提交任何 keystore，因此该命令只会留下导出日志，不会把调试包冒充发行包。签名发行包必须由产品所有者在本机注入自己的密钥后完成。
 

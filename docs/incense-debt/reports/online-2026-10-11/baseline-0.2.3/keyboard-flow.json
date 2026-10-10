@@ -1,0 +1,609 @@
+{
+  "captures": [
+    {
+      "name": "files",
+      "page": "files",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "main",
+      "page": "title",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "characters",
+      "page": "characters",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "stats",
+      "page": "stats",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "collection-active_items",
+      "page": "items",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "collection-trinkets",
+      "page": "items",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "closed-loop",
+      "page": "title",
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "name": "shop",
+      "page": "title",
+      "saved": true,
+      "screen": "game"
+    },
+    {
+      "name": "main-mobile",
+      "page": "title",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "characters-mobile",
+      "page": "characters",
+      "saved": true,
+      "screen": "menu"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "title_initial_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "title_to_files",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "slot_arrow_right",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "file_to_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "disabled_continue_skipped",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "main_arrow_up",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "main_to_character",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "locked_character_details",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "details_back_one_layer",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "loadout_under_character",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "character_achievements",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "character_filter_parent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "character_back_to_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "stats_layer",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "collection_keyboard_page",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "collection_keyboard_active_items",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "collection_keyboard_trinkets",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "bestiary_under_stats",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "endings_under_stats",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "statistics_under_stats",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "stats_filter_parent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "settings_initial_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "settings_toggle_and_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_slider",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "slider_down_moves_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "audio_back_to_settings",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "credits_keyboard_scroll",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "credits_back_to_settings",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_rebind_capture",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "rebind_cancel_stays_in_controls",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "assistance_scroll_end",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "assistance_rebuild_keeps_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "layout_keyboard_move",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "layout_keyboard_select",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "layout_tab_escape_editor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "save_paste_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "save_preview_keyboard",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "preview_back_to_transfer",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "settings_back_to_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "challenge_character_layer",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "challenge_character_back",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_starts_tutorial",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tutorial_to_game",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "game_to_pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "history_returns_pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_achievement_filter_parent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_nested_settings_parent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "new_run_overwrite_confirmation",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cancel_preserves_checkpoint",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "continue_to_pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tab_opens_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tab_closes_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "inventory_opens_keyboard",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "inventory_same_key_closes",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "combat_keyboard_move",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "combat_arrow_fire",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_aim_survives_release",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_dash",
+      "passed": true
+    },
+    {
+      "detail": "screen=game mode=clear energy=74.0 pending=false",
+      "id": "keyboard_skill",
+      "passed": true
+    },
+    {
+      "detail": "position=(640.0, 538.0) door=(640.0, 94.0) mode=combat screen=game",
+      "id": "keyboard_physical_door",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "number_choice_1",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "number_choice_2",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "number_choice_3",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "number_choice_4",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "reward_arrow_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "choice_keyboard_full_details",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "details_restore_choice_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "reward_arrow_enter",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_reroll",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_talent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "queued_growth_keeps_focus",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "queued_growth_complete",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "checkpoint_to_skill_choice",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "skill_arrow_enter",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_shop_trial",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_shop_trial_return",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "shop_disabled_purchase_skipped",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_shop_skip",
+      "passed": true
+    },
+    {
+      "detail": "weapon=w07 expected=w07 coins=65 price=35",
+      "id": "keyboard_shop_purchase",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_debt_contract",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_debt_exit",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_repay",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_special_sacrifice",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_special_judge",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_special_angel",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_event_choice",
+      "passed": true
+    },
+    {
+      "detail": "replace",
+      "id": "replacement_keyboard_entry",
+      "passed": true
+    },
+    {
+      "detail": "clear",
+      "id": "replacement_keyboard_complete",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "hub_keyboard_character_entry",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "story_hub_returns_stats",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_result_review",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_review_build",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "build_returns_review",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "review_returns_result",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "result_returns_main",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "victory_to_ending_choice",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_ending_commit",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_ending_archive_read",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_exit_cancel",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "slot_3_independent_defaults",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "slot_2_progress_restored",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_daily_start",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_import_commit",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_import_undo",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "compact_main_keyboard_scroll",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "compact_character_actions_do_not_overlap",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu_notice_does_not_cover_actions",
+      "passed": true
+    }
+  ],
+  "driver": "native Input.parse_input_event key presses/releases; Tab navigation only; no mouse events, no grab_focus or button pressed emissions by the test driver",
+  "failures": [],
+  "passed": true,
+  "scope": "native desktop menu and optional-room fixtures; not a human balance playtest or mobile device acceptance",
+  "recorded_at": "2026-10-10T18:34:50.588257+00:00",
+  "packaged": true,
+  "render_cap_fps": 60,
+  "artifact_sha256": "71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90"
+}

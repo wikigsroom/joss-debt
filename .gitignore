@@ -110,3 +110,9 @@ Thumbs.db
 # Documentation-linked generated pickup previews and native motion.
 !/docs/incense-debt/reports/consumables-2026-10-11/windows/idle.gif
 !/docs/incense-debt/reports/consumables-2026-10-11/windows/collect.gif
+/server/data/
+/server/generated/
+/build/server/
+
+# Documentation-linked native 0.3.0 Duel animation.
+!/docs/incense-debt/reports/online-2026-10-11/media/duel-native.gif

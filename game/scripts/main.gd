@@ -36,6 +36,7 @@ const Seed = preload("res://scripts/core/derived_seed.gd")
 const SeedUI = preload("res://scripts/ui/seed_ui.gd")
 const Cinematic = preload("res://scripts/ui/campaign_cinematic.gd")
 const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
+const OnlineController = preload("res://scripts/network/online_controller.gd")
 const PAPER = UI.TEXT
 const GOLD = UI.MUTED
 const INK = UI.BACKGROUND
@@ -43,6 +44,7 @@ const RED = UI.ACCENT
 const CHARACTER_TAGS = ["焚账回灰", "远结连债", "灯宴流火", "重印招架", "回伞收灰", "穿名勾销"]
 
 var world = World.new()
+var online
 var store
 var save_session
 var save_slots
@@ -108,6 +110,7 @@ var qa_keyboard_enabled = false
 var qa_equipment_enabled = false
 var qa_consumables_enabled = false
 var qa_display_enabled = false
+var qa_online_enabled = false
 var qa_display_safe = Rect2()
 var qa_display_cutouts: Array = []
 var qa_display_dpi = 0.0
@@ -159,7 +162,8 @@ func _ready() -> void:
 	qa_equipment_enabled = OS.get_cmdline_user_args().has("--qa-equipment")
 	qa_consumables_enabled = OS.get_cmdline_user_args().has("--qa-consumables")
 	qa_display_enabled = OS.get_cmdline_user_args().has("--qa-display")
-	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled
+	qa_online_enabled = OS.get_cmdline_user_args().has("--qa-online")
+	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
 	if mobile_ui:
@@ -171,7 +175,7 @@ func _ready() -> void:
 			if argument.begins_with("--qa-output="):
 				qa_directory = argument.trim_prefix("--qa-output=")
 		DirAccess.make_dir_recursive_absolute(qa_directory)
-	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled:
+	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled:
 		save_slots = SaveSlots.new(qa_directory.path_join("isolated-saves").path_join(str(Time.get_ticks_usec())))
 		save_slot = save_slots.selected_slot()
 		save_session = SaveSession.new(save_slots.base_path(save_slot), save_slots.legacy_profile_path(save_slot), save_slots.legacy_run_path(save_slot))
@@ -230,6 +234,9 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(apply_safe_area)
 	apply_safe_area()
 	checkpoint = store.read()
+	online = OnlineController.new()
+	add_child(online)
+	online.initialize(self, qa_directory.path_join("online-client") if qa_active else "user://online-client")
 	show_menu("title" if qa_capture_enabled else "splash")
 	if not qa_active and not save_session.message.is_empty(): notice(save_session.message)
 	get_window().focus_exited.connect(on_focus_lost)
@@ -252,6 +259,11 @@ func _ready() -> void:
 		add_child(fixture)
 	elif qa_consumables_enabled:
 		var fixture = preload("res://scripts/ui/consumable_native_qa.gd").new()
+		fixture.app = self
+		fixture.directory = qa_directory
+		add_child(fixture)
+	elif qa_online_enabled:
+		var fixture = preload("res://scripts/ui/online_native_qa.gd").new()
 		fixture.app = self
 		fixture.directory = qa_directory
 		add_child(fixture)
@@ -563,6 +575,9 @@ func cancel_confirmation() -> void:
 	return_to_state(confirmation_parent)
 
 func request_quit() -> void:
+	if online != null and online.active():
+		online.request_quit()
+		return
 	confirmation_parent = page_state()
 	MenuFlow.confirmation(self, true)
 
@@ -733,6 +748,9 @@ func _physics_process(delta: float) -> void:
 	if qa_capture_enabled:
 		qa_step()
 	update_orientation()
+	if online != null and online.active():
+		online.physics(delta)
+		return
 	if not paused and screen == "game":
 		if world.run.get("training", false): world.player.energy = 100.0
 		adapter.set_phase(world.mode, not world.Equipment.active_row(world).is_empty())
@@ -937,6 +955,9 @@ func _input(event_value: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		return
 	if orientation.blocked:
+		get_viewport().set_input_as_handled()
+		return
+	if online != null and online.handle_input(event_value):
 		get_viewport().set_input_as_handled()
 		return
 	if capture_action.is_empty():
@@ -1173,6 +1194,7 @@ func end_shop_trial(return_to_shop: bool = true) -> void:
 		sync_game_modal()
 
 func save_current_run() -> bool:
+	if online != null and online.active(): return true
 	var saving_world = shop_trial.origin if shop_trial.active() else world
 	if not saving_world.run.is_empty() and not saving_world.run.get("training", false):
 		var candidate = saving_world.snapshot()
@@ -1311,6 +1333,9 @@ func on_focus_lost() -> void:
 	adapter.clear()
 	haptics.stop()
 	aim_assist.clear()
+	if online != null and online.active():
+		online.focus_lost()
+		return
 	if screen == "game" and not world.run.is_empty():
 		save_current_run()
 		show_pause("这页账已存下，准备好再继续。")
@@ -1319,6 +1344,9 @@ func go_back() -> void:
 	if orientation.blocked: return
 	if mobile_ui and DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD) and DisplayServer.virtual_keyboard_get_height() > 0:
 		hide_mobile_keyboard()
+		return
+	if online != null and online.active():
+		online.back()
 		return
 	if screen == "touch_trial":
 		for child in get_children():

@@ -1,25 +1,25 @@
 # 《香火债》当前交付与验收记录
 
-更新：2026-10-10T18:36:58.530935+00:00。当前本机版本 **0.2.3**，十一层可玩 Alpha。默认触控改为左手只移动，右手负责瞄准／射击、身法位移、焚债技能和主动道具；包含此前长屏背景、安全区和边到边修复。当前版本已公开至 [v0.2.3-alpha.1](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)，Windows ZIP、Android APK 与实际验收应用一致。
+当前版本 **0.3.0**：十一层离线肉鸽 + 可选双人对灯，支持快速匹配、双方同一六位数字开房、构筑、战斗、暂停、恢复、结算与再战。客户端与独立服务端均已实际导出、核对并通过原生验证。发布页：[v0.3.0-alpha.1](https://github.com/wikigsroom/joss-debt/releases/tag/v0.3.0-alpha.1)；当前公开状态以文末发布回执为准。
 
-| 平台 | 产物 | 实际验收 |
+| 平台 | 大小 | 实际 SHA-256 |
 | --- | --- | --- |
-| Windows | [IncenseDebt.exe](../../../build/windows/IncenseDebt.exe)，1057.3 MiB | 实际 EXE 107 项键盘流程；导出包原生屏幕／切口矩阵 282 项、51 张捕获 |
-| Android | [IncenseDebt.apk](../../../build/android/IncenseDebt.apk)，977.7 MiB | 0.2.3 / code 5、arm64 调试签名；签名与前一份 0.2.2 本地包一致，全屏、边到边与 Expand 通过实际包检查；未连接真机 |
-| iOS | 0.2.0 历史源码交接 | 本轮未重建交接包或签名 IPA |
+| Windows客户端 | 1057.4 MiB | `4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a` |
+| Android APK | 977.9 MiB | `7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553` |
+| Windows独立服务端 | 105.7 MiB | `61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8` |
 
-源码移动全流程通过 **368 项检查、80 张捕获**。旧手机／平板默认布局经 JSON 重载后自动升级；个别触点大小、透明度和已自定义位置保留。原布局尺寸过大、升级会重叠时保留已有合法设置，玩家可在设置 → 触控恢复新默认。两拇指切换和三指操作均检查了左手持续移动、右手位移、移动方向与瞄准方向分离，以及按钮单次触发。
+当前验证：双人规则 271 项、真实传输 26 项、服务重启／损坏恢复 57 项、写盘故障 7 项，全部通过。源码与实际 Windows EXE 联机流程各 30 项／33 张捕获；实际 EXE 编译包另经外部原生录制脚本复测 33 项，覆盖右摇杆持续开火与右手技能并生成实机 GIF；实际 EXE 离线键盘 107 项。Windows／Android 2167 项包核对通过、86 份编译脚本一致，3810 项运行资源打包。
 
-源码和导出包各检查八组 16:9～21:9、4:3、左右切口和独立打孔；分别通过 282、282 项检查。真实导出包还通过 2157 项资源／逻辑核对，76 份编译脚本与 Android 一致，包含 3810 项运行资源。
+Android 0.3.0／code 6、arm64 调试签名，与前一本机 0.2.3 APK 的签名匹配，INTERNET、VIBRATE、Expand 与边到边配置已从包体检查；没有实体手机验收。iOS 保留 0.2.0 历史交接，无 IPA。离线 schema 2 和三槽愿簿不改写，联机身份／战绩独立保存。
 
-[布局说明与原生对照](../38-right-hand-touch-layout.md) · [本轮交付](touch-right-2026-10-11/delivery.json) · [实际包布局矩阵](touch-right-2026-10-11/windows-matrix.json) · [移动回归](touch-right-2026-10-11/mobile-regression/mobile-matrix.json) · [包体核对](action-mobile-2026-10-09/packaged-parity.json) · [APK 验收](platforms/android-verification.json)
+服务端默认两房、16 连接。最终二进制两房／四客户端、射线与分裂弹 60 秒实测 59.43 Hz，回环 P95 ping 18 ms，无持久化错误；更高负载的失败记录及前一构建 180 秒数据分别注明版本。没有默认公网游戏主机、WAN 或长期容量结论。Windows 原生长屏触控夹具不代表 Android 真机。
 
-Windows SHA-256：`71f27ca0c4a93bfa08935461adb84d665e06400c8f9e3ece63dc37d4f0b84c90`。
+[联机交付与限制](../40-online-delivery.md) · [实际交付回执](online-2026-10-11/delivery.json) · [实机 GIF](online-2026-10-11/media/duel-native.gif) · [服务端运维](../../../server/README.md) · [APK 核对](online-2026-10-11/android.json) · [包体一致](online-2026-10-11/package-parity.json)
 
-Android SHA-256：`bb2e3a32ddf849d50a4f655d1c1456ab013d1b71e5585c7d5e3e9eb6272b60eb`。
+此前 0.2.3 的 368 项移动、282 项屏幕矩阵保留为[明确版本的历史记录](online-2026-10-11/baseline-0.2.3/current-product-status.json)；不是 0.3.0 新复测。未更改的动作与掉落原生逐帧证据保留原构建身份，本轮重新核对其实际编译纹理。
 
-包名 `org.incensedebt.game`、本机调试签名和 schema 2 存档保持，可覆盖前一份同签名 APK 保留数据。0.2.2 长屏图像、0.2.1 消耗品与怪物 GIF 保留各自的历史来源；不是 Android 真机验收。隐私政策未更改，主体仍为 吴国黎，邮箱 carzyg@outlook.com。
+隐私政策 **1.4** 已公开到 [xhz.sidcloud.cn](https://xhz.sidcloud.cn/privacy-policy)，主体 **吴国黎**，邮箱 **carzyg@outlook.com**；新联机范围、所选服务、恢复／期限及离线愿簿不上传已同步，13 页现行 Word 逐页核对，11 项匿名 HTTPS 检查均返回 200。
 
-当前未连接 X30。真机拇指舒适度、系统手势、触觉和长局温控，以及实际 iOS 构建仍待验收。本轮未使用 Docker、WSL、虚拟化或浏览器。
+本轮无 Docker、WSL、虚拟化或浏览器。仍需物理 Android／手柄、长期平衡、真实 WAN 与目标主机长时运行，以及发行签名／iOS 验收。
 
-GitHub 发布时间：2026-10-10T19:01:23Z；版本提交 `59c9270b203fb2dc8ca7200a12190fce89138640`。全部五项附件已逐项核对服务器字节数与 SHA-256，公开状态为 Alpha 预发布。发布页及全部附件的匿名 HTTPS 检查均为 200，实际下载的校验文件与本地一致。[发布清单](../../releases/v0.2.3-alpha.1.manifest.json) · [服务器发布回执](../../releases/v0.2.3-alpha.1.publication.json) · [公开访问检查](../../releases/v0.2.3-alpha.1.http-verification.json)。
+发布状态：附件正在准备，公开发布回执将在完成上传和服务器哈希核验后补充。

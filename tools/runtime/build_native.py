@@ -154,7 +154,8 @@ def main():
     report = {"platform": args.platform, "path": relative_output, "bytes": output.stat().st_size,
               "sha256": hashlib.sha256(output.read_bytes()).hexdigest(), "engine": "4.7.2",
               "build": build_variant,
-              "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",
+              "version": "0.3.0",
+              "playable_scope": "eleven-floor offline alpha plus authoritative two-player Duel: quick pairing, six-digit open rooms, 32 weapons, 18 skills, 32 PvP relics, reconnect and isolated online records",
               "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
               "device_tested": False, "virtualization": "none"}
     (REPORTS / report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")

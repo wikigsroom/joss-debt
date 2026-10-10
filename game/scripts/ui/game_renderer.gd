@@ -16,6 +16,8 @@ var weapon_motion = WeaponMotion.new()
 var drawn_fx = DrawnFX.new()
 var actor_freeze: Dictionary = {}
 var player_death_clock = 0.0
+var online_actors: Dictionary = {}
+var online_motions: Dictionary = {}
 ## Presentation consumes events; it cannot change the authoritative world or RNG.
 
 var world
@@ -119,6 +121,17 @@ func accept(events: Array) -> void:
 	if visual_effects.size() > effect_limit:
 		visual_effects = visual_effects.slice(visual_effects.size() - effect_limit)
 
+func accept_opponent(events: Array, actor_id: int) -> void:
+	if not online_actors.has(actor_id): return
+	if not online_motions.has(actor_id): online_motions[actor_id] = WeaponMotion.new()
+	var saved_world = world
+	var saved_motion = weapon_motion
+	world = online_actors[actor_id]
+	weapon_motion = online_motions[actor_id]
+	accept(events)
+	world = saved_world
+	weapon_motion = saved_motion
+
 func _process(delta: float) -> void:
 	clock += delta
 	shake = maxf(0, shake - delta * 24)
@@ -140,8 +153,9 @@ func _draw() -> void:
 	draw_set_transform_matrix(stage)
 	if world == null or world.run.is_empty():
 		return
-	draw_secret_entry()
-	draw_room_doors()
+	if not world.run.get("online", false):
+		draw_secret_entry()
+		draw_room_doors()
 	draw_room_ambient()
 	ExpandedVisuals.ambient(self)
 	ExpandedVisuals.scenery(self)
@@ -521,7 +535,21 @@ func draw_held_weapon(ground: Vector2, placement: Dictionary, tint: Color) -> vo
 	draw_texture_rect(textures[key], Rect2(-placement.grip * placement.size, Vector2.ONE * placement.size), false, tint)
 	draw_set_transform_matrix(stage)
 
+func draw_online_actor(actor_id: int) -> void:
+	if not online_motions.has(actor_id): online_motions[actor_id] = WeaponMotion.new()
+	var saved_world = world
+	var saved_motion = weapon_motion
+	world = online_actors[actor_id]
+	weapon_motion = online_motions[actor_id]
+	draw_player()
+	draw_circle(world.player.pos, 19, Color(HOSTILE, .8), false, 2, true)
+	world = saved_world
+	weapon_motion = saved_motion
+
 func draw_enemy(enemy: Dictionary) -> void:
+	if enemy.get("online_actor", false) and online_actors.has(int(enemy.uid)):
+		draw_online_actor(int(enemy.uid))
+		return
 	var texture = textures.get(enemy.get("sprite_id", enemy.id), textures.get("e01"))
 	var size = float(enemy.get("render_size", 256.0 if enemy.boss else (146.0 if enemy.elite else 110.0)))
 	var bob = sin(clock * 4 + enemy.uid) * 2

@@ -5,7 +5,7 @@
   "independent_action_poses": 24048,
   "expected_action_poses": 24048,
   "missing_identities": [],
-  "verified_at": "2026-10-10T18:31:24.329592+00:00",
+  "verified_at": "2026-10-10T20:55:34.805038+00:00",
   "manifest_sha256": "8a70cf26416a81c9110a9deb3be0c3a09c718e26d2feac2aea470739455d3fb0",
   "catalog_sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
   "export_platform": "android",

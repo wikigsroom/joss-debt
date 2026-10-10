@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "three real WebSocket handshakes",
+      "passed": true
+    },
+    {
+      "name": "first player queues",
+      "passed": true
+    },
+    {
+      "name": "queue waits for a second player",
+      "passed": true
+    },
+    {
+      "name": "second player queues",
+      "passed": true
+    },
+    {
+      "name": "atomic random pairing",
+      "passed": true
+    },
+    {
+      "name": "two separate seats",
+      "passed": true
+    },
+    {
+      "name": "both ready starts draft",
+      "passed": true
+    },
+    {
+      "name": "four draft choices per player",
+      "passed": true
+    },
+    {
+      "name": "authoritative countdown reaches battle",
+      "passed": true
+    },
+    {
+      "name": "real inputs move the authoritative player",
+      "passed": true
+    },
+    {
+      "name": "real weapon projectiles damage the opponent",
+      "passed": true
+    },
+    {
+      "name": "disconnect suspends both players",
+      "passed": true
+    },
+    {
+      "name": "disconnect freezes battle time and health",
+      "passed": true
+    },
+    {
+      "name": "automatic retry recovers the original session",
+      "passed": true
+    },
+    {
+      "name": "resume keeps match identity and health",
+      "passed": true
+    },
+    {
+      "name": "one ready player cannot resume alone",
+      "passed": true
+    },
+    {
+      "name": "both confirmations resume after countdown",
+      "passed": true
+    },
+    {
+      "name": "pause menu freezes both clients",
+      "passed": true
+    },
+    {
+      "name": "leaving a battle settles a forfeit",
+      "passed": true
+    },
+    {
+      "name": "result counted once for both players",
+      "passed": true
+    },
+    {
+      "name": "both return to the lobby",
+      "passed": true
+    },
+    {
+      "name": "same six-digit code joins the same room",
+      "passed": true
+    },
+    {
+      "name": "leading zeroes are preserved",
+      "passed": true
+    },
+    {
+      "name": "third player rejected without disturbing the room",
+      "passed": true
+    },
+    {
+      "name": "invalid room code rejected",
+      "passed": true
+    },
+    {
+      "name": "cancel matching returns to online lobby",
+      "passed": true
+    }
+  ],
+  "endpoint": "ws://127.0.0.1:18777",
+  "errors": [
+    [],
+    [],
+    [
+      "room_full",
+      "invalid_code"
+    ]
+  ],
+  "failures": 0,
+  "real_transport": true
+}

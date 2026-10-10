@@ -2,6 +2,8 @@
 * -text whitespace=cr-at-eol
 # Two trailing spaces are meaningful Markdown line breaks.
 *.md text eol=lf whitespace=-blank-at-eol,cr-at-eol
+# Godot scripts retain the exact validated bytes, including an editor's final blank line.
+*.gd whitespace=-blank-at-eof,cr-at-eol
 *.png binary -delta
 *.jpg binary -delta
 *.webp binary -delta

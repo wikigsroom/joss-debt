@@ -127,6 +127,10 @@ def main():
     expected_version = re.search(r'config/version="([^"]+)"', (ROOT / "game/project.godot").read_text("utf8")).group(1)
     version_matches = "versionName='" + expected_version + "'" in badging.stdout
     expected_code = re.search(r'version/code=(\d+)', (ROOT / "game/export_presets.cfg").read_text("utf8")).group(1)
+    internet_expected = 'permissions/internet=true' in (ROOT / "game/export_presets.cfg").read_text("utf8")
+    internet_matches = ("android.permission.INTERNET" in permissions.stdout) == internet_expected
+    online_scripts = {name: all(any(p.endswith(name + suffix) for p in names) for suffix in [".gdc", ".gd.remap"])
+                      for name in ["protocol", "duel_actor", "duel_match", "online_session", "online_controller", "online_ui", "motion_prediction"]}
     display_checks = {
         "edge_to_edge_in_actual_apk": "--edge_to_edge" in command_line,
         "immersive_in_actual_apk": "--fullscreen" in command_line,
@@ -138,7 +142,7 @@ def main():
         "project_version_matches": startup.get("application/config/version") == expected_version,
         "version_code_matches": "versionCode='" + expected_code + "'" in badging.stdout,
     }
-    passed = all(r.returncode == 0 for r in [badging, permissions, signing, manifest, signer]) and version_matches and all(display_checks.values()) and upgrade_signer_matches is not False and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match
+    passed = all(r.returncode == 0 for r in [badging, permissions, signing, manifest, signer]) and version_matches and all(display_checks.values()) and upgrade_signer_matches is not False and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match and internet_matches and (all(online_scripts.values()) if internet_expected else True)
     with apk.open("rb") as file: digest = hashlib.file_digest(file, "sha256").hexdigest()
     report = {"passed": passed, "apk_sha256": digest, "signature_verified": signing.returncode == 0,
               "signature_diagnostics": signing.stdout.strip(), "package": next((l for l in badging.stdout.splitlines() if l.startswith("package:")), ""),
@@ -147,6 +151,7 @@ def main():
               "unexpected_sensitive_files": forbidden, "adb_devices": devices.stdout.strip(), "physical_device_tested": False, "virtualization": "none", "version_matches_source": version_matches}
     report.update({"music_configuration_matches_source": music_config_matches, "music_themes": len(scores.get("scores", {})), "music_stems_expected": expected_stem_count, "music_stems_packaged": music_stems_packaged})
     report.update({"save_schema": 2, "save_rules_match_source": save_rules_match, "compiled_save_scripts_packaged": save_scripts})
+    report.update({"internet_expected": internet_expected, "internet_permission_matches_source": internet_matches, "compiled_online_scripts_packaged": online_scripts})
     report.update({"all_rules_match_source": rules_match, "combat_control_rules": packed_rules.get("combat", {}).get("control", {})})
     report.update({"runtime_registry_matches_source": registry_matches, "imported_resources_packaged": imported_resources,
                    "weapon_rig_matches_source": rig_matches, "compiled_ui_and_weapon_scripts_packaged": ui_scripts,

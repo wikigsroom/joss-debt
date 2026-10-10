@@ -23,6 +23,7 @@ PREVIOUS_OPERATOR_NAMES = ("wikigsroom", "wikig's room", "wikig’s room", "SIDc
 EXPECTED_PUBLIC_FILES = {
     "index.html", "assets/privacy.css", "assets/paper-spirit.png",
     "versions/2026-10-08.html", "downloads/incense-debt-privacy-policy-2026-10-08.docx",
+    "versions/2026-10-09.html", "downloads/incense-debt-privacy-policy-2026-10-09.docx",
     "vercel.json", ".vercelignore",
 }
 
@@ -108,10 +109,10 @@ def verify_public(base, status, proxy=None):
     policy = json.loads((ROOT / "docs/legal/privacy-policy-content.json").read_text("utf8"))
     version_path = "versions/" + policy["updated"]
     docx_path = "downloads/" + Path(status["docx"]).name
-    historical_version = "versions/2026-10-08"
-    historical_docx = "downloads/incense-debt-privacy-policy-2026-10-08.docx"
-    page_routes = ("", "privacy", "privacy-policy", version_path, historical_version)
-    for route in (*page_routes, docx_path, historical_docx, "assets/privacy.css", "assets/paper-spirit.png"):
+    archived_pages = tuple("versions/" + path.stem for path in sorted((SITE / "versions").glob("*.html")) if path.stem != policy["updated"])
+    docx_routes = tuple("downloads/" + path.name for path in sorted((SITE / "downloads").glob("*.docx")))
+    page_routes = ("", "privacy", "privacy-policy", version_path, *archived_pages)
+    for route in (*page_routes, *docx_routes, "assets/privacy.css", "assets/paper-spirit.png"):
         body, headers, resolved = get_public(base + "/" + route, proxy)
         if route in page_routes:
             tree = etree.HTML(body)
@@ -132,7 +133,7 @@ def verify_public(base, status, proxy=None):
             lowered = {k.lower(): v for k, v in headers.items()}
             if "script-src 'none'" not in lowered.get("content-security-policy", ""):
                 raise RuntimeError("Expected privacy-site security headers were not applied")
-        elif route in (docx_path, historical_docx):
+        elif route in docx_routes:
             if sha256(body).hexdigest() != sha256((SITE / route).read_bytes()).hexdigest():
                 raise RuntimeError("Public DOCX hash differs from reviewed file")
         receipt.append({"url": base + "/" + route, "resolved_url": resolved, "status": 200, "bytes": len(body)})

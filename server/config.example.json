@@ -1,0 +1,10 @@
+{
+  "bind": "0.0.0.0",
+  "port": 18777,
+  "data_directory": "user://online-server",
+  "max_connections": 16,
+  "max_rooms": 2,
+  "grace": 90,
+  "waiting": 300,
+  "checkpoint": 1
+}

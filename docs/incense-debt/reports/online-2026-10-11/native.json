@@ -1,0 +1,559 @@
+{
+  "captures": [
+    {
+      "name": "hub",
+      "path": ".local-tools/online-development/native-release-packaged/online-hub.png",
+      "phase": "",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "26f50057472b19644790a87c48136561a37518812deeabe0a2aa74287620966e"
+    },
+    {
+      "name": "loadout",
+      "path": ".local-tools/online-development/native-release-packaged/online-loadout.png",
+      "phase": "",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "857a4ff97872def2e6cc0fb9bb1104e569cd11a46206aebe0c0203b8c2197989"
+    },
+    {
+      "name": "connection-consent",
+      "path": ".local-tools/online-development/native-release-packaged/online-connection-consent.png",
+      "phase": "",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "cfd30aab6906e95a91844694d890c09e67aa151d233b3424572d6946e0999502"
+    },
+    {
+      "name": "lobby",
+      "path": ".local-tools/online-development/native-release-packaged/online-lobby.png",
+      "phase": "lobby",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "e526bd353c71751112cd6f19daafed6de6118e6e30342ec8146f94917bf1a021"
+    },
+    {
+      "name": "draft",
+      "path": ".local-tools/online-development/native-release-packaged/online-draft.png",
+      "phase": "draft",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "3d6071541af002fec30bcd5d6c61133b5818183f3fd4feacbb0fda13550a661f"
+    },
+    {
+      "name": "combat",
+      "path": ".local-tools/online-development/native-release-packaged/online-combat.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "c5d5865ca64c2f41a6a41f5075d3beb681a47800f77977826c2d4f0263dee1dc"
+    },
+    {
+      "name": "pause",
+      "path": ".local-tools/online-development/native-release-packaged/online-pause.png",
+      "phase": "suspended",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "a4734a6af07ac501a165cbd013ecb6cb31e3806ae1bbbc3f03ac2c64eefa569a"
+    },
+    {
+      "name": "build",
+      "path": ".local-tools/online-development/native-release-packaged/online-build.png",
+      "phase": "suspended",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "c88bc54811627d820531d27ff0aaa1f5a3b6d8a81992e8f76de11eeb29eb83bf"
+    },
+    {
+      "name": "map",
+      "path": ".local-tools/online-development/native-release-packaged/online-map.png",
+      "phase": "suspended",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "06ca85c9615fe43a562e1fc1815b0bf694d727453b0ca72cb1a0af3b157243b3"
+    },
+    {
+      "name": "reconnect",
+      "path": ".local-tools/online-development/native-release-packaged/online-reconnect.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "2fbdcb5185b70dcb88adc13e8894158e9a72106ec76ed1d9ce51cc045a2b7eab"
+    },
+    {
+      "name": "wide-mobile",
+      "path": ".local-tools/online-development/native-release-packaged/online-wide-mobile.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "d79f2b07b4990c4600e937ad16164f55e0475c401a3ecd3873e52ddbeefc32f0"
+    },
+    {
+      "name": "motion-00",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-00.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "c04956cb8f45b06f81386f803996ee4460e93571d695d6d6f555197029f0f89e"
+    },
+    {
+      "name": "motion-01",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-01.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "b89a23a020e030127fc9e1cd6e93a3d1dfb26b6239521f16bb53977a65f5f69e"
+    },
+    {
+      "name": "motion-02",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-02.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "5a87978048ddfb19ac635ba5839f62c28bddd9d828485bd42b85ca0ea81ac951"
+    },
+    {
+      "name": "motion-03",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-03.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "e9e584d18f6f1855142da55fce610295852a4ea7e6a9a7ee1a3112e6a76a7c3f"
+    },
+    {
+      "name": "motion-04",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-04.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "6896d66878a191ca5ce7a043305666f200e201c33d16dfa7e78d1bdcfbb1d787"
+    },
+    {
+      "name": "motion-05",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-05.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "e4400c54070b33321c920c24e91786a1fb061e79d35b955aa0332ec923d6d21e"
+    },
+    {
+      "name": "motion-06",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-06.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "471724003423bce6b5d8a13faaf14ca92d2d2ba5533b286b95ea9f38bed0104d"
+    },
+    {
+      "name": "motion-07",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-07.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "1848c282ae74c9dcb996635fd64bd90f13b74b304e180be547d85ae4fffcfd5c"
+    },
+    {
+      "name": "motion-08",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-08.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "29d646d75f58d9798b9110567c7aa884b231bcd4115b4978b428a0a808c4ffaa"
+    },
+    {
+      "name": "motion-09",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-09.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "09d6912216f6151fc4a84e84dc408895456c31520a4bbe63a4c3933b39439bfb"
+    },
+    {
+      "name": "motion-10",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-10.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "ba2a72c2adc6e21491f27d34bd3b916ae3ded23db230a62168de412060c81864"
+    },
+    {
+      "name": "motion-11",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-11.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "1193769c4a21aa4953137421a8968887b2eb888c50fc9b630a33e2a3f1f695dc"
+    },
+    {
+      "name": "motion-12",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-12.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "dc19c6ec49ca9a5e5f6381bd472ebb02ec4bd4c099c773ad9de3a6c69329a318"
+    },
+    {
+      "name": "motion-13",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-13.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "29bbc00fb3dbbe6ba32470bf01712f1515ac5c5b908c75ad205f413fcb004c9b"
+    },
+    {
+      "name": "motion-14",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-14.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "03aa7c736706f1030302e07951127eba9325f9af67736b89d9d9f0db3528d24d"
+    },
+    {
+      "name": "motion-15",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-15.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "9cdb39320ca3060df257232ae4f47ba05caa8f0d86fe7ff54ad678459b87067a"
+    },
+    {
+      "name": "motion-16",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-16.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "c3498a59f9110ca159852b36c19f1d04d25c04c0ad3841f76009748f47bc0bc5"
+    },
+    {
+      "name": "motion-17",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-17.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "2133506e842b21f943dcf50f547006dc35d9a2c9d3052e89c7332b9af78f237b"
+    },
+    {
+      "name": "motion-18",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-18.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "b60d3e5b82c3bd4284d92d5ac941eb9e4e817786478912626aec1e8bf46aad91"
+    },
+    {
+      "name": "motion-19",
+      "path": ".local-tools/online-development/native-release-packaged/online-motion-19.png",
+      "phase": "playing",
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "231121e28ae8d63963637d7346ac76de8b932b9235bb3d1cdd7926ca7b333303"
+    },
+    {
+      "name": "result",
+      "path": ".local-tools/online-development/native-release-packaged/online-result.png",
+      "phase": "finished",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "782c0f07a96bfbb88e1f05c7e212481a0bc70616787c7b54dcb9efe729b1a3aa"
+    },
+    {
+      "name": "code-room",
+      "path": ".local-tools/online-development/native-release-packaged/online-code-room.png",
+      "phase": "lobby",
+      "saved": true,
+      "screen": "online",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "80b1621e7b0500fe95edc4aedebc7685785736e9203d85cc3b6bbd24b393f0de"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "main_menu_keyboard_opens_online",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_endpoint_and_name_save",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_all_characters_skills_weapons_selectable",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "first_connection_explains_data_before_network",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real_queue_wait",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_client_real_pair",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_ready_to_draft",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "number_four_selects_last_card",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_countdown_to_playing",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_movement_sent_to_authority",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "arrow_key_fires_at_opponent",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_character_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "other_player_uses_real_hero_renderer",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "escape_pauses_both_clients",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_build_has_both_histories",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_resumes_both",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "tab_tactical_map_and_pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_returns_to_pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_loss_suspends_other",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_automatic_reconnect",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "reconnect_keyboard_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_wide_touch_movement",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_right_hand_actions",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_forfeit_result_visible",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_six_digit_create",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "same_code_second_client_joins",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "keyboard_leave_lobby",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "online_returns_main_menu",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "offline_save_unchanged_by_online",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "physical_android": false,
+  "real_transport": true,
+  "recorded_at": "2026-10-10T20:55:44.584121+00:00",
+  "packaged": true,
+  "artifact_sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a"
+}
