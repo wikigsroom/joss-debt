@@ -67,8 +67,8 @@ All 24,048 poses have matching native screenshot hashes. Verification passed 17 
 
 ![十类特效之一：雷霆射线与范围阶段 / Storm-family beam and area phases](docs/media/equipment-storm.gif)
 
-截图和组合 GIF 来自原生装备测试场景，实际执行攻击与伤害；阶段 GIF 是只读特效展示。新增素材有 23 张模型原图、36 个装备图标、80 条六帧动画；所有来源和帧哈希随仓库保存。普通游玩、菜单和环境画面均已按本次构建重新捕获，详见每项媒体的构建记录。  
-Screenshots and the combination GIF use native equipment fixtures with real attacks and damage; the phase GIF is a read-only effects gallery. New art includes 23 generated boards, 36 equipment icons, and 80 six-frame strips, with source/frame hashes retained. Ordinary gameplay, menus, and environments have also been recaptured from this build; each media record identifies its executable hash.
+截图和组合 GIF 来自 0.2.0 原生装备测试场景，实际执行攻击与伤害；阶段 GIF 是只读特效展示。该装备修订新增 23 张模型原图、36 个装备图标、80 条六帧动画；所有来源和帧哈希随仓库保存。普通游玩、菜单和环境画面也在该版本重新捕获，详见每项媒体的构建记录。  
+Screenshots and the combination GIF use the 0.2.0 native equipment fixtures with real attacks and damage; the phase GIF is a read-only effects gallery. That equipment revision added 23 generated boards, 36 equipment icons, and 80 six-frame strips, with source/frame hashes retained. Ordinary gameplay, menus, and environments were also recaptured for that version; each media record identifies its executable hash.
 
 ### 普通游玩 / Normal gameplay
 
@@ -136,7 +136,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 | 主题专属池 | 每主题 12 种小怪与 3 名 Boss；最终天穹为 7 名 Boss，即每主题 15—19 种专属遭遇 |
 | 成就与愿簿 | 32 项成就，其中每名角色 4 项、另有 8 项共享成就；3 个独立存档槽 |
 | 动画与资源 | 1,002 张怪物独立攻击／受击图集、24,048 帧；主角另有 864 个独立姿势；3,791 项运行资源 |
-| 战斗关键帧 | 88 条分阶段射线 / 范围动画，共 528 张生成关键帧（本次新增 80 条 / 480 帧） |
+| 战斗关键帧 | 88 条分阶段射线 / 范围动画，共 528 张生成关键帧（0.2.0 装备修订新增 80 条 / 480 帧） |
 | 声音 | 默认四首 Yourset 随机曲库；可切换 9 套主题、25 条音乐分层；运行音频共 116 项 |
 
 主题数量表示地图池的规模，不表示一局有二十层；敌人与首领数量是整个库的数量，不表示每局全部出现。登记的 24 套联动也不是所有搭配的穷举。完整条目见[内容数据库](game/data/catalog.json)、[扩展规则](game/data/expansion.json)与[生成目录](docs/incense-debt/16-content-catalog.generated.md)。
