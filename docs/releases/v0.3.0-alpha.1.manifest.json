@@ -1,0 +1,135 @@
+{
+  "tag": "v0.3.0-alpha.1",
+  "version": "0.3.0",
+  "prerelease": true,
+  "repository": "wikigsroom/joss-debt",
+  "engine": "Godot 4.7.2",
+  "built_from_commit": "35fd53b81791ec956152cb540cbfcf5f56abd603",
+  "game_git_tree": "e8b7e7611e8550ea6986d13f45b715b6f8204154",
+  "server_git_tree": "8e5408ad935d0561f29fca559ea2c0be06827cee",
+  "windows_verification": {
+    "passed": true,
+    "windows_exe_sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a",
+    "keyboard_checks": 107,
+    "online_checks": 30,
+    "online_captures": 33,
+    "online_touch_checks": 33,
+    "package_checks": 2167,
+    "runtime_resources": 3810,
+    "matching_compiled_android_scripts": 86
+  },
+  "android": {
+    "apk_sha256": "7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
+    "build": "debug",
+    "version_code": 6,
+    "signature_verified": true,
+    "signer_certificate_sha256": [
+      "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c"
+    ],
+    "upgrade_signer_matches_previous": true,
+    "internet_permission": true,
+    "edge_to_edge": true,
+    "physical_device_tested": false
+  },
+  "server": {
+    "exe_sha256": "61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8",
+    "platform": "windows-x64",
+    "standalone": true,
+    "default_rooms": 2,
+    "default_connections": 16,
+    "public_host_deployed": false,
+    "recovery_checks": 57,
+    "storage_checks": 7,
+    "load_report": "docs/incense-debt/reports/online-2026-10-11/load.json"
+  },
+  "ios": {
+    "included": false,
+    "historical_handoff_version": "0.2.0",
+    "signed_ipa_created": false
+  },
+  "save_schema": 2,
+  "protocol": 1,
+  "ruleset": "duel-2",
+  "privacy_policy_version": "1.4",
+  "virtualization": "none",
+  "verification_reports": [
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/combat.json",
+      "sha256": "0c9bed3ab6648b841791f299666f2dd58f35944286cdd87a6ca0416f475c792c"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/transport.json",
+      "sha256": "9711a3134d143194b33d858963df2d3b642f73821e54adce9c3d2aa23c8e7eed"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/recovery.json",
+      "sha256": "1d04133f4e0b66e00c11a63b9c988e36bd6470ff25bcdd87cfcd566afb767747"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/storage.json",
+      "sha256": "79086a2589de86727adfea909229c578b6ee6bae9425750cfac9732b6d4d7c40"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/load.json",
+      "sha256": "e78cb16b38298752f895fb62c5913e0a960f481a7e7b5a25622d92f3ee2749ac"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native.json",
+      "sha256": "5b8fab59aabea3392728e8f51a55155ea27dd43f0fd33e8b1565fcce62b63b81"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native-source.json",
+      "sha256": "2c76285da11236fb034b15a4f82403a3db0ac0b423ff0b4d03e894beaff8b6f5"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/native-touch.json",
+      "sha256": "c03706f25de0d9a69d0a3969777e7042cc4679f5f4ce9afb927495f53bcf3cd1"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/package-parity.json",
+      "sha256": "d0cf41b830bdc4cf7869d4faf214262b8416e3f3e46886745e2208e280a2e4df"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/android.json",
+      "sha256": "6f82ba8e2c7764d995a3ef0b75124ac2832157284d955c519354d1d1abb57de5"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/keyboard.json",
+      "sha256": "f6e4595f84ac978db52bf16a6347e71eabbb6dae895bf1cf24eeeb40d7426bd9"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/server-build.json",
+      "sha256": "7f3691f85c1cddb007d8a79f301edef347a03d080a9d180399f3764bc3ff1668"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/privacy-https.json",
+      "sha256": "51af8708583daa11106bd40de5295e1b15300d975935fb2aa0c150bfdd3b3ab1"
+    },
+    {
+      "path": "docs/incense-debt/reports/online-2026-10-11/delivery.json",
+      "sha256": "d0838f40ac1abd56df45ea2de20229b9a6966666f45e7c8d53a63a83a44bb81c"
+    }
+  ],
+  "files": [
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-windows-x64.zip",
+      "bytes": 1031643325,
+      "sha256": "65a978824a67b7e4f344c2cab5b81ea474b70962ff64f51c7534274ff232a2a8"
+    },
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025354672,
+      "sha256": "7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553"
+    },
+    {
+      "name": "IncenseDebt-v0.3.0-alpha.1-server-windows-x64.zip",
+      "bytes": 38495019,
+      "sha256": "16c5006494a13155f0f2db449c7b44ef8cdd614f7b352ec8403f4ee886acb704"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 11123,
+      "sha256": "fdbf28cdb7db94cab0b4876596fd2192b77e2636695024df3e5c2e94ab630920"
+    }
+  ]
+}

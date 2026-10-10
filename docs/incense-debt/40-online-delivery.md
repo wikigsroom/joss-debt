@@ -71,6 +71,7 @@ flowchart LR
 | 离线键盘回归 | 实际 EXE 107 项通过；原肉鸽愿簿／技能／商店／特殊房／导入恢复路径复测 | [keyboard.json](reports/online-2026-10-11/keyboard.json) |
 | Windows／APK 包体 | 2167 项通过，86 份编译脚本一致；动作图集、拾取纹理与导入映射核对，应用哈希绑定报告 | [package-parity.json](reports/online-2026-10-11/package-parity.json) |
 | Android | 0.3.0 / code 6、arm64、调试签名同前一份 0.2.3 APK、INTERNET、联机模块、边到边与 Expand；3810 项运行资源 | [android.json](reports/online-2026-10-11/android.json) |
+| 发布服务端 ZIP | 4 项通过：实际 ZIP 解压到含空格目录，运行启动脚本到健康状态，停机脚本退出，检查点刷盘且 data 在程序旁 | [package-smoke.json](../releases/v0.3.0-alpha.1.package-smoke.json) |
 
 检查类别存在交集，不相加作为覆盖率。没有把多个会话当成多台物理设备，也没有把 Windows 原生触控夹具当成 Android 真机。
 
