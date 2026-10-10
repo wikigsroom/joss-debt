@@ -1,0 +1,312 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "source_count": 6,
+  "objects": [
+    "heal",
+    "coin",
+    "coin_pair",
+    "ash",
+    "ash_bundle",
+    "battery"
+  ],
+  "records": [
+    {
+      "id": "heal",
+      "file": "res://assets/pickups/heal.png",
+      "sha256": "65229fc8ea57fa3fe28bf79b233fc8e1aaf39e022f386615d6a17af67ff5d5c8",
+      "source": "output/imagegen/consumables-2026-10-11/heal-source.png",
+      "source_sha256": "4c41406416d3da9df21adfc90739d950bc82533b46e48106b5270c8352f03edb",
+      "source_bounds": [
+        102,
+        65,
+        1154,
+        1200
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "coin",
+      "file": "res://assets/pickups/coin.png",
+      "sha256": "7315957fa5d732f4b6af5c20e9f0237fb991bd9a75a1e00e2e6d8dd182cbdb1f",
+      "source": "output/imagegen/consumables-2026-10-11/coin-source.png",
+      "source_sha256": "7f296d2adc09ec985130667c126cac466314314102bd98ee9a1b6fbe8bbf09bb",
+      "source_bounds": [
+        66,
+        51,
+        1200,
+        1200
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "coin_pair",
+      "file": "res://assets/pickups/coin_pair.png",
+      "sha256": "3a96cde45ccf085e7c8f20bdab095922ee973fb348d714def237f5562d59850e",
+      "source": "output/imagegen/consumables-2026-10-11/coin_pair-source.png",
+      "source_sha256": "4c3e8ab23ad89d610ce919cfae3f6630b117e2393869be6fe6c510e2990ca2ed",
+      "source_bounds": [
+        46,
+        178,
+        1227,
+        1069
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "ash",
+      "file": "res://assets/pickups/ash.png",
+      "sha256": "d6f0ad8f4198b70be90621eae634af80c850d7e1b4617e45de2ccdc0342c9bd1",
+      "source": "output/imagegen/consumables-2026-10-11/ash-source.png",
+      "source_sha256": "7e645fa1d9f984fe7faea9b2473d59a9b87e189c8cbe4c0cc7f255a810d925b9",
+      "source_bounds": [
+        31,
+        164,
+        1223,
+        1041
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "ash_bundle",
+      "file": "res://assets/pickups/ash_bundle.png",
+      "sha256": "d4071a4a9ee02230c0331767ada9425e27dbb23060a976999e55e75088cd9a87",
+      "source": "output/imagegen/consumables-2026-10-11/ash_bundle-source.png",
+      "source_sha256": "f8a772a96545ff57ff5b9fb4d2240145ce4599a28a99e73f7b1fcc756f400050",
+      "source_bounds": [
+        24,
+        135,
+        1234,
+        1105
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "battery",
+      "file": "res://assets/pickups/battery.png",
+      "sha256": "1fd9a4cdf34e65e4950e037005420dc5b2ab9fbc867dd072844493a186a55d3d",
+      "source": "output/imagegen/consumables-2026-10-11/battery-source.png",
+      "source_sha256": "aee4b2a0e717c73272b580ee0e6937930201a55de610b2aaedb244f367572ad0",
+      "source_bounds": [
+        284,
+        174,
+        969,
+        1081
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "requested_source_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "method": "AI-drawn object; transparent crop, uniform scale, centered anchor only"
+    },
+    {
+      "id": "heart-solid",
+      "file": "res://assets/pickups/heart-solid-ui.png",
+      "sha256": "f6d0175d298ae59b13737a9a5f028168357f40cced32c5295b5f901eafdcb47a",
+      "derived_from": "heal",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated pickup resized for HUD / resource icons"
+    },
+    {
+      "id": "heart",
+      "file": "res://assets/pickups/heart-ui.png",
+      "sha256": "f6d0175d298ae59b13737a9a5f028168357f40cced32c5295b5f901eafdcb47a",
+      "derived_from": "heal",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated pickup resized for HUD / resource icons"
+    },
+    {
+      "id": "coins",
+      "file": "res://assets/pickups/coins-ui.png",
+      "sha256": "8621f78e4e9e7c0c049b93213dffa17f78d7ca0e30591809b97845bcbfd444ec",
+      "derived_from": "coin",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated pickup resized for HUD / resource icons"
+    },
+    {
+      "id": "ash-pickup",
+      "file": "res://assets/pickups/ash-pickup-ui.png",
+      "sha256": "326543a6dc9b54620bdd04328b9c03403a708f48603fa6a7549ac4ecd6ec9be7",
+      "derived_from": "ash",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated pickup resized for HUD / resource icons"
+    },
+    {
+      "id": "battery-pickup",
+      "file": "res://assets/pickups/battery-pickup-ui.png",
+      "sha256": "9c950423e42e1968d35d204821b7e8619f8148384b22e21f688899c6d8b60dd7",
+      "derived_from": "battery",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated pickup resized for HUD / resource icons"
+    },
+    {
+      "id": "heart-empty",
+      "file": "res://assets/pickups/heart-empty-ui.png",
+      "sha256": "a9ec2e99480b68cde838c059b2de319c45ef5b39b6e346550badd6cc867eee9c",
+      "derived_from": "heal",
+      "size": [
+        96,
+        96
+      ],
+      "method": "same generated heart, desaturated cool-grey empty health state"
+    },
+    {
+      "id": "ash-outline",
+      "file": "res://assets/pickups/ash-outline.png",
+      "sha256": "cd9b9e89e9d5a24cf7610586d129be40b8c4916f03789f9834af186fdef9631f",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "ash_bundle-outline",
+      "file": "res://assets/pickups/ash_bundle-outline.png",
+      "sha256": "0a341b594db182c6b912f95c3eea66c753762c55276a218690842ffb1d79b052",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "battery-outline",
+      "file": "res://assets/pickups/battery-outline.png",
+      "sha256": "adbd581a53c28a446bbf17e79a6f65f797839af3f4db4c597db3f437017b6c00",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "coin-outline",
+      "file": "res://assets/pickups/coin-outline.png",
+      "sha256": "4d02c2e75180f959fa5f7ec5aa7c8b8fe3a72ff092e702e18e527148dd362a80",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "coin_pair-outline",
+      "file": "res://assets/pickups/coin_pair-outline.png",
+      "sha256": "07f1f1d418573c6e8f012b3eec072bbac51a677c72dd46b0c49c6453a0d78484",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "heal-outline",
+      "file": "res://assets/pickups/heal-outline.png",
+      "sha256": "d102d1c44added91876d575ba5406f86502c4329843eac63c3fb1b21ec66b71c",
+      "size": [
+        256,
+        256
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    },
+    {
+      "id": "ground-shadow",
+      "file": "res://assets/pickups/ground-shadow.png",
+      "sha256": "07a77cb4fd373985e2825bb166773bb2276a92779c8b68975be10c6112e082f9",
+      "size": [
+        256,
+        96
+      ],
+      "method": "raster alpha silhouette derived from generated pickup; no vector object painting"
+    }
+  ],
+  "variants": {
+    "coin_pair": "coin value >= 2",
+    "ash_bundle": "ash value >= 16"
+  },
+  "gameplay": "presentation only; values, RNG, pickup radii, manual fire-core interaction and save schema unchanged"
+}

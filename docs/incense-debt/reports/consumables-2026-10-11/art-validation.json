@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "heal",
+      "passed": true,
+      "file": "res://assets/pickups/heal.png"
+    },
+    {
+      "id": "coin",
+      "passed": true,
+      "file": "res://assets/pickups/coin.png"
+    },
+    {
+      "id": "coin_pair",
+      "passed": true,
+      "file": "res://assets/pickups/coin_pair.png"
+    },
+    {
+      "id": "ash",
+      "passed": true,
+      "file": "res://assets/pickups/ash.png"
+    },
+    {
+      "id": "ash_bundle",
+      "passed": true,
+      "file": "res://assets/pickups/ash_bundle.png"
+    },
+    {
+      "id": "battery",
+      "passed": true,
+      "file": "res://assets/pickups/battery.png"
+    },
+    {
+      "id": "heart-solid",
+      "passed": true,
+      "file": "res://assets/pickups/heart-solid-ui.png"
+    },
+    {
+      "id": "heart",
+      "passed": true,
+      "file": "res://assets/pickups/heart-ui.png"
+    },
+    {
+      "id": "coins",
+      "passed": true,
+      "file": "res://assets/pickups/coins-ui.png"
+    },
+    {
+      "id": "ash-pickup",
+      "passed": true,
+      "file": "res://assets/pickups/ash-pickup-ui.png"
+    },
+    {
+      "id": "battery-pickup",
+      "passed": true,
+      "file": "res://assets/pickups/battery-pickup-ui.png"
+    },
+    {
+      "id": "heart-empty",
+      "passed": true,
+      "file": "res://assets/pickups/heart-empty-ui.png"
+    },
+    {
+      "id": "ash-outline",
+      "passed": true,
+      "file": "res://assets/pickups/ash-outline.png"
+    },
+    {
+      "id": "ash_bundle-outline",
+      "passed": true,
+      "file": "res://assets/pickups/ash_bundle-outline.png"
+    },
+    {
+      "id": "battery-outline",
+      "passed": true,
+      "file": "res://assets/pickups/battery-outline.png"
+    },
+    {
+      "id": "coin-outline",
+      "passed": true,
+      "file": "res://assets/pickups/coin-outline.png"
+    },
+    {
+      "id": "coin_pair-outline",
+      "passed": true,
+      "file": "res://assets/pickups/coin_pair-outline.png"
+    },
+    {
+      "id": "heal-outline",
+      "passed": true,
+      "file": "res://assets/pickups/heal-outline.png"
+    },
+    {
+      "id": "ground-shadow",
+      "passed": true,
+      "file": "res://assets/pickups/ground-shadow.png"
+    },
+    {
+      "id": "six_distinct_generated_source_drawings",
+      "passed": true
+    }
+  ],
+  "recorded_at": "2026-10-10T17:06:45.140005+00:00",
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "generated_objects": 6,
+  "runtime_bitmaps": 19,
+  "manifest_sha256": "9ad149ef62dc8f2de142f04dd068225c2f881abbe0afb14c0a65201e6364e794",
+  "method": "generated raster objects, alpha cleanup, uniform scaling, bitmap-derived keylines/shadow; no vector pickup drawing"
+}

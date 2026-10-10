@@ -19,6 +19,11 @@ func expect(value: bool, name: String) -> void:
 
 func run_suite() -> void:
 	expect(ProjectSettings.get_setting("application/config/version") == "0.2.1", "the executable loads the new 0.2.1 project from its embedded pack")
+	var pickups = JSON.parse_string(FileAccess.get_file_as_string("res://assets/pickups/manifest.json"))
+	for row in pickups.records:
+		var image: Texture2D = load(row.file)
+		expect(image != null and image.get_width() == row.size[0] and image.get_height() == row.size[1] and image.get_image().get_pixel(0, 0).a == 0,
+			"the generated pickup bitmap loads with its dimensions and transparent background: " + str(row.id))
 	for path in expected:
 		expect(FileAccess.get_sha256(path) == expected[path], "packaged file matches current source: " + path)
 	var animation = load("res://scripts/ui/paper_animation.gd").new()

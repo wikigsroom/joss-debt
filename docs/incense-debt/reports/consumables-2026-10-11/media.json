@@ -1,0 +1,104 @@
+{
+  "source": "docs/incense-debt/reports/consumables-2026-10-11/windows",
+  "files": [
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/bright-room.jpg",
+      "sha256": "a66e9d5cc7b48a793cf61b961baed5df2bc7cf4c9d97a1a27e60de78429e08ea",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/dark-room.jpg",
+      "sha256": "d9e2ccb6061fff70b6521421808098cd82b3ae7e0d84502761d282a811901077",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/fire-core-keyboard-hint.jpg",
+      "sha256": "0fd1b887b584605a7b7ccf8b474d7c9f497a27bf737c8e432710be48c87c5c4e",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/healing-shop.jpg",
+      "sha256": "d010e017fe23cd89b374ccf8c37ca5ded06acde1da4e18639d70b5ce9c964b76",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/mobile-hud.jpg",
+      "sha256": "fa658b6a4008aa8f8838a86921964d9cb41ea0562fae94901f786afdbf783c4b",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/native-before-after.jpg",
+      "sha256": "6b7393aa2951f8524b0eda2670a7612a6e5310c84f9d9df68a95b0ffd9eea724",
+      "size": [
+        2560,
+        760
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/twenty-themes-a.jpg",
+      "sha256": "dfda5b2ba16bf81f24bc40df056ac523b50541705dd703d7848072d74f68e437",
+      "size": [
+        2000,
+        1120
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/twenty-themes-b.jpg",
+      "sha256": "90555129f899f1e9a44f0e60b40fe238237917831538acbf88d7ae1764369e3b",
+      "size": [
+        2000,
+        1120
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/warm-room.jpg",
+      "sha256": "ae56c3cda8754cd9359499990abf4e7d3bd58b56134c4b53434053227a984357",
+      "size": [
+        1280,
+        720
+      ],
+      "frames": 1
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/windows/collect.gif",
+      "sha256": "8babec13b5c59306b86763ab28cdaceb340c9dc30425e645fd887b06d46ca55d",
+      "size": [
+        960,
+        540
+      ],
+      "frames": 24
+    },
+    {
+      "file": "docs/incense-debt/reports/consumables-2026-10-11/windows/idle.gif",
+      "sha256": "72f649ec80c48827bff293e9441e3c3df952ed4ce391538e09f641dc4e6cb0cf",
+      "size": [
+        960,
+        540
+      ],
+      "frames": 24
+    }
+  ]
+}

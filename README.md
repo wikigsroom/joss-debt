@@ -21,14 +21,31 @@
 当前源码及本机 **0.2.1** 已更新独立角色动作、可单独调整大小／位置的触控、四首随机 BGM 与公开隐私主体；进一步完成全部 **402 个怪物身份、24,048 帧独立攻击／受击动作**。[操作修订](docs/incense-debt/33-action-mobile-update.md)与[全量怪物动作及安装包验收](docs/incense-debt/35-creature-action-completion.md)记录当前交付。上方 GitHub 发布链接仍为上一版。  
 The current source and local **0.2.1** builds include independently drawn hero actions, individually adjustable touch controls, a four-song shuffle playlist, and the corrected privacy operator. They now include independently drawn attack/hurt animations for **all 402 creature identities, totaling 24,048 poses**. See the [control revision](docs/incense-debt/33-action-mobile-update.md) and [complete creature-action delivery](docs/incense-debt/35-creature-action-completion.md). The public release link above remains the previous version.
 
+2026-10-11 进一步更新六件生成消耗品、同源资源 UI 和新的 Windows / Android 包，附实际拾取 GIF 与 40 张背景辨识度检查。[消耗品修订与当前交付](docs/incense-debt/36-consumable-art-update.md)。  
+The 2026-10-11 update adds six generated collectible objects, shared resource UI, and new Windows / Android packages, with real collection GIFs and readability checks across 40 backgrounds. See the [pickup revision and current delivery](docs/incense-debt/36-consumable-art-update.md).
+
 当前范围以[交付状态](docs/incense-debt/reports/current-product-status.md)、[结构化状态](docs/incense-debt/reports/current-product-status.json)与实际源码为准。较早的三章报告保留为历史兼容证据，不代表当前正式局只有三层。  
 Current scope is defined by the [delivery status](docs/incense-debt/reports/current-product-status.md), [machine-readable status](docs/incense-debt/reports/current-product-status.json), and source code. Older three-chapter reports are retained as historical compatibility evidence.
 
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
 
-本节新增动作对照来自 0.2.1 原生渲染器；其余菜单、装备和地图截图保留 0.2.0 原生交付记录，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
-The new action comparison uses the 0.2.1 native renderer; the other menu, equipment, and map captures retain their 0.2.0 build provenance. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+本节新增角色动作与掉落物对照来自 0.2.1 原生渲染器；其余菜单、装备和地图截图保留 0.2.0 原生交付记录，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
+The new character-action and pickup comparisons use the 0.2.1 native renderer; the other menu, equipment, and map captures retain their 0.2.0 build provenance. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+
+### 生成物件掉落 / Generated collectible objects
+
+![红心、铜钱、香灰与火芯运行素材 / Runtime heart, coins, ash and fire-core art](output/imagegen/consumables-2026-10-11/consumable-art-board.jpg)
+
+红心变为朱红纸灯，纸钱分单枚和红绳双钱，香灰分普通灰包和三余烬大灰包，充能火芯有铜器纸灯外壳。六件均由 **sub2-image-gen / gpt-image-2.5** 独立生成；地面、血条、金币栏、回血商品与火芯提示使用同源 PNG。  
+Healing uses a vermilion paper heart lantern, coins have single/paired drawings, incense ash has small/rich paper packets, and the fire core has a brass-and-paper flame housing. All six objects were independently generated with **sub2-image-gen / gpt-image-2.5**. Ground drops, health, the wallet, healing offers, and fire-core prompts share the same PNG art.
+
+![掉落物待机原生动效 / Native collectible idle motion](docs/incense-debt/reports/consumables-2026-10-11/windows/idle.gif)
+
+![实际吸附拾取与资源变化 / Actual attraction, collection and resource changes](docs/incense-debt/reports/consumables-2026-10-11/windows/collect.gif)
+
+以上 GIF 来自当前导出 Windows 程序的原生检查场景，展示真实掉落与拾取结算。20 种主题、40 张背景完成实际尺寸检查；每轮 105 项检查、91 张捕获记录，包括回血、金币、香灰、E 拾取、满充能保留、完整存档恢复和动效不改变 RNG。开启减少动态时停止浮动、摆动与拾取上移。[复查与修订](docs/incense-debt/36-consumable-art-update.md) · [地图对照](docs/incense-debt/reports/consumables-2026-10-11/twenty-themes-a.jpg) · [源图与位图清单](game/assets/pickups/manifest.json)。  
+These native fixture GIFs come from the current exported Windows executable and show real drops and reward collection. All 20 themes and 40 backgrounds were checked at actual gameplay size. Each run records 105 checks and 91 captures, including resource values, keyboard interaction, full-charge retention, complete save restoration, and presentation-only animation. Reduced motion disables bobbing, tilting, and collection rise. See the [audit and revision](docs/incense-debt/36-consumable-art-update.md), [theme comparison](docs/incense-debt/reports/consumables-2026-10-11/twenty-themes-b.jpg), and [source-bound asset manifest](game/assets/pickups/manifest.json).
 
 ### 独立角色动作 / Independently drawn hero actions
 
@@ -52,8 +69,8 @@ All 296 enemies, 99 bosses, six elites, and the summon sigil have four independe
 | Boss | 四行朝向相同；四列为主攻击 A、次攻击 B、组合攻击 C、受击 / Same facing rows; columns: primary A, secondary B, combined C, hurt |
 | 实战时序 / Combat timing | 准备 → 蓄势 → 击发 → 收招；近战冲刺保持击发姿势，暂停和存档保留当前进度 / Ready → wind-up → release → recovery; lunges hold the strike pose, while pause and saves preserve progress |
 
-全部 24,048 帧已逐张绑定原生截图哈希；17 项战斗状态检查、2,096 项导出包检查和 107 项导出程序键盘流程通过。[原生证据](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json)与[包体核对](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json)可直接查阅。  
-All 24,048 poses have matching native screenshot hashes. Verification passed 17 combat-state checks, 2,096 exported-pack checks, and 107 keyboard-flow checks in the executable. See the [native evidence](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json) and [package comparison](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json).
+全部 24,048 帧已逐张绑定原生截图哈希，动作修订的 17 项战斗状态检查通过；当前掉落物修订后的包体重新通过 **2,156 项检查**及实际 EXE 的 **107 项键盘流程**，包括全部动作资源与 19 张新掉落物位图。[原生动作证据](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json)与[当前包体核对](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json)可直接查阅。  
+All 24,048 poses have matching native screenshot hashes, and the action revision passed 17 combat-state checks. The current pickup revision's packages passed **2,156 checks** and **107 keyboard-flow checks** in the actual executable, including the complete action resources and 19 new pickup bitmaps. See the [native action evidence](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json) and [current package comparison](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json).
 
 ### 装备与组合攻击 / Equipment and composed attacks
 
@@ -135,7 +152,7 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 | 遭遇库 | 296 种普通敌人、99 名首领、6 种精英变体；含原始通用与兼容内容 |
 | 主题专属池 | 每主题 12 种小怪与 3 名 Boss；最终天穹为 7 名 Boss，即每主题 15—19 种专属遭遇 |
 | 成就与愿簿 | 32 项成就，其中每名角色 4 项、另有 8 项共享成就；3 个独立存档槽 |
-| 动画与资源 | 1,002 张怪物独立攻击／受击图集、24,048 帧；主角另有 864 个独立姿势；3,791 项运行资源 |
+| 动画与资源 | 1,002 张怪物独立攻击／受击图集、24,048 帧；主角另有 864 个独立姿势；3,810 项运行资源，其中新增 19 张消耗品及同源 UI / 辅助位图 |
 | 战斗关键帧 | 88 条分阶段射线 / 范围动画，共 528 张生成关键帧（0.2.0 装备修订新增 80 条 / 480 帧） |
 | 声音 | 默认四首 Yourset 随机曲库；可切换 9 套主题、25 条音乐分层；运行音频共 116 项 |
 
@@ -536,9 +553,11 @@ python tools/runtime/run_native_qa.py --packaged
 python tools/runtime/run_keyboard_qa.py --packaged
 python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
+python tools/runtime/run_consumable_qa.py --packaged
+python tools/runtime/audit_consumable_art.py
 ```
 
-0.2.1 的[全量动作验收](docs/incense-debt/35-creature-action-completion.md)覆盖全部 402 个身份、24,048 个原生帧与源图哈希；17 项战斗状态、2,096 项包体核对和导出 EXE 的 107 项键盘流程通过。[主角／移动修订](docs/incense-debt/33-action-mobile-update.md)另有四组窗口／密度配置的 340 项检查、80 张截图，随机配乐 19 项、持械 22 项、高级输入 54 项检查。
+0.2.1 的[全量动作验收](docs/incense-debt/35-creature-action-completion.md)覆盖全部 402 个身份、24,048 个原生帧与源图哈希；17 项战斗状态检查通过。当前[消耗品修订](docs/incense-debt/36-consumable-art-update.md)另通过 20 项美术检查、105 项实际 EXE 掉落检查与 91 张捕获，更新包体通过 2,156 项核对和 107 项键盘流程。[主角／移动修订](docs/incense-debt/33-action-mobile-update.md)保留四组窗口／密度配置的 340 项检查、80 张截图，随机配乐 19 项、持械 22 项、高级输入 54 项检查。
 
 历史 0.2.0 记录包括 1,568 项装备／掉落／攻击组合检查、80,000 次低概率抽样、29 项编译装备检查及 111 张截图，以及 373 项边界／混编／房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击／恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
 
@@ -597,7 +616,7 @@ Shooting changes character facing and held-weapon pose. Hits, charging, dodging,
 | Encounter library | 296 regular enemies, 99 bosses, 6 elite variants; includes original/common compatibility content |
 | Theme-specific pools | 12 mobs + 3 bosses per theme; the final sky theme has 7 bosses, giving 15–19 native encounter types per theme |
 | Achievements and saves | 32 achievements: 4 per character plus 8 shared achievements; 3 independent save slots |
-| Animation and assets | 1,002 independently drawn creature attack/hurt atlases, 24,048 poses; 864 additional hero poses; 3,791 runtime resources |
+| Animation and assets | 1,002 independently drawn creature attack/hurt atlases, 24,048 poses; 864 additional hero poses; 3,810 runtime resources including 19 new collectible and related UI / auxiliary bitmaps |
 | Combat keyframes | 88 staged beam/area strips, 528 generated frames |
 | Audio | Default four-song Yourset shuffle playlist; optional 9 musical themes and 25 stems; 116 runtime audio resources |
 
@@ -909,7 +928,7 @@ python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
 ```
 
-The [0.2.1 action verification](docs/incense-debt/35-creature-action-completion.md) covers all 402 identities, 24,048 native frames, and their source hashes. It passed 17 combat-state checks, 2,096 exported-pack checks, and 107 keyboard-flow checks in the executable. The [hero/mobile revision](docs/incense-debt/33-action-mobile-update.md) also records 340 checks and 80 captures across four window/density configurations, plus 19 playlist, 22 held-weapon, and 54 advanced-input checks.
+The [0.2.1 action verification](docs/incense-debt/35-creature-action-completion.md) covers all 402 identities, 24,048 native frames, and their source hashes, with 17 combat-state checks. The current [pickup revision](docs/incense-debt/36-consumable-art-update.md) adds 20 art checks, 105 pickup checks and 91 captures in the actual executable. Its packages passed 2,156 comparison checks and 107 keyboard-flow checks. The [hero/mobile revision](docs/incense-debt/33-action-mobile-update.md) retains 340 checks and 80 captures across four window/density configurations, plus 19 playlist, 22 held-weapon, and 54 advanced-input checks.
 
 Historical 0.2.0 evidence includes 1,568 equipment/loot/composition checks, 80,000 rare-roll samples, 29 packaged equipment checks, and 111 captures, alongside 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
 
@@ -946,6 +965,7 @@ The game remains an Alpha, with no online multiplayer, online accounts, or cloud
 | [边界、混编与特效 / Boundary, mixing, and VFX revision](docs/incense-debt/26-combat-boundary-mixed-encounters.md) | 内墙、60/40、独立首领房与关键帧 / inner walls, mixing, separate chambers, keyframes |
 | [动作、触控、曲库与隐私 / Hero, touch, playlist, privacy revision](docs/incense-debt/33-action-mobile-update.md) | 0.2.1 的主角动作、移动交互、配乐与主体更新 / 0.2.1 hero actions, mobile interactions, music, and operator correction |
 | [全量怪物动作 / Complete creature actions](docs/incense-debt/35-creature-action-completion.md) | 402 个身份、24,048 帧与四向 GIF / 402 identities, 24,048 poses, and four-facing GIFs |
+| [生成消耗品 / Generated consumable revision](docs/incense-debt/36-consumable-art-update.md) | 六件同源资源物件、40 背景复查、拾取 GIF 与存档恢复 / six shared collectible objects, 40 backgrounds, collection GIFs, and save restoration |
 | [当前状态 / Current status](docs/incense-debt/reports/current-product-status.json) | 各平台与当前版本事实 / current platform and version facts |
 | [扩展交付 / Expansion delivery](docs/incense-debt/reports/expansion-delivery.json) | 内容数量、检查及来源 / counts, checks, provenance |
 | [边界回归 / Combat regression](docs/incense-debt/reports/runtime/combat-revision/systems.json) | 实际几何与遭遇规则 / actual geometry and encounter rules |

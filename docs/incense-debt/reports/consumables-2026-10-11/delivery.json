@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-10T17:15:33.676315+00:00",
+  "passed": true,
+  "windows_sha256": "79848dfe4835ff67aa12479b633a79db55d42e2fce220e9dcbf7371286b42e19",
+  "android_sha256": "2c58c1ba1e8b95a6901870074a23b3899722777511c2400abdada016b4bbe88b",
+  "generated_objects": 6,
+  "runtime_bitmaps": 19,
+  "resources": 3810,
+  "native_checks": 105,
+  "captures": 91,
+  "keyboard_checks": 107,
+  "package_checks": 2156,
+  "matching_compiled_scripts": 75,
+  "android_physical_device_tested": false,
+  "virtualization": "none"
+}

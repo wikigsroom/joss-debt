@@ -105,6 +105,7 @@ var qa_active = false
 var qa_capture_enabled = false
 var qa_keyboard_enabled = false
 var qa_equipment_enabled = false
+var qa_consumables_enabled = false
 var qa_expansion_enabled = false
 var qa_tick = 0
 var qa_capture_busy = false
@@ -149,7 +150,8 @@ func _ready() -> void:
 	qa_keyboard_enabled = OS.get_cmdline_user_args().has("--qa-keyboard")
 	qa_expansion_enabled = OS.get_cmdline_user_args().has("--qa-expansion")
 	qa_equipment_enabled = OS.get_cmdline_user_args().has("--qa-equipment")
-	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled
+	qa_consumables_enabled = OS.get_cmdline_user_args().has("--qa-consumables")
+	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
 	if mobile_ui:
@@ -161,7 +163,7 @@ func _ready() -> void:
 			if argument.begins_with("--qa-output="):
 				qa_directory = argument.trim_prefix("--qa-output=")
 		DirAccess.make_dir_recursive_absolute(qa_directory)
-	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled:
+	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled:
 		save_slots = SaveSlots.new(qa_directory.path_join("isolated-saves").path_join(str(Time.get_ticks_usec())))
 		save_slot = save_slots.selected_slot()
 		save_session = SaveSession.new(save_slots.base_path(save_slot), save_slots.legacy_profile_path(save_slot), save_slots.legacy_run_path(save_slot))
@@ -237,6 +239,11 @@ func _ready() -> void:
 		add_child(fixture)
 	elif qa_equipment_enabled:
 		var fixture = preload("res://scripts/ui/equipment_native_qa.gd").new()
+		fixture.app = self
+		fixture.directory = qa_directory
+		add_child(fixture)
+	elif qa_consumables_enabled:
+		var fixture = preload("res://scripts/ui/consumable_native_qa.gd").new()
 		fixture.app = self
 		fixture.directory = qa_directory
 		add_child(fixture)
@@ -406,7 +413,7 @@ func icon(parent: Control, key: String, rect: Rect2, color: Color = PAPER) -> Te
 	art.position = rect.position
 	art.size = rect.size
 	art.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	art.modulate = color
+	art.modulate = UI.icon_tint(key, color)
 	art.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(art)
 	return art
@@ -418,6 +425,9 @@ func icon_button(parent: Control, semantic: String, key: String, rect: Rect2, ca
 	result.expand_icon = true
 	result.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER if caption.is_empty() else HORIZONTAL_ALIGNMENT_LEFT
 	UI.button_styles(result, primary, roundi(minf(rect.size.x, rect.size.y) * .5))
+	if key in UI.PickupArt.UI_KEYS:
+		for state in ["normal", "hover", "pressed", "focus"]:
+			result.add_theme_color_override("icon_" + state + "_color", Color.WHITE)
 	return result
 
 func clear_modal() -> void:
@@ -586,7 +596,7 @@ func begin_run(character: String, seed_value: int = 0, tutorial: bool = true, ru
 		options.optional_bosses = []
 		options.pickup_radius_scale = 1.0
 		options.weapon = world.db.row("characters", character).weapon
-	world.start(character, seed_value, 11 if not qa_active or qa_expansion_enabled or qa_equipment_enabled else 3, options)
+	world.start(character, seed_value, 11 if not qa_active or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled else 3, options)
 	world.run.opening_seen = not tutorial
 	seed_draft = ""
 	world.run.id = ("daily_%s_%s_%d" % [str(options.get("daily_key", "")), character, seed_value]) if bool(options.get("daily", false)) else ("%s_%d_%d" % [character, seed_value, Time.get_ticks_usec()])

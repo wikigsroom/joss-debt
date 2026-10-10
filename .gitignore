@@ -102,3 +102,11 @@ Thumbs.db
 /output/imagegen/creature-action-revision/logs/
 /output/imagegen/creature-action-revision/rejected/
 /output/imagegen/creature-action-revision/journal-history/
+/output/imagegen/consumables-2026-10-11/rejected/
+/docs/incense-debt/reports/consumables-2026-10-11/**/pickup-roundtrip/
+/docs/incense-debt/reports/consumables-2026-10-11/**/save-before.json
+/docs/incense-debt/reports/consumables-2026-10-11/**/save-after.json
+
+# Documentation-linked generated pickup previews and native motion.
+!/docs/incense-debt/reports/consumables-2026-10-11/windows/idle.gif
+!/docs/incense-debt/reports/consumables-2026-10-11/windows/collect.gif

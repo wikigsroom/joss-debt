@@ -12,6 +12,7 @@ const JADE = Color("9dd6bf")
 const GOLD = Color("ebc386")
 const RADIUS = 24
 const ICON_SIZE = 24
+const PickupArt = preload("res://scripts/ui/pickup_art.gd")
 static var font_cache: Dictionary = {}
 static var icon_cache: Dictionary = {}
 
@@ -31,10 +32,15 @@ static func display_font() -> Font:
 	return font_cache.display
 
 static func icon(key: String) -> Texture2D:
+	if key in PickupArt.UI_KEYS: return PickupArt.icon(key)
 	if not icon_cache.has(key):
 		var path = "res://assets/ui/icons/" + key + ".svg"
 		if ResourceLoader.exists(path): icon_cache[key] = load(path)
 	return icon_cache.get(key)
+
+static func icon_tint(key: String, color: Color) -> Color:
+	# Resource art has painted material colours; monochrome navigation glyphs keep their tint.
+	return Color(1, 1, 1, color.a) if key in PickupArt.UI_KEYS else color
 
 static func surface(color: Color) -> Color:
 	var key = color.to_html(false)

@@ -1,17 +1,17 @@
 {
   "version": "0.2.1",
   "status": "local_verified_alpha",
-  "recorded_at": "2026-10-10T15:21:34.491649+00:00",
+  "recorded_at": "2026-10-10T17:15:33.676315+00:00",
   "files": [
     {
       "path": "build/windows/IncenseDebt.exe",
-      "sha256": "654e3e3c60f0e46c1faf7ae94ab8ed7834a699f11d23746ea076587505cacead",
-      "bytes": 1108185544
+      "sha256": "79848dfe4835ff67aa12479b633a79db55d42e2fce220e9dcbf7371286b42e19",
+      "bytes": 1108664680
     },
     {
       "path": "build/android/IncenseDebt.apk",
-      "sha256": "bfc6280672c0e69069d674f59e7bc57d939f3bd226eae4bd34c5eef26a5ec50b",
-      "bytes": 1024729812
+      "sha256": "2c58c1ba1e8b95a6901870074a23b3899722777511c2400abdada016b4bbe88b",
+      "bytes": 1025213495
     }
   ],
   "revision_report": "docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json",
@@ -24,5 +24,12 @@
   "creature_native_evidence": "docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json",
   "previous_delivery_manifest": "build/delivery-manifest-0.2.0.baseline.json",
   "ios_handoff_version": "0.2.0_historical",
-  "public_github_release": "v0.2.0-alpha.1"
+  "public_github_release": "v0.2.0-alpha.1",
+  "generated_consumable_objects": 6,
+  "consumable_runtime_bitmaps": 19,
+  "consumable_revision_document": "docs/incense-debt/36-consumable-art-update.md",
+  "consumable_native_evidence": "docs/incense-debt/reports/consumables-2026-10-11/windows/native.json",
+  "runtime_assets": 3810,
+  "matching_compiled_scripts": 75,
+  "prior_package_receipts": "docs/incense-debt/reports/consumables-2026-10-11/prior-package-receipts"
 }

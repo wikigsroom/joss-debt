@@ -1,0 +1,92 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "passed": true,
+  "sources": [
+    {
+      "id": "heal",
+      "file": "output/imagegen/consumables-2026-10-11/heal-source.png",
+      "sha256": "4c41406416d3da9df21adfc90739d950bc82533b46e48106b5270c8352f03edb",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "coin_pair",
+      "file": "output/imagegen/consumables-2026-10-11/coin_pair-source.png",
+      "sha256": "4c3e8ab23ad89d610ce919cfae3f6630b117e2393869be6fe6c510e2990ca2ed",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "coin",
+      "file": "output/imagegen/consumables-2026-10-11/coin-source.png",
+      "sha256": "7f296d2adc09ec985130667c126cac466314314102bd98ee9a1b6fbe8bbf09bb",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ash",
+      "file": "output/imagegen/consumables-2026-10-11/ash-source.png",
+      "sha256": "7e645fa1d9f984fe7faea9b2473d59a9b87e189c8cbe4c0cc7f255a810d925b9",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "ash_bundle",
+      "file": "output/imagegen/consumables-2026-10-11/ash_bundle-source.png",
+      "sha256": "f8a772a96545ff57ff5b9fb4d2240145ce4599a28a99e73f7b1fcc756f400050",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "id": "battery",
+      "file": "output/imagegen/consumables-2026-10-11/battery-source.png",
+      "sha256": "aee4b2a0e717c73272b580ee0e6937930201a55de610b2aaedb244f367572ad0",
+      "size": [
+        1254,
+        1254
+      ],
+      "requested_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "failures": []
+}

@@ -8,6 +8,7 @@ const UI = preload("res://scripts/ui/game_theme.gd")
 const ExpandedVisuals = preload("res://scripts/ui/expanded_visuals.gd")
 const PolishedFX = preload("res://scripts/ui/polished_fx.gd")
 const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
+const PickupArt = preload("res://scripts/ui/pickup_art.gd")
 const Geometry = preload("res://scripts/combat/room_geometry.gd")
 var animation = PaperMotion.new()
 var weapon_motion = WeaponMotion.new()
@@ -206,22 +207,11 @@ func _draw() -> void:
 				var point = a.lerp(b, fraction) + normal * sin(fraction * TAU * 1.3 + clock * 5) * 8 * sin(fraction * PI)
 				draw_circle(point, 3, Color("ffe0a0"))
 	for pickup in world.pickups:
-		var p = pickup.pos + Vector2(0, sin(clock * 5 + pickup.uid) * 3 - 6)
-		if pickup.kind in world.Equipment.MANUAL_KINDS:
+		if pickup.kind in PickupArt.KINDS:
+			PickupArt.draw(self, pickup)
+		elif pickup.kind in world.Equipment.MANUAL_KINDS:
+			var p = pickup.pos + Vector2(0, (0.0 if reduce_motion else sin(clock * 5 + pickup.uid) * 3) - 6)
 			draw_equipment_pickup(pickup, p)
-			continue
-		match pickup.kind:
-			"ash":
-				draw_circle(p, 9, Color(INK, 0.9))
-				draw_circle(p, 5, Color("d7bd89"))
-				draw_line(p + Vector2(-3, 0), p + Vector2(3, 0), FIRE, 2)
-			"coin":
-				draw_circle(p, 10, INK)
-				draw_circle(p, 7, GOLD)
-				draw_rect(Rect2(p - Vector2(2, 2), Vector2(4, 4)), INK)
-			"heal":
-				draw_circle(p, 14, Color(INK, 0.8))
-				draw_colored_polygon(PackedVector2Array([p + Vector2(0, -11), p + Vector2(8, 0), p + Vector2(0, 10), p + Vector2(-8, 0)]), Color("dd7048"))
 	# Ground energy stays readable without covering character silhouettes.
 	for effect in visual_effects:
 		if effect.kind in ["ray","burst","scenery_explosion"]: draw_effect(effect)
@@ -296,12 +286,9 @@ func draw_equipment_pickup(drop: Dictionary, point: Vector2) -> void:
 	var tint = UI.JADE if drop.kind == "trinket" else (UI.ACCENT if drop.kind == "active" else UI.GOLD)
 	PolishedFX.Clip.disk(self, drop.pos, 22, Color("101b25", .82))
 	PolishedFX.Clip.arc(self, drop.pos, 23, 0, TAU, 32, Color(tint, .78), 2)
-	if drop.kind == "battery":
-		PolishedFX.Clip.sprite(self, UI.icon("zap"), point, Vector2(28, 34), 0, tint)
-	else:
-		var path = EquipmentUI.art(drop.kind, str(drop.id))
-		if not textures.has(path): textures[path] = load(path)
-		PolishedFX.Clip.sprite(self, textures[path], point - Vector2(0, 15), Vector2(50, 59))
+	var path = EquipmentUI.art(drop.kind, str(drop.id))
+	if not textures.has(path): textures[path] = load(path)
+	PolishedFX.Clip.sprite(self, textures[path], point - Vector2(0, 15), Vector2(50, 59))
 	if not reduce_motion and PolishedFX.spend(self):
 		var orbit = drop.pos + Vector2.RIGHT.rotated(clock * .6 + drop.uid) * 24
 		PolishedFX.Clip.disk(self, orbit, 2.1, tint)
@@ -576,6 +563,7 @@ func to_world(canvas_position: Vector2) -> Vector2:
 func draw_effect(effect: Dictionary) -> void:
 	var progress = 1.0 - effect.left / effect.total
 	var color = Color(FIRE, 1.0 - progress)
+	if (effect.kind == "pickup" or (effect.kind == "equipment_taken" and effect.get("type", "") == "battery")) and PickupArt.collection(self, effect, progress): return
 	var drawn = drawn_fx.draw(self, effect)
 	if drawn and effect.kind in ["shot", "slash", "player_hurt"]: return
 	if effect.kind == "ray" and PolishedFX.beam(self, effect, progress): return

@@ -1,0 +1,76 @@
+{
+	"baseline": true,
+	"captures": [
+		{
+			"name": "theme-01-a",
+			"saved": true,
+			"size": [
+				1280,
+				720
+			],
+			"state_stable": true,
+			"theme": "m01",
+			"variant": 0
+		},
+		{
+			"name": "theme-02-a",
+			"saved": true,
+			"size": [
+				1280,
+				720
+			],
+			"state_stable": true,
+			"theme": "m02",
+			"variant": 0
+		},
+		{
+			"name": "theme-07-a",
+			"saved": true,
+			"size": [
+				1280,
+				720
+			],
+			"state_stable": true,
+			"theme": "m07",
+			"variant": 0
+		},
+		{
+			"name": "theme-14-a",
+			"saved": true,
+			"size": [
+				1280,
+				720
+			],
+			"state_stable": true,
+			"theme": "m14",
+			"variant": 0
+		}
+	],
+	"checks": [
+		{
+			"detail": "",
+			"id": "capture/theme-01-a",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "capture/theme-02-a",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "capture/theme-07-a",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"id": "capture/theme-14-a",
+			"passed": true
+		}
+	],
+	"device_tested": false,
+	"engine": "4.7.2-stable (official)",
+	"manifest_sha256": "",
+	"passed": true,
+	"virtualization": "none"
+}

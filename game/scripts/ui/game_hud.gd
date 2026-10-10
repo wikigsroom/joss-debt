@@ -67,7 +67,7 @@ func text(value: String, point: Vector2, size: int = 18, color: Color = UI.TEXT,
 
 func glyph(key: String, rect: Rect2, color: Color = UI.TEXT) -> void:
 	var texture = UI.icon(key)
-	if texture != null: draw_texture_rect(texture, rect, false, color)
+	if texture != null: draw_texture_rect(texture, rect, false, UI.icon_tint(key, color))
 
 func image(id: String, rect: Rect2, color: Color = Color.WHITE) -> void:
 	if icons.has(id): draw_texture_rect(icons[id], rect, false, color)
@@ -84,7 +84,7 @@ func _draw() -> void:
 	draw_arc(Vector2(57, 52), 25, -PI * .5, -PI * .5 + TAU * clampf(player.energy / 100.0, 0, 1), 40, UI.JADE, 3, true)
 	image(world.run.character, Rect2(34, 27, 46, 48))
 	for i in int(player.max_hp):
-		glyph("heart-solid" if i < int(player.hp) else "heart", Rect2(91 + i * 20, 31, 17, 17), UI.ACCENT if i < int(player.hp) else Color("80928b"))
+		glyph("heart-solid" if i < int(player.hp) else "heart-empty", Rect2(89 + i * 20, 28, 21, 23))
 	plate(Rect2(92, 61, int(player.max_hp) * 20 - 10, 4), UI.EDGE, 2)
 	if player.energy > 0:
 		plate(Rect2(92, 61, (int(player.max_hp) * 20 - 10) * player.energy / 100.0, 4), UI.JADE, 2)
@@ -157,8 +157,8 @@ func draw_mobile() -> void:
 	plate(Rect2(20, 20, health_width, 72), UI.INSET)
 	image(world.run.character, Rect2(28, 28, 52, 52))
 	draw_arc(Vector2(54, 54), 29, -PI * .5, -PI * .5 + TAU * player.energy / 100.0, 40, UI.JADE, 3, true)
-	for i in int(player.max_hp): glyph("heart-solid" if i < int(player.hp) else "heart", Rect2(94 + i * 20, 33, 17, 17), UI.ACCENT if i < player.hp else UI.EDGE)
-	glyph("flame", Rect2(95, 61, 17, 17), UI.JADE)
+	for i in int(player.max_hp): glyph("heart-solid" if i < int(player.hp) else "heart-empty", Rect2(92 + i * 20, 30, 21, 23))
+	glyph("ash-pickup", Rect2(93, 59, 21, 21))
 	text(str(roundi(player.energy)), Vector2(120, 77), 17, UI.JADE, true)
 	if player.armor > 0:
 		glyph("shield", Rect2(169, 60, 18, 18), UI.JADE)

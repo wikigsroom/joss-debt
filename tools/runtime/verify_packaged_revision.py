@@ -24,7 +24,7 @@ def runtime_remap(data):
     return '\n'.join(lines).strip()
 
 def main():
-    sources=['game/data/music_playlist.json','game/assets/weapon-rig.json','game/data/runtime_assets.json','game/assets/fx/drawn-actions/manifest.json','game/assets/creature-actions.json']
+    sources=['game/data/music_playlist.json','game/assets/weapon-rig.json','game/data/runtime_assets.json','game/assets/fx/drawn-actions/manifest.json','game/assets/creature-actions.json','game/assets/pickups/manifest.json']
     creatures=json.loads((ROOT/'game/assets/creature-actions.json').read_text('utf8'))
     if not creatures.get('complete') or creatures.get('compiled_actors')!=402 or creatures.get('compiled_action_poses')!=24048:
         raise RuntimeError('Creature action shipping coverage is incomplete; do not verify a partial release as complete')
@@ -50,6 +50,21 @@ def main():
                 if hashlib.sha256(bundle.read('assets/'+imported)).hexdigest()!=source_hash:raise RuntimeError('Stale APK creature texture: '+relative)
                 expected['res://'+mapping]=hashlib.sha256(packed_mapping).hexdigest()
                 expected['res://'+imported]=source_hash
+        pickups=json.loads((ROOT/'game/assets/pickups/manifest.json').read_text('utf8'))
+        for row in pickups['records']:
+            relative=row['file'].removeprefix('res://')
+            if digest(ROOT/'game'/relative)!=row['sha256']:raise RuntimeError('Stale pickup source: '+relative)
+            mapping=relative+'.import'
+            current=(ROOT/'game'/mapping).read_bytes()
+            packed_mapping=bundle.read('assets/'+mapping)
+            if runtime_remap(packed_mapping)!=runtime_remap(current):raise RuntimeError('Stale APK pickup runtime remap: '+relative)
+            target=re.search(r'path="res://([^"]+)"',current.decode('utf8'))
+            if not target:raise RuntimeError('Missing pickup texture target: '+relative)
+            imported=target[1]
+            source_hash=digest(ROOT/'game'/imported)
+            if hashlib.sha256(bundle.read('assets/'+imported)).hexdigest()!=source_hash:raise RuntimeError('Stale APK pickup texture: '+relative)
+            expected['res://'+mapping]=hashlib.sha256(packed_mapping).hexdigest()
+            expected['res://'+imported]=source_hash
         # GDC bytes must match both platforms. Godot executes the Windows side below.
         for member in sorted(p for p in names if p.startswith('assets/scripts/') and p.endswith('.gdc')):
             expected['res://'+member.removeprefix('assets/')]=hashlib.sha256(bundle.read(member)).hexdigest()
@@ -75,7 +90,7 @@ def main():
     if result.returncode or 'SCRIPT ERROR' in log or 'ERROR:' in log:raise RuntimeError(log[-6000:])
     report=json.loads((REPORT/'packaged-windows.json').read_text('utf8'))
     script_count=sum(path.endswith('.gdc') for path in expected)
-    report.update(windows_sha256=digest(exe),android_sha256=digest(apk),matching_compiled_scripts=script_count,matching_data=sources,matching_creature_atlases=sum(len(actor['states']) for actor in creatures['actors'].values()),creature_import_remaps_match_source=True,creature_compiled_texture_bytes_match_source=True,android_device_tested=False)
+    report.update(windows_sha256=digest(exe),android_sha256=digest(apk),matching_compiled_scripts=script_count,matching_data=sources,matching_creature_atlases=sum(len(actor['states']) for actor in creatures['actors'].values()),creature_import_remaps_match_source=True,creature_compiled_texture_bytes_match_source=True,matching_pickup_bitmaps=len(pickups['records']),pickup_import_remaps_and_texture_bytes_match_source=True,android_device_tested=False)
     (REPORT/'packaged-parity.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n','utf8')
     print(f'Actual exported Windows pack passed {len(report["checks"])} checks in native Godot; {script_count} compiled scripts match Android; four songs and all hero/creature drawn poses packaged.')
 

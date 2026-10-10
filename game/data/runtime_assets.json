@@ -26809,6 +26809,158 @@
       ]
     },
     {
+      "file": "res://assets/pickups/ash-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/ash-pickup-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/ash.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/ash_bundle-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/ash_bundle.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/battery-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/battery-pickup-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/battery.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/coin-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/coin.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/coin_pair-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/coin_pair.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/coins-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/ground-shadow.png",
+      "kind": "texture",
+      "size": [
+        256,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/heal-outline.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/heal.png",
+      "kind": "texture",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "file": "res://assets/pickups/heart-empty-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/heart-solid-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "file": "res://assets/pickups/heart-ui.png",
+      "kind": "texture",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
       "file": "res://assets/portraits/c_bell.png",
       "kind": "texture",
       "size": [

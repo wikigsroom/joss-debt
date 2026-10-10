@@ -1,0 +1,32 @@
+[
+  {
+    "id": "heal",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\heal.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\heal-source.png"
+  },
+  {
+    "id": "coin",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\coin.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\coin-source.png"
+  },
+  {
+    "id": "coin_pair",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\coin_pair.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\coin_pair-source.png"
+  },
+  {
+    "id": "ash",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\ash.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\ash-source.png"
+  },
+  {
+    "id": "ash_bundle",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\ash_bundle.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\ash_bundle-source.png"
+  },
+  {
+    "id": "battery",
+    "prompt": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\prompts\\battery.txt",
+    "output": "E:\\dev\\vibe-game\\以撒类\\output\\imagegen\\consumables-2026-10-11\\battery-source.png"
+  }
+]

@@ -1,8 +1,8 @@
 # README 媒体说明 / README media notes
 
-这里存放历史 0.2.0 展示媒体，包括 22 张静态图片和 6 段 GIF；首页另引用下表的 3 段 0.2.1 原生动作 GIF，共展示 9 段动效。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)。
+这里存放历史 0.2.0 展示媒体，包括 22 张静态图片和 6 段 GIF；首页另引用下表的 3 段 0.2.1 原生动作 GIF，以及 2 段当前掉落物 GIF，共展示 11 段动效。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；历史图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)，新增掉落物见[来源记录](../incense-debt/reports/consumables-2026-10-11/media.json)。
 
-This directory retains 22 still images and six GIFs from 0.2.0. The README also embeds the three native 0.2.1 action GIFs listed below, giving nine motion examples. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records source paths, output hashes, and capture provenance.
+This directory retains 22 still images and six GIFs from 0.2.0. The README also embeds three native 0.2.1 action GIFs and two current pickup GIFs, giving eleven motion examples. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records the historical source paths, output hashes, and capture provenance; the pickup revision has its own [media record](../incense-debt/reports/consumables-2026-10-11/media.json).
 
 ## 0.2.1 动作对照 / 0.2.1 action comparisons
 
@@ -11,6 +11,8 @@ This directory retains 22 still images and six GIFs from 0.2.0. The README also 
 | [主角动作 / Hero actions](../incense-debt/reports/action-mobile-2026-10-09/native-actions.gif) | 六名角色、六状态的原生持械与事件特效对照；完整资产为四向 864 个姿势 / Six heroes and six states, with native held weapons and event effects; the full asset set contains 864 poses across four facings |
 | [小怪四向 / Four-facing enemy actions](../incense-debt/reports/creature-actions-2026-10-10/enemy-four-directions.gif) | 四行朝向、攻击／受击两列 / Four facing rows, attack/hurt columns |
 | [Boss 四向 / Four-facing boss actions](../incense-debt/reports/creature-actions-2026-10-10/boss-four-directions.gif) | 四行朝向、攻击 A／B／C 与受击四列 / Four facing rows, attack A/B/C and hurt columns |
+| [掉落待机 / Pickup idle](../incense-debt/reports/consumables-2026-10-11/windows/idle.gif) | 六件生成消耗品在原生场景中的浮动与摆动 / Six generated collectibles bob and tilt in the native arena |
+| [真实拾取 / Real collection](../incense-debt/reports/consumables-2026-10-11/windows/collect.gif) | 实际回血、吸附、纸钱与香灰数值变化 / Real healing, magnet attraction, coin and incense-energy changes |
 
 新增 GIF 来自原生渲染帧；怪物对照逐帧绑定完整验收中的截图 SHA-256，按固定 140 毫秒比较，不代表实战时序。原始渲染帧保存在本地，发布 GIF 已纳入 Git。重建怪物 GIF 使用 `python tools/documentation/create_creature_action_showcase.py`；所需原生帧与验收步骤见 [全量怪物交付](../incense-debt/35-creature-action-completion.md)。主角来源见 [动作与移动修订](../incense-debt/33-action-mobile-update.md)。
 

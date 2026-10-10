@@ -391,7 +391,7 @@ static func choice_art(choice: Dictionary, row: Dictionary) -> String:
 	var id = str(choice.get("icon", choice.id))
 	if choice.kind == "contract": id = row.reward
 	elif choice.kind == "talent": id = ROUTE_ART.get(row.route, "r17")
-	elif choice.kind == "heal": id = "r17"
+	elif choice.kind == "heal": return UI.PickupArt.path("heal")
 	elif choice.kind in ["sacrifice", "judgment", "blessing"]:
 		id = str(choice.get("art_id", id))
 		if choice.get("reward_kind", "relic") == "weapon": return "res://assets/weapons/%s.png" % id

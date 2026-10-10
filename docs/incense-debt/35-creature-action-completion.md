@@ -57,26 +57,26 @@ README 还直接展示四个朝向同时播放的对照，使用同一份逐帧�
 | 完整目录与源图检查 | 402 身份、24,048 帧；无缺失身份；模型、审查、源图、透明度、切片与逐帧哈希通过 | [source-validation.json](reports/creature-actions-2026-10-10/source-validation.json) |
 | 全量原生帧证据 | 402 身份、24,048 帧；每身份绑定当前动作资产，逐张截图 SHA-256 与成功捕获记录一致 | [native-coverage.json](reports/creature-actions-2026-10-10/native-coverage.json) |
 | 原生战斗状态测试 | 17 项通过、0 失败；1,184 次小怪实际攻击、1,980 次 Boss 实际攻击；载入全部 24,048 个原生动作纹理区域 | [native-suite.json](reports/creature-actions-2026-10-10/native-suite.json) |
-| Windows / Android 包体一致性 | 2,096 项通过；73 份编译脚本一致；全部 1,002 张图集的运行映射和编译纹理一致；载入 864 主角帧与 24,048 怪物帧 | [packaged-parity.json](reports/action-mobile-2026-10-09/packaged-parity.json) |
-| Windows 导出程序 | 107 项纯键盘流程通过、0 失败 | [keyboard-flow.json](reports/platforms/windows/keyboard/keyboard-flow.json) |
-| Android APK | 签名、版本、权限、arm64 及全部 3,791 项运行资源通过 | [android-verification.json](reports/platforms/android-verification.json) |
+| Windows / Android 当轮包体一致性 | 2,096 项通过；73 份编译脚本一致；全部 1,002 张图集的运行映射和编译纹理一致；载入 864 主角帧与 24,048 怪物帧 | [历史 packaged-parity.json](reports/consumables-2026-10-11/prior-package-receipts/docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json) |
+| Windows 当轮导出程序 | 107 项纯键盘流程通过、0 失败 | [历史 keyboard-flow.json](reports/consumables-2026-10-11/prior-package-receipts/docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json) |
+| Android 当轮 APK | 签名、版本、权限、arm64 及全部 3,791 项运行资源通过 | [历史 android-verification.json](reports/consumables-2026-10-11/prior-package-receipts/docs/incense-debt/reports/platforms/android-verification.json) |
 
 原生状态检查还覆盖六种精英、Boss 外观分身、召唤符、四向受击、暂停冻结、保存继续、旧存档推断、冲刺收招、受击与发弹优先级和延时攻击。捕获证据按当前身份资产匹配，已有 PNG 文件本身不作为通过依据。完整验收默认要求全部 402 个身份，构建门禁拒绝不完整动作版本。
 
 Godot 导出时移除编辑器专用导入参数；包体核对比较完整的运行时映射，再比较实际编译纹理字节。导出的 Windows 内嵌 PCK 由匹配版本的原生 Godot 运行器打开，其资源和编译脚本与 APK 逐项核对。
 
-## 当前产物
+## 当轮产物记录 · 2026-10-10
 
 | 平台 | 文件 | 大小 | 构建 |
 | --- | --- | ---: | --- |
-| Windows | [IncenseDebt.exe](../../build/windows/IncenseDebt.exe) | 1,056.8 MiB | 原生 release 导出，实际程序键盘流程已验收 |
-| Android | [IncenseDebt.apk](../../build/android/IncenseDebt.apk) | 977.3 MiB | 原生 debug 签名，已检查包体；未做真机安装验收 |
+| Windows | [当轮 Windows 构建记录](reports/consumables-2026-10-11/prior-package-receipts/docs/incense-debt/reports/platforms/windows-build.json) | 1,056.8 MiB | 原生 release 导出，实际程序键盘流程已验收 |
+| Android | [当轮 Android 构建记录](reports/consumables-2026-10-11/prior-package-receipts/docs/incense-debt/reports/platforms/android-build.json) | 977.3 MiB | 原生 debug 签名，已检查包体；未做真机安装验收 |
 
 Windows SHA-256：`654e3e3c60f0e46c1faf7ae94ab8ed7834a699f11d23746ea076587505cacead`。
 
 Android SHA-256：`bfc6280672c0e69069d674f59e7bc57d939f3bd226eae4bd34c5eef26a5ec50b`。
 
-当前本地产物以 [交付清单](../../build/delivery-manifest.json) 与 [交付状态](reports/current-product-status.json) 为准。较早包体回执保存在 [prior-package-receipts](reports/creature-actions-2026-10-10/prior-package-receipts)，GitHub 公开发布仍为 `v0.2.0-alpha.1`。本次工作全部在原生 Windows 环境进行。
+以上哈希属于怪物动作完成时的 2026-10-10 构建；2026-10-11 的消耗品修订已更新安装包，见[消耗品交付](36-consumable-art-update.md)、[当前交付清单](../../build/delivery-manifest.json)与[当前状态](reports/current-product-status.json)。动作素材和逐帧来源证据保持。更早包体回执保存在 [prior-package-receipts](reports/creature-actions-2026-10-10/prior-package-receipts)，GitHub 公开发布仍为 `v0.2.0-alpha.1`。本次工作全部在原生 Windows 环境进行。
 
 ## English delivery record
 
@@ -84,4 +84,4 @@ All **402 creature identities** now have independently drawn attack and hurt ani
 
 Real combat events drive anticipation, release, lunge holds, delayed projectiles and damage recoil. Pause freezes the simulation clock; saved runs restore the in-flight bank, frame and facing. Existing schema 2 saves remain compatible. Idle, movement, death and phase-transition assets retain their existing methods.
 
-The complete source gate passed. All 24,048 poses have matching native-render capture evidence, and the 17 native combat checks passed. The exported Windows pack passed 2,096 checks; all 1,002 creature atlases and 73 compiled scripts match Android. The Windows executable passed 107 keyboard-flow checks. APK signature and all 3,791 runtime resources were verified; Android hardware testing remains outstanding. The comparison GIFs use fixed 140 ms frame timing and are separate from actual combat timing.
+The complete source gate passed. All 24,048 poses have matching native-render capture evidence, and the 17 native combat checks passed. The 2026-10-10 Windows pack passed 2,096 checks; all 1,002 creature atlases and 73 compiled scripts matched Android. That executable passed 107 keyboard-flow checks, and its APK signature and 3,791 resources were verified. Those package receipts are archived above; the [2026-10-11 pickup revision](36-consumable-art-update.md) supplies the current packages while retaining the creature drawings and frame evidence. Android hardware testing remains outstanding. Comparison GIFs use fixed 140 ms frame timing, separately from combat timing.

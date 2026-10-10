@@ -1,7 +1,9 @@
 extends RefCounted
 const UI = preload("res://scripts/ui/game_theme.gd")
+const PickupArt = preload("res://scripts/ui/pickup_art.gd")
 
 static func art(kind: String, id: String) -> String:
+	if kind in PickupArt.KINDS: return PickupArt.path(kind)
 	var table = {"active": "active_items", "trinket": "trinkets", "relic": "relics"}.get(kind, kind)
 	return "res://assets/%s/%s.png" % [table, id]
 
@@ -19,8 +21,7 @@ static func ground_hint(app) -> void:
 	action.set_meta("ground_uid", int(drop.uid))
 	action.tooltip_text = str(row.behavior) + ("\n当前饰品会掉在脚边" if drop.kind == "trinket" else "")
 	action.accessibility_name = "拾取 " + str(row.name)
-	if drop.kind == "battery": app.icon(action, "zap", Rect2(18, 18, 30, 30), UI.GOLD)
-	else: app.add_art(action, art(drop.kind, drop.id), Rect2(9, 5, 54, 54))
+	app.add_art(action, art(drop.kind, drop.id), Rect2(9, 5, 54, 54))
 	app.label(action, str(row.name), Rect2(71, 10, 184, 28), 21)
 	app.label(action, "换装" if drop.kind in ["active", "trinket"] else "拾取", Rect2(73, 36, 174, 23), 14, UI.MUTED)
 	var badge = app.panel(action, Rect2(width - 65, 12, 48, 40), UI.SURFACE, Color.TRANSPARENT)

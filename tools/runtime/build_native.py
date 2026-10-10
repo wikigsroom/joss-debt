@@ -55,6 +55,8 @@ def configure():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("platform", choices=["windows", "android"])
+    parser.add_argument("--export-timeout", type=int, default=900,
+                        help="Bounded export timeout in seconds; large native packs need more than three minutes.")
     parser.add_argument(
         "--android-build",
         choices=["debug", "release"],
@@ -66,6 +68,8 @@ def main():
         help="Optional Android APK output path. Relative paths are resolved from the workspace root.",
     )
     args = parser.parse_args()
+    if args.export_timeout < 60:
+        parser.error("--export-timeout must be at least 60 seconds")
     if args.platform != "android" and (args.android_build != "debug" or args.android_output):
         parser.error("--android-build and --android-output are only valid for the android platform")
     if (ROOT / "game/assets/creature-actions.json").is_file():
@@ -114,12 +118,15 @@ def main():
                 [str(ENGINE), "--headless", "--path", str(ROOT / "game"),
                  export_flag, "Windows Desktop" if args.platform == "windows" else "Android", str(output)]]
     logs = []
-    for cmd in commands:
+    for step, cmd in enumerate(commands):
         try:
-            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env, timeout=180)
+            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env,
+                                    timeout=180 if step == 0 else args.export_timeout)
         except subprocess.TimeoutExpired as error:
             logs.append((error.stdout or b"").decode("utf-8", errors="replace"))
             (REPORTS / log_name).write_text("\n".join(logs), "utf-8")
+            if step == 1 and output.exists():
+                output.replace(output.with_name(output.stem + "-incomplete" + output.suffix))
             print(logs[-1][-4000:])
             raise RuntimeError(f"{args.platform} exporter timed out; inspect saved platform log") from error
         logs.append(result.stdout.decode("utf-8", errors="replace"))
