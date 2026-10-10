@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e233-primary.png",
+  "source_sha256": "ae845706725f5534b966540ac948c8593252a4b1f335c67d28e7d3e7ad08c5ba",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original LIMBLESS purple/ivory segmented prison-sign snake, ONE ivory pointed skull mask, dark violet rune coils and original magenta binding strips. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "fc0c09735497757984a500e61fe39c68289b44851e5607d7f0879509d4c6d4f9"
+}

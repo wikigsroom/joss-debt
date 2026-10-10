@@ -1,0 +1,746 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "twelve screenshots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "five 16:9 promotional images",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "25 primary raster images",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wallpaper strictly larger than 3840x1240",
+      "passed": true,
+      "detail": [
+        5120,
+        1654
+      ]
+    },
+    {
+      "name": "wallpaper neural 4x output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wallpaper no typography or logo layer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wallpaper upscale proof hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / copy/game-introduction.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / copy/developers-message.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / copy/homepage-recommendation.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/01-paper-child-combat.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/01-paper-child-combat.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/02-character-selection.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/02-character-selection.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/03-river-returning-umbrella.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/03-river-returning-umbrella.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/04-treasury-composed-beams.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/04-treasury-composed-beams.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/05-opera-flame-lantern.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/05-opera-flame-lantern.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/06-thunder-gate-lightning.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/06-thunder-gate-lightning.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/07-bamboo-melee.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/07-bamboo-melee.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/08-magistrate-boss.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/08-magistrate-boss.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/09-lantern-shop.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/09-lantern-shop.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/10-relic-choice.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/10-relic-choice.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/11-celestial-prism.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/11-celestial-prism.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / screenshots/12-eleven-floor-map.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / screenshots/12-eleven-floor-map.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duration / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": 120.0
+    },
+    {
+      "name": "1080p 30fps / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frame count / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": 3600
+    },
+    {
+      "name": "H264 + AAC / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "complete AV decode / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": {
+        "verification": "Reused successful decode for identical file SHA-256",
+        "sha256": "88f7851f8a64aca891d146ec4d2a06105583662b30e4d7dd7c4945d6420d2865"
+      }
+    },
+    {
+      "name": "file hash / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duration / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": 45.0
+    },
+    {
+      "name": "1080p 30fps / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frame count / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": 1350
+    },
+    {
+      "name": "H264 + AAC / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "complete AV decode / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": {
+        "verification": "Reused successful decode for identical file SHA-256",
+        "sha256": "5cb369679c681428cc77af5f0a788e9b9a6b5fcba7488a40be75c3cd200cad14"
+      }
+    },
+    {
+      "name": "file hash / branding/app-icon-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / branding/app-icon-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / branding/logo-title-only-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / branding/logo-title-only-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/banner-2560x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/banner-2560x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/poster-2160x3240.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/poster-2160x3240.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-01-lantern-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-01-lantern-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-02-river-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-02-river-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-03-treasury-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-03-treasury-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-04-opera-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-04-opera-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-05-celestial-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-05-celestial-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/cover-horizontal-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/cover-horizontal-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/cover-vertical-1080x1920.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/cover-vertical-1080x1920.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/library-wallpaper-no-logo-5120x1654.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/library-wallpaper-no-logo-5120x1654.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "file hash / artwork/promo-no-logo-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decoded PNG / artwork/promo-no-logo-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "original paper-spirit RGB unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "approved icon copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "approved title logo copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "opaque game icon / android-app-icon-432.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-1024.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-128.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-16.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-256.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-32.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-48.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-512.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "opaque game icon / app-icon-64.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGB",
+        "alpha_extrema": [
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "name": "genuine transparent logo / logo-horizontal-for-dark-background.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "logo contains only title glyphs / logo-horizontal-for-dark-background.png",
+      "passed": true,
+      "detail": "香火债"
+    },
+    {
+      "name": "genuine transparent logo / logo-horizontal-for-light-background.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "logo contains only title glyphs / logo-horizontal-for-light-background.png",
+      "passed": true,
+      "detail": "香火债"
+    },
+    {
+      "name": "genuine transparent logo / logo-title-only-1024.png",
+      "passed": true,
+      "detail": {
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "logo contains only title glyphs / logo-title-only-1024.png",
+      "passed": true,
+      "detail": "香火债"
+    },
+    {
+      "name": "all ICO frames opaque",
+      "passed": true,
+      "detail": [
+        {
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        },
+        {
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        },
+        {
+          "dimensions": [
+            48,
+            48
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        },
+        {
+          "dimensions": [
+            64,
+            64
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        },
+        {
+          "dimensions": [
+            128,
+            128
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        },
+        {
+          "dimensions": [
+            256,
+            256
+          ],
+          "alpha_extrema": [
+            255,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "name": "visual review bound to image / branding/app-icon-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / branding/logo-title-only-1024.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/banner-2560x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/poster-2160x3240.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-01-lantern-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-02-river-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-03-treasury-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-04-opera-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-05-celestial-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/cover-horizontal-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/cover-vertical-1080x1920.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/library-wallpaper-no-logo-5120x1654.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visual review bound to image / artwork/promo-no-logo-1920x1080.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "obsolete inscribed treasury absent from current source kit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "native capture no errors / screenshots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "native capture no errors / gameplay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "native capture no errors / showcase",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audio file hash / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audible soundtrack with peak headroom / videos/IncenseDebt-gameplay-120s.mp4",
+      "passed": true,
+      "detail": {
+        "mean_db": -30.0,
+        "max_db": -0.4
+      }
+    },
+    {
+      "name": "audio file hash / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "audible soundtrack with peak headroom / videos/IncenseDebt-trailer-45s.mp4",
+      "passed": true,
+      "detail": {
+        "mean_db": -29.2,
+        "max_db": -3.0
+      }
+    },
+    {
+      "name": "document links / README.md",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "document links / README.md",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "document links / PUBLICATION-IMAGES.md",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

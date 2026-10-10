@@ -75,6 +75,9 @@ def deform(source, state, frame, count):
     return Image.fromarray(np.clip(warped * 255, 0, 255).astype(np.uint8))
 
 def main():
+    rig_path = ASSETS / "weapon-rig.json"
+    if rig_path.exists() and json.loads(rig_path.read_text("utf8")).get("animation_method") == "independently_drawn_six_frame_poses":
+        raise RuntimeError("Independent action atlases are installed. Use compile_action_revision.py; legacy deformation cannot overwrite them.")
     catalog = json.loads((ROOT / "game/data/catalog.json").read_text("utf8"))
     records = []
     sample = []

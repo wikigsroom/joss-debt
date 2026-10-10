@@ -31,6 +31,10 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if world == null or world.run.is_empty(): return
 	var player = world.player
+	if app != null and app.mobile_ui:
+		for key in hint_areas: hint_areas[key].visible = false
+		queue_redraw()
+		return
 	set_hint("health", Rect2(24, 20, 84 + int(player.max_hp) * 20, 64), "%s · 心火 %d / %d\n香火 %d / 100 · 护甲 %d" % [world.db.name_of("characters", world.run.character), player.hp, player.max_hp, player.energy, player.armor])
 	var navigation_hint = "走到亮起的门口" if world.mode == "clear" and not world.room_doors().is_empty() else "清房后，门口会亮起"
 	set_hint("region", Rect2(540, 24, 200, 44), "%s · 第%d重\n%s" % [world.region_spec().name, world.run.floor, navigation_hint])
@@ -70,6 +74,9 @@ func image(id: String, rect: Rect2, color: Color = Color.WHITE) -> void:
 
 func _draw() -> void:
 	if world == null or world.run.is_empty(): return
+	if app != null and app.mobile_ui:
+		draw_mobile()
+		return
 	var player = world.player
 	var health_width = 84 + int(player.max_hp) * 20
 	plate(Rect2(24, 20, health_width, 64), UI.INSET)
@@ -141,3 +148,33 @@ func _draw() -> void:
 	glyph("wind", Rect2(1110, 647, 26, 26), UI.TEXT if player.dash_cd <= 0 else UI.MUTED)
 	var dash_key = adapter.profile.hint("dash", device)
 	text("%.1f" % player.dash_cd if player.dash_cd > 0 else dash_key, Vector2(1106, 687), 12, UI.MUTED)
+
+func draw_mobile() -> void:
+	var player = world.player
+	var width = app.hud.size.x
+	var nav_size = app.mobile_button_height
+	var health_width = 90 + int(player.max_hp) * 20
+	plate(Rect2(20, 20, health_width, 72), UI.INSET)
+	image(world.run.character, Rect2(28, 28, 52, 52))
+	draw_arc(Vector2(54, 54), 29, -PI * .5, -PI * .5 + TAU * player.energy / 100.0, 40, UI.JADE, 3, true)
+	for i in int(player.max_hp): glyph("heart-solid" if i < int(player.hp) else "heart", Rect2(94 + i * 20, 33, 17, 17), UI.ACCENT if i < player.hp else UI.EDGE)
+	glyph("flame", Rect2(95, 61, 17, 17), UI.JADE)
+	text(str(roundi(player.energy)), Vector2(120, 77), 17, UI.JADE, true)
+	if player.armor > 0:
+		glyph("shield", Rect2(169, 60, 18, 18), UI.JADE)
+		text(str(player.armor), Vector2(194, 77), 17)
+	plate(Rect2(20, 101, 64, 60), UI.INSET, 22)
+	image(player.weapon, Rect2(28, 105, 48, 48))
+	var relic_count = world.run.relics.size()
+	if relic_count > 0:
+		plate(Rect2(96, 105, 80, 46), UI.INSET, 22)
+		glyph("layers", Rect2(108, 116, 22, 22), UI.MUTED)
+		text(str(relic_count), Vector2(140, 137), 18)
+	var center_x = width * .5
+	plate(Rect2(center_x - 100, 24, 200, 60), UI.INSET)
+	text(world.region_spec().name, Vector2(center_x - 80, 50), 21, UI.TEXT, true)
+	text("第 %d 重" % int(world.run.floor), Vector2(center_x - 30, 74), 16, UI.MUTED)
+	var wallet_x = width - 24 - (nav_size + 12) * 3 - 112
+	plate(Rect2(wallet_x, 24, 112, 60), UI.INSET)
+	glyph("coins", Rect2(wallet_x + 16, 40, 24, 24), UI.GOLD)
+	text(str(int(world.run.coins)), Vector2(wallet_x + 51, 61), 22, UI.TEXT, true)

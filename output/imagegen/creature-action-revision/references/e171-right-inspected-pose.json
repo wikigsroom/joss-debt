@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e171-primary.png",
+  "source_sha256": "6cfeabd516f9ae20e16b0e554e21937110eaed741d08bb90ba7a3bce1c99a3af",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right lotus frog profile; retain through hurt.",
+  "guide_sha256": "d3f4f39157210cd54743afa518b36e941e62ddad67ca6a667010d2c2fa0798b2"
+}

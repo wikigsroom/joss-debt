@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b17-primary.png",
+  "source_sha256": "3383eb390adb8645b9542a42ae40bbd7738875c44b4cf9c72e29cc8c50b71bb8",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Intact neutral right pose inspected against original boss; rejected rotating action frames must be independently redrawn while retaining this body axis.",
+  "guide_sha256": "d0f5449764f85aff4649d229ce48180dc01682075bf1dc00f781f71ec7d98005"
+}

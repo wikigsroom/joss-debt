@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b81-primary.png",
+  "source_sha256": "4d0bb6f78e9eeed890450e046d7a96783304368dc8fedf7410a655fac7f4723c",
+  "row": 3,
+  "column": 2,
+  "declared_direction": "left",
+  "visual_finding": "Inspection only: compare attack and hurt whole-body left facing.",
+  "guide_sha256": "38a1fb14a99f39e17ea2b09f62965b40a5ad195cf9772930521b262535147e19"
+}

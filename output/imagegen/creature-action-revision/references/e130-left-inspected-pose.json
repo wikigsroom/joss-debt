@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e130-primary.png",
+  "source_sha256": "7086ae03e799287806c28da63a39ad28fbf21df4d719f0bc6964f2f3c75102df",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Actual left candle bird profile; maintain this throughout hurt.",
+  "guide_sha256": "270077ef956f0d2c18b76a77b0dc419e309151d269905f1c6fbaf7ac768729da"
+}

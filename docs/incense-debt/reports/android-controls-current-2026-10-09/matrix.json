@@ -1,0 +1,933 @@
+[
+  {
+    "fixture": "phone-16x9",
+    "resolution": "1280x720",
+    "density_override": 0,
+    "exit_code": 0,
+    "checks": 85,
+    "passed": true,
+    "failures": [],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/assistance.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/audio.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/choice-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/clear-room.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/combat.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/controller-bindings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/growth.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/map.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/pause.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/replacement-confirm.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/replacement.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/sacrifice.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/save-paste.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/seed-keyboard-guard.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/seed.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/settings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/skill-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/touch-layout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/tryout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-16x9/tutorial.png",
+        "size": [
+          1280,
+          720
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "phone-20x9-density-480",
+    "resolution": "2400x1080",
+    "density_override": 480,
+    "exit_code": 0,
+    "checks": 85,
+    "passed": true,
+    "failures": [],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/assistance.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/audio.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/choice-four.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/clear-room.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/combat.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/controller-bindings.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/growth.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/map.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/pause.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/replacement-confirm.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/replacement.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/sacrifice.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/save-paste.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/seed-keyboard-guard.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/seed.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/settings.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/skill-four.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/touch-layout.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/tryout.png",
+        "size": [
+          2400,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-20x9-density-480/tutorial.png",
+        "size": [
+          2400,
+          1080
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "tablet-4x3",
+    "resolution": "1024x768",
+    "density_override": 0,
+    "exit_code": 0,
+    "checks": 85,
+    "passed": true,
+    "failures": [],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/assistance.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/audio.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/choice-four.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/clear-room.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/combat.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/controller-bindings.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/growth.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/map.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/pause.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/replacement-confirm.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/replacement.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/sacrifice.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/save-paste.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/seed-keyboard-guard.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/seed.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/settings.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/skill-four.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/touch-layout.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/tryout.png",
+        "size": [
+          1024,
+          768
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/tablet-4x3/tutorial.png",
+        "size": [
+          1024,
+          768
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "phone-density-320",
+    "resolution": "1280x720",
+    "density_override": 320,
+    "exit_code": 0,
+    "checks": 85,
+    "passed": true,
+    "failures": [],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/assistance.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/audio.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/choice-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/clear-room.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/combat.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/controller-bindings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/growth.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/map.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/pause.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/replacement-confirm.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/replacement.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/sacrifice.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/save-paste.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/seed-keyboard-guard.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/seed.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/settings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/skill-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/touch-layout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/tryout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-density-320/tutorial.png",
+        "size": [
+          1280,
+          720
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "compact-density-480",
+    "resolution": "1280x720",
+    "density_override": 480,
+    "exit_code": 1,
+    "checks": 85,
+    "passed": false,
+    "failures": [
+      "default layout respects the expanded safe surface",
+      "choice-four touch controls fit the surface without overlapping",
+      "skill-four touch controls fit the surface without overlapping",
+      "sacrifice touch controls fit the surface without overlapping",
+      "replacement touch controls fit the surface without overlapping",
+      "pause touch controls fit the surface without overlapping",
+      "map touch controls fit the surface without overlapping",
+      "assistance touch controls fit the surface without overlapping",
+      "controller-bindings touch controls fit the surface without overlapping",
+      "settings touch controls fit the surface without overlapping",
+      "touch-layout touch controls fit the surface without overlapping",
+      "settings persist per-control sizing without changing other controls",
+      "audio touch controls fit the surface without overlapping"
+    ],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/assistance.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/audio.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/choice-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/clear-room.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/combat.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/controller-bindings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/growth.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/map.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/pause.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/replacement-confirm.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/replacement.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/sacrifice.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/save-paste.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/seed-keyboard-guard.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/seed.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/settings.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/skill-four.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/touch-layout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/tryout.png",
+        "size": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/compact-density-480/tutorial.png",
+        "size": [
+          1280,
+          720
+        ]
+      }
+    ]
+  },
+  {
+    "fixture": "phone-fhd-density-640",
+    "resolution": "1920x1080",
+    "density_override": 640,
+    "exit_code": 1,
+    "checks": 85,
+    "passed": false,
+    "failures": [
+      "choice-four touch controls fit the surface without overlapping",
+      "skill-four touch controls fit the surface without overlapping",
+      "sacrifice touch controls fit the surface without overlapping",
+      "replacement touch controls fit the surface without overlapping",
+      "pause touch controls fit the surface without overlapping",
+      "assistance touch controls fit the surface without overlapping",
+      "controller-bindings touch controls fit the surface without overlapping",
+      "settings touch controls fit the surface without overlapping",
+      "touch-layout touch controls fit the surface without overlapping",
+      "audio touch controls fit the surface without overlapping"
+    ],
+    "images": [
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/assistance.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/audio.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/choice-four.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/clear-room.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/combat.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/controller-bindings.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/growth.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/map.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/pause.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/replacement-confirm.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/replacement.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/sacrifice.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/save-paste.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/seed-keyboard-guard.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/seed.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/settings.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/skill-four.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/touch-layout.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/tryout.png",
+        "size": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "docs/incense-debt/reports/android-controls-current-2026-10-09/phone-fhd-density-640/tutorial.png",
+        "size": [
+          1920,
+          1080
+        ]
+      }
+    ]
+  }
+]

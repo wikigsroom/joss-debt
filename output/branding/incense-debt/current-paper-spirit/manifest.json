@@ -1,0 +1,199 @@
+{
+  "selection": "existing_paper_spirit",
+  "selected_on": "2026-10-08",
+  "source_release": "v0.2.0-alpha.1",
+  "source_files": [
+    {
+      "source": "game/assets/ui/app-icon.png",
+      "output": "paper-spirit-original-512.png",
+      "sha256": "47f2e05dee184b8f1985ef3e6a37bfe6fea205717d168f8bdefe2c0f6bc74395"
+    },
+    {
+      "source": "game/assets/ui/ios-icon.png",
+      "output": "app-icon-1024.png",
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "android-app-icon-432.png",
+      "dimensions": [
+        432,
+        432
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 62701,
+      "sha256": "322dd2408049c701bb21df3f17cbcff6238c168a6d7566214cbb153ce5243e46"
+    },
+    {
+      "path": "app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 1199748,
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5"
+    },
+    {
+      "path": "app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 33711,
+      "sha256": "bee6ced21f640ffd3ead3d08a6242d4f840cfc346172fb8f9e8c6d85beeab541"
+    },
+    {
+      "path": "app-icon-16.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 805,
+      "sha256": "ebfc1e46ecf0b15f2edf1dfb189b0ff0cd4edbc6bc8bdd98fae91f9041ca55cd"
+    },
+    {
+      "path": "app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 126807,
+      "sha256": "6991f52676062dc6bc420be3b615c2e78808e71c560e1ee00a29e2da0f7d6247"
+    },
+    {
+      "path": "app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 2616,
+      "sha256": "d9306400c50fdc7311a1ccc987358dafb402fdeb32cfcd6b9cec288ceff43194"
+    },
+    {
+      "path": "app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 5425,
+      "sha256": "957fe65be2a395b9c7d1e2d054f72ff3fff3d10ade9842031f8545c150f4dbf7"
+    },
+    {
+      "path": "app-icon-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 422389,
+      "sha256": "3f1338b4d91806a9896408ca837021ec9a45f38978540537c4f529205125f53a"
+    },
+    {
+      "path": "app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 9159,
+      "sha256": "ae9c228ebb763dcec0d12fadd01551ae60d84d0f6b1fe66b2535293119e22df4"
+    },
+    {
+      "path": "current-brand-preview.png",
+      "dimensions": [
+        1800,
+        1160
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 741417,
+      "sha256": "435bb8b648fa3aca9f1b3453bbb1466358dd086ffda38dccc7bcbb2903b5519d"
+    },
+    {
+      "path": "logo-horizontal-for-dark-background.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 91754,
+      "sha256": "b04f81c2e3433545cc0ee423f007b61f6c41d258f3c783c6edc2fcb0cb601168"
+    },
+    {
+      "path": "logo-horizontal-for-light-background.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 87760,
+      "sha256": "6170e93a9a4fff6a4a808654e3e8dab46a6177e5c671f0b1f2413a276e46b370"
+    },
+    {
+      "path": "logo-title-only-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bytes": 48733,
+      "sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee"
+    },
+    {
+      "path": "paper-spirit-original-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 422389,
+      "sha256": "3f1338b4d91806a9896408ca837021ec9a45f38978540537c4f529205125f53a"
+    },
+    {
+      "path": "windows-icon.ico",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "bytes": 178625,
+      "sha256": "633a6e62d084e4ab696720cc691da27fd5db5775a341809ed53f165a2d44656e"
+    }
+  ],
+  "artwork_method": "Opaque source-identity icons and transparent title-only typesetting",
+  "publication_rules": {
+    "icon_background": "opaque",
+    "logo_background": "transparent",
+    "logo_text": "香火债"
+  }
+}

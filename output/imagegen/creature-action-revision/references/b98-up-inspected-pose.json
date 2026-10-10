@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b98-primary.png",
+  "source_sha256": "5ff9ea84c37f3f0dc88b43e559e0c232b8383902f5b94ecfe7d71e79eb07a2d7",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear paper crescent/star carapace, faceless backside and rear claws; inspect before use.",
+  "guide_sha256": "fb64a3ceb6d0f82789183a6b17c1886d6406c1c1b457bbd6467b05783bbf3c7f"
+}

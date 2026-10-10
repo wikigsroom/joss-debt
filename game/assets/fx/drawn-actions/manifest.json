@@ -1,0 +1,40 @@
+{
+  "source": "output/imagegen/action-revision/impact-fx.png",
+  "source_sha256": "23e2dfbd62006e0e614770a6be8083893e61501eb8cb48133afb0943039b2593",
+  "model": "gpt-image-2.5",
+  "method": "independently drawn Sub2 keyframes, alpha preserved, no deformation",
+  "strips": [
+    {
+      "name": "impact",
+      "path": "res://assets/fx/drawn-actions/impact.png",
+      "frames": 6,
+      "frame_size": 256,
+      "fps": 18,
+      "sha256": "6e30079942470b63fd8182b80c7260c8697a1cf36993e9bd34d844a5a4942b4b"
+    },
+    {
+      "name": "hurt",
+      "path": "res://assets/fx/drawn-actions/hurt.png",
+      "frames": 6,
+      "frame_size": 256,
+      "fps": 18,
+      "sha256": "e5c7776b25a213015798fa36ecea26293785953d2d013da3d66607588c826d22"
+    },
+    {
+      "name": "muzzle",
+      "path": "res://assets/fx/drawn-actions/muzzle.png",
+      "frames": 6,
+      "frame_size": 256,
+      "fps": 18,
+      "sha256": "960aed5c911401ab70022e5655de666c73eae51fe720a5cf24e1429ba57fcbac"
+    },
+    {
+      "name": "melee",
+      "path": "res://assets/fx/drawn-actions/melee.png",
+      "frames": 6,
+      "frame_size": 256,
+      "fps": 18,
+      "sha256": "ed609ad3200b1a0b6197f81e8b5a76913513a94f329635879c1b0b4a14972c7f"
+    }
+  ]
+}

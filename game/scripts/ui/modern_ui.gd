@@ -144,8 +144,8 @@ static func pause(app, reason: String) -> void:
 	app.label(sheet, str(app.world.run.get("seed_text", app.Seed.text(int(app.world.run.seed)))), Rect2(48, seed_y, action_width - 66, 42), 26, UI.JADE)
 	var copy = app.icon_button(sheet, "复制本局12位愿种", "copy", Rect2(sheet_width - 100, seed_y - 4, 52, 52), func(): DisplayServer.clipboard_set(str(app.world.run.get("seed_text", app.Seed.text(int(app.world.run.seed))))); app.notice("愿种已复制。"))
 	copy.set_meta("nav_id", "copy_seed")
-	app.icon(sheet, "keyboard", Rect2(48, sheet_rect.size.y - 42, 22, 22), UI.MUTED)
-	app.label(sheet, "方向键选择 · Enter 确认 · Esc 继续", Rect2(80, sheet_rect.size.y - 48, sheet_width - 128, 32), 16, UI.MUTED)
+	app.icon(sheet, "hand" if app.mobile_ui else "keyboard", Rect2(48, sheet_rect.size.y - 42, 22, 22), UI.MUTED)
+	app.label(sheet, "点图标打开；成长页可查看本局所有选择。" if app.mobile_ui else "方向键选择 · Enter 确认 · Esc 继续", Rect2(80, sheet_rect.size.y - 48, sheet_width - 128, 32), 16, UI.MUTED)
 	app.audio.set_paused(true)
 
 static func history_source_label(entry: Dictionary) -> String:
@@ -227,7 +227,7 @@ static func run_history(app) -> void:
 	counter.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	counter.set_meta("history_entry_count", str(log.size()))
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 56.0
-	app.icon_button(shell, "收起记录", "x", Rect2(1128, 20, height, height), app.show_pause)
+	app.icon_button(shell, "收起记录", "x", Rect2(1168 - height, 20, height, height), app.show_pause)
 	var list_panel = app.panel(shell, Rect2(28, 122, 748, 478), UI.SURFACE, Color.TRANSPARENT)
 	var scroll = ScrollContainer.new()
 	scroll.focus_mode = Control.FOCUS_ALL
@@ -268,7 +268,7 @@ static func run_history(app) -> void:
 		if count > 0: route_names.append("%s ×%d" % [route.name, count])
 	app.label(summary, "已点亮路线", Rect2(24, 367, 320, 28), 16, UI.MUTED)
 	app.label(summary, "、".join(route_names) if not route_names.is_empty() else "尚未形成路线", Rect2(24, 401, 320, 60), 19, UI.TEXT if not route_names.is_empty() else UI.MUTED)
-	app.icon_button(shell, "返回暂停", "pause", Rect2(800, 610, 368, height), app.show_pause, false, "暂停")
+	app.icon_button(shell, "返回暂停", "pause", Rect2(800, 642 - height, 368, height), app.show_pause, false, "暂停")
 
 static func settings(app) -> void:
 	if app.screen != "settings":
@@ -286,6 +286,7 @@ static func settings(app) -> void:
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 56.0
 	app.icon_button(shell, "收起", "x", Rect2(856 - height, 22, height, height), app.go_back)
 	var rows = [["声音", "volume-2", "muted"], ["触控", "smartphone", "touch"], ["左右手", "hand", "mirror"], ["镜头", "eye", "reduce_motion"]]
+	if app.mobile_ui: rows[1] = ["固定摇杆", "smartphone", "fixed_sticks"]
 	for i in rows.size():
 		var entry = rows[i]
 		var row = app.panel(shell, Rect2(32, 126 + i * (112 if app.mobile_ui else 94), 354, 100 if app.mobile_ui else 82), UI.SURFACE, Color.TRANSPARENT)
@@ -299,12 +300,19 @@ static func settings(app) -> void:
 			app.audio.set_muted(app.settings.muted)
 			app.persist_settings()
 			app.show_settings(), active)
-		toggle.tooltip_text = {"muted": "关闭或开启声音", "touch": "显示触屏双摇杆", "mirror": "交换左右手布局", "reduce_motion": "减弱镜头、顿帧与动态表现"}[entry[2]]
+		toggle.tooltip_text = {"muted": "关闭或开启声音", "touch": "显示触屏双摇杆", "fixed_sticks": "固定起点或随手指浮动", "mirror": "交换左右手布局", "reduce_motion": "减弱镜头、顿帧与动态表现"}[entry[2]]
 		toggle.set_meta("setting_key", entry[2])
 		toggle.set_meta("nav_default", i == 0)
 	var tiles = [["音量", "volume-2", "音量混音", app.show_audio_settings], ["按键", "gamepad-2", "操作映射", func(): app.ControlSettings.show_bindings(app)],
 		["辅助", "crosshair", "瞄准与反馈", func(): app.ControlSettings.show_assistance(app)], ["布局", "touchpad", "触控布局", func(): app.ControlSettings.show_layout(app)],
 		["愿簿", "upload", "愿簿传递", func(): app.SaveUI.show(app)], ["关于", "info", "关于与致谢", app.show_credits]]
+	if app.mobile_ui:
+		tiles[1] = ["触控", "touchpad", "触点位置与大小", func(): app.ControlSettings.show_layout(app)]
+		if not Input.get_connected_joypads().is_empty(): tiles[3] = ["手柄", "gamepad-2", "手柄映射", func(): app.ControlSettings.show_bindings(app,"controller")]
+		else: tiles[3] = ["试手感", "play", "试操作", func():
+			var trial = load("res://scripts/ui/touch_tryout.gd").new()
+			trial.app = app
+			app.add_child(trial)]
 	for i in tiles.size():
 		var entry = tiles[i]
 		var tile = app.button(shell, entry[2], Rect2(420 + (i % 2) * 214, 126 + int(i / 2) * (154 if app.mobile_ui else 125), 198, 138 if app.mobile_ui else 113), entry[3])
@@ -481,35 +489,57 @@ static func choices(app) -> void:
 
 static func mobile_choice(app) -> void:
 	app.mobile_choice = clampi(app.mobile_choice, 0, app.world.choices.size() - 1)
+	var count = app.world.choices.size()
+	var width = (1088.0 - (count - 1) * 16) / count
+	for index in count:
+		var candidate = app.world.choices[index]
+		var info = choice_row(app, candidate)
+		var tile = app.button(app.modal, "", Rect2(96 + index * (width + 16), 181, width, 172), func():
+			app.mobile_choice = index
+			app.clear_modal()
+			app.show_choices())
+		tile.set_meta("nav_id", "mobile_candidate_" + str(index))
+		tile.set_meta("mobile_candidate", index)
+		tile.accessibility_name = "%d %s" % [index + 1, info.name]
+		app.add_art(tile, choice_art(candidate, info), Rect2(18, 17, 92, 92))
+		app.label(tile, info.name, Rect2(122, 20, width - 140, 74), 24)
+		app.icon(tile, "check" if index == app.mobile_choice else "circle", Rect2(width - 42, 120, 24, 24), UI.JADE if index == app.mobile_choice else UI.MUTED)
+		app.label(tile, str(index + 1), Rect2(26, 123, 90, 32), 18, UI.MUTED)
+		if index == app.mobile_choice: UI.select(tile)
 	var choice = app.world.choices[app.mobile_choice]
 	var row = choice_row(app, choice)
-	var card = app.panel(app.modal, Rect2(126, 214, 1028, 362), UI.SURFACE, Color.TRANSPARENT)
-	app.add_art(card, choice_art(choice, row), Rect2(38, 44, 224, 224))
-	app.label(card, row.name, Rect2(300, 30, 683, 55), 34)
+	var card = app.panel(app.modal, Rect2(96, 378, 1088, 205), UI.SURFACE, Color.TRANSPARENT)
+	app.label(card, row.name, Rect2(26, 16, 900, 46), 30)
 	var detail = str(row.get("behavior", ""))
 	if choice.kind == "contract": detail = "所得：%s\n%s\n偿还 %d  ·  跨章 +%d" % [app.world.db.name_of("relics", row.reward), row.penalty, row.repay_price, row.interest_per_floor]
 	elif choice.kind == "skill": detail += "\n香火 %d  ·  %.1f秒" % [row.energy_cost, row.cooldown_s]
 	elif choice.kind in ["sacrifice", "judgment"]: detail += "\n代价：%d 心火" % int(choice.get("hp_cost", 0))
-	app.label(card, detail, Rect2(300, 112, 683, 124), 24, UI.MUTED)
+	var description = RichTextLabel.new()
+	description.position = Vector2(26, 72)
+	description.size = Vector2(1036, 116)
+	description.add_theme_font_override("normal_font", app.font)
+	description.add_theme_font_size_override("normal_font_size", 22)
+	description.text = detail
+	description.focus_mode = Control.FOCUS_ALL
+	description.set_meta("keyboard_editor", true)
+	card.add_child(description)
 	var reason = app.world.choice_reason(choice)
-	var action = app.icon_button(card, "选择" + row.name, "check" if choice.price == 0 else "coins", Rect2(697, 252, 305, app.mobile_button_height), func(): app.choose_index(app.mobile_choice), true, "选取" if choice.price == 0 else str(choice.price))
+	var hp_cost = int(choice.get("hp_cost", 0))
+	var caption = "献出 %d 心火" % hp_cost if hp_cost > 0 else ("确认" if choice.price == 0 else str(choice.price))
+	var action = app.icon_button(app.modal, "选择" + row.name, "heart" if hp_cost > 0 else ("check" if choice.price == 0 else "coins"), Rect2(850, 608, 334, app.mobile_button_height), func(): app.choose_index(app.mobile_choice), true, caption)
 	if not reason.is_empty(): action.text = reason
 	action.disabled = not reason.is_empty()
+	action.set_meta("nav_id", "choice_confirm")
 	app.choice_buttons.append(action)
-	if app.world.mode == "shop" and choice.kind == "weapon" and not choice.get("taken", false):
-		var trial = app.icon_button(card, "试射" + row.name, "crosshair", Rect2(300, 252, app.mobile_button_height, app.mobile_button_height), func(): app.begin_shop_trial(app.mobile_choice))
-		trial.set_meta("shop_trial_index", app.mobile_choice)
-		trial.tooltip_text = "试射「%s」\n保留当前构筑，不扣纸钱。" % row.name
-		if app.shop_trial_focus == app.mobile_choice: trial.grab_focus()
-	var height = app.mobile_button_height
-	app.icon_button(app.modal, "上一件", "chevron-left", Rect2(126, 610, height, height), func(): app.mobile_choice = posmod(app.mobile_choice - 1, app.world.choices.size()); app.clear_modal(); app.show_choices())
-	app.icon_button(app.modal, "下一件", "chevron-right", Rect2(148 + height, 610, height, height), func(): app.mobile_choice = posmod(app.mobile_choice + 1, app.world.choices.size()); app.clear_modal(); app.show_choices())
-	app.label(app.modal, "%d / %d" % [app.mobile_choice + 1, app.world.choices.size()], Rect2(172 + height * 2, 634, 178, 45), 24, UI.MUTED)
 	if choice.kind in ["relic", "talent"] and app.world.mode in ["shop", "choice"]:
-		var reroll = app.icon_button(app.modal, "换一页", "refresh-cw", Rect2(718, 610, height, height), func(): app.world.reroll(); app.mobile_choice = 0; app.flush_events(); app.ui_signature = "")
+		var cost = "12" if app.world.mode == "shop" else "×%d" % int(app.world.run.rerolls)
+		var reroll = app.icon_button(app.modal, "换一页", "refresh-cw", Rect2(96, 608, 210, app.mobile_button_height), func(): app.world.reroll(); app.mobile_choice = 0; app.flush_events(); app.ui_signature = "", false, cost)
 		reroll.disabled = app.world.run.coins < 12 if app.world.mode == "shop" else app.world.run.rerolls <= 0
+	if app.world.mode == "shop" and choice.kind == "weapon" and not choice.get("taken", false):
+		var trial = app.icon_button(app.modal, "试射" + row.name, "crosshair", Rect2(96, 608, 210, app.mobile_button_height), func(): app.begin_shop_trial(app.mobile_choice), false, "试射")
+		trial.set_meta("shop_trial_index", app.mobile_choice)
 	if choice.kind != "skill":
-		app.icon_button(app.modal, "留在此处 · 继续", "arrow-right", Rect2(846, 610, 308, height), func(): app.world.skip_choice(); app.flush_events(); app.ui_signature = "", false, "继续")
+		app.icon_button(app.modal, "留在此处 · 继续", "arrow-right", Rect2(440, 608, 268, app.mobile_button_height), func(): app.world.skip_choice(); app.flush_events(); app.ui_signature = "", false, "继续")
 
 static func synergy_status(row: Dictionary) -> Dictionary:
 	var count = int(row.get("owned_count", 0))

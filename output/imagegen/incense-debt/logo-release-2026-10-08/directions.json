@@ -1,0 +1,96 @@
+[
+  {
+    "id": "01-paper-spirit",
+    "number": "01",
+    "title": "焚愿纸偶",
+    "tagline": "纸偶主角 · 最接近现有品牌",
+    "rationale": "把现有纸童收拢成大头标志，保留折纸脸、黑眼、红结与小香炉；亲近感和角色识别最强。",
+    "use": "主品牌、应用图标、头像、开屏",
+    "background": "#E7D8B6",
+    "foreground": "#242725",
+    "accent": "#BC3C2F",
+    "font": "SmileySans-Oblique.ttf",
+    "palette": [
+      "#E7D8B6",
+      "#BC3C2F",
+      "#242725",
+      "#C39A51"
+    ],
+    "prompt": "DIRECTION 01 — THE HERO PAPER SPIRIT. Design a charismatic,\nalmost frontal mascot HEAD with a tiny compact upper-body hint, not full body.\nA broad soft ivory folded-paper face; one asymmetric folded triangular crest\non the top-left, two very large soot-black oval eye holes, no mouth. Two short\nvermilion knotted ribbon tassels flank the face, sculpted as thick rounded\npaper-cut ribbons rather than many thin strands. Beneath the chin, two simple\nivory hands cup ONE small bold bronze-gold incense bowl; one thick vermilion\nS-shaped ember curls upward from it. A small dark collar, very little robe.\nThe ivory FACE occupies two thirds of the design. Friendly, mysterious, playful\nand confident; preserve the old mascot's paper identity with stronger icon\nclarity. Rounded heavy ink outline, minimal flat fold shading, no fine facial\ndecoration. This direction is mascot-led, NOT a seal, medallion or shield."
+  },
+  {
+    "id": "02-vermilion-seal",
+    "number": "02",
+    "title": "朱印焚债",
+    "tagline": "朱砂印章 · 图标辨识优先",
+    "rationale": "将纸脸与焚债火焰压成朱砂印记，粗轮廓和负形在小尺寸下更清楚，东方识别直接。",
+    "use": "桌面与移动图标、小尺寸头像、角标",
+    "background": "#EFE5CD",
+    "foreground": "#BC3C2F",
+    "accent": "#242725",
+    "font": "IncenseRounded-Bold.ttf",
+    "palette": [
+      "#BC3C2F",
+      "#EFE5CD",
+      "#242725"
+    ],
+    "prompt": "DIRECTION 02 — VERMILION DEBT SEAL. Design a powerful iconic\nvermilion seal: one thick rounded-square Chinese folk-print silhouette, with\nits interior carved into a VERY SIMPLE negative-space ivory paper-spirit\nFACE. Two large black vertical oval eyes, a single broad folded crest on top,\nand a stout three-pronged ember flame carved into the forehead. The rounded\nlower cheek forms a tiny incense-bowl lip through one bold cutout. Vermilion\ndominates, ivory negative shapes and black eyes only. Extremely geometric,\nbalanced, compact, contemporary game-brand icon. Smooth corners, thick bridges,\nno detailed human body, no hanging tassel strands, no calligraphy or writing,\nno real Chinese seal characters. A very slightly irregular paper-cut edge can\nsuggest a hand stamp, but no heavy distressed noise. The rounded square is\nthe actual SYMBOL itself, not a background icon tile. More emblematic and\nradically simpler than the existing illustrated mascot."
+  },
+  {
+    "id": "03-bronze-burner",
+    "number": "03",
+    "title": "铜鼎回愿",
+    "tagline": "铜鼎徽记 · 沉稳神秘",
+    "rationale": "让铜香炉成为主形，把纸偶眼睛和纸焰融进炉身；适合深色启动页与发布封面。",
+    "use": "深色开屏、发布封面、横向品牌锁定图",
+    "background": "#202927",
+    "foreground": "#E9C783",
+    "accent": "#BC3C2F",
+    "font": "IncenseRounded-Bold.ttf",
+    "palette": [
+      "#C39A51",
+      "#E9C783",
+      "#202927",
+      "#BC3C2F"
+    ],
+    "prompt": "DIRECTION 03 — THE BRONZE WISH BURNER. Make ONE beautifully\nbalanced squat ancient Chinese bronze incense censer the entire brand mark.\nIt has a broad bowl, two large simple rounded loop handles and three short\nsturdy feet. On the bowl, TWO wide soot-black oval openings subtly echo the\nold paper-spirit eyes, without an actual human face or body. Above the broad\nlid rise THREE thick curling ivory-and-aged-gold paper flames, with a folded\ntriangular paper crest embedded in the central flame and ONE small vermilion\nember dot. A strong rounded low horizontal silhouette with a proud upward\nflame. Flat aged-gold and ivory shapes, strong charcoal ink outline and cutouts,\none vermilion accent. Premium Chinese folk-mystery identity, contemporary\nbold game logo; engraved PAPER-CUT bronze feeling, NOT realistic polished\nmetal, NOT a thin-line luxury brand. No enclosing circle, crown, shield or\ntext. Sparse big forms so the gold burner remains readable on dark surfaces."
+  },
+  {
+    "id": "04-broken-cord",
+    "number": "04",
+    "title": "朱绳破契",
+    "tagline": "断绳契印 · 强调动作爆发",
+    "rationale": "以红绳连债、断契焚烧为记忆点，倾斜纸脸与断开的绳环让标志更有动作感。",
+    "use": "动作宣传、视频片头、活动封面",
+    "background": "#202927",
+    "foreground": "#F0DFC0",
+    "accent": "#D64B38",
+    "font": "SmileySans-Oblique.ttf",
+    "palette": [
+      "#D64B38",
+      "#F0DFC0",
+      "#202927",
+      "#E9A34B"
+    ],
+    "prompt": "DIRECTION 04 — BREAK THE RED DEBT CORD. Build an energetic,\ndiagonally tilted compact emblem of a simple folded ivory paper-spirit mask\nwith TWO big vertical black oval eyes and a single asymmetric origami crest.\nONE very thick vermilion cord loops around the mask in a bold imperfect circle,\nwith a readable chunky knot at upper left and a deliberately BROKEN section\nat lower right. The two cut cord ends flare into two broad amber ember wedges,\nshowing an explosive break of a contract. The mask leans forward and the red\ncord sweeps diagonally upward, giving action and freedom. Strong asymmetry,\nlarge clean ivory / charcoal / vermilion shapes, amber only at the broken tips.\nNo full character, no incense bowl, no octagonal badge, no weapons, no many\nthin strings, no letter marks. The big broken cord must be legible at icon size,\nand its gap clearly visible. Crisp modern rounded woodblock silhouette."
+  },
+  {
+    "id": "05-jade-lantern",
+    "number": "05",
+    "title": "灰玉莲灯",
+    "tagline": "莲灯纸灵 · 东方秘境气质",
+    "rationale": "把纸脸、烟焰和莲灯融合成灰玉标志，保留朱砂火芯，强调世界观与安静的神秘感。",
+    "use": "世界观主视觉、深色主题、品牌周边",
+    "background": "#1C2827",
+    "foreground": "#DAE6CA",
+    "accent": "#91BCA4",
+    "font": "IncenseRounded-Bold.ttf",
+    "palette": [
+      "#91BCA4",
+      "#53675C",
+      "#E7D8B6",
+      "#BC3C2F"
+    ],
+    "prompt": "DIRECTION 05 — THE JADE PAPER SOUL LANTERN. Design a calm but\nmysterious brand emblem: a large ivory folded-paper spirit FACE, with two\ncharcoal vertical oval eyes and one folded crest, suspended as the flame of\na stylized jade LOTUS LAMP. Under the face are exactly three large broad rounded\njade paper-cut lotus petals cupping it; a thick grey-jade smoke curl embraces\none side and finishes in a single tiny vermilion ember. The complete silhouette\nis a compact round-topped teardrop lantern, softly asymmetric, combining paper\nsoul, incense smoke and jade shrine. Muted grey jade plus pale jade highlights,\nivory face, charcoal eyes, ONE red ember accent. Airy negative space, thick\ncurves, near-flat paper layering, modern rounded game branding. No actual\nreligious figure, many-petalled mandala, fine ornamental filigree, gold burner,\nred ribbons or mascot body. Elegant uncanny folk-myth atmosphere; different\nfrom a generic wellness or spa lotus logo because the big paper-spirit face\nis the central recognizable identity."
+  }
+]

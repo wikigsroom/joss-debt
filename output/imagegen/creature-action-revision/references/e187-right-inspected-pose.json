@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e187-primary.png",
+  "source_sha256": "f92ff256790ac6700fc0daefefdebec9f718c3f7c6a5ace739281bf289ffa19c",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right ribbon spider profile; retain through hurt.",
+  "guide_sha256": "c3255b932754d16838da7a5ce7cdb9530f6dff8ee731c423a314ef0d10a3ae8f"
+}

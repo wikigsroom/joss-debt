@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e283-primary.png",
+  "source_sha256": "0d25aef5aedd3ea2ea0f0cbde8f3033c4320d9089eb66f98c9e7644685fdc32b",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original EIGHT-legged red/gold/ivory scale-thread paper spider, ONE ivory skull mask, gold seal plate on round back, original red/gold web bindings and jointed legs. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "c12cda418273a7dda729356335af1a6ba3d9c2e6694a61d5d8a6e5f90a2c687a"
+}

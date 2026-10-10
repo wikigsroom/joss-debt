@@ -1,0 +1,4226 @@
+{
+  "sources": 24,
+  "independent_poses": 864,
+  "uniform_actor_scales": {
+    "c_paper": 0.377049,
+    "c_bell": 0.39779,
+    "c_lantern": 0.363636,
+    "c_mask": 0.371191,
+    "c_umbrella": 0.39255,
+    "c_ink": 0.367725
+  },
+  "strips": [
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "890b31b7700a6cadb1931517f34a47307ddcdf24be82ef7e014a29cfc02386e8",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "890b31b7700a6cadb1931517f34a47307ddcdf24be82ef7e014a29cfc02386e8",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "ce09e143a0b79cf5bcb0b6f8d5ba28588b84e1f25947792e097ea7048a505dbd",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "09cf93e1628da882684ab34d4558d4209bedd07ee39519c16d94876a07efeab0",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "09cf93e1628da882684ab34d4558d4209bedd07ee39519c16d94876a07efeab0",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "fd98620a142933415980078ac0e71cfc90b7458c140e5b9336172c0f50b2e1ee",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "c4138e31c32287f408e49ac5a1297956ad9543c606a9f85993dda0e9844d88d5",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "c4138e31c32287f408e49ac5a1297956ad9543c606a9f85993dda0e9844d88d5",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "07bf3a97dd903d3baac8f5e10803a5df9384233a1607a7d828542032367fc5b7",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "035e7c92d72d4a1e37d884e4388af66acbc9781fc8d1842ab61e64f128eee02b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "035e7c92d72d4a1e37d884e4388af66acbc9781fc8d1842ab61e64f128eee02b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "d8deacdcb4b2d01f5502c97594888e268a130333416280500acbb6134639ed17",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "0a748e4f0a05cc416932174eea5b6b875a68d438780787c921257dcf0690ce60",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "0a748e4f0a05cc416932174eea5b6b875a68d438780787c921257dcf0690ce60",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "1722f6f52f3c699054db6082fe5588bcdc425528596a29e982f449f049f90c43",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_paper/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "b52714bb8b78d25dae725a6203f0bb4b06f71ddf45b98b97dba4ca6be8571dfe",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_paper/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "b52714bb8b78d25dae725a6203f0bb4b06f71ddf45b98b97dba4ca6be8571dfe",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_paper",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_paper/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_paper-down.png",
+          "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-left.png",
+          "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-right.png",
+          "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_paper-up.png",
+          "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced"
+        }
+      ],
+      "sha256": "d6f9a9e1b89795db4607d4f79fcd295044d0c7e03112aa4a7e5bde92e234d0c9",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "3f73a9db22f2fb259cc34c656ded973b6ed86c30c18024618813ca3038c16a49",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "3f73a9db22f2fb259cc34c656ded973b6ed86c30c18024618813ca3038c16a49",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "4142253ee25fd40185b08a63770deb217701bf61298b52980b5b1d8144421569",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "c6e904f8064ac6a552764c54e56f6e735dcbc8959d1d73586f34d1d18ce6ffb2",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "c6e904f8064ac6a552764c54e56f6e735dcbc8959d1d73586f34d1d18ce6ffb2",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "6205ba92ebd8783e6f4fb01f3f6bcfd839a978b9042fd7f9ecd7c663f6ead265",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "e691a496a376d1be8d3512415a164b30a449a8d6edd579142781ce04fd3d3573",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "e691a496a376d1be8d3512415a164b30a449a8d6edd579142781ce04fd3d3573",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "107d1e0412e7e1cc8b43c7868ea56a517c3d00bfb44128fe58b509e22055d572",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "b47a63ff183fb3d8b0768d2dd4dd0f2a955c88d5b012ebc74fee65c855376a1b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "b47a63ff183fb3d8b0768d2dd4dd0f2a955c88d5b012ebc74fee65c855376a1b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "2a23878a4c5e3cc1b73ccc2b87b0f457d1362f51e739201d7a335ffd5028e44c",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "a62ad02639f1b6bac194947dca8f6dbde1a14de09244fdcbb415836d81448f0b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "a62ad02639f1b6bac194947dca8f6dbde1a14de09244fdcbb415836d81448f0b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "2d031d4e92d2e95227e236f6b5d7df012f2fa3e854bf4942124157757b146f4e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_bell/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "20492ee44074ee90a3a1ef905115058080fcae65e546b7318ee1ecea1adb56e8",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_bell/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "20492ee44074ee90a3a1ef905115058080fcae65e546b7318ee1ecea1adb56e8",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_bell",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_bell/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_bell-down.png",
+          "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-left.png",
+          "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-right.png",
+          "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_bell-up.png",
+          "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3"
+        }
+      ],
+      "sha256": "6fc4c8a6ced3c3275f9a55b516e5d81acb10f14a3ff9e7c50fedb7c62f5ee585",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "337326dc345c10ff36fb80296c2ab816f81f24b980cb042f777e9c896ae5f10e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "337326dc345c10ff36fb80296c2ab816f81f24b980cb042f777e9c896ae5f10e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "809480af9ab77d067963248657c03d570c53af57aefc5154bd179b3d50a04aea",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "3601dca8bfac013794ea4967b2fc7e2972d211be3d52d26b682d14c0a5ddcadc",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "3601dca8bfac013794ea4967b2fc7e2972d211be3d52d26b682d14c0a5ddcadc",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "ffbe2e556d4d420fab10c7d1d8f693ffaa5085f8f3d0897e76437e831a83fe25",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "0a247685e3dd06c2b8c7147823ecafef6ee99bbbd859a1926c14807026305701",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "0a247685e3dd06c2b8c7147823ecafef6ee99bbbd859a1926c14807026305701",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "e9a61f51ab2a79a223e73781531656f9f3d3aa41635b42e7b6cb6dd3810bf95a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "026572639455f081ccc7c9f0cffc2c00b4045c8160422aac58665d0a0ffc3713",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "026572639455f081ccc7c9f0cffc2c00b4045c8160422aac58665d0a0ffc3713",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "c27d62cb1baf19c8b4320b88b3300469cb6260dd40cd0db966e46683b806991a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "0cd8091c1544d2d453b82b460b7b874f45363db79b8f771b25ff57e9b015191a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "0cd8091c1544d2d453b82b460b7b874f45363db79b8f771b25ff57e9b015191a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "58ee384be786769deb7aef60efa33182f029ecc429606c26e54d7ea03fb73916",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_lantern/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "c9df2aaf9a9f7bb477e96b996ecac5318e72dbb7f563e28a9ba2144e48aaa714",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_lantern/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "c9df2aaf9a9f7bb477e96b996ecac5318e72dbb7f563e28a9ba2144e48aaa714",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_lantern",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_lantern/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_lantern-down.png",
+          "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-left.png",
+          "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-right.png",
+          "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_lantern-up.png",
+          "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed"
+        }
+      ],
+      "sha256": "810b8ab9679a44f602e1b644325454a83d9c10ab72331d46471441882759d577",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "ac83a2a9ee14ba71015d0457a248f1054ec3fcc7d5706df8a54c9111025b4e34",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "ac83a2a9ee14ba71015d0457a248f1054ec3fcc7d5706df8a54c9111025b4e34",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "9c3ee39b30c987eb6d34c388912fe607bfe48f2ab723e0db975780b24848150f",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "d5e1a3e692e33aaad4629738aaaa61c88c9afddcf049aa5d8509965a455634cb",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "d5e1a3e692e33aaad4629738aaaa61c88c9afddcf049aa5d8509965a455634cb",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "2cc9b3a4d35d25dc0e1e75acaa66341fe02eeaaa4d9c1592f793a103f8f4e0d3",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "fffc32639e91ecf6b98eefb61cf49e931ee67dd00f7e857acb2b416f5b5dae5a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "fffc32639e91ecf6b98eefb61cf49e931ee67dd00f7e857acb2b416f5b5dae5a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "043bde2e8306d99c07ad21ebbeeccaf205336b8e806914e41e622afab547e236",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "177a37282ced6f1a82d6b6aa18e8a6ad6efa01112e85216c51d5ee1e7c50c50e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "177a37282ced6f1a82d6b6aa18e8a6ad6efa01112e85216c51d5ee1e7c50c50e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "5134e44ebe665c407b645ebced232654685145a7a60aefeeb4de1cc4fd0cc69c",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "0e7a3652da215c86b7b0517863a4bab1b9d66f3d0370def278839a651c26a4c2",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "0e7a3652da215c86b7b0517863a4bab1b9d66f3d0370def278839a651c26a4c2",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "ba980b63b7c1290ccae66785f1d668f5b5aac0a0b4fc25bef260a8cbd4b24b42",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_mask/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "95dbbdb80609e9406563359a0efe117c04fef1a3d18dde99cf4bcab598a7c816",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_mask/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "95dbbdb80609e9406563359a0efe117c04fef1a3d18dde99cf4bcab598a7c816",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_mask",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_mask/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_mask-down.png",
+          "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-left.png",
+          "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-right.png",
+          "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_mask-up.png",
+          "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc"
+        }
+      ],
+      "sha256": "fafef71b9b92131f5a48feee86b0f509c65b015b491c59bd6ec7dd0f2809d719",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "109d7ef9fe0df570e9b7655d9b6c1b7f87963b1994eddd992143b9b4e05de92a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "109d7ef9fe0df570e9b7655d9b6c1b7f87963b1994eddd992143b9b4e05de92a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "93e7f493d3f0b60408f7aaab5462ebce01389bbac9f0ce8f27ad2f3ec395241f",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "d904d76a7a7ffae269c296ce8d329b539808c0a375c0cbb44d554715642b87ff",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "d904d76a7a7ffae269c296ce8d329b539808c0a375c0cbb44d554715642b87ff",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "5d59fbdcc06c894a2289777423d1356d1d44164cb91144cee1df607a23d05f43",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "5640c58c02d6727e27019daae165b66ab23a0496b0f60511549ee9e9f3f127cd",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "5640c58c02d6727e27019daae165b66ab23a0496b0f60511549ee9e9f3f127cd",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "2f0aa1aeba3df7c7b47cdf17e4775f125b9df2131899abc515a500fad6b8505b",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "a53254cde55c4b26c0b94c542881358760930d3b62bae4ce2179b4634a41ef80",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "a53254cde55c4b26c0b94c542881358760930d3b62bae4ce2179b4634a41ef80",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "39288fa12b65b10608a17f7b9515b60dca2c465ecb77c152a9dbc466fbab4bc6",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "99180f65ef4a6b11526ea6af61d990ec77c68b40e507e8c76a423d92d5ee78cc",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "99180f65ef4a6b11526ea6af61d990ec77c68b40e507e8c76a423d92d5ee78cc",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "ff6d5d9e45cfd282c201349adb1b52578c8b55b8ad029217f622c5b4a2fbf9ea",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_umbrella/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "bf60ec3a491b17dc9b0d57723815702471a12463dbaa2dd7b701ec2f7f89be43",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_umbrella/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "bf60ec3a491b17dc9b0d57723815702471a12463dbaa2dd7b701ec2f7f89be43",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_umbrella",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_umbrella/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-down.png",
+          "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-left.png",
+          "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-right.png",
+          "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_umbrella-up.png",
+          "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74"
+        }
+      ],
+      "sha256": "2ec38f40d90568751160aacd52d7e13f86feb1d1b259b4ccebc9512a37550c17",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "70e09785c428e5b635cb834339a27c5103b946051364910d0a6a588f25355f83",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "70e09785c428e5b635cb834339a27c5103b946051364910d0a6a588f25355f83",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "idle",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 6,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/idle.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "3cb195ee010b6f14974808134abbf7aee4934b5cd82d068d24007edba593bbeb",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "2cb7f27a53b3836dc623afcf44518088e820936e02efedf71554b617ab0d17d3",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "2cb7f27a53b3836dc623afcf44518088e820936e02efedf71554b617ab0d17d3",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "run",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 12,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/run.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "2a0cc01b1c9839afe7426f03a359d9587658ab6c839a3797535f2bc560fadbf1",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "1db385efeddd252b00f6e1f6d1459fdd0533088911d359563a24a5d3986be75e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "1db385efeddd252b00f6e1f6d1459fdd0533088911d359563a24a5d3986be75e",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "cast",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/cast.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "48df6832e0786945d5ed5486c0aedd4d2350685046b0dc90d294b8e241eb8365",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "13e0eca8439e22676440b7b7f5547b05d05b256f2a27f6a8432484b2a7df835a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "13e0eca8439e22676440b7b7f5547b05d05b256f2a27f6a8432484b2a7df835a",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "dash",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 30,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/dash.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "dfa99a29916b877c06bf14a745d722587969a879a1f3a949d1ba6679ef1f7cd2",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "d1b6314fcd6991eb448dc3d140cfed7e12d7cbbafe5607daced56f84012f7737",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "d1b6314fcd6991eb448dc3d140cfed7e12d7cbbafe5607daced56f84012f7737",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "hurt",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 18,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/hurt.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "c7fffaac6e272bf5659e1e08506ef984c668db2f434acc7466019fc54b4739aa",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "character",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/characters/c_ink/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "fc729e957c6ba42e6e77bcede41fc2d9ed0c81763cdf4c15026a25b7ec38d299",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_body",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/animation/c_ink/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "fc729e957c6ba42e6e77bcede41fc2d9ed0c81763cdf4c15026a25b7ec38d299",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    },
+    {
+      "actor": "c_ink",
+      "kind": "weapon_hand",
+      "state": "death",
+      "frames": 6,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_size": 96,
+      "fps": 10,
+      "anchor": [
+        0.5,
+        0.84
+      ],
+      "file": "game/assets/weapon-bodies/hands/c_ink/death.png",
+      "source": [
+        {
+          "file": "output/imagegen/action-revision/c_ink-down.png",
+          "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-left.png",
+          "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-right.png",
+          "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3"
+        },
+        {
+          "file": "output/imagegen/action-revision/c_ink-up.png",
+          "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2"
+        }
+      ],
+      "sha256": "1cb88313c2a954d889b0e05dd6a4e6fe8cf828b5c131a85104186c875f9a9cea",
+      "method": "independently Sub2-drawn key poses; uniform scale and floor registration, no deformation"
+    }
+  ]
+}

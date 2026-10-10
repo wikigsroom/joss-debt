@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 云翼蜂 (e258) in this camera view: SCREEN-LEFT SIDE VIEW: the nose, face and attacking end are on the LEFT side of the cell; the tail or rear is on the RIGHT. Every pose in this row points LEFT, including hurt and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: very small two-winged bee; 小浅蓝云纸翼蜂; SKYBLUE ROPE SKY LOFT: clear cerulean, cloud white and pale blond timber; bright open sky around every edge. Incorporate floating rope-tied timber platforms over a blue cloud abyss, rope balustrades and high suspension spars; NO enclosing masonry or shrine ceiling; handmade coloured paper, wood and fabric matching this environment.. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Preserve exact original blue cloud-wing paper insect with rope antennae and golden bell. Construct genuine left side view with ONE visible eye, narrow mask and nose contour pointing left. Never put paired frontal eyes on side torso. No opposite view, text or added character.
+

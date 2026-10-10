@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e161-primary.png",
+  "source_sha256": "bb734a53d86f3644464e5d300aa591f496d07ccc84f9daad86ab4b4f3d228a8b",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Actual left pipe serpent profile; hurt must retain left rather than frontal.",
+  "guide_sha256": "4025a424b39cfa58ce937283e8699179c311d7d9741f9993e82a8d23994052d7"
+}

@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 钱雨财神 (b12) in this camera view: SCREEN-RIGHT SIDE VIEW: the nose, face and attacking end are on the RIGHT side of the cell; the tail or rear is on the LEFT. Every pose in this row points RIGHT, including hurt and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: a plump black-paper money god wearing stacked bronze coin armor. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Original broad TWO-legged red/gold coin paper deity: rectangular ivory mask, black gold coin hat, layered gold coin chest armor, two hands holding gold staff/coin bowl, red/ivory robe ribbons and wood feet. Preserve original round coin armor, permanent staff/bowl and head. Strict whole-body 90-degree screen right profile. Mask points right, ONLY ONE visible near eye, far eye hidden. Torso edge-on, near limbs occlude far limbs. Preserve props in same camera, no broad frontal body or rear/opposite turn.
+

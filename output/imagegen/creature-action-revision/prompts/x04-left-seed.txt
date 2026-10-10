@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 多足算盘 (x04) in this camera view: SCREEN-LEFT SIDE VIEW: the nose, face and attacking end are on the LEFT side of the cell; the tail or rear is on the RIGHT. Every pose in this row points LEFT, including hurt and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: Every distinctive feature of the attached original sprite is binding. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Original bronze abacus paper spider, original bronze abacus rack/beads, dark mouth slit under rack, red ribbons/seal papers and ivory claw legs. Draw SINGLE complete genuinely LEFT SIDE PROFILE with face/front edge and leading limb pointing LEFT. Side helmet/rack/torso planes, near limbs overlap far limbs, no broad frontal symmetric body or rear substitution. Preserve original helmet slit/mouth without adding humanoid eyes/nose or a new white mask. Original paper materials/colors/anatomy, all accessories fully inside safe transparent margins, no text.
+

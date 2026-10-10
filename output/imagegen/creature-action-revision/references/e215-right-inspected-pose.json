@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e215-primary.png",
+  "source_sha256": "b93441d12ba4ab0f5c9c43b7005bbbd840f5243c0fcbd30e3bd866f43c7bf096",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original FOUR-legged blue crystal-paper fox, ivory pointed single head, ears, multi-facet blue fan tail and gold bell/tassel. Actual complete source pose inspected; whole-body right camera accepted as generation guide only.",
+  "guide_sha256": "7319dd6f65f5df7bb8ee49a9c255c88942660d436b1faaa764d08b310f4f132d"
+}

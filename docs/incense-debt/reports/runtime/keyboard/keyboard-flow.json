@@ -25,6 +25,18 @@
       "screen": "menu"
     },
     {
+      "name": "collection-active_items",
+      "page": "items",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
+      "name": "collection-trinkets",
+      "page": "items",
+      "saved": true,
+      "screen": "menu"
+    },
+    {
       "name": "closed-loop",
       "page": "title",
       "saved": true,
@@ -123,6 +135,16 @@
     {
       "detail": "",
       "id": "collection_keyboard_page",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "collection_keyboard_active_items",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "collection_keyboard_trinkets",
       "passed": true
     },
     {
@@ -580,6 +602,7 @@
   "failures": [],
   "passed": true,
   "scope": "native desktop menu and optional-room fixtures; not a human balance playtest or mobile device acceptance",
-  "recorded_at": "2026-10-06T18:53:45.291574+00:00",
-  "packaged": false
+  "recorded_at": "2026-10-08T20:27:46.861904+00:00",
+  "packaged": false,
+  "render_cap_fps": 60
 }

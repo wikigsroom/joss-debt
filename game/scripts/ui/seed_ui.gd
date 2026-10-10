@@ -16,6 +16,7 @@ static func show(app) -> void:
 	edit.position = Vector2(52, 242)
 	edit.size = Vector2(620, 62)
 	edit.max_length = 12
+	edit.virtual_keyboard_type = DisplayServer.KEYBOARD_TYPE_NUMBER
 	edit.placeholder_text = "自动随机"
 	edit.text = app.seed_draft
 	edit.alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -31,4 +32,5 @@ static func show(app) -> void:
 			return
 		app.show_menu("characters"), true, "收下")
 	confirm.set_meta("nav_id", "seed_confirm")
+	edit.text_submitted.connect(func(_value): confirm.pressed.emit())
 	app.icon_button(panel, "清除固定种子并返回", "shuffle", Rect2(52, 338, 296, 64), func(): app.seed_draft = ""; app.show_menu("characters"), false, "随机")

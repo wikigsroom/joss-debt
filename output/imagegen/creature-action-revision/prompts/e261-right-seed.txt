@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 碑耳鼠 (e261) in this camera view: SCREEN-RIGHT SIDE VIEW: the nose, face and attacking end are on the RIGHT side of the cell; the tail or rear is on the LEFT. Every pose in this row points RIGHT, including hurt and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: tiny low four-legged rodent; 小青灰碑耳鼠; MOONLIT NAMELESS CEMETERY: desaturated moon-cyan, blue-green gray and silver fog; irregular quiet graveyard. Incorporate low eroded headstones, crooked cypress silhouettes, broken moon gates and ground fog; open outdoor cemetery; handmade coloured paper, wood and fabric matching this environment.. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Preserve exact original gray stone-backed paper mouse with moss-green curled tail, large pale ears and ivory mask. Construct genuine right side view with ONE visible eye, narrow mask and nose contour pointing right. Never put paired frontal eyes on side torso. No opposite view, text or added character.
+

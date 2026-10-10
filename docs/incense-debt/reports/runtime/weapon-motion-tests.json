@@ -1,7 +1,7 @@
 {
 	"checks": [
 		"all six approved identities and thirty-two held weapon textures have a rig",
-		"576 actual body/hand frame pairs load for every state and facing",
+		"864 actual independently drawn body/hand frame pairs load for every state and facing",
 		"192 real equipped-weapon attack events select the matching pose without writing combat state",
 		"all 768 facing/equipment layouts stay on valid animated wrists with deliberate back-view depth",
 		"four real aim directions update the player's body facing, shot direction and held-tool pose",
@@ -25,7 +25,7 @@
 	],
 	"combinations": 192,
 	"failures": [],
-	"frame_pairs": 576,
+	"frame_pairs": 864,
 	"passed": true,
 	"scope": "shared native presentation and real combat/reward/restore interfaces; visual rig sheets reviewed separately"
 }

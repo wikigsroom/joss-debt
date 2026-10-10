@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b42-secondary.png",
+  "source_sha256": "6e872424ccd86d5ec6bf36c844fe000605274ebb44682041e1fef71a8b1f7550",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual original blue paper canopy spirit rear: closed layered back roof and robe, hanging blue/ivory lanterns, no frontal skull mask; source rear pose inspected on board.",
+  "guide_sha256": "3342dee84e892baee278dae82fe4ba93e5a47f07c87518c6e15f1766c700eaf1"
+}

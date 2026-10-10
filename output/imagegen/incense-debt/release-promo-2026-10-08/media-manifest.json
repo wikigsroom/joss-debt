@@ -1,0 +1,250 @@
+{
+  "tag": "v0.2.0-alpha.1",
+  "original_hero": "game/assets/portraits/c_paper.png",
+  "original_hero_sha256": "0de96003a65d29211d5dac29d3d502b7e787594ef4d24a750dd872a7c7257e25",
+  "original_icon": "game/assets/ui/app-icon.png",
+  "original_icon_sha256": "47f2e05dee184b8f1985ef3e6a37bfe6fea205717d168f8bdefe2c0f6bc74395",
+  "title_logo": "IncenseDebt-logo-1024.png",
+  "title_logo_sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee",
+  "identity": "Original portrait RGB retained for the icon and campaign hero; logos contain title text only",
+  "publication_rules": {
+    "icon_background": "opaque",
+    "logo_background": "transparent",
+    "allowed_visible_text": [
+      "香火债"
+    ]
+  },
+  "outputs": [
+    {
+      "kind": "banner",
+      "primary": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.png",
+      "size": [
+        2560,
+        1080
+      ]
+    },
+    {
+      "kind": "poster",
+      "primary": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.png",
+      "size": [
+        2160,
+        3240
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/banner-preview.png",
+      "dimensions": [
+        1280,
+        540
+      ],
+      "mode": "RGB",
+      "bytes": 1098290,
+      "sha256": "9d4d9936117c49ccec98b5fa660a0beb09cb91ee1d8fb89eda4d6170f0bae2a7"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/generated-banner-background.png",
+      "dimensions": [
+        1916,
+        821
+      ],
+      "mode": "RGB",
+      "bytes": 2879841,
+      "sha256": "27f6ae0d95fc6511b56fca008881d30c327e6a30a6bec08624dc67b18f234547"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/generated-poster-background.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bytes": 3061024,
+      "sha256": "cf1f5e9cc337bf7150c5cb5049ed39acdc6a98df9f4ead5f51d6817ef2dcc829"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1199748,
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.jpg",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGB",
+      "bytes": 974579,
+      "sha256": "67a3b672d9f83cb48ee6be4da12f04203e89584d6668a5436d562925c709eee7"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGB",
+      "bytes": 3290440,
+      "sha256": "24013a5d4d9442309c7e57acd949e6e86450685c4cfabd34deb5459ce45003ed"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.webp",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGB",
+      "bytes": 474196,
+      "sha256": "af4a7bb93cb83256f5a0e93c4a1a33e3d821f6cd4324f65b796033a547cae03f"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-logo-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 48733,
+      "sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.jpg",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGB",
+      "bytes": 2595618,
+      "sha256": "6f5d10bd189cdfe70222326509cdfd125144dc61b846ad735368eb470bbaf924"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGB",
+      "bytes": 8431304,
+      "sha256": "136f759b4ccaa4af228b44c8532bd0b018e8380bb5a7f4ac5601fb17a038649e"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.webp",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGB",
+      "bytes": 1341024,
+      "sha256": "d7c498a0d5064a808cc69c7949606a0d06b66abef15eae82d05ef0cf1bf7eddc"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/banner-background.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 4479176,
+      "sha256": "77787aa6a1360d14ddbbc579e44f35fa69aa47204da2454cdb929f6f0eeeee0d"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/banner-character.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 930035,
+      "sha256": "08efba4587a83e1b071b10328561e42dddce6f46c0d6283d18d4777697342d9d"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/banner-shade.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 13492,
+      "sha256": "58e31d5ef07787e6f7f89163c195cc808a368821caec04ab3c3f42eb3a20befa"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/banner-typography.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGBA",
+      "bytes": 56173,
+      "sha256": "4492f6b0ede16a7ad6bc827f0f1c5d34f12221ee437fa1980e376f4bb0777603"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/original-paper-spirit.png",
+      "dimensions": [
+        496,
+        496
+      ],
+      "mode": "RGBA",
+      "bytes": 438216,
+      "sha256": "8589cced7041bd344325e3b68053b6a67371cec08b49d29c7454538f88a65469"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/poster-background.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGBA",
+      "bytes": 10517237,
+      "sha256": "4b4b749e94816048fbeddcc3baef95d870ce501a7b9654e40decb2e04b3ed1ee"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/poster-character.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGBA",
+      "bytes": 1860743,
+      "sha256": "14640f3b9aabcedf07b0d85622a568f934c24c564fc0e429b75932aebd9070f4"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/poster-shade.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGBA",
+      "bytes": 35268,
+      "sha256": "7bbf7f48f61bd8c7f2400fc94ab8cd77147cf0ca4e7a09ff9e03137ee6d1f318"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/poster-typography.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGBA",
+      "bytes": 100757,
+      "sha256": "70b05c7f115246ef3f2bafd6e2e5100a2c7eaf153674377adf64a8ba3ff48afd"
+    },
+    {
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/poster-preview.png",
+      "dimensions": [
+        853,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 1878517,
+      "sha256": "10495d64e37b96a95254a4bbfdc1ee21cadaafa754beaae688f2d857ff0e0bcd"
+    }
+  ],
+  "typography": [
+    "Smiley Sans"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b92-primary.png",
+  "source_sha256": "669ec4951a500bc8c3411f9f00ee56baa3a1f393137e38edd59dffefcfe58b08",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Candidate full pose for visual inspection: original down body perspective and complete accessories.",
+  "guide_sha256": "c3540d6b409b6fc71ba52ed09e2a94c09313f038f934b9020d8dc81e67730a28"
+}

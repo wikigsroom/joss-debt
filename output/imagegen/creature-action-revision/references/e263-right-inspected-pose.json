@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e263-primary.png",
+  "source_sha256": "839ccb4c5dd8888fa7460c6e0dee3b4abf63ef04d171e4aa53170778e44fecda",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original FOUR-legged moss-grey/ivory paper fox, ONE ivory pointed skull head, original moss-covered multi-branch stone/paper tail with hanging ivory tabs and gold bell. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "f283a537891af29555ffd9f729c2438b2fa0d04abda0eb2c30513b5d092f62bf"
+}

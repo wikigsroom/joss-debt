@@ -1,0 +1,25 @@
+{
+  "scope": "arithmetic evaluation of current source sizing formula; physical DPI may differ from Android logical density",
+  "fixtures": [
+    {
+      "fixture": "720p-density-320",
+      "density_dpi_assumed": 320,
+      "screen_scale": 1.0,
+      "required_logical_height": 96.0,
+      "actual_capped_logical_height": 90,
+      "result_dp": 45.0,
+      "cinematic_50_logical_dp": 25.0,
+      "replacement_cancel_48_logical_dp": 24.0
+    },
+    {
+      "fixture": "1080p-density-480",
+      "density_dpi_assumed": 480,
+      "screen_scale": 1.5,
+      "required_logical_height": 96.0,
+      "actual_capped_logical_height": 90,
+      "result_dp": 45.0,
+      "cinematic_50_logical_dp": 25.0,
+      "replacement_cancel_48_logical_dp": 24.0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e290-primary.png",
+  "source_sha256": "ea171eb50b9ca080640456e54c8c015dc321f270fb7926a5548e8126c3c9b428",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged ivory/purple star-box paper badger, striped skull muzzle, original star treasure chest on back, large brass star wheel, ivory paper tabs and short dark limbs. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "71dd36fc36ffd80b8f70a43673fc30599fc1e0d235a7d95d90ec2410231b9f66"
+}

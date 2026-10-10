@@ -165,6 +165,9 @@ def marker_centroid(point, state, frame, count):
 
 
 def finish():
+    rig_path = ASSETS / "weapon-rig.json"
+    if rig_path.exists() and json.loads(rig_path.read_text("utf8")).get("animation_method") == "independently_drawn_six_frame_poses":
+        raise RuntimeError("Independent wrist/body atlases are installed. Use compile_action_revision.py; refusing legacy warped grips.")
     bodies = json.loads((REPORT / "body-processing.json").read_text("utf8"))
     new_animations = []
     runtime_entries = []

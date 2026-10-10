@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 竹根狐 (e203) in this camera view: SCREEN-DOWN FRONT VIEW: face and attacking end point toward the BOTTOM edge of the cell; the rear is toward the TOP. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: slim long-tailed fox; 三条细竹根尾狐; DEEP BAMBOO FOREST: bottle green, sap green and sharp yellow-green dappled light; vertical bamboo silhouette. Incorporate dense upright bamboo stems, segmented bamboo gates, woven reed fences and roots; no stone hall; handmade coloured paper, wood and fabric matching this environment.. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Draw ONE genuine down-facing original green leafy paper fox with ivory triangular mask, brown legs and three branched leafy tails. Original source is identity/palette only. Construct true new view: front both eyes and centered muzzle, side one eye and nose contour pointing declared direction, rear only back no face/eyes. Preserve exact original anatomy, no extra character or text.
+

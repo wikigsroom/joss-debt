@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e217-primary.png",
+  "source_sha256": "b9f85e20acb6b8bbe3bb3d0824f4058a7a9acb2a089b4561d702361fa7224fe8",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged blue/ivory mirror-faced child, pyramidal diamond hood, dangling blue lamp ornaments and angular paper sleeves. Actual complete source pose inspected; whole-body right camera accepted as generation guide only.",
+  "guide_sha256": "670bbb8034d09848bea11884f6811055abb0542f2e4a4355d80f6544ab1e45d2"
+}

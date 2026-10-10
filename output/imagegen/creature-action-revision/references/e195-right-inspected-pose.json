@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e195-primary.png",
+  "source_sha256": "792dc9e4a81126d7a5b97a9162c7b2b96d9c28fb43236687ff8b92e6d0af5769",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right bell frog profile; retain through hurt.",
+  "guide_sha256": "ab45ef0160c9cf7e15d20797b1c28f93aeee839b512153f2cf9cc4eba22fcb4c"
+}

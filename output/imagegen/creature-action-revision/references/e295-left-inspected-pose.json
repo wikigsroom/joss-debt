@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e295-primary.png",
+  "source_sha256": "57fe55a29cc19f033c29d5c2b2d80ac74d9df1ba72cf85a972808e7d60e0a796",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original EIGHT-legged purple/ivory star-thread paper spider, ONE original ivory skull mask, round purple back, original gold star-wheel/halo and articulated gold/paper legs with ivory cards. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "0e1fe5611032464cad0fceab36df10e5269d07f45d443c1b137a83e0e3feb6a3"
+}

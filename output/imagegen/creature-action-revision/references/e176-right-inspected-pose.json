@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e176-primary.png",
+  "source_sha256": "5ee5220991cee8e4e82a1599b7c18064c81c8b304d85d5bd8a006c6ec6dbff81",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right shrine rhino profile; retain horned head direction through hurt.",
+  "guide_sha256": "6f7d0d052e19df73a0fd1466b905784dd6181785f819b6274c15a7f3379fa4d6"
+}

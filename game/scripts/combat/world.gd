@@ -1,4 +1,10 @@
 extends RefCounted
+## Short-lived touch transfer is intentionally absent from run snapshots.
+var touch_charge_transfer: Dictionary = {}
+
+func clear_touch_charge() -> void:
+	touch_charge_transfer.clear()
+	if not player.is_empty(): player.charge = 0.0
 const Damage = preload("res://scripts/core/damage_record.gd")
 const Impact = preload("res://scripts/combat/impact_control.gd")
 ## Authoritative fixed-tick combat. No nodes, input devices, audio, or rendering dependencies.
@@ -9,6 +15,7 @@ const Geometry = preload("res://scripts/combat/room_geometry.gd")
 const Effects = preload("res://scripts/combat/effects.gd")
 const EnemyPattern = preload("res://scripts/combat/enemy_patterns.gd")
 const BossPattern = preload("res://scripts/combat/boss_patterns.gd")
+const CreatureAction = preload("res://scripts/combat/creature_actions.gd")
 const Graph = preload("res://scripts/core/room_graph.gd")
 const Migration = preload("res://scripts/core/save_migrations.gd")
 const Seed = preload("res://scripts/core/derived_seed.gd")
@@ -52,6 +59,7 @@ var proc_ledger: Dictionary = {}
 var pending_entry_direction = ""
 
 func start(character_id: String, seed_value: int = 1, floors: int = 1, options: Dictionary = {}) -> void:
+	touch_charge_transfer.clear()
 	var character = db.row("characters", character_id)
 	assert(not character.is_empty())
 	pending_entry_direction = ""
@@ -328,6 +336,7 @@ func reward_once(slot: String) -> bool:
 	return true
 
 func enter_room() -> void:
+	touch_charge_transfer.clear()
 	enemies.clear()
 	bullets.clear()
 	pickups.clear()
@@ -618,7 +627,7 @@ func spawn_enemy(id: String, position: Vector2, elite: bool = false, summoned: b
 	if run.get("campaign", false): health *= 1.0 + .14 * (int(run.floor) - 1)
 	var enemy = {"uid": next_uid(), "id": id, "pos": position, "hp": health, "max_hp": health,
 		"radius": 22.0 if elite else float(spec.get("radius", 17)), "speed": float(spec.speed), "elite": elite, "boss": false,
-		"elite_id": str(variant.get("id", elite_variant_id)) if elite else "", "sprite_id": str(variant.get("id", elite_variant_id)) if elite and not run.get("campaign", false) else id,
+		"elite_id": str(variant.get("id", elite_variant_id)) if elite else "", "sprite_id": str(variant.get("id", elite_variant_id)) if elite and not variant.is_empty() and not run.get("campaign", false) else id,
 		"ash_reward": ash_reward, "summoned": summoned, "natural_reward": natural_reward, "dead": false, "mark": 0, "mark_until": 0.0, "mark_energy_at": -10.0,
 		"burn": 0, "burn_until": 0.0, "burn_next": 0.0, "hit_flash": 0.0, "primary_hits": 0,
 		"attack_cd": 1.2 + roll("enemy_timing_%d" % uid).unit(), "windup": 0.0, "tell": maxf(0.35, float(spec.telegraph_ms) / 1000.0 * telegraph_multiplier),
@@ -692,7 +701,8 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	player.move = move
 	player.still = player.still + delta if move.length() < 0.1 else 0.0
 	if player.buffer_dash > 0.0 and player.dash_cd <= 0.0:
-		start_dash(move if move.length() > 0.1 else player.aim)
+		var intended_dash = Vector2(frame.get("dash_direction", Vector2.ZERO))
+		start_dash(intended_dash if intended_dash.length() > .1 else (move if move.length() > 0.1 else player.aim))
 	if player.buffer_skill > 0.0 and player.skill_cd <= 0.0:
 		if cast_skill():
 			player.buffer_skill = 0.0
@@ -721,7 +731,7 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 			geometry.rebuild_flow(player.pos)
 		update_enemies(delta)
 		update_chains()
-	shoot_input(frame.get("fire", false), delta)
+	shoot_input(frame.get("fire", false), delta, frame.get("charge_hold", false), frame.get("device", "") == "touch")
 	Scenery.tick(self)
 	update_bullets(delta)
 	update_zones(delta)
@@ -750,13 +760,21 @@ func start_dash(direction: Vector2) -> void:
 	player.dash_cd = 2.0 + (0.3 if contract("d06") else 0.0)
 	player.invulnerable = maxf(player.invulnerable, 0.15)
 	player.charge = 0.0
+	touch_charge_transfer.clear()
 	emit("dash", {"pos": player.pos, "dir": direction})
 
-func shoot_input(fire: bool, delta: float) -> void:
+func shoot_input(fire: bool, delta: float, transfer: bool = false, touch_device: bool = false) -> void:
 	var weapon = db.row("weapons", player.weapon)
+	if not touch_charge_transfer.is_empty() and (time > float(touch_charge_transfer.until) or str(touch_charge_transfer.weapon) != str(player.weapon) or not touch_device): touch_charge_transfer.clear()
 	if not fire:
+		if touch_device and player.charge > 0:
+			touch_charge_transfer = {"amount": player.charge, "until": time + .15, "weapon": player.weapon, "confirmed": transfer}
+		elif transfer and not touch_charge_transfer.is_empty(): touch_charge_transfer.confirmed = true
 		player.charge = 0.0
 		return
+	if not touch_charge_transfer.is_empty():
+		if touch_charge_transfer.confirmed: player.charge = maxf(player.charge, float(touch_charge_transfer.amount))
+		touch_charge_transfer.clear()
 	if player.shot_cd > 0.0 or player.dash_left > 0.0: return
 	var charge_time = .65 if weapon.mode == "nova" else (.35 if stack("r66") > 0 else (.25 if weapon.mode in ["charged_line", "charged_arc"] else 0.0))
 	if charge_time > 0:
@@ -1068,7 +1086,7 @@ func damage_enemy(enemy: Dictionary, amount: float, source: String, crit: bool =
 	BossPattern.hit(self, enemy, source)
 	enemy.hp -= damage
 	enemy.hit_flash = 0.07
-	enemy.visual_hurt_at = time
+	CreatureAction.hurt(enemy, time, enemy.pos.direction_to(player.pos))
 	if source == "secondary":
 		stats.secondary_hits += 1
 	var weapon_mode = str(db.row("weapons", player.weapon).get("mode", "")) if not player.weapon.is_empty() else ""
@@ -1345,6 +1363,7 @@ func update_enemies(delta: float) -> void:
 			var phase = mini(2, int((1.0 - enemy.hp / enemy.max_hp) * 3.0))
 			if phase > int(enemy.phase):
 				enemy.phase = phase
+				if enemy.windup > 0: enemy.visual_prepare_state = CreatureAction.next_attack_state(enemy)
 				enemy.visual_phase_at = time
 				emit("boss_phase", {"phase": phase, "pos": enemy.pos})
 				var spec = db.row("bosses", enemy.id)
@@ -1352,7 +1371,9 @@ func update_enemies(delta: float) -> void:
 				if spec.fixed_heal_phase_indices.has(phase) and reward_once("boss_heal_%d" % phase):
 					pickups.append({"uid": next_uid(), "kind": "heal", "pos": Vector2(640, 520), "value": 2, "delay": 0.0, "natural": false, "magnet": false})
 		if enemy.lunge > 0:
+			enemy.visual_lunge_attack = true
 			enemy.lunge -= delta
+			if enemy.lunge <= 0: enemy.visual_attack_recovery_at = time
 			enemy.pos = geometry.slide(enemy.pos, enemy.aim * 490 * delta, enemy.radius)
 			if enemy.pos.distance_to(player.pos) < enemy.radius + 12:
 				if player.invulnerable > 0 and player.dash_left > 0: Effects.dodge(self)
@@ -1368,6 +1389,7 @@ func update_enemies(delta: float) -> void:
 			enemy.windup = enemy.tell
 			enemy.target = player.pos
 			enemy.aim = enemy.pos.direction_to(player.pos)
+			CreatureAction.prepare(enemy, time)
 			emit("telegraph", {"pos": enemy.pos, "enemy": enemy.id})
 			continue
 		var distance = enemy.pos.distance_to(player.pos)
@@ -1394,14 +1416,15 @@ func update_enemies(delta: float) -> void:
 			damage_player(int(enemy.damage), source_of(enemy, "contact"))
 
 func enemy_attack(enemy: Dictionary) -> void:
-	enemy.visual_attack_at = time
+	CreatureAction.strike(enemy, time)
 	enemy.attack_cd = 1.4 + roll("enemy_timing_%d" % int(enemy.uid)).unit() * 0.6
 	if enemy.boss:
 		if ExpandedPattern.eligible(enemy): ExpandedPattern.attack(self, enemy)
 		else: BossPattern.attack(self, enemy)
-		return
-	if ExpandedPattern.eligible(enemy): ExpandedPattern.attack(self, enemy)
-	else: EnemyPattern.attack(self, enemy)
+	else:
+		if ExpandedPattern.eligible(enemy): ExpandedPattern.attack(self, enemy)
+		else: EnemyPattern.attack(self, enemy)
+	CreatureAction.finish_attack_setup(enemy, time)
 
 func add_zone(position: Vector2, radius: float, duration: float, damage: float, friendly: bool, warning: float = 0.0, source: Dictionary = {}) -> void:
 	if zones.size() >= 48: return
@@ -1461,12 +1484,14 @@ func update_delayed(unused_delta: float) -> void:
 			if enemy.is_empty() or enemy.dead: continue
 			var from = action.get("pos", enemy.pos)
 			var aim = action.get("aim", enemy.aim)
+			CreatureAction.strike(enemy, time, aim)
 			for i in int(action.count): enemy_bullet(from, aim.rotated((i - (int(action.count) - 1) / 2.0) * action.spread), action.speed, enemy.damage, 7, source_of(enemy, "projectile"))
 		elif action.type == "enemy_lunge":
 			var enemy = enemy_by_uid(action.uid)
 			if not enemy.is_empty() and not enemy.dead:
 				enemy.aim = enemy.pos.direction_to(player.pos)
 				enemy.windup = .45
+				CreatureAction.prepare(enemy, time, .45)
 		elif action.type == "debt_bullet":
 			if action.pair.all(func(id): var e = enemy_by_uid(id); return not e.is_empty() and not e.dead):
 				enemy_bullet(action.pos, action.aim, 165, 1, 7, Damage.normalize({"id": "d02", "table": "debt_contracts", "kind": "debt"}, action.pos))
@@ -2015,6 +2040,7 @@ func upgrade_early_boss_rooms() -> void:
 	run.graph.campaign=2
 
 func restore(data: Dictionary) -> bool:
+	touch_charge_transfer.clear()
 	var migrated = Migration.world(data)
 	if not migrated.ok or migrated.data.is_empty(): return false
 	data = migrated.data

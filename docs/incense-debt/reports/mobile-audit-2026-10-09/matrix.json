@@ -1,0 +1,563 @@
+{
+  "scope": "native desktop fixtures, not physical Android acceptance",
+  "fixtures": [
+    {
+      "fixture": "phone-16x9",
+      "resolution": "1280x720",
+      "observations": [
+        {
+          "confirmed": true,
+          "id": "two_thumbs_dash_interrupts_fire",
+          "observed": {
+            "after_fire": false,
+            "before_fire": true,
+            "dash": true,
+            "move_preserved": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "button_switch_discards_charge",
+          "observed": {
+            "charge_after": 0.0,
+            "charge_before": 0.4,
+            "weapon": "w32"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fire_inside_aim_deadzone",
+          "observed": {
+            "aim": "(0.0, -1.0)",
+            "deadzone": 0.32,
+            "fire": true,
+            "stick_length": 0.25
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fixed_aim_captures_far_from_visible_stick",
+          "observed": {
+            "distance_from_stick": 382.099456787109,
+            "fire": true,
+            "stick_radius": 72.0
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "sliding_aim_onto_dash_does_not_dash",
+          "observed": {
+            "dash": false,
+            "fire": true,
+            "floating_origin": "(945.0, 605.0)",
+            "overlaps_dash": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "move_capture_includes_upper_playfield",
+          "observed": {
+            "move_id": 6,
+            "pressed_point": "(100, 180)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "custom_aim_crosses_half_screen_but_captures_move",
+          "observed": {
+            "aim_center": "(499.2, 475.2)",
+            "aim_id": -1,
+            "fire": false,
+            "layout_accepted": true,
+            "move_id": 16,
+            "movement": "(0.95355, -0.301236)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ordinary_release_stops_attack",
+          "observed": {
+            "aim_id": -1,
+            "fire": false
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "lifecycle_clear_stops_movement",
+          "observed": {
+            "fire": false,
+            "move": "(0.0, 0.0)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "auto_aim_ignores_manual_direction",
+          "observed": {
+            "effective_direction": "(-1.0, 0.0)",
+            "manual_direction": "RIGHT",
+            "nearest_target": "LEFT"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "gui_release_over_pause",
+          "observed": {
+            "move_id_after": -1,
+            "move_id_before": 20,
+            "screen_after": "game"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ui_geometry",
+          "observed": {
+            "button_height": 64.0,
+            "choice_controls": [
+              {
+                "name": "选择灯芯屑",
+                "rect": "[P: (823.0, 466.0), S: (305.0, 64.0)]",
+                "size": "(305.0, 64.0)"
+              },
+              {
+                "name": "上一件",
+                "rect": "[P: (126.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "下一件",
+                "rect": "[P: (212.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "换一页",
+                "rect": "[P: (718.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "留在此处 · 继续",
+                "rect": "[P: (846.0, 610.0), S: (308.0, 64.0)]",
+                "size": "(308.0, 64.0)"
+              }
+            ],
+            "dpi": 96,
+            "surface": "(1280, 720)",
+            "ui_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 0.0)]"
+          }
+        }
+      ],
+      "settings": {
+        "emulate_mouse_from_touch": true,
+        "orientation": 0,
+        "screen_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 0.0)]",
+        "stretch_aspect": "keep",
+        "surface": "(1280, 720)"
+      },
+      "images": [
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-16x9\\choice.png",
+          "size": [
+            1280,
+            720
+          ],
+          "variance": 2472.173014215642
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-16x9\\combat.png",
+          "size": [
+            1280,
+            720
+          ],
+          "variance": 3153.3664167098136
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-16x9\\replacement.png",
+          "size": [
+            1280,
+            720
+          ],
+          "variance": 3118.793875144044
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-16x9\\tutorial.png",
+          "size": [
+            1280,
+            720
+          ],
+          "variance": 2919.0015181481044
+        }
+      ]
+    },
+    {
+      "fixture": "phone-20x9",
+      "resolution": "2400x1080",
+      "observations": [
+        {
+          "confirmed": true,
+          "id": "two_thumbs_dash_interrupts_fire",
+          "observed": {
+            "after_fire": false,
+            "before_fire": true,
+            "dash": true,
+            "move_preserved": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "button_switch_discards_charge",
+          "observed": {
+            "charge_after": 0.0,
+            "charge_before": 0.4,
+            "weapon": "w32"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fire_inside_aim_deadzone",
+          "observed": {
+            "aim": "(0.0, -1.0)",
+            "deadzone": 0.32,
+            "fire": true,
+            "stick_length": 0.25
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fixed_aim_captures_far_from_visible_stick",
+          "observed": {
+            "distance_from_stick": 382.099456787109,
+            "fire": true,
+            "stick_radius": 72.0
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "sliding_aim_onto_dash_does_not_dash",
+          "observed": {
+            "dash": false,
+            "fire": true,
+            "floating_origin": "(945.0, 605.0)",
+            "overlaps_dash": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "move_capture_includes_upper_playfield",
+          "observed": {
+            "move_id": 6,
+            "pressed_point": "(100, 180)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "custom_aim_crosses_half_screen_but_captures_move",
+          "observed": {
+            "aim_center": "(499.2, 475.2)",
+            "aim_id": -1,
+            "fire": false,
+            "layout_accepted": true,
+            "move_id": 16,
+            "movement": "(0.95355, -0.301236)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ordinary_release_stops_attack",
+          "observed": {
+            "aim_id": -1,
+            "fire": false
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "lifecycle_clear_stops_movement",
+          "observed": {
+            "fire": false,
+            "move": "(0.0, 0.0)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "auto_aim_ignores_manual_direction",
+          "observed": {
+            "effective_direction": "(-1.0, 0.0)",
+            "manual_direction": "RIGHT",
+            "nearest_target": "LEFT"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "gui_release_over_pause",
+          "observed": {
+            "move_id_after": -1,
+            "move_id_before": -1,
+            "screen_after": "game"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ui_geometry",
+          "observed": {
+            "button_height": 64.0,
+            "choice_controls": [
+              {
+                "name": "选择灯芯屑",
+                "rect": "[P: (823.0, 466.0), S: (305.0, 64.0)]",
+                "size": "(305.0, 64.0)"
+              },
+              {
+                "name": "上一件",
+                "rect": "[P: (126.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "下一件",
+                "rect": "[P: (212.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "换一页",
+                "rect": "[P: (718.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "留在此处 · 继续",
+                "rect": "[P: (846.0, 610.0), S: (308.0, 64.0)]",
+                "size": "(308.0, 64.0)"
+              }
+            ],
+            "dpi": 96,
+            "surface": "(2400, 1080)",
+            "ui_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 0.0)]"
+          }
+        }
+      ],
+      "settings": {
+        "emulate_mouse_from_touch": true,
+        "orientation": 0,
+        "screen_transform": "[X: (1.5, 0.0), Y: (0.0, 1.5), O: (240.0, 0.0)]",
+        "stretch_aspect": "keep",
+        "surface": "(2400, 1080)"
+      },
+      "images": [
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-20x9\\choice.png",
+          "size": [
+            1920,
+            1080
+          ],
+          "variance": 2478.7269793352525
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-20x9\\combat.png",
+          "size": [
+            1920,
+            1080
+          ],
+          "variance": 3147.5585235331187
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-20x9\\replacement.png",
+          "size": [
+            1920,
+            1080
+          ],
+          "variance": 3069.2541030220505
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\phone-20x9\\tutorial.png",
+          "size": [
+            1920,
+            1080
+          ],
+          "variance": 2847.8336034988843
+        }
+      ]
+    },
+    {
+      "fixture": "tablet-4x3",
+      "resolution": "1024x768",
+      "observations": [
+        {
+          "confirmed": true,
+          "id": "two_thumbs_dash_interrupts_fire",
+          "observed": {
+            "after_fire": false,
+            "before_fire": true,
+            "dash": true,
+            "move_preserved": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "button_switch_discards_charge",
+          "observed": {
+            "charge_after": 0.0,
+            "charge_before": 0.4,
+            "weapon": "w32"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fire_inside_aim_deadzone",
+          "observed": {
+            "aim": "(0.0, -1.0)",
+            "deadzone": 0.32,
+            "fire": true,
+            "stick_length": 0.25
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "fixed_aim_captures_far_from_visible_stick",
+          "observed": {
+            "distance_from_stick": 382.099456787109,
+            "fire": true,
+            "stick_radius": 72.0
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "sliding_aim_onto_dash_does_not_dash",
+          "observed": {
+            "dash": false,
+            "fire": true,
+            "floating_origin": "(945.0, 605.0)",
+            "overlaps_dash": true
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "move_capture_includes_upper_playfield",
+          "observed": {
+            "move_id": 6,
+            "pressed_point": "(100, 180)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "custom_aim_crosses_half_screen_but_captures_move",
+          "observed": {
+            "aim_center": "(499.2, 475.2)",
+            "aim_id": -1,
+            "fire": false,
+            "layout_accepted": true,
+            "move_id": 16,
+            "movement": "(0.95355, -0.301236)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ordinary_release_stops_attack",
+          "observed": {
+            "aim_id": -1,
+            "fire": false
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "lifecycle_clear_stops_movement",
+          "observed": {
+            "fire": false,
+            "move": "(0.0, 0.0)"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "auto_aim_ignores_manual_direction",
+          "observed": {
+            "effective_direction": "(-1.0, 0.0)",
+            "manual_direction": "RIGHT",
+            "nearest_target": "LEFT"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "gui_release_over_pause",
+          "observed": {
+            "move_id_after": -1,
+            "move_id_before": 20,
+            "screen_after": "game"
+          }
+        },
+        {
+          "confirmed": true,
+          "id": "ui_geometry",
+          "observed": {
+            "button_height": 64.0,
+            "choice_controls": [
+              {
+                "name": "选择灯芯屑",
+                "rect": "[P: (823.0, 466.0), S: (305.0, 64.0)]",
+                "size": "(305.0, 64.0)"
+              },
+              {
+                "name": "上一件",
+                "rect": "[P: (126.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "下一件",
+                "rect": "[P: (212.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "换一页",
+                "rect": "[P: (718.0, 610.0), S: (64.0, 64.0)]",
+                "size": "(64.0, 64.0)"
+              },
+              {
+                "name": "留在此处 · 继续",
+                "rect": "[P: (846.0, 610.0), S: (308.0, 64.0)]",
+                "size": "(308.0, 64.0)"
+              }
+            ],
+            "dpi": 96,
+            "surface": "(1024, 768)",
+            "ui_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 0.0)]"
+          }
+        }
+      ],
+      "settings": {
+        "emulate_mouse_from_touch": true,
+        "orientation": 0,
+        "screen_transform": "[X: (0.8, 0.0), Y: (0.0, 0.8), O: (0.0, 96.0)]",
+        "stretch_aspect": "keep",
+        "surface": "(1024, 768)"
+      },
+      "images": [
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\tablet-4x3\\choice.png",
+          "size": [
+            1024,
+            576
+          ],
+          "variance": 2390.8885236922165
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\tablet-4x3\\combat.png",
+          "size": [
+            1024,
+            576
+          ],
+          "variance": 3123.1988809715676
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\tablet-4x3\\replacement.png",
+          "size": [
+            1024,
+            576
+          ],
+          "variance": 2944.452575518284
+        },
+        {
+          "path": "docs\\incense-debt\\reports\\mobile-audit-2026-10-09\\tablet-4x3\\tutorial.png",
+          "size": [
+            1024,
+            576
+          ],
+          "variance": 2652.199169985358
+        }
+      ]
+    }
+  ]
+}

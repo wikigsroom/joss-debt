@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e275-primary.png",
+  "source_sha256": "a9e4e8debe24b18ecfb76beef621467dd15208039620a32b43a3c845568c13f2",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Original FOUR-legged ivory/red seal-fox, ONE skull head with original ears, red folded-paper multi-tail fan, gold bindings and original red tassel/bell. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "7bff95ebe609c832583502448ae7040e546a5f7e859d9bf9c6bf65859170d7be"
+}

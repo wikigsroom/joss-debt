@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e268-primary.png",
+  "source_sha256": "72cf9503394ddaa18cca8c56ce52578412c7d69e95d41ce7ea1181eb8e32d3c7",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged moss-grey/ivory tombstone guard, crescent helmet, ivory mask, massive original stone hammer, crescent-marked tombstone shield and ragged grey-blue robes. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "c703a1de61ee28353f60bf3786dc06b22171a7636875ad9f14bd9586b80c4723"
+}

@@ -1,5 +1,6 @@
 # Local engines, SDKs and Godot import caches.
 /.local-tools/
+**/.vercel/
 **/.godot/
 **/__pycache__/
 *.py[cod]
@@ -22,6 +23,7 @@
 /docs/incense-debt/reports/**/*.wav
 /docs/incense-debt/reports/**/*.log
 /docs/incense-debt/reports/**/isolated-saves/
+/docs/incense-debt/reports/**/fixture-saves/
 
 # Credentials and machine-local editor settings.
 .env
@@ -80,3 +82,23 @@ Thumbs.db
 !/docs/incense-debt/reports/runtime/design-vs-runtime.png
 !/docs/incense-debt/reports/runtime/entrance-states.png
 !/docs/incense-debt/reports/runtime/ui-refresh/ui-before-after.png
+
+# 0.2.1 documentation-linked native action and touch captures
+!/docs/incense-debt/reports/action-mobile-2026-10-09/native-actions.gif
+!/docs/incense-debt/reports/action-mobile-2026-10-09/native-action-endpoints.jpg
+!/docs/incense-debt/reports/action-mobile-2026-10-09/phone-16x9/touch-layout.png
+!/docs/incense-debt/reports/action-mobile-2026-10-09/phone-16x9/skill-four.png
+!/docs/incense-debt/reports/action-mobile-2026-10-09/phone-density-320/replacement-confirm.png
+
+# README-linked native creature animation comparisons.
+!/docs/incense-debt/reports/creature-actions-2026-10-10/enemy-left-actions.gif
+!/docs/incense-debt/reports/creature-actions-2026-10-10/boss-left-actions.gif
+!/docs/incense-debt/reports/creature-actions-2026-10-10/enemy-four-directions.gif
+!/docs/incense-debt/reports/creature-actions-2026-10-10/boss-four-directions.gif
+
+# Reproducible publication archives and local generation diagnostics.
+/output/**/*.zip
+/output/**/*.log
+/output/imagegen/creature-action-revision/logs/
+/output/imagegen/creature-action-revision/rejected/
+/output/imagegen/creature-action-revision/journal-history/

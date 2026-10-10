@@ -92,6 +92,7 @@ func reset_device(device: String) -> void:
 	if bindings.has(device): bindings[device] = pristine[device].duplicate(true)
 
 static func from_event(event_value: InputEvent, device: String) -> Dictionary:
+	if (event_value is InputEventMouseButton or event_value is InputEventMouseMotion) and event_value.device == InputEvent.DEVICE_ID_EMULATION: return {}
 	if device == "keyboard":
 		if event_value is InputEventKey and event_value.pressed and not event_value.echo:
 			return {"type": "key", "code": event_value.physical_keycode}

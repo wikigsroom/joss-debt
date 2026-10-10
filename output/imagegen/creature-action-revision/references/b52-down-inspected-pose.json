@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b52-secondary.png",
+  "source_sha256": "54cdf6be612b09ac51f28e330c24dbd197f19506385b0b7d8273aee6f7a4ca08",
+  "row": 1,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Inspected actual frontal paper eight-brush-armed boss: forward paired-eye ivory mask, crown, navy/ivory robe, brush arms spread around torso.",
+  "guide_sha256": "755a1f95d6f3e333611163aa4e4d811a4caf788dfd52dc79006226e5ec19380f"
+}

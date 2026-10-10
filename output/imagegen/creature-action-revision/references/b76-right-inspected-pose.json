@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b76-primary.png",
+  "source_sha256": "ad536ed3e46ac4cf46aea6db25a8c9e4002983bc07c5f6cfba4fab5e15d2d9fc",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right bamboo puppet profile, mask nose right, bamboo rack side perspective and hanging lanterns.",
+  "guide_sha256": "72535bf1d1ff6b6629c816155c706853cc4afcf3f66342d13ad34be7fd71b2de"
+}

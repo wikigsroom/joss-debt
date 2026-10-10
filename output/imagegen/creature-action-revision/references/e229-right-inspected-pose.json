@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e229-primary.png",
+  "source_sha256": "8b6586ccf18557afed09441af7d7cad8468de23bb27ca70bda32128ad71242e6",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged violet/ivory rune-hat child, tall purple prison-sign hat, ivory mask, original caged lantern staff, magenta paper robe/ribbons. Actual complete source pose inspected; whole-body right camera accepted as generation guide only.",
+  "guide_sha256": "1227ff7fa1d43a7524ddbf0f819cc43dbbf1eb4256c74b55b9ca7219e69fb975"
+}

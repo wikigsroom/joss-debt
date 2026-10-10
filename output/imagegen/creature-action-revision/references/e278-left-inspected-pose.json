@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e278-primary.png",
+  "source_sha256": "ce23b289a833d9547d2ff4198604767791887ecd3be0c130eed55b2a19b551da",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original TWO-legged black/ivory/red stamp-box badger, striped skull muzzle, gold square seal breastplate, original red/gold shoulder cape and short black limbs. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "11ccefadc4d4f6dd376411615159df95b726fdab6553ecbf989ea7f8bb328b84"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e71-primary.png",
+  "source_sha256": "bd4758e47b35f13fcfcc0180060aa3a96d181809cfeaf76aac0a2b5538ea65b4",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Blue paper fox left attack profile; redraw hurt while preserving profile mask.",
+  "guide_sha256": "5e9521e51fa00fd2f514dc64012685460041d39a1d5f291757dc5847bd582bd3"
+}

@@ -4,6 +4,7 @@ const Content = preload("res://scripts/core/content_db.gd")
 const Store = preload("res://scripts/core/save_store.gd")
 const Damage = preload("res://scripts/core/damage_record.gd")
 const Impact = preload("res://scripts/combat/impact_control.gd")
+const CreatureAction = preload("res://scripts/combat/creature_actions.gd")
 const Seed = preload("res://scripts/core/derived_seed.gd")
 const PROFILE_VERSION = 2
 const RUN_VERSION = 2
@@ -198,6 +199,7 @@ static func world(source: Dictionary) -> Dictionary:
 		if not enemy is Dictionary or not fields(enemy, ["uid", "hp", "max_hp", "radius", "speed", "damage", "mark", "mark_until", "mark_energy_at", "burn", "burn_until", "burn_next", "hit_flash", "primary_hits", "attack_cd", "windup", "tell", "lunge", "slow_until", "first_fire_at", "phase", "guard_open", "shield_layers", "stun_until", "burn_ticks"], ["pos", "aim", "target"], [], ["attack_history"], ["id"], ["elite", "boss", "summoned", "natural_reward", "dead"]): return failure("恶愿或首领状态不完整。")
 		if db.row("bosses" if enemy.boss else "enemies", enemy.id).is_empty() or enemy.phase < 0 or enemy.phase > 2: return failure("恶愿或首领身份无法识别。")
 		if not Impact.valid_state(enemy, db.rules.combat.control): return failure("恶愿击退状态损坏。")
+		if not CreatureAction.valid_saved_state(enemy): return failure("恶愿动作或朝向记录损坏。")
 	for bullet in data.bullets:
 		if not bullet is Dictionary or not fields(bullet, ["uid", "speed", "range", "travel", "damage", "radius"], ["pos", "dir"], [], [], [], ["friendly"]): return failure("弹道记录损坏。")
 		# Early v2 ash fragments never target a chain member; recover that omitted default.

@@ -1,0 +1,310 @@
+{
+  "original_hero": "game/assets/portraits/c_paper.png",
+  "original_hero_sha256": "0de96003a65d29211d5dac29d3d502b7e787594ef4d24a750dd872a7c7257e25",
+  "identity": "Original portrait RGB retained",
+  "publication_rules": {
+    "allowed_visible_text": [
+      "香火债"
+    ],
+    "no_logo_images": "no text"
+  },
+  "files": [
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/banner-2560x1080.jpg",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "bytes": 974579,
+      "sha256": "67a3b672d9f83cb48ee6be4da12f04203e89584d6668a5436d562925c709eee7"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/banner-2560x1080.png",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "bytes": 3290440,
+      "sha256": "24013a5d4d9442309c7e57acd949e6e86450685c4cfabd34deb5459ce45003ed"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/banner-2560x1080.webp",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "bytes": 474196,
+      "sha256": "af4a7bb93cb83256f5a0e93c4a1a33e3d821f6cd4324f65b796033a547cae03f"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-horizontal-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 962527,
+      "sha256": "03b7fa89c89c8395293636c4c224d170d074b1c6576d1c9f1c1acdc5cb353394"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-horizontal-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 2942283,
+      "sha256": "a3266de5257b1f3cff159d1eb46bc7744f7aac71ea8df7742e864a38b9009bab"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-horizontal-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 509596,
+      "sha256": "c1f9e2040a1f95a04683b86c24c0db69fe2cf96ecf082d24381cf0a10e19e629"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-vertical-1080x1920.jpg",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "bytes": 926671,
+      "sha256": "ae447ede08a026fbc150c9f3c54a3236d4c4e1590ec7784f21ea9664556d1c8a"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-vertical-1080x1920.png",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "bytes": 2956240,
+      "sha256": "07802a1a33782b3920c83fd71a3f44ed604d471e2e6ac389c71c75550b6bcde8"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-vertical-1080x1920.webp",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "bytes": 513182,
+      "sha256": "bee5cc727317e8e5e522684a5b19f4beff557e9bd5f8cbeb3da86e0c12e53e25"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/library-wallpaper-no-logo-5120x1654.jpg",
+      "dimensions": [
+        5120,
+        1654
+      ],
+      "bytes": 3880435,
+      "sha256": "df66cff341fb861b59edfa367a142188408a2c381b9f88912be34f93c29eb96d"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/library-wallpaper-no-logo-5120x1654.png",
+      "dimensions": [
+        5120,
+        1654
+      ],
+      "bytes": 11155918,
+      "sha256": "b72a6203e126f8e2dbb001e2ec26bd934a1b4373847c8784d41fb6484556bd7c"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/library-wallpaper-no-logo-5120x1654.webp",
+      "dimensions": [
+        5120,
+        1654
+      ],
+      "bytes": 1820758,
+      "sha256": "79a7b54ad2e4222884cf22bc07312e660a12a1482b4d406fe03feb11a56e085e"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/poster-2160x3240.jpg",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "bytes": 2595618,
+      "sha256": "6f5d10bd189cdfe70222326509cdfd125144dc61b846ad735368eb470bbaf924"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/poster-2160x3240.png",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "bytes": 8431304,
+      "sha256": "136f759b4ccaa4af228b44c8532bd0b018e8380bb5a7f4ac5601fb17a038649e"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/poster-2160x3240.webp",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "bytes": 1341024,
+      "sha256": "d7c498a0d5064a808cc69c7949606a0d06b66abef15eae82d05ef0cf1bf7eddc"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-01-lantern-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 985171,
+      "sha256": "975ee3f49907c2453595a4839dfe830b3196e7e6b4199b66e2a4c507fc598744"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-01-lantern-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 3007997,
+      "sha256": "a523e02dfcfb04211df7e32909d8b6488aa373981f415d919ba8c7f93ede3b6e"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-01-lantern-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 526162,
+      "sha256": "64fbeb67c90888cbfbd867fe5bac0bbf5c22d1a84de9ffab2e216ed902f8a836"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-02-river-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 876964,
+      "sha256": "d8a62fa0e9ef7e92d63b49afd4a581faf32e190db0aa6ac51a48e47ee3b920e7"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-02-river-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 2951220,
+      "sha256": "493e91863a0480a155cc5337fcbdb356bac2fbe1b2aeccda8f1e70bdc30d0f6c"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-02-river-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 485248,
+      "sha256": "389f8c50e2fec5a1e1138cb7ce2e4d8bd29e5aee5a1dc55376c9baeaefd047dc"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-03-treasury-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 1009520,
+      "sha256": "8d6fc14f906d17d3d136db1ff9a7e0a152ca1c2250dbfeb9cd5242a044f37e97"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-03-treasury-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 3120882,
+      "sha256": "00c1b3725e7a4e175692d4c585e1572ac2c891b035a8cedb80de3d85ea52aa80"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-03-treasury-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 559136,
+      "sha256": "213a2619ce456de07e2b39be0823da5de6ddcf45b48589580b8c354b5876b156"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-04-opera-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 962104,
+      "sha256": "c0bd585d49b442b250879fd5838a8475dd24ca99148e71172a8b073d92e7502c"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-04-opera-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 3089676,
+      "sha256": "398d38681abcf58364ca0ea192c67bab00bb8da8ffdac502d47877ac46861bee"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-04-opera-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 520896,
+      "sha256": "467baffac5cd3a559a9c3d344561e42b651726cc9ecd3daec562bd629bed96c0"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-05-celestial-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 978818,
+      "sha256": "299ef78089b88fc4572672b5a9bdad78f3f61aedfc84da8625121bd09b4d8fbe"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-05-celestial-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 3246137,
+      "sha256": "d16b34a041e871b74e64f2c69d9dbdab8cb1e12efee992d3c94f794a4a7aef87"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-05-celestial-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 579028,
+      "sha256": "6e4083ec73fd7babfdbf6e23f1bbc953f7a5f3d0237284ffe83db212cc2e4cf1"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-no-logo-1920x1080.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 958069,
+      "sha256": "19c045853b140b8424477e1d7d9d3fc8de18aaa027b8bbff9616627c29d2d1e6"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-no-logo-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 3058365,
+      "sha256": "e4d1526a2ba86d6c2772200c86ebdea3943321eacc9f308d5755caa0ab2478b6"
+    },
+    {
+      "file": "output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-no-logo-1920x1080.webp",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 518920,
+      "sha256": "3118305a0a74714f9925ba66f219192a5e91cb411ac483dc024ceceb4b332129"
+    }
+  ]
+}

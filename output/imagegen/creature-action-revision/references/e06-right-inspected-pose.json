@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e06-primary.png",
+  "source_sha256": "a0d293a9e2217437a5f3df17cc8b5bae13ee598088ab8ebf9a210f9f20a2eff0",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected side-view neutral from original full atlas; original silhouette and objects retained, face/box front points right. Used solely as reference for new independent frames.",
+  "guide_sha256": "c0c03e35ecf6e8a50f5f416022bab81d5adc1c83841f14d80db98edad4855c84"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e185-primary.png",
+  "source_sha256": "c4285051407b7815965a27722f6f45f49f1ca813997cf4c59de2f1b2ba65bfb8",
+  "row": 0,
+  "column": 2,
+  "declared_direction": "down",
+  "visual_finding": "Actual down-facing extension guide; front neutral must also face down.",
+  "guide_sha256": "cb20822daa4c2783d9bd0212526f5e08abcb3d817bfb3d4920cf10e60a5e42f4"
+}

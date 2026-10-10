@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b98-primary.png",
+  "source_sha256": "5ff9ea84c37f3f0dc88b43e559e0c232b8383902f5b94ecfe7d71e79eb07a2d7",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Inspection candidate for actual down paper creature body view.",
+  "guide_sha256": "081664f1db72288855f067f17fecf9b54105bdd3d9b09877b57305790b67eae9"
+}

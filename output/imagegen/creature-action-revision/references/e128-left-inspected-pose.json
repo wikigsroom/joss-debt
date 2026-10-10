@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e128-primary.png",
+  "source_sha256": "2a800dcd31428620285fd800a3bb0ff245a118a25b814592d300923bf839fa39",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Left carriage profile; head recoil must remain left rather than frontal.",
+  "guide_sha256": "967bc415b5e488e64a65fbdb0c505314c620ac626d4c690755babb0b2932e6e2"
+}

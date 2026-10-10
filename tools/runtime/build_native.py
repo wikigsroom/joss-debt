@@ -1,6 +1,7 @@
 """Native portable Godot exports. No Docker, WSL, emulator, or user-wide settings."""
 from pathlib import Path
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -28,7 +29,15 @@ def configure():
     icon_dir = ROOT / "game/assets/ui"
     icon_dir.mkdir(exist_ok=True)
     portrait = Image.open(ROOT / "game/assets/portraits/c_paper.png").convert("RGBA")
-    portrait.crop((68, 58, 400, 390)).resize((512, 512), Image.Resampling.LANCZOS).save(icon_dir / "app-icon.png")
+    icon_path = icon_dir / "app-icon.png"
+    if not icon_path.exists():
+        icon_bg = Image.new("RGBA", (512,512), (36,39,37,255))
+        icon_bg.alpha_composite(portrait.crop((68,58,400,390)).resize((512,512),Image.Resampling.LANCZOS))
+        icon_bg.convert("RGB").save(icon_path)
+    elif Image.open(icon_path).convert("RGBA").getextrema()[3][0] != 255:
+        icon_bg = Image.new("RGBA", (512,512), (36,39,37,255))
+        icon_bg.alpha_composite(Image.open(icon_path).convert("RGBA").resize((512,512)))
+        icon_bg.convert("RGB").save(icon_path)
     portrait.crop((68, 58, 400, 390)).convert("RGB").resize((1024, 1024), Image.Resampling.LANCZOS).save(icon_dir / "ios-icon.png")
     foreground = Image.new("RGBA", (432, 432))
     hero = Image.open(ROOT / "game/assets/heroes/c_paper_down.png").convert("RGBA")
@@ -59,6 +68,19 @@ def main():
     args = parser.parse_args()
     if args.platform != "android" and (args.android_build != "debug" or args.android_output):
         parser.error("--android-build and --android-output are only valid for the android platform")
+    if (ROOT / "game/assets/creature-actions.json").is_file():
+        from validate_creature_actions import validate
+        validation = validate()
+        validation.update(
+            verified_at=datetime.now(timezone.utc).isoformat(),
+            manifest_sha256=hashlib.sha256((ROOT / "game/assets/creature-actions.json").read_bytes()).hexdigest(),
+            catalog_sha256=hashlib.sha256((ROOT / "game/data/catalog.json").read_bytes()).hexdigest(),
+            export_platform=args.platform,
+            source="Full catalog-derived source, provenance, alpha, atlas and individual pose shipping gate",
+        )
+        validation_path = ROOT / "docs/incense-debt/reports/creature-actions-2026-10-10/source-validation.json"
+        validation_path.parent.mkdir(parents=True, exist_ok=True)
+        validation_path.write_text(json.dumps(validation, ensure_ascii=False, indent=2) + "\n", "utf8")
     configure()
     output_dir = ROOT / "build" / args.platform
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -86,14 +108,20 @@ def main():
     # Export to a fresh file: an existing Android APK can retain old ZIP data
     # even when the native exporter exits successfully. Preserve one previous
     # generated package for recovery; verification still checks the new output.
-    if args.platform == "android" and output.exists():
+    if output.exists():
         output.replace(output.with_name(output.stem + "-previous" + output.suffix))
     commands = [[str(ENGINE), "--headless", "--editor", "--path", str(ROOT / "game"), "--import", "--quit"],
                 [str(ENGINE), "--headless", "--path", str(ROOT / "game"),
                  export_flag, "Windows Desktop" if args.platform == "windows" else "Android", str(output)]]
     logs = []
     for cmd in commands:
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env, timeout=180)
+        try:
+            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env, timeout=180)
+        except subprocess.TimeoutExpired as error:
+            logs.append((error.stdout or b"").decode("utf-8", errors="replace"))
+            (REPORTS / log_name).write_text("\n".join(logs), "utf-8")
+            print(logs[-1][-4000:])
+            raise RuntimeError(f"{args.platform} exporter timed out; inspect saved platform log") from error
         logs.append(result.stdout.decode("utf-8", errors="replace"))
         (REPORTS / log_name).write_text("\n".join(logs), "utf-8")
         if result.returncode or "SCRIPT ERROR" in logs[-1] or "ERROR:" in logs[-1]:

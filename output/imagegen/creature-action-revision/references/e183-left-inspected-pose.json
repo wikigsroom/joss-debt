@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e183-primary.png",
+  "source_sha256": "82c5ecb61f687bc8120d35a12b088df738c6abcfa02bdae56e9aeabd8f059f2f",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Actual left cloth frog profile; retain through hurt.",
+  "guide_sha256": "4b371e28a08f7a544cfe02ed3f12e58e1868a6575b27d7e3e35977c39769cbea"
+}

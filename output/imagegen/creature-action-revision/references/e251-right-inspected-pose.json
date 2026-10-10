@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e251-primary.png",
+  "source_sha256": "7b9b132fd7b058d0ea9b8b4ba7d2173288db374df04c5c275f8184380703eb7e",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original FOUR-legged ivory/blue rope-tail paper fox, ONE skull head, original multi-branch rope tail with diamond paper tips, blue tassels and gold bells. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "2f39203619b5b07fdbd14c9ce6e8a4f0d7109d865e2e032a988d1f7fcc771024"
+}

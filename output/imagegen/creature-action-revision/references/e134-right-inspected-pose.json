@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e134-primary.png",
+  "source_sha256": "d172620f311a9bef05333577f3e369eec2089d02401c56d50ea8f235977d651d",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right candle porter profile; maintain this direction through hurt.",
+  "guide_sha256": "2c94db0669558f52e0b66a6fa44bf9aa6a26679b79d91f1be1d5c2915840f964"
+}

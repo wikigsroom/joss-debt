@@ -1,0 +1,83 @@
+{
+  "atlas_failures": [],
+  "checks": [
+    {
+      "name": "all 296 enemy identities perform continuous ready/prepare/strike/recovery in four actual attack directions without sampling changing world/RNG",
+      "passed": true
+    },
+    {
+      "name": "all 99 bosses select the real primary, secondary or combined attack bank across phases and alternating attack steps",
+      "passed": true
+    },
+    {
+      "name": "all six authored elite variants retain their own sprite identities and actual attacks in four directions",
+      "passed": true
+    },
+    {
+      "name": "real b04 summoned doubles map enemy combat attacks to their boss appearance's attack_a bank",
+      "passed": true
+    },
+    {
+      "name": "actual loan-note summons receive the independent sigil action bank",
+      "passed": true
+    },
+    {
+      "name": "real damage traverses all six hurt frames in four facings before returning to locomotion",
+      "passed": true
+    },
+    {
+      "name": "an actual reward pause freezes creature anticipation and facing",
+      "passed": true
+    },
+    {
+      "name": "an actual saved run restores the in-flight action bank, frame and facing",
+      "passed": true
+    },
+    {
+      "name": "a malformed saved creature facing is rejected before resuming the run",
+      "passed": true
+    },
+    {
+      "name": "older v2 saves infer the completed boss pattern from the stored attack step",
+      "passed": true
+    },
+    {
+      "name": "real melee lunges retain their extended strike pose until collision movement ends",
+      "passed": true
+    },
+    {
+      "name": "melee follow-through starts after the actual lunge completes",
+      "passed": true
+    },
+    {
+      "name": "simultaneous ordinary damage does not hide a real projectile release",
+      "passed": true
+    },
+    {
+      "name": "the damage recoil remains visible after the release pose",
+      "passed": true
+    },
+    {
+      "name": "a real delayed enemy fan restarts the strike pose when its projectiles are emitted",
+      "passed": true
+    },
+    {
+      "name": "all currently installed independently drawn action poses load as actual native textures with the requested direction and frame",
+      "passed": true
+    },
+    {
+      "name": "boss appearance aliases resolve the boss atlas and left-facing row for enemy-kind summons",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "installed_creature_identities": 402,
+  "loaded_independent_poses": 24048,
+  "real_boss_attacks": 1980,
+  "real_enemy_attacks": 1184,
+  "scope_complete": true,
+  "virtualization": "none",
+  "verified_at": "2026-10-10T15:05:02.884133+00:00",
+  "manifest_sha256": "8a70cf26416a81c9110a9deb3be0c3a09c718e26d2feac2aea470739455d3fb0",
+  "immutable_run": ".local-tools/creature-native-tests/20261010T150222678489Z"
+}

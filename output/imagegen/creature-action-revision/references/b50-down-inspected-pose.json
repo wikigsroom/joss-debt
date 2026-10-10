@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b50-primary.png",
+  "source_sha256": "d5842d1afd2208328798e429297cffd274f61466faf4df40476cfb1adddb304b",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Actual original blue/ivory paper official frontal square mask with both eyes, black brush staff and layered robe; correct front ready pose remains complete despite other missing cells.",
+  "guide_sha256": "029f510ad86d268e5f4dcab59c67a9c1863cef6c6065aff0e850a2f3fd0f0386"
+}

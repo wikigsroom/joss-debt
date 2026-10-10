@@ -1,0 +1,194 @@
+[
+  {
+    "id": "c_paper-down",
+    "actor": "c_paper",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_paper-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_paper-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_paper-down.png"
+  },
+  {
+    "id": "c_paper-left",
+    "actor": "c_paper",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_paper-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_paper-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_paper-left.png"
+  },
+  {
+    "id": "c_paper-right",
+    "actor": "c_paper",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_paper-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_paper-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_paper-right.png"
+  },
+  {
+    "id": "c_paper-up",
+    "actor": "c_paper",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_paper-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_paper-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_paper-up.png"
+  },
+  {
+    "id": "c_bell-down",
+    "actor": "c_bell",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_bell-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_bell-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_bell-down.png"
+  },
+  {
+    "id": "c_bell-left",
+    "actor": "c_bell",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_bell-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_bell-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_bell-left.png"
+  },
+  {
+    "id": "c_bell-right",
+    "actor": "c_bell",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_bell-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_bell-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_bell-right.png"
+  },
+  {
+    "id": "c_bell-up",
+    "actor": "c_bell",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_bell-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_bell-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_bell-up.png"
+  },
+  {
+    "id": "c_lantern-down",
+    "actor": "c_lantern",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_lantern-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_lantern-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_lantern-down.png"
+  },
+  {
+    "id": "c_lantern-left",
+    "actor": "c_lantern",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_lantern-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_lantern-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_lantern-left.png"
+  },
+  {
+    "id": "c_lantern-right",
+    "actor": "c_lantern",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_lantern-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_lantern-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_lantern-right.png"
+  },
+  {
+    "id": "c_lantern-up",
+    "actor": "c_lantern",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_lantern-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_lantern-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_lantern-up.png"
+  },
+  {
+    "id": "c_mask-down",
+    "actor": "c_mask",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_mask-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_mask-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_mask-down.png"
+  },
+  {
+    "id": "c_mask-left",
+    "actor": "c_mask",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_mask-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_mask-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_mask-left.png"
+  },
+  {
+    "id": "c_mask-right",
+    "actor": "c_mask",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_mask-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_mask-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_mask-right.png"
+  },
+  {
+    "id": "c_mask-up",
+    "actor": "c_mask",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_mask-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_mask-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_mask-up.png"
+  },
+  {
+    "id": "c_umbrella-down",
+    "actor": "c_umbrella",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_umbrella-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_umbrella-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_umbrella-down.png"
+  },
+  {
+    "id": "c_umbrella-left",
+    "actor": "c_umbrella",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_umbrella-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_umbrella-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_umbrella-left.png"
+  },
+  {
+    "id": "c_umbrella-right",
+    "actor": "c_umbrella",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_umbrella-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_umbrella-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_umbrella-right.png"
+  },
+  {
+    "id": "c_umbrella-up",
+    "actor": "c_umbrella",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_umbrella-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_umbrella-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_umbrella-up.png"
+  },
+  {
+    "id": "c_ink-down",
+    "actor": "c_ink",
+    "direction": "down",
+    "reference": "output\\imagegen\\action-revision\\c_ink-down-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_ink-down.txt",
+    "output": "output\\imagegen\\action-revision\\c_ink-down.png"
+  },
+  {
+    "id": "c_ink-left",
+    "actor": "c_ink",
+    "direction": "left",
+    "reference": "output\\imagegen\\action-revision\\c_ink-left-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_ink-left.txt",
+    "output": "output\\imagegen\\action-revision\\c_ink-left.png"
+  },
+  {
+    "id": "c_ink-right",
+    "actor": "c_ink",
+    "direction": "right",
+    "reference": "output\\imagegen\\action-revision\\c_ink-right-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_ink-right.txt",
+    "output": "output\\imagegen\\action-revision\\c_ink-right.png"
+  },
+  {
+    "id": "c_ink-up",
+    "actor": "c_ink",
+    "direction": "up",
+    "reference": "output\\imagegen\\action-revision\\c_ink-up-reference.png",
+    "prompt": "output\\imagegen\\action-revision\\c_ink-up.txt",
+    "output": "output\\imagegen\\action-revision\\c_ink-up.png"
+  }
+]

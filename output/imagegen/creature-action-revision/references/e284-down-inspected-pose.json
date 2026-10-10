@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e284-primary.png",
+  "source_sha256": "528b73502a07c56df8390756955492ceb823cf08ae14945d47477bbdc9091ac2",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Original FOUR-legged red/gold/ivory judgment-platform paper rhinoceros, ONE ivory skull with original huge gold horn, rectangular red/gold roof saddle and original heavy feet. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "263caf3adc80e4989ed564eb4a1387a7d76bea36581b8ba498e64902a0c38116"
+}

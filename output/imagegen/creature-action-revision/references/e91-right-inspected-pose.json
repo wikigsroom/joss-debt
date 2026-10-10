@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e91-primary.png",
+  "source_sha256": "845f26a5a654e493117e5c1c97fd78f0b46acf4a882c914648652489e5976f63",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Gold abacus spider intact right attack reference; preserve same mask position during independent recoil.",
+  "guide_sha256": "a6f08f426eb135a5fbbc3e03444d9d6c843bd880114bdf141b7daec495ba17dc"
+}

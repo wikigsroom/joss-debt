@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e241-primary.png",
+  "source_sha256": "c7480fef2bd80a23537aef463fbc5d4c2ba31b16ee0622a9f5783fc8f7b87bad",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Original TWO-legged burnt brown/ivory paper child, original pointed ragged charred hat, ivory mask, frayed paper cloak and ember lantern staff. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "e3f55a8e20221a4d6a3610e5999d1f51df0bf4bbeb41254b0d197fecf63da03f"
+}

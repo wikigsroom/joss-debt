@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e125-primary.png",
+  "source_sha256": "4a2c5e623aae7187d66e85e04e497a4f9f53b36b9156675bae9a030998b4030c",
+  "row": 0,
+  "column": 2,
+  "declared_direction": "down",
+  "visual_finding": "Downward extension guide; independently draw true down-facing neutral and recoil instead of side neutral head.",
+  "guide_sha256": "79a6e64052f1bc13c1e141df258d1dd531fa1e63556b2acd0f027045a1de5163"
+}

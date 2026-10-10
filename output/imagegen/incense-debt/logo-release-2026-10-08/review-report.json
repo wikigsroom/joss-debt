@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "generated_options": 5,
+  "verified_image_outputs": 51,
+  "transparent_symbol_and_lockup_margins": "passed",
+  "full_square_1024_app_icons": "passed",
+  "manual_visual_review": "All five symbols, all five brand boards, original reference and comparison reviewed",
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5"
+}

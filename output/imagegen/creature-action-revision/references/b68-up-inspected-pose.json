@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b68-primary.png",
+  "source_sha256": "62872382e114e34e9b7b72113dfde11016df97de6ff5334bcd9676cd14dc3000",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Inspected genuine back of moon-veil boss: rear headdress and blue/ivory robe, no front white eye mask; side lanterns and flowing ribbons retained.",
+  "guide_sha256": "49f47bda9bcd75f0f0711834a38fcfd31556b18e68ff05d83db8a4a15760d4c7"
+}

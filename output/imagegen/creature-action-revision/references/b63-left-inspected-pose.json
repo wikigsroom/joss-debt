@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b63-primary.png",
+  "source_sha256": "3dcba9bb82fe63f9b3dbb936d4e955e306da11731404f772cc8e174c0bf92d20",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Inspected actual left chimney-beast pose: horned skull and glowing muzzle face left; chimneys and armored torso in side perspective, near fist forward, original paper/metal materials retained.",
+  "guide_sha256": "24ccab02ad475c90d4df3e5022d90be862e56c70a5e9b012596dec8e1fc18820"
+}

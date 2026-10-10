@@ -1,0 +1,68 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "records": [
+    {
+      "id": "02-river",
+      "biome": "m02",
+      "theme": "纸渡河埠",
+      "requested_size": "1536x1024",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "file": "output/imagegen/incense-debt/store-campaign-2026-10-08/02-river-background.png",
+      "sha256": "d0b7a696b271e8f8ef04362aaa4b24070e3c4527bf3dd306bed18a4bdd7b9184"
+    },
+    {
+      "id": "01-lantern",
+      "biome": "m01",
+      "theme": "灯市后巷",
+      "requested_size": "1536x1024",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "file": "output/imagegen/incense-debt/store-campaign-2026-10-08/01-lantern-background.png",
+      "sha256": "4e17ae2c507d68b90a0556770c8dbf29da459b596d2b28e8c6ed135544d58856"
+    },
+    {
+      "id": "04-opera",
+      "biome": "m06",
+      "theme": "赤绫戏楼",
+      "requested_size": "1536x1024",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "file": "output/imagegen/incense-debt/store-campaign-2026-10-08/04-opera-background.png",
+      "sha256": "203b8ddb4695a8555b3231aad3eaf9f3dd50316b0a996780c6566515ac965968"
+    },
+    {
+      "id": "05-celestial",
+      "biome": "m20",
+      "theme": "万愿天穹",
+      "requested_size": "1536x1024",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "file": "output/imagegen/incense-debt/store-campaign-2026-10-08/05-celestial-background.png",
+      "sha256": "00f26c0363e36830bc72d76dea00617b7092994d7974c9d9a1dcd0fc257371ee"
+    },
+    {
+      "id": "03-treasury",
+      "biome": "m03",
+      "theme": "铜钱旧库",
+      "requested_size": "1536x1024",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "file": "output/imagegen/incense-debt/store-campaign-2026-10-08/03-treasury-no-text-background.png",
+      "sha256": "be8b45e0e6270e82117c03a6fd89bce97fcedd44f2e2c391d529c4763780a95b"
+    }
+  ],
+  "failures": []
+}

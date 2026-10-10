@@ -1,14 +1,26 @@
 # README 媒体说明 / README media notes
 
-这里存放项目首页的 22 张静态图片和 6 段 GIF。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)。
+这里存放历史 0.2.0 展示媒体，包括 22 张静态图片和 6 段 GIF；首页另引用下表的 3 段 0.2.1 原生动作 GIF，共展示 9 段动效。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)。
 
-This directory contains the 22 still images and 6 GIFs used by the repository README. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records source paths, output hashes, and the captured build.
+This directory retains 22 still images and six GIFs from 0.2.0. The README also embeds the three native 0.2.1 action GIFs listed below, giving nine motion examples. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records source paths, output hashes, and capture provenance.
+
+## 0.2.1 动作对照 / 0.2.1 action comparisons
+
+| GIF | 内容 / Content |
+| --- | --- |
+| [主角动作 / Hero actions](../incense-debt/reports/action-mobile-2026-10-09/native-actions.gif) | 六名角色、六状态的原生持械与事件特效对照；完整资产为四向 864 个姿势 / Six heroes and six states, with native held weapons and event effects; the full asset set contains 864 poses across four facings |
+| [小怪四向 / Four-facing enemy actions](../incense-debt/reports/creature-actions-2026-10-10/enemy-four-directions.gif) | 四行朝向、攻击／受击两列 / Four facing rows, attack/hurt columns |
+| [Boss 四向 / Four-facing boss actions](../incense-debt/reports/creature-actions-2026-10-10/boss-four-directions.gif) | 四行朝向、攻击 A／B／C 与受击四列 / Four facing rows, attack A/B/C and hurt columns |
+
+新增 GIF 来自原生渲染帧；怪物对照逐帧绑定完整验收中的截图 SHA-256，按固定 140 毫秒比较，不代表实战时序。原始渲染帧保存在本地，发布 GIF 已纳入 Git。重建怪物 GIF 使用 `python tools/documentation/create_creature_action_showcase.py`；所需原生帧与验收步骤见 [全量怪物交付](../incense-debt/35-creature-action-completion.md)。主角来源见 [动作与移动修订](../incense-debt/33-action-mobile-update.md)。
+
+The new GIFs use native render frames. Creature frames match the screenshot SHA-256 values in the complete verification record and use a fixed 140 ms comparison cadence, rather than combat timing. Raw captures stay local; published GIFs are tracked. Rebuild creature GIFs with `python tools/documentation/create_creature_action_showcase.py` after generating the native evidence described in the [complete creature delivery](../incense-debt/35-creature-action-completion.md). Hero provenance is documented in the [hero/mobile revision](../incense-debt/33-action-mobile-update.md).
 
 ## 实机来源 / Native provenance
 
-所有实机媒体来自当前 Windows 原生 Godot 应用，已验证构建 SHA-256：
+本目录保留的 0.2.0 实机媒体来自 Windows 原生 Godot 应用，捕获构建 SHA-256：
 
-All runtime media comes from the verified native Windows Godot application, with build SHA-256:
+The retained 0.2.0 runtime media in this directory comes from the native Windows Godot application, with capture-build SHA-256:
 
 ```text
 51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9
@@ -56,6 +68,6 @@ python tools/documentation/capture_readme_gameplay.py
 
 The capture script uses the actual world, renderer, HUD, and assets embedded in the exported EXE, with the local action bot. It does not read or write player saves and closes its temporary native window on exit. Raw frames go to the ignored `.local-tools/readme-capture/` directory.
 
-生成全部媒体还需要先运行原生 GUI、键盘与扩展 QA，生成本地完整捕获目录，再执行 `python tools/documentation/prepare_readme_media.py`。普通捕获脚本单独执行只更新普通游玩媒体与记录；全量媒体脚本更新统一清单和菜单图。
+重建本目录的游玩媒体还需要先运行原生 GUI、键盘与扩展 QA，生成本地完整捕获目录，再执行 `python tools/documentation/prepare_readme_media.py`。普通捕获脚本单独执行只更新普通游玩媒体与记录；全量媒体脚本更新统一清单和菜单图。0.2.1 动作对照使用上方单独的动作捕获与生成流程。
 
-To rebuild all media, first run native GUI, keyboard, and expansion QA to populate the full local capture directories, then execute `python tools/documentation/prepare_readme_media.py`. The ordinary-capture helper updates its gameplay media and record; the full media helper refreshes the shared manifest and menu diagram.
+To rebuild this directory's gameplay media, first run native GUI, keyboard, and expansion QA to populate the full local capture directories, then execute `python tools/documentation/prepare_readme_media.py`. The ordinary-capture helper updates its gameplay media and record; the full media helper refreshes the shared manifest and menu diagram. The 0.2.1 action comparisons use the separate capture/generation workflow above.

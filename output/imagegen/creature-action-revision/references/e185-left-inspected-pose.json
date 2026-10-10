@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e185-primary.png",
+  "source_sha256": "c4285051407b7815965a27722f6f45f49f1ca813997cf4c59de2f1b2ba65bfb8",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Right-facing identity guide only; independently construct true left profile, no finished-frame mirror.",
+  "guide_sha256": "272cbc4b323d4a33ff9168308f74f115142ded62b2bf801de47d2f02ee50c490"
+}

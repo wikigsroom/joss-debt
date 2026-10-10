@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "compiled_identities": 402,
+  "expected_identities": 402,
+  "independent_action_poses": 24048,
+  "expected_action_poses": 24048,
+  "missing_identities": [],
+  "verified_at": "2026-10-10T15:09:55.372492+00:00",
+  "manifest_sha256": "8a70cf26416a81c9110a9deb3be0c3a09c718e26d2feac2aea470739455d3fb0",
+  "catalog_sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+  "export_platform": "android",
+  "source": "Full catalog-derived source, provenance, alpha, atlas and individual pose shipping gate"
+}

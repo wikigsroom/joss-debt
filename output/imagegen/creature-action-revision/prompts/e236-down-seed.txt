@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 牢石犀 (e236) in this camera view: SCREEN-DOWN FRONT VIEW: face and attacking end point toward the BOTTOM edge of the cell; the rear is toward the TOP. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: massive low heavy rhinoceros; 宽重紫牢石甲和晶角犀; AMETHYST SEAL PRISON: deep grape purple, near-black plum and glowing magenta runes; heavy angular confinement. Incorporate massive purple runestone blocks, chains, narrow angular cell doors and suspended magenta seal cords; no ordinary gray walls; handmade coloured paper, wood and fabric matching this environment.. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Preserve exact original purple rune armoured paper rhinoceros, layered shell, ivory face and purple crystal horn with magenta tassels. Construct a genuine down facing view: front has centered paired eyes, each profile has only one visible eye and points to its named side, rear hides all facial features. Do not reuse frontal mask on side body. No text or additional subject.
+

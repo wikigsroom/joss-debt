@@ -1,0 +1,23 @@
+{
+  "version": "0.2.1",
+  "status": "local_verified_alpha",
+  "recorded_at": "2026-10-08T21:25:50.362575+00:00",
+  "files": [
+    {
+      "path": "build/windows/IncenseDebt.exe",
+      "sha256": "a831f63db86899c7fe52f55e0390616296600585fcab05cb3bf1ed8eb18a5d12",
+      "bytes": 603893768
+    },
+    {
+      "path": "build/android/IncenseDebt.apk",
+      "sha256": "8e99ffebf6c5b5dbae175d26016d561ed55418e512148bd00f816f9dec838216",
+      "bytes": 522108962
+    }
+  ],
+  "revision_report": "docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json",
+  "android_signing": "debug",
+  "android_physical_device_tested": false,
+  "previous_delivery_manifest": "build/delivery-manifest-0.2.0.baseline.json",
+  "ios_handoff_version": "0.2.0_historical",
+  "public_github_release": "v0.2.0-alpha.1"
+}

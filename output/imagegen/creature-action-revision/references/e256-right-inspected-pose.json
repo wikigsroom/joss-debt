@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e256-primary.png",
+  "source_sha256": "fcd7c2429c8aba0ea217c7c826f909db7bb587e3643fe5f2a641602a65f0314b",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged ivory/wood/blue paper beam guard with rectangular helmet/mask, rope-bound wooden armor, original wooden hammer and blue-flag banner. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "ad4995f27fa91547efccd4a8a8e1fff675212ff9eca27792de8a840eba9fdce0"
+}

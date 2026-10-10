@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b54-primary.png",
+  "source_sha256": "62a56777b0a0b9bb6fa11d0b6d10657cffe6b47d7a988114fe53d14600882c61",
+  "row": 7,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Inspected rear rose-wing paper boss: back of spiked head, folded pink petal dress and ribbed wings face away; no frontal white eye mask.",
+  "guide_sha256": "d40335d0f49d49f0bb8080fe7556aeed2438ba929fe687e61cfa6431f88ed16d"
+}

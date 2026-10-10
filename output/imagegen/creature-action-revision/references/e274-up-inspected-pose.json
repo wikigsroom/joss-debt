@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e274-primary.png",
+  "source_sha256": "cf45edcd2c2d9c2d4e6d8bb1e16843929b48ce0bca2b44111e304c61de612108",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Original TWO-footed red/ivory judge-feather paper bird, layered original red/cream wings, ivory mask, gold square seal on crown and original red bindings. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "7057845616e7e5e4df479d482ab7322f31c5401dcc2a50caeb2c44d49ddcab95"
+}

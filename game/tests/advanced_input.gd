@@ -116,12 +116,12 @@ func run_suite() -> void:
 	var aim_point = (layout.control_center("aim") - layout.safe_rect.position) / layout.safe_rect.size
 	expect(not layout.move_control("dash", aim_point) and before == layout.layout, "overlapping touch capture zones cannot be saved")
 	layout.clear()
-	touch(layout, 1, Vector2(160, 570))
-	touch(layout, 2, Vector2(890, 570))
+	touch(layout, 1, layout.control_center("move"))
+	touch(layout, 2, layout.control_center("aim"))
 	touch(layout, 3, layout.skill_center())
 	var drag = InputEventScreenDrag.new()
 	drag.index = 2
-	drag.position = Vector2(960, 570)
+	drag.position = layout.control_center("aim") + Vector2(layout.control_travel("aim"), 0)
 	layout.event(drag)
 	frame = layout.sample(Vector2.ZERO, Vector2.ZERO)
 	expect(frame.fire and frame.skill and layout.aim_id == 2 and layout.move_id == 1, "edited buttons preserve simultaneous movement, aiming and a third-finger skill")

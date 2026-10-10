@@ -66,11 +66,14 @@ static func copy_code(app) -> void:
 static func paste_sheet(app) -> void:
 	app.screen = "save_paste"
 	sheet(app, "接住另一盏灯的愿", "粘贴整份传递文字。预览不会改变进度，确认后才会换入。")
-	app.panel(app.modal, Rect2(96, 179, 1088, 374), Color("30372f"), Color("635c44"))
+	var button_height = maxf(64, app.mobile_button_height) if app.mobile_ui else 64.0
+	var back_y = 710-button_height if app.mobile_ui else 654.0
+	var action_y = minf(573, back_y-button_height-12) if app.mobile_ui else 573.0
+	app.panel(app.modal, Rect2(96, 179, 1088, action_y-199), Color("30372f"), Color("635c44"))
 	var text = TextEdit.new()
 	text.name = "SaveTransferText"
 	text.position = Vector2(118, 201)
-	text.size = Vector2(1044, 330)
+	text.size = Vector2(1044, action_y-221)
 	text.placeholder_text = "IDEBT2:…"
 	text.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
 	text.add_theme_font_override("font", app.font)
@@ -78,12 +81,12 @@ static func paste_sheet(app) -> void:
 	text.add_theme_color_override("font_color", app.PAPER)
 	text.add_theme_color_override("background_color", app.INK)
 	app.modal.add_child(text)
-	app.button(app.modal, "从剪贴板粘贴", Rect2(96, 573, 326, 64), func():
+	app.button(app.modal, "从剪贴板粘贴", Rect2(96, action_y, 326, button_height), func():
 		var value = DisplayServer.clipboard_get()
 		if value.length() > Transfer.MAX_BYTES: app.notice("文字过长，请使用完整愿簿文件。")
 		else: text.text = value)
-	app.button(app.modal, "预览愿簿", Rect2(786, 573, 398, 64), func(): inspect(app, Transfer.inspect_code(text.text)), true)
-	app.icon_button(app.modal, "返回 · 愿簿传递", "arrow-left", Rect2(96, 654, 1088, 64 if app.mobile_ui else 44), func(): show(app), false, "返回")
+	app.button(app.modal, "预览愿簿", Rect2(786, action_y, 398, button_height), func(): inspect(app, Transfer.inspect_code(text.text)), true)
+	app.icon_button(app.modal, "返回 · 愿簿传递", "arrow-left", Rect2(96, back_y, 1088, button_height if app.mobile_ui else 44), func(): show(app), false, "返回")
 	text.grab_focus()
 
 static func inspect(app, result: Dictionary) -> void:

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e67-primary.png",
+  "source_sha256": "6071d06f2c67346eb6c26d960a95b47b3e1deb553eb2289715489a397988be04",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Lantern spider right-facing neutral attack pose retains roof and glowing lantern legs; right hurt row contains joined drawings and must be redrawn.",
+  "guide_sha256": "68c98be21aff09b845107de7efefaa4621b1139787e14ed914402c9206d01bdc"
+}

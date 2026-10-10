@@ -43,6 +43,13 @@ def main():
         entry = next(a for a in json.loads((path.parent / "manifest.json").read_text("utf8"))["assets"] if a["file"] == path.relative_to(ROOT).as_posix())
         records.append({"file": "res://" + path.relative_to(ROOT / "game").as_posix(), "kind": "audio", "format": "ogg_vorbis",
                         "sample_rate": rate, "duration": entry["duration"]})
+    playlist = json.loads((ROOT / "game/data/music_playlist.json").read_text("utf8"))
+    for track in playlist["tracks"]:
+        path = ROOT / "game" / track["path"].removeprefix("res://")
+        header = path.read_bytes()[:512]
+        offset = header.find(b"\x01vorbis")
+        if offset < 0: raise ValueError("Invalid playlist Vorbis stream: " + str(path))
+        records.append({"file": track["path"], "kind": "audio", "format": "ogg_vorbis", "sample_rate": struct.unpack_from("<I", header, offset + 12)[0], "duration": track["duration"], "source": "user_selected_yourset", "loop": False})
     (ROOT / "game/data/runtime_assets.json").write_text(json.dumps({"assets": records}, ensure_ascii=False, indent=2) + "\n", "utf8")
     print(f"Registered {len(records)} actual runtime assets.")
 

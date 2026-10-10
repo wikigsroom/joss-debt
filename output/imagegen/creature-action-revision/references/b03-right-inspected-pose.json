@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b03-secondary.png",
+  "source_sha256": "71c6d53129846e6ba1ff6f2a89c24f14925011a3ab807f459c8a4c15c8406ebb",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Correct right ritual statue reference from inspected bank; primary side attack palms aim opposite labelled direction and rear hurt exposes front mask, so those sequences need full redraw.",
+  "guide_sha256": "aa5293768262ff43ebf12aee691c8d461e39931794d324449f44ae29a49c4770"
+}

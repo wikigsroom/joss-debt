@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e218-primary.png",
+  "source_sha256": "919d5db2ae3ac1fdc3a787e59e202cb6d780ac299c6515dc1e511d30a869de2a",
+  "row": 2,
+  "column": 2,
+  "declared_direction": "left",
+  "visual_finding": "Original TWO-legged stocky blue/ivory mirror-box badger, striped skull muzzle, mirror breastplate, gold chain clasps and mirror shoulder pads. Actual complete source pose inspected; whole-body left camera accepted as generation guide only.",
+  "guide_sha256": "26cac6552ae0736f6b5e82d44a1003d644f873c740b86ac522772319c84712ca"
+}

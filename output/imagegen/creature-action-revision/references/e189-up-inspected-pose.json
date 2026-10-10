@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e189-primary.png",
+  "source_sha256": "599b893188d4e60d6222b834a479ba2e70f67a482825e225c87b0454a7aa4f99",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear clockwork mouse; front mask must stay hidden during hurt.",
+  "guide_sha256": "623efe50166e8952a98c889c9fcee3f0baddd1dd8eaa622687221a9abb68ff2a"
+}

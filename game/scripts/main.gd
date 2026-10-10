@@ -92,7 +92,8 @@ var energy_bar: ProgressBar
 var notice_label: Label
 var notice_left = 0.0
 const DEFAULT_SETTINGS = {"muted": false, "touch": false, "mirror": false, "reduce_motion": false, "master_volume": .8, "music_volume": .7, "effects_volume": .8,
-	"bindings": {}, "touch_layout": {}, "deadzone": .18, "fixed_sticks": false, "fire_toggle": false, "control_scale": 1.0, "control_opacity": 1.0,
+	"music_mode": "random",
+	"bindings": {}, "touch_layout": {}, "touch_sizes": {}, "deadzone": .18, "fixed_sticks": false, "fire_toggle": false, "control_scale": 1.0, "control_opacity": 1.0,
 	"aim_mode": "light", "haptics": true, "damage_numbers": true, "shake_scale": 1.0, "hitstop": true, "flash_scale": 1.0, "particle_scale": 1.0, "performance_mode": "auto", "shape_cues": false, "combat_text_scale": 1.0,
 	"story_text_scale": 1.0, "pickup_radius_scale": 1.0}
 var settings = DEFAULT_SETTINGS.duplicate(true)
@@ -114,6 +115,8 @@ var selected_weapon = ""
 var mobile_ui = false
 var mobile_button_height = 80.0
 var mobile_choice = 0
+var mobile_interface_origin = Vector2.ZERO
+var mobile_keyboard_button: Button
 var story = Story.new()
 var story_filter = ""
 var npc_line_index = 0
@@ -149,6 +152,9 @@ func _ready() -> void:
 	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
+	if mobile_ui:
+		get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
+		if OS.get_name() in ["Android", "iOS"]: DisplayServer.screen_set_orientation(DisplayServer.SCREEN_SENSOR_LANDSCAPE)
 	if qa_active:
 		qa_directory = ProjectSettings.globalize_path("res://../docs/incense-debt/reports/runtime")
 		for argument in OS.get_cmdline_user_args():
@@ -200,7 +206,8 @@ func _ready() -> void:
 	interface.theme = theme
 	hud = Control.new()
 	hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	interface.add_child(hud)
+	hud.theme = theme
+	layer.add_child(hud)
 	modal = Control.new()
 	modal.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	interface.add_child(modal)
@@ -234,21 +241,65 @@ func _ready() -> void:
 		fixture.directory = qa_directory
 		add_child(fixture)
 
-func apply_safe_area() -> void:
+func apply_safe_area(density_for_qa: float = 0) -> void:
 	if not mobile_ui: return
+	var viewport_rect = Rect2(Vector2.ZERO, get_viewport().get_visible_rect().size)
 	var raw = DisplayServer.get_display_safe_area()
 	var inverse = get_viewport().get_screen_transform().affine_inverse()
 	var safe = Rect2(inverse * Vector2(raw.position), Vector2.ZERO)
 	safe.size = inverse * Vector2(raw.end) - safe.position
-	safe = safe.intersection(Rect2(0, 0, 1280, 720))
-	if safe.size.x < 800 or safe.size.y < 400: safe = Rect2(0, 0, 1280, 720)
+	safe = safe.intersection(viewport_rect)
+	if safe.size.x < 600 or safe.size.y < 350: safe = viewport_rect
 	adapter.safe_rect = safe.grow(-6)
 	var scale_value = minf(safe.size.x / 1280, safe.size.y / 720)
 	interface.scale = Vector2.ONE * scale_value
 	interface.position = safe.position + (safe.size - Vector2(1280, 720) * scale_value) * .5
+	mobile_interface_origin = interface.position
 	var pixel_scale = get_viewport().get_screen_transform().x.length() * scale_value
-	mobile_button_height = clampf(48.0 * maxf(160, DisplayServer.screen_get_dpi()) / 160 / maxf(.5, pixel_scale), 64, 90)
-	adapter.minimum_action_radius = mobile_button_height * .5
+	var dpi = maxf(160, density_for_qa if qa_active and density_for_qa > 0 else DisplayServer.screen_get_dpi())
+	var dp_scale = dpi / 160.0 / maxf(.1, get_viewport().get_screen_transform().x.length())
+	mobile_button_height = maxf(64, 48.0 * dpi / 160.0 / maxf(.1, pixel_scale))
+	adapter.minimum_action_radius = maxf(40, 24 * dp_scale)
+	adapter.minimum_stick_radius = maxf(48, 44 * dp_scale)
+	adapter.control_gap = maxf(8, 8 * dp_scale)
+	hud.position = safe.position
+	hud.size = safe.size
+	renderer.fit_surface(safe)
+	if not adapter.valid_layout(): adapter.reset_layout("tablet" if safe.size.x / safe.size.y < 1.6 else "phone")
+
+func hide_mobile_keyboard() -> void:
+	if not mobile_ui: return
+	if DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD):
+		DisplayServer.virtual_keyboard_hide()
+	var owner = get_viewport().gui_get_focus_owner()
+	if owner is LineEdit or owner is TextEdit: owner.release_focus()
+	if interface != null: interface.position = mobile_interface_origin
+	if is_instance_valid(mobile_keyboard_button): mobile_keyboard_button.visible = false
+
+func update_mobile_keyboard(height_for_qa: float = -1) -> void:
+	if not mobile_ui or interface == null: return
+	interface.position = mobile_interface_origin
+	var pixels = height_for_qa if qa_active and height_for_qa >= 0 else (float(DisplayServer.virtual_keyboard_get_height()) if DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD) else 0.0)
+	var owner = get_viewport().gui_get_focus_owner()
+	var editing = pixels > 0 and (owner is LineEdit or owner is TextEdit) and interface.is_ancestor_of(owner)
+	if is_instance_valid(mobile_keyboard_button): mobile_keyboard_button.visible = editing
+	if not editing: return
+	var safe = adapter.safe_rect
+	var visible_bottom = minf(safe.end.y, get_viewport().get_visible_rect().size.y - pixels / get_viewport().get_screen_transform().y.length())
+	var rect = owner.get_global_rect()
+	interface.position.y -= maxf(0, rect.end.y - visible_bottom + 20)
+	if not is_instance_valid(mobile_keyboard_button):
+		var layer = CanvasLayer.new()
+		layer.layer = 9
+		add_child(layer)
+		var control = Control.new()
+		control.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		layer.add_child(control)
+		mobile_keyboard_button = icon_button(control, "收起键盘", "chevron-down", Rect2(0,0,80,80), hide_mobile_keyboard)
+	var diameter = maxf(64, adapter.minimum_action_radius * 2)
+	mobile_keyboard_button.size = Vector2.ONE * diameter
+	mobile_keyboard_button.position = Vector2(safe.end.x - diameter - 12, maxf(safe.position.y + 8, visible_bottom - diameter - 8))
+	mobile_keyboard_button.visible = true
 
 func update_orientation() -> void:
 	if not mobile_ui: return
@@ -328,6 +379,7 @@ func reading_text(parent: Control, lines: Array, rect: Rect2, base_size: int = 2
 	return reader
 
 func button(parent: Control, text: String, rect: Rect2, callback: Callable, primary: bool = false) -> Button:
+	if mobile_ui: rect.size = rect.size.max(Vector2.ONE * mobile_button_height)
 	var result = preload("res://scripts/ui/rounded_button.gd").new()
 	result.position = rect.position
 	result.size = rect.size
@@ -337,6 +389,7 @@ func button(parent: Control, text: String, rect: Rect2, callback: Callable, prim
 	result.tooltip_text = text
 	UI.button_styles(result, primary, mini(24, roundi(rect.size.y * .5)))
 	result.pressed.connect(func():
+		hide_mobile_keyboard()
 		if audio != null: audio.play("menu")
 		callback.call())
 	result.mouse_entered.connect(func():
@@ -368,6 +421,7 @@ func icon_button(parent: Control, semantic: String, key: String, rect: Rect2, ca
 	return result
 
 func clear_modal() -> void:
+	if paused and world != null: world.clear_touch_charge()
 	keyboard.before_rebuild(self)
 	modal.remove_meta("navigation_page")
 	haptics.stop()
@@ -594,12 +648,12 @@ func show_tutorial() -> void:
 	panel(modal, Rect2(170, 149, 940, 423), Color("2d3029"))
 	label(modal, "先留余烬，再一起焚账。", Rect2(211, 180, 850, 65), 34)
 	var tips = [["01  留烬", "连续命中会留下最多三枚余烬。\n靠近的敌人会被红色债线连接。"],
-		["02  焚账", "右键 / Q 使余烬同时爆发。\n纸童杀敌会返香；铃师更擅长连线。"],
-		["03  回灰", "自然掉落的香灰会补回香火。\n尖头青弹是危险；空格用身法穿过去。"]]
+		["02  焚账", "点焚债图标，使余烬一起爆发。\n右杆推动瞄准并连续攻击。" if mobile_ui else "右键 / Q 使余烬同时爆发。\n纸童杀敌会返香；铃师更擅长连线。"],
+		["03  回灰", "左杆移动，旁边的身法键闪避。\n点顶部地图看行路；走进门切房。" if mobile_ui else "自然掉落的香灰会补回香火。\n尖头青弹是危险；空格用身法穿过去。"]]
 	for i in tips.size():
 		label(modal, tips[i][0], Rect2(211 + i * 288, 266, 255, 40), 25, GOLD)
 		label(modal, tips[i][1], Rect2(211 + i * 288, 319, 255, 124), 19)
-	button(modal, "记住了 · 点灯", Rect2(720, 487, 338, 50), resume_game, true)
+	button(modal, "记住了 · 点灯", Rect2(720, 473, 338, mobile_button_height if mobile_ui else 50), resume_game, true)
 
 func build_hud() -> void:
 	var graphics = GameHud.new()
@@ -611,6 +665,9 @@ func build_hud() -> void:
 	book.set_meta("hud_action", "inventory")
 	var pause = icon_button(hud, "暂停", "pause", Rect2(1200, 20, 56, 56), func(): show_pause())
 	pause.set_meta("hud_action", "pause")
+	if mobile_ui:
+		var map = icon_button(hud, "地图", "map", Rect2(1064, 20, 56, 56), func(): RouteMap.show_sheet(self))
+		map.set_meta("hud_action", "map")
 	var notice_box = panel(interface, Rect2(352, 640, 576, 56), Color(UI.INSET, .97), Color.TRANSPARENT)
 	notice_box.z_index = 25
 	notice_box.visible = false
@@ -631,7 +688,8 @@ func update_hud() -> void:
 	for child in hud.get_children():
 		if child is Button and child.has_meta("hud_action"):
 			child.size = Vector2.ONE * nav_size
-			child.position = Vector2(1280 - 24 - nav_size - (nav_size + 12 if child.get_meta("hud_action") == "inventory" else 0), 20)
+			var slot = {"pause": 0, "inventory": 1, "map": 2}.get(child.get_meta("hud_action"), 0)
+			child.position = Vector2((hud.size.x if mobile_ui else 1280) - 24 - nav_size - (nav_size + 12) * slot, 20)
 
 func _physics_process(delta: float) -> void:
 	if qa_capture_enabled:
@@ -639,10 +697,22 @@ func _physics_process(delta: float) -> void:
 	update_orientation()
 	if not paused and screen == "game":
 		if world.run.get("training", false): world.player.energy = 100.0
+		adapter.set_phase(world.mode, not world.Equipment.active_row(world).is_empty())
 		var frame = adapter.sample(renderer.to_world(get_viewport().get_mouse_position()), world.player.pos)
 		if adapter.last_device in ["touch", "controller"]:
-			var radius = float(world.db.row("weapons", world.player.weapon).range)
-			frame.aim = aim_assist.apply(frame.aim, world.player.pos, world.enemies, world.geometry, world.time, str(settings.aim_mode), radius, world.room_key())
+			var weapon = world.db.row("weapons", world.player.weapon)
+			var radius = float(weapon.range)
+			var assist_mode = str(settings.aim_mode)
+			if frame.get("manual_aim", false) and assist_mode == "auto": assist_mode = "light"
+			if str(weapon.mode) == "controlled": assist_mode = "off"
+			frame.aim = aim_assist.apply(frame.aim, world.player.pos, world.enemies, world.geometry, world.time, assist_mode, radius, world.room_key(), str(weapon.mode))
+		if frame.skill and adapter.last_device == "touch":
+			if world.player.skill_cd > 0: notice("焚债还在冷却。")
+			elif world.player.energy < world.skill_cost(): notice("香火不足。")
+			elif world.db.row("skills", world.player.skill).requires_marked_target and world.skill_targets().is_empty(): notice("先攻击敌人，留下余烬。")
+		if frame.active_item and adapter.last_device == "touch":
+			var item = world.Equipment.active_row(world)
+			if not item.is_empty() and world.run.active_item.charge < item.charge_rooms: notice("道具尚未充满。")
 		if world.mode == "clear" and frame.interact and world.nearby_pickup().is_empty() and not world.run.get("training", false):
 			if not world.try_enter_secret(): RouteMap.show_sheet(self)
 		else:
@@ -657,6 +727,7 @@ func _physics_process(delta: float) -> void:
 	update_hud()
 
 func _process(delta: float) -> void:
+	update_mobile_keyboard()
 	keyboard.update(self)
 	notice_left = maxf(0, notice_left - delta)
 	if quality != null and quality.sample(delta, screen == "game" and not paused):
@@ -699,8 +770,11 @@ func flush_events() -> void:
 				notice("这页账没能存下，请稍后再试。")
 
 func sync_game_modal() -> void:
+	adapter.set_phase(world.mode, not world.Equipment.active_row(world).is_empty())
 	# Ground prompts must not cancel held aim, firing, or a touch movement gesture.
-	if world.mode not in ["combat", "clear"]: adapter.clear()
+	if world.mode not in ["combat", "clear"]:
+		adapter.clear()
+		world.clear_touch_charge()
 	haptics.stop()
 	clear_modal()
 	hud.visible = true
@@ -771,6 +845,7 @@ func show_settings() -> void:
 	Modern.settings(self)
 
 func apply_control_settings() -> void:
+	if audio != null: audio.set_music_mode(str(settings.music_mode))
 	quality.set_mode(str(settings.get("performance_mode", "auto")), mobile_ui)
 	adapter.touch_mode = settings.touch
 	adapter.mirror = settings.mirror
@@ -800,6 +875,7 @@ func apply_runtime_quality() -> void:
 func persist_settings() -> bool:
 	settings.bindings = adapter.profile.bindings.duplicate(true)
 	settings.touch_layout = adapter.layout.duplicate(true)
+	settings.touch_sizes = adapter.control_sizes.duplicate(true)
 	settings.control_scale = adapter.control_scale
 	settings.control_opacity = adapter.control_opacity
 	var previous = progress.data.settings.duplicate(true)
@@ -816,6 +892,11 @@ func back_to_settings() -> void:
 	show_settings()
 
 func _input(event_value: InputEvent) -> void:
+	if event_value is InputEventScreenTouch and (not event_value.pressed or event_value.canceled): adapter.event(event_value)
+	if event_value is InputEventScreenDrag and screen == "game" and not paused and adapter.fingers.has(event_value.index):
+		adapter.event(event_value)
+		get_viewport().set_input_as_handled()
+		return
 	if orientation.blocked:
 		get_viewport().set_input_as_handled()
 		return
@@ -842,31 +923,36 @@ func show_audio_settings() -> void:
 	screen = "audio_settings"
 	clear_modal()
 	dim(.93)
-	var sheet = panel(modal, Rect2(260, 106, 760, 508), UI.INSET, Color.TRANSPARENT)
+	var sheet = panel(modal, Rect2(260, 35 if mobile_ui else 45, 760, 650 if mobile_ui else 620), UI.INSET, Color.TRANSPARENT)
 	label(sheet, "声音", Rect2(36, 27, 603, 65), 38)
 	var entries = [["音量", "master_volume", "volume-2"], ["音乐", "music_volume", "music"], ["音效", "effects_volume", "sparkles"]]
 	for i in entries.size():
 		var entry = entries[i]
-		icon(sheet, entry[2], Rect2(38, 147 + i * 86, 28, 28), UI.JADE)
-		label(sheet, entry[0], Rect2(86, 141 + i * 86, 122, 44), 23)
+		icon(sheet, entry[2], Rect2(38, 147 + i * 108, 28, 28), UI.JADE)
+		label(sheet, entry[0], Rect2(86, 141 + i * 108, 122, 44), 23)
 		var slider = HSlider.new()
 		slider.set_meta("nav_id", str(entry[1]))
 		slider.set_meta("nav_default", i == 0)
-		slider.position = Vector2(237, 130 + i * 86)
-		slider.size = Vector2(365, 64)
+		slider.position = Vector2(237, 130 + i * 108)
+		slider.size = Vector2(365, maxf(64, mobile_button_height) if mobile_ui else 64)
 		slider.accessibility_name = entry[0]
 		slider.min_value = 0
 		slider.max_value = 1
 		slider.step = .05
 		slider.value = settings[entry[1]]
-		var value_label = label(sheet, "%d%%" % roundi(slider.value * 100), Rect2(631, 141 + i * 86, 91, 43), 21, UI.MUTED)
+		var value_label = label(sheet, "%d%%" % roundi(slider.value * 100), Rect2(631, 141 + i * 108, 91, 43), 21, UI.MUTED)
 		slider.value_changed.connect(func(value):
 			settings[entry[1]] = value
 			audio.set_levels(settings.master_volume, settings.music_volume, settings.effects_volume))
 		slider.value_changed.connect(func(value): value_label.text = "%d%%" % roundi(value * 100))
 		slider.drag_ended.connect(func(_changed): persist_settings())
 		sheet.add_child(slider)
-	icon_button(sheet, "收起 · 灯下设置", "arrow-left", Rect2(36, 403, 688, mobile_button_height if mobile_ui else 64), back_to_settings, false, "返回")
+	button(sheet, "曲库随机" if settings.music_mode == "random" else "原主题音乐", Rect2(36, 450, 688, mobile_button_height if mobile_ui else 60), func():
+		settings.music_mode = "score" if settings.music_mode == "random" else "random"
+		audio.set_music_mode(settings.music_mode)
+		persist_settings()
+		show_audio_settings())
+	icon_button(sheet, "收起 · 灯下设置", "arrow-left", Rect2(36, 554, 688, mobile_button_height if mobile_ui else 60), back_to_settings, false, "返回")
 
 func show_inventory(page: String = "relics", selected_id: String = "") -> void:
 	Modern.inventory(self, page, selected_id)
@@ -1094,12 +1180,49 @@ func show_replacement() -> void:
 		var id = ids[i]
 		var x = 76 + (i % 4) * 287
 		var y = 216 + int(i / 4) * 125
-		var item = button(modal, "", Rect2(x, y, 269, 110), func(): world.replace_relic(id); flush_events(); ui_signature = "")
+		var item = button(modal, "", Rect2(x, y, 269, 110), func():
+			if mobile_ui: show_replacement_confirmation(id)
+			else: world.replace_relic(id); flush_events(); ui_signature = "")
 		item.set_meta("nav_id", "replace_" + str(id))
 		item.accessibility_name = "换出" + world.db.name_of("relics", id)
 		add_art(item, "res://assets/relics/" + id + ".png", Rect2(9, 11, 82, 82))
 		label(item, "%s\n×%d" % [world.db.name_of("relics", id), world.stack(id)], Rect2(103, 22, 151, 73), 18)
-	button(modal, "留着旧愿 · 取消", Rect2(860, 623, 334, 48), func(): world.replace_relic(); flush_events(); ui_signature = "", true)
+	button(modal, "留着旧愿 · 取消", Rect2(860, 604 if mobile_ui else 623, 334, mobile_button_height if mobile_ui else 48), func(): world.replace_relic(); flush_events(); ui_signature = "", true)
+
+func return_to_replacement() -> void:
+	screen = "game"
+	paused = false
+	adapter.clear()
+	ui_signature = ""
+	clear_modal()
+	sync_game_modal()
+
+func show_replacement_confirmation(old_id: String) -> void:
+	if world.mode != "replace" or not world.run.relics.has(old_id): return
+	paused = true
+	screen = "replacement_confirm"
+	adapter.clear()
+	clear_modal()
+	dim(.88)
+	var pending = world.run.replacement.choice
+	var incoming = world.db.row("debt_contracts", pending.id).reward if pending.kind == "contract" else pending.id
+	var sheet = panel(modal, Rect2(140, 94, 1000, 544), UI.SURFACE)
+	label(sheet, "换出旧愿", Rect2(26, 15, 948, 54), 32)
+	for i in 2:
+		var id = old_id if i == 0 else incoming
+		var row = world.db.row("relics", id)
+		var card = panel(sheet, Rect2(26 + i * 490, 82, 458, 310), UI.INSET)
+		card.set_meta("replacement_preview", id)
+		add_art(card, "res://assets/relics/" + id + ".png", Rect2(18, 18, 86, 86))
+		label(card, row.name, Rect2(120, 18, 316, 68), 26)
+		label(card, "换出 ×%d" % world.stack(id) if i == 0 else "获得", Rect2(120, 84, 316, 40), 20, GOLD if i == 0 else UI.JADE)
+		reading_text(card, [str(row.get("behavior", ""))], Rect2(18, 139, 422, 145))
+	button(sheet, "返回选择", Rect2(26, 432, 458, mobile_button_height), return_to_replacement)
+	var confirm = button(sheet, "确认替换", Rect2(516, 432, 458, mobile_button_height), func():
+		if world.replace_relic(old_id):
+			flush_events()
+			return_to_replacement(), true)
+	confirm.set_meta("replacement_confirm", old_id)
 
 func notice(text: String) -> void:
 	notice_label.text = text
@@ -1155,6 +1278,13 @@ func on_focus_lost() -> void:
 
 func go_back() -> void:
 	if orientation.blocked: return
+	if mobile_ui and DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD) and DisplayServer.virtual_keyboard_get_height() > 0:
+		hide_mobile_keyboard()
+		return
+	if screen == "touch_trial":
+		for child in get_children():
+			if child.has_meta("touch_trial"): child.finish(); return
+	if screen == "replacement_confirm": return_to_replacement(); return
 	if screen == "seed_input": show_menu("characters"); return
 	if screen == "cinematic": show_pause(); return
 	if shop_trial.active() and screen in ["game", "pause"]:
@@ -1166,6 +1296,7 @@ func go_back() -> void:
 		else: show_hub("training")
 		return
 	if screen in ["controls", "assistance", "touch_layout", "audio_settings", "credits"]:
+		if screen == "touch_layout": persist_settings()
 		back_to_settings()
 		return
 	if screen in ["save_preview", "save_paste"]:

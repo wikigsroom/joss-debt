@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b62-primary.png",
+  "source_sha256": "83b75678697f2bfbaa9731f146047e03b3abf93323761bc767899b67c59ca363",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected genuine right furnace-crab profile: glowing side opening and leading claw point right, chimney above overlapping armor, rear ribbons on left.",
+  "guide_sha256": "ac832cd6f745523a91b4379a5bd9c1cab6eb78a2b207e943a1e23f6b6dcfcaf2"
+}

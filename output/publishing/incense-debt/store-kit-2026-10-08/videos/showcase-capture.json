@@ -1,0 +1,340 @@
+{
+  "final_health": 6,
+  "final_stats": {
+    "active_uses": 1,
+    "ash_energy": 0,
+    "damage_taken": 0,
+    "detonations": 2,
+    "dodges": 0,
+    "elapsed": {
+      "__float64": "e6ffffffffff1f40"
+    },
+    "equipment_swaps": 0,
+    "hits": 10,
+    "kills": 0,
+    "max_chain": 0,
+    "max_proc_events": 5,
+    "rare_drops": 0,
+    "secondary_hits": 10,
+    "shots": 10
+  },
+  "fps": 30,
+  "frames_driven": 1200,
+  "initial_player": {
+    "aim": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "armor": 0,
+    "attack_bonus": 0,
+    "attack_bonus_until": 0,
+    "buffer_dash": 0,
+    "buffer_skill": 0,
+    "charge": 0,
+    "dash_cd": 0,
+    "dash_dir": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "dash_left": 0,
+    "dash_start": {
+      "__vector2": [
+        640.0,
+        585.0
+      ]
+    },
+    "energy": 40,
+    "facing_direction": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "guard": 0,
+    "guard_count": 0,
+    "hp": 6,
+    "invulnerable": {
+      "__float64": "9a9999999999e93f"
+    },
+    "item_buffs": {},
+    "item_cd": 0,
+    "last_shot_direction": {
+      "__vector2": [
+        0.0,
+        -1.0
+      ]
+    },
+    "max_hp": 6,
+    "move": {
+      "__vector2": [
+        0.0,
+        0.0
+      ]
+    },
+    "moved_distance": 0,
+    "passive_cd": 0,
+    "passive_hits": 0,
+    "pos": {
+      "__vector2": [
+        640.0,
+        628.361083984375
+      ]
+    },
+    "shot_cd": 0,
+    "skill": "s01",
+    "skill_cd": 0,
+    "still": 0,
+    "weapon": "w01"
+  },
+  "leading_frames": 1,
+  "method": "Action-bot control of native game simulation; native MovieWriter with game BGM/SFX; isolated capture profile",
+  "requested_seconds": 40,
+  "restarts": 0,
+  "scenario": "showcase",
+  "screenshots": [
+    {
+      "filename": "sample-000.png",
+      "health": 6,
+      "mode": "combat",
+      "movie_time": 0,
+      "shots": 0
+    },
+    {
+      "filename": "sample-010.png",
+      "health": 5,
+      "mode": "combat",
+      "movie_time": 10,
+      "shots": 9
+    },
+    {
+      "filename": "sample-020.png",
+      "health": 6,
+      "mode": "combat",
+      "movie_time": 20,
+      "shots": 4
+    },
+    {
+      "filename": "sample-030.png",
+      "health": 5,
+      "mode": "combat",
+      "movie_time": 30,
+      "shots": 19
+    }
+  ],
+  "segments": [
+    {
+      "character": "c_paper",
+      "duration": 8,
+      "prepared_relics": {
+        "r01": 1,
+        "r09": 1
+      },
+      "start": 0,
+      "theme": "m01",
+      "weapon": "w01"
+    },
+    {
+      "character": "c_bell",
+      "duration": 8,
+      "prepared_relics": {
+        "r09": 1
+      },
+      "start": 8,
+      "theme": "m06",
+      "weapon": "w02"
+    },
+    {
+      "character": "c_paper",
+      "duration": 8,
+      "prepared_relics": {
+        "r55": 1,
+        "r57": 1,
+        "r58": 1
+      },
+      "start": 16,
+      "theme": "m03",
+      "weapon": "w14"
+    },
+    {
+      "character": "c_umbrella",
+      "duration": 8,
+      "prepared_relics": {
+        "r17": 1,
+        "r33": 1
+      },
+      "start": 24,
+      "theme": "m02",
+      "weapon": "w05"
+    },
+    {
+      "character": "c_paper",
+      "duration": 8,
+      "prepared_relics": {
+        "r09": 1,
+        "r26": 1,
+        "r55": 1
+      },
+      "start": 32,
+      "theme": "m19",
+      "weapon": "w08"
+    }
+  ],
+  "simulation_hz": 60,
+  "source": "published executable embedded game resources",
+  "transitions": [],
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+  "harness": "tools/documentation/capture_store_media.gd",
+  "renderer_source": "game/scripts/ui/game_renderer.gd",
+  "renderer_sha256": "ee1095438e9a3339e830d9fd1532a4f065919a56fcf8478bdb7dedb71302a8fd",
+  "presentation_fix": "Skip disappeared/dead debt-chain anchors in current source renderer; no simulation, stats, loot or RNG change",
+  "capture_size": [
+    1920,
+    1080
+  ],
+  "raw_capture": ".local-tools/store-publishing-capture/showcase/native.avi",
+  "source_duration": 40.1,
+  "trim_start": 0.03333333333333333,
+  "final_video": "sources/native-showcase-40s.mp4",
+  "final_media": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 614400,
+        "duration": "40.000000",
+        "bit_rate": "5679736",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1200",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1920000,
+        "duration": "40.000000",
+        "bit_rate": "190981",
+        "nb_frames": "1876",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "E:\\dev\\vibe-game\\以撒类\\output\\publishing\\incense-debt\\store-kit-2026-10-08\\videos\\native-showcase-40s.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "40.000000",
+      "size": "29399537",
+      "bit_rate": "5879907",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.12.100"
+      }
+    }
+  }
+}

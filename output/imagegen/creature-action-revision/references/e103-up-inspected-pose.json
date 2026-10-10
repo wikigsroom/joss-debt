@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e103-primary.png",
+  "source_sha256": "74130666068c5c7b24975f6c4c0ca16572637b9edab96222391dd61df1e51b43",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Correct leaf spider back without ivory face; rear hurt middle frame wrongly exposes front face and needs redraw.",
+  "guide_sha256": "0b7f79a4759e51c42272537ae9dcbc6f2934c50157c6ccb776ddd90945ae8211"
+}

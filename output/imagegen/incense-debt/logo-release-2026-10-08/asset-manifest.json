@@ -1,0 +1,514 @@
+{
+  "outputs": [
+    {
+      "path": "01-paper-spirit-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 512811,
+      "sha256": "b159091defc3ae54ae716b976b934cf7369770e0a16f75c1466dfaee17f9976d"
+    },
+    {
+      "path": "01-paper-spirit-app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "bytes": 16838,
+      "sha256": "d3591ccdd5d1d49f83958631a3d9d46b7154e33ba53b49bf36099db29b42732c"
+    },
+    {
+      "path": "01-paper-spirit-app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 52219,
+      "sha256": "0451b62fa645064fc91c4e2e501cde74e1fa6039f2bdf14aa625b0056f40901c"
+    },
+    {
+      "path": "01-paper-spirit-app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "bytes": 1935,
+      "sha256": "6bf7e17577c0c0a0f829b27626f103e4fe6a1fede82da3dc391a946bf82430a6"
+    },
+    {
+      "path": "01-paper-spirit-app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "bytes": 3507,
+      "sha256": "92d9a5c9634a918145c003293d12de9cc45e90176b73276b66d8f026fba5f149"
+    },
+    {
+      "path": "01-paper-spirit-app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "bytes": 5530,
+      "sha256": "3a651b0b15a580b16081e4ba04d0815599c7b584db4043b7135d905d1365530f"
+    },
+    {
+      "path": "01-paper-spirit-brand-board.png",
+      "dimensions": [
+        1800,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 367608,
+      "sha256": "02d36c7929ea7a263ce6341f8f8a28ad6463c9b8cdf7532877c1ce5062d588cc"
+    },
+    {
+      "path": "01-paper-spirit-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 1191546,
+      "sha256": "e8aac67a563d968140fd6b27311014a8461b294eef862df90b7b74ae5e17b78c"
+    },
+    {
+      "path": "01-paper-spirit-lockup.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "bytes": 486069,
+      "sha256": "06b81bd74a2fe8697978a5b47552a6e04b32977e95e642b2d0439ece2ae65771"
+    },
+    {
+      "path": "01-paper-spirit-symbol.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 582536,
+      "sha256": "5eec4a780fe3903a9fd1419485a1f2e44fb2fb9e5882bc8158bba8ea28b51a8d"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 573312,
+      "sha256": "c41666610ff60d6c9ba566811b5ab47c229cce85675c11f4dd22137e04da0598"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "bytes": 18393,
+      "sha256": "d860799aa58979ed0e368329391585ff9815dbecf2c6266456fb24d06ac761b5"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 57972,
+      "sha256": "f9cc7512f8144b1f38dbf5f9c0db2ee6dc5f27fbc2423d2dbf891a286134aa68"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "bytes": 2466,
+      "sha256": "47d2e1f9c9292e026d1ed01b36ce8e9dc0b78482d48e0088bcc410cde02567f6"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "bytes": 4404,
+      "sha256": "eeb0c2bf56df9f048980afe9eaf61baf6ff29d8226162d97b0065040522851b3"
+    },
+    {
+      "path": "02-vermilion-seal-app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "bytes": 6600,
+      "sha256": "4c29abcb4112b485668cb9a908efdabfe6836fc974fff11124af2a8fceb9d445"
+    },
+    {
+      "path": "02-vermilion-seal-brand-board.png",
+      "dimensions": [
+        1800,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 397905,
+      "sha256": "ce36f692f43baabfbc702314014b3ad0d0d29a42e428109dff747c66da12b479"
+    },
+    {
+      "path": "02-vermilion-seal-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 1040949,
+      "sha256": "e18e215e930b6416ac6417a583fc35a9506aded3105c303e9b7a2137a37ccffa"
+    },
+    {
+      "path": "02-vermilion-seal-lockup.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "bytes": 545071,
+      "sha256": "1f6751acadeb7787b649e1b0ee75bbf36093bf370561f57069f8ed6cd5051322"
+    },
+    {
+      "path": "02-vermilion-seal-symbol.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 661947,
+      "sha256": "60e1344289448304394ea3b5d6a836555fb5ab989f52c7954ad5e187ec224f90"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 611407,
+      "sha256": "1492e404e1565147502385386dddf49a798999e216a4533d8b89fda7fe163d2a"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "bytes": 16057,
+      "sha256": "7dcee107baf7f2e71254e395ead3ea28fb5fd161e4a5bb77ec0481ee4fb145eb"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 51561,
+      "sha256": "2edb2fa18aa17de8f23764635d6b6b6fd119bf3bd8a7a7671b795b6c9f81c92d"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "bytes": 1760,
+      "sha256": "0d5c28b77da4c24baed73f341ce322a1fbf1a47218a9ddc414ec6c953b9edb60"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "bytes": 3301,
+      "sha256": "87a5b83ad7489cd207e110d6c0befec4a837cafa0a46b86547c5610f935ace15"
+    },
+    {
+      "path": "03-bronze-burner-app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "bytes": 5140,
+      "sha256": "283508a2fd04efb40d5ec07abca83718071fdaa01be4dd4d7e5a90fcce166cdc"
+    },
+    {
+      "path": "03-bronze-burner-brand-board.png",
+      "dimensions": [
+        1800,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 361621,
+      "sha256": "6d0d6938b3f5164605274e3cc97e944ceda5929feff449dcd20d18b6c557d3dc"
+    },
+    {
+      "path": "03-bronze-burner-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 1516110,
+      "sha256": "ed403313fbf677b47c86188c035d19d94ca33e399c7e88cf4565484e56ceb951"
+    },
+    {
+      "path": "03-bronze-burner-lockup.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "bytes": 563267,
+      "sha256": "1ee2cb70cd4d5c2169c47c0bd7d563c9f0fb3b74ac2f525bd989ff8a4597fcef"
+    },
+    {
+      "path": "03-bronze-burner-symbol.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 721820,
+      "sha256": "f93f3bdf2eb34047589afa9dbcb112dc5541e8d476631d72a26635efacecaca8"
+    },
+    {
+      "path": "04-broken-cord-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 586031,
+      "sha256": "5f2fb486a19f541ec254f22422b5a82ab11d8a6f317a986cb1c44731f1ef9429"
+    },
+    {
+      "path": "04-broken-cord-app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "bytes": 17445,
+      "sha256": "242f984bf44e779b7627b1806dde631eaeed42686e380938c6f39257e5f367c6"
+    },
+    {
+      "path": "04-broken-cord-app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 54714,
+      "sha256": "af1d1ccc6ac9a65a043c121ae3cd7d8d6dfa54778a06f146d9575af3ab8a8198"
+    },
+    {
+      "path": "04-broken-cord-app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "bytes": 1901,
+      "sha256": "f20a505c42dde9ef9e8bb1ad1599065cb0b1faa07495e9c4b7f3e9f08410b5e9"
+    },
+    {
+      "path": "04-broken-cord-app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "bytes": 3553,
+      "sha256": "e9f794342392c02ffc6929b164607204b6c7009ae02512bc4a26e38efe2369e7"
+    },
+    {
+      "path": "04-broken-cord-app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "bytes": 5596,
+      "sha256": "d6fea99cd8118cc5f5cd0d2d3577f303bb8c59a3f410eaf54b58c2d723c184ee"
+    },
+    {
+      "path": "04-broken-cord-brand-board.png",
+      "dimensions": [
+        1800,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 385688,
+      "sha256": "a1a63e9bd462c3ba04338e43da4001e8404761e08b1014ad9a1cc38c8a1fae48"
+    },
+    {
+      "path": "04-broken-cord-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 1415471,
+      "sha256": "21db6bb637b616bebb6aadb9cc6e284bec5f1c831d27903b425e81ad55277e55"
+    },
+    {
+      "path": "04-broken-cord-lockup.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "bytes": 575093,
+      "sha256": "4626aadf683bfe1594cb30bcd1d4ca6815cfbf34413a80d3c7c52f710caba9a9"
+    },
+    {
+      "path": "04-broken-cord-symbol.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 709508,
+      "sha256": "7c7d6ffcc8111e252c38642700013036034e7401554646758e90f68cece7764c"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-1024.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 418837,
+      "sha256": "edfecd8f8abe1ae28cce5e3d92a2aac59efad8413f056716b6b37e28a289e1b6"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-128.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "bytes": 11266,
+      "sha256": "3c074328d845437c592ecc0c7776c38debb79dbf89cacbbde5da4921f9453d72"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-256.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 35685,
+      "sha256": "84507af35ea0e1df81505320118b208d5851ed844cab30fea5c5a0ca95fd3462"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-32.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "bytes": 1346,
+      "sha256": "f5d3d8a1d88c3ea4e14ab665632b197589630d2ede134a2b10d4a47995ea5186"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-48.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "mode": "RGBA",
+      "bytes": 2411,
+      "sha256": "72473b0c28e6a5e7052b3df05935d26d868ff33086d603e9fa3c66066526e3cc"
+    },
+    {
+      "path": "05-jade-lantern-app-icon-64.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "bytes": 3716,
+      "sha256": "7a65d3937023ef36edcc361e37690367c62ed866955db8d1694b2f0570df2dd2"
+    },
+    {
+      "path": "05-jade-lantern-brand-board.png",
+      "dimensions": [
+        1800,
+        1280
+      ],
+      "mode": "RGB",
+      "bytes": 288946,
+      "sha256": "fa9eb158234b4b9dab851e05814c1f4f3bdf366ce8a0d17615556bd111ba4d7d"
+    },
+    {
+      "path": "05-jade-lantern-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "bytes": 930847,
+      "sha256": "50532c56958a7a450f726b7e378643973aa5e4f88b64546226717fd2f849f589"
+    },
+    {
+      "path": "05-jade-lantern-lockup.png",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "mode": "RGBA",
+      "bytes": 400374,
+      "sha256": "fc9cc9e48dd4ebad25906eb9220f17e880fcaff69f70bcc6b274a8f2bfe9fed8"
+    },
+    {
+      "path": "05-jade-lantern-symbol.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "bytes": 491697,
+      "sha256": "40e8a8cd3d3905a2fef8eab284e0a44c5cbf87e86a51154aabb597b19f69c571"
+    },
+    {
+      "path": "five-logo-comparison.png",
+      "dimensions": [
+        2400,
+        1810
+      ],
+      "mode": "RGB",
+      "bytes": 946292,
+      "sha256": "9b329a9550c13028929003c91ab60759dd5f414769a685da0a266574db5f0658"
+    }
+  ]
+}

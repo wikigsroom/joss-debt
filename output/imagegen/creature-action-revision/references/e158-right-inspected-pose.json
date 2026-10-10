@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e158-primary.png",
+  "source_sha256": "35a538f0e131ad655089a2256c87771689f125ddbc597307cd8e85c95737107e",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right coal porter profile; retain through hurt.",
+  "guide_sha256": "4711bc74355b8243cb3e2a43aba8d0db620657b5306c4c5530cc7e841b677be7"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e198-primary.png",
+  "source_sha256": "2ac4e1a2693d4f210ddd26fa98caa8873032cfe1fb395472748c67df964d4ddd",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected actual attack pose: genuine one-eye side head and original torso. Retain this declared side throughout independently drawn attack and hurt; do not turn front during recoil.",
+  "guide_sha256": "743a544d242865bd5befb3274625954b303f92061da9d87606a46c8c30390044"
+}

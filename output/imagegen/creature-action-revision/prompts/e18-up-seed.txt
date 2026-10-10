@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 墨页虫 (e18) in this camera view: SCREEN-UP REAR VIEW: face and attacking end point away toward the TOP edge; the viewer sees only the back, rear shell or tail toward the BOTTOM. NO front-facing eyes, mouth or mask in ANY of the six cells, including the flinch and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: Every distinctive feature of the attached original sprite is binding. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: The huge original ivory-rimmed black mouth is on the FRONT only and must be completely hidden in this rear view. Front head points screen TOP, tail/body trails toward screen BOTTOM; draw the closed back of the head at TOP. Do not draw the black mouth facing the viewer at BOTTOM.
+

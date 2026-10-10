@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b81-primary.png",
+  "source_sha256": "4d0bb6f78e9eeed890450e046d7a96783304368dc8fedf7410a655fac7f4723c",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected genuine right crystal demon profile, muzzle/fangs right and side legs/flail cables.",
+  "guide_sha256": "60045881795271f75ebabc0ddbeeb10f2757f8a6f7d6911ae04cf4a2d6729ba6"
+}

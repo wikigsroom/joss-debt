@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e55-primary.png",
+  "source_sha256": "95dee524a6849ae9e360934f7a121e1f1ec4b83fa0e459b46676e5a95a8c9e03",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected complete isolated right pose retaining original staff, paper figure and red cloak; neighboring merged poses are excluded, reference only.",
+  "guide_sha256": "66c1499f1bbf09f133e0ba860fb0e34db7b077fa8de8b937ade3a33236926c02"
+}

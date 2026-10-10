@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b41-primary.png",
+  "source_sha256": "e1942c635abf8c6d0a88c428a7a32f4b0751f88b2f4f5b34808b13f8c395ac09",
+  "row": 1,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Intact down guide selected from inspected source; joined cells and wrongly frontal side/rear banks are rejected. This reference only informs independent redraw.",
+  "guide_sha256": "b842559b76e3df3c70eb6f6e5b6a28c489833785a4c0b19f47d96ac4e8eed4a5"
+}

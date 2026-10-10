@@ -1,6 +1,7 @@
 extends Node
 
 const MusicState = preload("res://scripts/ui/music_state.gd")
+const Playlist = preload("res://scripts/ui/music_playlist.gd")
 
 var players: Array = []
 var streams: Dictionary = {}
@@ -26,6 +27,10 @@ var paused = false
 var suspended = false
 var duck_left = 0.0
 var score_transitions = 0
+var playlist = Playlist.new()
+var music_mode = "random"
+var fade_duration = .35
+var track_changes = 0
 
 func _ready() -> void:
 	for id in ["shot", "shot_melee", "shot_ray", "shot_heavy", "shot_controlled", "hit", "hit_melee", "hit_heavy", "hit_crit", "hit_armor", "hit_chain", "hurt", "hurt_heavy", "hurt_debt", "skill", "dash", "pickup", "bell", "clear", "mark", "chain", "death", "warning", "contract", "repay", "menu", "armor", "deflect", "burst"]:
@@ -40,6 +45,8 @@ func _ready() -> void:
 	add_child(music)
 	fade_player = AudioStreamPlayer.new()
 	add_child(fade_player)
+	music.finished.connect(on_track_finished.bind(music))
+	fade_player.finished.connect(on_track_finished.bind(fade_player))
 	var manifest = JSON.parse_string(FileAccess.get_file_as_string("res://data/music_scores.json"))
 	score_manifest = manifest.scores
 	for context in score_manifest:
@@ -65,9 +72,11 @@ func _exit_tree() -> void:
 			player.stream = null
 	players.clear()
 	if is_instance_valid(music):
+		for connection in music.finished.get_connections(): music.finished.disconnect(connection.callable)
 		music.stop()
 		music.stream = null
 	if is_instance_valid(fade_player):
+		for connection in fade_player.finished.get_connections(): fade_player.finished.disconnect(connection.callable)
 		fade_player.stop()
 		fade_player.stream = null
 	streams.clear()
@@ -78,6 +87,9 @@ func _exit_tree() -> void:
 func set_context(context: String) -> void:
 	if context == active_context or not music_tracks.has(context): return
 	active_context = context
+	if music_mode == "random" and not playlist.tracks.is_empty():
+		if music.stream == null: next_song()
+		return
 	score_transitions += 1
 	music_state.configure(score_manifest[context])
 	layer_gains = [1.0, 0.0, 0.0, 0.0, 0.0]
@@ -90,22 +102,55 @@ func set_context(context: String) -> void:
 	music.volume_db = -80
 	music.play()
 	music.stream_paused = suspended
-	fade_left = .35
+	fade_duration = .35
+	fade_left = fade_duration
+
+func set_music_mode(value: String) -> void:
+	value = "score" if value == "score" else "random"
+	if music_mode == value: return
+	music_mode = value
+	if music_mode == "random" and not playlist.tracks.is_empty(): next_song()
+	else:
+		var context = active_context
+		active_context = ""
+		set_context(context if music_tracks.has(context) else "hub")
+
+func next_song() -> void:
+	var track = playlist.next_track()
+	if track.is_empty(): return
+	fade_player.stop()
+	var previous = music
+	music = fade_player
+	fade_player = previous
+	music.stream = load(str(track.path))
+	music.stream.loop = false
+	music.volume_db = -80
+	music.play()
+	music.stream_paused = suspended
+	fade_duration = 1.2
+	fade_left = fade_duration
+	track_changes += 1
+
+func on_track_finished(player: AudioStreamPlayer) -> void:
+	if player == music and music_mode == "random" and not suspended: next_song()
 
 func _process(delta: float) -> void:
 	if suspended: return
+	if music.stream == null: return
+	if music_mode == "random" and music.stream is AudioStreamOggVorbis and fade_left <= 0 and music.playing:
+		if music.get_playback_position() >= music.stream.get_length() - 1.2: next_song()
 	duck_left = maxf(0, duck_left - delta)
 	fade_left = maxf(0, fade_left - delta)
-	var amount = 1.0 - fade_left / .35
+	var amount = 1.0 - fade_left / fade_duration
 	var position = maxf(0, music.get_playback_position() + AudioServer.get_time_since_last_mix() - AudioServer.get_output_latency())
-	music_state.advance(position)
-	if layer_gains.size() != music.stream.stream_count:
+	if music_mode == "score" or playlist.tracks.is_empty(): music_state.advance(position)
+	if music.stream is AudioStreamSynchronized and layer_gains.size() != music.stream.stream_count:
 		layer_gains.resize(music.stream.stream_count)
 		for i in music.stream.stream_count:
 			if i == 0: layer_gains[i] = 1.0
 			else: layer_gains[i] = 0.0
 	var target_gains: Array = music_state.gains()
-	for i in music.stream.stream_count:
+	for i in (music.stream.stream_count if music.stream is AudioStreamSynchronized else 0):
 		var target = float(target_gains[i]) if i < target_gains.size() else 0.0
 		layer_gains[i] = move_toward(float(layer_gains[i]), target, delta * 4.0)
 		music.stream.set_sync_stream_volume(i, linear_to_db(maxf(.0001, float(layer_gains[i]))))
@@ -205,11 +250,11 @@ func accept(events: Array) -> void:
 
 func attack_sound(event: Dictionary) -> String:
 	var mode = str(event.get("mode", ""))
-	if event.kind == "ray" or mode == "ray": return "shot_ray"
+	if event.kind == "ray" or mode in ["ray", "lightning", "prism", "tether"]: return "shot_ray"
 	if event.kind == "slash": return "shot_heavy" if bool(event.get("charged", false)) or mode == "charged_arc" else "shot_melee"
-	if mode in ["arc", "cone", "charged_arc"]: return "shot_melee" if not bool(event.get("heavy", false)) else "shot_heavy"
-	if mode == "controlled": return "shot_controlled"
-	if bool(event.get("heavy", false)) or mode in ["explosive", "charged_line"]: return "shot_heavy"
+	if mode in ["arc", "cone", "charged_arc", "orbit_blade", "sweep", "boomerang_arc"]: return "shot_melee" if not bool(event.get("heavy", false)) else "shot_heavy"
+	if mode in ["controlled", "cloud", "homing_cluster", "guided_swarm", "split", "wave"]: return "shot_controlled"
+	if bool(event.get("heavy", false)) or mode in ["explosive", "charged_line", "mine", "nova", "radial", "rain"]: return "shot_heavy"
 	return "shot"
 
 func attack_voice(event: Dictionary) -> Dictionary:
@@ -233,7 +278,7 @@ func attack_voice(event: Dictionary) -> Dictionary:
 	elif mode in ["returning", "ricochet", "seeker"]:
 		voice.id = "shot_controlled"
 		voice.pitch = .96
-	elif mode in ["charged_line", "charged_arc"]:
+	elif mode in ["charged_line", "charged_arc", "nova", "mine"]:
 		voice.id = "shot_heavy"
 		voice.layer = "shot_ray"
 		voice.layer_gain = .24
@@ -245,7 +290,7 @@ func hit_sound(event: Dictionary) -> String:
 	if str(event.get("source", "")) == "armor": return "hit_armor"
 	if str(event.get("source", "")) == "secondary": return "hit_chain"
 	if bool(event.get("heavy", false)) or str(event.get("source", "")) == "detonate": return "hit_heavy"
-	if str(event.get("weapon_mode", "")) in ["arc", "cone", "charged_arc"]: return "hit_melee"
+	if str(event.get("weapon_mode", "")) in ["arc", "cone", "charged_arc", "orbit_blade", "sweep", "boomerang_arc"]: return "hit_melee"
 	return "hit"
 
 func hit_voice(event: Dictionary) -> Dictionary:
@@ -307,6 +352,7 @@ func set_suspended(value: bool) -> void:
 
 func diagnostics() -> Dictionary:
 	return {"context": active_context, "tier": music_state.current_tier, "requested_tier": music_state.requested_tier,
+		"mode": music_mode, "track": playlist.current_id, "title": playlist.current.get("title", ""), "track_changes": track_changes,
 		"beat": music_state.beat, "bar": music_state.last_bar, "layer_gains": layer_gains.duplicate(),
 		"position": music.get_playback_position(), "gap": music_state.gap_active(), "paused": paused,
 		"suspended": suspended, "volume_db": music.volume_db, "score_transitions": score_transitions}

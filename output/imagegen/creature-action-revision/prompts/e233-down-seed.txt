@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 紫节蛇 (e233) in this camera view: SCREEN-DOWN FRONT VIEW: face and attacking end point toward the BOTTOM edge of the cell; the rear is toward the TOP. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: long curved segmented serpent; 串联紫封石节的蛇; AMETHYST SEAL PRISON: deep grape purple, near-black plum and glowing magenta runes; heavy angular confinement. Incorporate massive purple runestone blocks, chains, narrow angular cell doors and suspended magenta seal cords; no ordinary gray walls; handmade coloured paper, wood and fabric matching this environment.. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Original LIMBLESS purple/ivory segmented prison-sign snake, ONE ivory pointed skull mask, dark violet rune coils and original magenta binding strips. True centered front screen-DOWN whole-body camera: original paired eyes where applicable, centered head/front panel, no sideways muzzle. One complete neutral original creature, not an atlas, no extra limbs or props.
+

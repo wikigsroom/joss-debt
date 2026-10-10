@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e70-primary.png",
+  "source_sha256": "addc8423856e4198208a80cecbed9e14a2ac226e173b1dc15894374735f93a07",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Blue paper bird right attack profile remains right; hurt middle poses wrongly turn frontal.",
+  "guide_sha256": "77ac74235a033013b2175ef417c683a74bd6c14a9a64788eb2f7343ae92f683b"
+}

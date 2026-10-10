@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e192-primary.png",
+  "source_sha256": "e7b2ab877c044746eba640bd5f0d56cc481e9ea921c63c2f4980ab726d07b36e",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Actual left gear crab profile; hurt must remain side view.",
+  "guide_sha256": "98967ea0c276916fb936de6aaf4de9a9d0ac65f186fd5165d08426dc82085c16"
+}

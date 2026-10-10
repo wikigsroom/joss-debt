@@ -1,0 +1,441 @@
+{
+  "version": "v0.2.0-alpha.1",
+  "date": "2026-10-08",
+  "groups": {
+    "game_introduction": [
+      "copy/game-introduction.txt"
+    ],
+    "developers_message": [
+      "copy/developers-message.txt"
+    ],
+    "homepage_recommendation": [
+      "copy/homepage-recommendation.txt"
+    ],
+    "screenshots": [
+      "screenshots/01-paper-child-combat.png",
+      "screenshots/02-character-selection.png",
+      "screenshots/03-river-returning-umbrella.png",
+      "screenshots/04-treasury-composed-beams.png",
+      "screenshots/05-opera-flame-lantern.png",
+      "screenshots/06-thunder-gate-lightning.png",
+      "screenshots/07-bamboo-melee.png",
+      "screenshots/08-magistrate-boss.png",
+      "screenshots/09-lantern-shop.png",
+      "screenshots/10-relic-choice.png",
+      "screenshots/11-celestial-prism.png",
+      "screenshots/12-eleven-floor-map.png"
+    ],
+    "gameplay_recording": [
+      "videos/IncenseDebt-gameplay-120s.mp4"
+    ],
+    "trailer": [
+      "videos/IncenseDebt-trailer-45s.mp4"
+    ],
+    "game_icon": [
+      "branding/app-icon-1024.png"
+    ],
+    "game_logo": [
+      "branding/logo-title-only-1024.png"
+    ],
+    "banner": [
+      "artwork/banner-2560x1080.png"
+    ],
+    "poster": [
+      "artwork/poster-2160x3240.png"
+    ],
+    "promotional_16_9": [
+      "artwork/promo-01-lantern-1920x1080.png",
+      "artwork/promo-02-river-1920x1080.png",
+      "artwork/promo-03-treasury-1920x1080.png",
+      "artwork/promo-04-opera-1920x1080.png",
+      "artwork/promo-05-celestial-1920x1080.png"
+    ],
+    "cover_horizontal": [
+      "artwork/cover-horizontal-1920x1080.png"
+    ],
+    "cover_vertical": [
+      "artwork/cover-vertical-1080x1920.png"
+    ],
+    "library_wallpaper": [
+      "artwork/library-wallpaper-no-logo-5120x1654.png"
+    ],
+    "promotion_no_logo": [
+      "artwork/promo-no-logo-1920x1080.png"
+    ]
+  },
+  "files": [
+    {
+      "category": "game_introduction",
+      "file": "copy/game-introduction.txt",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/copy/game-introduction.txt",
+      "bytes": 4770,
+      "sha256": "81cb2c5133aebd234efdd65e19ca6412d433c894371d545ebc2a1e90f48ee1a0"
+    },
+    {
+      "category": "developers_message",
+      "file": "copy/developers-message.txt",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/copy/developers-message.txt",
+      "bytes": 2636,
+      "sha256": "8387b4f6cd2a952b6c33e52940a9d9f1a32cbeccbc491de405d69e5d0e32ca3e"
+    },
+    {
+      "category": "homepage_recommendation",
+      "file": "copy/homepage-recommendation.txt",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/copy/homepage-recommendation.txt",
+      "bytes": 440,
+      "sha256": "30788c08ad508e001bd31fea101e8a967e953a4bc19f6a6485960952c92d60ce"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/01-paper-child-combat.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/01-paper-child-combat.png",
+      "bytes": 3040807,
+      "sha256": "ebfcf031aa29cf48e844c6fa371e4c81f3d1be1da3c96f08836a082711275823",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/02-character-selection.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/02-character-selection.png",
+      "bytes": 1534951,
+      "sha256": "6689bcec2b02d7562731382893bf202af4873bf58d84da98973f1147ae640f36",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/03-river-returning-umbrella.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/03-river-returning-umbrella.png",
+      "bytes": 3081559,
+      "sha256": "2afd5ed679fb7723e54af56f51ecb2adeb72b67254575ca90b8a3d63109bc675",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/04-treasury-composed-beams.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/04-treasury-composed-beams.png",
+      "bytes": 3498500,
+      "sha256": "ac6b3b7b0801ec7f4bc07c32c0a6d7257943b57cbf32d1ce535d3b6cb73ba355",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/05-opera-flame-lantern.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/05-opera-flame-lantern.png",
+      "bytes": 3184581,
+      "sha256": "851dca6b39580375add552f91518d951ff3f67de59b8a7408015d4f9d8867af4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/06-thunder-gate-lightning.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/06-thunder-gate-lightning.png",
+      "bytes": 3257693,
+      "sha256": "ce9118fd246b08121943678d22008c409393000793d23015899eeaad3a46401a",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/07-bamboo-melee.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/07-bamboo-melee.png",
+      "bytes": 3323412,
+      "sha256": "9fdc0ad5c9ae1e47e74edb8e576ce82c4e144e056d7b800bb1a1772c127154df",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/08-magistrate-boss.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/08-magistrate-boss.png",
+      "bytes": 2995802,
+      "sha256": "ae304782d75e37c83742e971312c160cc52f992eaf6a6af005743309da66b077",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/09-lantern-shop.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/09-lantern-shop.png",
+      "bytes": 1225134,
+      "sha256": "63158e98e8118058d593e89733ca2b8b7130100b29b9dce74e50eaeeed71ed7d",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/10-relic-choice.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/10-relic-choice.png",
+      "bytes": 1190484,
+      "sha256": "3946ac552fc832f17301cf7b19530280159c4f1f2c47ca9742d8122144ff3aca",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/11-celestial-prism.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/11-celestial-prism.png",
+      "bytes": 3497938,
+      "sha256": "c3d2152dae371693c10736fab3c6f65c09ec33aff5543a8803929541c917ecb2",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "screenshots",
+      "file": "screenshots/12-eleven-floor-map.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/screenshots/12-eleven-floor-map.png",
+      "bytes": 651748,
+      "sha256": "b2afb840a44aab8ab1c38ba9cd765ad8aa3d697a70e26937cfd78cc98159d922",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "gameplay_recording",
+      "file": "videos/IncenseDebt-gameplay-120s.mp4",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-gameplay-120s.mp4",
+      "bytes": 52939692,
+      "sha256": "88f7851f8a64aca891d146ec4d2a06105583662b30e4d7dd7c4945d6420d2865",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration": 120.0,
+      "fps": "30/1",
+      "video_frames": 3600,
+      "video_codec": "h264",
+      "audio_codec": "aac"
+    },
+    {
+      "category": "trailer",
+      "file": "videos/IncenseDebt-trailer-45s.mp4",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-trailer-45s.mp4",
+      "bytes": 34061715,
+      "sha256": "5cb369679c681428cc77af5f0a788e9b9a6b5fcba7488a40be75c3cd200cad14",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration": 45.0,
+      "fps": "30/1",
+      "video_frames": 1350,
+      "video_codec": "h264",
+      "audio_codec": "aac"
+    },
+    {
+      "category": "game_icon",
+      "file": "branding/app-icon-1024.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/branding/app-icon-1024.png",
+      "bytes": 1199748,
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "game_logo",
+      "file": "branding/logo-title-only-1024.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/branding/logo-title-only-1024.png",
+      "bytes": 48733,
+      "sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "category": "banner",
+      "file": "artwork/banner-2560x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/banner-2560x1080.png",
+      "bytes": 3290440,
+      "sha256": "24013a5d4d9442309c7e57acd949e6e86450685c4cfabd34deb5459ce45003ed",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "poster",
+      "file": "artwork/poster-2160x3240.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/poster-2160x3240.png",
+      "bytes": 8431304,
+      "sha256": "136f759b4ccaa4af228b44c8532bd0b018e8380bb5a7f4ac5601fb17a038649e",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotional_16_9",
+      "file": "artwork/promo-01-lantern-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-01-lantern-1920x1080.png",
+      "bytes": 3007997,
+      "sha256": "a523e02dfcfb04211df7e32909d8b6488aa373981f415d919ba8c7f93ede3b6e",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotional_16_9",
+      "file": "artwork/promo-02-river-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-02-river-1920x1080.png",
+      "bytes": 2951220,
+      "sha256": "493e91863a0480a155cc5337fcbdb356bac2fbe1b2aeccda8f1e70bdc30d0f6c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotional_16_9",
+      "file": "artwork/promo-03-treasury-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-03-treasury-1920x1080.png",
+      "bytes": 3120882,
+      "sha256": "00c1b3725e7a4e175692d4c585e1572ac2c891b035a8cedb80de3d85ea52aa80",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotional_16_9",
+      "file": "artwork/promo-04-opera-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-04-opera-1920x1080.png",
+      "bytes": 3089676,
+      "sha256": "398d38681abcf58364ca0ea192c67bab00bb8da8ffdac502d47877ac46861bee",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotional_16_9",
+      "file": "artwork/promo-05-celestial-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-05-celestial-1920x1080.png",
+      "bytes": 3246137,
+      "sha256": "d16b34a041e871b74e64f2c69d9dbdab8cb1e12efee992d3c94f794a4a7aef87",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "cover_horizontal",
+      "file": "artwork/cover-horizontal-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-horizontal-1920x1080.png",
+      "bytes": 2942283,
+      "sha256": "a3266de5257b1f3cff159d1eb46bc7744f7aac71ea8df7742e864a38b9009bab",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "cover_vertical",
+      "file": "artwork/cover-vertical-1080x1920.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/cover-vertical-1080x1920.png",
+      "bytes": 2956240,
+      "sha256": "07802a1a33782b3920c83fd71a3f44ed604d471e2e6ac389c71c75550b6bcde8",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "library_wallpaper",
+      "file": "artwork/library-wallpaper-no-logo-5120x1654.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/library-wallpaper-no-logo-5120x1654.png",
+      "bytes": 11155918,
+      "sha256": "b72a6203e126f8e2dbb001e2ec26bd934a1b4373847c8784d41fb6484556bd7c",
+      "dimensions": [
+        5120,
+        1654
+      ],
+      "mode": "RGB"
+    },
+    {
+      "category": "promotion_no_logo",
+      "file": "artwork/promo-no-logo-1920x1080.png",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/publishing/incense-debt/store-kit-2026-10-08/artwork/promo-no-logo-1920x1080.png",
+      "bytes": 3058365,
+      "sha256": "e4d1526a2ba86d6c2772200c86ebdea3943321eacc9f308d5755caa0ab2478b6",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "primary_image_count": 25,
+  "publication_rules": {
+    "icon_background": "opaque",
+    "logo_background": "transparent",
+    "logo_text": "香火债",
+    "cover_and_promotional_allowed_text": [
+      "香火债"
+    ],
+    "no_logo_images": "no text"
+  },
+  "provenance": {
+    "original_hero": "game/assets/portraits/c_paper.png",
+    "original_hero_sha256": "0de96003a65d29211d5dac29d3d502b7e787594ef4d24a750dd872a7c7257e25",
+    "renderer_source": "game/scripts/ui/game_renderer.gd",
+    "renderer_sha256": "ee1095438e9a3339e830d9fd1532a4f065919a56fcf8478bdb7dedb71302a8fd",
+    "generation": "sources/generation-manifest.json",
+    "screenshots": "screenshots/capture-report.json",
+    "gameplay": "videos/gameplay-capture.json",
+    "trailer": "videos/trailer-edit.json"
+  }
+}

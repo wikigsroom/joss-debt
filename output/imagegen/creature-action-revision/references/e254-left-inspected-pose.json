@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e254-primary.png",
+  "source_sha256": "1a046c51b93ff7ea8131f955290226066198c2c0a8b73fa93cc1f0024367f663",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original TWO-legged ivory/blue paper basket badger with striped skull muzzle, wicker basket backpack, original wooden spoon/paddle, gold clasp and blue paper strips. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "12f8226683b75064c7e68500208b3b2a7c950f3162998da350cbe9d03168d509"
+}

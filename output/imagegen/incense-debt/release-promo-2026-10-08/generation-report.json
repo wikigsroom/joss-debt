@@ -1,0 +1,30 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "records": [
+    {
+      "id": "poster",
+      "requested_size": "1024x1536",
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/generated-poster-background.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "cf1f5e9cc337bf7150c5cb5049ed39acdc6a98df9f4ead5f51d6817ef2dcc829"
+    },
+    {
+      "id": "banner",
+      "requested_size": "1536x1024",
+      "path": "output/imagegen/incense-debt/release-promo-2026-10-08/generated-banner-background.png",
+      "size": [
+        1916,
+        821
+      ],
+      "mode": "RGB",
+      "sha256": "27f6ae0d95fc6511b56fca008881d30c327e6a30a6bec08624dc67b18f234547"
+    }
+  ],
+  "failures": []
+}

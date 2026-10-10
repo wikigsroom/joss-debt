@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e91-primary.png",
+  "source_sha256": "845f26a5a654e493117e5c1c97fd78f0b46acf4a882c914648652489e5976f63",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Intact rear abacus spider attack shows gold bead tray back and legs, hides front face; rear hurt row missing and must be drawn.",
+  "guide_sha256": "817a4eb0f3591265f30969d3a87fbaae346112891c4c10e08b0bd5b695da6767"
+}

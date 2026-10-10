@@ -101,6 +101,7 @@ func run_suite() -> void:
 	var audio = Audio.new()
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), -80.0)
 	root.add_child(audio)
+	audio.set_music_mode("score")
 	audio.set_muted(true)
 	var loaded_sfx = 0
 	for id in audio.streams:
@@ -115,6 +116,10 @@ func run_suite() -> void:
 		"explosive": "shot_heavy", "ricochet": "shot_controlled", "seeker": "shot_controlled",
 		"charged_line": "shot_heavy", "arc": "shot_melee", "triple": "shot",
 		"ray": "shot_ray", "controlled": "shot_controlled", "charged_arc": "shot_heavy",
+		"burst": "shot", "cloud": "shot_controlled", "orbit_blade": "shot_melee", "rain": "shot_heavy",
+		"lightning": "shot_ray", "radial": "shot_heavy", "wave": "shot_controlled", "tether": "shot_ray",
+		"split": "shot_controlled", "boomerang_arc": "shot_melee", "mine": "shot_heavy", "homing_cluster": "shot_controlled",
+		"sweep": "shot_melee", "prism": "shot_ray", "guided_swarm": "shot_controlled", "nova": "shot_heavy",
 	}
 	var covered_modes = {}
 	for weapon in catalog.weapons:
@@ -125,7 +130,7 @@ func run_suite() -> void:
 		expect(expected_attack.get(mode, "") == str(voice.id) and not str(voice.layer).is_empty() if mode in ["fan", "triple", "bell", "charged_line", "charged_arc"] else expected_attack.get(mode, "") == str(voice.id), "weapon mode %s resolves to an authored attack voice" % mode)
 		var impact = audio.hit_voice({"weapon_mode": mode, "heavy": mode in ["explosive", "charged_line"]})
 		expect(not str(impact.id).is_empty() and (mode not in ["triple", "bell", "explosive", "charged_line", "ray"] or not str(impact.layer).is_empty()), "weapon mode %s resolves to an authored impact voice" % mode)
-	expect(covered_modes.size() == expected_attack.size(), "all 16 catalog weapon modes have explicit attack and impact coverage")
+	expect(covered_modes.size() == expected_attack.size() and covered_modes.size() == 32, "all 32 catalog weapon modes have explicit attack and impact coverage")
 	var light_hurt = audio.hurt_voice({"damage": 1})
 	var heavy_hurt = audio.hurt_voice({"damage": 2})
 	var debt_hurt_voice = audio.hurt_voice({"damage": 1, "source": {"kind": "debt"}})

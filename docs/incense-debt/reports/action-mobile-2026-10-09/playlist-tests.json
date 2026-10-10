@@ -1,0 +1,26 @@
+{
+	"checks": [
+		"four user-selected Yourset tracks are actually imported",
+		"50 shuffle cycles play every song once before refill",
+		"200 selected songs include no adjacent repeat across cycle boundaries",
+		"yourset-01 loads the full 48 kHz native stream with looping disabled",
+		"yourset-02 loads the full 48 kHz native stream with looping disabled",
+		"yourset-03 loads the full 48 kHz native stream with looping disabled",
+		"yourset-04 loads the full 48 kHz native stream with looping disabled",
+		"native director starts a real playlist stream by default",
+		"room and menu changes preserve the currently playing song",
+		"song transitions preserve outgoing playback for a 1.2 second crossfade",
+		"an outgoing player's completion cannot replace the new song",
+		"completion of the active song advances the playlist",
+		"menu pause keeps background music playing softly",
+		"application suspension freezes both music players and track changes",
+		"crossfade finishes and retires the outgoing decoder",
+		"mute silences both sides of a playlist transition",
+		"original chapter themes remain an explicit settings option",
+		"returning to random mode resumes a packaged Yourset song",
+		"music selection and transitions never consume gameplay RNG or modify a save"
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "200 shuffle selections, actual native OGG playback, crossfade/lifecycle and world snapshot isolation"
+}

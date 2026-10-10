@@ -5,18 +5,21 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[下载 v0.2.0-alpha.1 / Download the prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+**[公开旧版 v0.2.0-alpha.1 / Previous public prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
 
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **0.2.0 · 十一层可玩 Alpha / playable eleven-floor Alpha** |
+| 版本 / Version | **0.2.1 · 十一层可玩 Alpha / playable eleven-floor Alpha** |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
 | 游玩 / Play | 离线、单人、本地存档；无需生成接口或账号 / offline, single-player, local saves; no generation API or account required |
 | 游戏语言 / Game language | 当前界面与叙事为简体中文；本 README 为中英双语 / the game currently uses Simplified Chinese; this README is bilingual |
-| 平台 / Platforms | Windows 已原生运行验证；Android 已构建并检查 APK；iOS 已准备共享源码交接 / native Windows verified; Android APK built and inspected; iOS source handoff prepared |
+| 平台 / Platforms | Windows 0.2.1 已原生验证；Android 0.2.1 APK 已检查；iOS 保留 0.2.0 源码交接 / native Windows 0.2.1 verified; Android 0.2.1 APK inspected; historical iOS 0.2.0 source handoff |
+
+当前源码及本机 **0.2.1** 已更新独立角色动作、可单独调整大小／位置的触控、四首随机 BGM 与公开隐私主体；进一步完成全部 **402 个怪物身份、24,048 帧独立攻击／受击动作**。[操作修订](docs/incense-debt/33-action-mobile-update.md)与[全量怪物动作及安装包验收](docs/incense-debt/35-creature-action-completion.md)记录当前交付。上方 GitHub 发布链接仍为上一版。  
+The current source and local **0.2.1** builds include independently drawn hero actions, individually adjustable touch controls, a four-song shuffle playlist, and the corrected privacy operator. They now include independently drawn attack/hurt animations for **all 402 creature identities, totaling 24,048 poses**. See the [control revision](docs/incense-debt/33-action-mobile-update.md) and [complete creature-action delivery](docs/incense-debt/35-creature-action-completion.md). The public release link above remains the previous version.
 
 当前范围以[交付状态](docs/incense-debt/reports/current-product-status.md)、[结构化状态](docs/incense-debt/reports/current-product-status.json)与实际源码为准。较早的三章报告保留为历史兼容证据，不代表当前正式局只有三层。  
 Current scope is defined by the [delivery status](docs/incense-debt/reports/current-product-status.md), [machine-readable status](docs/incense-debt/reports/current-product-status.json), and source code. Older three-chapter reports are retained as historical compatibility evidence.
@@ -24,8 +27,33 @@ Current scope is defined by the [delivery status](docs/incense-debt/reports/curr
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
 
-以下菜单、装备和地图截图来自当前 Windows 原生版本，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
-Menu, equipment, and map screenshots come from the current native Windows build. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+本节新增动作对照来自 0.2.1 原生渲染器；其余菜单、装备和地图截图保留 0.2.0 原生交付记录，菜单图是依据实现绘制的说明图。普通游玩 GIF 使用纸童的正常初始数值和实际战斗输入；其他 GIF 使用原生测试场景展示指定特效、环境或后段 Boss。GIF 无声音。  
+The new action comparison uses the 0.2.1 native renderer; the other menu, equipment, and map captures retain their 0.2.0 build provenance. The menu diagram documents the implemented flow. The normal-play GIF uses Paper Child's unchanged initial stats and real combat input; the other clips use native test scenes to demonstrate effects, scenery, or later-floor bosses. GIFs have no audio.
+
+### 独立角色动作 / Independently drawn hero actions
+
+![六角色六状态原生动作对照 / Six heroes and six action states](docs/incense-debt/reports/action-mobile-2026-10-09/native-actions.gif)
+
+这是引擎内逐帧审查对照，包含真实持械和事件特效；固定对照节奏不代表实战帧率。共 864 个四向主角姿势。  
+A timed native frame comparison with real held weapons and event effects; its comparison timing is not combat timing. The revision includes 864 hero poses across four facings.
+
+### 全量怪物攻击与受击 / Complete creature attack and hurt animations
+
+![小怪四向攻击与受击原生动效 / Native four-facing enemy attack and hurt animations](docs/incense-debt/reports/creature-actions-2026-10-10/enemy-four-directions.gif)
+
+![Boss 四向三类攻击与受击原生动效 / Native four-facing boss attack banks and hurt animations](docs/incense-debt/reports/creature-actions-2026-10-10/boss-four-directions.gif)
+
+296 种小怪、99 名 Boss、6 种精英和召唤符均有四向、每状态六帧的独立绘制动作；Boss 包括三类攻击与受击，共 **1,002 张图集、24,048 帧**。每帧保留原有纸偶形体和道具，并绑定源图、审查记录与原生渲染证据。以上 GIF 按固定 140 毫秒逐帧比较；真实攻击节奏由战斗状态驱动。待机、移动、死亡与阶段转换保留各自原有方法。[完整范围与验证记录](docs/incense-debt/35-creature-action-completion.md)。  
+All 296 enemies, 99 bosses, six elites, and the summon sigil have four independently drawn facings with six frames per state. Bosses include three attack banks and hurt, giving **1,002 atlases and 24,048 poses**. Original anatomy and props are retained, with source, review, and native-render evidence. These GIFs use fixed 140 ms comparison timing; combat events drive actual playback. Idle, movement, death, and phase transitions retain their existing methods. See the [scope and verification record](docs/incense-debt/35-creature-action-completion.md).
+
+| GIF 内容 / GIF content | 布局与动作 / Layout and motion |
+| --- | --- |
+| 小怪 / Enemy | 从上到下为正面、左侧、右侧、背面；两列为攻击、受击 / Rows: front, left, right, back; columns: attack, hurt |
+| Boss | 四行朝向相同；四列为主攻击 A、次攻击 B、组合攻击 C、受击 / Same facing rows; columns: primary A, secondary B, combined C, hurt |
+| 实战时序 / Combat timing | 准备 → 蓄势 → 击发 → 收招；近战冲刺保持击发姿势，暂停和存档保留当前进度 / Ready → wind-up → release → recovery; lunges hold the strike pose, while pause and saves preserve progress |
+
+全部 24,048 帧已逐张绑定原生截图哈希；17 项战斗状态检查、2,096 项导出包检查和 107 项导出程序键盘流程通过。[原生证据](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json)与[包体核对](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json)可直接查阅。  
+All 24,048 poses have matching native screenshot hashes. Verification passed 17 combat-state checks, 2,096 exported-pack checks, and 107 keyboard-flow checks in the executable. See the [native evidence](docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json) and [package comparison](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json).
 
 ### 装备与组合攻击 / Equipment and composed attacks
 
@@ -107,9 +135,9 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 | 遭遇库 | 296 种普通敌人、99 名首领、6 种精英变体；含原始通用与兼容内容 |
 | 主题专属池 | 每主题 12 种小怪与 3 名 Boss；最终天穹为 7 名 Boss，即每主题 15—19 种专属遭遇 |
 | 成就与愿簿 | 32 项成就，其中每名角色 4 项、另有 8 项共享成就；3 个独立存档槽 |
-| 动画与资源 | 2,810 条动画、16,628 张方向动作帧；3,781 项实际运行资源 |
+| 动画与资源 | 1,002 张怪物独立攻击／受击图集、24,048 帧；主角另有 864 个独立姿势；3,791 项运行资源 |
 | 战斗关键帧 | 88 条分阶段射线 / 范围动画，共 528 张生成关键帧（本次新增 80 条 / 480 帧） |
-| 声音 | 9 套音乐主题、25 条音乐分层；运行音频共 112 项 |
+| 声音 | 默认四首 Yourset 随机曲库；可切换 9 套主题、25 条音乐分层；运行音频共 116 项 |
 
 主题数量表示地图池的规模，不表示一局有二十层；敌人与首领数量是整个库的数量，不表示每局全部出现。登记的 24 套联动也不是所有搭配的穷举。完整条目见[内容数据库](game/data/catalog.json)、[扩展规则](game/data/expansion.json)与[生成目录](docs/incense-debt/16-content-catalog.generated.md)。
 
@@ -345,7 +373,9 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 
 方向键松开即停止主攻击，但保留最后瞄准方向；实际移动鼠标才重新切回鼠标瞄准。技能多选、供物替换、特殊房、偿债、层间叙事、结局与试射返回都有键盘路径。
 
-手机采用左移动 / 右瞄准双摇杆和独立身法、焚债、主动道具按钮，可第三指同时施术；触控布局支持左右镜像、拖动调整或方向键编辑。竖屏 / 窄屏触发暂停保护。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、固定摇杆、切换攻击、拾取范围、触觉、震动 / 强闪 / 粒子与愿页字号设置。手柄和移动端的真实设备验收仍见[当前边界](#zh-status)。
+手机采用左移动 / 右瞄准双摇杆。身法默认在左杆内上侧，焚债在右杆内上侧，装备道具后显示独立按钮，支持第三指同时施术。**设置 → 触控**允许五项触点分别保存位置与大小（75%～175%，保留最小热区），支持左右镜像、透明度、固定／浮动摇杆及“保存·试操作”。操作页支持鼠键和手柄重映射、冲突交换；辅助页包括死区、辅助瞄准、切换攻击、拾取范围、触觉、震动／强闪／粒子与愿页字号设置。
+
+战斗中可点顶部地图；技能候选同屏比较，满槽替换先预览旧、新效果再确认。软键盘会避让输入区域，系统返回先收起键盘，再关闭界面或暂停；竖屏／窄屏触发暂停保护。[移动审查与修复](docs/incense-debt/33-action-mobile-update.md)保留原因、截图和测试矩阵；真实设备验收见[当前边界](#zh-status)。
 
 ### 种子与每日挑战
 
@@ -399,11 +429,13 @@ See the [media notes](docs/media/README.md), [media manifest](docs/media/manifes
 
 **字体。** 正文为资源圆体的授权子集 `IncenseRoundedMedium / Bold`，标题为得意黑 `SmileySansOblique`，完整中文回退为 `Noto Sans SC`。字体在工程内打包，无需依赖玩家电脑已安装字体。授权文件保留在 [fonts](game/assets/fonts) 中。
 
-**素材与动画。** 角色、器具、环境和关键帧图使用指定的 **sub2-image-gen / gpt-image-2.5** 生产并保留来源。正式精灵经过透明处理、切片、统一锚点和加载核对。角色与手持动作采用预生成纸偶变形条；射线 / 范围新增 48 张独立生成关键帧，构成 8 条特效。剧情过场使用静帧序列、镜头运动与转场。实际动画方法见[素材生产](docs/incense-debt/11-asset-production.md)与[视觉约定](docs/incense-debt/17-visual-contract.md)。
+**素材与动画。** 角色、器具、环境和关键帧图使用指定的 **sub2-image-gen / gpt-image-2.5** 生产并保留来源。六主角的六状态、持械动作，以及全部怪物的攻击／受击采用独立绘制姿势，切片后仅统一等比缩放和脚底锚点。怪物动作覆盖四朝向，攻击事件、近战冲刺和真实伤害驱动帧采样；暂停与存档保留动作进度。其他怪物状态保留原有素材方法。射线／范围与剧情过场的来源见[素材生产](docs/incense-debt/11-asset-production.md)、[视觉约定](docs/incense-debt/17-visual-contract.md)和[全量动作验收](docs/incense-debt/35-creature-action-completion.md)。
 
-**音乐。** 当前是 9 套音乐主题、25 条同步分层，依据环境家族、探索、战斗、紧张与 Boss 状态切换和混合；20 套地图共用部分音乐家族，尚非每主题一套独有曲目。主要旋律、编曲与打击音效由本地工具原创合成；四份 CC0 素材用作低音量环境纹理，来源见[音频审计](docs/incense-debt/reports/runtime/audio-source-research.json)。
+**音乐。** 默认随机播放用户指定的四首 Yourset 曲目：每轮各播一次，轮次交界不紧邻重复，使用 1.2 秒交叉淡化；切房不会重启歌曲，选曲不影响游戏种子。曲目完整随包存放，见[曲库与来源哈希](game/data/music_playlist.json)。声音设置可切回原主题模式：9 套主题、25 条同步分层，依据环境、探索、战斗、紧张与 Boss 状态切换。20 套地图共用部分音乐家族。原主题编曲与打击音效由本地工具原创合成，四份 CC0 素材提供低音量环境纹理，见[音频审计](docs/incense-debt/reports/runtime/audio-source-research.json)。
 
 **反馈。** 各类器具的出手、蓄力、弹道、打击、受击、格挡、破盾、击杀与 UI 操作有分层音效。总音量、BGM、SFX 分开调节；暂停保留低音量音乐，切后台停止声音。运行音频已随源码提交，游玩无需在线模型；重新编曲可使用本机 FFmpeg 与 [compose_music.py](tools/runtime/compose_music.py)。
+
+**隐私政策。** 当前网页与 Word 为 v1.3，更新／生效日期为 2026-10-09；运营主体为 **吴国黎**，联系邮箱 **carzyg@outlook.com**。[公开 HTTPS 政策](https://xhz.sidcloud.cn/privacy-policy)与[实现核对](docs/legal/privacy-implementation-audit.md)记录正文、下载文件和部署检查。
 
 <a id="zh-run"></a>
 ### 获取源码与直接运行
@@ -450,7 +482,7 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / 大型 ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。文档直接引用的原始截图保留。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) 下载，也可本机导出。[交付清单](build/delivery-manifest.json)记录当前本地验证产物，[发布清单](docs/releases/v0.2.0-alpha.1.manifest.json)记录新 Windows release 导出与实际发布附件。
+**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。README 引用的截图与 GIF 保留在 Git 中。应用包可在 [GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) 下载历史 0.2.0，也可按当前源码导出 0.2.1。[交付清单](build/delivery-manifest.json)记录当前本地验证产物，[发布清单](docs/releases/v0.2.0-alpha.1.manifest.json)记录已公开的旧版附件。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -474,7 +506,11 @@ joss-debt/
 ├─ tools/
 │  ├─ design/                    目录生成与设计校验
 │  ├─ runtime/                   素材处理、构建、原生 QA 与平台核对
-│  └─ documentation/             README 原生捕获与媒体压缩
+│  ├─ documentation/             README 原生捕获与媒体压缩
+│  └─ legal/                     隐私正文、Word 与站点生成
+├─ sites/privacy-policy/         公开政策站点源码
+├─ output/branding/              纸偶图标、透明文字 LOGO 与品牌图
+├─ output/publishing/            商店封面、宣传图、壁纸与视频
 ├─ output/imagegen/              生成原始板与可追溯素材来源
 ├─ output/audio/                 部分音频来源与元数据
 └─ build/                        导出说明 / 清单；二进制输出不进入 Git
@@ -502,9 +538,11 @@ python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
 ```
 
-本次另有 1,568 项装备 / 掉落 / 攻击组合检查、80,000 次低概率抽样、29 项编译装备实机检查及 111 张截图，覆盖全部 480 个生成帧。原有记录包括 373 项边界 / 混编 / 房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、107 项纯键盘流程、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击 / 恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
+0.2.1 的[全量动作验收](docs/incense-debt/35-creature-action-completion.md)覆盖全部 402 个身份、24,048 个原生帧与源图哈希；17 项战斗状态、2,096 项包体核对和导出 EXE 的 107 项键盘流程通过。[主角／移动修订](docs/incense-debt/33-action-mobile-update.md)另有四组窗口／密度配置的 340 项检查、80 张截图，随机配乐 19 项、持械 22 项、高级输入 54 项检查。
 
-当前完整局证据为 **1 次正常初始数值的伞灵行动机器人十一层胜利**，包含 129 次清房、153 次物理门口切房和 10 次层间保存恢复。它证明软件流程可达，真人难度、手感与平衡仍需评测。来源哈希与结果见[完整局记录](docs/incense-debt/reports/runtime/expanded-full-run.json)。
+历史 0.2.0 记录包括 1,568 项装备／掉落／攻击组合检查、80,000 次低概率抽样、29 项编译装备检查及 111 张截图，以及 373 项边界／混编／房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击／恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
+
+历史 0.2.0 的完整局证据为 **1 次正常初始数值的伞灵行动机器人十一层胜利**，包含 129 次清房、153 次物理门口切房和 10 次层间保存恢复。它证明当时软件流程可达，真人难度、手感与平衡仍需评测。来源哈希与结果见[完整局记录](docs/incense-debt/reports/runtime/expanded-full-run.json)。
 
 记录绑定当时源码和应用哈希；重新构建后需重新运行相关检查，历史报告不会自动验证新包。部分图片审计依赖本地完整捕获目录，首次执行请先运行相应原生 QA 生成被忽略的原始截图。README 普通游玩可用 `python tools/documentation/capture_readme_gameplay.py` 重新录制；该工具需要已导出的 Windows 应用，并会关闭自己创建的窗口。
 
@@ -515,7 +553,7 @@ python tools/runtime/run_audio_qa.py --packaged
 | --- | --- | --- |
 | Windows | 原生 EXE 运行、真实资源加载、菜单与键盘 QA、原生截图、音频采样 | 真人长期游玩、画面 / 手感 / 平衡验收、发行签名 |
 | Android | arm64 调试 APK，结构、权限、签名与导入资源检查 | 真机安装、触控、软键盘、剪贴板、温控及生命周期 |
-| iOS | 共享源码与模板交接，内容一致性检查 | 实体 Mac 导出、Xcode 工程、签名 IPA、iPhone / iPad 验收 |
+| iOS | 历史 0.2.0 共享源码与模板交接 | 同步新源码、实体 Mac 导出、Xcode 工程、签名 IPA、iPhone / iPad 验收 |
 | 输入 | 纯键盘流程和鼠键原生操作；手柄 / 触控映射已实现 | 真实手柄与移动设备体验 |
 | 内容 | 十一层 Alpha 与上述系统、素材、自动流程证据 | 更多角色 / 种子的完整局和真人构筑平衡 |
 | 语言 | 完整中文界面；双语项目说明 | 英文游戏界面与叙事本地化 |
@@ -559,9 +597,9 @@ Shooting changes character facing and held-weapon pose. Hits, charging, dodging,
 | Encounter library | 296 regular enemies, 99 bosses, 6 elite variants; includes original/common compatibility content |
 | Theme-specific pools | 12 mobs + 3 bosses per theme; the final sky theme has 7 bosses, giving 15–19 native encounter types per theme |
 | Achievements and saves | 32 achievements: 4 per character plus 8 shared achievements; 3 independent save slots |
-| Animation and assets | 2,810 strips, 16,628 directional action frames, 3,781 runtime resources |
-| New combat keyframes | 8 beam/area strips derived from 48 generated keyframes |
-| Audio | 9 musical themes, 25 stems, 112 runtime audio resources in total |
+| Animation and assets | 1,002 independently drawn creature attack/hurt atlases, 24,048 poses; 864 additional hero poses; 3,791 runtime resources |
+| Combat keyframes | 88 staged beam/area strips, 528 generated frames |
+| Audio | Default four-song Yourset shuffle playlist; optional 9 musical themes and 25 stems; 116 runtime audio resources |
 
 These are library counts, rather than the number of encounters in one run. Twenty environment themes do not mean twenty campaign floors. The 24 registered synergies are examples with explicit definitions, rather than an exhaustive list of possible builds. See the [catalog](game/data/catalog.json), [expansion data](game/data/expansion.json), and [generated reference](docs/incense-debt/16-content-catalog.generated.md).
 
@@ -735,7 +773,9 @@ Replacing an unfinished run requires confirmation; canceling preserves it. Loade
 
 Releasing arrow keys stops firing while retaining the last aim until the mouse actually moves. Sequential skill choices, relic replacement, special rooms, repayment, floor narratives, ending choices, and trial returns have keyboard paths.
 
-Touch uses separate movement and aiming sticks plus dodge, Burn Debt, and active-item buttons, including third-finger casting. Layout supports mirroring, drag editing, and directional editing. Portrait or narrow-screen layouts pause combat. Settings include remapping with conflict swaps, aim assistance, deadzones, fixed sticks, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size. Physical gamepad and mobile acceptance remains pending.
+Touch uses separate movement and aiming sticks. Dodge sits above the inner edge of the left stick, Burn Debt above the right stick, and the active-item button appears when equipped; third-finger casting is supported. **Settings → Touch** stores each of five controls' position and size independently (75%–175%, with a minimum hit area), with mirroring, opacity, fixed/floating sticks, and a save-and-try screen. Settings also include remapping with conflict swaps, aim assistance, deadzones, toggle fire, pickup radius, haptics, shake/flash/particle intensity, and narrative text size.
+
+The top map button works during combat. Skill candidates appear together; full-slot replacement previews old/new effects before confirmation. Inputs avoid the soft keyboard, and system Back dismisses it before closing an overlay or pausing. Portrait/narrow layouts pause combat. The [mobile revision](docs/incense-debt/33-action-mobile-update.md) records causes, captures, and the test matrix. Physical gamepad and mobile acceptance remains pending.
 
 **Seeds and daily challenges:** A 12-digit seed entry preserves leading zeros and applies to the next run only; it clears after starting. Pause displays and copies the active seed. Daily challenges have separate rules and character selection. Map/content/combat randomness is separated, and saves preserve the running state. Identical seeds across different versions or unlock states do not guarantee identical content.
 
@@ -787,11 +827,13 @@ Saves are local with manual transfer, rather than cloud-synchronized. Close the 
 
 **Typography:** Body text uses licensed Resource Han Rounded subsets renamed `IncenseRoundedMedium / Bold`; headings use `SmileySansOblique`; `Noto Sans SC` provides full Chinese fallback. All fonts are bundled, with notices in [fonts](game/assets/fonts).
 
-**Production:** Character, weapon, environment, and keyframe art was generated through the requested **sub2-image-gen / gpt-image-2.5** pipeline. Runtime assets have transparency, slicing, anchor normalization, and loading checks. Actor/held-weapon animation uses baked paper-puppet deformation; the new beam/area strips use 48 separately generated keyframes. Cinematics combine still sequences, camera motion, and transitions. See the [asset-production guide](docs/incense-debt/11-asset-production.md) and [visual contract](docs/incense-debt/17-visual-contract.md).
+**Production:** Character, weapon, environment, and keyframe art was generated through the requested **sub2-image-gen / gpt-image-2.5** pipeline. The six heroes' six states, held-weapon actions, and every creature's attack/hurt use independently drawn poses, followed by slicing, uniform scaling, and shared foot anchors. Creature actions have four facings; real attacks, lunges, and damage drive sampling, while pause and saves preserve progress. Other creature states retain their existing asset methods. See the [asset-production guide](docs/incense-debt/11-asset-production.md), [visual contract](docs/incense-debt/17-visual-contract.md), and [complete action verification](docs/incense-debt/35-creature-action-completion.md).
 
-**Music:** Nine musical themes and 25 synchronized stems respond to environment family, exploration, combat, tension, and bosses. Some of the twenty environments share musical families; each environment does not yet have a unique soundtrack. Foreground composition and combat SFX are locally synthesized originals. Four CC0 sources supply quiet ambient texture; provenance is recorded in the [audio audit](docs/incense-debt/reports/runtime/audio-source-research.json).
+**Music:** The default playlist shuffles four user-selected Yourset songs, plays each once per round, avoids repeats at round boundaries, and uses a 1.2-second crossfade. Room transitions do not restart songs, and playlist randomness does not affect game seeds. Full-length audio is bundled; see the [playlist and source hashes](game/data/music_playlist.json). Audio settings can restore the original theme mode: nine musical themes and 25 synchronized stems respond to environment, exploration, combat, tension, and bosses. Some environments share musical families. The original themes and combat SFX use local composition/synthesis; four CC0 sources add quiet ambience, as recorded in the [audio audit](docs/incense-debt/reports/runtime/audio-source-research.json).
 
 **Feedback and mixing:** Attacks, charging, projectiles, hits, player damage, parries, shield breaks, kills, and UI have event-specific audio. Master/BGM/SFX volume is separate. Pausing retains quiet music; backgrounding stops sound. Checked-in audio runs offline. Optional recomposition uses native FFmpeg and [compose_music.py](tools/runtime/compose_music.py); gameplay needs neither Python nor a generation API.
+
+**Privacy policy:** The current web/Word policy is v1.3, updated and effective on 2026-10-09. The operator is **吴国黎**; contact **carzyg@outlook.com**. Read the [public HTTPS policy](https://xhz.sidcloud.cn/privacy-policy) and [implementation audit](docs/legal/privacy-implementation-audit.md) for the text, downloads, and deployment verification.
 
 <a id="en-build"></a>
 ### Clone, run, and build
@@ -840,7 +882,7 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/large export ZIPs, reproducible audio masters, and most raw QA frames are excluded. Original images directly referenced by documentation are retained. Download applications from the [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) or build them locally. The [delivery manifest](build/delivery-manifest.json) records the current verified local artifacts; the [release manifest](docs/releases/v0.2.0-alpha.1.manifest.json) records the fresh Windows release export and published attachments.
+**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/ZIP files, reproducible audio masters, and most raw QA frames are excluded. README-linked captures and GIFs are tracked. The [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1) contains historical 0.2.0 applications; current source builds 0.2.1. The [delivery manifest](build/delivery-manifest.json) records current verified local artifacts; the [release manifest](docs/releases/v0.2.0-alpha.1.manifest.json) records the published older attachments.
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
@@ -867,9 +909,11 @@ python tools/runtime/run_expansion_qa.py --packaged
 python tools/runtime/run_audio_qa.py --packaged
 ```
 
-New evidence adds 1,568 equipment/loot/composition checks, 80,000 rare-roll samples, 29 packaged equipment checks, and 111 captures covering all 480 generated frames. Baseline checks include 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 107 keyboard-flow checks, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
+The [0.2.1 action verification](docs/incense-debt/35-creature-action-completion.md) covers all 402 identities, 24,048 native frames, and their source hashes. It passed 17 combat-state checks, 2,096 exported-pack checks, and 107 keyboard-flow checks in the executable. The [hero/mobile revision](docs/incense-debt/33-action-mobile-update.md) also records 340 checks and 80 captures across four window/density configurations, plus 19 playlist, 22 held-weapon, and 54 advanced-input checks.
 
-The current full-run evidence is **one eleven-floor Umbrella Spirit action-bot victory with unchanged initial player stats**, including 129 cleared rooms, 153 physical doorway transitions, and ten floor-transition save/restores. It establishes a reachable software route, rather than human balance or feel. Read the [full-run record and source hashes](docs/incense-debt/reports/runtime/expanded-full-run.json).
+Historical 0.2.0 evidence includes 1,568 equipment/loot/composition checks, 80,000 rare-roll samples, 29 packaged equipment checks, and 111 captures, alongside 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
+
+Historical 0.2.0 full-run evidence is **one eleven-floor Umbrella Spirit action-bot victory with unchanged initial player stats**, including 129 cleared rooms, 153 physical doorway transitions, and ten floor-transition save/restores. It establishes that version's reachable software route; human balance and feel still need review. Read the [full-run record and source hashes](docs/incense-debt/reports/runtime/expanded-full-run.json).
 
 Evidence is bound to its recorded source and artifact hashes. Rebuilding requires fresh relevant validation; old reports do not automatically validate new binaries. Some image audits need the full local capture directory, so generate omitted raw frames with the corresponding native QA first. `python tools/documentation/capture_readme_gameplay.py` recreates the ordinary README clip from an exported Windows artifact and closes its own temporary window.
 
@@ -880,7 +924,7 @@ Evidence is bound to its recorded source and artifact hashes. Rebuilding require
 | --- | --- | --- |
 | Windows | Native executable operation, all runtime assets loaded, GUI/keyboard QA, captures and audio samples | Human visual/feel/balance review, long sessions, publisher signing |
 | Android | arm64 debug APK, structure, permissions, signature, and imported-resource checks | Phone installation, touch/keyboard/clipboard, thermals, lifecycle |
-| iOS | Shared-source/template handoff and content-parity inspection | Real Mac export, Xcode project, signed IPA, iPhone/iPad operation |
+| iOS | Historical 0.2.0 shared-source/template handoff | Updated source handoff, real Mac export, Xcode project, signed IPA, iPhone/iPad operation |
 | Inputs | Keyboard-only flow and native mouse/keyboard interactions; gamepad/touch mappings implemented | Physical controller and mobile-device experience |
 | Content | Eleven-floor Alpha with the documented systems and automated route | More characters/seeds and human build balancing |
 | Language | Chinese game UI/story, bilingual repository guide | English game localization |
@@ -892,7 +936,7 @@ The game remains an Alpha, with no online multiplayer, online accounts, or cloud
 
 | 入口 / Entry | 用途 / Purpose |
 | --- | --- |
-| [设计文档首页 / Design index](docs/incense-debt/README.md) | 00—26 篇设计、工程、制作与迭代来源 / design, engineering, production, and revisions |
+| [设计文档首页 / Design index](docs/incense-debt/README.md) | 00—35 篇设计、工程、制作与迭代来源 / design, engineering, production, and revisions |
 | [方向提案 / Original five directions](docs/游戏方向提案-五案.md) | 五案选型记录 / historical concept selection |
 | [系统圣经 / System bible](docs/incense-debt/20-direction1-system-bible.md) | 核心体系与总装配入口 / core systems and integration reference |
 | [菜单、存档与成就 / Menus, saves, achievements](docs/incense-debt/22-menu-save-achievements.md) | 层级与操作约定 / hierarchy and interaction contracts |
@@ -900,12 +944,15 @@ The game remains an Alpha, with no online multiplayer, online accounts, or cloud
 | [环境主题 / Environment revision](docs/incense-debt/24-environment-theme-revision.md) | 二十套主题与四十背景 / twenty themes, forty backgrounds |
 | [主题怪物 / Themed encounters](docs/incense-debt/25-themed-encounters.md) | 各主题小怪与首领池 / theme-specific mob and boss pools |
 | [边界、混编与特效 / Boundary, mixing, and VFX revision](docs/incense-debt/26-combat-boundary-mixed-encounters.md) | 内墙、60/40、独立首领房与关键帧 / inner walls, mixing, separate chambers, keyframes |
+| [动作、触控、曲库与隐私 / Hero, touch, playlist, privacy revision](docs/incense-debt/33-action-mobile-update.md) | 0.2.1 的主角动作、移动交互、配乐与主体更新 / 0.2.1 hero actions, mobile interactions, music, and operator correction |
+| [全量怪物动作 / Complete creature actions](docs/incense-debt/35-creature-action-completion.md) | 402 个身份、24,048 帧与四向 GIF / 402 identities, 24,048 poses, and four-facing GIFs |
 | [当前状态 / Current status](docs/incense-debt/reports/current-product-status.json) | 各平台与当前版本事实 / current platform and version facts |
 | [扩展交付 / Expansion delivery](docs/incense-debt/reports/expansion-delivery.json) | 内容数量、检查及来源 / counts, checks, provenance |
 | [边界回归 / Combat regression](docs/incense-debt/reports/runtime/combat-revision/systems.json) | 实际几何与遭遇规则 / actual geometry and encounter rules |
 | [键盘流程 / Keyboard flow](docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json) | 纯键盘闭环证据 / keyboard-only flow evidence |
 | [音频 QA / Audio QA](docs/incense-debt/reports/platforms/windows/audio/native-audio.json) | 原生混音与事件检查 / native mix and event checks |
-| [平台一致性 / Platform parity](docs/incense-debt/reports/platforms/platform-parity.json) | 共享源码、数据与资源静态核对 / static shared source/data/resource verification |
+| [当前包体一致性 / Current package comparison](docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json) | Windows／Android 的真实脚本、图集与动作核对 / actual Windows/Android scripts, atlases, and poses |
+| [历史平台一致性 / Historical platform parity](docs/incense-debt/reports/platforms/platform-parity.json) | 0.2.0 共享源码、数据与资源静态核对 / historical 0.2.0 static source/data/resource comparison |
 | [交付哈希 / Delivery hashes](build/delivery-manifest.json) | 本地应用包 SHA-256 / recorded local artifact hashes |
 | [外部验收 / External acceptance](docs/incense-debt/21-external-acceptance-runbook.md) | 真人与设备验收步骤 / human and device acceptance procedure |
 
@@ -924,6 +971,7 @@ A project-wide open-source license has not been chosen. Public source and assets
 | Godot 及第三方组件 / Godot and bundled third parties | [Engine notices](game/assets/licenses/Godot-THIRDPARTY.txt) |
 | 四份环境音纹理 / Four ambience sources | CC0，逐项来源见 [audio-source-research.json](docs/incense-debt/reports/runtime/audio-source-research.json) |
 | 项目美术 / Project art | Sub2 生成原始板、处理脚本与来源记录 / generated source boards, processing scripts, and provenance records |
-| 主要配乐与 SFX / Foreground music and SFX | 本地原创编曲与合成脚本 / local original composition and synthesis tooling |
+| 原主题配乐与 SFX / Original theme music and SFX | 本地原创编曲与合成脚本 / local original composition and synthesis tooling |
+| 默认 Yourset 曲库 / Default Yourset playlist | 用户指定本地曲库；文件名、源文件哈希与转换后资源见 [music_playlist.json](game/data/music_playlist.json) / user-selected collection with filenames, source hashes, and converted assets |
 
 项目入口 / Repository: [wikigsroom/joss-debt](https://github.com/wikigsroom/joss-debt)

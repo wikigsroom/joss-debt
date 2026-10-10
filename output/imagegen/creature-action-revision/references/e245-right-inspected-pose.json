@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e245-primary.png",
+  "source_sha256": "0ac14352e07d131b2ef5c7dcd4843c05eae673e502e6dab4ee86ed606318cbba",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original LIMBLESS charred brown/ivory paper snake, ONE ivory skull muzzle, original curled segmented burnt-paper body and red forked tongue. No arms or added head. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "0cac7535889aea85b7f0c2edef3b54160e958240cb344a59ac032468aff45878"
+}

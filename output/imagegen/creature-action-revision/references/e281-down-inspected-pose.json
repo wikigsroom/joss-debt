@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e281-primary.png",
+  "source_sha256": "403955966d77fdbbd0b71f7aa76430f4f0efc8989cd2b47e7faf6c5480442c92",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Original LIMBLESS red/gold paper judgment-chain snake, ONE ivory pointed skull, red forked tongue, long original S-coils of sealed red/gold paper segments and hanging gold bells. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "c68fbb25904bac46318184e3bcab49feb5e7506f2b304cf8efd446fd41bb7209"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b67-primary.png",
+  "source_sha256": "c4211e6578106431225ad51d5044c7e69942d885732345a4661b624eb64f9f38",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original lotus deity right attack ready pose visually inspected: skull near eye points right, petal body follows right, vines and lotus lanterns retain original identity. Use only as generation camera guide.",
+  "guide_sha256": "7f6a1c953b24cddb5eeca2afdd9a0c94bf20b0b3fd7f9a1cb089b6320cae3807"
+}

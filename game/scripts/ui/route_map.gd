@@ -26,8 +26,9 @@ func _draw() -> void:
 
 static func list_view(ui, sheet: Control, page: String) -> void:
 	var scroll = ScrollContainer.new()
-	scroll.position = Vector2(18, 84)
-	scroll.size = Vector2(312, 410)
+	var tabs_height = maxf(52, ui.mobile_button_height) if ui.mobile_ui else 52.0
+	scroll.position = Vector2(18, tabs_height + 32)
+	scroll.size = Vector2(312, 509 - tabs_height - 46)
 	sheet.add_child(scroll)
 	var list = VBoxContainer.new()
 	list.add_theme_constant_override("separation", 12)
@@ -59,7 +60,7 @@ static func list_view(ui, sheet: Control, page: String) -> void:
 	for i in entries.size():
 		var entry = entries[i]
 		var button = ui.button(list, str(entry.name), Rect2(0, 0, 292, 64), func(): ui.notice(str(entry.get("body", entry.get("description", entry.name)))))
-		button.custom_minimum_size = Vector2(292, 72 if ui.mobile_ui else 62)
+		button.custom_minimum_size = Vector2(292, maxf(72,ui.mobile_button_height) if ui.mobile_ui else 62)
 		button.tooltip_text = str(entry.get("body", entry.get("description", entry.name)))
 		button.set_meta("nav_id", "map_" + page + "_" + str(i))
 		button.set_meta("map_build_entry", i)
@@ -103,7 +104,7 @@ static func show_sheet(ui, page: String = "build") -> void:
 	var visual = load("res://scripts/ui/route_map.gd").new()
 	visual.world = ui.world
 	visual.origin = minimum
-	visual.spacing = 100 if ui.mobile_ui else 78
+	visual.spacing = maxf(100,ui.mobile_button_height+14) if ui.mobile_ui else 78
 	canvas.custom_minimum_size = (maximum - minimum) * visual.spacing + Vector2(110,110)
 	scroll.add_child(canvas)
 	visual.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -117,7 +118,7 @@ static func show_sheet(ui, page: String = "build") -> void:
 		if not ids.is_empty(): text = " / ".join(ids.map(func(id): return ui.world.db.name_of("bosses", str(id))))
 		var current = i == int(ui.world.run.room)
 		var visited = ui.world.run.visited.has(i)
-		var diameter = 78 if ui.mobile_ui else 54
+		var diameter = maxf(78,ui.mobile_button_height) if ui.mobile_ui else 54
 		var action = ui.icon_button(canvas, "此处 · " + text if current else text, ROOM_ICONS[kind], Rect2(visual.location(ui.world.run.graph.coords[i]) - Vector2.ONE * diameter * .5, Vector2.ONE * diameter), func(): ui.notice("沿房间内的方向门前行 · " + text))
 		action.set_meta("nav_id", "map_room_" + str(i))
 		action.set_meta("map_room", i)

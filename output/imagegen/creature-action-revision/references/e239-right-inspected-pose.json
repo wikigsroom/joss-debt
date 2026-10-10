@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e239-primary.png",
+  "source_sha256": "f83dbac1f63a2355b5252b8ca77f851ff06272f100528dddef05cf85e7a1f65c",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original FOUR-legged burnt brown/ivory paper fox, ONE ivory skull muzzle, original ears and curled charred paper tail; ragged ember-colored paper edges. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "351ca443141c3889cc8ed5aa0a057073338da71195b3164d13cc9b42d674a4f0"
+}

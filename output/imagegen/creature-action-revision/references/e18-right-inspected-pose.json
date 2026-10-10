@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e18-primary.png",
+  "source_sha256": "ec0c64fe524a7e4bfb74e6827f42ef3462e71390f774c90209f4cd56c1eb93d5",
+  "row": 4,
+  "column": 2,
+  "declared_direction": "right",
+  "visual_finding": "Inspected identity-preserving right pose in source row 4, column 2; same original body, permanent objects and palette. Used only as orientation reference for independently generated new sequences.",
+  "guide_sha256": "5675e128976c819a1a4e953b349c0eba468a7895df86f33950c333b944ecb32a"
+}

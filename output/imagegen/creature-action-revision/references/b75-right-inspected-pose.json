@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b75-primary.png",
+  "source_sha256": "f61e1fed15d88a2603f7c5e598e945f0a4e35e51430e33e19ad5135bda81c7b6",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right bamboo armored beast profile, mask nose and leading claw right, preserved bamboo armor and leaf tail.",
+  "guide_sha256": "e7143f0d06b6acc7ec3ace9dbc45e44bd1b30f4326afad48660f999fe6b59d6c"
+}

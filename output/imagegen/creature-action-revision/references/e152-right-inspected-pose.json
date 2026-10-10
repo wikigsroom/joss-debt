@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e152-primary.png",
+  "source_sha256": "024ec3a8de9001050e1dd0092d05c651c4481b05c996e4b31bc53e25c7755a53",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right rhino guide; hurt must retain direction.",
+  "guide_sha256": "1716223ab8ecc29f42c9466b3ebe09046450376c34d1895d455b618f60735e81"
+}

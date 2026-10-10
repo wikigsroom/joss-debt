@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 瓮中龙 (b09) in this camera view: SCREEN-DOWN FRONT VIEW: face and attacking end point toward the BOTTOM edge of the cell; the rear is toward the TOP. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: a coiled paper river dragon escaping a cracked bronze urn. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Original red/ivory serpentine folded-paper dragon emerging coiled from a moss-green bronze urn: long S-curved segmented ivory/red dragon body, ONE ivory skull dragon head with long horns/whiskers/red mane, permanent heavy round urn with bronze loops, red hanging tags and short urn feet. Preserve one dragon head, serpentine coil and original urn; do not turn into humanoid or add dragon limbs. True FRONT camera facing screen DOWN: skull/mask front centered, paired original eyes when species has two, all body and permanent props follow front camera.
+

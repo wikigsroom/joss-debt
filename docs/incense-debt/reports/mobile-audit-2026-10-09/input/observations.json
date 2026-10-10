@@ -1,0 +1,107 @@
+{
+	"engine": "4.7.2-stable (official)",
+	"generated_utc": "2026-10-08T19:00:56",
+	"observations": [
+		{
+			"confirmed": true,
+			"id": "two_thumbs_dash_interrupts_fire",
+			"observed": {
+				"after_fire": false,
+				"before_fire": true,
+				"dash": true,
+				"move_preserved": true
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "button_switch_discards_charge",
+			"observed": {
+				"charge_after": 0.0,
+				"charge_before": 0.4,
+				"weapon": "w32"
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "fire_inside_aim_deadzone",
+			"observed": {
+				"aim": "(0.0, -1.0)",
+				"deadzone": 0.32,
+				"fire": true,
+				"stick_length": 0.25
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "fixed_aim_captures_far_from_visible_stick",
+			"observed": {
+				"distance_from_stick": 382.099456787109,
+				"fire": true,
+				"stick_radius": 72.0
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "sliding_aim_onto_dash_does_not_dash",
+			"observed": {
+				"dash": false,
+				"fire": true,
+				"floating_origin": "(945.0, 605.0)",
+				"overlaps_dash": true
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "move_capture_includes_upper_playfield",
+			"observed": {
+				"move_id": 6,
+				"pressed_point": "(100, 180)"
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "custom_aim_crosses_half_screen_but_captures_move",
+			"observed": {
+				"aim_center": "(499.2, 475.2)",
+				"aim_id": -1,
+				"fire": false,
+				"layout_accepted": true,
+				"move_id": 16,
+				"movement": "(0.95355, -0.301236)"
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "ordinary_release_stops_attack",
+			"observed": {
+				"aim_id": -1,
+				"fire": false
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "lifecycle_clear_stops_movement",
+			"observed": {
+				"fire": false,
+				"move": "(0.0, 0.0)"
+			}
+		},
+		{
+			"confirmed": true,
+			"id": "auto_aim_ignores_manual_direction",
+			"observed": {
+				"effective_direction": "(-1.0, 0.0)",
+				"manual_direction": "RIGHT",
+				"nearest_target": "LEFT"
+			}
+		}
+	],
+	"scope": "native Godot source audit with synthetic touch input; no physical Android device",
+	"settings": {
+		"emulate_mouse_from_touch": true,
+		"orientation": 0,
+		"screen_transform": "[X: (0.05, 0.0), Y: (0.0, 0.05), O: (0.0, 14.0)]",
+		"stretch_aspect": "keep",
+		"surface": "(64, 64)"
+	}
+}

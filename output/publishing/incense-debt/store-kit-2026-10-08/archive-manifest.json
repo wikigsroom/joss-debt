@@ -1,0 +1,24 @@
+{
+  "archives": [
+    {
+      "file": "IncenseDebt-screenshots-12.zip",
+      "bytes": 30483496,
+      "sha256": "ea54683047202578858dec48148c12dfa6a2649cfa77fe91996c0e482f3ae075"
+    },
+    {
+      "file": "IncenseDebt-promotional-images-5.zip",
+      "bytes": 22900209,
+      "sha256": "cd993d6e66cb89229d6041d3e94a3c983de9c2e40aa9e3008325a909e65a5253"
+    },
+    {
+      "file": "IncenseDebt-publication-images-clean.zip",
+      "bytes": 72469393,
+      "sha256": "64ec195dcc9b673b502cecefcd0dbd1dd85a45bb854b63853eba5f41a2ecf454"
+    },
+    {
+      "file": "IncenseDebt-complete-store-kit.zip",
+      "bytes": 241808126,
+      "sha256": "f909c209bd4f9136c7dd1a2d6056082e8b37d3121fa6bb7fee5aebea82b7f070"
+    }
+  ]
+}

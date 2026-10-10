@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e137-primary.png",
+  "source_sha256": "d41238b20564be3dc2666d287d6f29028018a2ace8036ca28698690dcfccc68b",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Original serpent identity guide only; current head faces right, construct independent true front view.",
+  "guide_sha256": "82180c9a2bec087942d0f729f231b3bd3c3eb29cbad74f4d69a2abdacbb287bd"
+}

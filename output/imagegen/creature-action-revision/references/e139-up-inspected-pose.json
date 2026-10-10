@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e139-primary.png",
+  "source_sha256": "e79cab46e2e67ce2ed04f6b8c38472d58392ac8e445dc152c977939f9f7b495b",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear candle spider; hide front skull mask during hurt.",
+  "guide_sha256": "30f523105497cc212d7269fecace62c512e1d1af5b8164a21450dc3d95259ad2"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b80-secondary.png",
+  "source_sha256": "0e6b313fde9d5fe702e5b4eb1cec4dbe5b2e8d098991a6dcdd0873612109e345",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original purple crystal gauntlet boss right profile, narrow ivory mask right, shoulder rack and fists side perspective.",
+  "guide_sha256": "8b127e0e25aa135f621df49d2ca23acd7c115f9cede117317dc458f23d256da4"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e172-primary.png",
+  "source_sha256": "d7839fe33504c21c68bd4608812d9fd7ec8f520d237addd016f75a9cb70bb989",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right lotus guard profile; keep profile mask throughout hurt.",
+  "guide_sha256": "bf5a7dd54a778ca2e7d159ec6ebe86b6550af9459607055f59e52d7bf5bc4257"
+}

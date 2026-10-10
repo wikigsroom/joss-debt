@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e170-primary.png",
+  "source_sha256": "c3d546f970ac5695ed405a250d28065797af3a1c41102e22f40b53015f31cb96",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right lotus panda profile; retain through hurt.",
+  "guide_sha256": "d7ad1995cf99037ac0176dbb5acaeb50f4a53ea35817404ed3f29d718b3b07ad"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b77-primary.png",
+  "source_sha256": "8c04d12245a21463a8efc476788b1cec024172ed279dc5781df2535ba3f9f54f",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original crystal shell boss genuine right profile, ivory nose right and asymmetric crystal shoulder facets.",
+  "guide_sha256": "defd6895100385428cfb6dd4fe5ed7c3623a7fb0d77d24e59edeae7ed283ec02"
+}

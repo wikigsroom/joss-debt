@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b51-primary.png",
+  "source_sha256": "e06fd837d67a16258d2b4e7bef5eba5ed64a3d819ef04dd6c01ae18f08f8b42c",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear view of original blue paper roof-armored quadruped: closed rear roof plates, back paper tags, four claw paws and curling black tail; no frontal ivory skull face.",
+  "guide_sha256": "edb5728eb72e23df010209cdc00ff20a8bddd10d807ac1ba921f7f44db92d5c2"
+}

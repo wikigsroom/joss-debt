@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b99-primary.png",
+  "source_sha256": "1abdbba58fdaf45973406289458e22ee5d2aafbd09227218ab779d5dec79a619",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Inspection candidate: actual faceless rear robe, crown back, staff and open book.",
+  "guide_sha256": "eb6b7c12f76346dc355b26963d1f7ef1d005af9485e7ce61a80985cbb6c3228f"
+}

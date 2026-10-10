@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e151-primary.png",
+  "source_sha256": "37f27cb49d7407d17b2e7db430353d1fde8b5c919e4cb687f5a50ee6719326d9",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right spider attack profile; hurt must retain right.",
+  "guide_sha256": "fd7bf8d2b1e5ccfbce5c0a7012070f9db5bc912af900d8be3b574f5d977b0e08"
+}

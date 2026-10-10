@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e156-primary.png",
+  "source_sha256": "4baf090b966f703d0d813947464d6730de7d3875c1ffd62a16cdbf520f2e4ff4",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Identity guide only; current pose frontal, construct true right crab profile.",
+  "guide_sha256": "7a660d8df351ba56a19ad8360412a660529c86e477eb3e34a1e387d06df75646"
+}

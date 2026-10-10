@@ -34,12 +34,12 @@ func run_suite() -> void:
 		for state in Paper.COUNTS.character:
 			for direction in ["down", "left", "right", "up"]:
 				for frame in int(Paper.COUNTS.character[state]):
-					var elapsed = (frame + .1) / Paper.FPS[state]
+					var elapsed = (frame + .1) / Paper.CHARACTER_FPS[state]
 					var body = paper.texture(actor, "weapon_body", state, elapsed, direction)
 					var hands = paper.texture(actor, "weapon_hand", state, elapsed, direction)
 					states_ok = states_ok and body != null and hands != null and body.get_width() == 96 and hands.get_height() == 96
 					frame_count += 1
-	expect(states_ok and frame_count == 576, "576 actual body/hand frame pairs load for every state and facing")
+	expect(states_ok and frame_count == 864, "864 actual independently drawn body/hand frame pairs load for every state and facing")
 	var shots_ok = true
 	var geometry_ok = true
 	var combos = 0

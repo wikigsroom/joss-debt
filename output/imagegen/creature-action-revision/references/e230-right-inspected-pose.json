@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e230-primary.png",
+  "source_sha256": "a7107be6d3323814c185e06d566043f6abc39c26c0ba17a9ae833adfb7fab913",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged stocky violet/ivory chain-box badger, striped skull muzzle, purple rune breastplate, chain collar and original magenta paper strips. Actual complete source pose inspected; whole-body right camera accepted as generation guide only.",
+  "guide_sha256": "e2ecad2830b6cec5fe7f97312e2fadc90c5e52af6f236181894df0897da96241"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b33-secondary.png",
+  "source_sha256": "3af5614920d18952ce667c083d15ce88aa0610d93f0293d13e5000ec6c48f884",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Verified rear lantern crab: green layered shell back, legs and claws in rear perspective, no frontal eye or face; three lanterns and red ribbons retained.",
+  "guide_sha256": "4fd905b1508c4fc9f56e39e62f853b4af2f01a4eec4b5a24207b7be47728f61d"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e153-primary.png",
+  "source_sha256": "b4426b0948397094992ff178bedd48a850334b67624de914bb1af55f8a888c44",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right mouse pose from physically assigned left row; draw all right actions independently.",
+  "guide_sha256": "3b30929de9170738580677ecaeeb51ed65248ba78197fef0d403187a64d35cf8"
+}

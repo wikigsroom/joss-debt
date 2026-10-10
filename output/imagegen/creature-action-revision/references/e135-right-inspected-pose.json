@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e135-primary.png",
+  "source_sha256": "c34ae9a947f53254a1889b2063d5517ba3dec8d395e645a72ba09cff877c575a",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right wax frog profile; retain through hurt.",
+  "guide_sha256": "bf45b583a1e3827605dd6045c73bf5b6e465d20b98a8154622da706160cf46c5"
+}

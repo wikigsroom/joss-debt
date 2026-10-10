@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e224-primary.png",
+  "source_sha256": "a4acc263253808a01e8144af4c3558b8450807a0f305b7f7df1d50552947177d",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original FOUR-legged blue crystal-paper rhinoceros, ONE ivory mask/head with original pointed horn, massive faceted mirror building/armor on back and gold trim. Actual complete source pose inspected; whole-body left camera accepted as generation guide only.",
+  "guide_sha256": "68b64fb3abc377f422a51fb6c99a7119657ba11bfcb93768d6b7c9bbfdbdb616"
+}

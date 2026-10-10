@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e99-primary.png",
+  "source_sha256": "24ba5b25f49b51e926c26a6306db8d9a2a71ebfca424395a06f84160c0f62aad",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Intact right neutral pose; regenerate joined leaf-fox drawings or frontal-turning frog recoil while preserving this actual profile.",
+  "guide_sha256": "8776f32d9955c9043a640e0eb45ab9bd484b59c84b7432eeb12ddb339c33b618"
+}

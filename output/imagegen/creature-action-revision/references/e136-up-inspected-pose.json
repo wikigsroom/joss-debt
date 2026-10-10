@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e136-primary.png",
+  "source_sha256": "ef823508d32ac6230f89173198357328c42c1bd05b62c3f4dcf15f7c28a79d49",
+  "row": 7,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear wax guardian guide; keep front eyes and chest hidden in all rear attack drawings.",
+  "guide_sha256": "e5c2f5a433858bff55713c681e197fcdf443a686019e8ca4c98a6068769fbde6"
+}

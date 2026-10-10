@@ -1,4 +1,5 @@
 extends Control
+signal selected_changed(action: String)
 ## The preview edits the same normalized centers used for drawing and capture.
 var adapter
 var font: Font
@@ -23,6 +24,7 @@ func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		var actions = LABELS.keys()
 		selected = actions[(actions.find(selected) + 1) % actions.size()]
+		selected_changed.emit(selected)
 		queue_redraw()
 		accept_event()
 		return
@@ -46,6 +48,12 @@ func _gui_input(event: InputEvent) -> void:
 		point = event.position
 		motion = not dragged.is_empty()
 	elif event is InputEventScreenTouch:
+		if event.canceled and event.index == active_finger:
+			dragged = ""
+			active_finger = -1
+			queue_redraw()
+			accept_event()
+			return
 		point = event.position
 		pressed = event.pressed and active_finger < 0
 		released = not event.pressed and active_finger == event.index
@@ -61,6 +69,8 @@ func _gui_input(event: InputEvent) -> void:
 			if center.distance_to(point) < distance:
 				distance = center.distance_to(point)
 				dragged = action
+				selected = action
+				selected_changed.emit(selected)
 	if motion and not dragged.is_empty():
 		var success = adapter.move_control(dragged, point / size)
 		if status != null: status.text = "松手后可继续微调，保存后用于战斗。" if success else "触点需留出间距，避免误触。"

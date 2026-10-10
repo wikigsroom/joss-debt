@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e169-primary.png",
+  "source_sha256": "229f9e769e3762ee381dd33aa31ca7e1a37d4e27bec56497666ae4bdad13f499",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actual rear lotus spirit; keep front mask hidden through hurt.",
+  "guide_sha256": "efca95095651b1539dffdae6c2e2f9d9d1a8e6f51a035e5d368d05f75a49b826"
+}

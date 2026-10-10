@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b22-primary.png",
+  "source_sha256": "1622f03f8be879745373dca59b638a9af9bcdeaebc9b8b1f2184ee9ea72424d2",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual intact neutral right profile reviewed against original boss; attack and recoil must preserve side body axis without front/back turning.",
+  "guide_sha256": "5fce145c389e649c6db1e9c693677bdb2cf84088fd08960d1af2967b828cecf4"
+}

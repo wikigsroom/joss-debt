@@ -1,0 +1,48 @@
+{
+  "recipe": {
+    "background_sha256": "27f6ae0d95fc6511b56fca008881d30c327e6a30a6bec08624dc67b18f234547",
+    "hero_sha256": "8589cced7041bd344325e3b68053b6a67371cec08b49d29c7454538f88a65469",
+    "model": "realesrgan-x4plus",
+    "model_sha256": "713ee713b0353afaa27976f0563a64a5043bd70b9bd8936c2e26e25ebcdbcddf",
+    "config_sha256": "35330ececcea33b6c397a72548e788d5d53becee4734c50b7fada36e89f10a86",
+    "executable_sha256": "07e49f7cbb4ede01ae4dd4c399d3a7e5846e3d2085c3128eff881e55cb7b1a0c",
+    "crop": [
+      0,
+      180,
+      1916,
+      799
+    ],
+    "composition_size": [
+      2000,
+      646
+    ],
+    "scale": 4,
+    "final_dimensions": [
+      5120,
+      1654
+    ],
+    "revision": 1,
+    "text": false,
+    "logo": false,
+    "watermark": false
+  },
+  "method": "Native Windows NCNN/Vulkan Real-ESRGAN 4x, followed by Lanczos downsampling",
+  "tool_source": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases/tag/v0.2.0",
+  "model_source": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0",
+  "original_background": "output/imagegen/incense-debt/release-promo-2026-10-08/generated-banner-background.png",
+  "original_hero": "output/imagegen/incense-debt/release-promo-2026-10-08/layers/original-paper-spirit.png",
+  "final_file": "artwork/library-wallpaper-no-logo-5120x1654.png",
+  "final_sha256": "b72a6203e126f8e2dbb001e2ec26bd934a1b4373847c8784d41fb6484556bd7c",
+  "neural_output_dimensions": [
+    8000,
+    2584
+  ],
+  "meets_minimum": true,
+  "composited_layers": [
+    "original background crop",
+    "quiet shadow",
+    "original paper spirit",
+    "ground shadow"
+  ],
+  "native_returncode": 0
+}

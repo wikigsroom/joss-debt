@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b65-secondary.png",
+  "source_sha256": "a6de76447a1a5b38d589b4ae2d0a77a7188b1aad19997a0decd13da5e90aaae1",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected actual right lotus-canopy boss: ivory skull mask faces right, flower crown, teal pavilion/robe and lotus lamps in right-side perspective; original anatomy/style retained.",
+  "guide_sha256": "6a5ef2f425883c2cc7056c73ee68f596695c4642c5ff3bbf520fbca46ef1b8bd"
+}

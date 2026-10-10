@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e113-primary.png",
+  "source_sha256": "e9830dcc1cbb1a67f4f2aba7f5f64249b74de90c6d80691a1787a9ce2e32fee5",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Rear neutral neck and coils; front mask must remain hidden in every rear hurt drawing.",
+  "guide_sha256": "9699894a3be1da47f5693749c16c7cae6a40c8fdc465cedd81e9abb1f1569839"
+}

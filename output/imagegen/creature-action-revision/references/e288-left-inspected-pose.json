@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e288-primary.png",
+  "source_sha256": "6db03fba839284b088c88d32f73ac72f70c9fdbf8e79f08eae053065dc9db2bf",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original SIX-legged purple/ivory wish-page paper crab, two heavy original claws, layered cream/purple star/crescent paper back plates and ONE ivory mask. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "3f447bdce1a0961c75b8660b1c3e650a041c92cd7331bd96728d833c45271a4a"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b94-primary.png",
+  "source_sha256": "775a777929487eb70aa500e93904ccb7a941130e758f53b8433eb140e94f1428",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspection candidate: original star crowned paper mage side preparation pose.",
+  "guide_sha256": "0fec37d506471313fea98835b87d24349c766535c8c144c6890dcb11e7715a3d"
+}

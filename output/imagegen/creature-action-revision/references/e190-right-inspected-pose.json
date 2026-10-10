@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e190-primary.png",
+  "source_sha256": "bd7106eb9c57e75ddbe9390df56f0b906e329319c545ebf2018f7af9df04ca32",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right gear bird profile; hurt must not rotate rearward.",
+  "guide_sha256": "ba31cca5d228ab5c4f17b8df019b598eaeb110f1ac84a5a0b10abdb3b1f11773"
+}

@@ -1,0 +1,190 @@
+{
+  "fps": 30,
+  "method": "Action-bot control of native game simulation; native MovieWriter with game BGM/SFX; isolated capture profile",
+  "requested_seconds": 40,
+  "restarts": 0,
+  "scenario": "screenshots",
+  "screenshots": [
+    {
+      "character": "c_paper",
+      "description": "纸童·灯市实战",
+      "filename": "01-paper-child-combat.png",
+      "floor": 1,
+      "method": "Native normal run",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m01"
+    },
+    {
+      "character": "c_paper",
+      "description": "六名还愿人·角色选择",
+      "filename": "02-character-selection.png",
+      "floor": 1,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m01"
+    },
+    {
+      "character": "c_umbrella",
+      "description": "纸渡河埠·回旋纸伞",
+      "filename": "03-river-returning-umbrella.png",
+      "floor": 1,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m02"
+    },
+    {
+      "character": "c_paper",
+      "description": "铜钱旧库·散射射线构筑",
+      "filename": "04-treasury-composed-beams.png",
+      "floor": 3,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m03"
+    },
+    {
+      "character": "c_lantern",
+      "description": "赤绫戏楼·流火战斗",
+      "filename": "05-opera-flame-lantern.png",
+      "floor": 2,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m06"
+    },
+    {
+      "character": "c_bell",
+      "description": "雷鼓山门·雷霆器具",
+      "filename": "06-thunder-gate-lightning.png",
+      "floor": 3,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m08"
+    },
+    {
+      "character": "c_mask",
+      "description": "竹影契林·近战灰骨刃",
+      "filename": "07-bamboo-melee.png",
+      "floor": 1,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m13"
+    },
+    {
+      "character": "c_paper",
+      "description": "守名判殿·首领战",
+      "filename": "08-magistrate-boss.png",
+      "floor": 6,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m19"
+    },
+    {
+      "character": "c_paper",
+      "description": "灯摊·器具与供物",
+      "filename": "09-lantern-shop.png",
+      "floor": 1,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "shop",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m01"
+    },
+    {
+      "character": "c_paper",
+      "description": "供物选择·构筑分歧",
+      "filename": "10-relic-choice.png",
+      "floor": 1,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "choice",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m03"
+    },
+    {
+      "character": "c_paper",
+      "description": "万愿天穹·裂空铜镜",
+      "filename": "11-celestial-prism.png",
+      "floor": 11,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m20"
+    },
+    {
+      "character": "c_paper",
+      "description": "十一重旧账·完整行路图",
+      "filename": "12-eleven-floor-map.png",
+      "floor": 6,
+      "method": "Native embedded rendering and UI; prepared in-engine showcase",
+      "mode": "combat",
+      "saved": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "theme": "m19"
+    }
+  ],
+  "segments": [],
+  "simulation_hz": 60,
+  "source": "published executable embedded game resources",
+  "transitions": [],
+  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+  "harness": "tools/documentation/capture_store_media.gd",
+  "renderer_source": "game/scripts/ui/game_renderer.gd",
+  "renderer_sha256": "ee1095438e9a3339e830d9fd1532a4f065919a56fcf8478bdb7dedb71302a8fd",
+  "presentation_fix": "Skip disappeared/dead debt-chain anchors in current source renderer; no simulation, stats, loot or RNG change",
+  "capture_size": [
+    1920,
+    1080
+  ]
+}

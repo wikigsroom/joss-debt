@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b56-primary.png",
+  "source_sha256": "4cf51a0b50699a5c9e7f596978b0efbd1003f5eb7c87e0dd4dbde02308eb821f",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Inspected actual rear of ivory candle-wax boss: back hair/veil folds and candle crown, no front mask eyes; melted ivory robe and side wax arms preserved.",
+  "guide_sha256": "370e3db5cb2a47ac22aab8d882d6e5ed1e4312a69873cce22208d0842663043d"
+}

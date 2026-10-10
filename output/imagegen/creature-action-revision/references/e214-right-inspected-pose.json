@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e214-primary.png",
+  "source_sha256": "283be94df0aed01b3506859776dc6e2cb295e722cf58460afb58e6f38290124f",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-footed blue/ivory mirror-feather bird, crystal paper wings/crown, ivory pointed mask, gold bell and blue tassel. Actual complete source pose inspected; whole-body right camera accepted as generation guide only.",
+  "guide_sha256": "5b943b3c6998a4258db254a681b205cc3cd1874458f2d88e6d12f365a7e41b2f"
+}

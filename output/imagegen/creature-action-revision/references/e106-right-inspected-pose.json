@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e106-primary.png",
+  "source_sha256": "be483f59f75b99c103e7d4e7e0880c493a922953b2be0cd2f4bbda6a96662b1e",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right profile; side hurt turns rear and must be redrawn without whole-body rotation.",
+  "guide_sha256": "4de179d7d1774b6425f2ea8ab3b9ce6c4b5ef14a93409239c3058a3bc0846bd7"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e289-primary.png",
+  "source_sha256": "a3336e74de162528be252fab741d8007c332b31b12d1aec5c27fefa84ace3a97",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original TWO-legged purple/ivory star-sign paper child, pointed star-patterned hood, ivory mask, original gold star-circle staff, gold bells and hanging ivory wish cards. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "852ce5bb9671a5684d6dd66c0472f12a669e391642365ccdc9edd6e653602a0d"
+}

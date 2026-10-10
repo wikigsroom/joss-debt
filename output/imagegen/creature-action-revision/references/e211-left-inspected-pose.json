@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e211-primary.png",
+  "source_sha256": "302191d47ba518b2dd5f15e28d9e11c1d1ed9835a12052e05dcf3cd6318cf07c",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original EIGHT-legged green bamboo-paper spider, round ivory skull, bamboo bindings and leaflike legs; one body and original abdomen. Actual complete source pose inspected; whole-body left camera accepted as generation guide only.",
+  "guide_sha256": "9754d5c82c0f5ea008b70725dcb03caa46ffc5a32c336bbadaeea5e8039f570b"
+}

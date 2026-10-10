@@ -1,7 +1,9 @@
 extends Node2D
 const ContentDB = preload("res://scripts/core/content_db.gd")
 const PaperMotion = preload("res://scripts/ui/paper_animation.gd")
+const CreatureAction = preload("res://scripts/combat/creature_actions.gd")
 const WeaponMotion = preload("res://scripts/ui/weapon_motion.gd")
+const DrawnFX = preload("res://scripts/ui/drawn_action_fx.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const ExpandedVisuals = preload("res://scripts/ui/expanded_visuals.gd")
 const PolishedFX = preload("res://scripts/ui/polished_fx.gd")
@@ -9,6 +11,7 @@ const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
 const Geometry = preload("res://scripts/combat/room_geometry.gd")
 var animation = PaperMotion.new()
 var weapon_motion = WeaponMotion.new()
+var drawn_fx = DrawnFX.new()
 var actor_freeze: Dictionary = {}
 var player_death_clock = 0.0
 ## Presentation consumes events; it cannot change the authoritative world or RNG.
@@ -34,6 +37,13 @@ var effect_limit = 120
 var shape_cues = false
 var combat_text_scale = 1.0
 var stage = Geometry.STAGE
+var arena_transform = Transform2D.IDENTITY
+
+func fit_surface(safe: Rect2) -> void:
+	var factor = minf(safe.size.x / 1280.0, safe.size.y / 720.0)
+	var offset = safe.position + (safe.size - Vector2(1280, 720) * factor) * .5
+	arena_transform = Transform2D(Vector2(factor, 0), Vector2(0, factor), offset)
+	stage = arena_transform * Geometry.STAGE
 const INK = Color("242725")
 const PAPER = Color("e7d8b6")
 const GOLD = Color("c39a51")
@@ -85,10 +95,13 @@ func accept(events: Array) -> void:
 		if event.kind == "player_hurt" and event.get("hp", 1) <= 0: player_death_clock = clock
 		if hitstop and event.kind == "hit" and (event.get("heavy", false) or event.get("crit", false)):
 			actor_freeze[event.uid] = {"until": clock + (.035 if event.get("heavy", false) else .020), "time": world.time, "pos": event.pos}
-		if event.kind in ["shot", "ray", "hit", "impact", "burst", "death", "dash", "slash", "pickup", "deflect", "skill", "scenery_explosion", "scenery_break", "active_item", "equipment_taken", "loot_spawn"]:
+		if event.kind in ["shot", "ray", "hit", "impact", "burst", "death", "dash", "slash", "player_hurt", "pickup", "deflect", "skill", "scenery_explosion", "scenery_break", "active_item", "equipment_taken", "loot_spawn"]:
 			var effect = event.duplicate()
 			effect["left"] = 0.88 if event.kind == "death" else (0.62 if event.kind == "ray" else (0.58 if event.kind == "skill" else (0.34 if event.kind == "impact" else (0.24 if event.kind == "shot" else (0.42 if event.kind != "hit" else 0.6)))))
 			effect["total"] = effect.left
+			if event.kind in ["shot", "slash", "player_hurt"]:
+				effect.left = .334
+				effect.total = .334
 			if event.kind in ["burst","scenery_explosion","scenery_break"]:
 				effect.left = .72
 				effect.total = .72
@@ -171,11 +184,13 @@ func _draw() -> void:
 			var current = world.enemy_by_uid(chain[i])
 			if current.is_empty() or current.dead:
 				continue
-			var previous = world.enemy_by_uid(chain[0])
+			var previous: Dictionary = {}
 			for j in i:
 				var other = world.enemy_by_uid(chain[j])
-				if not other.is_empty() and current.pos.distance_squared_to(other.pos) < current.pos.distance_squared_to(previous.pos):
+				if other.is_empty() or other.dead: continue
+				if previous.is_empty() or current.pos.distance_squared_to(other.pos) < current.pos.distance_squared_to(previous.pos):
 					previous = other
+			if previous.is_empty(): continue
 			var a = previous.pos - Vector2(0, 20)
 			var b = current.pos - Vector2(0, 20)
 			var normal = a.direction_to(b).orthogonal()
@@ -273,7 +288,7 @@ func _draw() -> void:
 				draw_polyline(outline, PAPER, 1.5, true)
 				draw_line(p - direction * 24, p - direction * 10, PAPER, 2, true)
 	if adapter != null and adapter.touch_mode and combat_interface_visible:
-		draw_set_transform_matrix(Transform2D.IDENTITY)
+		draw_set_transform_matrix(Transform2D(0, -position))
 		draw_touch_controls()
 	last_draw_us = Time.get_ticks_usec() - draw_started
 
@@ -330,7 +345,8 @@ func draw_room_doors() -> void:
 
 func draw_floor() -> void:
 	draw_set_transform_matrix(Transform2D.IDENTITY)
-	draw_rect(Rect2(0, 0, 1280, 720), INK)
+	draw_rect(Rect2(Vector2.ZERO, get_viewport_rect().size), INK)
+	draw_set_transform_matrix(arena_transform)
 	if not textures.has("floor"):
 		return
 	if textures.has("arena"):
@@ -458,7 +474,9 @@ func draw_player() -> void:
 	var pointer = player.pos + aim_direction * 37 - Vector2(0, 14)
 	draw_line(pointer - aim_direction * 5, pointer + aim_direction * 6, PAPER, 2, true)
 	if player.charge > 0:
-		draw_arc(player.pos, 25, -PI / 2, -PI / 2 + TAU * player.charge / .25, 24, FIRE, 3, true)
+		var weapon = world.db.row("weapons", player.weapon)
+		var required = .65 if weapon.mode == "nova" else (.35 if world.stack("r66") > 0 else .25)
+		draw_arc(player.pos, 25, -PI / 2, -PI / 2 + TAU * clampf(player.charge / required, 0, 1), 24, FIRE, 3, true)
 
 func draw_equipped_actor(actor: String, ground: Vector2, direction: String, motion: Dictionary, body: Texture2D, tint: Color = Color.WHITE) -> void:
 	var placements = weapon_motion.placements(actor, direction, motion)
@@ -489,34 +507,19 @@ func draw_enemy(enemy: Dictionary) -> void:
 	var size = float(enemy.get("render_size", 256.0 if enemy.boss else (146.0 if enemy.elite else 110.0)))
 	var bob = sin(clock * 4 + enemy.uid) * 2
 	var kind = "boss" if enemy.boss else "enemy"
-	var state = "idle"
-	var elapsed = world.time + float(enemy.uid) * .13
-	if world.time - float(enemy.get("visual_hurt_at", -999)) < .125:
-		state = "hurt"
-		elapsed = world.time - enemy.visual_hurt_at
-	elif enemy.boss and world.time - float(enemy.get("visual_phase_at", -999)) < .375:
-		state = "phase"
-		elapsed = world.time - enemy.visual_phase_at
-	elif enemy.windup > 0:
-		state = ["attack_a", "attack_b", "attack_c"][int(enemy.phase)] if enemy.boss else "tell"
-		elapsed = enemy.tell - enemy.windup
-	elif world.time - float(enemy.get("visual_attack_at", -999)) < .25:
-		state = ["attack_a", "attack_b", "attack_c"][int(enemy.phase)] if enemy.boss else "attack"
-		elapsed = world.time - enemy.visual_attack_at
-	elif float(enemy.get("visual_motion", 0)) > 8 or (not enemy.boss and enemy.speed > 0 and enemy.pos.distance_to(world.player.pos) > 240): state = "move"
+	var pose = CreatureAction.sample(enemy, world.time, world.player.pos)
 	var frozen = actor_freeze.get(enemy.uid, {})
 	var drawn_position = enemy.pos
 	if hitstop and not reduce_motion and not frozen.is_empty() and clock < frozen.until:
 		drawn_position = frozen.pos
-		elapsed = maxf(0, frozen.time - float(enemy.get("visual_hurt_at", frozen.time)))
-		state = "hurt"
+		pose = CreatureAction.sample(enemy, float(frozen.time), world.player.pos)
 	var sprite_id = enemy.get("sprite_id", enemy.id)
-	var animated = animation.texture(sprite_id, kind, state, elapsed) if not enemy.get("sigil", false) else null
+	var animated = animation.texture(sprite_id, kind, pose.state, pose.elapsed, pose.direction, pose.frame)
 	if animated != null:
 		texture = animated
 		bob = 0
 	var tint = Color.WHITE.lerp(Color(2.4, 2.0, 1.5), flash_scale) if enemy.hit_flash > 0 else Color.WHITE
-	draw_sprite(texture, drawn_position, size, bob, sin(clock * 3 + enemy.uid) * .02, tint)
+	draw_sprite(texture, drawn_position, size, bob, 0, tint)
 	if world.time < float(enemy.get("arrival", 0)):
 		draw_arc(enemy.pos, enemy.radius + 15, 0, TAU, 32, HOSTILE, 3, true)
 	if int(enemy.get("shield_layers", 0)) > 0:
@@ -573,6 +576,8 @@ func to_world(canvas_position: Vector2) -> Vector2:
 func draw_effect(effect: Dictionary) -> void:
 	var progress = 1.0 - effect.left / effect.total
 	var color = Color(FIRE, 1.0 - progress)
+	var drawn = drawn_fx.draw(self, effect)
+	if drawn and effect.kind in ["shot", "slash", "player_hurt"]: return
 	if effect.kind == "ray" and PolishedFX.beam(self, effect, progress): return
 	if effect.kind in ["burst", "scenery_explosion", "scenery_break"] and PolishedFX.burst(self, effect, progress): return
 	if effect.kind in ["active_item", "equipment_taken", "loot_spawn"]:
@@ -729,36 +734,42 @@ func draw_skill_trace(effect: Dictionary, progress: float) -> void:
 		draw_arc(origin, radius, -PI + progress * PI, PI + progress * PI, 42, Color(PAPER if skill in ["s13", "s14", "s15"] else FIRE, (1 - progress) * .7), 4, true)
 
 func draw_touch_controls() -> void:
-	var left = adapter.left_origin if adapter.move_id >= 0 else adapter.control_center("move")
-	var right = adapter.right_origin if adapter.aim_id >= 0 else adapter.control_center("aim")
 	var opacity = adapter.control_opacity
-	var radius = adapter.control_radius("move")
-	var clearing = world.mode == "clear"
-	for center in ([left] if clearing else [left, right]):
-		draw_circle(center, radius, Color(INK, .35 * opacity))
-		draw_arc(center, radius, 0, TAU, 40, Color(PAPER, .5 * opacity), 2, true)
-	draw_circle(left + adapter.move_touch * 50 * adapter.control_scale, 25 * adapter.control_scale, Color(PAPER, .45 * opacity))
-	if not clearing: draw_circle(right + adapter.aim_touch * 50 * adapter.control_scale, 25 * adapter.control_scale, Color(FIRE, .45 * opacity))
-	var entries = [[adapter.control_center("active_item"), "active_item", world.player.item_cd]]
-	if not clearing: entries.append_array([[adapter.dash_center(), "dash", world.player.dash_cd], [adapter.skill_center(), "skill", world.player.skill_cd]])
-	for entry in entries:
-		var center = Vector2(entry[0])
-		var action_radius = adapter.control_radius(str(entry[1]))
-		draw_circle(center, action_radius, Color(UI.INSET, .92 * opacity))
-		var ready = entry[2] <= 0
+	for action in ["move", "aim"]:
+		if not adapter.enabled(action): continue
+		var center = adapter.control_center(action)
+		if action == "move" and adapter.move_id >= 0: center = adapter.left_origin
+		if action == "aim" and adapter.aim_id >= 0: center = adapter.right_origin
+		var value = adapter.move_touch if action == "move" else adapter.aim_touch
+		var radius = adapter.control_radius(action)
+		var tint = PAPER if action == "move" else FIRE
+		draw_circle(center, radius, Color(INK, .40 * opacity))
+		draw_arc(center, radius, 0, TAU, 40, Color(tint, .60 * opacity), 2, true)
+		draw_circle(center + value * adapter.control_travel(action), radius * .30, Color(tint, .5 * opacity))
+		if action == "aim" and world.player.charge > 0:
+			var mode = str(world.db.row("weapons", world.player.weapon).mode)
+			var required = .65 if mode == "nova" else (.35 if world.stack("r66") > 0 else .25)
+			draw_arc(center, radius + 5, -PI * .5, -PI * .5 + TAU * clampf(world.player.charge / required, 0, 1), 44, Color(FIRE, opacity), 4, true)
+	for action in ["dash", "skill", "active_item"]:
+		if not adapter.enabled(action): continue
 		var active = world.Equipment.active_row(world)
-		if entry[1] == "active_item": ready = ready and not active.is_empty() and world.run.active_item.charge >= active.charge_rooms
-		draw_arc(center, action_radius - 3, 0, TAU, 40, Color(UI.JADE, opacity if ready else .3 * opacity), 3, true)
-		if entry[1] == "dash":
-			draw_texture_rect(UI.icon("wind"), Rect2(center - Vector2.ONE * 17, Vector2.ONE * 34), false, Color(UI.TEXT, opacity))
+		if action == "active_item" and active.is_empty(): continue
+		var center = adapter.control_center(action)
+		var radius = adapter.control_radius(action)
+		var cooldown = float(world.player.get({"dash":"dash_cd", "skill":"skill_cd", "active_item":"item_cd"}[action], 0))
+		var ready = cooldown <= 0
+		if action == "skill": ready = ready and world.player.energy >= world.skill_cost() and (not world.db.row("skills", world.player.skill).requires_marked_target or not world.skill_targets().is_empty())
+		if action == "active_item": ready = ready and world.run.active_item.charge >= active.charge_rooms
+		draw_circle(center, radius, Color(UI.INSET, .92 * opacity))
+		draw_arc(center, radius - 3, 0, TAU, 40, Color(UI.JADE, opacity if ready else .3 * opacity), 3, true)
+		if action == "dash": draw_texture_rect(UI.icon("wind"), Rect2(center - Vector2.ONE * radius * .40, Vector2.ONE * radius * .80), false, Color(UI.TEXT, opacity if ready else opacity * .45))
 		else:
-			var id = str(world.player.skill) if entry[1] == "skill" else str(world.run.active_item.id)
-			var path = "res://assets/skills/" + id + ".png" if entry[1] == "skill" else "res://assets/active_items/" + id + ".png"
+			var id = str(world.player.skill) if action == "skill" else str(world.run.active_item.id)
+			var path = "res://assets/skills/" + id + ".png" if action == "skill" else "res://assets/active_items/" + id + ".png"
 			if not id.is_empty():
 				if not textures.has(path): textures[path] = load(path)
-				draw_texture_rect(textures[path], Rect2(center - Vector2.ONE * 25, Vector2.ONE * 50), false, Color(1, 1, 1, opacity))
-			if entry[1] == "active_item" and not active.is_empty():
+				draw_texture_rect(textures[path], Rect2(center - Vector2.ONE * radius * .55, Vector2.ONE * radius * 1.1), false, Color(1, 1, 1, opacity if ready else opacity * .40))
+			if action == "active_item":
 				var fraction = clampf(float(world.run.active_item.charge) / float(active.charge_rooms), 0, 1)
-				draw_arc(center, action_radius - 7, -PI * .5, -PI * .5 + TAU * fraction, 40, Color(UI.ACCENT, opacity), 3, true)
-		if entry[2] > 0:
-			draw_string(font, center + Vector2(-13, 30), "%.1f" % entry[2], HORIZONTAL_ALIGNMENT_LEFT, -1, 15, GOLD)
+				draw_arc(center, radius - 7, -PI * .5, -PI * .5 + TAU * fraction, 40, Color(UI.ACCENT, opacity), 3, true)
+		if cooldown > 0: draw_string(font, center + Vector2(-13, radius - 13), "%.1f" % cooldown, HORIZONTAL_ALIGNMENT_LEFT, -1, 18, GOLD)

@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "Codex",
+  "method": "逐张查看发布 PNG 成稿和等比例预览，核对图标、字标及场景背景；多尺寸同源图标与字标变体结合像素和通道检查。",
+  "checks": [
+    "画面中文游戏名正确",
+    "LOGO 仅含香火债",
+    "封面与宣传图仅含游戏名",
+    "无 LOGO 图与壁纸无文字",
+    "已确认的原始纸偶形象保留"
+  ],
+  "images": [
+    {
+      "file": "branding/android-app-icon-432.png",
+      "sha256": "322dd2408049c701bb21df3f17cbcff6238c168a6d7566214cbb153ce5243e46",
+      "dimensions": [
+        432,
+        432
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-1024.png",
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-128.png",
+      "sha256": "bee6ced21f640ffd3ead3d08a6242d4f840cfc346172fb8f9e8c6d85beeab541",
+      "dimensions": [
+        128,
+        128
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-16.png",
+      "sha256": "ebfc1e46ecf0b15f2edf1dfb189b0ff0cd4edbc6bc8bdd98fae91f9041ca55cd",
+      "dimensions": [
+        16,
+        16
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-256.png",
+      "sha256": "6991f52676062dc6bc420be3b615c2e78808e71c560e1ee00a29e2da0f7d6247",
+      "dimensions": [
+        256,
+        256
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-32.png",
+      "sha256": "d9306400c50fdc7311a1ccc987358dafb402fdeb32cfcd6b9cec288ceff43194",
+      "dimensions": [
+        32,
+        32
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-48.png",
+      "sha256": "957fe65be2a395b9c7d1e2d054f72ff3fff3d10ade9842031f8545c150f4dbf7",
+      "dimensions": [
+        48,
+        48
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-512.png",
+      "sha256": "3f1338b4d91806a9896408ca837021ec9a45f38978540537c4f529205125f53a",
+      "dimensions": [
+        512,
+        512
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/app-icon-64.png",
+      "sha256": "ae9c228ebb763dcec0d12fadd01551ae60d84d0f6b1fe66b2535293119e22df4",
+      "dimensions": [
+        64,
+        64
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "branding/logo-horizontal-for-dark-background.png",
+      "sha256": "b04f81c2e3433545cc0ee423f007b61f6c41d258f3c783c6edc2fcb0cb601168",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "branding/logo-horizontal-for-light-background.png",
+      "sha256": "6170e93a9a4fff6a4a808654e3e8dab46a6177e5c671f0b1f2413a276e46b370",
+      "dimensions": [
+        2400,
+        840
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "branding/logo-title-only-1024.png",
+      "sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/banner-2560x1080.png",
+      "sha256": "24013a5d4d9442309c7e57acd949e6e86450685c4cfabd34deb5459ce45003ed",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/cover-horizontal-1920x1080.png",
+      "sha256": "a3266de5257b1f3cff159d1eb46bc7744f7aac71ea8df7742e864a38b9009bab",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/cover-vertical-1080x1920.png",
+      "sha256": "07802a1a33782b3920c83fd71a3f44ed604d471e2e6ac389c71c75550b6bcde8",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/library-wallpaper-no-logo-5120x1654.png",
+      "sha256": "b72a6203e126f8e2dbb001e2ec26bd934a1b4373847c8784d41fb6484556bd7c",
+      "dimensions": [
+        5120,
+        1654
+      ],
+      "allowed_text": [],
+      "passed": true
+    },
+    {
+      "file": "artwork/poster-2160x3240.png",
+      "sha256": "136f759b4ccaa4af228b44c8532bd0b018e8380bb5a7f4ac5601fb17a038649e",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-01-lantern-1920x1080.png",
+      "sha256": "a523e02dfcfb04211df7e32909d8b6488aa373981f415d919ba8c7f93ede3b6e",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-02-river-1920x1080.png",
+      "sha256": "493e91863a0480a155cc5337fcbdb356bac2fbe1b2aeccda8f1e70bdc30d0f6c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-03-treasury-1920x1080.png",
+      "sha256": "00c1b3725e7a4e175692d4c585e1572ac2c891b035a8cedb80de3d85ea52aa80",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-04-opera-1920x1080.png",
+      "sha256": "398d38681abcf58364ca0ea192c67bab00bb8da8ffdac502d47877ac46861bee",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-05-celestial-1920x1080.png",
+      "sha256": "d16b34a041e871b74e64f2c69d9dbdab8cb1e12efee992d3c94f794a4a7aef87",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [
+        "香火债"
+      ],
+      "passed": true
+    },
+    {
+      "file": "artwork/promo-no-logo-1920x1080.png",
+      "sha256": "e4d1526a2ba86d6c2772200c86ebdea3943321eacc9f308d5755caa0ab2478b6",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "allowed_text": [],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e122-primary.png",
+  "source_sha256": "fd4e5e733d440e889c3efd6cc52e5bc721f9f9baab487f17160db90ba42ff3d4",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Actual left attack profile; keep this direction through all hurt poses.",
+  "guide_sha256": "41e4a00fa6405e77bba9772416537e14295d25b3003b3144581bb529f66ae49d"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e169-primary.png",
+  "source_sha256": "229f9e769e3762ee381dd33aa31ca7e1a37d4e27bec56497666ae4bdad13f499",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right lotus spirit profile; retain through hurt.",
+  "guide_sha256": "aabca597cfdfb627ea5495db03542528a5ad31ed47188e5d8994ebc51bff1ea1"
+}

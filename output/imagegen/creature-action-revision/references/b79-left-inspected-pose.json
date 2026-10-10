@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b79-secondary.png",
+  "source_sha256": "4959554958218a99090904c08f45a16f59f13be30a777d7eb57a03957b61a91c",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Original blue winged crystal paper boss genuine left profile with nose left, layered side robe and wing perspective.",
+  "guide_sha256": "66b6cc6bb450e36ebb4ee85af1252026fa1b30781fefd17692ca6ae9c9c10bf7"
+}

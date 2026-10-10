@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b91-primary.png",
+  "source_sha256": "6d1d9a3a78fdd23acc933c975b4930f3d5c7323080f798ea70726fd11ae863fe",
+  "row": 3,
+  "column": 2,
+  "declared_direction": "left",
+  "visual_finding": "Inspection candidate only: verify left hurt middle pose before selecting replacement scope.",
+  "guide_sha256": "cee56d8f34dae1aab45dfe316591d2b346d0e2ffe4e2e6a0a95f1125cadb9011"
+}

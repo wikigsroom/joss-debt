@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e221-primary.png",
+  "source_sha256": "2587cb88a6ebcb6d8df3f82708a1c29607f8bcc47abfc82f3e6c0e66ab28cd16",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Original LIMBLESS blue/ivory crystal-paper snake with ONE pointed ivory mask, long segmented coils, gold bell and blue tassel. No extra head or limbs. Actual complete source pose inspected; whole-body up camera accepted as generation guide only.",
+  "guide_sha256": "f75f2d3783f3e83f7ec2bdead093ff44ba8e5d5abf2040e4d0b6b809d5f97a9f"
+}

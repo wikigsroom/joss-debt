@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b73-secondary.png",
+  "source_sha256": "397537e6f82a2adf5d9ae0f4a160bed59e8dd9b15eefb025c73df614885ac485",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Actually inspected closed rear bell automaton: rear bronze bell rim/back and white rectangular hanging paper tag; no ivory front mask or front bell opening. Preserve as back camera guide only.",
+  "guide_sha256": "186b821e7ecb14242b8fd7994e573a84bd3bff1b3f1550854a8260bc883982cc"
+}

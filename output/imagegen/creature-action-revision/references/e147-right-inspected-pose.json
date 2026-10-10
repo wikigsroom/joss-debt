@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e147-primary.png",
+  "source_sha256": "817bd3051c8ff173a40da80e16230d0c69699d1eb5acf0506956de46e0f13e73",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right frog profile; hurt must not turn frontal.",
+  "guide_sha256": "c71bcea6efbb4dc5b238f1139f9bea4da6740aa852d1bcf470de882130287bac"
+}

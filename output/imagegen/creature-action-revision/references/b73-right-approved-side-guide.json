@@ -1,0 +1,6 @@
+{
+  "purpose": "Camera guide ONLY; all final right poses must be independently generated, never mirrored finished frames",
+  "source": "output/imagegen/creature-action-revision/raw/b73-left-seed.png",
+  "source_sha256": "0ed9c6a4cbcef59660a657254462932cb727ba60e232d7d0a4352edd7afb2fdd",
+  "guide_sha256": "5926fd0772602d744b37087baf30b6de26914bacb82fd2aac6eb1d79a6fbb097"
+}

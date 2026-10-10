@@ -1,0 +1,71 @@
+{
+  "tag": "v0.2.0-alpha.1",
+  "release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1",
+  "binary_sha256_source": "build/delivery-manifest.json",
+  "files": [
+    {
+      "kind": "Windows executable",
+      "absolute_path": "E:/dev/vibe-game/以撒类/build/windows/IncenseDebt.exe",
+      "relative_path": "build/windows/IncenseDebt.exe",
+      "bytes": 587325936,
+      "sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+      "specification": "Windows x64"
+    },
+    {
+      "kind": "Android APK",
+      "absolute_path": "E:/dev/vibe-game/以撒类/build/android/IncenseDebt.apk",
+      "relative_path": "build/android/IncenseDebt.apk",
+      "bytes": 505992908,
+      "sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b",
+      "specification": "Android arm64 / debug signed"
+    },
+    {
+      "kind": "game icon",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-app-icon-1024.png",
+      "relative_path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-app-icon-1024.png",
+      "bytes": 1199748,
+      "sha256": "ba30db3ad00403602dc9ad6c5eed6aae32c49180e3a7db37f8c66c54aecaf9e5",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "format": "PNG / RGB"
+    },
+    {
+      "kind": "LOGO",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-logo-1024.png",
+      "relative_path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-logo-1024.png",
+      "bytes": 48733,
+      "sha256": "c62400f98d210494ce558e204ebc4845d74168f93f3ec2adf09e5016314f09ee",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "format": "PNG / RGBA"
+    },
+    {
+      "kind": "banner",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.png",
+      "relative_path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-banner-2560x1080.png",
+      "bytes": 3290440,
+      "sha256": "24013a5d4d9442309c7e57acd949e6e86450685c4cfabd34deb5459ce45003ed",
+      "dimensions": [
+        2560,
+        1080
+      ],
+      "format": "PNG / RGB"
+    },
+    {
+      "kind": "poster",
+      "absolute_path": "E:/dev/vibe-game/以撒类/output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.png",
+      "relative_path": "output/imagegen/incense-debt/release-promo-2026-10-08/IncenseDebt-poster-2160x3240.png",
+      "bytes": 8431304,
+      "sha256": "136f759b4ccaa4af228b44c8532bd0b018e8380bb5a7f4ac5601fb17a038649e",
+      "dimensions": [
+        2160,
+        3240
+      ],
+      "format": "PNG / RGB"
+    }
+  ]
+}

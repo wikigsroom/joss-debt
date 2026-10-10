@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b88-primary.png",
+  "source_sha256": "a4ec04d65f98ffa6f94ba1a5512a82a97abd36a67af8577a837f1945315ad822",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Inspected genuine right whole-body paper creature profile, nose toward named direction and original side accessories/anatomy.",
+  "guide_sha256": "80b6a5b8934809e0e990dabb2a79e1da011fb7fa83911ccc3a72fb97a5fa9fa4"
+}

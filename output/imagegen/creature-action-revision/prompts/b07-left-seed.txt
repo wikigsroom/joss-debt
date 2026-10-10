@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 铜锣镇魂 (b07) in this camera view: SCREEN-LEFT SIDE VIEW: the nose, face and attacking end are on the LEFT side of the cell; the tail or rear is on the RIGHT. Every pose in this row points LEFT, including hurt and recovery. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: a broad masked gong bearer with two monumental bronze cymbal arms. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Original red/ivory/gold TWO-legged paper gong guardian: rectangular ivory two-eye mask, temple roof helmet, paired massive gold round gongs held in two hands, red robe/ribbons, bronze feet and waist coin. Preserve BOTH gongs and original head/armor. Strict whole-body screen left profile, original head/front/emitter points left, torso edge-on and near limbs overlap far. Only near mask eye visible where original has two; circular emitter must compress edge-on with front panel at left silhouette end. No broad frontal torso/panel or rear return.
+

@@ -9,3 +9,9 @@
 *.ogg binary -delta
 *.wav binary -delta
 *.ttf binary
+
+# Preserve audited generation prompts, third-party notices and deployed legal HTML.
+output/imagegen/**/prompts/*.txt whitespace=-blank-at-eof,cr-at-eol
+output/**/licenses/*.txt whitespace=-blank-at-eol,cr-at-eol
+sites/privacy-policy/*.html whitespace=-blank-at-eol,cr-at-eol
+sites/privacy-policy/**/*.html whitespace=-blank-at-eol,cr-at-eol

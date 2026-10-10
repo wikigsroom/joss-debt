@@ -59,7 +59,7 @@ func sample(world, reduce_motion: bool = false) -> Dictionary:
 		state = "dash"
 		elapsed = .2 - player.dash_left
 		active = false
-	elif world.time - float(player.get("visual_hurt_at", -999)) < .125:
+	elif world.time - float(player.get("visual_hurt_at", -999)) < .334:
 		state = "hurt"
 		elapsed = world.time - player.visual_hurt_at
 		active = false

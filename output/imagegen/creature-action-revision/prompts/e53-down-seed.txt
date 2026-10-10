@@ -1,0 +1,9 @@
+Draw ONE neutral production sprite of the EXACT attached original 讨名手 (e53) in this camera view: SCREEN-DOWN FRONT VIEW: face and attacking end point toward the BOTTOM edge of the cell; the rear is toward the TOP. This is an orientation reference, not an animation sheet or redesign.
+
+Preserve this original creature's species, silhouette family, paper construction, number of body segments, original limbs, bindings and permanent objects. Identity: large disembodied ivory paper hand wrapped in red knot strings. Keep the exact matte fibrous paper, woodblock outlines, original palette, body scale, near top-down game camera and upper-left light.
+
+For a rear view the front mouth, eyes and face are completely hidden: show the same creature's tail or closed rear body, not a second mouth, mirrored frontal face or new mask. For a side view its head/attacking end points to the requested SCREEN side. Redraw real depth and occlusion, not spinning or warping the flat source picture.
+
+Only ONE complete neutral creature centered on transparent 1024x1024 PNG, 15 percent empty margin, standing base at 84 percent. No extra body parts, new accessories, floating effects, ground, shadow, multiple sprites, text, letters, labels, arrows or background.
+MANDATORY CORRECTION FROM SOURCE REVIEW: Preserve the original complete creature, including its IVORY TOOTHED MOUTH/HEAD at the end of the red rope body and the separate giant spiral palm. The head and open tooth mouth must be visible facing viewer/screen BOTTOM, not replaced by red rope loops. Keep original five-finger hand, red knot coils and hanging talismans; no missing head.
+

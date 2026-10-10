@@ -1,0 +1,11 @@
+{
+  "artifact": "build/android/IncenseDebt.apk",
+  "sha256": "69b9e03965780e8f83babce04e31413057edcd4549965541d2996131980c535b",
+  "bytes": 505992908,
+  "adb_connected_devices": [],
+  "physical_device_tested": false,
+  "acceptance_result": "pending",
+  "acceptance_hash_matches_current": false,
+  "virtualization": "none",
+  "browser_tabs_opened": 0
+}

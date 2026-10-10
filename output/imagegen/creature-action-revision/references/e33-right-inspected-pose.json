@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e33-primary.png",
+  "source_sha256": "33ba75e2ba2d3b80684034aaab83f9fee35c53bb3bd5872ad98b08f33a38a59b",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Visually inspected neutral right pose retains original anatomy, costume, palette and permanent props; only a facing reference for independent new action drawings.",
+  "guide_sha256": "d0b508dc621a490df646cb577feccc13a7f053a9c64eb1420c4748e86e5a17cf"
+}

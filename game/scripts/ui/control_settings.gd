@@ -23,8 +23,9 @@ static func show_bindings(app, device: String = "keyboard", scroll_y: int = 0) -
 		var tab = ["keyboard", "controller"][i]
 		app.button(app.modal, ["鼠标与键盘", "手柄"][i], Rect2(96 + i * 270, 162, 250, 60), func(): show_bindings(app, tab), tab == device)
 	var scroll = ScrollContainer.new()
-	scroll.position = Vector2(96, 240)
-	scroll.size = Vector2(1088, 324)
+	var list_top = maxf(240, 180 + app.mobile_button_height) if app.mobile_ui else 240.0
+	scroll.position = Vector2(96, list_top)
+	scroll.size = Vector2(1088, 564 - list_top)
 	app.modal.add_child(scroll)
 	scroll.set_deferred("scroll_vertical", scroll_y)
 	var list = VBoxContainer.new()
@@ -34,7 +35,7 @@ static func show_bindings(app, device: String = "keyboard", scroll_y: int = 0) -
 	var actions = Profile.KEYBOARD_ACTIONS if device == "keyboard" else Profile.PAD_ACTIONS
 	for action in actions:
 		var row = Panel.new()
-		row.custom_minimum_size = Vector2(1060, 88)
+		row.custom_minimum_size = Vector2(1060, maxf(88,app.mobile_button_height+20) if app.mobile_ui else 88)
 		row.add_theme_stylebox_override("panel", app.box_style(Color("30372f"), Color("635c44")))
 		list.add_child(row)
 		app.icon(row, {"skill": "flame", "dash": "wind", "fire": "sword", "interact": "hand", "map": "map", "pause": "pause"}.get(action, "gamepad-2" if device == "controller" else "mouse"), Rect2(25, 28, 28, 28), UI.JADE)
@@ -84,13 +85,14 @@ static func show_assistance(app, scroll_y: int = 0) -> void:
 	]
 	for option in options:
 		var row = Panel.new()
-		row.custom_minimum_size = Vector2(1060, 94)
+		var row_height = maxf(94,app.mobile_button_height+32) if app.mobile_ui else 94.0
+		row.custom_minimum_size = Vector2(1060, row_height)
 		row.set_meta("setting_key", option.key)
 		row.add_theme_stylebox_override("panel", app.box_style(Color("30372f"), Color("635c44")))
 		list.add_child(row)
 		app.icon(row, {"aim_mode": "crosshair", "haptics": "hand", "fixed_sticks": "gamepad-2", "deadzone": "circle-dot", "fire_toggle": "sword", "damage_numbers": "target", "shake_scale": "wind", "hitstop": "pause", "flash_scale": "sun", "particle_scale": "sparkles", "performance_mode": "sparkles", "shape_cues": "eye", "combat_text_scale": "pencil", "story_text_scale": "book-open", "pickup_radius_scale": "coins"}.get(option.key, "settings-2"), Rect2(24, 31, 28, 28), UI.JADE)
 		app.label(row, option.name, Rect2(76, 25, 538, 42), 24)
-		var detail = app.label(row, option.detail, Rect2(24, 103, 1012, 56), 18, app.GOLD)
+		var detail = app.label(row, option.detail, Rect2(24, row_height + 9, 1012, 56), 18, app.GOLD)
 		detail.set_meta("setting_detail", option.key)
 		detail.visible = false
 		var current = option.values.find(app.settings[option.key])
@@ -104,52 +106,83 @@ static func show_assistance(app, scroll_y: int = 0) -> void:
 		control.add_theme_font_size_override("font_size", 22)
 		control.set_meta("nav_id", "assistance_" + str(option.key))
 		control.tooltip_text = option.detail
-		app.icon_button(row, option.detail, "info", Rect2(635, 18, 58, 58), func():
+		var info_width = maxf(58,app.mobile_button_height) if app.mobile_ui else 58.0
+		app.icon_button(row, option.detail, "info", Rect2(702-info_width, 18, info_width, info_width), func():
 			detail.visible = not detail.visible
-			row.custom_minimum_size.y = 169 if detail.visible else 94)
+			row.custom_minimum_size.y = row_height + 75 if detail.visible else row_height)
 	app.button(app.modal, "回灯下设置", Rect2(786, 612, 398, 66), func(): app.back_to_settings(), true)
 
 static func show_layout(app) -> void:
 	app.screen = "touch_layout"
-	sheet(app, "把触点放在顺手的位置", "拖动移动、瞄准、身法和焚债。保持间距，触点自动避开屏幕边缘。")
+	sheet(app, "触点位置与大小", "选一个触点，拖动位置；每个触点可独立调大小。")
+	var ratio = app.adapter.safe_rect.size.x / app.adapter.safe_rect.size.y
+	var preview_size = Vector2(800, minf(360, 800 / ratio))
 	var preview = TextureRect.new()
-	preview.position = Vector2(96, 176)
-	preview.size = Vector2(800, 450)
-	preview.texture = app.renderer.textures.arena
+	preview.position = Vector2(64, 194 + (360 - preview_size.y) * .5)
+	preview.size = preview_size
+	var arena_image = app.renderer.textures.arena.get_image()
+	arena_image.resize(1280,720,Image.INTERPOLATE_LANCZOS)
+	preview.texture = ImageTexture.create_from_image(arena_image)
 	preview.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	preview.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	preview.modulate = Color(.55, .55, .55)
 	preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	app.modal.add_child(preview)
 	var editor = Editor.new()
 	editor.position = preview.position
-	editor.size = preview.size
+	editor.size = preview_size
 	editor.adapter = app.adapter
 	editor.font = app.font
 	editor.focus_mode = Control.FOCUS_ALL
 	editor.set_meta("keyboard_editor", true)
 	editor.set_meta("nav_id", "layout_editor")
-	editor.accessibility_name = "方向键调整触点；Enter 切换触点；Tab 离开编辑"
+	editor.accessibility_name = "拖动位置；方向键微调，Enter 切换触点"
 	app.modal.add_child(editor)
-	editor.status = app.label(app.modal, "拖动微调；方向键移动，确认键切换触点。", Rect2(97, 634, 799, 43), 18, app.GOLD)
-	app.label(app.modal, "触点大小", Rect2(928, 178, 255, 41), 23)
-	app.button(app.modal, "%d%%" % roundi(app.adapter.control_scale * 100), Rect2(928, 230, 256, 64), func():
-		var previous = app.adapter.control_scale
-		app.adapter.control_scale = 1.0 if previous >= 1.25 else previous + .125
-		if not app.adapter.valid_layout():
-			app.adapter.control_scale = previous
-			editor.status.text = "先拉开触点，再增大尺寸。"
+	editor.status = app.label(app.modal, "选触点后拖动；过近或重叠会提示。" if app.mobile_ui else "方向键微调 · Enter 切换 · Tab 离开编辑", Rect2(65, 672, 799, 40), 18, app.GOLD)
+	var name_label = app.label(app.modal, "移动 · 100%", Rect2(928, 178, 256, 46), 26)
+	var slider = HSlider.new()
+	slider.position = Vector2(928, 232)
+	slider.size = Vector2(256, maxf(80, app.mobile_button_height))
+	slider.min_value = .75
+	slider.max_value = 1.75
+	slider.step = .05
+	slider.value = float(app.adapter.control_sizes.move)
+	slider.set_meta("nav_id", "touch_individual_size")
+	slider.accessibility_name = "所选触点的独立大小"
+	app.modal.add_child(slider)
+	var select_action = func(action):
+		editor.selected = action
+		slider.set_value_no_signal(float(app.adapter.control_sizes[action]))
+		name_label.text = "%s · %d%%" % [Editor.LABELS[action], roundi(slider.value * 100)]
+		editor.queue_redraw()
+	editor.selected_changed.connect(select_action)
+	slider.value_changed.connect(func(value):
+		if app.adapter.set_control_size(editor.selected, value):
+			name_label.text = "%s · %d%%" % [Editor.LABELS[editor.selected], roundi(value * 100)]
+			editor.queue_redraw()
 		else:
-			app.persist_settings()
-			show_layout(app))
-	app.label(app.modal, "触点透明度", Rect2(928, 326, 255, 41), 23)
-	app.button(app.modal, "%d%%" % roundi(app.adapter.control_opacity * 100), Rect2(928, 378, 256, 64), func():
-		app.adapter.control_opacity = 1.0 if app.adapter.control_opacity <= .4 else app.adapter.control_opacity - .2
-		app.persist_settings()
+			slider.set_value_no_signal(float(app.adapter.control_sizes[editor.selected]))
+			editor.status.text = "先拉开触点，再增大这个按键。")
+	var keys = Editor.LABELS.keys()
+	for n in keys.size():
+		var action = keys[n]
+		app.button(app.modal, Editor.LABELS[action], Rect2(64 + n * 160, 570, 144, maxf(80, app.mobile_button_height)), func(): select_action.call(action))
+	app.label(app.modal, "透明度", Rect2(928, 344, 256, 32), 23)
+	var opacity = HSlider.new()
+	opacity.position = Vector2(928, 388)
+	opacity.size = Vector2(256, maxf(80, app.mobile_button_height))
+	opacity.min_value = .35
+	opacity.max_value = 1.0
+	opacity.step = .05
+	opacity.value = app.adapter.control_opacity
+	opacity.accessibility_name = "触点透明度"
+	app.modal.add_child(opacity)
+	opacity.value_changed.connect(func(value): app.adapter.control_opacity = value; editor.queue_redraw())
+	app.icon_button(app.modal, "恢复默认", "refresh-cw", Rect2(928, 500, 120, maxf(80, app.mobile_button_height)), func():
+		app.adapter.reset_layout("tablet" if ratio < 1.6 else "phone")
 		show_layout(app))
-	app.button(app.modal, "恢复默认布局", Rect2(928, 474, 256, 64), func():
-		app.adapter.layout = app.adapter.DEFAULT_LAYOUT.duplicate(true)
-		app.adapter.control_scale = 1
-		app.adapter.control_opacity = 1
-		app.persist_settings()
-		show_layout(app))
-	app.button(app.modal, "保存 · 回设置", Rect2(928, 574, 256, 104), func(): app.persist_settings(); app.back_to_settings(), true)
+	app.icon_button(app.modal, "试操作", "play", Rect2(1064, 500, 120, maxf(80, app.mobile_button_height)), func():
+		var trial = preload("res://scripts/ui/touch_tryout.gd").new()
+		trial.app = app
+		app.add_child(trial))
+	app.button(app.modal, "保存 · 回设置", Rect2(928, 608, 256, maxf(80, app.mobile_button_height)), func(): app.persist_settings(); app.back_to_settings(), true)

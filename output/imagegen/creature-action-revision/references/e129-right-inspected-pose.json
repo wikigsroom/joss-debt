@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e129-primary.png",
+  "source_sha256": "f807c67141c28613a97ec28f4cf378b709a8ae531a1d7e2df217fae669e00065",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "True right candle mouse profile; maintain direction through hurt.",
+  "guide_sha256": "3bcf4b0e2f93a18496d7d6e697c8990f4ef90df0c03956684cc41a26a7f39216"
+}

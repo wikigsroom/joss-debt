@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e205-primary.png",
+  "source_sha256": "18363652b33d3e813d774e2d7a07e574baa096415e9ca35056a6b445fdd23d3f",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Inspected intact attack cell has genuine single-eye declared side profile and original anatomy. Preserve this head/torso orientation throughout independently drawn attack and hurt, including bow/crouch/recovery.",
+  "guide_sha256": "b135a8225a01d5a4c0c48d70ec4eb12ab6a5a78846888b96acadc8d1649006be"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e296-primary.png",
+  "source_sha256": "3241378d8dfccfb97cc511a6e1b788cd124ff9662665a6d3757be58703bbdc9c",
+  "row": 0,
+  "column": 0,
+  "declared_direction": "down",
+  "visual_finding": "Original FOUR-legged purple/ivory wish-platform paper rhinoceros, ONE original ivory skull/head with large gold horn, heavy star/crescent paper roof saddle, gold star wheel and original heavy feet. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "b5b1622d7b5802192c8a978504b67316d30ab569c3741b0679eb0b66f2b6cea5"
+}

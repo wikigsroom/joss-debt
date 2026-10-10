@@ -1,0 +1,198 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "verified": [
+    {
+      "id": "c_paper-down",
+      "sha256": "eb618ede4cb3433e641e368aacf6c3d002bd8b8284372fbcf76ac0790d342bb5",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_paper-left",
+      "sha256": "b95c4e88b8a17aa1c5493a30ffdd6ac96e2c5791c973e346567e309a555dbc9f",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_paper-right",
+      "sha256": "af78388faa558d2c9016af9c243ede90ae5a593c85f0efe2e9d0426c91539b71",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_paper-up",
+      "sha256": "861be3c99dbd3568291d3334306699d72baa18d7eaf9ce63d2c4eeac325b5ced",
+      "size": [
+        1218,
+        1291
+      ]
+    },
+    {
+      "id": "c_bell-down",
+      "sha256": "181191150c76fd053ed5540551a17dab948e78b8707a1b3247393f03a6ce3ba0",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_bell-left",
+      "sha256": "83032433a7e5f5c9cfc9a4cd2531666469392630653c5bc27128840ee5f54069",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_bell-right",
+      "sha256": "173ecef9933990e67d82fa61fac85f10eb61990e2c3ba78f0293a3cb34a0de55",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_bell-up",
+      "sha256": "86e10656bee90e2d5a24e6b1112ff0448d3ae13b41d1021066e9a567cc0f00d3",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_lantern-down",
+      "sha256": "49dda7369b1861e5e1df6b1a007cdd9fa6f7631fdd8b25feed2ba4fde03acc2b",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_lantern-left",
+      "sha256": "0e5471092b681d717807f484cf3dda57d4e2d1a8bcf23dd30e66d6d30e03f4f7",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_lantern-right",
+      "sha256": "5534aa26b5122b2fd6701f22f650c0be31c58e0d2aaf45a0db4bea67bb360397",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_lantern-up",
+      "sha256": "7d18f0a74b9d71fd5bd4ddf62bc00b6e0d2d6c68ed363c54a849f29a8b12f5ed",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_mask-down",
+      "sha256": "5130dc352c1db00da5d9e323dcdc8dc67c198527852381bfd585f5a0e9d09252",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_mask-left",
+      "sha256": "0e97be63adb0ac3afdbc6013eab12f0f64624ad6760945f2d53c4561e4229e0a",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_mask-right",
+      "sha256": "d09621a05adb5595f4fbb77c4516c033eb8c6e4a24a5551aaf828603057c0b97",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_mask-up",
+      "sha256": "a9855db5184c69376eb543f705342c50c0781d3f3555024c51fd4a07e0f5d2dc",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_umbrella-down",
+      "sha256": "cd52c2e55944ac38338844948842bb418d149ed540b4d662803a42300b208911",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_umbrella-left",
+      "sha256": "dd8b0a3d69beb2038419e83090cecb1e0b905efe3464640b1a8d4cd76b28e9d6",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_umbrella-right",
+      "sha256": "7841f37c5eb782665010f083e2ff083faf6106bb270e37d6bde1a972b51ed830",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_umbrella-up",
+      "sha256": "849ba4d5972da502ce20be8a6c0280e61952a16467a20f256a3b9fb8b364ee74",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_ink-down",
+      "sha256": "011ad15268ec04c02439f88190668bb3bd3bc96e4fe61842c57041ac5601a73c",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_ink-left",
+      "sha256": "f7da3b056454c304c5dd9fe1841e4e7bb631b25a586e980d7eb441dc257cdc9b",
+      "size": [
+        1247,
+        1261
+      ]
+    },
+    {
+      "id": "c_ink-right",
+      "sha256": "157014ac94b4c01a482d803710cd480981bfe11204c5b24c21ae9192c3f954a3",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "c_ink-up",
+      "sha256": "643c65b13fd1e59d6c4bb902b94f96c2831359847c6adc076d9762d8e1835cf2",
+      "size": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

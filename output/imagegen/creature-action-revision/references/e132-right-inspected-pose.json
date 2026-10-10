@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e132-primary.png",
+  "source_sha256": "6a9c1163dbbf59c3fd79f30f51413d1c388b30f47e068ea0d9271c8d0f2e217b",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Actual right wax crab profile; hurt must not turn rearward.",
+  "guide_sha256": "9b542a7d1e79280fe778eb397040ff2a3fe71b28dd2accea0bf2b91499c546e0"
+}

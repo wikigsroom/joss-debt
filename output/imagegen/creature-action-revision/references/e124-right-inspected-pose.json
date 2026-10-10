@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e124-primary.png",
+  "source_sha256": "c28dc5807a13c9acb876d2feed7011ad7f805e6b4aa599c9f295b080f2835af3",
+  "row": 4,
+  "column": 2,
+  "declared_direction": "right",
+  "visual_finding": "Actual extended right weapon profile; maintain right body view throughout all poses, not rear.",
+  "guide_sha256": "71807d8c4e1f854df49eff135f7cb919536952684a3e5500bf89cb0eb9a03e2f"
+}

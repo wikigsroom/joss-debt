@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/b25-primary.png",
+  "source_sha256": "c0abf110f0619184b13db324d0aa8bede0df9b760cdaf5961053404377c25424",
+  "row": 6,
+  "column": 0,
+  "declared_direction": "up",
+  "visual_finding": "Inspected intact neutral up pose of original boss; cast and hurt middle frames turn beyond this view and must be independently redrawn.",
+  "guide_sha256": "b3d38c3dba67caa35f794d68e7369d63d1537e18b08bf8cd377154c136761235"
+}

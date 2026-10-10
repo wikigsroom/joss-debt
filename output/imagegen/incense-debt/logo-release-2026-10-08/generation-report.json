@@ -1,0 +1,82 @@
+{
+  "provider": "sub2-image-gen",
+  "model": "gpt-image-2.5",
+  "quality": "high",
+  "created_at": "2026-10-07T18:22:48.727228+00:00",
+  "reference_path": "game/assets/ui/app-icon.png",
+  "reference_sha256": "47f2e05dee184b8f1985ef3e6a37bfe6fea205717d168f8bdefe2c0f6bc74395",
+  "reference_method": "Visual inspection and written identity description; configured generations CLI has no reference-image parameter",
+  "records": [
+    {
+      "id": "01-paper-spirit",
+      "path": "output/imagegen/incense-debt/logo-release-2026-10-08/01-paper-spirit-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e8aac67a563d968140fd6b27311014a8461b294eef862df90b7b74ae5e17b78c",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "02-vermilion-seal",
+      "path": "output/imagegen/incense-debt/logo-release-2026-10-08/02-vermilion-seal-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e18e215e930b6416ac6417a583fc35a9506aded3105c303e9b7a2137a37ccffa",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "03-bronze-burner",
+      "path": "output/imagegen/incense-debt/logo-release-2026-10-08/03-bronze-burner-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "ed403313fbf677b47c86188c035d19d94ca33e399c7e88cf4565484e56ceb951",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "04-broken-cord",
+      "path": "output/imagegen/incense-debt/logo-release-2026-10-08/04-broken-cord-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "21db6bb637b616bebb6aadb9cc6e284bec5f1c831d27903b425e81ad55277e55",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "05-jade-lantern",
+      "path": "output/imagegen/incense-debt/logo-release-2026-10-08/05-jade-lantern-generated.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "50532c56958a7a450f726b7e378643973aa5e4f88b64546226717fd2f849f589",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "failures": []
+}

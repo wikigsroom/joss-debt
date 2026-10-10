@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e264-primary.png",
+  "source_sha256": "54fa7e7ad1d8b9aa5d02172dfd80adae32faec654edc411e60ddd866e1e09a69",
+  "row": 4,
+  "column": 0,
+  "declared_direction": "right",
+  "visual_finding": "Original SIX-legged moss-grey/ivory tombstone paper crab, two heavy stone/paper claws, original three tombstone slabs on dome and ivory front mask. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "eb3886c483c6150c96b6a95a6b99fe4501a5e6b89a7ba6c036cba018eeca65f4"
+}

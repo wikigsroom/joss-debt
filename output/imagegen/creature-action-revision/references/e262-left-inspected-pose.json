@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e262-primary.png",
+  "source_sha256": "247e5fa6d90e52fae4ba2a9724c7483c8f49355dc75d0bf43b1e2cbed74ed17a",
+  "row": 2,
+  "column": 2,
+  "declared_direction": "left",
+  "visual_finding": "Original TWO-footed grey-blue/ivory moon-feather paper bird, layered feather crown/wings, ivory mask, gold collar bell and moon-pale paper tabs. Actual complete source pose visually inspected; requested whole-body camera accepted as a generation guide only.",
+  "guide_sha256": "9026b7d4c61b486aadc502b40fd0781d4a729f70668a96aca929aef07af57291"
+}

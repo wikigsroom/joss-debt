@@ -1,0 +1,10 @@
+{
+  "purpose": "Visually inspected orientation reference; final six poses must be independently generated",
+  "source": "output/imagegen/creature-action-revision/raw/e67-primary.png",
+  "source_sha256": "6071d06f2c67346eb6c26d960a95b47b3e1deb553eb2289715489a397988be04",
+  "row": 2,
+  "column": 0,
+  "declared_direction": "left",
+  "visual_finding": "Lantern spider left profile points ivory face left; do not use joined right hurt poses or hurt rows that turn frontal.",
+  "guide_sha256": "a7ddac9911fb07bee317005c93271aeeabf4c3e36733b8f0ad99c79192a87ca8"
+}
