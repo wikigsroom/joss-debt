@@ -5,7 +5,7 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[v0.2.3-alpha.1 发布包 / Release package](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.3-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+**[已发布 v0.2.3-alpha.1 / Published prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.2.3-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
 
 [Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-windows-x64.zip) · [Android arm64 APK（调试签名 / debug signed）](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/SHA256SUMS.txt)
 

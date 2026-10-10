@@ -1,0 +1,40 @@
+{
+  "url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1",
+  "tag": "v0.2.3-alpha.1",
+  "commit": "59c9270b203fb2dc8ca7200a12190fce89138640",
+  "draft": false,
+  "prerelease": true,
+  "published_at": "2026-10-10T19:01:23Z",
+  "assets": [
+    {
+      "name": "IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025238240,
+      "digest": "sha256:bb2e3a32ddf849d50a4f655d1c1456ab013d1b71e5585c7d5e3e9eb6272b60eb",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk"
+    },
+    {
+      "name": "IncenseDebt-v0.2.3-alpha.1-windows-x64.zip",
+      "bytes": 1031531026,
+      "digest": "sha256:5de1e1491757db375b034f05237542da06beda41267766c0efd648f552a7125b",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-windows-x64.zip"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 3269,
+      "digest": "sha256:b883b38753cbc45d831d1b9a1ac6491442a2b48b2a0c18a7aadcefd57dd43031",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/release-manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 398,
+      "digest": "sha256:9c35a6bb2f3f98826a85aae8921f58441a027606279f63d5da36e94c8d879f9e",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/SHA256SUMS.txt"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 6493,
+      "digest": "sha256:efcc8526a92e111ed1254e25b49ce9b8b17bd397a29ff31823b840f4156de14f",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/START-HERE.md"
+    }
+  ]
+}

@@ -95,7 +95,7 @@
     "verified_at": "2026-10-10T12:14:49.767444+00:00",
     "docx_sha256": "cb1442056b9659201fa816a73e0445a41a30f50f52176c3be31faacf459406bf"
   },
-  "public_github_release": "v0.2.0-alpha.1",
+  "public_github_release": "v0.2.3-alpha.1",
   "pending": [
     "physical Android installation, thumb feel, native keyboard/clipboard/file picker, haptics and thermal acceptance",
     "human visual, combat feel and long-term balance acceptance",
@@ -123,5 +123,10 @@
   "consumable_evidence_reused_with_unchanged_bitmaps": true,
   "right_hand_touch_default": true,
   "legacy_default_layouts_upgraded": true,
-  "custom_touch_layouts_preserved": true
+  "custom_touch_layouts_preserved": true,
+  "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1",
+  "public_release_published_at": "2026-10-10T19:01:23Z",
+  "public_release_commit": "59c9270b203fb2dc8ca7200a12190fce89138640",
+  "public_release_manifest": "docs/releases/v0.2.3-alpha.1.manifest.json",
+  "publication_receipt": "docs/releases/v0.2.3-alpha.1.publication.json"
 }

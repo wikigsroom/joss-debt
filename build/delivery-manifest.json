@@ -1,6 +1,6 @@
 {
   "version": "0.2.3",
-  "status": "local_verified_alpha",
+  "status": "published_verified_alpha",
   "recorded_at": "2026-10-10T18:36:58.530935+00:00",
   "files": [
     {
@@ -24,7 +24,7 @@
   "creature_native_evidence": "docs/incense-debt/reports/creature-actions-2026-10-10/native-coverage.json",
   "previous_delivery_manifest": "build/delivery-manifest-0.2.0.baseline.json",
   "ios_handoff_version": "0.2.0_historical",
-  "public_github_release": "v0.2.0-alpha.1",
+  "public_github_release": "v0.2.3-alpha.1",
   "generated_consumable_objects": 6,
   "consumable_runtime_bitmaps": 19,
   "consumable_revision_document": "docs/incense-debt/36-consumable-art-update.md",
@@ -44,5 +44,10 @@
   "consumable_evidence_version": "0.2.1",
   "creature_evidence_version": "0.2.1",
   "right_hand_touch_default": true,
-  "legacy_default_layouts_upgraded": true
+  "legacy_default_layouts_upgraded": true,
+  "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1",
+  "public_release_published_at": "2026-10-10T19:01:23Z",
+  "public_release_commit": "59c9270b203fb2dc8ca7200a12190fce89138640",
+  "public_release_manifest": "docs/releases/v0.2.3-alpha.1.manifest.json",
+  "publication_receipt": "docs/releases/v0.2.3-alpha.1.publication.json"
 }

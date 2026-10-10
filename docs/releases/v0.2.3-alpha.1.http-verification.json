@@ -1,0 +1,44 @@
+{
+  "tag": "v0.2.3-alpha.1",
+  "published_at": "2026-10-10T19:01:23Z",
+  "checks": [
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.3-alpha.1",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-android-arm64-debug.apk",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/IncenseDebt-v0.2.3-alpha.1-windows-x64.zip",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/release-manifest.json",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/SHA256SUMS.txt",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.2.3-alpha.1/START-HERE.md",
+      "http_status": 200,
+      "authenticated": false,
+      "method": "HEAD"
+    }
+  ],
+  "anonymous_checksum_download_matches": true,
+  "checksum_sha256": "9c35a6bb2f3f98826a85aae8921f58441a027606279f63d5da36e94c8d879f9e"
+}
