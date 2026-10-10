@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-10T18:11:02.513989+00:00",
+  "version": "0.2.2",
+  "passed": true,
+  "windows_sha256": "c1bcd02a86ea9e0d3d629d8fbe84418c24dbfa1da1a9f76cacf6692228729995",
+  "android_sha256": "41ecdb45185f24a110b6546646b1c3cd64cfd32f7ae028b5dad12188995e3b8b",
+  "screen_fixtures": 8,
+  "source_checks": 274,
+  "packaged_checks": 274,
+  "source_captures": 51,
+  "packaged_captures": 51,
+  "mobile_regression_checks": 340,
+  "mobile_regression_captures": 80,
+  "keyboard_checks": 107,
+  "package_checks": 2157,
+  "matching_compiled_scripts": 76,
+  "runtime_resources": 3810,
+  "android_display_checks": {
+    "edge_to_edge_in_actual_apk": true,
+    "immersive_in_actual_apk": true,
+    "mobile_startup_expands": true,
+    "project_sensor_landscape": true,
+    "manifest_user_landscape": true,
+    "resizable_activity": true,
+    "project_version_matches": true,
+    "version_code_matches": true
+  },
+  "android_display_flags": [
+    "--fullscreen",
+    "--edge_to_edge"
+  ],
+  "android_version_code": 4,
+  "upgrade_signer_matches_previous": true,
+  "android_physical_device_tested": false,
+  "virtualization": "none",
+  "browser_used": false
+}

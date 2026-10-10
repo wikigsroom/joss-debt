@@ -2,6 +2,7 @@ extends SceneTree
 ## Matching native Godot runner opens the EXE's actual embedded PCK with --main-pack.
 var output = ""
 var expected: Dictionary = {}
+var expected_version = ""
 var checks: Array = []
 var failures: Array = []
 
@@ -9,6 +10,7 @@ func _initialize() -> void:
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--report="): output = argument.trim_prefix("--report=")
 		if argument.begins_with("--expected="): expected = JSON.parse_string(FileAccess.get_file_as_string(argument.trim_prefix("--expected=")))
+		if argument.begins_with("--version="): expected_version = argument.trim_prefix("--version=")
 	call_deferred("run_suite")
 
 func expect(value: bool, name: String) -> void:
@@ -18,7 +20,7 @@ func expect(value: bool, name: String) -> void:
 		push_error(name)
 
 func run_suite() -> void:
-	expect(ProjectSettings.get_setting("application/config/version") == "0.2.1", "the executable loads the new 0.2.1 project from its embedded pack")
+	expect(not expected_version.is_empty() and ProjectSettings.get_setting("application/config/version") == expected_version, "the executable loads the current " + expected_version + " project from its embedded pack")
 	var pickups = JSON.parse_string(FileAccess.get_file_as_string("res://assets/pickups/manifest.json"))
 	for row in pickups.records:
 		var image: Texture2D = load(row.file)

@@ -1,14 +1,14 @@
 {
-  "recorded_at": "2026-10-10T17:15:33.676315+00:00",
-  "version": "0.2.1",
+  "recorded_at": "2026-10-10T18:11:02.513989+00:00",
+  "version": "0.2.2",
   "status": "playable_eleven_floor_alpha",
   "product_complete": false,
   "playable_scope": "eleven-floor alpha with 20 encounter themes, 12 active items, 12 trinkets, composed attacks and 80 new effects",
   "windows": {
     "platform": "windows",
     "path": "build/windows/IncenseDebt.exe",
-    "bytes": 1108664680,
-    "sha256": "79848dfe4835ff67aa12479b633a79db55d42e2fce220e9dcbf7371286b42e19",
+    "bytes": 1108668128,
+    "sha256": "c1bcd02a86ea9e0d3d629d8fbe84418c24dbfa1da1a9f76cacf6692228729995",
     "engine": "4.7.2",
     "build": "release",
     "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",
@@ -16,19 +16,25 @@
     "device_tested": true,
     "virtualization": "none",
     "native_runtime_tested": true,
-    "native_runtime_report": "docs/incense-debt/reports/consumables-2026-10-11/windows/native.json"
+    "native_runtime_report": "docs/incense-debt/reports/platforms/windows/keyboard/keyboard-flow.json",
+    "native_widescreen_report": "docs/incense-debt/reports/widescreen-2026-10-11/windows-matrix.json"
   },
   "android": {
     "platform": "android",
     "path": "build/android/IncenseDebt.apk",
-    "bytes": 1025213495,
-    "sha256": "2c58c1ba1e8b95a6901870074a23b3899722777511c2400abdada016b4bbe88b",
+    "bytes": 1025213664,
+    "sha256": "41ecdb45185f24a110b6546646b1c3cd64cfd32f7ae028b5dad12188995e3b8b",
     "engine": "4.7.2",
     "build": "debug",
     "playable_scope": "eleven-floor alpha: 40 calibrated inner walls, 60/40 mixed themed encounters, two separate single-boss rooms per early floor, staged beam/AoE keyframes, six characters and 32 weapons",
     "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
     "device_tested": false,
-    "virtualization": "none"
+    "virtualization": "none",
+    "version": "0.2.2",
+    "version_code": 4,
+    "edge_to_edge": true,
+    "signature_verified": true,
+    "upgrade_signer_matches_previous": true
   },
   "catalog_counts": {
     "meta_unlocks": 22,
@@ -68,7 +74,7 @@
   "creature_native_checks": 17,
   "creature_native_frames": 24048,
   "creature_action_report": "docs/incense-debt/35-creature-action-completion.md",
-  "matching_compiled_windows_android_scripts": 75,
+  "matching_compiled_windows_android_scripts": 76,
   "mobile_checks": 340,
   "mobile_native_screenshots": 80,
   "native_keyboard_checks": 107,
@@ -76,8 +82,8 @@
   "save_schema": 2,
   "virtualization": "none",
   "browser_used": false,
-  "revision_document": "docs/incense-debt/36-consumable-art-update.md",
-  "revision_reports": "docs/incense-debt/reports/consumables-2026-10-11",
+  "revision_document": "docs/incense-debt/37-mobile-widescreen-adaptation.md",
+  "revision_reports": "docs/incense-debt/reports/widescreen-2026-10-11",
   "historical_status": "docs/incense-debt/reports/product-status-0.2.0.baseline.json",
   "historical_platform_parity": "docs/incense-debt/reports/platforms/platform-parity.json",
   "privacy": {
@@ -102,6 +108,16 @@
   "consumable_themes_checked": 20,
   "consumable_backgrounds_checked": 40,
   "pickup_revision": "2026-10-11",
-  "prior_package_receipts": "docs/incense-debt/reports/consumables-2026-10-11/prior-package-receipts",
-  "creature_evidence_reused_with_unchanged_atlases": true
+  "prior_package_receipts": "docs/incense-debt/reports/widescreen-2026-10-11/prior-package-receipts",
+  "creature_evidence_reused_with_unchanged_atlases": true,
+  "package_checks": 2157,
+  "mobile_regression_report": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/mobile-matrix.json",
+  "widescreen_fixtures": 8,
+  "widescreen_source_checks": 274,
+  "widescreen_packaged_checks": 274,
+  "widescreen_captures_per_matrix": 51,
+  "widescreen_native_report": "docs/incense-debt/reports/widescreen-2026-10-11/windows-matrix.json",
+  "consumable_evidence_version": "0.2.1",
+  "creature_evidence_version": "0.2.1",
+  "consumable_evidence_reused_with_unchanged_bitmaps": true
 }

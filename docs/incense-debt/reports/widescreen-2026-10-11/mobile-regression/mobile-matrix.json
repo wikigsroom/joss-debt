@@ -1,0 +1,598 @@
+{
+  "scope": "Native rendering and synthetic touch; no virtualization or physical handset claim",
+  "packaged": false,
+  "fixtures": [
+    {
+      "fixture": "phone-16x9",
+      "resolution": "1280x720",
+      "checks": 85,
+      "passed": true,
+      "images": [
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/assistance.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/audio.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/choice-four.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/clear-room.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/combat.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/controller-bindings.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/growth.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/map.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/pause.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/replacement-confirm.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/replacement.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/sacrifice.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/save-paste.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/seed-keyboard-guard.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/seed.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/settings.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/skill-four.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/touch-layout.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/tryout.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-16x9/tutorial.png",
+          "size": [
+            1280,
+            720
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "phone-20x9",
+      "resolution": "2400x1080",
+      "checks": 85,
+      "passed": true,
+      "images": [
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/assistance.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/audio.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/choice-four.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/clear-room.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/combat.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/controller-bindings.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/growth.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/map.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/pause.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/replacement-confirm.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/replacement.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/sacrifice.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/save-paste.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/seed-keyboard-guard.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/seed.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/settings.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/skill-four.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/touch-layout.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/tryout.png",
+          "size": [
+            2400,
+            1080
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-20x9/tutorial.png",
+          "size": [
+            2400,
+            1080
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "tablet-4x3",
+      "resolution": "1024x768",
+      "checks": 85,
+      "passed": true,
+      "images": [
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/assistance.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/audio.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/choice-four.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/clear-room.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/combat.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/controller-bindings.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/growth.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/map.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/pause.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/replacement-confirm.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/replacement.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/sacrifice.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/save-paste.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/seed-keyboard-guard.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/seed.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/settings.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/skill-four.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/touch-layout.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/tryout.png",
+          "size": [
+            1024,
+            768
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/tablet-4x3/tutorial.png",
+          "size": [
+            1024,
+            768
+          ]
+        }
+      ]
+    },
+    {
+      "fixture": "phone-density-320",
+      "resolution": "1280x720",
+      "checks": 85,
+      "passed": true,
+      "images": [
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/assistance.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/audio.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/choice-four.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/clear-room.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/combat.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/controller-bindings.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/growth.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/map.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/pause.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/replacement-confirm.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/replacement.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/sacrifice.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/save-paste.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/seed-keyboard-guard.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/seed.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/settings.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/skill-four.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/touch-layout.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/tryout.png",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "docs/incense-debt/reports/widescreen-2026-10-11/mobile-regression/phone-density-320/tutorial.png",
+          "size": [
+            1280,
+            720
+          ]
+        }
+      ]
+    }
+  ]
+}

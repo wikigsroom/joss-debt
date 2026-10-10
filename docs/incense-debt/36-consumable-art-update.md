@@ -2,6 +2,8 @@
 
 本轮将《香火债》的四类消耗品统一成可辨识的纸、铜、火物件。使用用户指定的 **sub2-image-gen / gpt-image-2.5** 生成六张独立原画，交付透明 PNG，并接入原生游戏渲染器、HUD、商品卡片和拾取提示。
 
+本篇图像、GIF 与运行记录来自 **0.2.1** 消耗品修订；当前 **0.2.2** 的手机长屏与安装包验收见 [第 37 篇](37-mobile-widescreen-adaptation.md)。美术素材仍由两端使用，历史截图不作为最新包或 Android 真机证据。
+
 ## 复查结果与处理
 
 | 内容 | 原实现的问题 | 当前样式与关联界面 |
@@ -56,7 +58,7 @@
 - [20 项美术完整性检查](reports/consumables-2026-10-11/art-validation.json)
 - [105 项原生检查、91 张捕获记录](reports/consumables-2026-10-11/native/native.json)
 - [实际 Windows 导出程序的重复检查](reports/consumables-2026-10-11/windows/native.json)
-- [Windows / Android 源码与编译纹理核对](reports/action-mobile-2026-10-09/packaged-parity.json)
+- [本轮 0.2.1 的 Windows / Android 编译纹理核对](reports/widescreen-2026-10-11/prior-package-receipts/docs/incense-debt/reports/action-mobile-2026-10-09/packaged-parity.json)
 - [当前安装包和验证记录](reports/current-product-status.json)
 
 91 张捕获含 40 张场景、回血商店、火芯键盘提示、移动 HUD，以及待机 / 拾取各 24 帧。检查还覆盖实际回血、满血转换、两档金币、两档香灰、回血吸附边界、清房保留回血、充能拾取、防止满充能误消耗、九个地面掉落及完整世界的保存恢复、表现层不改变模拟或 RNG。

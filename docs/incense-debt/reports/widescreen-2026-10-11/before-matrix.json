@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "fixture": "phone-20x9",
+      "resolution": "2400x1080",
+      "dpi": 400,
+      "cutout": "none",
+      "checks": 6,
+      "captures": 6,
+      "passed": true,
+      "report": "docs/incense-debt/reports/widescreen-2026-10-11/before/phone-20x9/native.json"
+    }
+  ],
+  "scope": "Actual native graphics and touch events; handset insets simulated; physical handset acceptance pending"
+}

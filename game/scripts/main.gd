@@ -17,6 +17,7 @@ const AimAssist = preload("res://scripts/ui/aim_assist.gd")
 const Haptics = preload("res://scripts/ui/haptic_feedback.gd")
 const Reader = preload("res://scripts/ui/narrative_reader.gd")
 const Orientation = preload("res://scripts/ui/orientation_guard.gd")
+const MobileSurface = preload("res://scripts/ui/mobile_surface.gd")
 const SaveSession = preload("res://scripts/core/save_session.gd")
 const SaveSlots = preload("res://scripts/core/save_slots.gd")
 const SaveUI = preload("res://scripts/ui/save_transfer_ui.gd")
@@ -106,6 +107,10 @@ var qa_capture_enabled = false
 var qa_keyboard_enabled = false
 var qa_equipment_enabled = false
 var qa_consumables_enabled = false
+var qa_display_enabled = false
+var qa_display_safe = Rect2()
+var qa_display_cutouts: Array = []
+var qa_display_dpi = 0.0
 var qa_expansion_enabled = false
 var qa_tick = 0
 var qa_capture_busy = false
@@ -118,6 +123,8 @@ var mobile_button_height = 80.0
 var mobile_choice = 0
 var mobile_interface_origin = Vector2.ZERO
 var mobile_keyboard_button: Button
+var mobile_safe_signature = ""
+var mobile_safe_elapsed = 0.0
 var story = Story.new()
 var story_filter = ""
 var npc_line_index = 0
@@ -151,7 +158,8 @@ func _ready() -> void:
 	qa_expansion_enabled = OS.get_cmdline_user_args().has("--qa-expansion")
 	qa_equipment_enabled = OS.get_cmdline_user_args().has("--qa-equipment")
 	qa_consumables_enabled = OS.get_cmdline_user_args().has("--qa-consumables")
-	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled
+	qa_display_enabled = OS.get_cmdline_user_args().has("--qa-display")
+	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
 	if mobile_ui:
@@ -163,7 +171,7 @@ func _ready() -> void:
 			if argument.begins_with("--qa-output="):
 				qa_directory = argument.trim_prefix("--qa-output=")
 		DirAccess.make_dir_recursive_absolute(qa_directory)
-	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled:
+	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled:
 		save_slots = SaveSlots.new(qa_directory.path_join("isolated-saves").path_join(str(Time.get_ticks_usec())))
 		save_slot = save_slots.selected_slot()
 		save_session = SaveSession.new(save_slots.base_path(save_slot), save_slots.legacy_profile_path(save_slot), save_slots.legacy_run_path(save_slot))
@@ -251,18 +259,18 @@ func _ready() -> void:
 func apply_safe_area(density_for_qa: float = 0) -> void:
 	if not mobile_ui: return
 	var viewport_rect = Rect2(Vector2.ZERO, get_viewport().get_visible_rect().size)
-	var raw = DisplayServer.get_display_safe_area()
-	var inverse = get_viewport().get_screen_transform().affine_inverse()
-	var safe = Rect2(inverse * Vector2(raw.position), Vector2.ZERO)
-	safe.size = inverse * Vector2(raw.end) - safe.position
-	safe = safe.intersection(viewport_rect)
-	if safe.size.x < 600 or safe.size.y < 350: safe = viewport_rect
+	var raw = qa_display_safe if qa_active and qa_display_safe.has_area() else Rect2(DisplayServer.get_display_safe_area())
+	var cutouts = qa_display_cutouts if qa_active and not qa_display_cutouts.is_empty() else DisplayServer.get_display_cutouts()
+	var safe = MobileSurface.safe_area(viewport_rect, get_viewport().get_screen_transform(), raw, cutouts)
+	if adapter.safe_rect != safe.grow(-6): adapter.clear()
 	adapter.safe_rect = safe.grow(-6)
-	var scale_value = minf(safe.size.x / 1280, safe.size.y / 720)
+	var fitting = MobileSurface.contained(safe)
+	var scale_value = fitting.x.length()
 	interface.scale = Vector2.ONE * scale_value
-	interface.position = safe.position + (safe.size - Vector2(1280, 720) * scale_value) * .5
+	interface.position = fitting.origin
 	mobile_interface_origin = interface.position
 	var pixel_scale = get_viewport().get_screen_transform().x.length() * scale_value
+	if qa_active and qa_display_dpi > 0: density_for_qa = qa_display_dpi
 	var dpi = maxf(160, density_for_qa if qa_active and density_for_qa > 0 else DisplayServer.screen_get_dpi())
 	var dp_scale = dpi / 160.0 / maxf(.1, get_viewport().get_screen_transform().x.length())
 	mobile_button_height = maxf(64, 48.0 * dpi / 160.0 / maxf(.1, pixel_scale))
@@ -273,6 +281,25 @@ func apply_safe_area(density_for_qa: float = 0) -> void:
 	hud.size = safe.size
 	renderer.fit_surface(safe)
 	if not adapter.valid_layout(): adapter.reset_layout("tablet" if safe.size.x / safe.size.y < 1.6 else "phone")
+	for child in modal.get_children():
+		if child.has_meta("surface_curtain"): fit_curtain(child)
+	update_hud()
+
+func refresh_safe_area(delta: float) -> void:
+	if not mobile_ui or qa_active: return
+	mobile_safe_elapsed += delta
+	if mobile_safe_elapsed < .25: return
+	mobile_safe_elapsed = 0
+	# A 180-degree sensor rotation can move the camera/gesture inset without a
+	# viewport resize. Refresh only when the platform's physical safe area changes.
+	var signature = str(DisplayServer.get_display_safe_area()) + str(DisplayServer.get_display_cutouts()) + str(get_viewport().get_screen_transform())
+	if signature != mobile_safe_signature:
+		mobile_safe_signature = signature
+		apply_safe_area()
+
+func fit_curtain(curtain: ColorRect) -> void:
+	curtain.position = -interface.position / interface.scale
+	curtain.size = get_viewport().get_visible_rect().size / interface.scale
 
 func hide_mobile_keyboard() -> void:
 	if not mobile_ui: return
@@ -442,7 +469,8 @@ func clear_modal() -> void:
 
 func dim(alpha: float = 0.82) -> void:
 	var curtain = ColorRect.new()
-	curtain.size = Vector2(1280, 720)
+	curtain.set_meta("surface_curtain", true)
+	fit_curtain(curtain)
 	curtain.color = Color(0.055, 0.06, 0.05, alpha)
 	curtain.mouse_filter = Control.MOUSE_FILTER_STOP
 	modal.add_child(curtain)
@@ -737,6 +765,7 @@ func _physics_process(delta: float) -> void:
 	update_hud()
 
 func _process(delta: float) -> void:
+	refresh_safe_area(delta)
 	update_mobile_keyboard()
 	keyboard.update(self)
 	notice_left = maxf(0, notice_left - delta)

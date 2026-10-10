@@ -24,6 +24,7 @@ def runtime_remap(data):
     return '\n'.join(lines).strip()
 
 def main():
+    version=re.search(r'config/version="([^"]+)"',(ROOT/'game/project.godot').read_text('utf8')).group(1)
     sources=['game/data/music_playlist.json','game/assets/weapon-rig.json','game/data/runtime_assets.json','game/assets/fx/drawn-actions/manifest.json','game/assets/creature-actions.json','game/assets/pickups/manifest.json']
     creatures=json.loads((ROOT/'game/assets/creature-actions.json').read_text('utf8'))
     if not creatures.get('complete') or creatures.get('compiled_actors')!=402 or creatures.get('compiled_action_poses')!=24048:
@@ -80,7 +81,7 @@ def main():
         runner=ROOT/'.local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe'
         # Release templates omit --script. The editor runner supports it while
         # --main-pack ensures res:// reads the actual exported pack, not game/.
-        result=subprocess.run([str(runner),'--headless','--main-pack',str(exe),'--log-file',str(native_log),'--script',str(ROOT/'tools/runtime/verify_packaged_revision.gd'),'--','--expected='+str(temporary),'--report='+str(REPORT/'packaged-windows.json')],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=240)
+        result=subprocess.run([str(runner),'--headless','--main-pack',str(exe),'--log-file',str(native_log),'--script',str(ROOT/'tools/runtime/verify_packaged_revision.gd'),'--','--expected='+str(temporary),'--version='+version,'--report='+str(REPORT/'packaged-windows.json')],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=240)
     except subprocess.TimeoutExpired as error:
         log=native_log.read_text('utf8',errors='replace') if native_log.is_file() else (error.stdout or b'').decode('utf8',errors='replace')
         raise RuntimeError('Packaged verifier timed out; process closed:\n'+log[-6000:]) from error

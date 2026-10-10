@@ -7,8 +7,42 @@ import re
 import subprocess
 import zipfile
 import argparse
+import struct
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def display_project_settings(data):
+    """Read selected scalar fields from Godot's exported ECFG; never execute packed data."""
+    if data[:4] != b"ECFG":
+        raise RuntimeError("APK has no valid Godot project configuration")
+    wanted = {"application/config/version", "display/window/stretch/aspect",
+              "display/window/stretch/aspect.mobile", "display/window/handheld/orientation"}
+    fields = {}
+    offset = 8
+    for _ in range(struct.unpack_from("<I", data, 4)[0]):
+        size = struct.unpack_from("<I", data, offset)[0]; offset += 4
+        key = data[offset:offset + size].decode("utf8"); offset += size
+        size = struct.unpack_from("<I", data, offset)[0]; offset += 4
+        value = data[offset:offset + size]; offset += size
+        if key not in wanted:
+            continue
+        header = struct.unpack_from("<I", value)[0]
+        if header & 0xff == 4:
+            length = struct.unpack_from("<I", value, 4)[0]
+            fields[key] = value[8:8 + length].decode("utf8")
+        elif header & 0xff == 2:
+            fields[key] = struct.unpack_from("<q" if header & 0x10000 else "<i", value, 4)[0]
+    return fields
+
+
+def display_command_line(data):
+    offset = 4
+    args = []
+    for _ in range(struct.unpack_from("<I", data)[0]):
+        size = struct.unpack_from("<I", data, offset)[0]; offset += 4
+        args.append(data[offset:offset + size].decode("utf8")); offset += size
+    return args
 
 
 def main():
@@ -40,16 +74,27 @@ def main():
     report_path.parent.mkdir(parents=True, exist_ok=True)
     env = os.environ.copy()
     env["JAVA_HOME"] = "C:/Program Files/Eclipse Adoptium/jdk-21.0.11.10-hotspot"
-    def run(args):
-        return subprocess.run(args, cwd=ROOT, capture_output=True, text=True, encoding="utf8", errors="replace", env=env, timeout=30)
+    def run(args, timeout=30):
+        return subprocess.run(args, cwd=ROOT, capture_output=True, text=True, encoding="utf8", errors="replace", env=env, timeout=timeout)
     # AAPT's legacy Windows path reader cannot open an absolute path containing Chinese.
     # Keep its input relative to the verified workspace, without copying the artifact.
     badging = run([str(sdk / "build-tools/35.0.0/aapt.exe"), "dump", "badging", relative_apk])
     permissions = run([str(sdk / "build-tools/35.0.0/aapt.exe"), "dump", "permissions", relative_apk])
-    signing = run([str(sdk / "build-tools/35.0.0/apksigner.bat"), "verify", "--verbose", str(apk)])
+    manifest = run([str(sdk / "build-tools/35.0.0/aapt.exe"), "dump", "xmltree", relative_apk, "AndroidManifest.xml"])
+    signing = run([str(sdk / "build-tools/35.0.0/apksigner.bat"), "verify", "--verbose", "--print-certs", str(apk)], timeout=180)
+    signer = signing
+    certificates = re.findall(r"certificate SHA-256 digest: ([0-9a-fA-F]+)", signer.stdout)
+    previous = apk.with_name(apk.stem + "-previous" + apk.suffix)
+    upgrade_signer_matches = None
+    if previous.is_file():
+        previous_signer = run([str(sdk / "build-tools/35.0.0/apksigner.bat"), "verify", "--print-certs", str(previous)], timeout=180)
+        previous_certificates = re.findall(r"certificate SHA-256 digest: ([0-9a-fA-F]+)", previous_signer.stdout)
+        upgrade_signer_matches = previous_signer.returncode == 0 and bool(certificates) and certificates == previous_certificates
     devices = run([str(sdk / "platform-tools/adb.exe"), "devices", "-l"])
     with zipfile.ZipFile(apk) as bundle:
         names = bundle.namelist()
+        startup = display_project_settings(bundle.read("assets/project.binary"))
+        command_line = display_command_line(bundle.read("assets/_cl_"))
         required = {name: any(p.endswith(name) for p in names) for name in ["equipment.json", "projectile_profiles.json", "fx_presets.json", "fx/equipment-polish/manifest.json", "story.zh_CN.json", "arena_boundaries.json", "fx/combat-revision/manifest.json", "fx/drawn-actions/manifest.json", "expansion.json", "achievements.json", "runtime_assets.json", "music_scores.json", "music_playlist.json", "rules.json", "OFL.txt", "ResourceHanRounded-OFL.txt", "SmileySans-OFL.txt", "Lucide-LICENSE.txt", "Godot-THIRDPARTY.txt", "weapon-rig.json"]}
         registry = json.loads(bundle.read("assets/data/runtime_assets.json"))
         registry_matches = registry == json.loads((ROOT / "game/data/runtime_assets.json").read_text("utf8"))
@@ -81,7 +126,19 @@ def main():
         libraries = [p for p in names if p.startswith("lib/")]
     expected_version = re.search(r'config/version="([^"]+)"', (ROOT / "game/project.godot").read_text("utf8")).group(1)
     version_matches = "versionName='" + expected_version + "'" in badging.stdout
-    passed = all(r.returncode == 0 for r in [badging, permissions, signing]) and version_matches and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match
+    expected_code = re.search(r'version/code=(\d+)', (ROOT / "game/export_presets.cfg").read_text("utf8")).group(1)
+    display_checks = {
+        "edge_to_edge_in_actual_apk": "--edge_to_edge" in command_line,
+        "immersive_in_actual_apk": "--fullscreen" in command_line,
+        "mobile_startup_expands": startup.get("display/window/stretch/aspect.mobile", startup.get("display/window/stretch/aspect")) == "expand",
+        "project_sensor_landscape": startup.get("display/window/handheld/orientation") == 4,
+        # Godot 4.7.2 maps SCREEN_SENSOR_LANDSCAPE to Android USER_LANDSCAPE (11).
+        "manifest_user_landscape": bool(re.search(r"android:screenOrientation[^\n]*0xb(?:\s|$)", manifest.stdout)),
+        "resizable_activity": bool(re.search(r"android:resizeableActivity[^\n]*(?:0x1|0xffffffff)(?:\s|$)", manifest.stdout)),
+        "project_version_matches": startup.get("application/config/version") == expected_version,
+        "version_code_matches": "versionCode='" + expected_code + "'" in badging.stdout,
+    }
+    passed = all(r.returncode == 0 for r in [badging, permissions, signing, manifest, signer]) and version_matches and all(display_checks.values()) and upgrade_signer_matches is not False and all(required.values()) and not forbidden and music_config_matches and len(stems) == expected_stem_count and all(music_stems_packaged.values()) and rules_match and save_rules_match and all(save_scripts.values()) and registry_matches and all(imported_resources.values()) and rig_matches and all(ui_scripts.values()) and license_bytes_match
     with apk.open("rb") as file: digest = hashlib.file_digest(file, "sha256").hexdigest()
     report = {"passed": passed, "apk_sha256": digest, "signature_verified": signing.returncode == 0,
               "signature_diagnostics": signing.stdout.strip(), "package": next((l for l in badging.stdout.splitlines() if l.startswith("package:")), ""),
@@ -96,6 +153,9 @@ def main():
                    "new_font_and_icon_license_bytes_match": license_bytes_match})
     report["artifact"] = relative_apk
     report["build_variant"] = "release" if Path(relative_apk).name.endswith("-release.apk") else "debug"
+    report.update(display_checks=display_checks, exported_project_display_fields=startup,
+                  android_display_flags=[arg for arg in command_line if arg in ["--edge_to_edge", "--fullscreen"]],
+                  signer_certificate_sha256=certificates, upgrade_signer_matches_previous=upgrade_signer_matches)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")
     # This task started ADB for device discovery; release its idle server when no device is present.
     if not any("\tdevice" in line for line in devices.stdout.splitlines()):

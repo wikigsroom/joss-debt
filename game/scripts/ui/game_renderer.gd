@@ -10,6 +10,7 @@ const PolishedFX = preload("res://scripts/ui/polished_fx.gd")
 const EquipmentUI = preload("res://scripts/ui/equipment_ui.gd")
 const PickupArt = preload("res://scripts/ui/pickup_art.gd")
 const Geometry = preload("res://scripts/combat/room_geometry.gd")
+const Surface = preload("res://scripts/ui/mobile_surface.gd")
 var animation = PaperMotion.new()
 var weapon_motion = WeaponMotion.new()
 var drawn_fx = DrawnFX.new()
@@ -41,9 +42,7 @@ var stage = Geometry.STAGE
 var arena_transform = Transform2D.IDENTITY
 
 func fit_surface(safe: Rect2) -> void:
-	var factor = minf(safe.size.x / 1280.0, safe.size.y / 720.0)
-	var offset = safe.position + (safe.size - Vector2(1280, 720) * factor) * .5
-	arena_transform = Transform2D(Vector2(factor, 0), Vector2(0, factor), offset)
+	arena_transform = Surface.contained(safe)
 	stage = arena_transform * Geometry.STAGE
 const INK = Color("242725")
 const PAPER = Color("e7d8b6")
@@ -333,7 +332,6 @@ func draw_room_doors() -> void:
 func draw_floor() -> void:
 	draw_set_transform_matrix(Transform2D.IDENTITY)
 	draw_rect(Rect2(Vector2.ZERO, get_viewport_rect().size), INK)
-	draw_set_transform_matrix(arena_transform)
 	if not textures.has("floor"):
 		return
 	if textures.has("arena"):
@@ -345,8 +343,17 @@ func draw_floor() -> void:
 			var id = int(world.run.graph.get("backgrounds", {}).get(str(int(world.run.room)), 0))
 			var generated = ExpandedVisuals.texture(self, str(variants[id]))
 			if generated != null: backdrop = generated
+		var surface = get_viewport_rect()
+		var room = arena_transform * Rect2(0, 0, 1280, 720)
+		if not room.grow(.1).encloses(surface):
+			# Extend the current painted scenery behind the safe, complete room.
+			# The extra surface hosts HUD/touch controls; it never moves walls or doors.
+			draw_scenery_extension(backdrop, surface, room)
+		draw_set_transform_matrix(arena_transform)
 		draw_texture_rect(backdrop, Rect2(0, 0, 1280, 720), false)
 	else:
+		draw_texture_rect(textures.floor, get_viewport_rect(), true, Color("8f9b8f"))
+		draw_set_transform_matrix(arena_transform)
 		for y in range(72, 648, 192):
 			for x in range(64, 1216, 192):
 				draw_texture_rect(textures.floor, Rect2(x, y, 192, 192), false, Color("8f9b8f"))
@@ -361,6 +368,31 @@ func draw_floor() -> void:
 			var prop = "prop_paper_stack" if int(block.position.x / 64) % 2 == 0 else "prop_chest"
 			if textures.has(prop):
 				draw_sprite(textures[prop], block.position + Vector2(32, 61), 96)
+
+func draw_scenery_extension(backdrop: Texture2D, surface: Rect2, room: Rect2) -> void:
+	# Reflect only painted exterior strips. Their inner edge matches the original
+	# image pixel-for-pixel, so there is no second, offset wall at the room seam.
+	draw_texture_rect(backdrop, Surface.covered(surface, backdrop.get_size()), false)
+	var source = backdrop.get_size()
+	var left = maxf(0, room.position.x - surface.position.x)
+	var right = maxf(0, surface.end.x - room.end.x)
+	var top = maxf(0, room.position.y - surface.position.y)
+	var bottom = maxf(0, surface.end.y - room.end.y)
+	if left > .1:
+		draw_set_transform(Vector2(room.position.x, 0), 0, Vector2(-1, 1))
+		draw_texture_rect_region(backdrop, Rect2(0, room.position.y, left, room.size.y), Rect2(0, 0, minf(source.x, left * source.x / room.size.x), source.y))
+	if right > .1:
+		var width = minf(source.x, right * source.x / room.size.x)
+		draw_set_transform(Vector2(room.end.x + right, 0), 0, Vector2(-1, 1))
+		draw_texture_rect_region(backdrop, Rect2(0, room.position.y, right, room.size.y), Rect2(source.x - width, 0, width, source.y))
+	if top > .1:
+		draw_set_transform(Vector2(0, room.position.y), 0, Vector2(1, -1))
+		draw_texture_rect_region(backdrop, Rect2(room.position.x, 0, room.size.x, top), Rect2(0, 0, source.x, minf(source.y, top * source.y / room.size.y)))
+	if bottom > .1:
+		var height = minf(source.y, bottom * source.y / room.size.y)
+		draw_set_transform(Vector2(0, room.end.y + bottom), 0, Vector2(1, -1))
+		draw_texture_rect_region(backdrop, Rect2(room.position.x, 0, room.size.x, bottom), Rect2(0, source.y - height, source.x, height))
+	draw_set_transform_matrix(Transform2D.IDENTITY)
 
 func draw_room_ambient() -> void:
 	if world == null or world.run.is_empty(): return

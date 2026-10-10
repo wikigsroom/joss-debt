@@ -9,13 +9,19 @@ REPORT = ROOT / 'docs/incense-debt/reports/action-mobile-2026-10-09'
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--fixture')
+    parser.add_argument('--report-dir', default=str(REPORT.relative_to(ROOT)))
+    parser.add_argument('--packaged', action='store_true')
     args=parser.parse_args()
+    report_root = Path(args.report_dir)
+    if not report_root.is_absolute(): report_root = ROOT / report_root
     matrix=[]
     startup=subprocess.STARTUPINFO(); startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW; startup.wShowWindow=subprocess.SW_HIDE
     for name, resolution in [('phone-16x9','1280x720'),('phone-20x9','2400x1080'),('tablet-4x3','1024x768'),('phone-density-320','1280x720')]:
         if args.fixture and args.fixture != name: continue
-        folder=REPORT/name; folder.mkdir(parents=True,exist_ok=True)
-        command=[str(ENGINE),'--path',str(ROOT/'game'),'--rendering-method','gl_compatibility','--rendering-driver','opengl3','--audio-driver','Dummy','--resolution',resolution,'--position','-16000,-16000','--script',str(ROOT/'tools/runtime/verify_mobile_revision.gd'),'--','--qa-capture','--mobile-ui','--touch-preview','--qa-output='+str(folder/'fixture-saves'),'--audit-output='+str(folder)]
+        folder=report_root/name; folder.mkdir(parents=True,exist_ok=True)
+        command=[str(ENGINE)]
+        command += ['--main-pack',str(ROOT/'build/windows/IncenseDebt.exe')] if args.packaged else ['--path',str(ROOT/'game')]
+        command += ['--rendering-method','gl_compatibility','--rendering-driver','opengl3','--audio-driver','Dummy','--resolution',resolution,'--position','-16000,-16000','--script',str(ROOT/'tools/runtime/verify_mobile_revision.gd'),'--','--qa-capture','--qa-display','--mobile-ui','--touch-preview','--qa-output='+str(folder/'fixture-saves'),'--audit-output='+str(folder)]
         if name == 'phone-density-320': command.append('--audit-dpi=320')
         try:
             process=subprocess.run(command,cwd=ROOT/'game',stdout=subprocess.PIPE,stderr=subprocess.STDOUT,startupinfo=startup,creationflags=subprocess.CREATE_NO_WINDOW,timeout=65)
@@ -34,6 +40,6 @@ def main():
         report=json.loads((folder/'verification.json').read_text('utf8'))
         matrix.append(dict(fixture=name,resolution=resolution,checks=len(report['checks']),passed=report['passed'],images=images))
         print(name+': '+str(len(report['checks']))+' checks passed; '+str(len(images))+' native frames',flush=True)
-    (REPORT/'mobile-matrix.json').write_text(json.dumps(dict(scope='Native rendering and synthetic touch; no virtualization or physical handset claim',fixtures=matrix),indent=2)+'\n','utf8')
+    (report_root/'mobile-matrix.json').write_text(json.dumps(dict(scope='Native rendering and synthetic touch; no virtualization or physical handset claim',packaged=args.packaged,fixtures=matrix),indent=2)+'\n','utf8')
 
 if __name__=='__main__': main()

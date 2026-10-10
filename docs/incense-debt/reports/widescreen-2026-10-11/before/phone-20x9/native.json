@@ -1,0 +1,103 @@
+{
+  "baseline": true,
+  "captures": [
+    {
+      "name": "combat",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "640ed463ce781b0b4afa58bc4d11d18bf52242e671b8e2b5dfa584f821788206",
+      "side_band_variance": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "pause",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "46c02f4aafab9dd9097a71a750bed67b759e15f1ba61c69609b70066e213b546"
+    },
+    {
+      "name": "splash",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "dff8961b5ab739bdf8e81c18f2b94292445f268afd24dc0432c32f93ca1495bd"
+    },
+    {
+      "name": "files",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "a3117f62d5563d9ddc44fe118c667136a4d163d8d8d0b66ba5d7d85baa81b29b"
+    },
+    {
+      "name": "title",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "51958841bfac25cd0ac8f5c271157d4eaa2166f9dc8c35840972af01ac62d370"
+    },
+    {
+      "name": "skill-choice",
+      "size": [
+        2400,
+        1080
+      ],
+      "sha256": "57c282f4de874e9b7ec573bd94b1dc44e264f1ed175b1bb045bfee001fc6cf76"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "capture/combat",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/splash",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/files",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/title",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/skill-choice",
+      "passed": true
+    }
+  ],
+  "cutout": "none",
+  "dpi": 400.0,
+  "passed": true,
+  "physical_pixels": [
+    2400,
+    1080
+  ],
+  "safe_area": "[P: (6.0, 6.0), S: (1588.0, 708.0)]",
+  "scope": "Native desktop graphics, real touch dispatch, simulated handset dimensions/insets; no physical Android claim",
+  "version": "0.2.1",
+  "viewport": "[P: (0.0, 0.0), S: (1600.0, 720.0)]",
+  "recorded_at": "2026-10-10T17:39:08.834638+00:00",
+  "packaged": true,
+  "artifact_sha256": "79848dfe4835ff67aa12479b633a79db55d42e2fce220e9dcbf7371286b42e19"
+}

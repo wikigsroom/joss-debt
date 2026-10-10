@@ -1,6 +1,6 @@
 {
   "checks": [
-    "the executable loads the new 0.2.1 project from its embedded pack",
+    "the executable loads the current 0.2.2 project from its embedded pack",
     "the generated pickup bitmap loads with its dimensions and transparent background: heal",
     "the generated pickup bitmap loads with its dimensions and transparent background: coin",
     "the generated pickup bitmap loads with its dimensions and transparent background: coin_pair",
@@ -2123,6 +2123,7 @@
     "packaged file matches current source: res://scripts/ui/keyboard_flow_qa.gdc",
     "packaged file matches current source: res://scripts/ui/keyboard_navigation.gdc",
     "packaged file matches current source: res://scripts/ui/menu_flow.gdc",
+    "packaged file matches current source: res://scripts/ui/mobile_surface.gdc",
     "packaged file matches current source: res://scripts/ui/modern_ui.gdc",
     "packaged file matches current source: res://scripts/ui/music_playlist.gdc",
     "packaged file matches current source: res://scripts/ui/music_state.gdc",
@@ -2163,9 +2164,9 @@
   "hero_frames": 864,
   "passed": true,
   "scope": "matching native Godot test runner opens the actual Windows EXE embedded PCK; real exported resources and compiled scripts; separate packaged keyboard QA verifies executable runtime; no Android hardware claim",
-  "windows_sha256": "79848dfe4835ff67aa12479b633a79db55d42e2fce220e9dcbf7371286b42e19",
-  "android_sha256": "2c58c1ba1e8b95a6901870074a23b3899722777511c2400abdada016b4bbe88b",
-  "matching_compiled_scripts": 75,
+  "windows_sha256": "c1bcd02a86ea9e0d3d629d8fbe84418c24dbfa1da1a9f76cacf6692228729995",
+  "android_sha256": "41ecdb45185f24a110b6546646b1c3cd64cfd32f7ae028b5dad12188995e3b8b",
+  "matching_compiled_scripts": 76,
   "matching_data": [
     "game/data/music_playlist.json",
     "game/assets/weapon-rig.json",

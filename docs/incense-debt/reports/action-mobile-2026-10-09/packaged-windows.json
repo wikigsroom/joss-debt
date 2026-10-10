@@ -1,6 +1,6 @@
 {
 	"checks": [
-		"the executable loads the new 0.2.1 project from its embedded pack",
+		"the executable loads the current 0.2.2 project from its embedded pack",
 		"the generated pickup bitmap loads with its dimensions and transparent background: heal",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin_pair",
@@ -2123,6 +2123,7 @@
 		"packaged file matches current source: res://scripts/ui/keyboard_flow_qa.gdc",
 		"packaged file matches current source: res://scripts/ui/keyboard_navigation.gdc",
 		"packaged file matches current source: res://scripts/ui/menu_flow.gdc",
+		"packaged file matches current source: res://scripts/ui/mobile_surface.gdc",
 		"packaged file matches current source: res://scripts/ui/modern_ui.gdc",
 		"packaged file matches current source: res://scripts/ui/music_playlist.gdc",
 		"packaged file matches current source: res://scripts/ui/music_state.gdc",

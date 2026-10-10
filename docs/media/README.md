@@ -1,8 +1,8 @@
 # README 媒体说明 / README media notes
 
-这里存放历史 0.2.0 展示媒体，包括 22 张静态图片和 6 段 GIF；首页另引用下表的 3 段 0.2.1 原生动作 GIF，以及 2 段当前掉落物 GIF，共展示 11 段动效。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；历史图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)，新增掉落物见[来源记录](../incense-debt/reports/consumables-2026-10-11/media.json)。
+这里存放历史 0.2.0 展示媒体，包括 22 张静态图片和 6 段 GIF；首页另引用下表的 3 段 0.2.1 原生动作 GIF，以及 2 段 0.2.1 掉落物 GIF，共展示 11 段动效。相对路径在 GitHub 和本地 Markdown 阅读器中均可使用；历史图片来源、输出哈希与捕获构建见 [manifest.json](manifest.json)，新增掉落物见[来源记录](../incense-debt/reports/consumables-2026-10-11/media.json)。
 
-This directory retains 22 still images and six GIFs from 0.2.0. The README also embeds three native 0.2.1 action GIFs and two current pickup GIFs, giving eleven motion examples. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records the historical source paths, output hashes, and capture provenance; the pickup revision has its own [media record](../incense-debt/reports/consumables-2026-10-11/media.json).
+This directory retains 22 still images and six GIFs from 0.2.0. The README also embeds three native 0.2.1 action GIFs and two 0.2.1 pickup GIFs, giving eleven motion examples. Relative paths work on GitHub and in local Markdown readers. [manifest.json](manifest.json) records the historical source paths, output hashes, and capture provenance; the pickup revision has its own [media record](../incense-debt/reports/consumables-2026-10-11/media.json).
 
 ## 0.2.1 动作对照 / 0.2.1 action comparisons
 

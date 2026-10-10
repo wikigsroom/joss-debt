@@ -1,0 +1,242 @@
+{
+  "baseline": false,
+  "captures": [
+    {
+      "name": "combat",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "a0fcb5496ea3b0833a9d0b2c89940a5cd7202b6fd9e404d6d0f554a89774dfa6",
+      "side_band_variance": [
+        4485.253157168104,
+        4714.344712931412
+      ]
+    },
+    {
+      "name": "pause",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "22fdc4c12fc760a53c23f8bec7b9581ed7e87af61e1a8b7d2c98cd30819fa09e"
+    },
+    {
+      "name": "splash",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "6a346f9b8316022fadaf52728f24b3bc9f40a80b4d54fbe6a689c8ae309b7dea"
+    },
+    {
+      "name": "files",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "b94e28c3500555971ec211b4fb02817a0c692ec553031d684de319031ccef514"
+    },
+    {
+      "name": "title",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "0256f5cccdf476669448c5c8d9ff2df33ac3150144993b999b5263f887eb5ef0"
+    },
+    {
+      "name": "skill-choice",
+      "size": [
+        1024,
+        768
+      ],
+      "sha256": "0173838cb07e59c000fab0c317faae144bbef2022e521db2ad403240ebaf46cc"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "capture/combat",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "complete-room-in-safe-area",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "uniform-room-scale",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "valid-touch-layout",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/move",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/aim",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/dash",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-touch/active_item",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(64.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(1216.0, 360.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 72.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "world-input-roundtrip/(640.0, 648.0)",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/inventory",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/inventory",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "safe-hud/map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "48dp-hud/map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-move-input",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-aim-input",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real-touch-release",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/pause/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/pause",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/splash/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/splash",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/files/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/files",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/title/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/title",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "menu/skill-choice/safe-buttons",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "capture/skill-choice",
+      "passed": true
+    }
+  ],
+  "cutout": "none",
+  "dpi": 160.0,
+  "passed": true,
+  "physical_pixels": [
+    1024,
+    768
+  ],
+  "safe_area": "[P: (6.0, 6.0), S: (1268.0, 948.0)]",
+  "scope": "Native desktop graphics, real touch dispatch, simulated handset dimensions/insets; no physical Android claim",
+  "version": "0.2.2",
+  "viewport": "[P: (0.0, 0.0), S: (1280.0, 960.0)]",
+  "recorded_at": "2026-10-10T17:40:42.935151+00:00",
+  "packaged": false,
+  "source_script_sha256": {
+    "game/scripts/main.gd": "b625663e073775b45c090adfbbf5e9ad8ff9732352ece4ff9b2174c6a2950108",
+    "game/scripts/ui/game_renderer.gd": "a05371a36633bee538b2325965a4c5275622c116e560df8bc524b4406eb71a47",
+    "game/scripts/ui/mobile_surface.gd": "c15c2db2d7070cc9a6115024921ed6af2a74bbdb97a90b9994bd1febfd0239b3"
+  }
+}
