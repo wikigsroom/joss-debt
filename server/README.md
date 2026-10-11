@@ -22,7 +22,7 @@ Private configuration, credentials, keys, player state, logs and caches are excl
 
 The [archive verification](../docs/incense-debt/reports/server-archive-2026-10-11.json) records native import, two isolated startup/health/tick/graceful-stop cycles, committed empty state and 17 private-file ignore checks. It does not exercise or modify live player sessions.
 
-继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 2；战斗状态使用 ENet channel 0 的可靠有序快照，输入使用 channel 1 的不可靠冗余帧，控制与重绑使用可靠控制通道；DTLS 证书轮换仅在服务空闲时应用。旧传输版本明确拒绝，WSS 断线与 UDP 断线相互解耦，20 秒 battle bind/silence deadline 防止假在线。
+继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 2；ENet channel 0 以可靠通道传送 baseline metadata，动态绝对状态使用无序包并由实体序号和下一份绝对状态修复丢包，输入使用 channel 1 的不可靠冗余帧，控制与重绑使用可靠控制通道；DTLS 证书轮换仅在服务空闲时应用。旧传输版本明确拒绝，WSS 断线与 UDP 断线相互解耦，20 秒 battle bind/silence deadline 防止假在线。
 
 ## 原生运行 / Native execution
 
