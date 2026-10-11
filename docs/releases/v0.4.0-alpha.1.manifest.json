@@ -1,0 +1,148 @@
+{
+  "tag": "v0.4.0-alpha.1",
+  "version": "0.4.0",
+  "prerelease": true,
+  "repository": "wikigsroom/joss-debt",
+  "engine": "Godot 4.7.2",
+  "built_from_commit": "aadc4d9b62709592eb339ac06865a33933a89263",
+  "game_git_tree": "ea29a736a0626d9ca71b9737bb1116b834215a64",
+  "server_git_tree": "f1cf9926e8e2ec794a64d409803d42e8a74bbc1a",
+  "windows_verification": {
+    "passed": true,
+    "windows_exe_sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
+    "keyboard_checks": 107,
+    "online_checks": 27,
+    "online_captures": 31,
+    "online_touch_checks": 27,
+    "package_checks": 2171,
+    "runtime_resources": 3810,
+    "matching_compiled_android_scripts": 90
+  },
+  "android": {
+    "apk_sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+    "build": "debug",
+    "version_code": 7,
+    "signature_verified": true,
+    "signer_certificate_sha256": [
+      "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c"
+    ],
+    "upgrade_signer_matches_previous": true,
+    "internet_permission": true,
+    "edge_to_edge": true,
+    "physical_device_tested": false
+  },
+  "server": {
+    "exe_sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+    "platform": "windows-x64",
+    "standalone": true,
+    "default_rooms": 2,
+    "default_connections": 16,
+    "public_host_deployed": false,
+    "recovery_checks": 57,
+    "storage_checks": 7,
+    "load_report": "docs/incense-debt/reports/cooperative-2026-10-11/load.json"
+  },
+  "ios": {
+    "included": false,
+    "historical_handoff_version": "0.2.0",
+    "signed_ipa_created": false
+  },
+  "save_schema": 2,
+  "protocol": 2,
+  "ruleset": "cooperative-1-duel-2",
+  "default_game_mode": "coop",
+  "game_modes": [
+    "coop",
+    "duel"
+  ],
+  "privacy_policy_version": "1.5",
+  "virtualization": "none",
+  "verification_reports": [
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/combat.json",
+      "sha256": "16779825d0330c6e931820049ae935b1d055a95065eaa079b8c22c7abef2dff1"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/transport.json",
+      "sha256": "eced5770962c3a5f1e21d74ab48792b000476aa2830c262eaa025babdb475566"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/recovery.json",
+      "sha256": "46b2946fa7017dac86adb12d25379930b700c981551cab2d7492854363b48cf9"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/storage.json",
+      "sha256": "74a8d852db9bae4c812f5a1d792c3e2815c43804bbce09f2c35f32152c615945"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/load.json",
+      "sha256": "cfa5797cf8260c1b7d526d5bf180343eb7c4cbaec41d4e76a84c74d2394e7455"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/native.json",
+      "sha256": "676b5f3956807a264f7fb8801fe3f162c69256436055002d4a50ac4fec5e8a1d"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/duel-native.json",
+      "sha256": "a3b7812903cae1378f2481d1c7636beaadf493880bba85c4370327e604c3a566"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/duel-combat.json",
+      "sha256": "0c9bed3ab6648b841791f299666f2dd58f35944286cdd87a6ca0416f475c792c"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/offline-core.json",
+      "sha256": "5c785f88a50cf864a638a03cef7acbd44c3757d31b65efd2232a497d01233520"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/package-parity.json",
+      "sha256": "006ed345eb66a196928a869eb6c5523a2207e5bc0fe34358cb81f81f2f8dc20d"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/client-server-parity.json",
+      "sha256": "80a79a23febb8e3fca86b588d4a82f6d0dd6ad925a97133e7f07c92253c982e9"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/android.json",
+      "sha256": "e4012d32c183f6ba36d9933427c420a005ee7f035cd32be55c990bf68aa9b459"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/keyboard.json",
+      "sha256": "e3a1dc58d70d487c968ef047d997be0036e76758d192de07436e031c9e69ec05"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/server-build.json",
+      "sha256": "774f321518b30e046294cc74df36eaa6dc3667c6dcdfac36afb39b187f86e4c1"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/privacy-https.json",
+      "sha256": "a45d5eaffce0361376e7d07fe555674eb7ef74172c16b50e31df726c54b58bb1"
+    },
+    {
+      "path": "docs/incense-debt/reports/cooperative-2026-10-11/delivery.json",
+      "sha256": "7e3508b0fd2064db4d2c8c5413a516081b74f5a925a4f5245aac7103c58029e1"
+    }
+  ],
+  "files": [
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-windows-x64.zip",
+      "bytes": 1031692040,
+      "sha256": "7cd484a8b0511dfe657640f62fc62f1f7ac73f62a436dcf17eba737551a5e5f1"
+    },
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025404576,
+      "sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74"
+    },
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-server-windows-x64.zip",
+      "bytes": 38518839,
+      "sha256": "48b4246539a6c5baf5d15818da53c459029d18e4f2b1c5e3036329a3e42aa9cd"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 12057,
+      "sha256": "f272b425ee2804e28e60fe7f38a85cfecc671575812b62ea363aabed49bdf2ab"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "tag": "v0.4.0-alpha.1",
+  "server_zip_sha256": "48b4246539a6c5baf5d15818da53c459029d18e4f2b1c5e3036329a3e42aa9cd",
+  "server_exe_sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+  "recorded_at": "2026-10-11T02:27:57.522170+00:00",
+  "checks": [
+    {
+      "id": "zip_launch_in_space_path",
+      "passed": true
+    },
+    {
+      "id": "zip_stop_script_clean_exit",
+      "passed": true
+    },
+    {
+      "id": "zip_durable_shutdown_and_no_runtime_errors",
+      "passed": true
+    },
+    {
+      "id": "zip_config_uses_adjacent_persistent_data",
+      "passed": true
+    }
+  ],
+  "native_windows": true,
+  "virtualization": "none",
+  "path_with_spaces": true
+}
