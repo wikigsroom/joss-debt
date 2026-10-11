@@ -1,0 +1,134 @@
+{
+	"checks": [
+		{
+			"id": "encrypted_authority_start",
+			"passed": true
+		},
+		{
+			"id": "valid_bootstrap_and_ticket",
+			"passed": true
+		},
+		{
+			"id": "ticket_lifecycle_health_is_bounded",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_0",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_1",
+			"passed": true
+		},
+		{
+			"id": "forged_ticket_rejected",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_1",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_2",
+			"passed": true
+		},
+		{
+			"id": "consumed_ticket_cannot_bind_second_peer",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_2",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_3",
+			"passed": true
+		},
+		{
+			"id": "unauthenticated_peer_has_no_economy_or_room_authority",
+			"passed": true
+		},
+		{
+			"id": "wrong_channel_cannot_execute_transaction",
+			"passed": true
+		},
+		{
+			"id": "client_variant_deserialization_forbidden",
+			"passed": true
+		},
+		{
+			"id": "truncated_input_rejected",
+			"passed": true
+		},
+		{
+			"id": "unknown_tls_application_records_never_allocate_handshakes",
+			"passed": true
+		},
+		{
+			"id": "healthy_session_survives_all_rejections",
+			"passed": true
+		},
+		{
+			"id": "bootstrap_socket_closed_after_authenticated_bind",
+			"passed": true
+		},
+		{
+			"id": "healthy_battle_survives_bootstrap_loss",
+			"passed": true
+		},
+		{
+			"id": "battle_identity_revocation_without_bootstrap",
+			"passed": true
+		},
+		{
+			"id": "unused_ticket_fixture_has_authenticated_bootstrap",
+			"passed": true
+		},
+		{
+			"id": "regrant_fixture_has_single_connection_ticket",
+			"passed": true
+		},
+		{
+			"id": "superseded_ticket_revoked_before_regrant",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_3",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_4",
+			"passed": true
+		},
+		{
+			"id": "superseded_ticket_cannot_rebind",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_4",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_5",
+			"passed": true
+		},
+		{
+			"id": "unused_ticket_wrong_link_cannot_consume_or_take_over",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_connect_5",
+			"passed": true
+		},
+		{
+			"id": "dtls_attacker_established_6",
+			"passed": true
+		},
+		{
+			"id": "expired_unused_ticket_has_no_authority",
+			"passed": true
+		}
+	],
+	"passed": true,
+	"scope": "Native encrypted sockets, wrong/replayed tickets, wrong channel, forbidden client Variant, malformed input and unknown DTLS records. Private data excluded from report."
+}

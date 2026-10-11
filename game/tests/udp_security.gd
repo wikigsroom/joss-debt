@@ -7,7 +7,7 @@ class WatchedSession:
 	extends Session
 	var issued_ticket = ""
 	func receive(message: Dictionary) -> void:
-		if message.get("op") == "welcome": issued_ticket = str(message.battle.ticket)
+		if message.get("op") in ["welcome", "battle_grant"]: issued_ticket = str(message.battle.ticket)
 		super.receive(message)
 class DeferredBind:
 	extends WatchedSession
@@ -52,6 +52,8 @@ func run() -> void:
 	client.connect_service("ws://127.0.0.1:19277")
 	check("valid_bootstrap_and_ticket", await until(func(): return client.state == "online" and client.battle_bound))
 	if not checks[-1].passed: finish(); return
+	var ticket_health = server.health().get("battle_tickets", {})
+	check("ticket_lifecycle_health_is_bounded", ticket_health.has("active") and ticket_health.has("issued") and ticket_health.has("revocations") and ticket_health.has("reissues") and ticket_health.has("bind_failures") and ticket_health.has("rejections"))
 	var invalid = await attacker()
 	var rejected = server.udp_rejected
 	invalid.send(invalid.remote, Protocol.packet({"op": "battle_bind", "ticket": Protocol.nonce(), "link": client.link_id}), Battle.CHANNEL_CONTROL)
@@ -91,7 +93,19 @@ func run() -> void:
 	var waiting = DeferredBind.new(folder.path_join("private/unbound")); root.add_child(waiting)
 	waiting.connect_service("ws://127.0.0.1:19277")
 	check("unused_ticket_fixture_has_authenticated_bootstrap", await until(func(): return waiting.authenticated and waiting.battle.connected()) and not waiting.battle_bound)
-	var unused_hash = waiting.issued_ticket.sha256_text()
+	var original_waiting_ticket = waiting.issued_ticket
+	var waiting_connection = -1
+	for candidate in server.connections:
+		if str(server.connections[candidate].session) == waiting.identity.session: waiting_connection = int(candidate); break
+	var refreshed = server.grant_battle(waiting_connection)
+	check("regrant_fixture_has_single_connection_ticket", refreshed and await until(func(): return waiting.issued_ticket != original_waiting_ticket) and waiting.issued_ticket != "")
+	var original_waiting_hash = original_waiting_ticket.sha256_text()
+	var refreshed_hash = waiting.issued_ticket.sha256_text()
+	check("superseded_ticket_revoked_before_regrant", not server.battle_tickets.has(original_waiting_hash) and server.battle_tickets.has(refreshed_hash) and server.battle_ticket_reissues >= 1)
+	var stale = await attacker(); rejected = server.udp_rejected
+	stale.send(stale.remote, Protocol.packet({"op": "battle_bind", "ticket": original_waiting_ticket, "link": waiting.link_id}), Battle.CHANNEL_CONTROL)
+	check("superseded_ticket_cannot_rebind", await until(func(): return server.udp_rejected > rejected) and server.battle_tickets.has(refreshed_hash) and server.battle_connections.size() == 1)
+	var unused_hash = refreshed_hash
 	var foreign = await attacker(); rejected = server.udp_rejected
 	foreign.send(foreign.remote, Protocol.packet({"op": "battle_bind", "ticket": waiting.issued_ticket, "link": Protocol.nonce(8)}), Battle.CHANNEL_CONTROL)
 	check("unused_ticket_wrong_link_cannot_consume_or_take_over", await until(func(): return server.udp_rejected > rejected) and server.battle_tickets.has(unused_hash) and server.battle_connections.size() == 1)

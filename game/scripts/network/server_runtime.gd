@@ -11,6 +11,11 @@ var battle = Battle.new()
 var battle_port = 0
 var battle_connections: Dictionary = {}
 var battle_tickets: Dictionary = {}
+var battle_ticket_issued = 0
+var battle_ticket_revocations = 0
+var battle_ticket_reissues = 0
+var battle_bind_failures = 0
+var battle_ticket_rejections: Dictionary = {}
 var close_reasons: Dictionary = {}
 var battle_waiting: Dictionary = {}
 var battle_retired: Dictionary = {}
@@ -106,6 +111,31 @@ func start(options: Dictionary = {}) -> Error:
 func monotonic() -> float:
 	return Time.get_ticks_msec() / 1000.0
 
+func revoke_battle_tickets(connection_id: int) -> int:
+	var revoked = 0
+	for ticket_hash in battle_tickets.keys():
+		var ticket: Dictionary = battle_tickets[ticket_hash]
+		if int(ticket.get("connection", -1)) != connection_id: continue
+		battle_tickets.erase(ticket_hash)
+		revoked += 1
+	if revoked > 0: battle_ticket_revocations += revoked
+	return revoked
+
+func issue_battle_ticket(connection_id: int) -> String:
+	if not connections.has(connection_id): return ""
+	var revoked = revoke_battle_tickets(connection_id)
+	if revoked > 0: battle_ticket_reissues += 1
+	var ticket = Protocol.nonce()
+	battle_tickets[ticket.sha256_text()] = {"connection": connection_id, "issued": monotonic(), "until": monotonic() + Protocol.BATTLE_BIND_TIMEOUT_SECONDS}
+	battle_ticket_issued += 1
+	return ticket
+
+func reject_battle_bind(peer: ENetPacketPeer, reason: String) -> void:
+	udp_rejected += 1
+	battle_bind_failures += 1
+	battle_ticket_rejections[reason] = int(battle_ticket_rejections.get(reason, 0)) + 1
+	retire_battle_peer(peer)
+
 func poll_battle() -> void:
 	for event in battle.poll():
 		var peer: ENetPacketPeer = event.peer
@@ -151,9 +181,10 @@ func poll_battle() -> void:
 					var ticket: Dictionary = battle_tickets.get(ticket_hash, {})
 					var connection_id = int(ticket.get("connection", -1))
 					if ticket.is_empty() or monotonic() > float(ticket.until) or not connections.has(connection_id):
-						udp_rejected += 1; retire_battle_peer(peer); continue
+						reject_battle_bind(peer, "unknown_expired_or_disconnected"); continue
 					var entry = connections[connection_id]
-					if entry.link != message.get("link") or entry.battle_peer != null: udp_rejected += 1; retire_battle_peer(peer); continue
+					if entry.link != message.get("link") or entry.battle_peer != null:
+						reject_battle_bind(peer, "link_mismatch_or_already_bound"); continue
 					battle_tickets.erase(ticket_hash)
 					battle_waiting.erase(peer_id)
 					entry.battle_peer = peer
@@ -183,6 +214,8 @@ func poll_battle() -> void:
 				handle(connection_id, message)
 	for peer_id in battle_waiting.keys():
 		if monotonic() > float(battle_waiting[peer_id].until):
+			battle_bind_failures += 1
+			battle_ticket_rejections["bind_timeout"] = int(battle_ticket_rejections.get("bind_timeout", 0)) + 1
 			retire_battle_peer(battle_waiting[peer_id].peer)
 	for ticket_hash in battle_tickets.keys():
 		if monotonic() > float(battle_tickets[ticket_hash].until): battle_tickets.erase(ticket_hash)
@@ -496,6 +529,7 @@ func close_peer(connection_id: int, reason: String) -> void:
 func disconnect_peer(connection_id: int) -> void:
 	if not connections.has(connection_id): return
 	var entry = connections[connection_id]
+	revoke_battle_tickets(connection_id)
 	if entry.battle_peer != null:
 		# Remove authority immediately, retain the DTLS mapping while old records
 		# drain. The client closes TLS after its bounded transport linger period.
@@ -626,8 +660,8 @@ func grant_battle(connection_id: int) -> bool:
 	if room != null:
 		var seat = room.players.find(sid)
 		if seat >= 0: last_seq = int(room.inputs[seat].seq)
-	var ticket = Protocol.nonce()
-	battle_tickets[ticket.sha256_text()] = {"connection": connection_id, "until": monotonic() + Protocol.BATTLE_BIND_TIMEOUT_SECONDS}
+	var ticket = issue_battle_ticket(connection_id)
+	if ticket.is_empty(): return false
 	entry.battle_bind_until = monotonic() + Protocol.BATTLE_BIND_TIMEOUT_SECONDS
 	return send(connection_id, {"op": "battle_grant", "transport": Protocol.TRANSPORT_REVISION, "link": entry.link,
 		"battle": {"port": battle_port, "certificate": battle.certificate_pem, "ticket": ticket},
@@ -717,8 +751,10 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 		send(connection_id, {"op": "error", "code": "storage_unavailable"})
 		close_peer(connection_id, "storage_unavailable")
 		return
-	var ticket = Protocol.nonce()
-	battle_tickets[ticket.sha256_text()] = {"connection": connection_id, "until": monotonic() + Protocol.BATTLE_BIND_TIMEOUT_SECONDS}
+	var ticket = issue_battle_ticket(connection_id)
+	if ticket.is_empty():
+		close_peer(connection_id, "battle_ticket_failed")
+		return
 	connections[connection_id].battle_bind_until = monotonic() + Protocol.BATTLE_BIND_TIMEOUT_SECONDS
 	send(connection_id, {"op": "welcome", "transport": Protocol.TRANSPORT_REVISION, "link": connections[connection_id].link,
 		"battle": {"port": battle_port, "certificate": battle.certificate_pem, "ticket": ticket},
@@ -1454,6 +1490,8 @@ func health() -> Dictionary:
 	return {"service": "IncenseDebt Online", "version": str(ProjectSettings.get_setting("application/config/version", "")), "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION, "uptime": uptime,
 		"connections": connections.size(), "battle_connections": battle_connections.size(), "battle_port": battle_port, "battle_encrypted": battle.started,
 		"udp_received_bytes": battle.received_bytes, "udp_sent_bytes": battle.sent_bytes, "udp_rejected": udp_rejected,
+		"battle_tickets": {"active": battle_tickets.size(), "issued": battle_ticket_issued, "revocations": battle_ticket_revocations,
+			"reissues": battle_ticket_reissues, "bind_failures": battle_bind_failures, "rejections": battle_ticket_rejections.duplicate()},
 		"udp_edge_rejected": battle.edge.rejected, "udp_wire_received_bytes": battle.edge.bytes_received, "udp_wire_sent_bytes": battle.edge.bytes_sent,
 		"udp_forwarding": {"active_flows": battle.edge.flows.size(), "expired_established": battle.edge.expired_established,
 			"expired_handshakes": battle.edge.expired_handshakes, "expired_retired": battle.edge.expired_retired, "outbound_alerts": battle.edge.outbound_alerts,

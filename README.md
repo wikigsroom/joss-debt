@@ -1127,7 +1127,7 @@ Version 0.6.0 is the stable native-UDP online release while content and balance 
 
 | 入口 / Entry | 用途 / Purpose |
 | --- | --- |
-| [设计文档首页 / Design index](docs/incense-debt/README.md) | 00—38 篇设计、工程、制作与迭代来源 / design, engineering, production, and revisions |
+| [设计文档首页 / Design index](docs/incense-debt/README.md) | 00—48 篇设计、工程、制作与迭代来源 / design, engineering, production, and revisions |
 | [方向提案 / Original five directions](docs/游戏方向提案-五案.md) | 五案选型记录 / historical concept selection |
 | [系统圣经 / System bible](docs/incense-debt/20-direction1-system-bible.md) | 核心体系与总装配入口 / core systems and integration reference |
 | [菜单、存档与成就 / Menus, saves, achievements](docs/incense-debt/22-menu-save-achievements.md) | 层级与操作约定 / hierarchy and interaction contracts |
@@ -1149,6 +1149,7 @@ Version 0.6.0 is the stable native-UDP online release while content and balance 
 | [历史平台一致性 / Historical platform parity](docs/incense-debt/reports/platforms/platform-parity.json) | 0.2.0 共享源码、数据与资源静态核对 / historical 0.2.0 static source/data/resource comparison |
 | [交付哈希 / Delivery hashes](build/delivery-manifest.json) | 本地应用包 SHA-256 / recorded local artifact hashes |
 | [外部验收 / External acceptance](docs/incense-debt/21-external-acceptance-runbook.md) | 真人与设备验收步骤 / human and device acceptance procedure |
+| [系统集成路线图 / System integration roadmap](docs/incense-debt/48-system-integration-roadmap.md) | 联机路径、票据修复、观测与下一 patch 门槛 / transport path, ticket hardening, observability, and next-patch gates |
 
 <a id="licenses"></a>
 ## 授权与来源 / Licenses and provenance

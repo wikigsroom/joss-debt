@@ -123,3 +123,5 @@ UI采用24圆角面板、圆形/胶囊按钮、57个工具图标、紧凑战斗H
 - [46 · 原生低延迟联机开发计划与完成记录](46-network-development-plan.md)：WSS 引导、ENet/DTLS 战斗、输入保护、状态黑洞、battle ticket 重绑、旧 tuple 隔离、验收门槛与 Android 真机范围。
 
 - [47 · 原生 UDP/DTLS 联机实现说明](47-native-udp-iteration.md)：六通道契约、丢包/乱序/重连处理、边缘转发保护、候选公网证据与回滚流程。
+
+- [48 · 系统集成路线图与当前迭代计划](48-system-integration-roadmap.md)：联机路径评估、权威/存档/输入/内容/平台的统一边界、票据生命周期修复、观测指标、后续开发顺序与发布门槛。

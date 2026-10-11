@@ -1,6 +1,6 @@
 # 47 · 原生 UDP/DTLS 联机实现说明
 
-本篇记录 `0.6.0` 的实际实现、测试与生产激活结果，和 [46 · 开发计划](46-network-development-plan.md) 配套。它描述的是当前源码与正式服务端，不把旧 `0.5.0` WSS 报告冒充成 UDP 交付。
+本篇记录 `0.6.0` 的实际实现、测试与生产激活结果，和 [46 · 开发计划](46-network-development-plan.md) 配套。它描述的是当前源码与正式服务端，不把旧 `0.5.0` WSS 报告冒充成 UDP 交付。系统级后续路径、当前票据生命周期迭代和未完成门槛见 [48 · 系统集成路线图](48-system-integration-roadmap.md)。
 
 ## 链路结构
 
@@ -38,6 +38,12 @@ WSS 只负责引导和身份恢复；战斗期间可靠指令、输入、快照�
 * 已验证的 close alert 或 peer 断开会让公网 `address/port` tuple 进入 30 秒 quarantine。迟到 DTLS record 不会在旧 socket 已销毁后被当成新的 ClientHello；正常重连绑定新源端口，不受影响。
 * 房间冻结仍要求双方确认恢复；90 秒断线宽限期、在线菜单无超时、重复结算和检查点提交规则保持不变。超过宽限期才产生一次团队失败。
 
+### 票据生命周期迭代
+
+当前实现把 battle ticket 的生命周期限制为每个 WSS connection 一个待绑定票据：`welcome` 或 `battle_grant` 发新票据前先撤销同一 connection 的旧 hash，`disconnect_peer()` 立即清理该 connection 的所有待票据。错误/过期/失效身份、错误 link/重复绑定和未完成 bind 的 ENet 超时分别计入 `health().battle_tickets`，只暴露计数和原因，不暴露票据原文。
+
+这项修复属于下一 patch candidate 的服务端源码与回归，未覆盖稳定 `v0.6.0` Release。安全回归新增“重新授权后旧票据不能绑定、新票据仍保留”的真实 DTLS 检查；当前正式 `/play` 继续运行已发布版本，直到新 candidate 完成完整构建、WAN、回滚和发布门槛。
+
 客户端每 2 秒发送 ENet ping，并在 WSS 仍开放时只发送 keepalive；WSS 不再发送重复 RTT 探针。服务端健康端点暴露活动流、隔离流、被丢弃的旧 tuple、输出积压峰值、ENet RTT/variance/loss、输入保护原因和存储状态。
 
 ## 服务器边缘保护
@@ -50,7 +56,7 @@ WSS 只负责引导和身份恢复；战斗期间可靠指令、输入、快照�
 
 * 本地真实 UDP 代理：loopback、50/100/175 ms 单向延迟、3/5/10% 丢包、重复/乱序、300 ms/1 s/3 s 突发丢包全部通过；可靠请求无重复，状态流持续。
 * 应用故障回归：输入过期、旧 epoch/scene/link、状态黑洞、ACK 黑洞、双人恢复、身份接管、存档损坏、唯一结算和证书拒绝全部通过。
-* 公网验收：4 个 Windows headless production Session、2 个合作房间、`wss://xhz-server.sidcloud.cn/candidate-play` + UDP `18779`，连续 62.665 秒；tick 59.146 Hz，状态年龄 P95 42 ms，ping P95 133 ms，p99 step 7.125 ms，p999 23.5 ms，战斗阻塞 >100 ms 为 0，客户端和服务端原生日志无错误。本次最终包验收未触发 rebind；此前同一实现的隔离公网重绑证据保留在历史报告中，重绑逻辑另由应用故障回归覆盖。
+* 公网候选验收：4 个 Windows headless production Session、2 个合作房间、`wss://xhz-server.sidcloud.cn/candidate-play` + UDP `18779`，连续 62.665 秒；tick 59.146 Hz，状态年龄 P95 42 ms，ping P95 133 ms，p99 step 7.125 ms，p999 23.5 ms，战斗阻塞 >100 ms 为 0，客户端和服务端原生日志无错误。本次最终包验收未触发 rebind；此前同一实现的隔离公网重绑证据保留在历史报告中，重绑逻辑另由应用故障回归覆盖。该数据属于正式激活前的隔离候选范围，不是 `/play` SLA。
 * 正式激活：候选停止后，`/opt/incense-debt/current` 已切换至 0.6.0，公网 `/play` 健康报告 `transport=2`、`battle_encrypted=true`、UDP `18779`，激活时无活跃连接或房间，旧 `v0.5.0` 数据已创建私有备份。
 * 正式 Linux server SHA-256：`469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef`；Windows server 与包体清单另行绑定。
 

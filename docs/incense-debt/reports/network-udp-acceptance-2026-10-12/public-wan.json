@@ -1,5 +1,6 @@
 {
   "passed": true,
+  "run_scope": "isolated_pre_activation_candidate",
   "recorded_at": "2026-10-11T21:55:25.642187+00:00",
   "transport": "ENet/DTLS",
   "endpoint": "wss://xhz-server.sidcloud.cn/candidate-play",
