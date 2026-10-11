@@ -1,0 +1,11 @@
+{
+  "bind": "127.0.0.1",
+  "port": 18777,
+  "battle_port": 18779,
+  "data_directory": "user://online-server",
+  "max_connections": 16,
+  "max_rooms": 2,
+  "grace": 90,
+  "waiting": 300,
+  "checkpoint": 1
+}

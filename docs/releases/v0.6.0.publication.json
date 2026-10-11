@@ -1,0 +1,52 @@
+{
+  "url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0",
+  "tag": "v0.6.0",
+  "commit": "5ca31dc9ed08aab541cfdd26e8d3bbb219045ffb",
+  "draft": false,
+  "prerelease": false,
+  "published_at": "2026-10-11T22:26:06Z",
+  "assets": [
+    {
+      "name": "IncenseDebt-v0.6.0-android-arm64.apk",
+      "bytes": 1023684930,
+      "digest": "sha256:bd0be6f2ca52540c31123469169fcf741796a8082da38283b422ae6c75a62bc8",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-android-arm64.apk"
+    },
+    {
+      "name": "IncenseDebt-v0.6.0-server-linux-x64.zip",
+      "bytes": 28914132,
+      "digest": "sha256:e567d51d3ee88b81e700631eb320fc5afb7c86c2845823400db1bbc844280e6a",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-linux-x64.zip"
+    },
+    {
+      "name": "IncenseDebt-v0.6.0-server-windows-x64.zip",
+      "bytes": 38565935,
+      "digest": "sha256:bd515a05165c5802228f2558821bb578cdb5fe07f6dd8d7a62484f32340c161c",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-windows-x64.zip"
+    },
+    {
+      "name": "IncenseDebt-v0.6.0-windows-x64.zip",
+      "bytes": 1031770925,
+      "digest": "sha256:79d8a370af5e49f7fe0bf4ff4f1a9e6bd99d50953859c5ce892cfe322ad36313",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-windows-x64.zip"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 2625,
+      "digest": "sha256:4f28876e49bb16d8fc055590a931f11187cc884236829fe6b1bdecfa55db6e0a",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/release-manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 592,
+      "digest": "sha256:d7809c5b97034f80525610f0383eba5d1f25a55091c2155b3c9fa8f6e78cb2dd",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/SHA256SUMS.txt"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 4754,
+      "digest": "sha256:840d74db327d38df614c152c3b055673ecf1000cab9732d008dd101c3bd0540f",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/START-HERE.md"
+    }
+  ]
+}

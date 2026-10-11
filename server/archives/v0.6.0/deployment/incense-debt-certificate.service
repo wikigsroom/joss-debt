@@ -1,0 +1,12 @@
+[Unit]
+Description=Apply pending Incense Debt DTLS certificate while game service is idle
+After=incense-debt.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/lib/incense-debt/certificate_refresh.py --apply-pending
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/etc/incense-debt/tls

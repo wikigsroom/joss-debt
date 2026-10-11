@@ -1,0 +1,426 @@
+{
+  "schema": 1,
+  "version": "0.6.0",
+  "release_tag": "v0.6.0",
+  "release_commit": "5ca31dc9ed08aab541cfdd26e8d3bbb219045ffb",
+  "game_git_tree": "c1b0975e57cf10029a83a33c3f64cd61728f39d7",
+  "archived_at": "2026-10-11T22:27:14.242714+00:00",
+  "engine": "Godot 4.7.2.stable",
+  "shared_script_count": 41,
+  "shared_data_count": 12,
+  "shared_source_sha256": {
+    "data/achievements.json": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+    "data/arena_boundaries.json": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+    "data/catalog.json": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+    "data/equipment.json": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+    "data/expansion.json": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+    "data/fx_presets.json": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+    "data/music_playlist.json": "343da68241e31ad93ab88a1b19deb5d98969ba626e32d9d4e6ac6cf886cba4c6",
+    "data/music_scores.json": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+    "data/projectile_profiles.json": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+    "data/rules.json": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+    "data/runtime_assets.json": "2e64aad01ff87314fdee7dcda09bdffe31920cde5f55dc6fd6d15218aa5a5e97",
+    "data/story.zh_CN.json": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+    "scripts/combat/attack_composer.gd": "be361acb0fe21ac4ef53ea208518409369ab208e2015362d14f235c8d1fce7d4",
+    "scripts/combat/boss_patterns.gd": "c38a6a528fe77caa40f0e37216d4c78d73853aa6a5d97e4d9f59b6e0ccc40dac",
+    "scripts/combat/creature_actions.gd": "616ca42856dde0bba1809271225eb4f0d5ebc0a0196b05a67c9867c52e20a78a",
+    "scripts/combat/effects.gd": "feedd2650de0950c73ef4b19d8f62f83e36be322b02f957f9ce577abc72a5ad9",
+    "scripts/combat/enemy_patterns.gd": "6d95a909c24a02638bc86aa95b06e50518fda5d96f04dac0944b3ebb762bc0c6",
+    "scripts/combat/equipment.gd": "67e3aecf37f93c01c57d63fd1907826ab97fe2f2a2fb8c40b78fded671aa79f7",
+    "scripts/combat/expanded_patterns.gd": "022ce950598e1a3633bcc6c7e4d3598c6a89f15a7fb4bf84065e8b3e1e16ea3f",
+    "scripts/combat/expanded_weapons.gd": "e6ee1095a7ca5421df83f0c94aa1e31c659135a82ca094df2685841488ff24ee",
+    "scripts/combat/impact_control.gd": "a0e60caf9e97539d8a34270a941bb50cdb408a28ac0a26154908d3e2ce9dbe35",
+    "scripts/combat/interactive_scenery.gd": "7f768d4d4f110bfa5cd78526cff8bc0da3fb8fb513100babcfc1c52ee645920c",
+    "scripts/combat/projectile_styles.gd": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
+    "scripts/combat/room_geometry.gd": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
+    "scripts/combat/world.gd": "96888944612d6bd7729e173a83b3eb2bb588eda2982364a0006223035452afce",
+    "scripts/core/choice_shortcuts.gd": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
+    "scripts/core/content_db.gd": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
+    "scripts/core/daily_seed.gd": "8a585b5ac2da16ecbf3aa58fadae936e34dc1bd43a7cfa1383cb6e095932bd16",
+    "scripts/core/damage_record.gd": "9e2a4afa8bfc0776293c96c5d5cae301a5508a4b90f8f1645d2d4bbe063b1fd2",
+    "scripts/core/derived_seed.gd": "7783920e2ccfc6ac6a8dd7f0e1636df75bf05a07d1da6566e1b3dbc29b7e0479",
+    "scripts/core/expanded_campaign.gd": "500dbc8fdf4b0200095083019f0f3c23cc9a3d4de625d3fed668357533b060ab",
+    "scripts/core/meta_progress.gd": "c5fdabaf600bbf84b04b041d78801c8e7101fe7a509afff1f188b394fd2adda0",
+    "scripts/core/room_graph.gd": "ce83956ee4e5504ff35ebf0c642efb9f2a13e88d252ab4ed8886da3da8b63c10",
+    "scripts/core/run_rng.gd": "ff1166c38a78494761f1a9b2e4ff21e700b60c114882cf4972edd0c003f91964",
+    "scripts/core/run_telemetry.gd": "c745524142e2419cbc4dd4f768ff3bf31f0154a6f45fe9851382f321b605e7c9",
+    "scripts/core/save_migrations.gd": "353c114d2f4de1c0e3c77196eed592fe65dc71e1d172ed3867fb0c9177aac15e",
+    "scripts/core/save_session.gd": "7fa31059c7321ac7b744ef9e7e94f5cc1b1ead0e2835850fa51a65aa974d421b",
+    "scripts/core/save_slots.gd": "1a11b528d2072cb03590fcbb5896b753b90d9d2c63368402bb54282603afc368",
+    "scripts/core/save_store.gd": "10d694ef55ca9090c6231008af6afc12f8750016cc1eb2fcb804352d6392633b",
+    "scripts/core/save_transfer.gd": "a77ba6d3eea48fb92b7a0ddc41077b1e91014779fffd9010950612609b6a52d7",
+    "scripts/core/story_book.gd": "80e2e0f25a4e3c6b655e6c30911f9dbaae0aecdbeb54c17422d66c51be4e7804",
+    "scripts/core/weapon_trial.gd": "71cb8d31218d82a5f7aeadf6c6063f711cb8bb5572a6f010d28699a53d13cf27",
+    "scripts/network/cooperative_match.gd": "f504a31568f1fd1988558f24ca6d4a403ced4bbbb788414d5a1d0d44004075bb",
+    "scripts/network/cooperative_world.gd": "1c198ed49c1ea04c6e15ec1532e0e8eefc217fa58968eccbc91e29f0d850478b",
+    "scripts/network/dtls_edge.gd": "657cd3565fd55c5335f262b4fae6136259e8cefbee293765aaa92c17e0b5b7ff",
+    "scripts/network/duel_actor.gd": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
+    "scripts/network/duel_match.gd": "e3e6fba75c1240882fae8903efd55e049b0db85d77b931ae7c3abaf8aa3c2fa6",
+    "scripts/network/enet_battle.gd": "a2010359957c32ff41450357a0cf5c2caba3994779f6b879ae52963b3c229a62",
+    "scripts/network/input_frames.gd": "d5c3a5bf20ffaf25b5198f3dcada10b931394fed7daa05296132a80679185e44",
+    "scripts/network/protocol.gd": "648b3a846e32e90738b3477eb36ca5c3ce02d74e39bc379191d0c0039629bbe7",
+    "scripts/network/server_entry.gd": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
+    "scripts/network/server_runtime.gd": "594f22d477a56d767bde9fdc23f6a092098a99f5fa68645fc9e14a3aeb203a9e",
+    "scripts/network/state_stream.gd": "e43905a939f428526ceb406bfb281e889d3ec18870981761a62e2e08ec5118d8"
+  },
+  "native_artifacts": {
+    "windows-x64": {
+      "bytes": 110897592,
+      "sha256": "b68235b202535632f3f47cd86d7e97d4fd5a06938a70820a3e07a06899a208c7",
+      "name": "IncenseDebtServer.exe",
+      "built_at": "2026-10-11T22:27:14.021097+00:00"
+    },
+    "linux-x64": {
+      "bytes": 75148520,
+      "sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+      "name": "IncenseDebtServer.x86_64",
+      "built_at": "2026-10-11T22:27:14.210277+00:00"
+    }
+  },
+  "published_server_archives": [],
+  "deployment_evidence": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/activate.json",
+  "archive_scope": "Explicit shared source/data/public deployment allowlist; no live credentials, TLS keys, player state, logs, import caches or native binaries",
+  "rebuild_scope": "Identical source/data bytes; native exports may differ due to engine/import metadata. Published hashes identify accepted binaries.",
+  "files": {
+    "project/data/achievements.json": {
+      "bytes": 8580,
+      "sha256": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
+      "origin": "v0.6.0:game/data/achievements.json"
+    },
+    "project/data/arena_boundaries.json": {
+      "bytes": 27349,
+      "sha256": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
+      "origin": "v0.6.0:game/data/arena_boundaries.json"
+    },
+    "project/data/catalog.json": {
+      "bytes": 407223,
+      "sha256": "43b97243537feb3977d5976d0fe9e6b2d771e2e31d24a0b3ce209aa26deea40b",
+      "origin": "v0.6.0:game/data/catalog.json"
+    },
+    "project/data/equipment.json": {
+      "bytes": 14220,
+      "sha256": "87bb34cf2da986b24bfafa51b1512c3a59c2947e8c84a93f32f107e706a6f1b3",
+      "origin": "v0.6.0:game/data/equipment.json"
+    },
+    "project/data/expansion.json": {
+      "bytes": 29822,
+      "sha256": "35036d0a196782f3c32f3acc065092e81717ff736ed7300db2e36603048f878b",
+      "origin": "v0.6.0:game/data/expansion.json"
+    },
+    "project/data/fx_presets.json": {
+      "bytes": 14965,
+      "sha256": "5a85ec1810153658361fcfb2ef2cd1e907138b531f1c38b3e90b595fc4320a92",
+      "origin": "v0.6.0:game/data/fx_presets.json"
+    },
+    "project/data/music_playlist.json": {
+      "bytes": 2158,
+      "sha256": "343da68241e31ad93ab88a1b19deb5d98969ba626e32d9d4e6ac6cf886cba4c6",
+      "origin": "v0.6.0:game/data/music_playlist.json"
+    },
+    "project/data/music_scores.json": {
+      "bytes": 3916,
+      "sha256": "db9ab66915c3ff40fc98bfbf28932ba602bf073de08838993f986bba5db72003",
+      "origin": "v0.6.0:game/data/music_scores.json"
+    },
+    "project/data/projectile_profiles.json": {
+      "bytes": 139707,
+      "sha256": "887376e144fb2e058cd47b28f6ff90836859249f6cc6c6e5953622bc6b03b6ba",
+      "origin": "v0.6.0:game/data/projectile_profiles.json"
+    },
+    "project/data/rules.json": {
+      "bytes": 7738,
+      "sha256": "2466eff57a24013a2453844a26457d1493d54e0aba1be1f5ebfab7eb7e312ebf",
+      "origin": "v0.6.0:game/data/rules.json"
+    },
+    "project/data/runtime_assets.json": {
+      "bytes": 589670,
+      "sha256": "2e64aad01ff87314fdee7dcda09bdffe31920cde5f55dc6fd6d15218aa5a5e97",
+      "origin": "v0.6.0:game/data/runtime_assets.json"
+    },
+    "project/data/story.zh_CN.json": {
+      "bytes": 5652,
+      "sha256": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e",
+      "origin": "v0.6.0:game/data/story.zh_CN.json"
+    },
+    "project/export_presets.cfg": {
+      "bytes": 828,
+      "sha256": "f3ba6407e5a1a8af2b386baa19bbc262a6522371feb999130ad683c518966561",
+      "origin": "generated:server/generated/project/export_presets.cfg"
+    },
+    "project/project.godot": {
+      "bytes": 402,
+      "sha256": "cdc365c04cc04619ee9cab02d466d56f5c4aac02f6a2638efdf2e9b361ec1531",
+      "origin": "generated:server/generated/project/project.godot"
+    },
+    "project/scripts/combat/attack_composer.gd": {
+      "bytes": 20237,
+      "sha256": "be361acb0fe21ac4ef53ea208518409369ab208e2015362d14f235c8d1fce7d4",
+      "origin": "v0.6.0:game/scripts/combat/attack_composer.gd"
+    },
+    "project/scripts/combat/boss_patterns.gd": {
+      "bytes": 5620,
+      "sha256": "c38a6a528fe77caa40f0e37216d4c78d73853aa6a5d97e4d9f59b6e0ccc40dac",
+      "origin": "v0.6.0:game/scripts/combat/boss_patterns.gd"
+    },
+    "project/scripts/combat/creature_actions.gd": {
+      "bytes": 6381,
+      "sha256": "616ca42856dde0bba1809271225eb4f0d5ebc0a0196b05a67c9867c52e20a78a",
+      "origin": "v0.6.0:game/scripts/combat/creature_actions.gd"
+    },
+    "project/scripts/combat/effects.gd": {
+      "bytes": 12141,
+      "sha256": "feedd2650de0950c73ef4b19d8f62f83e36be322b02f957f9ce577abc72a5ad9",
+      "origin": "v0.6.0:game/scripts/combat/effects.gd"
+    },
+    "project/scripts/combat/enemy_patterns.gd": {
+      "bytes": 5636,
+      "sha256": "6d95a909c24a02638bc86aa95b06e50518fda5d96f04dac0944b3ebb762bc0c6",
+      "origin": "v0.6.0:game/scripts/combat/enemy_patterns.gd"
+    },
+    "project/scripts/combat/equipment.gd": {
+      "bytes": 12337,
+      "sha256": "67e3aecf37f93c01c57d63fd1907826ab97fe2f2a2fb8c40b78fded671aa79f7",
+      "origin": "v0.6.0:game/scripts/combat/equipment.gd"
+    },
+    "project/scripts/combat/expanded_patterns.gd": {
+      "bytes": 7819,
+      "sha256": "022ce950598e1a3633bcc6c7e4d3598c6a89f15a7fb4bf84065e8b3e1e16ea3f",
+      "origin": "v0.6.0:game/scripts/combat/expanded_patterns.gd"
+    },
+    "project/scripts/combat/expanded_weapons.gd": {
+      "bytes": 8056,
+      "sha256": "e6ee1095a7ca5421df83f0c94aa1e31c659135a82ca094df2685841488ff24ee",
+      "origin": "v0.6.0:game/scripts/combat/expanded_weapons.gd"
+    },
+    "project/scripts/combat/impact_control.gd": {
+      "bytes": 3278,
+      "sha256": "a0e60caf9e97539d8a34270a941bb50cdb408a28ac0a26154908d3e2ce9dbe35",
+      "origin": "v0.6.0:game/scripts/combat/impact_control.gd"
+    },
+    "project/scripts/combat/interactive_scenery.gd": {
+      "bytes": 2475,
+      "sha256": "7f768d4d4f110bfa5cd78526cff8bc0da3fb8fb513100babcfc1c52ee645920c",
+      "origin": "v0.6.0:game/scripts/combat/interactive_scenery.gd"
+    },
+    "project/scripts/combat/projectile_styles.gd": {
+      "bytes": 838,
+      "sha256": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
+      "origin": "v0.6.0:game/scripts/combat/projectile_styles.gd"
+    },
+    "project/scripts/combat/room_geometry.gd": {
+      "bytes": 18402,
+      "sha256": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
+      "origin": "v0.6.0:game/scripts/combat/room_geometry.gd"
+    },
+    "project/scripts/combat/world.gd": {
+      "bytes": 103135,
+      "sha256": "96888944612d6bd7729e173a83b3eb2bb588eda2982364a0006223035452afce",
+      "origin": "v0.6.0:game/scripts/combat/world.gd"
+    },
+    "project/scripts/core/choice_shortcuts.gd": {
+      "bytes": 713,
+      "sha256": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
+      "origin": "v0.6.0:game/scripts/core/choice_shortcuts.gd"
+    },
+    "project/scripts/core/content_db.gd": {
+      "bytes": 1751,
+      "sha256": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
+      "origin": "v0.6.0:game/scripts/core/content_db.gd"
+    },
+    "project/scripts/core/daily_seed.gd": {
+      "bytes": 920,
+      "sha256": "8a585b5ac2da16ecbf3aa58fadae936e34dc1bd43a7cfa1383cb6e095932bd16",
+      "origin": "v0.6.0:game/scripts/core/daily_seed.gd"
+    },
+    "project/scripts/core/damage_record.gd": {
+      "bytes": 4411,
+      "sha256": "9e2a4afa8bfc0776293c96c5d5cae301a5508a4b90f8f1645d2d4bbe063b1fd2",
+      "origin": "v0.6.0:game/scripts/core/damage_record.gd"
+    },
+    "project/scripts/core/derived_seed.gd": {
+      "bytes": 902,
+      "sha256": "7783920e2ccfc6ac6a8dd7f0e1636df75bf05a07d1da6566e1b3dbc29b7e0479",
+      "origin": "v0.6.0:game/scripts/core/derived_seed.gd"
+    },
+    "project/scripts/core/expanded_campaign.gd": {
+      "bytes": 8630,
+      "sha256": "500dbc8fdf4b0200095083019f0f3c23cc9a3d4de625d3fed668357533b060ab",
+      "origin": "v0.6.0:game/scripts/core/expanded_campaign.gd"
+    },
+    "project/scripts/core/meta_progress.gd": {
+      "bytes": 12942,
+      "sha256": "c5fdabaf600bbf84b04b041d78801c8e7101fe7a509afff1f188b394fd2adda0",
+      "origin": "v0.6.0:game/scripts/core/meta_progress.gd"
+    },
+    "project/scripts/core/room_graph.gd": {
+      "bytes": 4161,
+      "sha256": "ce83956ee4e5504ff35ebf0c642efb9f2a13e88d252ab4ed8886da3da8b63c10",
+      "origin": "v0.6.0:game/scripts/core/room_graph.gd"
+    },
+    "project/scripts/core/run_rng.gd": {
+      "bytes": 1081,
+      "sha256": "ff1166c38a78494761f1a9b2e4ff21e700b60c114882cf4972edd0c003f91964",
+      "origin": "v0.6.0:game/scripts/core/run_rng.gd"
+    },
+    "project/scripts/core/run_telemetry.gd": {
+      "bytes": 3380,
+      "sha256": "c745524142e2419cbc4dd4f768ff3bf31f0154a6f45fe9851382f321b605e7c9",
+      "origin": "v0.6.0:game/scripts/core/run_telemetry.gd"
+    },
+    "project/scripts/core/save_migrations.gd": {
+      "bytes": 34529,
+      "sha256": "353c114d2f4de1c0e3c77196eed592fe65dc71e1d172ed3867fb0c9177aac15e",
+      "origin": "v0.6.0:game/scripts/core/save_migrations.gd"
+    },
+    "project/scripts/core/save_session.gd": {
+      "bytes": 6246,
+      "sha256": "7fa31059c7321ac7b744ef9e7e94f5cc1b1ead0e2835850fa51a65aa974d421b",
+      "origin": "v0.6.0:game/scripts/core/save_session.gd"
+    },
+    "project/scripts/core/save_slots.gd": {
+      "bytes": 3303,
+      "sha256": "1a11b528d2072cb03590fcbb5896b753b90d9d2c63368402bb54282603afc368",
+      "origin": "v0.6.0:game/scripts/core/save_slots.gd"
+    },
+    "project/scripts/core/save_store.gd": {
+      "bytes": 6808,
+      "sha256": "10d694ef55ca9090c6231008af6afc12f8750016cc1eb2fcb804352d6392633b",
+      "origin": "v0.6.0:game/scripts/core/save_store.gd"
+    },
+    "project/scripts/core/save_transfer.gd": {
+      "bytes": 4618,
+      "sha256": "a77ba6d3eea48fb92b7a0ddc41077b1e91014779fffd9010950612609b6a52d7",
+      "origin": "v0.6.0:game/scripts/core/save_transfer.gd"
+    },
+    "project/scripts/core/story_book.gd": {
+      "bytes": 978,
+      "sha256": "80e2e0f25a4e3c6b655e6c30911f9dbaae0aecdbeb54c17422d66c51be4e7804",
+      "origin": "v0.6.0:game/scripts/core/story_book.gd"
+    },
+    "project/scripts/core/weapon_trial.gd": {
+      "bytes": 2405,
+      "sha256": "71cb8d31218d82a5f7aeadf6c6063f711cb8bb5572a6f010d28699a53d13cf27",
+      "origin": "v0.6.0:game/scripts/core/weapon_trial.gd"
+    },
+    "project/scripts/network/cooperative_match.gd": {
+      "bytes": 7480,
+      "sha256": "f504a31568f1fd1988558f24ca6d4a403ced4bbbb788414d5a1d0d44004075bb",
+      "origin": "v0.6.0:game/scripts/network/cooperative_match.gd"
+    },
+    "project/scripts/network/cooperative_world.gd": {
+      "bytes": 17016,
+      "sha256": "1c198ed49c1ea04c6e15ec1532e0e8eefc217fa58968eccbc91e29f0d850478b",
+      "origin": "v0.6.0:game/scripts/network/cooperative_world.gd"
+    },
+    "project/scripts/network/dtls_edge.gd": {
+      "bytes": 9499,
+      "sha256": "657cd3565fd55c5335f262b4fae6136259e8cefbee293765aaa92c17e0b5b7ff",
+      "origin": "v0.6.0:game/scripts/network/dtls_edge.gd"
+    },
+    "project/scripts/network/duel_actor.gd": {
+      "bytes": 7713,
+      "sha256": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
+      "origin": "v0.6.0:game/scripts/network/duel_actor.gd"
+    },
+    "project/scripts/network/duel_match.gd": {
+      "bytes": 10079,
+      "sha256": "e3e6fba75c1240882fae8903efd55e049b0db85d77b931ae7c3abaf8aa3c2fa6",
+      "origin": "v0.6.0:game/scripts/network/duel_match.gd"
+    },
+    "project/scripts/network/enet_battle.gd": {
+      "bytes": 4806,
+      "sha256": "a2010359957c32ff41450357a0cf5c2caba3994779f6b879ae52963b3c229a62",
+      "origin": "v0.6.0:game/scripts/network/enet_battle.gd"
+    },
+    "project/scripts/network/input_frames.gd": {
+      "bytes": 3081,
+      "sha256": "d5c3a5bf20ffaf25b5198f3dcada10b931394fed7daa05296132a80679185e44",
+      "origin": "v0.6.0:game/scripts/network/input_frames.gd"
+    },
+    "project/scripts/network/protocol.gd": {
+      "bytes": 5875,
+      "sha256": "648b3a846e32e90738b3477eb36ca5c3ce02d74e39bc379191d0c0039629bbe7",
+      "origin": "v0.6.0:game/scripts/network/protocol.gd"
+    },
+    "project/scripts/network/server_entry.gd": {
+      "bytes": 1277,
+      "sha256": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
+      "origin": "v0.6.0:game/scripts/network/server_entry.gd"
+    },
+    "project/scripts/network/server_runtime.gd": {
+      "bytes": 75785,
+      "sha256": "594f22d477a56d767bde9fdc23f6a092098a99f5fa68645fc9e14a3aeb203a9e",
+      "origin": "v0.6.0:game/scripts/network/server_runtime.gd"
+    },
+    "project/scripts/network/state_stream.gd": {
+      "bytes": 22670,
+      "sha256": "e43905a939f428526ceb406bfb281e889d3ec18870981761a62e2e08ec5118d8",
+      "origin": "v0.6.0:game/scripts/network/state_stream.gd"
+    },
+    "project/server.tscn": {
+      "bytes": 167,
+      "sha256": "02de4c4cef853a253469d200d4534c3256988906a8672280f4c7f8225ef18817",
+      "origin": "generated:server/generated/project/server.tscn"
+    },
+    "project/server_boot.gd": {
+      "bytes": 546,
+      "sha256": "2c1b446c74c3c8823209cdf6e61e9b929cee93a967168b4ab0fab9f0f4b61d05",
+      "origin": "v0.6.0:server/server_boot.gd"
+    },
+    "config.example.json": {
+      "bytes": 206,
+      "sha256": "ba72dc20a8c1e69f1fefac022b451b30c4fe362fb15d6ec98069f3fa4858fa23",
+      "origin": "v0.6.0:server/config.example.json"
+    },
+    "deployment/config.production.json": {
+      "bytes": 359,
+      "sha256": "587aad97c78bbb0fe9c4ba748d5e4c53b4d348d2b2a2cd2586cae07686744fd9",
+      "origin": "v0.6.0:server/linux/config.production.json"
+    },
+    "deployment/incense-debt.service": {
+      "bytes": 872,
+      "sha256": "24b4f1252e0a7ef7e7988645cbd16ecdcad8ab7c00da1afceb449fed509e601b",
+      "origin": "v0.6.0:server/linux/incense-debt.service"
+    },
+    "deployment/incense-debt-certificate.service": {
+      "bytes": 342,
+      "sha256": "b2b309a65af27cb4235cf98954b828e62040e98e34cf853845cb7b484ed469c1",
+      "origin": "v0.6.0:server/linux/incense-debt-certificate.service"
+    },
+    "deployment/incense-debt-certificate.timer": {
+      "bytes": 211,
+      "sha256": "055f8c2bf1e897881e7d3f0d4c95747e669ccd04d2dc00352901c582f0a6a493",
+      "origin": "v0.6.0:server/linux/incense-debt-certificate.timer"
+    },
+    "deployment/certificate_refresh.py": {
+      "bytes": 4310,
+      "sha256": "200f68b4939d90f55438dbc811b71279ae998a43a8dbb1337ec35858a4c7d154",
+      "origin": "v0.6.0:server/linux/certificate_refresh.py"
+    },
+    "deployment/incense-debt-nginx-reload": {
+      "bytes": 305,
+      "sha256": "2038d9fdc8220ff6b683fd7e467599c46e0697d2eb8712b72a39f0043ea74edb",
+      "origin": "v0.6.0:server/linux/incense-debt-nginx-reload"
+    },
+    "deployment/index.html": {
+      "bytes": 1514,
+      "sha256": "1c16b61244b8d401009686f0b2b0eb551f7dba6537235c93871078322df7452b",
+      "origin": "v0.6.0:server/linux/index.html"
+    },
+    "deployment/logrotate.conf": {
+      "bytes": 174,
+      "sha256": "0a57dfd68564ffba937648eeaf7e612a22e5c3fbb826d384cf354f8b131b1c35",
+      "origin": "v0.6.0:server/linux/logrotate.conf"
+    },
+    "deployment/stop.sh": {
+      "bytes": 227,
+      "sha256": "5c9c246514a05a46036f7189e75942ab1914d7ad70df9b797f23e45e334ebc17",
+      "origin": "v0.6.0:server/linux/stop.sh"
+    },
+    "deployment/xhz-server.nginx.conf": {
+      "bytes": 1575,
+      "sha256": "c0ca485bd8b921047ceb6e9ebf02f0a7ec5078784212f230b67de37dbf784150",
+      "origin": "v0.6.0:server/linux/xhz-server.nginx.conf"
+    }
+  }
+}
