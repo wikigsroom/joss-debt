@@ -92,7 +92,10 @@ if payload['action']=='stage':
   'udp_port':18779,'candidate_endpoint':'wss://xhz-server.sidcloud.cn/candidate-play',
   'tls_permissions':{name:oct((tls/name).stat().st_mode&0o777) for name in ['fullchain.pem','privkey.pem']}}))
 elif payload['action']=='status':
- print(json.dumps({'live_health':health(18778),'candidate_health':health(19578)}))
+ candidate=None
+ try:candidate=health(19578)
+ except OSError:pass
+ print(json.dumps({'live_health':health(18778),'candidate_health':candidate}))
 elif payload['action']=='activate':
  live=health(18778);staged=health(19578)
  if live['connections'] or live['active_rooms'] or staged['connections'] or staged['active_rooms']:

@@ -74,6 +74,8 @@
     "endpoint": "wss://xhz-server.sidcloud.cn/play",
     "udp_port": 18779,
     "server_sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
-    "activation_report": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/activate.json"
+    "activation_report": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/activate.json",
+    "status_report": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/status-final.json",
+    "candidate_health_after_activation": null
   }
 }
