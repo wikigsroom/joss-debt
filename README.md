@@ -656,11 +656,11 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与发布附件：** 源码、资源、设计、验收记录与 README 截图／GIF 保留在 Git；私有工具、签名、SSH 凭据、服务器状态与 EXE／APK／ZIP 均不提交。[0.5.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) 提供 Windows、正式 Android、Linux／Windows 服务端、双语指南、清单和校验文件。[发布清单](docs/releases/v0.5.0.manifest.json)绑定实际验收包。旧版 iOS 交接保留在历史 0.2.0 Release。
+**仓库与发布附件：** 源码、资源、设计、验收记录与 README 截图／GIF 保留在 Git；私有工具、签名、SSH 凭据、服务器状态与 EXE／APK／ZIP 均不提交。[0.6.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0) 提供 Windows、正式 Android、Linux／Windows 服务端、双语指南、清单和校验文件。[发布清单](docs/releases/v0.6.0.manifest.json)绑定实际验收包。旧版 0.5.0 与 iOS 交接保留为历史版本。
 
-**服务端归档：** [server/archives/v0.5.0](server/archives/v0.5.0/README.md)包含独立原生 Godot 工程、37 份共享脚本、12 份数据与实际部署的公开配置。[清单](server/archives/v0.5.0/manifest.json)绑定源码、原始 tag 和已发布 Linux／Windows 包的 SHA-256；使用 `python tools/runtime/verify_server_archive.py` 核验。凭据、TLS 私钥和玩家状态排除在 Git 外；在线存档需独立加密备份。
+**服务端归档：** [server/archives/v0.6.0](server/archives/v0.6.0/README.md)包含独立原生 Godot 工程、41 份共享脚本、12 份数据与实际部署的公开配置。[清单](server/archives/v0.6.0/manifest.json)绑定源码、原始 tag 和已发布 Linux／Windows 包的 SHA-256；使用 `python tools/runtime/verify_server_archive.py --version 0.6.0` 核验。凭据、TLS 私钥和玩家状态排除在 Git 外；在线存档需独立加密备份。0.5.0 归档保持不可变。
 
-0.5.0 使用 `record_public_delivery.py` 绑定验收，提交源码后以 `package_public_release.py` 生成附件，提交清单、推送注释 tag，最后 `publish_release.py --tag v0.5.0` 验证草稿附件完整摘要并公开正式版。旧 Release 不覆盖，详见 [构建指南](build/README.md)。
+0.6.0 使用 `tools/runtime/package_v060_release.py` 复制已验收的客户端与原生服务包，`publish_release.py --tag v0.6.0` 对草稿附件逐项核对 GitHub SHA-256 后公开；服务端归档由 `tools/runtime/create_server_archive.py` 固定到 release commit。旧 Release 不覆盖，详见 [构建指南](build/README.md)。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -742,7 +742,7 @@ python tools/runtime/audit_consumable_art.py
 | 内容 | 十一层 Alpha 与上述系统、素材、自动流程证据 | 更多角色 / 种子的完整局和真人构筑平衡 |
 | 语言 | 完整中文界面；双语项目说明 | 英文游戏界面与叙事本地化 |
 
-版本 0.5.0 已作为正式联机发布；功能和平衡仍持续完善。提供十一层离线、共灯合作、可选对灯、匿名恢复身份和已部署官方服务，没有账号注册或云愿簿同步。真实公网与服务重启已验证；长时容量和移动真机验收尚待完成。项目级许可证未选定，第三方条款见[授权说明](#licenses)。
+版本 0.6.0 已作为原生 UDP 正式联机发布；功能和平衡仍持续完善。提供十一层离线、共灯合作、可选对灯、匿名恢复身份和已部署官方服务，没有账号注册或云愿簿同步。真实公网、UDP 弱网回归、服务重启与正式激活已验证；长时容量和移动真机验收仍不在本轮范围。项目级许可证未选定，第三方条款见[授权说明](#licenses)。
 
 <a id="en-guide"></a>
 ## English guide
@@ -1067,11 +1067,11 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. release assets:** Source, art, evidence and README GIFs are tracked. Private tooling, credentials, signing material, server state and EXE/APK/ZIP files are excluded. [Release 0.5.0](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) provides both clients and native Linux/Windows servers. The [manifest](docs/releases/v0.5.0.manifest.json) binds accepted assets; historical releases remain unchanged.
+**Versioned vs. release assets:** Source, art, evidence and README GIFs are tracked. Private tooling, credentials, signing material, server state and EXE/APK/ZIP files are excluded. [Release 0.6.0](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0) provides both clients and native Linux/Windows servers. The [manifest](docs/releases/v0.6.0.manifest.json) binds accepted assets; historical releases remain unchanged.
 
-**Server source archival:** [server/archives/v0.5.0](server/archives/v0.5.0/README.md) preserves a standalone native Godot project, the exact 37 shared scripts and 12 data files, and public deployment templates. Its [manifest](server/archives/v0.5.0/manifest.json) records source provenance and published Linux/Windows hashes. Run `python tools/runtime/verify_server_archive.py` to verify. Credentials, TLS keys and live player state stay private; state backups require separate encrypted storage.
+**Server source archival:** [server/archives/v0.6.0](server/archives/v0.6.0/README.md) preserves a standalone native Godot project, the exact 41 shared scripts and 12 data files, and public deployment templates. Its [manifest](server/archives/v0.6.0/manifest.json) records source provenance and published Linux/Windows hashes. Run `python tools/runtime/verify_server_archive.py --version 0.6.0` to verify. Credentials, TLS keys and live player state stay private; state backups require separate encrypted storage.
 
-For 0.5.0, record acceptance with `record_public_delivery.py`, commit source, then run `package_public_release.py`. Commit its manifest, push an annotated tag, and run `publish_release.py --tag v0.5.0`. It uploads a draft, verifies full GitHub asset digests, and publishes a stable release. See [build instructions](build/README.md).
+For 0.6.0, run `tools/runtime/package_v060_release.py` against the accepted builds, commit its manifest, push an annotated tag, and run `publish_release.py --tag v0.6.0`. It uploads a draft, verifies full GitHub asset digests, and publishes a stable release; `tools/runtime/create_server_archive.py` then freezes the source archive. See [build instructions](build/README.md).
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
@@ -1120,7 +1120,7 @@ Evidence is bound to its recorded source and artifact hashes. Rebuilding require
 | Content | Eleven-floor Alpha with the documented systems and automated route | More characters/seeds and human build balancing |
 | Language | Chinese game UI/story, bilingual repository guide | English game localization |
 
-Version 0.5.0 is a stable online release while content and balance continue to improve. Official auto-connect, native public-WAN and live restart tests are complete. Long-term capacity and physical Android acceptance remain pending. No account system or cloud save sync is provided; no project-wide license has been selected.
+Version 0.6.0 is the stable native-UDP online release while content and balance continue to improve. Official auto-connect, native public-WAN, weak-network regressions and live activation are complete. Long-term capacity and physical Android acceptance are outside this release scope. No account system or cloud save sync is provided; no project-wide license has been selected.
 
 <a id="references"></a>
 ## 资料与证据 / Documentation and evidence
