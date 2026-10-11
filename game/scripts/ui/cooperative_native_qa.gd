@@ -14,6 +14,9 @@ func diagnostics() -> Dictionary:
 		"hp": own.presentation.map(func(actor): return actor.player.hp),
 		"state_age": own.now() - own.last_state_received, "can_play": own.can_play(), "adapter_phase": app.adapter.phase,
 		"aim_id": app.adapter.aim_id, "move_id": app.adapter.move_id, "firing": app.adapter.touch_firing,
+		"weapon": app.world.player.get("weapon", ""), "sample_fire": own.latest_input.get("fire", false),
+		"own_shots": own.presentation[0].stats.get("shots", -1) if own.presentation.size() > 0 else -1,
+		"peer_shots": opponent.presentation[0].stats.get("shots", -1) if opponent != null and opponent.presentation.size() > 0 else -1,
 		"peer_state": opponent.state if opponent != null else "", "peer_error": opponent.last_error if opponent != null else "", "problems": network_problems.duplicate()}
 
 func expect(id: String, condition: bool, detail: String = "") -> void:
@@ -135,7 +138,7 @@ func run() -> void:
 	await hold(KEY_D, .45)
 	expect("cooperative_wasd_movement", opponent.presentation[0].player.pos.x > position.x + 20)
 	await hold(KEY_UP, .6)
-	expect("cooperative_arrow_key_shooting", opponent.presentation[0].stats.shots > 0)
+	expect("cooperative_arrow_key_shooting", await until(func(): return opponent.presentation[0].stats.shots > 0, 1.0))
 	await key(KEY_Q)
 	expect("cooperative_keyboard_skill", await until(func(): return app.world.player.skill_cd > 0, 2))
 	await capture("coop-combat")

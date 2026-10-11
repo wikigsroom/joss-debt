@@ -5,6 +5,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import argparse
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGED = "--packaged" in sys.argv
@@ -14,6 +15,11 @@ REPORTS = ROOT / "docs/incense-debt/reports" / ("platforms/windows" if PACKAGED 
 
 
 def main():
+    global REPORTS
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--packaged', action='store_true')
+    parser.add_argument('--output', type=Path, default=REPORTS)
+    REPORTS = parser.parse_args().output.resolve()
     REPORTS.mkdir(parents=True, exist_ok=True)
     report_path = REPORTS / "keyboard-flow.json"
     report_path.unlink(missing_ok=True)

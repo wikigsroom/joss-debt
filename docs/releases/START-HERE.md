@@ -1,22 +1,22 @@
-# 香火债 0.5.0 / Incense Debt 0.5.0
+# 香火债 0.6.0 / Incense Debt 0.6.0
 
-十一层离线房间肉鸽、双人共灯合作和可选对灯切磋。游戏界面为简体中文。[Release 与校验文件](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)。
+十一层离线房间肉鸽、双人共灯合作和可选对灯切磋。游戏界面为简体中文。[Release 与校验文件](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0)。战斗网络使用 Godot 原生 ENet＋DTLS UDP，WSS 只负责身份和入战票据。
 
-An eleven-floor offline roguelite with two-player Co-Light cooperation and optional Duel. The game currently uses Simplified Chinese.
+An eleven-floor offline roguelite with two-player Co-Light cooperation and optional Duel. Battle uses native Godot ENet/DTLS over UDP; WSS bootstraps identity and the battle ticket. The game currently uses Simplified Chinese.
 
 ## Windows
 
-下载 `IncenseDebt-v0.5.0-windows-x64.zip`，完整解压后运行 `IncenseDebt.exe`。需要 Windows x64 和 OpenGL 3.3，不需安装 Godot。程序未做 Windows 发行者代码签名；同一 Release 提供 SHA256SUMS.txt。
+下载 `IncenseDebt-v0.6.0-windows-x64.zip`，完整解压后运行 `IncenseDebt.exe`。需要 Windows x64 和 OpenGL 3.3，不需安装 Godot。程序未做 Windows 发行者代码签名；同一 Release 提供 SHA256SUMS.txt。
 
 Extract the Windows ZIP and run the EXE. Requires Windows x64 and OpenGL 3.3; no engine installation. No Windows publisher signature is provided. Check the release checksums.
 
 ## Android
 
-安装 `IncenseDebt-v0.5.0-android-arm64.apk`：**Android 9 / API 28 以上、arm64**，版本 0.5.0 / code 9。正式私有签名、非调试构建；只请求 INTERNET、VIBRATE。离线游玩无需网络，实体手机验收尚未完成。
+安装 `IncenseDebt-v0.6.0-android-arm64.apk`：**Android 9 / API 28 以上、arm64**，版本 0.6.0 / code 10。正式私有签名、非调试构建；只请求 INTERNET、VIBRATE。离线游玩无需网络，实体手机验收按本次发布范围未执行。
 
-包内嵌入旧签名到正式签名的证书迁移链，官方校验器已验证 API 28、32、33、36 的签名与旧安装数据继承能力。优先直接覆盖安装，**不要先卸载**，卸载会删除私有愿簿。具体手机安装和触控仍需真机确认。
+包内嵌入旧签名到正式签名的证书迁移链，官方校验器已验证 API 28、32、33、36 的签名与旧安装数据继承能力。优先直接覆盖安装，**不要先卸载**，卸载会删除私有愿簿。当前发布记录明确未做 Android 真机验证。
 
-Install the release APK on Android 9+ arm64. The embedded legacy-to-release certificate lineage passes official verification on API 28, 32, 33 and 36, including installed-data inheritance. Install over the previous app when possible; uninstalling deletes private saves. Physical-device acceptance remains pending.
+Install the release APK on Android 9+ arm64. The embedded legacy-to-release certificate lineage passes official verification on API 28, 32, 33 and 36, including installed-data inheritance. Install over the previous app when possible; uninstalling deletes private saves. No physical Android validation is claimed for this release.
 
 ## 共灯 / Co-Light
 

@@ -21,11 +21,12 @@ func synchronize(world) -> void:
 	if world == null or world.player.is_empty():
 		clear()
 		return
-	if source_world != world.get_instance_id() or equipped != str(world.player.weapon) or world.time < observed_time:
+	var time = float(world.presentation_clock) if world.presentation_clock >= 0 else float(world.time)
+	if source_world != world.get_instance_id() or equipped != str(world.player.weapon) or time < observed_time:
 		last_shot.clear()
 	source_world = world.get_instance_id()
 	equipped = str(world.player.weapon)
-	observed_time = world.time
+	observed_time = time
 
 func accept(events: Array, world) -> void:
 	synchronize(world)
@@ -44,9 +45,10 @@ func sample(world, reduce_motion: bool = false) -> Dictionary:
 	synchronize(world)
 	if world == null or world.player.is_empty(): return {}
 	var player = world.player
+	var time = float(world.presentation_clock) if world.presentation_clock >= 0 else float(world.time)
 	var weapon = world.db.row("weapons", equipped)
 	var duration = minf(.334, float(weapon.get("interval_s", .4)) * .85)
-	var age = world.time - float(last_shot.get("at", -999))
+	var age = time - float(last_shot.get("at", -999))
 	var attack = not last_shot.is_empty() and age >= 0 and age < duration
 	var charging = (weapon.get("mode", "") in ["charged_line", "charged_arc", "nova"] or world.stack("r66") > 0) and player.charge > 0 and player.hp > 0
 	var state = "run" if player.move.length() > .1 else "idle"

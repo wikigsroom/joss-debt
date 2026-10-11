@@ -15,6 +15,7 @@ def main():
     parser.add_argument("--packaged", action="store_true")
     parser.add_argument("--cooperative", action="store_true")
     parser.add_argument("--public-exit-wait", action="store_true", help="Use an external fixture that awaits the WAN leave acknowledgement")
+    parser.add_argument("--performance", action="store_true", help="Observe actual cooperative rendering and key-to-visible feedback without changing game bytecode")
     parser.add_argument("--output", type=Path)
     options = parser.parse_args()
     folder = options.output or ROOT / ".local-tools/online-development" / ("native-" + datetime.now().strftime("%Y%m%d-%H%M%S"))
@@ -25,7 +26,14 @@ def main():
     if not options.packaged:
         args += ["--path", str(ROOT / "game")]
     fixture_path = None
-    if options.public_exit_wait:
+    if options.performance:
+        if not options.packaged or not options.cooperative or options.public_exit_wait:
+            raise ValueError('Performance observation requires the packaged cooperative client')
+        fixture_path = ROOT/'tools/runtime/measure_online_feedback.gd'
+        args[0] = str(ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe")
+        args += ["--main-pack", str(engine), "--script", str(ROOT / "game/tests/online_native_external.gd")]
+        args += ["--", "--qa-layout", "--external-fixture=" + str(fixture_path)]
+    elif options.public_exit_wait:
         if not options.packaged or options.cooperative:
             raise ValueError("The exit-wait fixture is for packaged Duel acceptance")
         source = (ROOT / "game/scripts/ui/online_native_qa.gd").read_text("utf8")
@@ -61,11 +69,15 @@ def main():
     report = json.loads(path.read_text("utf8"))
     report.update(recorded_at=datetime.now(timezone.utc).isoformat(), packaged=options.packaged, transport_endpoint=options.url)
     if fixture_path:
-        report.update(external_acceptance_fixture=True, fixture_sha256=hashlib.sha256(fixture_path.read_bytes()).hexdigest(), fixture_change="Wait for the actual server leave acknowledgement before navigating the hub; production bytecode unchanged")
+        report.update(external_acceptance_fixture=True, fixture_sha256=hashlib.sha256(fixture_path.read_bytes()).hexdigest(), fixture_change="Observe rendering and local keyboard feedback" if options.performance else "Wait for the actual server leave acknowledgement before navigating the hub; production bytecode unchanged")
     if options.packaged:
         with engine.open("rb") as source:
             report["artifact_sha256"] = hashlib.file_digest(source, "sha256").hexdigest()
-    if proc.returncode or "SCRIPT ERROR" in log or "ERROR:" in log:
+    if options.performance and (folder/'render-input.json').is_file():
+        performance = json.loads((folder/'render-input.json').read_text('utf8'))
+        performance.update(artifact_sha256=report['artifact_sha256'], fixture_sha256=report['fixture_sha256'], transport_endpoint=options.url, recorded_at=report['recorded_at'])
+        (folder/'render-input.json').write_text(json.dumps(performance,ensure_ascii=False,indent=2)+'\n','utf8')
+    if proc.returncode or "SCRIPT ERROR" in log or "ERROR:" in log or "mbedtls error:" in log:
         report["passed"] = False
         report["failures"].append({"id": "native_execution", "passed": False, "detail": "See online-native.log"})
     path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")

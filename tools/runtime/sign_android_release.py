@@ -122,6 +122,7 @@ def main():
                              "--ks-pass", "env:INCENSE_ANDROID_LEGACY_PASS", "--next-signer", "--ks", str(KEYSTORE),
                              "--ks-key-alias", "incense-release", "--ks-pass", "env:INCENSE_ANDROID_RELEASE_PASS",
                              "--lineage", str(LINEAGE), "--rotation-min-sdk-version", "28", "--v1-signing-enabled", "false",
+                             "--v2-signing-enabled", "true", "--v3-signing-enabled", "true",
                              "--v4-signing-enabled", "false", "--out", str(temporary), str(aligned)], cwd=ROOT, env=env,
                             capture_output=True, timeout=300)
     if result.returncode: raise RuntimeError(result.stderr.decode("utf8", errors="replace"))

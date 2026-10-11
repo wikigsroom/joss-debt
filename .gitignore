@@ -1,5 +1,6 @@
 # Local engines, SDKs and Godot import caches.
 /.local-tools/
+/game/.local-tools/
 **/.vercel/
 **/.godot/
 **/__pycache__/

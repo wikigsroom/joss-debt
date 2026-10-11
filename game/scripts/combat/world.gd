@@ -48,6 +48,7 @@ var choices: Array = []
 var choice_queue: Array = []
 var mode = "idle"
 var time = 0.0
+var presentation_clock = -1.0 # replica poses only; absent from durable simulation
 var uid = 0
 var attack_uid = 0
 var navigation_timer = 0.0
@@ -712,6 +713,7 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 			if not try_enter_secret(): emit("route_hint")
 
 func advance_player(frame: Dictionary, delta: float) -> void:
+	player.input_shot = int(frame.get("shot", 0))
 	stats.elapsed += delta
 	for key in proc_ledger.keys():
 		if time > float(proc_ledger[key].expires): proc_ledger.erase(key)
@@ -808,6 +810,7 @@ func shoot_input(fire: bool, delta: float, transfer: bool = false, touch_device:
 	attack_uid += 1
 	begin_pulse("attack_%d" % attack_uid)
 	var recipe = Composer.recipe(self, weapon)
+	player.confirmed_shot = int(recipe.get("prediction", 0))
 	player.shot_cd = float(recipe.interval)
 	player.last_shot_direction = player.aim
 	stats.shots += 1

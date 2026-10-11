@@ -119,3 +119,7 @@ UI采用24圆角面板、圆形/胶囊按钮、57个工具图标、紧凑战斗H
 - [44 · 0.5.0 官方联机部署与最终包体验收](44-public-online-release.md)：自动连接、公网恢复、正式 Android 签名、UI 实机与剩余风险。
 
 - [45 · 联机传输与同步重新选型](45-network-reselection.md)：当前 WSS 瓶颈、Godot／FPS 官方与作者源码研究、ENet／netfox／Steam／WebRTC／KCP 比较、原生 UDP 弱网与全量快照测量，及新架构迁移门槛；生产尚未迁移。
+
+- [46 · 原生低延迟联机开发计划与完成记录](46-network-development-plan.md)：WSS 引导、ENet/DTLS 战斗、输入保护、状态黑洞、battle ticket 重绑、旧 tuple 隔离、验收门槛与 Android 真机范围。
+
+- [47 · 原生 UDP/DTLS 联机实现说明](47-native-udp-iteration.md)：六通道契约、丢包/乱序/重连处理、边缘转发保护、候选公网证据与回滚流程。

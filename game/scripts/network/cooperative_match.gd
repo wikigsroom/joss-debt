@@ -98,12 +98,13 @@ func finish(result: int, cause: String) -> void:
 	phase = "finished"
 	push_event("finished", {"winner": winner, "reason": reason})
 
-func view(seat: int, since_event: int = 0) -> Dictionary:
+func view(seat: int, since_event: int = 0, replication: bool = false, shared = null) -> Dictionary:
+	if shared == null: shared = {}
 	world.flush()
-	var views: Array = []
-	for index in 2:
+	var views: Array = shared.get("actors", [])
+	for index in (0 if not views.is_empty() else 2):
 		var context = world.contexts[index]
-		var visible_run = context.run.duplicate(true)
+		var visible_run = context.run.duplicate(not replication)
 		for key in ["room_history", "damage_history", "relic_pool", "growth_log"]: visible_run.erase(key)
 		visible_run.coins = world.coins
 		views.append({"run": visible_run, "player": context.player.duplicate(true), "time": world.time,
@@ -116,27 +117,32 @@ func view(seat: int, since_event: int = 0) -> Dictionary:
 		offer.reason = world.choice_reason(entry)
 		offers.append(offer)
 	world.select_player(0)
+	shared.actors = views
 	var shared_flags: Dictionary = {}
 	for key in world.SHARED_FLAGS:
 		if world.room_flags.has(key): shared_flags[key] = world.room_flags[key]
-	var scene = {"serial": world.scene_serial, "mode": "clear" if world.contexts.all(func(player): return player.mode in ["clear", "checkpoint"]) else "combat",
-		"template": world.geometry.template_id, "objects": world.geometry.objects.duplicate(true), "pickups": world.pickups.duplicate(true),
-		"enemies": presentation_entities(world.enemies, ["attack_history"]), "bullets": presentation_entities(world.bullets, ["recipe", "hits", "pulse", "attack"]), "zones": presentation_entities(world.zones, ["recipe", "hits", "pulse"]),
-		"delayed": presentation_entities(world.delayed.filter(func(action): return action.type == "debt_bullet"), ["pair"]), "flags": shared_flags.duplicate(true), "stairs": world.contexts[0].mode == "checkpoint", "rescue": world.rescue.duplicate(true)}
+	var scene: Dictionary = shared.get("scene", {})
+	if scene.is_empty():
+		scene = {"serial": world.scene_serial, "mode": "clear" if world.contexts.all(func(player): return player.mode in ["clear", "checkpoint"]) else "combat",
+			"template": world.geometry.template_id, "objects": world.geometry.objects.duplicate(not replication), "pickups": world.pickups.duplicate(not replication),
+			"enemies": presentation_entities(world.enemies, ["attack_history"], not replication), "bullets": presentation_entities(world.bullets, ["recipe", "hits", "pulse", "attack"], not replication), "zones": presentation_entities(world.zones, ["recipe", "hits", "pulse"], not replication),
+			"delayed": presentation_entities(world.delayed.filter(func(action): return action.type == "debt_bullet"), ["pair"], not replication), "flags": shared_flags.duplicate(true), "stairs": world.contexts[0].mode == "checkpoint", "rescue": world.rescue.duplicate(true)}
+		shared.scene = scene
+	if not shared.has("builds"): shared.builds = world.contexts.map(func(player): return player.run.growth_log.duplicate(not replication))
 	return {"id": id, "game_mode": "coop", "phase": phase, "round": int(world.run.floor), "tick": tick_index, "remaining": world.time,
 		"countdown": countdown, "score": [int(world.run.cleared), int(world.run.cleared)], "winner": winner, "reason": reason,
 		"arena": world.region_spec().duplicate(true), "players": loadouts.duplicate(true), "actors": views, "scene": scene,
 		"offers": offers, "choice_mode": context.mode, "choice_token": choice_token(seat), "replacement": context.run.get("replacement", {}).duplicate(true),
 		"picked": world.contexts.map(func(player): return -1 if player.mode in ["choice", "shop", "debt", "replace"] else 0),
-		"builds": world.contexts.map(func(player): return player.run.growth_log.duplicate(true)),
+		"builds": shared.builds,
 		"events": events.filter(func(event): return int(event.event_id) > since_event), "event_serial": event_serial}
 
-static func presentation_entities(entities: Array, private_keys: Array) -> Array:
+static func presentation_entities(entities: Array, private_keys: Array, deep: bool = true) -> Array:
 	# Simulation recipes, victim ledgers and delayed skill payloads remain in the
 	# durable checkpoint; replicas receive the fields their renderer actually uses.
 	var result: Array = []
 	for entity in entities:
-		var visible = entity.duplicate(true)
+		var visible = entity.duplicate(deep)
 		for key in private_keys: visible.erase(key)
 		result.append(visible)
 	return result

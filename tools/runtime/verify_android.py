@@ -57,6 +57,7 @@ def main():
         default="docs/incense-debt/reports/platforms/android-verification.json",
         help="Verification JSON path relative to the workspace.",
     )
+    parser.add_argument("--skip-device-discovery", action="store_true", help="Inspect the APK only; do not start ADB or look for a handset")
     args = parser.parse_args()
     sdk = Path(os.environ["LOCALAPPDATA"]) / "Android/Sdk"
     apk = Path(args.apk)
@@ -94,7 +95,7 @@ def main():
             from verify_android_lineage import verify
             lineage = verify(apk)
             upgrade_signer_matches = lineage["passed"] and lineage["installed_data"] and previous_certificates == [lineage["legacy_certificate_sha256"]]
-    devices = run([str(sdk / "platform-tools/adb.exe"), "devices", "-l"])
+    devices = None if args.skip_device_discovery else run([str(sdk / "platform-tools/adb.exe"), "devices", "-l"])
     with zipfile.ZipFile(apk) as bundle:
         names = bundle.namelist()
         startup = display_project_settings(bundle.read("assets/project.binary"))
@@ -152,7 +153,8 @@ def main():
               "signature_diagnostics": signing.stdout.strip(), "package": next((l for l in badging.stdout.splitlines() if l.startswith("package:")), ""),
               "platform_fields": [l for l in badging.stdout.splitlines() if l.startswith(("sdkVersion", "targetSdkVersion", "native-code", "supports-screens"))],
               "permissions": permissions.stdout.strip(), "manifest_diagnostics": badging.stderr.strip(), "required_data_and_licenses": required, "native_libraries": libraries,
-              "unexpected_sensitive_files": forbidden, "adb_devices": devices.stdout.strip(), "physical_device_tested": False, "virtualization": "none", "version_matches_source": version_matches}
+              "unexpected_sensitive_files": forbidden, "adb_devices": devices.stdout.strip() if devices else "not requested", "physical_device_tested": False, "virtualization": "none", "version_matches_source": version_matches}
+    report["device_discovery_skipped"] = args.skip_device_discovery
     report.update({"music_configuration_matches_source": music_config_matches, "music_themes": len(scores.get("scores", {})), "music_stems_expected": expected_stem_count, "music_stems_packaged": music_stems_packaged})
     report.update({"save_schema": 2, "save_rules_match_source": save_rules_match, "compiled_save_scripts_packaged": save_scripts})
     report.update({"internet_expected": internet_expected, "internet_permission_matches_source": internet_matches, "compiled_online_scripts_packaged": online_scripts})
@@ -167,7 +169,7 @@ def main():
                   signer_certificate_sha256=certificates, upgrade_signer_matches_previous=upgrade_signer_matches)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")
     # This task started ADB for device discovery; release its idle server when no device is present.
-    if not any("\tdevice" in line for line in devices.stdout.splitlines()):
+    if devices is not None and not any("\tdevice" in line for line in devices.stdout.splitlines()):
         run([str(sdk / "platform-tools/adb.exe"), "kill-server"])
     print(json.dumps({"passed": passed, "apk": relative_apk, "report": report_path.relative_to(ROOT).as_posix() if report_path.is_relative_to(ROOT) else report_path.as_posix(), "apk_sha256": digest, "signature_verified": report["signature_verified"], "runtime_resources": len(imported_resources), "missing_resources": [p for p, ok in imported_resources.items() if not ok], "fonts": sum(r["kind"] == "font" for r in registry["assets"]), "vector_icons": sum(r.get("format") == "svg" for r in registry["assets"]), "ui_and_weapon_scripts": ui_scripts, "physical_device_tested": False}, ensure_ascii=False, indent=2))
     if not passed: raise SystemExit(1)

@@ -343,14 +343,15 @@ func check_doors() -> void:
 	select_player(0)
 	if contexts[0].mode == "checkpoint":
 		var stair = room_door_position("north")
-		if player.pos.distance_to(stair) < 80 and contexts[1].player.pos.distance_to(stair) < 80: next_floor()
+		if player.pos.distance_to(stair) < 80 and contexts[1].player.pos.distance_to(stair) < 80 and contexts.any(func(context): return context.player.move.dot(Vector2.UP) > .08): next_floor()
 		return
 	var secret = secret_entry()
-	if not secret.is_empty() and Graph.visible(run.graph, int(secret.room)) and player.pos.distance_to(secret.pos) < 70 and contexts[1].player.pos.distance_to(secret.pos) < 70:
+	if not secret.is_empty() and Graph.visible(run.graph, int(secret.room)) and player.pos.distance_to(secret.pos) < 70 and contexts[1].player.pos.distance_to(secret.pos) < 70 and contexts.any(func(context): return context.player.move.dot(context.player.pos.direction_to(secret.pos)) > .08):
 		super.advance_room(int(secret.room))
 		return
 	for door in room_doors():
-		if player.pos.distance_to(door.pos) < 70 and contexts[1].player.pos.distance_to(door.pos) < 70:
+		var direction = direction_vector(str(door.direction))
+		if player.pos.distance_to(door.pos) < 70 and contexts[1].player.pos.distance_to(door.pos) < 70 and contexts.any(func(context): return context.player.move.dot(direction) > .08) and geometry.clear_segment(player.pos, door.pos) and geometry.clear_segment(contexts[1].player.pos, door.pos):
 			super.advance_room(int(door.destination))
 			return
 

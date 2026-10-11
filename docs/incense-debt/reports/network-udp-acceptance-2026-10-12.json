@@ -1,0 +1,79 @@
+{
+  "version": "0.6.0",
+  "recorded_at": "2026-10-12T05:55:25+08:00",
+  "transport": "Godot ENet over DTLS, WSS bootstrap",
+  "candidate": {
+    "endpoint": "wss://xhz-server.sidcloud.cn/candidate-play",
+    "health": "https://xhz-server.sidcloud.cn/candidate-health",
+    "udp_port": 18779,
+    "linux_server_sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+    "windows_server_sha256": "b68235b202535632f3f47cd86d7e97d4fd5a06938a70820a3e07a06899a208c7",
+    "live_version_untouched": "0.5.0"
+  },
+  "public_wan": {
+    "report": "network-udp-acceptance-2026-10-12/public-wan.json",
+    "passed": true,
+    "native_windows_clients": 4,
+    "rooms": 2,
+    "battle_seconds": 62.665,
+    "bootstrap_issues": [],
+    "transport_rebinds": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "fresh_playable_frame_ratio": 1.0,
+    "tick_hz": 59.14570606386036,
+    "state_age_p95_ms": 42.0000000000016,
+    "ping_p95_ms": 133.0,
+    "lifetime_step_p990_ms_upper_bound": 7.125,
+    "lifetime_step_p999_ms_upper_bound": 23.5,
+    "combat_stalls_over_100ms": 0,
+    "child_returncode": 0,
+    "clean_native_log": true,
+    "android_physical_device_tested": false,
+    "endpoint": "wss://xhz-server.sidcloud.cn/candidate-play",
+    "health_endpoint": "https://xhz-server.sidcloud.cn/candidate-health"
+  },
+  "local_udp_impairment": {
+    "report": "network-udp-acceptance-2026-10-12/local-udp-impairment.json",
+    "passed": true,
+    "cases": [
+      "loopback",
+      "rtt100-loss3",
+      "rtt200-loss5",
+      "rtt350-loss10",
+      "duplicate-reorder",
+      "burst300ms",
+      "burst1s",
+      "burst3s"
+    ]
+  },
+  "application_regression": {
+    "report": "network-udp-acceptance-2026-10-12/application-regression.json",
+    "passed": true,
+    "coverage": [
+      "input lease/epoch/scene/link rejection",
+      "state blackhole freeze and mutual resume",
+      "ACK blackhole",
+      "identity takeover",
+      "storage failure",
+      "exactly-once settlement",
+      "DTLS certificate negatives"
+    ]
+  },
+  "limits": [
+    "The WAN evidence is a bounded native load run, not an availability SLA.",
+    "No Motorola X30 or other physical Android device was connected, per the user's explicit decision."
+  ],
+  "virtualization": "none",
+  "production": {
+    "activated": true,
+    "version": "0.6.0",
+    "endpoint": "wss://xhz-server.sidcloud.cn/play",
+    "udp_port": 18779,
+    "server_sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+    "activation_report": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/activate.json"
+  }
+}

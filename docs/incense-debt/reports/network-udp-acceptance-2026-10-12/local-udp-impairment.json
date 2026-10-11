@@ -1,0 +1,3028 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-11T21:17:39.687108+00:00",
+  "scope": "Actual development ServerRuntime and OnlineSession cooperative gameplay through real UDP datagram delay/jitter/loss. Native Windows headless; isolated state. Not shipping-package, WAN, Android or rendering acceptance.",
+  "production_modified": false,
+  "virtualization": "none",
+  "cases": [
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "latest_states_continue_under_loss",
+          "passed": true
+        },
+        {
+          "id": "weak_link_stays_playable",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1041.33386230469,
+            628.361083984375
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 161,
+        "shots": 30,
+        "simulated_seconds": 8.09999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            628.361083984375
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 42.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 53866,
+        "buffered_bytes": 0,
+        "bytes_sent": 1977878,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 30.543,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {
+          "slow_connection": 1
+        },
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 35.0,
+            "rtt_ms": 15.0,
+            "rtt_variance": 13.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 121.0,
+            "rtt_variance": 157.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 142.969,
+          "p950_ms_upper_bound": 2.625,
+          "p990_ms_upper_bound": 4.125,
+          "p999_ms_upper_bound": 38.5,
+          "samples": 2104
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 5.278,
+          "p950_ms_upper_bound": 1.25,
+          "p990_ms_upper_bound": 3.5,
+          "p999_ms_upper_bound": 4.75,
+          "samples": 1179
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 556,
+        "persistence_errors": 0,
+        "process_max_ms": 38.689,
+        "process_p95_ms": 2.58,
+        "process_p99_ms": 4.95,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.707,
+        "retiring_battle_connections": 0,
+        "rooms": 1,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.257,
+            "p95_ms": 0.876,
+            "p99_ms": 1.143
+          },
+          "checkpoint_commit": {
+            "max_ms": 38.589,
+            "p95_ms": 3.481,
+            "p99_ms": 30.314
+          },
+          "encode": {
+            "max_ms": 3.641,
+            "p95_ms": 1.362,
+            "p99_ms": 1.921
+          },
+          "enqueue": {
+            "max_ms": 0.294,
+            "p95_ms": 0.057,
+            "p99_ms": 0.104
+          },
+          "match_construct_worker": {
+            "max_ms": 90.267,
+            "p95_ms": 90.267,
+            "p99_ms": 90.267
+          },
+          "view": {
+            "max_ms": 0.925,
+            "p95_ms": 0.403,
+            "p99_ms": 0.624
+          }
+        },
+        "step_max_ms": 4.739,
+        "step_p95_ms": 1.142,
+        "step_p99_ms": 3.36,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1179,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 36,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 238753,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 1972994,
+        "udp_wire_received_bytes": 298486,
+        "udp_wire_sent_bytes": 2129081,
+        "unacked_snapshots": 0,
+        "uptime": 19.6737523333334,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 18.0,
+      "state_gap_p95_ms": 59.0000000000011,
+      "state_received": 232,
+      "unique_replies_received": 9,
+      "case": "loopback",
+      "impairment_seed": 20261011,
+      "injected_one_way_delay_ms": 0,
+      "injected_jitter_ms": 0,
+      "injected_datagram_loss_probability": 0,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 0,
+      "proxy": {
+        "received_datagrams": 1793,
+        "dropped_datagrams": 0,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 0,
+        "forwarded_datagrams": 1793,
+        "max_datagram_bytes": 1419,
+        "reordered_datagrams": 0
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "latest_states_continue_under_loss",
+          "passed": true
+        },
+        {
+          "id": "weak_link_stays_playable",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1089.33386230469,
+            616.557983398438
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 153,
+        "shots": 30,
+        "simulated_seconds": 8.14999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            616.557983398438
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 175.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 51819,
+        "buffered_bytes": 0,
+        "bytes_sent": 2417917,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 47.201,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 14.0,
+            "rtt_ms": 13.0,
+            "rtt_variance": 12.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 170.0,
+            "rtt_variance": 81.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 1,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 47.201,
+          "p950_ms_upper_bound": 2.75,
+          "p990_ms_upper_bound": 3.75,
+          "p999_ms_upper_bound": 6.375,
+          "samples": 2533
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 29.4,
+          "p950_ms_upper_bound": 2.0,
+          "p990_ms_upper_bound": 3.0,
+          "p999_ms_upper_bound": 3.75,
+          "samples": 1374
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 611,
+        "persistence_errors": 0,
+        "process_max_ms": 6.322,
+        "process_p95_ms": 2.48,
+        "process_p99_ms": 3.62,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.796,
+        "retiring_battle_connections": 0,
+        "rooms": 0,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.386,
+            "p95_ms": 1.11,
+            "p99_ms": 1.28
+          },
+          "checkpoint_commit": {
+            "max_ms": 46.652,
+            "p95_ms": 3.104,
+            "p99_ms": 3.15
+          },
+          "encode": {
+            "max_ms": 4.632,
+            "p95_ms": 1.404,
+            "p99_ms": 1.76
+          },
+          "enqueue": {
+            "max_ms": 0.214,
+            "p95_ms": 0.049,
+            "p99_ms": 0.073
+          },
+          "match_construct_worker": {
+            "max_ms": 82.215,
+            "p95_ms": 82.215,
+            "p99_ms": 82.215
+          },
+          "view": {
+            "max_ms": 1.195,
+            "p95_ms": 0.429,
+            "p99_ms": 0.601
+          }
+        },
+        "step_max_ms": 3.622,
+        "step_p95_ms": 0.973,
+        "step_p99_ms": 2.811,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1374,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 25,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 291323,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2413092,
+        "udp_wire_received_bytes": 355198,
+        "udp_wire_sent_bytes": 2591081,
+        "unacked_snapshots": 1,
+        "uptime": 22.9135596666663,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 92.0,
+      "state_gap_p95_ms": 93.0,
+      "state_received": 229,
+      "unique_replies_received": 9,
+      "case": "rtt100-loss3",
+      "impairment_seed": 20261012,
+      "injected_one_way_delay_ms": 50,
+      "injected_jitter_ms": 20,
+      "injected_datagram_loss_probability": 0.03,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 0,
+      "proxy": {
+        "received_datagrams": 2055,
+        "dropped_datagrams": 61,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 0,
+        "forwarded_datagrams": 1994,
+        "max_datagram_bytes": 1419,
+        "reordered_datagrams": 670
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "latest_states_continue_under_loss",
+          "passed": true
+        },
+        {
+          "id": "weak_link_stays_playable",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            977.333862304688,
+            601.214294433594
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 140,
+        "shots": 29,
+        "simulated_seconds": 8.14999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            601.214294433594
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 294.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 57247,
+        "buffered_bytes": 0,
+        "bytes_sent": 2617111,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 5.554,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 27.0,
+            "rtt_ms": 10.0,
+            "rtt_variance": 7.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 308.0,
+            "rtt_variance": 124.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 5.554,
+          "p950_ms_upper_bound": 2.625,
+          "p990_ms_upper_bound": 3.625,
+          "p999_ms_upper_bound": 5.125,
+          "samples": 3054
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 16.277,
+          "p950_ms_upper_bound": 6.75,
+          "p990_ms_upper_bound": 10.375,
+          "p999_ms_upper_bound": 14.5,
+          "samples": 1655
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 650,
+        "persistence_errors": 0,
+        "process_max_ms": 4.584,
+        "process_p95_ms": 2.181,
+        "process_p99_ms": 3.725,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.783,
+        "retiring_battle_connections": 0,
+        "rooms": 0,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.143,
+            "p95_ms": 1.071,
+            "p99_ms": 1.076
+          },
+          "checkpoint_commit": {
+            "max_ms": 2.791,
+            "p95_ms": 2.628,
+            "p99_ms": 2.749
+          },
+          "encode": {
+            "max_ms": 3.399,
+            "p95_ms": 1.354,
+            "p99_ms": 1.863
+          },
+          "enqueue": {
+            "max_ms": 0.214,
+            "p95_ms": 0.056,
+            "p99_ms": 0.096
+          },
+          "match_construct_worker": {
+            "max_ms": 82.925,
+            "p95_ms": 82.925,
+            "p99_ms": 82.925
+          },
+          "view": {
+            "max_ms": 0.864,
+            "p95_ms": 0.443,
+            "p99_ms": 0.624
+          }
+        },
+        "step_max_ms": 12.703,
+        "step_p95_ms": 0.144,
+        "step_p99_ms": 8.828,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1655,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 20,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 300884,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2612169,
+        "udp_wire_received_bytes": 368430,
+        "udp_wire_sent_bytes": 2808173,
+        "unacked_snapshots": 0,
+        "uptime": 27.6003873333339,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 150.0,
+      "state_gap_p95_ms": 109.000000000002,
+      "state_received": 220,
+      "unique_replies_received": 9,
+      "case": "rtt200-loss5",
+      "impairment_seed": 20261013,
+      "injected_one_way_delay_ms": 100,
+      "injected_jitter_ms": 35,
+      "injected_datagram_loss_probability": 0.05,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 0,
+      "proxy": {
+        "received_datagrams": 2171,
+        "dropped_datagrams": 123,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 0,
+        "forwarded_datagrams": 2048,
+        "max_datagram_bytes": 1419,
+        "reordered_datagrams": 836
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "latest_states_continue_under_loss",
+          "passed": true
+        },
+        {
+          "id": "weak_link_stays_playable",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1021.33386230469,
+            604.754760742188
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 123,
+        "shots": 29,
+        "simulated_seconds": 7.94999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            604.754760742188
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 482.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 52600,
+        "buffered_bytes": 0,
+        "bytes_sent": 2759003,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 8.735,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 57.0,
+            "rtt_ms": 41.0,
+            "rtt_variance": 68.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 547.0,
+            "rtt_variance": 241.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 158.095,
+          "p950_ms_upper_bound": 2.5,
+          "p990_ms_upper_bound": 3.75,
+          "p999_ms_upper_bound": 6.875,
+          "samples": 3457
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 3.455,
+          "p950_ms_upper_bound": 0.875,
+          "p990_ms_upper_bound": 1.75,
+          "p999_ms_upper_bound": 3.25,
+          "samples": 1842
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 660,
+        "persistence_errors": 0,
+        "process_max_ms": 53.788,
+        "process_p95_ms": 2.547,
+        "process_p99_ms": 4.975,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.821,
+        "retiring_battle_connections": 0,
+        "rooms": 1,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.701,
+            "p95_ms": 1.207,
+            "p99_ms": 1.505
+          },
+          "checkpoint_commit": {
+            "max_ms": 157.94,
+            "p95_ms": 3.492,
+            "p99_ms": 53.627
+          },
+          "encode": {
+            "max_ms": 4.815,
+            "p95_ms": 1.384,
+            "p99_ms": 2.366
+          },
+          "enqueue": {
+            "max_ms": 0.2,
+            "p95_ms": 0.066,
+            "p99_ms": 0.133
+          },
+          "match_construct_worker": {
+            "max_ms": 84.92,
+            "p95_ms": 84.92,
+            "p99_ms": 84.92
+          },
+          "view": {
+            "max_ms": 0.873,
+            "p95_ms": 0.459,
+            "p99_ms": 0.64
+          }
+        },
+        "step_max_ms": 1.961,
+        "step_p95_ms": 0.113,
+        "step_p99_ms": 0.937,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1842,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 20,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 299941,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2754062,
+        "udp_wire_received_bytes": 366388,
+        "udp_wire_sent_bytes": 2958093,
+        "unacked_snapshots": 0,
+        "uptime": 30.7110956666671,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 241.0,
+      "state_gap_p95_ms": 134.0,
+      "state_received": 215,
+      "unique_replies_received": 9,
+      "case": "rtt350-loss10",
+      "impairment_seed": 20261014,
+      "injected_one_way_delay_ms": 175,
+      "injected_jitter_ms": 50,
+      "injected_datagram_loss_probability": 0.1,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 0,
+      "proxy": {
+        "received_datagrams": 2227,
+        "dropped_datagrams": 229,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 0,
+        "forwarded_datagrams": 1997,
+        "max_datagram_bytes": 1419,
+        "reordered_datagrams": 930
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "latest_states_continue_under_loss",
+          "passed": true
+        },
+        {
+          "id": "weak_link_stays_playable",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1009.33386230469,
+            610.657104492188
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 136,
+        "shots": 29,
+        "simulated_seconds": 8.14999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            610.657104492188
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 192.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 51933,
+        "buffered_bytes": 0,
+        "bytes_sent": 2368057,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 5.681,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 21.0,
+            "rtt_ms": 13.0,
+            "rtt_variance": 7.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 118.0,
+            "rtt_variance": 32.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 179.374,
+          "p950_ms_upper_bound": 2.5,
+          "p990_ms_upper_bound": 3.875,
+          "p999_ms_upper_bound": 16.875,
+          "samples": 2592
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 3.324,
+          "p950_ms_upper_bound": 0.875,
+          "p990_ms_upper_bound": 2.125,
+          "p999_ms_upper_bound": 3.375,
+          "samples": 1412
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 662,
+        "persistence_errors": 0,
+        "process_max_ms": 179.374,
+        "process_p95_ms": 2.573,
+        "process_p99_ms": 5.178,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.757,
+        "retiring_battle_connections": 0,
+        "rooms": 0,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.372,
+            "p95_ms": 1.088,
+            "p99_ms": 1.268
+          },
+          "checkpoint_commit": {
+            "max_ms": 179.066,
+            "p95_ms": 14.651,
+            "p99_ms": 108.576
+          },
+          "encode": {
+            "max_ms": 4.987,
+            "p95_ms": 1.428,
+            "p99_ms": 3.374
+          },
+          "enqueue": {
+            "max_ms": 0.192,
+            "p95_ms": 0.059,
+            "p99_ms": 0.13
+          },
+          "match_construct_worker": {
+            "max_ms": 58.548,
+            "p95_ms": 58.548,
+            "p99_ms": 58.548
+          },
+          "view": {
+            "max_ms": 0.978,
+            "p95_ms": 0.437,
+            "p99_ms": 0.605
+          }
+        },
+        "step_max_ms": 2.787,
+        "step_p95_ms": 0.699,
+        "step_p99_ms": 1.796,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1412,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 19,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 280896,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2363173,
+        "udp_wire_received_bytes": 362249,
+        "udp_wire_sent_bytes": 2538957,
+        "unacked_snapshots": 0,
+        "uptime": 23.554410666667,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 116.0,
+      "state_gap_p95_ms": 123.999999999999,
+      "state_received": 208,
+      "unique_replies_received": 9,
+      "case": "duplicate-reorder",
+      "impairment_seed": 20261015,
+      "injected_one_way_delay_ms": 50,
+      "injected_jitter_ms": 50,
+      "injected_datagram_loss_probability": 0.03,
+      "injected_duplicate_probability": 0.1,
+      "injected_burst_seconds": 0,
+      "proxy": {
+        "received_datagrams": 1993,
+        "dropped_datagrams": 57,
+        "duplicated_datagrams": 221,
+        "burst_dropped_datagrams": 0,
+        "forwarded_datagrams": 2157,
+        "max_datagram_bytes": 1419,
+        "reordered_datagrams": 1077
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "burst_had_live_states_before_protection",
+          "passed": true
+        },
+        {
+          "id": "burst_returns_authority_without_expiry",
+          "passed": true
+        },
+        {
+          "id": "burst_restores_live_combat",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1021.33386230469,
+            604.754760742188
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 148,
+        "shots": 30,
+        "simulated_seconds": 8.14999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            604.754760742188
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 1.0,
+      "input_round_trip_p95_ms": 184.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 54714,
+        "buffered_bytes": 0,
+        "bytes_sent": 2844270,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 7.216,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 14.0,
+            "rtt_ms": 12.0,
+            "rtt_variance": 9.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 211.0,
+            "rtt_variance": 154.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 9.053,
+          "p950_ms_upper_bound": 2.75,
+          "p990_ms_upper_bound": 4.0,
+          "p999_ms_upper_bound": 8.125,
+          "samples": 2892
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 4.97,
+          "p950_ms_upper_bound": 1.25,
+          "p990_ms_upper_bound": 2.375,
+          "p999_ms_upper_bound": 3.875,
+          "samples": 1553
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 727,
+        "persistence_errors": 0,
+        "process_max_ms": 8.026,
+        "process_p95_ms": 2.653,
+        "process_p99_ms": 5.355,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.935,
+        "retiring_battle_connections": 0,
+        "rooms": 0,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 2.054,
+            "p95_ms": 1.569,
+            "p99_ms": 1.592
+          },
+          "checkpoint_commit": {
+            "max_ms": 3.828,
+            "p95_ms": 2.609,
+            "p99_ms": 2.91
+          },
+          "encode": {
+            "max_ms": 5.358,
+            "p95_ms": 1.525,
+            "p99_ms": 3.802
+          },
+          "enqueue": {
+            "max_ms": 0.283,
+            "p95_ms": 0.064,
+            "p99_ms": 0.147
+          },
+          "match_construct_worker": {
+            "max_ms": 85.623,
+            "p95_ms": 85.623,
+            "p99_ms": 85.623
+          },
+          "view": {
+            "max_ms": 1.01,
+            "p95_ms": 0.485,
+            "p99_ms": 0.673
+          }
+        },
+        "step_max_ms": 3.37,
+        "step_p95_ms": 0.845,
+        "step_p99_ms": 1.557,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1553,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 24,
+          "quarantined": 2
+        },
+        "udp_received_bytes": 325765,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2839387,
+        "udp_wire_received_bytes": 397643,
+        "udp_wire_sent_bytes": 3050278,
+        "unacked_snapshots": 0,
+        "uptime": 25.8993456666667,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 91.0,
+      "state_gap_p95_ms": 84.0000000000014,
+      "state_received": 226,
+      "unique_replies_received": 9,
+      "case": "burst300ms",
+      "impairment_seed": 20261016,
+      "injected_one_way_delay_ms": 50,
+      "injected_jitter_ms": 20,
+      "injected_datagram_loss_probability": 0.03,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 0.3,
+      "proxy": {
+        "received_datagrams": 2436,
+        "dropped_datagrams": 114,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 33,
+        "forwarded_datagrams": 2322,
+        "max_datagram_bytes": 1417,
+        "reordered_datagrams": 842
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "burst_had_live_states_before_protection",
+          "passed": true
+        },
+        {
+          "id": "burst_returns_authority_without_expiry",
+          "passed": true
+        },
+        {
+          "id": "burst_restores_live_combat",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1005.33386230469,
+            607.115112304688
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 136,
+        "shots": 27,
+        "simulated_seconds": 8.04999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            607.115112304688
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 0.955301455301455,
+      "input_round_trip_p95_ms": 176.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 54901,
+        "buffered_bytes": 0,
+        "bytes_sent": 2733485,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 11.339,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 20.0,
+            "rtt_ms": 12.0,
+            "rtt_variance": 6.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 128.0,
+            "rtt_variance": 9.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 176.984,
+          "p950_ms_upper_bound": 2.875,
+          "p990_ms_upper_bound": 4.0,
+          "p999_ms_upper_bound": 14.5,
+          "samples": 2800
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 7.266,
+          "p950_ms_upper_bound": 1.25,
+          "p990_ms_upper_bound": 3.25,
+          "p999_ms_upper_bound": 5.125,
+          "samples": 1470
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 656,
+        "persistence_errors": 0,
+        "process_max_ms": 8.648,
+        "process_p95_ms": 3.076,
+        "process_p99_ms": 4.755,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.978,
+        "retiring_battle_connections": 0,
+        "rooms": 1,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.659,
+            "p95_ms": 1.574,
+            "p99_ms": 1.615
+          },
+          "checkpoint_commit": {
+            "max_ms": 176.596,
+            "p95_ms": 14.15,
+            "p99_ms": 63.235
+          },
+          "encode": {
+            "max_ms": 6.617,
+            "p95_ms": 1.559,
+            "p99_ms": 1.968
+          },
+          "enqueue": {
+            "max_ms": 0.36,
+            "p95_ms": 0.063,
+            "p99_ms": 0.14
+          },
+          "match_construct_worker": {
+            "max_ms": 93.38,
+            "p95_ms": 93.38,
+            "p99_ms": 93.38
+          },
+          "view": {
+            "max_ms": 1.034,
+            "p95_ms": 0.476,
+            "p99_ms": 0.679
+          }
+        },
+        "step_max_ms": 4.855,
+        "step_p95_ms": 1.182,
+        "step_p99_ms": 2.996,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1470,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 31,
+          "quarantined": 0
+        },
+        "udp_received_bytes": 292652,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2728543,
+        "udp_wire_received_bytes": 358327,
+        "udp_wire_sent_bytes": 2932782,
+        "unacked_snapshots": 0,
+        "uptime": 24.5244286666665,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 91.0,
+      "state_gap_p95_ms": 83.000000000002,
+      "state_received": 209,
+      "unique_replies_received": 9,
+      "case": "burst1s",
+      "impairment_seed": 20261017,
+      "injected_one_way_delay_ms": 50,
+      "injected_jitter_ms": 20,
+      "injected_datagram_loss_probability": 0.03,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 1,
+      "proxy": {
+        "received_datagrams": 2249,
+        "dropped_datagrams": 208,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 139,
+        "forwarded_datagrams": 2041,
+        "max_datagram_bytes": 1418,
+        "reordered_datagrams": 758
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    },
+    {
+      "checks": [
+        {
+          "id": "native_dtls_server",
+          "passed": true
+        },
+        {
+          "id": "encrypted_sessions_bound",
+          "passed": true
+        },
+        {
+          "id": "shared_room",
+          "passed": true
+        },
+        {
+          "id": "real_campaign_playing",
+          "passed": true
+        },
+        {
+          "id": "udp_moves_and_fires",
+          "passed": true
+        },
+        {
+          "id": "one_shot_action_confirmed",
+          "passed": true
+        },
+        {
+          "id": "burst_had_live_states_before_protection",
+          "passed": true
+        },
+        {
+          "id": "burst_returns_authority_without_expiry",
+          "passed": true
+        },
+        {
+          "id": "burst_restores_live_combat",
+          "passed": true
+        },
+        {
+          "id": "state_ack_loss_cannot_block_new_states",
+          "passed": true
+        },
+        {
+          "id": "reliable_pause",
+          "passed": true
+        },
+        {
+          "id": "mutual_resume",
+          "passed": true
+        },
+        {
+          "id": "disconnect_protects_team",
+          "passed": true
+        },
+        {
+          "id": "reconnect_retains_identity",
+          "passed": true
+        },
+        {
+          "id": "no_duplicate_economy",
+          "passed": true
+        },
+        {
+          "id": "critical_commands_succeeded",
+          "passed": true
+        }
+      ],
+      "combat_observation": {
+        "end_position": {
+          "__vector2": [
+            1009.33386230469,
+            597.67236328125
+          ]
+        },
+        "phase": "playing",
+        "received_cores": 100,
+        "shots": 20,
+        "simulated_seconds": 7.99999999999998,
+        "start_position": {
+          "__vector2": [
+            640.0,
+            597.67236328125
+          ]
+        },
+        "suspend_reason": "",
+        "suspended": false
+      },
+      "command_contexts": [
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": null,
+          "op": "queue",
+          "phase": null,
+          "server_epoch": null,
+          "server_reason": null,
+          "server_suspended": null
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 0,
+          "op": "ready",
+          "phase": "lobby",
+          "server_epoch": 0,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 3,
+          "op": "pause",
+          "phase": "playing",
+          "server_epoch": 3,
+          "server_reason": "",
+          "server_suspended": false
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 4,
+          "op": "resume",
+          "phase": "suspended",
+          "server_epoch": 4,
+          "server_reason": "menu",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "suspended",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": true
+        },
+        {
+          "client_epoch": 9,
+          "op": "leave",
+          "phase": "finished",
+          "server_epoch": 9,
+          "server_reason": "disconnect",
+          "server_suspended": false
+        }
+      ],
+      "command_results": [
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "queue",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "ready",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "pause",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "resume",
+          "seat": 1
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 0
+        },
+        {
+          "code": "",
+          "ok": true,
+          "op": "leave",
+          "seat": 1
+        }
+      ],
+      "errors": [],
+      "fresh_playable_frame_ratio": 0.713097713097713,
+      "input_round_trip_p95_ms": 175.0,
+      "native_engine": "4.7.2-stable (official)",
+      "passed": true,
+      "production_modified": false,
+      "reconnect_observation": {
+        "attempts": 0,
+        "authority_suspended": true,
+        "battle_bound": true,
+        "gate_flows": 3,
+        "gate_rejected": 0,
+        "last_error": "",
+        "phase": "suspended",
+        "reason": "disconnect",
+        "reconnected": true,
+        "same_identity": true,
+        "state": "room"
+      },
+      "reliable_requests": 9,
+      "scope": "Actual development cooperative sessions, native headless, real external UDP proxy impairment. Isolated state; no WAN/Android/render acceptance. State ages use one process monotonic clock; input RTT is sample-to-authority ACK and includes input batching and snapshot cadence.",
+      "server_health": {
+        "active_rooms": 0,
+        "battle_connections": 2,
+        "battle_encrypted": true,
+        "battle_port": 54776,
+        "buffered_bytes": 0,
+        "bytes_sent": 2685081,
+        "checkpoint_pending": false,
+        "combat_process_max_ms": 7.132,
+        "combat_stalls_over_100ms": 0,
+        "connection_close_reasons": {},
+        "connections": 2,
+        "enet_peers": [
+          {
+            "loss_raw": 15.0,
+            "rtt_ms": 10.0,
+            "rtt_variance": 4.0,
+            "throttle": 32.0
+          },
+          {
+            "loss_raw": 0.0,
+            "rtt_ms": 116.0,
+            "rtt_variance": 33.0,
+            "throttle": 32.0
+          }
+        ],
+        "largest_snapshot_window": 0,
+        "last_input_protections": [],
+        "lifetime_process": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 8.782,
+          "p950_ms_upper_bound": 2.625,
+          "p990_ms_upper_bound": 3.75,
+          "p999_ms_upper_bound": 6.25,
+          "samples": 3003
+        },
+        "lifetime_step": {
+          "bucket_width_ms": 0.125,
+          "max_ms": 4.478,
+          "p950_ms_upper_bound": 1.0,
+          "p990_ms_upper_bound": 2.125,
+          "p999_ms_upper_bound": 3.375,
+          "samples": 1543
+        },
+        "match_build_workers": 0,
+        "mutation_queue": 0,
+        "outdated_motion_samples_skipped": 579,
+        "persistence_errors": 0,
+        "process_max_ms": 8.782,
+        "process_p95_ms": 2.031,
+        "process_p99_ms": 4.855,
+        "protocol": 2,
+        "queued": 0,
+        "replication_p95_ms": 1.872,
+        "retiring_battle_connections": 0,
+        "rooms": 1,
+        "service": "IncenseDebt Online",
+        "snapshot_retries": 0,
+        "snapshots_coalesced": 0,
+        "stages": {
+          "checkpoint_capture": {
+            "max_ms": 1.526,
+            "p95_ms": 1.138,
+            "p99_ms": 1.289
+          },
+          "checkpoint_commit": {
+            "max_ms": 3.396,
+            "p95_ms": 2.927,
+            "p99_ms": 3.114
+          },
+          "encode": {
+            "max_ms": 4.324,
+            "p95_ms": 1.441,
+            "p99_ms": 3.043
+          },
+          "enqueue": {
+            "max_ms": 0.302,
+            "p95_ms": 0.066,
+            "p99_ms": 0.122
+          },
+          "match_construct_worker": {
+            "max_ms": 81.355,
+            "p95_ms": 81.355,
+            "p99_ms": 81.355
+          },
+          "view": {
+            "max_ms": 0.818,
+            "p95_ms": 0.426,
+            "p99_ms": 0.577
+          }
+        },
+        "step_max_ms": 2.319,
+        "step_p95_ms": 0.615,
+        "step_p99_ms": 1.266,
+        "stopping": false,
+        "storage_fault": false,
+        "tick": 1543,
+        "transport": 2,
+        "udp_edge_rejected": 0,
+        "udp_forwarding": {
+          "active_flows": 3,
+          "active_quarantine": 1,
+          "expired_established": 0,
+          "expired_handshakes": 0,
+          "expired_retired": 0,
+          "outbound_alerts": 1,
+          "output_backlog_max": 32,
+          "quarantined": 1
+        },
+        "udp_received_bytes": 279578,
+        "udp_rejected": 0,
+        "udp_sent_bytes": 2680198,
+        "udp_wire_received_bytes": 344061,
+        "udp_wire_sent_bytes": 2907604,
+        "unacked_snapshots": 0,
+        "uptime": 25.7333333333329,
+        "version": "0.6.0"
+      },
+      "state_age_p95_ms": 91.0,
+      "state_gap_p95_ms": 74.9999999999993,
+      "state_received": 174,
+      "unique_replies_received": 9,
+      "case": "burst3s",
+      "impairment_seed": 20261018,
+      "injected_one_way_delay_ms": 50,
+      "injected_jitter_ms": 20,
+      "injected_datagram_loss_probability": 0.03,
+      "injected_duplicate_probability": 0,
+      "injected_burst_seconds": 3,
+      "proxy": {
+        "received_datagrams": 2120,
+        "dropped_datagrams": 360,
+        "duplicated_datagrams": 0,
+        "burst_dropped_datagrams": 304,
+        "forwarded_datagrams": 1760,
+        "max_datagram_bytes": 1420,
+        "reordered_datagrams": 590
+      },
+      "process_exit_code": 0,
+      "native_execution_errors": 0
+    }
+  ],
+  "requested_combat_seconds": 8.0,
+  "native_process_parallelism": 3,
+  "compiled_client_pack": false,
+  "client_sha256": null,
+  "fixture_sha256": "2a2fc9035a23d86aca59e312af169cad28cca3833fd656469ae5ec1f83265afb"
+}

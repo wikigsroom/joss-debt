@@ -56,7 +56,14 @@ func run() -> void:
 	await command(c, "ready")
 	check("both_ready_start_real_campaign", await until(func(): return a.can_play() and c.can_play(), 7))
 	if not checks[-1].passed: finish(); return
-	check("clients_share_npcs_not_opponent_proxy", a.presentation[0].enemies.size() > 0 and a.presentation[0].enemies == c.presentation[1].enemies and a.presentation[0].enemies.all(func(enemy): return not enemy.get("online_actor", false)))
+	# UDP replicas can represent different authoritative ticks. Verify the shared
+	# identities and scene, rather than requiring simultaneous position samples.
+	var shared_npcs = server.rooms[a.room.room].match.world.enemies.map(func(enemy): return int(enemy.uid))
+	var own_npcs = a.presentation[0].enemies.map(func(enemy): return int(enemy.uid))
+	var teammate_npcs = c.presentation[1].enemies.map(func(enemy): return int(enemy.uid))
+	shared_npcs.sort(); own_npcs.sort(); teammate_npcs.sort()
+	check("clients_share_npcs_not_opponent_proxy", not own_npcs.is_empty() and own_npcs == shared_npcs and teammate_npcs == shared_npcs and a.presentation[0].enemies.all(func(enemy): return not enemy.get("online_actor", false)))
+	check("encrypted_enet_battle_connections", server.battle_connections.size() == 3 and clients.all(func(client): return client.battle_bound and client.battle.connected()))
 	check("both_client_geometry_matches_server", a.presentation[0].geometry.objects == c.presentation[1].geometry.objects)
 	var room = server.rooms[a.room.room]
 	var world = room.match.world
@@ -102,6 +109,8 @@ func run() -> void:
 	room.match.sync_phase()
 	server.broadcast(room)
 	check("growth_modal_snapshot", await until(func(): return a.room.phase == "draft" and c.room.phase == "draft"))
+	await create_timer(1.6).timeout
+	check("growth_menu_can_outlive_input_protection_window", room.match.phase == "draft" and not room.suspended)
 	var token = str(a.room.choice_token)
 	await command(a, "choose", {"index": 0, "choice_token": "old-token"})
 	check("stale_choice_rejected", errors[0].has("stale_choice"))
@@ -116,6 +125,13 @@ func run() -> void:
 	await command(a, "resume")
 	await command(c, "resume")
 	check("unfinished_growth_stays_modal_after_resume", await until(func(): return a.room.phase == "draft" and c.room.phase == "draft"))
+	for attempt in 16:
+		if room.match.phase != "draft": break
+		for client in [a, c]:
+			if client.room.get("choice_mode") == "choice" and not client.room.get("offers", []).is_empty():
+				await command(client, "choose", {"index": 0, "choice_token": client.room.choice_token})
+		await create_timer(.1).timeout
+	check("growth_return_clears_old_input_deadline", await until(func(): return a.can_play() and c.can_play()) and not room.suspended)
 	await command(a, "leave")
 	check("partner_leave_is_team_end", await until(func(): return c.room.phase == "finished" and c.room.reason == "partner_left" and c.room.winner == -1))
 	check("team_loss_counted_for_both_once", server.sessions[a.identity.session].coop_losses == 1 and server.sessions[c.identity.session].coop_losses == 1 and server.sessions[a.identity.session].wins == 0)
@@ -130,7 +146,7 @@ func run() -> void:
 	await command(c, "code", {"code": "004281", "loadout": loadout, "game_mode": "duel"})
 	check("same_code_wrong_mode_rejected", errors[2].has("room_mode_mismatch"))
 	await command(a, "code", {"code": "004281", "loadout": loadout, "game_mode": "coop"})
-	check("same_code_cooperative_partner_joins", await until(func(): return a.room.room == b.room.room and b.room.players.size() == 2))
+	check("same_code_cooperative_partner_joins", await until(func(): return not a.room.is_empty() and a.room.get("room") == b.room.get("room") and b.room.get("players", []).size() == 2))
 	await command(a, "advance_room", {"destination": 5})
 	check("no_client_teleport_command", errors[0].has("unknown_command"))
 	await command(a, "leave")

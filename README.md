@@ -5,22 +5,22 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[v0.5.0 正式联机版 / Stable online release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)** · [中英发布说明 / Release notes](docs/releases/v0.5.0.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
+**[v0.6.0 正式联机版 / Stable native-UDP release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0)** · [中英发布说明 / Release notes](docs/releases/v0.6.0.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
 
-[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/SHA256SUMS.txt)
+[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/SHA256SUMS.txt)
 
-**进入共灯，自动联机。** 官方服务已上线，默认两人合作，无需填地址。普通断线自动重试，恢复后双方确认再继续。继承控制指令补发、旧输入拒绝、快照停滞停战和持久身份保护，并用实际发布包完成公网恢复验证。见 [完整交付与限制](docs/incense-debt/44-public-online-release.md)。
+**进入共灯，自动联机。** v0.6.0 官方服务已切换到 Godot 原生 ENet＋DTLS：WSS 只做身份与一次性入战票据，战斗走 UDP 18779。普通断线自动重试，状态与输入分通道，恢复后双方确认再继续。见 [网络实现与验收](docs/incense-debt/47-native-udp-iteration.md)。
 
-**Open Co-Light to connect automatically.** The official service is live, cooperation is the default, and normal disconnects retry automatically. Both players confirm before resuming. Native public-WAN validation covers the shipping clients and Linux server; see [evidence and limits](docs/incense-debt/44-public-online-release.md). Physical Android acceptance and long-term capacity remain pending.
+**Open Co-Light to connect automatically.** v0.6.0 now uses native Godot ENet/DTLS for battle: WSS bootstraps identity and a one-use ticket, while UDP 18779 carries the simulation. Reconnect is bounded and requires both players to confirm. See the [native UDP implementation and acceptance](docs/incense-debt/47-native-udp-iteration.md). Physical Android acceptance remains intentionally unrun.
 
-**2026-10-11 联机重新选型：** 复查确认当前 WSS 的状态确认窗口、全量快照与表现同步仍存在卡顿风险，旧“通过”记录主要证明连接与恢复。新方案选择原生 ENet＋DTLS 战斗、固定 tick 预测和远端插值；已完成 UDP 弱网可行性及快照开销测量，**尚未迁移生产服务或发布新客户端**。见[完整研究、方案比较与验收门槛](docs/incense-debt/45-network-reselection.md)。
+**2026-10-12 原生联机正式版：** 0.6.0 已完成隔离候选、正式激活前检查与 Windows/Linux 原生服务包构建。战斗走 Godot ENet＋DTLS，WSS 负责身份与一次性入战票据；固定 tick、状态/输入分通道、输入冗余、预测、丢包保护、重绑和旧公网 tuple 隔离已经落地。开发计划、实现说明与机器证据均随仓库保存。
 
-**2026-10-11 networking review:** Current WSS snapshot gating, full-world replication and presentation still risk stalls; earlier passes mainly establish connection/recovery correctness. The selected native battle architecture is ENet/DTLS with fixed-tick prediction and remote interpolation. Isolated UDP impairment and payload measurements are complete; **production and shipping clients have not migrated**. See the [comparison, evidence and migration gates](docs/incense-debt/45-network-reselection.md).
+**2026-10-12 native online release:** 0.6.0 completed isolated staging, activation checks and native Windows/Linux server builds. Godot native ENet/DTLS carries battle traffic; WSS bootstraps identity and a one-use ticket. Fixed ticks, separate state/input channels, redundancy, prediction, loss protection, rebind and retired tuple quarantine are recorded in the repository evidence.
 
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **0.5.0 正式联机版 / Stable online release** · 十一层离线 + 共灯合作 + 可选对灯 |
+| 版本 / Version | **0.6.0 原生 UDP 正式联机版 / Stable native-UDP online release** |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
@@ -57,6 +57,10 @@ All six heroes, 32 weapons and 18 skills support personal builds. Offline saves 
 服务器 60 Hz、快照最多 20 Hz；90 秒断线恢复窗口，普通断线自动退避重试，恢复后双方确认。完整检查点保存共享世界与个人成长，崩溃可能回退到最近提交。当前共享主机限制两间活跃房间／16 条连接，一分钟公网负载不构成长时保证。[服务端说明](server/README.md) · [隐私政策 v1.6](https://xhz.sidcloud.cn/privacy-policy)。
 
 The native server simulates at 60 Hz with up to 20 Hz snapshots. Reconnection preserves the latest committed world for the normal 90-second grace; both players resume explicitly. The shared host currently allows two active rooms; a one-minute WAN measurement is not a capacity guarantee.
+
+0.6.0 正式包的公网验收使用 4 个真实 Windows headless Session／2 个合作房间：连续 62.665 秒，tick 59.146 Hz、状态年龄 P95 42 ms、ping P95 133 ms、p99 模拟步长 7.125 ms、p999 23.5 ms、无 >100 ms 战斗阻塞；最终包验收期间没有触发 transport rebind，历史隔离重绑证据与应用故障回归仍保留。完整数字和限制见[机器可读证据](docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json)。
+
+The 0.6.0 release's final four-session/two-room native WAN run lasts 62.665 seconds at 59.146 Hz, state age P95 42 ms, ping P95 133 ms, p99 simulation step 7.125 ms and p999 23.5 ms with no >100 ms combat stall. The final run did not trigger a rebind; earlier isolated rebind evidence and application fault coverage remain recorded. See the [machine-readable evidence](docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json) for scope and limits.
 
 **0.5.0 实際包体验收：** 公网合作 29 项、切磋 32 项、离线键盘 107 项；联机故障 65 项、真实线上重启恢复 10 项。Windows／APK 2172 项跨包检查、90 份编译模块一致，分别与实际 Windows／Linux 服务包的 37 份共享模块一致。两房四个正式 Session 公网运行 60.399 秒、4542 快照、59.89 Hz；RTT p95 358 ms。Android 为 API 28+ 正式签名非调试包，旧签名迁移链已验证，实体手机尚待验收。
 

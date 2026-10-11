@@ -45,9 +45,11 @@ func advance(actor, frame: Dictionary, delta: float) -> void:
 		state.buffer_dash = 0.0
 	if state.dash_left > 0:
 		state.dash_left = maxf(0, float(state.dash_left) - delta)
-		state.pos = actor.geometry.slide(state.pos, state.dash_dir * ((160 + 20 * actor.stack("r34")) / .2) * delta, 12)
+		state.pos = actor.geometry.slide(state.pos, state.dash_dir * ((160 + 20 * actor.stack("r34") + 20 * actor.talent("t_wind_1b")) / .2) * delta, 12)
 	elif not locked:
-		var speed = float(actor.db.row("characters", actor.run.character).speed) * actor.stat_multiplier("move_speed") * (1 + .06 * actor.stack("r33"))
+		var speed = float(actor.db.row("characters", actor.run.character).speed) * actor.stat_multiplier("move_speed") * (1 + .06 * actor.stack("r33") + .05 * actor.talent("t_wind_1a"))
+		if actor.room_flags.get("goldbody_slow", false): speed *= .9
+		if state.time < float(actor.room_flags.get("entry_slow_until", 0)): speed *= .88
 		state.pos = actor.geometry.slide(state.pos, move * speed * delta, 12)
 	if state.push_left > 0:
 		var fraction = 1.0 - pow(maxf(0, float(state.push_left) - delta) / float(state.push_left), 2)
@@ -63,6 +65,9 @@ func tick(actor, frame: Dictionary, delta: float, playing: bool) -> void:
 	correction *= exp(-20 * delta)
 	visual_position = actor.geometry.constrain_floor(Vector2(state.pos) + correction, 12)
 	actor.player.pos = visual_position
+	actor.player.dash_left = state.dash_left
+	actor.player.dash_dir = state.dash_dir
+	actor.player.dash_cd = state.dash_cd
 	if playing:
 		actor.player.move = Vector2(frame.get("move", Vector2.ZERO))
 		var aim = Vector2(frame.get("aim", actor.player.aim))

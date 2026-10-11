@@ -178,15 +178,15 @@ func push_event(kind: String, data: Dictionary = {}) -> void:
 	events.append(entry)
 	if events.size() > 160: events.pop_front()
 
-func actor_view(actor) -> Dictionary:
-	return {"run": actor.run.duplicate(true), "player": actor.player.duplicate(true), "time": actor.time,
-		"bullets": actor.bullets.duplicate(true), "zones": actor.zones.duplicate(true),
-		"enemies": actor.enemies.duplicate(true), "chains": actor.chains.duplicate(true),
-		"delayed": actor.delayed.duplicate(true), "room_flags": actor.room_flags.duplicate(true), "stats": actor.stats.duplicate(true)}
+func actor_view(actor, replication: bool = false) -> Dictionary:
+	return {"run": actor.run.duplicate(not replication), "player": actor.player.duplicate(true), "time": actor.time,
+		"bullets": actor.bullets.duplicate(not replication), "zones": actor.zones.duplicate(not replication),
+		"enemies": actor.enemies.duplicate(not replication), "chains": actor.chains.duplicate(not replication),
+		"delayed": actor.delayed.duplicate(not replication), "room_flags": actor.room_flags.duplicate(not replication), "stats": actor.stats.duplicate(not replication)}
 
-func view(seat: int, since_event: int = 0) -> Dictionary:
+func view(seat: int, since_event: int = 0, replication: bool = false, _shared = null) -> Dictionary:
 	var views: Array = []
-	for actor in actors: views.append(actor_view(actor))
+	for actor in actors: views.append(actor_view(actor, replication))
 	return {"id": id, "phase": phase, "round": round_index, "tick": tick_index, "remaining": remaining, "draft_remaining": draft_remaining,
 		"countdown": countdown, "score": score.duplicate(), "round_winner": round_winner,
 		"winner": winner, "reason": reason, "arena": arena, "players": loadouts,

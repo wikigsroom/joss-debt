@@ -9,6 +9,18 @@ func identical(a, b) -> bool:
 func read_expected() -> void:
 	expected = Protocol.Store.decode(JSON.parse_string(FileAccess.get_file_as_string(folder.path_join("expected.json"))))
 
+func replica_complete(client, sequence: int) -> bool:
+	# Core and entity datagrams are intentionally independent. Seeing the pause
+	# core is not proof that that core's NPC/pickup inventories arrived already.
+	var stream = client.stream_codec
+	if not stream.scene_ready: return false
+	for group in stream.schemas:
+		var inventory: Dictionary = stream.inventories.get(group, {})
+		if int(inventory.get("seq", 0)) < sequence: return false
+		for uid in inventory.get("alive", []):
+			if int(stream.entity_sequences.get(group, {}).get(uid, 0)) < sequence: return false
+	return true
+
 func run() -> void:
 	DirAccess.make_dir_recursive_absolute(folder)
 	for i in 2:
@@ -39,6 +51,8 @@ func run() -> void:
 			await process_frame
 		var receipt = await command(a, "pause")
 		check(await until(func(): return a.room.get("phase") == "suspended" and b.room.get("phase") == "suspended"), "cooperative_durable_pause")
+		var paused_sequence = a.state_sequence
+		check(await until(func(): return replica_complete(a, paused_sequence)), "cooperative_paused_scene_datagrams_received")
 		expected = {"match": a.room.id, "room": a.room.room, "actors": a.room.actors.duplicate(true), "scene": a.room.scene.duplicate(true),
 			"builds": a.room.builds.duplicate(true), "phase": a.room.get("resume_phase"), "receipt": receipt, "input_floor": a.input_serial}
 		var file = FileAccess.open(folder.path_join("expected.json"), FileAccess.WRITE)
@@ -48,6 +62,8 @@ func run() -> void:
 	elif stage == "restore":
 		read_expected()
 		check(await until(func(): return a.room.get("phase") == "suspended" and b.room.get("phase") == "suspended"), "cooperative_restart_suspended")
+		var restored_sequence = a.state_sequence
+		check(await until(func(): return replica_complete(a, restored_sequence)), "cooperative_restored_scene_datagrams_received")
 		if a.presentation.size() != 2: finish(); return
 		check(a.room.id == expected.match and a.room.room == expected.room and a.room.game_mode == "coop", "cooperative_same_room_and_mode")
 		var diagnostic = FileAccess.open(folder.path_join("restore-observed.json"), FileAccess.WRITE)

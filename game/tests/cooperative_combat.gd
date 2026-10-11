@@ -133,8 +133,16 @@ func rooms_and_growth() -> void:
 		expect("one_player_cannot_teleport_team", world.run.room == original)
 		world.contexts[1].player.pos = world.geometry.nearest_free(door.pos + Vector2(25, 0), 12)
 		world.check_doors()
+		expect("standing_at_door_does_not_auto_teleport", world.run.room == original)
+		world.contexts[0].player.move = world.direction_vector(door.direction)
+		world.check_doors()
 		expect("same_physical_door_moves_both", world.contexts.all(func(context): return context.run.room == door.destination))
 		expect("both_arrive_inside_authored_walls", world.contexts.all(func(context): return world.geometry.contains_floor(context.player.pos, 12)))
+		var arrived = int(world.run.room)
+		for index in 2: world.contexts[index].mode = "clear"
+		world.select_player(0); world.mode = "clear"; world.flush()
+		for tick in 30: world.check_doors()
+		expect("arrival_cannot_bounce_back_without_new_input", world.run.room == arrived)
 	encounter = fixture("reward")
 	world = encounter.world
 	expect("separate_reward_offers", encounter.phase == "draft" and world.contexts.all(func(context): return context.choices.size() == 3))
@@ -183,6 +191,7 @@ func rooms_and_growth() -> void:
 	world.player.pos = world.geometry.nearest_free(stair, 12)
 	world.flush()
 	world.contexts[1].player.pos = world.geometry.nearest_free(stair + Vector2(24, 0), 12)
+	world.contexts[0].player.move = Vector2.UP
 	world.check_doors()
 	encounter.sync_phase()
 	expect("north_exit_enters_second_floor", world.contexts.all(func(context): return context.run.floor == 2))

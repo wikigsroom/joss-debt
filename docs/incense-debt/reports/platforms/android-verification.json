@@ -1,11 +1,11 @@
 {
   "passed": true,
-  "apk_sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+  "apk_sha256": "bd0be6f2ca52540c31123469169fcf741796a8082da38283b422ae6c75a62bc8",
   "signature_verified": true,
-  "signature_diagnostics": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Godot, OU=Godot Engine, O=Stichting Godot, C=NL\nSigner #1 certificate SHA-256 digest: 66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c\nSigner #1 certificate SHA-1 digest: 471e316bc0d0d60944e2fd6dbcc287e38ca26616\nSigner #1 certificate MD5 digest: 765aa8fdd4aee6bf8a7339416eba0f79\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 2048\nSigner #1 public key SHA-256 digest: d3a09114989d1736b78c9601ff98a0fd8d7487b76279ad66bd7fa183d494cfeb\nSigner #1 public key SHA-1 digest: 7454e32d6b910ab5991016e336be65a0b7d536a3\nSigner #1 public key MD5 digest: 884f259a2e3ffd256b2427eb8f64d4cd",
-  "package": "package: name='org.incensedebt.game' versionCode='7' versionName='0.4.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+  "signature_diagnostics": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): false\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Incense Debt, OU=Game Release, O=Wu Guoli\nSigner #1 certificate SHA-256 digest: 6d5f9c73c947f025641d0663f7699f78db6c089c070403e4558afee899ca69a3\nSigner #1 certificate SHA-1 digest: 1f56caa9e69aa8965e2f82d1003cab6bb14bb042\nSigner #1 certificate MD5 digest: debbd305ebcf88944fc7c5ef365351b1\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 3072\nSigner #1 public key SHA-256 digest: 379b9e22959f872c8793a5d3f93fd1b2aec7712100ee1389c2f1b6944088d1fe\nSigner #1 public key SHA-1 digest: 91a353e5d69cc614e501e21fb2c510dc04c1e8da\nSigner #1 public key MD5 digest: 80a5b8f716341647e5b036973afa8d23",
+  "package": "package: name='org.incensedebt.game' versionCode='10' versionName='0.6.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
   "platform_fields": [
-    "sdkVersion:'24'",
+    "sdkVersion:'28'",
     "targetSdkVersion:'36'",
     "supports-screens: 'small' 'normal' 'large' 'xlarge'",
     "native-code: 'arm64-v8a'"
@@ -39,10 +39,11 @@
     "lib/arm64-v8a/libgodot_android.so"
   ],
   "unexpected_sensitive_files": [],
-  "adb_devices": "List of devices attached",
+  "adb_devices": "not requested",
   "physical_device_tested": false,
   "virtualization": "none",
   "version_matches_source": true,
+  "device_discovery_skipped": true,
   "music_configuration_matches_source": true,
   "music_themes": 9,
   "music_stems_expected": 25,
@@ -3962,7 +3963,7 @@
   },
   "new_font_and_icon_license_bytes_match": true,
   "artifact": "build/android/IncenseDebt.apk",
-  "build_variant": "debug",
+  "build_variant": "release",
   "display_checks": {
     "edge_to_edge_in_actual_apk": true,
     "immersive_in_actual_apk": true,
@@ -3974,7 +3975,7 @@
     "version_code_matches": true
   },
   "exported_project_display_fields": {
-    "application/config/version": "0.4.0",
+    "application/config/version": "0.6.0",
     "display/window/handheld/orientation": 4,
     "display/window/stretch/aspect.mobile": "expand"
   },
@@ -3983,7 +3984,7 @@
     "--edge_to_edge"
   ],
   "signer_certificate_sha256": [
-    "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c"
+    "6d5f9c73c947f025641d0663f7699f78db6c089c070403e4558afee899ca69a3"
   ],
   "upgrade_signer_matches_previous": true
 }

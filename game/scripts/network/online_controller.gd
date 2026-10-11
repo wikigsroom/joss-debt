@@ -4,6 +4,10 @@ const Screens = preload("res://scripts/ui/online_ui.gd")
 const Shortcuts = preload("res://scripts/core/choice_shortcuts.gd")
 const Motion = preload("res://scripts/ui/weapon_motion.gd")
 const Prediction = preload("res://scripts/network/motion_prediction.gd")
+const Interpolation = preload("res://scripts/network/remote_interpolation.gd")
+const AttackPrediction = preload("res://scripts/network/attack_prediction.gd")
+var attack_prediction = AttackPrediction.new()
+var interpolation = Interpolation.new()
 var app
 var session
 var service_endpoint = Session.OFFICIAL_ENDPOINT
@@ -51,6 +55,8 @@ func initialize(host, folder: String = "user://online-client") -> void:
 	session.changed.connect(connection_changed)
 	session.state_received.connect(receive_state)
 	session.events_received.connect(receive_events)
+	session.entity_state_received.connect(receive_entity_state)
+	session.input_sampled.connect(sample_local_input)
 	session.command_completed.connect(func(operation, succeeded, _code):
 		if operation == "pause" and not succeeded: pause_pending = false; refresh())
 	session.problem.connect(func(code):
@@ -101,6 +107,7 @@ func close() -> void:
 	online_hud = null
 	render_actors.clear()
 	prediction.clear()
+	attack_prediction.clear()
 	opponent_ready = false
 	bound_snapshot = -1
 	last_round = -1
@@ -275,6 +282,8 @@ func receive_state(value: Dictionary) -> void:
 			app.renderer.online_motions.clear()
 			app.renderer.online_death_clocks.clear()
 			prediction.clear()
+			attack_prediction.clear()
+			interpolation.clear()
 			opponent_ready = false
 			opponent_elapsed = 1.0
 		bind_worlds()
@@ -295,17 +304,18 @@ func bind_worlds() -> void:
 	if bound_snapshot != session.snapshot_serial:
 		bound_snapshot = session.snapshot_serial
 		prediction.observe(app.world, own.player, session.input_history, session.can_play())
-		opponent_from = opponent_visual if opponent_ready else Vector2(other.player.pos)
-		opponent_to = Vector2(other.player.pos)
-		if opponent_from.distance_to(opponent_to) > 140: opponent_from = opponent_to
-		opponent_elapsed = 0
+		attack_prediction.observe(app.world, own.player, session.input_history)
+		interpolation.observe_clock(float(own.time), session.now())
+		var remote_player: Dictionary = other.player.duplicate(false)
+		remote_player.uid = 1001 + 1 - seat
+		interpolation.observe("opponent", [remote_player], float(other.time), session.state_sequence)
 		opponent_ready = true
 	if cooperative:
-		app.world.bullets = session.room.scene.bullets.duplicate(true)
-		app.world.zones = session.room.scene.zones.duplicate(true)
+		app.world.bullets = session.room.scene.bullets
+		app.world.zones = session.room.scene.zones
 		return
-	app.world.bullets = own.bullets.duplicate(true)
-	app.world.zones = own.zones.duplicate(true)
+	app.world.bullets = own.bullets.duplicate(false)
+	app.world.zones = own.zones.duplicate(false)
 	for bullet in other.bullets:
 		var view = bullet.duplicate(true)
 		view.friendly = false
@@ -323,12 +333,55 @@ func receive_events(events: Array) -> void:
 	var other: Array = []
 	for event in events:
 		if event.get("event_type") != "combat": continue
-		if int(event.seat) == seat: own.append(event)
+		if int(event.seat) == seat:
+			if attack_prediction.accept_event(event): own.append(event)
 		else: other.append(event)
 	app.renderer.accept(own)
 	app.renderer.accept_opponent(other, 1001 + 1 - seat)
 	app.audio.accept(own + other)
 	app.haptics.accept(own, app.adapter.last_device)
+
+func receive_entity_state(group: String, rows: Array, server_time: float, sequence: int, updated: Array) -> void:
+	if not enabled: return
+	interpolation.observe(group, rows, server_time, sequence, updated)
+	if group.ends_with("bullets") and (group == "scene/bullets" or group == "actors/%d/bullets" % int(session.room.get("seat", 0))):
+		attack_prediction.reconcile_bullets(rows, int(session.room.get("seat", 0)))
+
+func sample_local_input(frame: Dictionary, delta: float) -> void:
+	if not enabled or session.presentation.size() != 2: return
+	prediction.tick(app.world, frame, delta, true)
+	var events = attack_prediction.tick(app.world, frame, delta)
+	if not events.is_empty():
+		app.renderer.accept(events)
+		app.audio.accept(events)
+		app.haptics.accept(events, app.adapter.last_device)
+
+func interpolate_entities(delta: float) -> void:
+	if session.presentation.size() != 2: return
+	interpolation.advance(delta, session.can_play())
+	var seat = int(session.room.seat)
+	var opponent = interpolation.sample("opponent")
+	if not opponent.is_empty():
+		opponent_visual = session.presentation[1 - seat].geometry.constrain_floor(opponent[0].pos, 12)
+		session.presentation[1 - seat].player.pos = opponent_visual
+		if session.room.get("game_mode") != "coop" and not app.world.enemies.is_empty(): app.world.enemies[0].pos = opponent_visual
+	if session.room.get("game_mode") == "coop":
+		for group in ["enemies", "bullets", "pickups", "zones", "delayed"]:
+			var key = "scene/" + group
+			if not interpolation.current.has(key): continue
+			var rows = interpolation.sample(key, group == "enemies")
+			for entity in rows:
+				if entity.get("pos") is Vector2: entity.pos = app.world.geometry.constrain_floor(entity.pos, float(entity.get("radius", 5)))
+			app.world.set(group, rows)
+	else:
+		var bullets: Array = []
+		for index in 2:
+			var rows = interpolation.sample("actors/%d/bullets" % index)
+			for entity in rows:
+				if index != seat: entity.friendly = false
+				bullets.append(entity)
+		app.world.bullets = bullets
+	app.world.bullets = attack_prediction.merge(app.world.bullets, app.world)
 
 func enter_battle() -> void:
 	if session.presentation.size() != 2: return
@@ -360,17 +413,12 @@ func physics(delta: float) -> void:
 			frame.aim = app.aim_assist.apply(frame.aim, app.world.player.pos, app.world.enemies, app.world.geometry, app.world.time, mode, float(weapon.range), session.event_match, weapon.mode)
 		if app.world.player.get("downed", false): frame = Session.Protocol.empty_input()
 		session.submit_input(frame)
-		prediction.tick(app.world, frame, delta, session.can_play() and not app.world.player.get("downed", false))
+		if not session.can_play(): prediction.tick(app.world, frame, delta, false)
 	else:
 		app.adapter.set_phase("result", false)
 		session.clear_input()
 		if not session.presentation.is_empty(): prediction.tick(app.world, {}, delta, false)
-	if session.presentation.size() == 2:
-		opponent_elapsed = minf(1, opponent_elapsed + delta / (1.0 / Session.Protocol.SNAPSHOT_RATE))
-		opponent_visual = opponent_from.lerp(opponent_to, opponent_elapsed)
-		var seat = int(session.room.seat)
-		session.presentation[1 - seat].player.pos = opponent_visual
-		if session.room.get("game_mode") != "coop" and not app.world.enemies.is_empty(): app.world.enemies[0].pos = opponent_visual
+	interpolate_entities(delta)
 	update_hud()
 	app.update_hud()
 

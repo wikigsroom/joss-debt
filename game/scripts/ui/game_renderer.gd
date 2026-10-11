@@ -566,7 +566,7 @@ func draw_enemy(enemy: Dictionary) -> void:
 	var size = float(enemy.get("render_size", 256.0 if enemy.boss else (146.0 if enemy.elite else 110.0)))
 	var bob = sin(clock * 4 + enemy.uid) * 2
 	var kind = "boss" if enemy.boss else "enemy"
-	var pose = CreatureAction.sample(enemy, world.time, world.player.pos)
+	var pose = CreatureAction.sample(enemy, float(enemy.get("_presentation_time", world.time)), world.player.pos)
 	var frozen = actor_freeze.get(enemy.uid, {})
 	var drawn_position = enemy.pos
 	if hitstop and not reduce_motion and not frozen.is_empty() and clock < frozen.until:

@@ -1,20 +1,20 @@
 # 香火债原生独立服务端 / Native dedicated server
 
-**0.5.0 正式联机发布**，提供 Linux x64 与 Windows x64。官方服务已部署为 `wss://xhz-server.sidcloud.cn/play`；客户端进入共灯自动连接，不展示／编辑地址。默认双人合作十一层、共享 NPC／钱包／掉落、各自成长、救援与真实门口推进；可选对灯 PvP 使用隔离队列。
+**0.6.0 原生 UDP 正式联机发布**，提供 Linux x64 与 Windows x64。官方稳定服务为 `wss://xhz-server.sidcloud.cn/play` 加 UDP `xhz-server.sidcloud.cn:18779`；客户端进入共灯自动完成 WSS 身份交换，再用 ENet＋DTLS 承载战斗，不展示／编辑地址。默认双人合作十一层、共享 NPC／钱包／掉落、各自成长、救援与真实门口推进；可选对灯 PvP 使用隔离队列。
 
-Official 0.5.0 clients auto-connect to the fixed public WSS service. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
+Official 0.6.0 clients bootstrap through the fixed public WSS service and carry battle traffic over encrypted native ENet/UDP. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
 
-**2026-10-11 重新选型：** 当前生产服务仍为 WSS；最新审查选择 ENet＋DTLS 承载原生战斗，保留 HTTPS／WSS 的发现与匹配。已归档原生 UDP 弱网探针和快照开销测量；尚未修改线上传输、开放 UDP 或升级玩家存档。[完整方案与部署／性能验收](../docs/incense-debt/45-network-reselection.md)。
+**2026-10-12 原生 UDP 已激活：** 0.6.0 使用 HTTPS／WSS 做身份与一次性 battle ticket，使用 UDP 18779 上的 Godot ENet＋DTLS 承载战斗。候选已完成隔离验收后切换到 `/play`，激活摘要、健康与 SHA 见[开发计划](../docs/incense-debt/46-network-development-plan.md)、[实现说明](../docs/incense-debt/47-native-udp-iteration.md)与本轮[验收证据](../docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json)。
 
-**Networking selection:** ENet/DTLS is selected for native battle, with HTTPS/WSS bootstrap. Native transport and payload probes are archived; production remains WSS and no UDP deployment or player-state migration has occurred. See the [research and migration plan](../docs/incense-debt/45-network-reselection.md).
+**Native UDP is active:** 0.6.0 uses HTTPS/WSS for identity and a one-use battle ticket, then Godot ENet/DTLS on UDP 18779 for battle. The isolated candidate passed its gates and was promoted to `/play`; see the [plan](../docs/incense-debt/46-network-development-plan.md), [implementation note](../docs/incense-debt/47-native-udp-iteration.md) and [acceptance evidence](../docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json).
 
 ## 源码归档 / Source archival
 
-[v0.5.0 独立源码归档](archives/v0.5.0/README.md)保存与正式服务端一致的 37 个共享脚本、12 份数据、可直接运行的 Godot 工程和公开部署文件；[归档清单](archives/v0.5.0/manifest.json)逐项绑定 SHA-256、原始 tag、正式包与下载地址。后续开发继续使用 `game/scripts/` 与 `game/data/`，发布新版本时新增归档目录。运行 `python tools/runtime/verify_server_archive.py` 可只读核验。
+[v0.6.0 独立源码归档](archives/v0.6.0/README.md)保存与正式服务端一致的共享脚本、12 份数据、可直接运行的 Godot 工程和公开部署文件；[归档清单](archives/v0.6.0/manifest.json)逐项绑定 SHA-256、原始 tag 与正式包摘要。0.5.0 归档继续保持不变；后续开发继续使用 `game/scripts/` 与 `game/data/`。运行 `python tools/runtime/verify_server_archive.py --version 0.6.0` 可只读核验。
 
-The [standalone v0.5.0 source archive](archives/v0.5.0/README.md) preserves the exact accepted shared source bytes, portable project and public deployment files. Its manifest pins provenance and published binary hashes. Active development remains in the shared game source; future releases receive new archives. Verify from the repository root with `python tools/runtime/verify_server_archive.py`.
+The [standalone v0.6.0 source archive](archives/v0.6.0/README.md) preserves the exact accepted shared source bytes, portable project and public deployment files. Its manifest pins provenance and native server hashes. The immutable v0.5.0 archive remains available; future releases receive new archives. Verify from the repository root with `python tools/runtime/verify_server_archive.py --version 0.6.0`.
 
-Git 排除真实服务器配置、凭据、TLS 私钥、玩家 token／检查点、日志和缓存。运行包保留在 [正式 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)；玩家状态需要正常停机后做独立的加密备份，源码归档不包含在线存档。
+Git 排除真实服务器配置、凭据、TLS 私钥、玩家 token／检查点、日志和缓存。运行包保留在 [正式 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0)；玩家状态需要正常停机后做独立的加密备份，源码归档不包含在线存档。
 
 Private configuration, credentials, keys, player state, logs and caches are excluded from Git. Native packages are archived in the stable Release. Back up live state separately and privately after graceful shutdown.
 
@@ -22,7 +22,7 @@ Private configuration, credentials, keys, player state, logs and caches are excl
 
 The [archive verification](../docs/incense-debt/reports/server-archive-2026-10-11.json) records native import, two isolated startup/health/tick/graceful-stop cycles, committed empty state and 17 private-file ignore checks. It does not exercise or modify live player sessions.
 
-继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 1；旧传输版本明确拒绝。历史 0.4.0 检查点升级已有原生验证，旧 Release 保留原样。
+继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 2；战斗状态使用 ENet channel 0 的可靠有序快照，输入使用 channel 1 的不可靠冗余帧，控制与重绑使用可靠控制通道；DTLS 证书轮换仅在服务空闲时应用。旧传输版本明确拒绝，WSS 断线与 UDP 断线相互解耦，20 秒 battle bind/silence deadline 防止假在线。
 
 ## 原生运行 / Native execution
 
@@ -49,6 +49,9 @@ All tools run natively; no Docker, WSL, VM or emulator. Official clients have a 
 | --- | --- | --- |
 | bind | 0.0.0.0（源码）；发布模板为 127.0.0.1 | 监听地址 / Bind |
 | port | 18777 | 游戏；健康端口为 +1 / Game, health +1 |
+| battle_bind | 127.0.0.1（源码）；官方为 0.0.0.0 | ENet＋DTLS battle bind |
+| battle_port | 18779 | 加密 UDP battle port |
+| battle_certificate / battle_private_key | 空（源码）；官方 TLS lineage | DTLS certificate and key paths |
 | data_directory / --data-dir | user://online-server | 持久目录 / Persistent state |
 | max_rooms | 2 | 活跃房间，不计结果页 / Active rooms |
 | max_connections | 16 | 连接上限，不代表 16 人战斗 / Connection cap |
@@ -58,7 +61,7 @@ All tools run natively; no Docker, WSL, VM or emulator. Official clients have a 
 
 ## 官方 Linux 部署 / Official Linux deployment
 
-Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.5.0/`，current 符号链接指向当前版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
+Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.6.0/`，current 符号链接指向当前版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
 
 `linux/incense-debt.service` 使用独立用户与系统只读保护、内存软限制 192 MiB／硬限制 256 MiB、**仅本服务禁止 swap**、退出后 3 秒自动重启。`linux/stop.sh` 写入本服务的停止标记，等待最后检查点与正常退出。
 

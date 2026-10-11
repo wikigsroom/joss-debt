@@ -1,6 +1,6 @@
 extends SceneTree
-## Native WebSocket regressions. Drops here are deliberate application faults,
-## not a claim that TCP delivers unordered or lossy application frames.
+## Native WSS bootstrap and ENet battle regressions. These faults are deliberate
+## application rejection/blackholes; actual UDP impairment is tested separately.
 const Server = preload("res://scripts/network/server_runtime.gd")
 const Session = preload("res://scripts/network/online_session.gd")
 const Protocol = preload("res://scripts/network/protocol.gd")
@@ -29,7 +29,13 @@ class FaultClient:
 			welcomed += 1; welcome_ids.append(str(message.session))
 			if withhold_welcome: return
 		super.receive(message)
+	func accept_state(message: Dictionary) -> void:
+		if not withhold_states: super.accept_state(message)
 	func deliver(message: Dictionary) -> bool:
+		# Preserve deliberate invalid envelope fields for context validation. The
+		# normal compact input transport cannot express a foreign room field.
+		if message.get("op") == "input" and message.get("room") != room.get("room"):
+			return battle.send(battle.remote, Protocol.packet(message), battle.CHANNEL_INPUT, false)
 		return super.send(message)
 
 var server
@@ -76,17 +82,27 @@ func resume_team() -> bool:
 	return await until(func(): return a.can_play() and b.can_play(), 7)
 
 func next_input() -> Dictionary:
-	sequence += 1
+	sequence = maxi(sequence, a.input_serial) + 1
 	a.input_serial = sequence
 	var frame = Protocol.empty_input()
 	frame.seq = sequence; frame.move = Vector2.RIGHT
 	return a.input_message(frame)
 
 func reject_input(id: String, packet: Dictionary) -> void:
+	var withholding = a.withhold_inputs
+	a.withhold_inputs = true
+	# Drain valid samples already in flight before measuring a rejected packet.
+	await create_timer(.12).timeout
 	var previous = int(room.inputs[0].seq)
 	a.deliver(packet)
 	await create_timer(.12).timeout
 	check(id, int(room.inputs[0].seq) == previous)
+	# A separate valid zero-motion heartbeat keeps this context-validation case
+	# from accidentally becoming a real uplink outage/protection test.
+	var heartbeat = next_input(); heartbeat.frame.move = Vector2.ZERO
+	a.deliver(heartbeat)
+	await until(func(): return int(room.inputs[0].seq) == int(heartbeat.frame.seq))
+	a.withhold_inputs = withholding
 
 func block_preferences(client, blocked: bool) -> void:
 	for slot in 2:
@@ -126,16 +142,15 @@ func run() -> void:
 	# These tests isolate transport from death RNG; actual damage/AI are covered
 	# by the combat and packaged UI suites, not by fabricated network snapshots.
 	for context in room.match.world.contexts: context.player.invulnerable = 1000.0
-	a.withhold_inputs = true; b.withhold_inputs = true
+	a.withhold_inputs = true; b.withhold_inputs = false
 	await create_timer(.3).timeout
 
 	var valid = next_input()
 	a.deliver(valid)
 	check("scoped_fresh_input_accepted", await until(func(): return int(room.inputs[0].seq) == int(valid.frame.seq)))
 	await create_timer(.4).timeout
-	var position = Vector2(room.match.world.contexts[0].player.pos)
-	await create_timer(.15).timeout
-	check("missing_inputs_stop_movement_after_250ms", position.distance_to(room.match.world.contexts[0].player.pos) < .1)
+	await create_timer(.35).timeout
+	check("missing_inputs_stop_movement_after_700ms", room.inputs[0].frame.move == Vector2.ZERO and room.match.world.contexts[0].player.move == Vector2.ZERO)
 	var crossing = next_input()
 	a.deliver(crossing)
 	await until(func(): return int(room.inputs[0].seq) == int(crossing.frame.seq))
@@ -144,20 +159,21 @@ func run() -> void:
 	check("already_received_input_stops_after_scene_transition", room.inputs[0].frame.move == Vector2.ZERO and room.match.world.contexts[0].player.move == Vector2.ZERO)
 	var packet = next_input(); packet.room = "another-room"
 	await reject_input("input_wrong_room_rejected", packet)
-	packet = next_input(); packet.match = "previous-match"
+	packet = next_input(); packet.match = "00112233445566778899aabbccddeeff"
 	await reject_input("input_wrong_match_rejected", packet)
 	packet = next_input(); packet.epoch -= 1
 	await reject_input("input_previous_pause_epoch_rejected", packet)
 	packet = next_input(); packet.scene -= 1
 	await reject_input("input_previous_scene_rejected", packet)
-	packet = next_input(); packet.link = "previous-connection"
+	packet = next_input(); packet.link = "ffeeddccbbaa9988"
 	await reject_input("input_previous_connection_rejected", packet)
-	packet = next_input(); packet.lease = int(Time.get_ticks_msec()) - 1500
+	packet = next_input(); packet.lease = int(Time.get_ticks_msec()) - 3500
 	await reject_input("input_expired_server_lease_rejected", packet)
 	packet = next_input(); packet.lease = int(Time.get_ticks_msec()) + 5000
 	await reject_input("input_future_lease_rejected", packet)
 	packet = next_input(); packet.frame.seq = int(room.inputs[0].seq)
 	await reject_input("duplicate_input_sequence_rejected", packet)
+	a.withhold_inputs = false; b.withhold_inputs = false
 
 	# Retrying a pause ACK must not re-pause a subsequently resumed match.
 	a.withheld_ack = a.request_serial + 1
@@ -188,37 +204,40 @@ func run() -> void:
 	a.accept_state(foreign)
 	check("old_connection_snapshot_rejected", a.snapshot_serial == snapshot_count)
 
-	# Lost state ACKs bound the server window; duplicate snapshot re-ACK unsticks
-	# the queue without applying the same authoritative world twice.
+	# Receipts are bounded telemetry; losing them must not gate fresh state.
 	a.withhold_state_acks = true
+	var state_before = a.state_sequence
 	await create_timer(.35).timeout
 	var entry = server.connections[server.sessions[a.identity.session].peer]
-	check("unacked_snapshot_window_bounded", entry.state_pending.size() <= Protocol.SNAPSHOT_WINDOW and entry.state_pending.size() > 0)
+	check("unacked_state_receipts_bounded", entry.state_pending.size() <= Protocol.STATE_RECEIPT_HISTORY and entry.state_pending.size() > 0)
+	check("lost_state_ack_keeps_latest_state_flowing", a.state_sequence > state_before + 3 and a.can_play())
 	a.withhold_state_acks = false
-	check("snapshot_retry_unsticks_lost_ack", await until(func(): return not room.suspended and entry.state_pending.size() < Protocol.SNAPSHOT_WINDOW and a.can_play(), 1.2))
+	check("fresh_ack_retires_old_receipts", await until(func(): return not room.suspended and entry.state_pending.size() < 4 and a.can_play(), 1.2))
 
 	# State-only blackholes must not be hidden by healthy ping/pong traffic.
 	a.withhold_states = true
 	var started = Time.get_ticks_msec()
 	await create_timer(.7).timeout
 	check("stale_state_disables_client_play_before_reconnect", not a.can_play())
-	check("state_blackhole_freezes_team", await until(func(): return room.suspended, 2))
-	check("state_blackhole_freeze_under_3_seconds", Time.get_ticks_msec() - started < 3000)
+	check("state_blackhole_freezes_team", await until(func(): return room.suspended, 9.5))
+	check("state_blackhole_survives_first_3_seconds", Time.get_ticks_msec() - started >= 3000)
 	var frozen_tick = room.match.tick_index
 	var frozen_coins = room.match.world.coins
 	await create_timer(.25).timeout
 	check("blackhole_freezes_simulation_and_loot", room.match.tick_index == frozen_tick and room.match.world.coins == frozen_coins)
 	a.withhold_states = false
-	check("blackhole_reconnect_keeps_original_match", await until(func(): return a.state == "room" and a.room.get("id") == room.match.id and a.room.phase == "suspended", 9))
+	check("blackhole_reconnect_keeps_original_match", await until(func(): return a.state == "room" and a.room.get("id") == room.match.id and a.room.phase == "suspended", 15))
 	check("blackhole_reconnect_needs_both_confirmations", await resume_team())
 
-	# Uplink state confirmation loss must also freeze the simulation, not merely
-	# reset the connection while the other player's dungeon keeps running.
+	# ACK-only uplink loss is not input loss: progress must continue independently.
+	entry = server.connections[server.sessions[a.identity.session].peer]
 	a.withhold_state_acks = true
-	check("uplink_state_ack_blackhole_freezes_team", await until(func(): return room.suspended, 3))
+	state_before = a.state_sequence
+	await create_timer(3).timeout
+	check("uplink_state_ack_blackhole_does_not_freeze_team", not room.suspended and a.can_play() and a.state_sequence > state_before + 30)
+	check("long_ack_blackhole_receipts_remain_bounded", entry.state_pending.size() <= Protocol.STATE_RECEIPT_HISTORY)
 	a.withhold_state_acks = false
-	check("uplink_fault_reconnect_restores_room", await until(func(): return a.state == "room" and a.room.phase == "suspended", 9))
-	check("uplink_fault_mutual_resume", await resume_team())
+	check("uplink_ack_restoration_needs_no_reconnect", await until(func(): return a.can_play() and entry.state_pending.size() < 4, 2))
 
 	# Disconnect during a partially confirmed resume clears both confirmations.
 	await command(a, "pause"); await command(b, "resume")

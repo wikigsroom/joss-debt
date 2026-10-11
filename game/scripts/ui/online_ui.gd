@@ -44,6 +44,8 @@ static func error_text(code: String) -> String:
 		"stale_choice": "房间奖励已经变化，请重新选择。", "room_mode_mismatch": "此房间玩法不同，请双方选择相同模式。",
 		"stale_context": "房间状态已经变化，请重新操作。", "command_timeout": "操作确认超时，正在恢复连接。",
 		"state_timeout": "地图同步中断，正在恢复连接。", "too_many_pending_requests": "正在确认上一项操作，请稍候。",
+		"battle_unavailable": "战斗连接暂时不可达，请重试或切换网络。", "battle_connect_failed": "战斗连接未建立，请检查网络后重试。",
+		"battle_disconnected": "战斗连接中断，正在恢复共灯。", "battle_bind_timeout": "战斗连接超时，正在重连。",
 		"snapshot_too_large": "房间同步数据超出限制，请联系开发者。"}.get(code, "操作未完成，请稍后重试。")
 
 static func connection_text(c) -> String:
@@ -98,6 +100,7 @@ static func show(c) -> void:
 			"lobby": lobby(c)
 			"draft": draft(c)
 			"finished": result(c)
+			"settling": settling(c)
 			_: suspended(c)
 		return
 	match c.page:
@@ -106,6 +109,11 @@ static func show(c) -> void:
 		"code": code(c)
 		"identity": identity(c)
 		_: hub(c)
+
+static func settling(c) -> void:
+	var sheet = shell(c, "收好这盏灯", "", "settling")
+	c.app.icon(sheet, "hourglass", Rect2(529, 252, 94, 94), UI.JADE)
+	c.app.label(sheet, "正在保存本次行愿", Rect2(326, 384, 500, 44), 28, UI.TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 static func hub(c) -> void:
 	var app = c.app

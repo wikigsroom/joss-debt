@@ -1,0 +1,277 @@
+{
+	"checks": [
+		{
+			"id": "server_start",
+			"passed": true
+		},
+		{
+			"id": "two_native_websockets_authenticated",
+			"passed": true
+		},
+		{
+			"id": "failed_send_and_fifo_drain",
+			"passed": true
+		},
+		{
+			"id": "neither_fifo_command_is_stale",
+			"passed": true
+		},
+		{
+			"id": "fifo_keeps_last_requested_loadout",
+			"passed": true
+		},
+		{
+			"id": "long_queue_allocation_resets_state_deadline",
+			"passed": true
+		},
+		{
+			"id": "real_cooperative_match_start",
+			"passed": true
+		},
+		{
+			"id": "scoped_fresh_input_accepted",
+			"passed": true
+		},
+		{
+			"id": "missing_inputs_stop_movement_after_700ms",
+			"passed": true
+		},
+		{
+			"id": "already_received_input_stops_after_scene_transition",
+			"passed": true
+		},
+		{
+			"id": "input_wrong_room_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_wrong_match_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_previous_pause_epoch_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_previous_scene_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_previous_connection_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_expired_server_lease_rejected",
+			"passed": true
+		},
+		{
+			"id": "input_future_lease_rejected",
+			"passed": true
+		},
+		{
+			"id": "duplicate_input_sequence_rejected",
+			"passed": true
+		},
+		{
+			"id": "pause_applies_despite_withheld_ack",
+			"passed": true
+		},
+		{
+			"id": "lost_pause_ack_retried",
+			"passed": true
+		},
+		{
+			"id": "mutual_resume_after_ack_loss",
+			"passed": true
+		},
+		{
+			"id": "late_pause_cannot_repause_resumed_battle",
+			"passed": true
+		},
+		{
+			"id": "buffered_pre_resume_move_rejected",
+			"passed": true
+		},
+		{
+			"id": "duplicate_snapshot_does_not_apply_twice",
+			"passed": true
+		},
+		{
+			"id": "older_snapshot_cannot_replace_current_phase",
+			"passed": true
+		},
+		{
+			"id": "old_connection_snapshot_rejected",
+			"passed": true
+		},
+		{
+			"id": "unacked_state_receipts_bounded",
+			"passed": true
+		},
+		{
+			"id": "lost_state_ack_keeps_latest_state_flowing",
+			"passed": true
+		},
+		{
+			"id": "fresh_ack_retires_old_receipts",
+			"passed": true
+		},
+		{
+			"id": "stale_state_disables_client_play_before_reconnect",
+			"passed": true
+		},
+		{
+			"id": "state_blackhole_freezes_team",
+			"passed": true
+		},
+		{
+			"id": "state_blackhole_survives_first_3_seconds",
+			"passed": true
+		},
+		{
+			"id": "blackhole_freezes_simulation_and_loot",
+			"passed": true
+		},
+		{
+			"id": "blackhole_reconnect_keeps_original_match",
+			"passed": true
+		},
+		{
+			"id": "blackhole_reconnect_needs_both_confirmations",
+			"passed": true
+		},
+		{
+			"id": "uplink_state_ack_blackhole_does_not_freeze_team",
+			"passed": true
+		},
+		{
+			"id": "long_ack_blackhole_receipts_remain_bounded",
+			"passed": true
+		},
+		{
+			"id": "uplink_ack_restoration_needs_no_reconnect",
+			"passed": true
+		},
+		{
+			"id": "one_player_confirmed_before_second_outage",
+			"passed": true
+		},
+		{
+			"id": "second_outage_clears_both_resume_confirmations",
+			"passed": true
+		},
+		{
+			"id": "second_outage_mutual_resume",
+			"passed": true
+		},
+		{
+			"id": "lost_queue_ack_replayed_after_reconnect",
+			"passed": true
+		},
+		{
+			"id": "cached_queue_reply_cannot_create_phantom_matchmaking",
+			"passed": true
+		},
+		{
+			"id": "local_spool_failure_never_sends_command",
+			"passed": true
+		},
+		{
+			"id": "local_spool_failure_keeps_server_unchanged",
+			"passed": true
+		},
+		{
+			"id": "local_ack_storage_failure_stops_connection",
+			"passed": true
+		},
+		{
+			"id": "local_storage_repair_keeps_identity",
+			"passed": true
+		},
+		{
+			"id": "local_storage_repair_cannot_repeat_queue",
+			"passed": true
+		},
+		{
+			"id": "lost_first_welcome_has_finite_authentication_deadline",
+			"passed": true
+		},
+		{
+			"id": "first_welcome_retry_reuses_unclaimed_identity",
+			"passed": true
+		},
+		{
+			"id": "actual_authority_growth_modal",
+			"passed": true
+		},
+		{
+			"id": "lost_choose_ack_does_not_duplicate_growth",
+			"passed": true
+		},
+		{
+			"id": "lost_choose_ack_eventually_completes",
+			"passed": true
+		},
+		{
+			"id": "duplicate_choose_preserves_partner_growth",
+			"passed": true
+		},
+		{
+			"id": "new_process_takes_over_original_identity",
+			"passed": true
+		},
+		{
+			"id": "identity_takeover_freezes_team",
+			"passed": true
+		},
+		{
+			"id": "lost_close_old_process_cannot_reclaim_identity",
+			"passed": true
+		},
+		{
+			"id": "replacement_remains_connected_after_old_retry",
+			"passed": true
+		},
+		{
+			"id": "old_process_cannot_overwrite_new_owner_credential",
+			"passed": true
+		},
+		{
+			"id": "leave_finishes_team",
+			"passed": true
+		},
+		{
+			"id": "partner_receives_terminal_result",
+			"passed": true
+		},
+		{
+			"id": "repeat_settlement_keeps_one_team_loss",
+			"passed": true
+		},
+		{
+			"id": "departed_room_snapshot_cannot_reopen_room",
+			"passed": true
+		},
+		{
+			"id": "finished_result_does_not_consume_active_room_capacity",
+			"passed": true
+		},
+		{
+			"id": "actual_active_room_limit_still_enforced",
+			"passed": true
+		},
+		{
+			"id": "all_pending_commands_drained",
+			"passed": true
+		}
+	],
+	"fault_layer": "application frame rejection/drop and abrupt real socket closure; TCP remains reliable and ordered",
+	"isolated_authority_fixtures": [
+		"invulnerability to isolate network timing",
+		"room clear for growth controls"
+	],
+	"native_websockets": true,
+	"passed": true,
+	"transport_revision": 2,
+	"virtualization": "none"
+}

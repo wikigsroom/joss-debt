@@ -1,0 +1,11 @@
+[Unit]
+Description=Check pending Incense Debt DTLS certificate rotation
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+RandomizedDelaySec=30
+Unit=incense-debt-certificate.service
+
+[Install]
+WantedBy=timers.target

@@ -20,7 +20,8 @@ def main():
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     folder = (args.output or ROOT / ".local-tools/online-development" / ("recovery-" + datetime.now().strftime("%Y%m%d-%H%M%S"))).resolve()
-    folder.mkdir(parents=True, exist_ok=True)
+    if folder.exists(): raise RuntimeError('Use a new recovery directory; this fixture must start without prior checkpoints or stop markers')
+    folder.mkdir(parents=True)
     port = 18877
     reports = []
     for scenario in args.scenarios:
@@ -35,7 +36,7 @@ def main():
             command = [str(ROOT / "build/server/IncenseDebtServer.exe"), "--headless", "--max-fps", "60"] if args.packaged_server else [str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", str(ROOT / "server/main.gd")]
             command += ["--", "--bind=127.0.0.1", f"--port={port}", "--grace=10", "--data-dir=" + str(data)]
             process = subprocess.Popen(command, cwd=ROOT, stdout=log_file, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
-            deadline = time.monotonic() + 10
+            deadline = time.monotonic() + 30
             while time.monotonic() < deadline:
                 if process.poll() is not None:
                     raise RuntimeError("Native server exited during startup; see " + str(case / "server.log"))
@@ -53,7 +54,7 @@ def main():
             log = result.stdout.decode("utf8", errors="replace")
             (case / (stage + "-client.log")).write_text(log, "utf8")
             print(log)
-            if result.returncode or "SCRIPT ERROR" in log or "ERROR:" in log:
+            if result.returncode or "SCRIPT ERROR" in log or "ERROR:" in log or "mbedtls error:" in log:
                 raise RuntimeError("Native client recovery failed: " + scenario + "/" + stage)
             return json.loads((case / "clients" / (stage + "-" + mode + "-report.json")).read_text("utf8"))
 
@@ -111,11 +112,20 @@ def main():
                             path.write_text("truncated isolated QA room", "utf8")
             start_server()
             restore = run_client("restore", "expiry" if scenario == "expiry_takeover" else "restore")
+            for part, stage in [(prepare, "prepare"), (restore, "restore")]:
+                text = (case / (stage + "-client.log")).read_text("utf8", errors="replace")
+                part["native_execution_errors"] = text.count("SCRIPT ERROR") + text.count("ERROR:") + text.count("mbedtls error:")
+                part["passed"] = part["passed"] and part["native_execution_errors"] == 0
             reports.append({"scenario": scenario, "prepare": prepare, "restore": restore})
             (data / "stop").touch()
             process.wait(timeout=8)
             if process.returncode:
                 raise RuntimeError("Native server did not shut down cleanly")
+            log_file.flush()
+            server_text = (case / "server.log").read_text("utf8", errors="replace")
+            if "SCRIPT ERROR" in server_text or "ERROR:" in server_text or "mbedtls error:" in server_text:
+                restore["passed"] = False
+                restore["server_native_execution_errors"] = server_text.count("SCRIPT ERROR") + server_text.count("ERROR:") + server_text.count("mbedtls error:")
         finally:
             if process is not None and process.poll() is None:
                 process.kill()

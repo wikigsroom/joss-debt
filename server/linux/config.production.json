@@ -1,6 +1,10 @@
 {
   "bind": "127.0.0.1",
   "port": 18777,
+  "battle_bind": "0.0.0.0",
+  "battle_port": 18779,
+  "battle_certificate": "/etc/incense-debt/tls/fullchain.pem",
+  "battle_private_key": "/etc/incense-debt/tls/privkey.pem",
   "max_connections": 16,
   "max_rooms": 2,
   "grace": 90,

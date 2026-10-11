@@ -20,7 +20,7 @@ static func recipe(w, weapon: Dictionary) -> Dictionary:
 	var family = {"bell": "brass", "piercing": "ink", "charged_line": "ink", "ray": "ink", "tether": "thread",
 		"prism": "prism", "lightning": "storm", "cloud": "smoke", "controlled": "lotus", "rain": "lotus",
 		"returning": "lotus", "boomerang_arc": "void", "wave": "ink", "mine": "brass", "orbit_blade": "lotus"}.get(weapon.mode, "ember")
-	return {"version": 1, "weapon": weapon.id, "mode": weapon.mode, "carrier": carrier,
+	return {"version": 1, "weapon": weapon.id, "mode": weapon.mode, "carrier": carrier, "prediction": int(w.player.get("input_shot", 0)),
 		"pellets": count, "base_pellets": base_count, "spread": maxf(.16 if count > 1 else 0, float(weapon.get("spread", .16))),
 		"pierce": int(weapon.pierce) + w.stack("r41") + w.talent("t_ink_1a") + int(w.run.character == "c_ink") + 2 * w.stack("r60"),
 		"explosive": explosive, "blast_radius": radius * w.stat_multiplier("blast_radius") * (1.25 if charged else 1.0),
@@ -80,7 +80,7 @@ static func fire(w, weapon: Dictionary, resolved: Dictionary, damage: float, cri
 					hit(w, enemy, amount * (1.18 if lanes.size() > 1 else 1), crit, direction, shot)
 				for object in w.geometry.objects:
 					if object.alive and object.pos.distance_to(point) < shot.range and direction.dot(point.direction_to(object.pos)) >= cos(width): Scenery.hit(w, object, amount)
-				w.emit("slash", {"pos": point, "dir": direction, "range": shot.range, "weapon": weapon.id, "mode": weapon.mode, "charged": weapon.mode in ["charged_arc", "sweep"], "fx_family": shot.fx_family})
+				w.emit("slash", {"pos": point, "dir": direction, "range": shot.range, "weapon": weapon.id, "mode": weapon.mode, "charged": weapon.mode in ["charged_arc", "sweep"], "fx_family": shot.fx_family, "prediction": shot.get("prediction", 0)})
 		"projectile":
 			for i in lanes.size(): projectile(w, point, lanes[i], amount, crit, shot, (i - (lanes.size() - 1) * .5) * shot.spread)
 			if weapon.mode == "burst" and not burst_part:
@@ -89,7 +89,7 @@ static func fire(w, weapon: Dictionary, resolved: Dictionary, damage: float, cri
 					repeat.wave = i
 					schedule_fire(w, weapon, repeat, damage, crit, point, aim, i * .09, true)
 	w.emit("shot", {"pos": point, "dir": aim, "weapon": weapon.id, "mode": weapon.mode,
-		"pellets": shot.pellets, "heavy": shot.explosive or shot.carrier != "projectile", "fx_family": shot.fx_family})
+		"pellets": shot.pellets, "heavy": shot.explosive or shot.carrier != "projectile", "fx_family": shot.fx_family, "prediction": shot.get("prediction", 0), "burst_part": burst_part})
 
 static func projectile(w, origin: Vector2, direction: Vector2, damage: float, crit: bool, shot: Dictionary, lane: float = 0) -> Dictionary:
 	if w.bullets.size() >= 240: return {}
@@ -97,7 +97,7 @@ static func projectile(w, origin: Vector2, direction: Vector2, damage: float, cr
 	var bullet = {"uid": w.next_uid(), "pos": w.geometry.constrain_floor(origin + direction * 22, radius),
 		"dir": direction, "base_dir": direction, "speed": shot.speed, "range": shot.range, "travel": 0.0,
 		"damage": damage, "radius": radius, "friendly": true, "primary": shot.primary,
-		"attack": shot.attack, "crit": crit, "mode": shot.mode, "weapon": shot.weapon,
+		"attack": shot.attack, "crit": crit, "mode": shot.mode, "weapon": shot.weapon, "prediction": shot.get("prediction", 0),
 		"pierce": shot.pierce, "hits": [], "returning": false, "bounces": 0, "age": 0.0,
 		"can_return": shot["return"], "pulse": shot.pulse, "target_index": 0, "push_distance": shot.push,
 		"recipe": shot.duplicate(true), "lane": lane, "controllable": shot.controlled,
@@ -163,7 +163,7 @@ static func beam(w, point: Vector2, direction: Vector2, distance: float, damage:
 	Scenery.segment_hit(w, from, to + direction * (width + 4), damage)
 	var shape = "beam_tether" if shot.mode == "tether" else ("beam_fork" if shot.mode == "lightning" else ("beam_wave" if shot.mode == "wave" else "beam_lance"))
 	w.emit("ray", {"pos": from, "end": to, "dir": direction, "range": from.distance_to(to), "width": width,
-		"weapon": shot.weapon, "style": "beam_ink", "fx_preset": str(shot.fx_family) + "_" + shape, "heavy": true})
+		"weapon": shot.weapon, "style": "beam_ink", "fx_preset": str(shot.fx_family) + "_" + shape, "heavy": true, "prediction": shot.get("prediction", 0) if bounce == 0 else 0})
 	if shot.mode == "tether":
 		for enemy in w.enemies:
 			if Geometry.segment_circle(from, to, enemy.pos, enemy.radius + width): enemy.slow_until = maxf(enemy.slow_until, w.time + .4)

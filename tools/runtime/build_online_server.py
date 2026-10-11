@@ -11,7 +11,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[2]
 ENGINE = ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"
-MODULES = ("protocol", "duel_actor", "duel_match", "cooperative_world", "cooperative_match", "server_runtime", "server_entry")
+MODULES = ("protocol", "duel_actor", "duel_match", "cooperative_world", "cooperative_match", "server_runtime", "server_entry",
+           "dtls_edge", "enet_battle", "state_stream", "input_frames")
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
         shutil.copyfile(source, target)
         hashes[relative.as_posix()] = hashlib.sha256(source.read_bytes()).hexdigest()
     shutil.copyfile(ROOT / "server/server_boot.gd", project / "server_boot.gd")
-    (project / "project.godot").write_text('config_version=5\n[application]\nconfig/name="IncenseDebt Dedicated Server"\nconfig/version="' + version + '"\nrun/main_scene="res://server.tscn"\nconfig/use_custom_user_dir=true\nconfig/custom_user_dir_name="IncenseDebtServer"\nrun/flush_stdout_on_print=true\n[rendering]\nrenderer/rendering_method="gl_compatibility"\n', "utf8")
+    (project / "project.godot").write_text('config_version=5\n[application]\nconfig/name="IncenseDebt Dedicated Server"\nconfig/version="' + version + '"\nrun/main_scene="res://server.tscn"\nconfig/use_custom_user_dir=true\nconfig/custom_user_dir_name="IncenseDebtServer"\nrun/flush_stdout_on_print=true\n[debug]\nfile_logging/enable_file_logging=false\nfile_logging/enable_file_logging.pc=false\n[rendering]\nrenderer/rendering_method="gl_compatibility"\n', "utf8")
     (project / "server.tscn").write_text('[gd_scene load_steps=2 format=3]\n[ext_resource type="Script" path="res://server_boot.gd" id="1"]\n[node name="DedicatedServer" type="Node"]\nscript=ExtResource("1")\n', "utf8")
     templates = ROOT / ".local-tools/export-templates-4.7.2"
     platforms = ["windows-x64", "linux-x64"] if args.platform == "both" else [args.platform]

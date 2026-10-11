@@ -4,19 +4,24 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import subprocess
+import argparse
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
-    folder = ROOT / ".local-tools/online-development/native-release-touch"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, default=ROOT / '.local-tools/online-development/native-release-touch')
+    parser.add_argument('--url', default='ws://127.0.0.1:18777')
+    options = parser.parse_args()
+    folder = options.output.resolve()
     folder.mkdir(parents=True, exist_ok=True)
     engine = ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"
     game = ROOT / "build/windows/IncenseDebt.exe"
     command = [str(engine), "--main-pack", str(game), "--script", str(ROOT / "tools/runtime/online_pack_capture.gd"),
         "--max-fps", "60", "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3",
         "--resolution", "1280x720", "--position", "-16000,-16000", "--", "--qa-online", "--qa-output=" + str(folder),
-        "--capture-driver=" + str(ROOT / "tools/runtime/capture_online_touch.gd"), "--online-url=ws://127.0.0.1:18777"]
+        "--capture-driver=" + str(ROOT / "tools/runtime/capture_online_touch.gd"), "--online-url=" + options.url]
     startup = subprocess.STARTUPINFO()
     startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW
     startup.wShowWindow = subprocess.SW_HIDE

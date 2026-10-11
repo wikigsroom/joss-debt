@@ -1,21 +1,25 @@
 extends RefCounted
 ## Bounded JSON frames: no executable Variant/Object deserialization.
 const VERSION = 2
-const TRANSPORT_REVISION = 1
+const TRANSPORT_REVISION = 2
 const RULESET = "cooperative-1-duel-2"
 const PORT = 18777
 const TICK_RATE = 60
 const SNAPSHOT_RATE = 20
 const INPUT_RATE = 30
 const HEARTBEAT_SECONDS = 2.0
-const SILENCE_SECONDS = 8.0
-const INPUT_TIMEOUT = .25
-const INPUT_LEASE_SECONDS = 1.0
-const STATE_TIMEOUT = 2.0
+const BATTLE_BIND_TIMEOUT_SECONDS = 20.0
+const SILENCE_SECONDS = 20.0
+const INPUT_TIMEOUT = .5
+# ENet keeps the authenticated peer alive through its adaptive timeout. A
+# transient WAN outage must freeze the room before it ends the session, while
+# leaving enough time for queued/retransmitted input to resume.
+const INPUT_PROTECT_SECONDS = 8.0
+const INPUT_LEASE_SECONDS = 2.0
+const STATE_TIMEOUT = 12.0
+const STATE_RECEIPT_HISTORY = 128
 const REQUEST_RETRY_SECONDS = .75
 const MAX_PENDING_REQUESTS = 16
-const SNAPSHOT_WINDOW = 4
-const SNAPSHOT_RETRY_SECONDS = .5
 const RECONNECT_SECONDS = 90.0
 const MAX_CLIENT_BYTES = 4096
 const MAX_SERVER_BYTES = 512 * 1024
@@ -95,13 +99,18 @@ static func clean_input(value) -> Dictionary:
 		if not value.get(field, Vector2.ZERO) is Vector2 or not value.get(field, Vector2.ZERO).is_finite(): return {}
 	for field in ["fire", "dash", "skill", "active_item", "interact", "charge_hold"]:
 		if not value.get(field, false) is bool: return {}
+	var actions = value.get("actions", {})
+	if not Store.integer(value.get("shot", 0)) or int(value.get("shot", 0)) < 0 or int(value.get("shot", 0)) > 2147483647: return {}
+	if not actions is Dictionary: return {}
+	for key in ["dash", "skill", "active_item", "interact"]:
+		if not Store.integer(actions.get(key, value.seq)) or int(actions.get(key, value.seq)) < 0 or int(actions.get(key, value.seq)) > 2147483647: return {}
 	return {"seq": int(value.seq), "move": Vector2(value.get("move", Vector2.ZERO)).limit_length(1),
 		"aim": Vector2(value.get("aim", Vector2.UP)).normalized(),
 		"dash_direction": Vector2(value.get("dash_direction", Vector2.ZERO)).limit_length(1),
 		"fire": value.get("fire", false), "dash": value.get("dash", false), "skill": value.get("skill", false),
 		"active_item": value.get("active_item", false), "charge_hold": value.get("charge_hold", false),
 		"interact": value.get("interact", false),
-		"device": "touch" if value.get("device", "") == "touch" else "keyboard"}
+		"actions": actions.duplicate(), "shot": int(value.get("shot", 0)), "device": "touch" if value.get("device", "") == "touch" else "keyboard"}
 
 static func empty_input() -> Dictionary:
 	return {"move": Vector2.ZERO, "aim": Vector2.UP, "fire": false, "dash": false, "skill": false, "active_item": false, "interact": false}

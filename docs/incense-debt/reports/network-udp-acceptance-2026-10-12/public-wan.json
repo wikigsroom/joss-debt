@@ -1,0 +1,7001 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-11T21:55:25.642187+00:00",
+  "transport": "ENet/DTLS",
+  "endpoint": "wss://xhz-server.sidcloud.cn/candidate-play",
+  "health_endpoint": "https://xhz-server.sidcloud.cn/candidate-health",
+  "virtualization": "none",
+  "clients": {
+    "battle_seconds": 62.665,
+    "bootstrap_issues": [],
+    "bootstrap_seconds": 14.059,
+    "client_streams": [
+      {
+        "accepted_cores": 1305,
+        "bound": true,
+        "core": 1306,
+        "edge_rejected": 0,
+        "ignored_messages": 553,
+        "inventory_sizes": [
+          [
+            "scene/enemies",
+            3,
+            3
+          ],
+          [
+            "scene/bullets",
+            0,
+            0
+          ],
+          [
+            "scene/zones",
+            2,
+            2
+          ],
+          [
+            "scene/pickups",
+            2,
+            2
+          ],
+          [
+            "scene/delayed",
+            0,
+            0
+          ]
+        ],
+        "last_error": "",
+        "native_connected": true,
+        "partial_baseline_parts": 0,
+        "partial_baseline_revision": 77,
+        "pending_revision": 0,
+        "phase": null,
+        "received_datagrams": 20493,
+        "rejected_baselines": 0,
+        "revision": 77,
+        "scene_ready": true,
+        "state": "online",
+        "transport_rebinds": 0,
+        "wire_received": 6691118,
+        "wire_sent": 931733
+      },
+      {
+        "accepted_cores": 1335,
+        "bound": true,
+        "core": 1336,
+        "edge_rejected": 0,
+        "ignored_messages": 594,
+        "inventory_sizes": [
+          [
+            "scene/enemies",
+            3,
+            3
+          ],
+          [
+            "scene/bullets",
+            0,
+            0
+          ],
+          [
+            "scene/zones",
+            2,
+            2
+          ],
+          [
+            "scene/pickups",
+            2,
+            2
+          ],
+          [
+            "scene/delayed",
+            0,
+            0
+          ]
+        ],
+        "last_error": "",
+        "native_connected": true,
+        "partial_baseline_parts": 0,
+        "partial_baseline_revision": 78,
+        "pending_revision": 0,
+        "phase": null,
+        "received_datagrams": 21230,
+        "rejected_baselines": 0,
+        "revision": 78,
+        "scene_ready": true,
+        "state": "online",
+        "transport_rebinds": 0,
+        "wire_received": 6964790,
+        "wire_sent": 938804
+      },
+      {
+        "accepted_cores": 1320,
+        "bound": true,
+        "core": 1322,
+        "edge_rejected": 0,
+        "ignored_messages": 336,
+        "inventory_sizes": [
+          [
+            "scene/enemies",
+            1,
+            1
+          ],
+          [
+            "scene/bullets",
+            1,
+            1
+          ],
+          [
+            "scene/zones",
+            1,
+            1
+          ],
+          [
+            "scene/pickups",
+            6,
+            6
+          ],
+          [
+            "scene/delayed",
+            0,
+            0
+          ]
+        ],
+        "last_error": "",
+        "native_connected": true,
+        "partial_baseline_parts": 0,
+        "partial_baseline_revision": 95,
+        "pending_revision": 0,
+        "phase": null,
+        "received_datagrams": 18633,
+        "rejected_baselines": 0,
+        "revision": 95,
+        "scene_ready": true,
+        "state": "online",
+        "transport_rebinds": 0,
+        "wire_received": 5746956,
+        "wire_sent": 948744
+      },
+      {
+        "accepted_cores": 1346,
+        "bound": true,
+        "core": 1347,
+        "edge_rejected": 0,
+        "ignored_messages": 344,
+        "inventory_sizes": [
+          [
+            "scene/enemies",
+            1,
+            1
+          ],
+          [
+            "scene/bullets",
+            1,
+            1
+          ],
+          [
+            "scene/zones",
+            1,
+            1
+          ],
+          [
+            "scene/pickups",
+            6,
+            6
+          ],
+          [
+            "scene/delayed",
+            0,
+            0
+          ]
+        ],
+        "last_error": "",
+        "native_connected": true,
+        "partial_baseline_parts": 0,
+        "partial_baseline_revision": 96,
+        "pending_revision": 0,
+        "phase": null,
+        "received_datagrams": 19292,
+        "rejected_baselines": 0,
+        "revision": 96,
+        "scene_ready": true,
+        "state": "online",
+        "transport_rebinds": 0,
+        "wire_received": 5948917,
+        "wire_sent": 954466
+      }
+    ],
+    "clients": 4,
+    "counters": {
+      "choices": 20,
+      "fresh_playing_frames": 13320,
+      "rematches": 0,
+      "sampled_playing_frames": 13320,
+      "states": 5306
+    },
+    "distinct_campaign_scenes": 14,
+    "errors": [],
+    "fault_context": [],
+    "fresh_playable_frame_ratio": 1.0,
+    "game_mode": "coop",
+    "passed": true,
+    "ping_p95_ms": 133.0,
+    "rooms": 2,
+    "scope": "Native production Session and authoritative repeated real campaigns. No rendering/WAN/Android acceptance. Age samples are a bounded rolling window.",
+    "state_age_p95_ms": 42.0000000000016,
+    "weapons": [
+      "w07",
+      "w14",
+      "w11",
+      "w25"
+    ]
+  },
+  "tick_hz": 59.14570606386036,
+  "lifetime_step": {
+    "bucket_width_ms": 0.125,
+    "max_ms": 36.108,
+    "p950_ms_upper_bound": 4.0,
+    "p990_ms_upper_bound": 7.125,
+    "p999_ms_upper_bound": 23.5,
+    "samples": 5658
+  },
+  "lifetime_process": {
+    "bucket_width_ms": 0.125,
+    "max_ms": 34.255,
+    "p950_ms_upper_bound": 9.625,
+    "p990_ms_upper_bound": 13.25,
+    "p999_ms_upper_bound": 20.75,
+    "samples": 5646
+  },
+  "combat_stalls_over_100ms": 0,
+  "child_returncode": 0,
+  "source_hashes_at_start": {
+    "game/scripts/combat/attack_composer.gd": "be361acb0fe21ac4ef53ea208518409369ab208e2015362d14f235c8d1fce7d4",
+    "game/scripts/combat/boss_patterns.gd": "c38a6a528fe77caa40f0e37216d4c78d73853aa6a5d97e4d9f59b6e0ccc40dac",
+    "game/scripts/combat/creature_actions.gd": "616ca42856dde0bba1809271225eb4f0d5ebc0a0196b05a67c9867c52e20a78a",
+    "game/scripts/combat/effects.gd": "feedd2650de0950c73ef4b19d8f62f83e36be322b02f957f9ce577abc72a5ad9",
+    "game/scripts/combat/enemy_patterns.gd": "6d95a909c24a02638bc86aa95b06e50518fda5d96f04dac0944b3ebb762bc0c6",
+    "game/scripts/combat/equipment.gd": "67e3aecf37f93c01c57d63fd1907826ab97fe2f2a2fb8c40b78fded671aa79f7",
+    "game/scripts/combat/expanded_patterns.gd": "022ce950598e1a3633bcc6c7e4d3598c6a89f15a7fb4bf84065e8b3e1e16ea3f",
+    "game/scripts/combat/expanded_weapons.gd": "e6ee1095a7ca5421df83f0c94aa1e31c659135a82ca094df2685841488ff24ee",
+    "game/scripts/combat/impact_control.gd": "a0e60caf9e97539d8a34270a941bb50cdb408a28ac0a26154908d3e2ce9dbe35",
+    "game/scripts/combat/interactive_scenery.gd": "7f768d4d4f110bfa5cd78526cff8bc0da3fb8fb513100babcfc1c52ee645920c",
+    "game/scripts/combat/projectile_styles.gd": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
+    "game/scripts/combat/room_geometry.gd": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
+    "game/scripts/combat/world.gd": "96888944612d6bd7729e173a83b3eb2bb588eda2982364a0006223035452afce",
+    "game/scripts/core/choice_shortcuts.gd": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
+    "game/scripts/core/content_db.gd": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
+    "game/scripts/core/daily_seed.gd": "8a585b5ac2da16ecbf3aa58fadae936e34dc1bd43a7cfa1383cb6e095932bd16",
+    "game/scripts/core/damage_record.gd": "9e2a4afa8bfc0776293c96c5d5cae301a5508a4b90f8f1645d2d4bbe063b1fd2",
+    "game/scripts/core/derived_seed.gd": "7783920e2ccfc6ac6a8dd7f0e1636df75bf05a07d1da6566e1b3dbc29b7e0479",
+    "game/scripts/core/expanded_campaign.gd": "500dbc8fdf4b0200095083019f0f3c23cc9a3d4de625d3fed668357533b060ab",
+    "game/scripts/core/meta_progress.gd": "c5fdabaf600bbf84b04b041d78801c8e7101fe7a509afff1f188b394fd2adda0",
+    "game/scripts/core/room_graph.gd": "ce83956ee4e5504ff35ebf0c642efb9f2a13e88d252ab4ed8886da3da8b63c10",
+    "game/scripts/core/run_rng.gd": "ff1166c38a78494761f1a9b2e4ff21e700b60c114882cf4972edd0c003f91964",
+    "game/scripts/core/run_telemetry.gd": "c745524142e2419cbc4dd4f768ff3bf31f0154a6f45fe9851382f321b605e7c9",
+    "game/scripts/core/save_migrations.gd": "353c114d2f4de1c0e3c77196eed592fe65dc71e1d172ed3867fb0c9177aac15e",
+    "game/scripts/core/save_session.gd": "7fa31059c7321ac7b744ef9e7e94f5cc1b1ead0e2835850fa51a65aa974d421b",
+    "game/scripts/core/save_slots.gd": "1a11b528d2072cb03590fcbb5896b753b90d9d2c63368402bb54282603afc368",
+    "game/scripts/core/save_store.gd": "10d694ef55ca9090c6231008af6afc12f8750016cc1eb2fcb804352d6392633b",
+    "game/scripts/core/save_transfer.gd": "a77ba6d3eea48fb92b7a0ddc41077b1e91014779fffd9010950612609b6a52d7",
+    "game/scripts/core/story_book.gd": "80e2e0f25a4e3c6b655e6c30911f9dbaae0aecdbeb54c17422d66c51be4e7804",
+    "game/scripts/core/weapon_trial.gd": "71cb8d31218d82a5f7aeadf6c6063f711cb8bb5572a6f010d28699a53d13cf27",
+    "game/scripts/main.gd": "e8db485a4172e1267a4c6e8e6304f247065460306c9836735370f88887656f45",
+    "game/scripts/network/attack_prediction.gd": "46db1a84679fac1c06739ed0e8758e7c585fea84d6f23ccaaaf9e5d2e11429ed",
+    "game/scripts/network/cooperative_match.gd": "f504a31568f1fd1988558f24ca6d4a403ced4bbbb788414d5a1d0d44004075bb",
+    "game/scripts/network/cooperative_presentation.gd": "8646db35d2678472dcb9f34fdb94ff4c6e5a32e76978ff1595b0512a5862d57e",
+    "game/scripts/network/cooperative_world.gd": "1c198ed49c1ea04c6e15ec1532e0e8eefc217fa58968eccbc91e29f0d850478b",
+    "game/scripts/network/dtls_edge.gd": "657cd3565fd55c5335f262b4fae6136259e8cefbee293765aaa92c17e0b5b7ff",
+    "game/scripts/network/duel_actor.gd": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
+    "game/scripts/network/duel_match.gd": "e3e6fba75c1240882fae8903efd55e049b0db85d77b931ae7c3abaf8aa3c2fa6",
+    "game/scripts/network/enet_battle.gd": "a2010359957c32ff41450357a0cf5c2caba3994779f6b879ae52963b3c229a62",
+    "game/scripts/network/input_frames.gd": "d5c3a5bf20ffaf25b5198f3dcada10b931394fed7daa05296132a80679185e44",
+    "game/scripts/network/motion_prediction.gd": "7579f2e3b2cef84437f3bdb9451c6fba6ace76e9cd8a144612bc9a802ef5e4f0",
+    "game/scripts/network/online_controller.gd": "28181c690fabcc1f396f66e34064c5ff6350bdf765eb4d58955e0e8f318d91ed",
+    "game/scripts/network/online_session.gd": "ae3a6e1c8f8bd29d00f445480386cdae35e1ef738339637662532a470c7b410b",
+    "game/scripts/network/protocol.gd": "648b3a846e32e90738b3477eb36ca5c3ce02d74e39bc379191d0c0039629bbe7",
+    "game/scripts/network/remote_interpolation.gd": "37b88bbef2a11b2fe7fe6faa6705e6dbe34378e0a569552c7888530efda6954e",
+    "game/scripts/network/server_entry.gd": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
+    "game/scripts/network/server_runtime.gd": "594f22d477a56d767bde9fdc23f6a092098a99f5fa68645fc9e14a3aeb203a9e",
+    "game/scripts/network/state_stream.gd": "e43905a939f428526ceb406bfb281e889d3ec18870981761a62e2e08ec5118d8",
+    "game/scripts/ui/aim_assist.gd": "23dedf5b6cad44681cd8d75d61fcf58aedfdc180590446667148cfad907b8aae",
+    "game/scripts/ui/audio_capture_qa.gd": "02b7478998058b7574a01c9f06df426068df574e44276d23b3b2137a6185cb85",
+    "game/scripts/ui/audio_director.gd": "0df5f78a74254099daa7dc30eb0b6179d5358dd5e057f6c2be6e2b540ed56465",
+    "game/scripts/ui/campaign_cinematic.gd": "cb4ec7712c0173e34f26a7c079b040c78e5809893e634dd5082489c403b1032b",
+    "game/scripts/ui/character_sheet.gd": "15c443c9dfe4f5e88951e90056ee1ef41086d0c90b733f7d054b0c93ffd323ad",
+    "game/scripts/ui/combat_fx.gd": "be7179027fac518b7324315f7190e6dacc0c95b55ce6a0b41ffea04546dad597",
+    "game/scripts/ui/consumable_native_qa.gd": "7484f589cf001981a2d3aa43a26a43029d45d4a6ce4000efeb8d9ada9bfd0c78",
+    "game/scripts/ui/control_settings.gd": "4e3e9e6db2cdec6be49bcf3c983d448eef075ad31529b44c91870fb98033e86e",
+    "game/scripts/ui/cooperative_native_qa.gd": "ddfec05fbef77f0cc67c8f4adf2f1cc058152eb905bfd063070f622519bdf1af",
+    "game/scripts/ui/drawn_action_fx.gd": "0d233022f747094aef3b39d3d384e5d6e03efcaff141f9e90eb0653ca10bdcdf",
+    "game/scripts/ui/equipment_native_qa.gd": "f890c7f3d1996f853a22fea696296bac1daa64ba0ad614aa9d11a1bb26a641b9",
+    "game/scripts/ui/equipment_ui.gd": "a3d803fa4ddd235e6bc8fbf7ee61f6822c978259bd70f8d0c539a5439a297ceb",
+    "game/scripts/ui/expanded_visuals.gd": "6a24e51d2a8067aaed3d911b8db07f582551c1299e63900528cd2be6fcf3bce5",
+    "game/scripts/ui/expansion_native_qa.gd": "d268acabc101e71062ae3c1ddd079af23d975345b1eaf10ec0d5951ed4a96616",
+    "game/scripts/ui/floor_timeline.gd": "2f164cd7bdd445e5634be07eb57b519e8e0e751c7f012f52b03b128cdd21d20b",
+    "game/scripts/ui/game_hud.gd": "87dd35d19e86f7a4b82ac20caddd7994556a12af058a6704e5c39ce62f72a030",
+    "game/scripts/ui/game_renderer.gd": "773639f30c344b38e73804bb15a59c43b18ee30214e39652f0bf37238071a194",
+    "game/scripts/ui/game_theme.gd": "9e137e6d7fda1335b79651bc622f493543e177b54a175b4d9399a19ed89d1107",
+    "game/scripts/ui/haptic_feedback.gd": "d9e2e59720009c17f995474ee070eda94878fc8f181633a59106fbf136ef9a89",
+    "game/scripts/ui/hub_ui.gd": "5223d02f8bad486e7392d050b17983dfb42ae9eb06b6f7bbaba2017b9f479108",
+    "game/scripts/ui/input_adapter.gd": "fd7217bb7404727f347959a284f4998276bcf5b5929e17b24e398206aa96c510",
+    "game/scripts/ui/input_profile.gd": "f3f07c503e3b1ed90f5c8e729b3f61cacbbc9ef88709093bfdf6181dce5cfd8a",
+    "game/scripts/ui/keyboard_flow_qa.gd": "1f76ad577dda5aa2fc31eb70db6c486db2f66dcd5a0d2accb63e9b5d7000a952",
+    "game/scripts/ui/keyboard_navigation.gd": "5f8663e60e01ed3c1ac93d9b8cadbbaed36c2e0b64536d0c6906fc45d9ae3a80",
+    "game/scripts/ui/menu_flow.gd": "7ae5a81f78c9a25056dd60862d01207fa07d5171e3075d4a137d208364302b56",
+    "game/scripts/ui/mobile_surface.gd": "c15c2db2d7070cc9a6115024921ed6af2a74bbdb97a90b9994bd1febfd0239b3",
+    "game/scripts/ui/modern_ui.gd": "4d5dd0d2d19afe1ec9de01ab02bcb3d4908e9ca555226cf4b5f66cd57dedefcd",
+    "game/scripts/ui/music_playlist.gd": "93635c51d19b97f8ca0065c65618cff854b24b7b63ca19a2574f2436df21d5ce",
+    "game/scripts/ui/music_state.gd": "e3c98e71146de7da3fec9ec31c067372fdbadfca4c5493c289165070569e4e9e",
+    "game/scripts/ui/narrative_reader.gd": "d1aef19c826f8529c6e2b732eaea0f250f07fa943c60d1fd8c812c6d2a093a81",
+    "game/scripts/ui/npc_portrait.gd": "1c40fcfa0c21221577312bf3015387491777487c19f15d05212af9a0669a0c05",
+    "game/scripts/ui/online_native_qa.gd": "e496ac983f440a78fa542d60caaf67ffeed8c2fd84dedd808ea8147d3782d1c6",
+    "game/scripts/ui/online_ui.gd": "ee82e42a313cbb2ce2a8d76413957801c5683be2aedfaa666ce6cc91047be122",
+    "game/scripts/ui/orientation_guard.gd": "cb6633be55ebbb51acc3e0853f2b2ad91ce1b4e9d2cb3b6ce125529deb19fc01",
+    "game/scripts/ui/paper_animation.gd": "08743dfd0ce040cb3cb32543b595f46a6e13983fc04d6402ee17fbbe2b29c265",
+    "game/scripts/ui/pickup_art.gd": "12ebac22a94c5f482b513f713a201e2e5aec985fd9b196249edaf987522647d7",
+    "game/scripts/ui/polished_fx.gd": "06cb02d4c8d3edaeff98e9e0f9538d5384202c78885a69c40684fdbe15dc8e52",
+    "game/scripts/ui/rounded_button.gd": "2b89ff10b753e4ecb3962204240edc842fba338251a054aa774a7638c506076d",
+    "game/scripts/ui/route_map.gd": "60876fbc32d1e02b8a367befe2410ad6a13c52b55bf31477dd43aea516e502e9",
+    "game/scripts/ui/run_review.gd": "4903469f7b8cfb3f57414fe71f2a136b42acaf5d6f4c928bb1d95aa9c274c67b",
+    "game/scripts/ui/runtime_quality.gd": "700aba662ebbb24911a5569ca0f662a7fc47d6d706beba57673ed025c78d6b04",
+    "game/scripts/ui/save_transfer_ui.gd": "f190a5216c698503f2cb334736d5a84d3a9747bea824854789c1cb02b1ae1241",
+    "game/scripts/ui/seed_ui.gd": "562ff96b3f23de136e1e6e5a597fdfb9dd6e432237e307eb95c13f7c9cf8dfe5",
+    "game/scripts/ui/touch_layout_editor.gd": "b327646888221ffc4d9bf755fb08bfbf1337f36e92672e8e16d645e50972c102",
+    "game/scripts/ui/touch_tryout.gd": "b8ff4524213d1b25a72c77f3d8988fbcbdee1993525f58f0b550a2cc1bb39f8e",
+    "game/scripts/ui/weapon_gallery.gd": "cd3e2503a0a64b1b4bcfb0521172d445f6ec5abc32b2d1a9977e5ac6ac5b6729",
+    "game/scripts/ui/weapon_motion.gd": "047b869500495c0f6c8cf20659518e29b038046e4b5a1a55ce718d924e311928",
+    "game/scripts/ui/weapon_trial_ui.gd": "490838008678d3f9eb604ab05ce6a8d1964ba909b9a50a37318ff4221ea75239"
+  },
+  "server_sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+  "fixture_sha256": "56108c5ed47cdeae943bace96a271cb142fb019dd05242521e508e7baa94f26e",
+  "clean_native_log": true,
+  "native_server": {
+    "sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+    "pid": 2346517,
+    "memory": {
+      "VmRSS": 97345536,
+      "VmHWM": 129187840
+    },
+    "native_errors": []
+  },
+  "samples": [
+    {
+      "active_rooms": 0,
+      "battle_connections": 0,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 0,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 0,
+      "enet_peers": [],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.375,
+        "samples": 1120
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1127
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 34.255,
+      "process_p95_ms": 0.09,
+      "process_p99_ms": 0.119,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.08,
+          "p95_ms": 0.073,
+          "p99_ms": 0.073
+        }
+      },
+      "step_max_ms": 0.126,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.104,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1127,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 0,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 0,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 0,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 0,
+      "udp_wire_received_bytes": 0,
+      "udp_wire_sent_bytes": 0,
+      "unacked_snapshots": 0,
+      "uptime": 18.7886353333338,
+      "version": "0.6.0",
+      "sample_monotonic": 21395.2875966
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 0,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 0,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 0,
+      "enet_peers": [],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.25,
+        "p999_ms_upper_bound": 0.625,
+        "samples": 1195
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1202
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 34.255,
+      "process_p95_ms": 0.094,
+      "process_p99_ms": 0.119,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.08,
+          "p95_ms": 0.073,
+          "p99_ms": 0.073
+        }
+      },
+      "step_max_ms": 0.126,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.104,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1202,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 0,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 0,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 0,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 0,
+      "udp_wire_received_bytes": 0,
+      "udp_wire_sent_bytes": 0,
+      "unacked_snapshots": 0,
+      "uptime": 20.0385853333338,
+      "version": "0.6.0",
+      "sample_monotonic": 21396.5245878
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 0,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 21503,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.5,
+        "p999_ms_upper_bound": 1.375,
+        "samples": 1270
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1277
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 34.255,
+      "process_p95_ms": 0.138,
+      "process_p99_ms": 0.489,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.359,
+          "p95_ms": 0.297,
+          "p99_ms": 0.312
+        }
+      },
+      "step_max_ms": 0.126,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.104,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1277,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 3,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 1,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 0,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 0,
+      "udp_wire_received_bytes": 2028,
+      "udp_wire_sent_bytes": 180,
+      "unacked_snapshots": 0,
+      "uptime": 21.2885353333339,
+      "version": "0.6.0",
+      "sample_monotonic": 21397.780946
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 0,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 21625,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.25,
+        "p990_ms_upper_bound": 0.5,
+        "p999_ms_upper_bound": 1.375,
+        "samples": 1345
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1352
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 34.255,
+      "process_p95_ms": 0.253,
+      "process_p99_ms": 0.617,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.359,
+          "p95_ms": 0.297,
+          "p99_ms": 0.312
+        }
+      },
+      "step_max_ms": 0.13,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.106,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1352,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 1,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 0,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 0,
+      "udp_wire_received_bytes": 4120,
+      "udp_wire_sent_bytes": 240,
+      "unacked_snapshots": 0,
+      "uptime": 22.5384853333339,
+      "version": "0.6.0",
+      "sample_monotonic": 21399.0375045
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 2,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 21965,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 30.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 28.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.25,
+        "p990_ms_upper_bound": 0.625,
+        "p999_ms_upper_bound": 8.625,
+        "samples": 1481
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1488
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 34.255,
+      "process_p95_ms": 0.383,
+      "process_p99_ms": 1.173,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.359,
+          "p95_ms": 0.297,
+          "p99_ms": 0.312
+        }
+      },
+      "step_max_ms": 0.144,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.114,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1488,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 241,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 157,
+      "udp_wire_received_bytes": 6916,
+      "udp_wire_sent_bytes": 16832,
+      "unacked_snapshots": 0,
+      "uptime": 24.805061333334,
+      "version": "0.6.0",
+      "sample_monotonic": 21401.3752757
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 2,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 22086,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 24.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 16.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.25,
+        "p990_ms_upper_bound": 0.625,
+        "p999_ms_upper_bound": 8.625,
+        "samples": 1560
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1567
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 8.527,
+      "process_p95_ms": 0.383,
+      "process_p99_ms": 0.979,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.359,
+          "p95_ms": 0.297,
+          "p99_ms": 0.312
+        }
+      },
+      "step_max_ms": 0.144,
+      "step_p95_ms": 0.007,
+      "step_p99_ms": 0.116,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1567,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 241,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 157,
+      "udp_wire_received_bytes": 7220,
+      "udp_wire_sent_bytes": 17136,
+      "unacked_snapshots": 0,
+      "uptime": 26.1216753333341,
+      "version": "0.6.0",
+      "sample_monotonic": 21402.6166929
+    },
+    {
+      "active_rooms": 0,
+      "battle_connections": 3,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 22499,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 92.0,
+          "rtt_variance": 14.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 42.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 0,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.25,
+        "p990_ms_upper_bound": 0.625,
+        "p999_ms_upper_bound": 8.625,
+        "samples": 1722
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 0.25,
+        "samples": 1729
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 8.527,
+      "process_p95_ms": 0.407,
+      "process_p99_ms": 1.117,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 0.0,
+      "retiring_battle_connections": 0,
+      "rooms": 0,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_commit": {
+          "max_ms": 0.359,
+          "p95_ms": 0.297,
+          "p99_ms": 0.312
+        }
+      },
+      "step_max_ms": 0.144,
+      "step_p95_ms": 0.006,
+      "step_p99_ms": 0.118,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1729,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 456,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 448,
+      "udp_wire_received_bytes": 8663,
+      "udp_wire_sent_bytes": 26417,
+      "unacked_snapshots": 0,
+      "uptime": 28.8215673333342,
+      "version": "0.6.0",
+      "sample_monotonic": 21405.4104473
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 153620,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 92.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 233.0,
+          "rtt_variance": 48.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 90.0,
+          "rtt_variance": 14.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 126.0,
+          "rtt_variance": 59.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 12,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.375,
+        "p990_ms_upper_bound": 3.75,
+        "p999_ms_upper_bound": 12.75,
+        "samples": 1803
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.125,
+        "p999_ms_upper_bound": 1.25,
+        "samples": 1810
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 12.74,
+      "process_p95_ms": 1.312,
+      "process_p99_ms": 4.095,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 1.499,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.518,
+          "p95_ms": 0.483,
+          "p99_ms": 0.483
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.505,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.075,
+          "p95_ms": 1.469,
+          "p99_ms": 3.691
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.038,
+          "p99_ms": 0.07
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.829,
+          "p95_ms": 0.315,
+          "p99_ms": 0.335
+        }
+      },
+      "step_max_ms": 1.196,
+      "step_p95_ms": 0.049,
+      "step_p99_ms": 0.127,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1810,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 8305,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 131569,
+      "udp_wire_received_bytes": 19916,
+      "udp_wire_sent_bytes": 186757,
+      "unacked_snapshots": 43,
+      "uptime": 30.1715133333343,
+      "version": "0.6.0",
+      "sample_monotonic": 21406.6556264
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 358673,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 205.0,
+          "rtt_variance": 168.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 258.0,
+          "rtt_variance": 105.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 233.0,
+          "rtt_variance": 136.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 156.0,
+          "rtt_variance": 121.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 1,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.5,
+        "p990_ms_upper_bound": 4.375,
+        "p999_ms_upper_bound": 12.75,
+        "samples": 1877
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.25,
+        "p999_ms_upper_bound": 1.25,
+        "samples": 1884
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 12.74,
+      "process_p95_ms": 3.937,
+      "process_p99_ms": 5.438,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 1.237,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.518,
+          "p95_ms": 0.483,
+          "p99_ms": 0.49
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.505,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.075,
+          "p95_ms": 0.975,
+          "p99_ms": 3.414
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.037,
+          "p99_ms": 0.067
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.829,
+          "p95_ms": 0.32,
+          "p99_ms": 0.34
+        }
+      },
+      "step_max_ms": 1.221,
+      "step_p95_ms": 0.132,
+      "step_p99_ms": 0.166,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1884,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 33403,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 336622,
+      "udp_wire_received_bytes": 49916,
+      "udp_wire_sent_bytes": 406058,
+      "unacked_snapshots": 4,
+      "uptime": 31.4047973333343,
+      "version": "0.6.0",
+      "sample_monotonic": 21408.0366107
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 596994,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 0.0,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 166.0,
+          "rtt_variance": 131.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 222.0,
+          "rtt_variance": 123.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 202.0,
+          "rtt_variance": 131.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 134.0,
+          "rtt_variance": 86.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 0.75,
+        "p990_ms_upper_bound": 4.875,
+        "p999_ms_upper_bound": 12.75,
+        "samples": 1960
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 2.603,
+        "p950_ms_upper_bound": 0.125,
+        "p990_ms_upper_bound": 0.25,
+        "p999_ms_upper_bound": 1.75,
+        "samples": 1967
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 0,
+      "persistence_errors": 0,
+      "process_max_ms": 12.74,
+      "process_p95_ms": 4.333,
+      "process_p99_ms": 6.699,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 1.413,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.654,
+          "p95_ms": 0.518,
+          "p99_ms": 0.557
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.635,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.075,
+          "p95_ms": 1.038,
+          "p99_ms": 3.009
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.038,
+          "p99_ms": 0.052
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.829,
+          "p95_ms": 0.323,
+          "p99_ms": 0.354
+        }
+      },
+      "step_max_ms": 1.656,
+      "step_p95_ms": 0.154,
+      "step_p99_ms": 0.175,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 1967,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 8,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 53761,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 574943,
+      "udp_wire_received_bytes": 75445,
+      "udp_wire_sent_bytes": 661180,
+      "unacked_snapshots": 7,
+      "uptime": 32.7880753333344,
+      "version": "0.6.0",
+      "sample_monotonic": 21409.2800633
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 904441,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 14.607,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 21.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 116.0,
+          "rtt_variance": 40.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 112.0,
+          "rtt_variance": 33.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 2.125,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 12.75,
+        "samples": 2034
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 0.25,
+        "p990_ms_upper_bound": 1.375,
+        "p999_ms_upper_bound": 5.875,
+        "samples": 2041
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 60,
+      "persistence_errors": 0,
+      "process_max_ms": 14.607,
+      "process_p95_ms": 4.798,
+      "process_p99_ms": 8.179,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 1.878,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.654,
+          "p95_ms": 0.557,
+          "p99_ms": 0.604
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.635,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.075,
+          "p95_ms": 1.693,
+          "p99_ms": 3.366
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.041,
+          "p99_ms": 0.07
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.829,
+          "p95_ms": 0.32,
+          "p99_ms": 0.36
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 1.197,
+      "step_p99_ms": 1.713,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2041,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 9,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 92093,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 882390,
+      "udp_wire_received_bytes": 121633,
+      "udp_wire_sent_bytes": 988270,
+      "unacked_snapshots": 8,
+      "uptime": 34.0213593333344,
+      "version": "0.6.0",
+      "sample_monotonic": 21410.6095811
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 1329413,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 14.607,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 4.0,
+        "p990_ms_upper_bound": 6.75,
+        "p999_ms_upper_bound": 12.75,
+        "samples": 2116
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.25,
+        "p990_ms_upper_bound": 1.75,
+        "p999_ms_upper_bound": 5.875,
+        "samples": 2123
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 224,
+      "persistence_errors": 0,
+      "process_max_ms": 14.607,
+      "process_p95_ms": 5.945,
+      "process_p99_ms": 9.003,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 1.948,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.701,
+          "p95_ms": 0.604,
+          "p99_ms": 0.654
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.635,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.075,
+          "p95_ms": 1.725,
+          "p99_ms": 2.959
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.044,
+          "p99_ms": 0.067
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.829,
+          "p95_ms": 0.316,
+          "p99_ms": 0.357
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 1.612,
+      "step_p99_ms": 5.313,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2123,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 9,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 165351,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 1307362,
+      "udp_wire_received_bytes": 206949,
+      "udp_wire_sent_bytes": 1438324,
+      "unacked_snapshots": 8,
+      "uptime": 35.3879713333345,
+      "version": "0.6.0",
+      "sample_monotonic": 21411.8810168
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 1748076,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 4.25,
+        "p990_ms_upper_bound": 7.75,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2191
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.5,
+        "p990_ms_upper_bound": 2.625,
+        "p999_ms_upper_bound": 9.125,
+        "samples": 2198
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 374,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 6.728,
+      "process_p99_ms": 9.955,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.082,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.889,
+          "p95_ms": 0.654,
+          "p99_ms": 0.701
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 1.635,
+          "p99_ms": 2.189
+        },
+        "encode": {
+          "max_ms": 8.014,
+          "p95_ms": 1.8,
+          "p99_ms": 3.009
+        },
+        "enqueue": {
+          "max_ms": 0.133,
+          "p95_ms": 0.045,
+          "p99_ms": 0.07
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.347,
+          "p95_ms": 0.328,
+          "p99_ms": 0.391
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 1.803,
+      "step_p99_ms": 6.162,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2198,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 234023,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 1726025,
+      "udp_wire_received_bytes": 286689,
+      "udp_wire_sent_bytes": 1881315,
+      "unacked_snapshots": 7,
+      "uptime": 36.6379213333345,
+      "version": "0.6.0",
+      "sample_monotonic": 21413.1360194
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 2193821,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 81.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 0.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 4.75,
+        "p990_ms_upper_bound": 8.125,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2266
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.625,
+        "p990_ms_upper_bound": 3.25,
+        "p999_ms_upper_bound": 9.125,
+        "samples": 2273
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 524,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 7.376,
+      "process_p99_ms": 11.533,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.147,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 0.916,
+          "p95_ms": 0.701,
+          "p99_ms": 0.889
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.025,
+          "p99_ms": 2.314
+        },
+        "encode": {
+          "max_ms": 8.014,
+          "p95_ms": 1.861,
+          "p99_ms": 2.864
+        },
+        "enqueue": {
+          "max_ms": 0.09,
+          "p95_ms": 0.048,
+          "p99_ms": 0.067
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.347,
+          "p95_ms": 0.335,
+          "p99_ms": 0.405
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 2.24,
+      "step_p99_ms": 6.377,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2273,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 302254,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 2171770,
+      "udp_wire_received_bytes": 365875,
+      "udp_wire_sent_bytes": 2352964,
+      "unacked_snapshots": 7,
+      "uptime": 37.8878713333346,
+      "version": "0.6.0",
+      "sample_monotonic": 21414.3812876
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 2808324,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 5.875,
+        "p990_ms_upper_bound": 8.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2365
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.625,
+        "p990_ms_upper_bound": 5.125,
+        "p999_ms_upper_bound": 9.125,
+        "samples": 2372
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 722,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 7.807,
+      "process_p99_ms": 11.533,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.247,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.264,
+          "p95_ms": 0.916,
+          "p99_ms": 1.124
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 8.014,
+          "p95_ms": 1.944,
+          "p99_ms": 2.721
+        },
+        "enqueue": {
+          "max_ms": 0.14,
+          "p95_ms": 0.053,
+          "p99_ms": 0.072
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.347,
+          "p95_ms": 0.356,
+          "p99_ms": 0.435
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 3.169,
+      "step_p99_ms": 6.377,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2372,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 392296,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 2786273,
+      "udp_wire_received_bytes": 470488,
+      "udp_wire_sent_bytes": 3003640,
+      "unacked_snapshots": 7,
+      "uptime": 39.5378053333347,
+      "version": "0.6.0",
+      "sample_monotonic": 21416.1454506
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 3284404,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.25,
+        "p990_ms_upper_bound": 8.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2445
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.75,
+        "p990_ms_upper_bound": 5.25,
+        "p999_ms_upper_bound": 9.125,
+        "samples": 2452
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 882,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 8.009,
+      "process_p99_ms": 9.955,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.26,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.607,
+          "p95_ms": 1.264,
+          "p99_ms": 1.34
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 8.014,
+          "p95_ms": 1.973,
+          "p99_ms": 2.721
+        },
+        "enqueue": {
+          "max_ms": 0.14,
+          "p95_ms": 0.055,
+          "p99_ms": 0.073
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.347,
+          "p95_ms": 0.371,
+          "p99_ms": 0.556
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 4.308,
+      "step_p99_ms": 6.377,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2452,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 465107,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 3262353,
+      "udp_wire_received_bytes": 554456,
+      "udp_wire_sent_bytes": 3507845,
+      "unacked_snapshots": 8,
+      "uptime": 40.8710853333347,
+      "version": "0.6.0",
+      "sample_monotonic": 21417.7249186
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 3796643,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 81.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.375,
+        "p990_ms_upper_bound": 8.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2541
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 11.055,
+        "p950_ms_upper_bound": 1.75,
+        "p990_ms_upper_bound": 5.25,
+        "p999_ms_upper_bound": 9.125,
+        "samples": 2548
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1073,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 8.042,
+      "process_p99_ms": 11.824,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.224,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.607,
+          "p95_ms": 1.286,
+          "p99_ms": 1.34
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 8.014,
+          "p95_ms": 1.917,
+          "p99_ms": 2.44
+        },
+        "enqueue": {
+          "max_ms": 0.354,
+          "p95_ms": 0.058,
+          "p99_ms": 0.074
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.436,
+          "p95_ms": 0.384,
+          "p99_ms": 0.626
+        }
+      },
+      "step_max_ms": 11.055,
+      "step_p95_ms": 4.944,
+      "step_p99_ms": 6.377,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2548,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 552483,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 3774592,
+      "udp_wire_received_bytes": 656004,
+      "udp_wire_sent_bytes": 4051551,
+      "unacked_snapshots": 8,
+      "uptime": 42.4710213333348,
+      "version": "0.6.0",
+      "sample_monotonic": 21418.9660444
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 4137819,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 15.0,
+          "rtt_ms": 83.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 70.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 15.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 107.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.375,
+        "p990_ms_upper_bound": 8.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2617
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 21.92,
+        "p950_ms_upper_bound": 1.875,
+        "p990_ms_upper_bound": 5.25,
+        "p999_ms_upper_bound": 9.75,
+        "samples": 2624
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1224,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 8.06,
+      "process_p99_ms": 10.267,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.146,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.607,
+          "p95_ms": 1.317,
+          "p99_ms": 1.526
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 4.43,
+          "p95_ms": 1.786,
+          "p99_ms": 2.279
+        },
+        "enqueue": {
+          "max_ms": 0.354,
+          "p95_ms": 0.058,
+          "p99_ms": 0.074
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.436,
+          "p95_ms": 0.392,
+          "p99_ms": 0.626
+        }
+      },
+      "step_max_ms": 21.92,
+      "step_p95_ms": 4.944,
+      "step_p99_ms": 6.377,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2624,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 620703,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 4115768,
+      "udp_wire_received_bytes": 734764,
+      "udp_wire_sent_bytes": 4417847,
+      "unacked_snapshots": 6,
+      "uptime": 43.7376373333349,
+      "version": "0.6.0",
+      "sample_monotonic": 21420.2261912
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 4502139,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 83.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 121.0,
+          "rtt_variance": 25.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 112.0,
+          "rtt_variance": 25.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.5,
+        "p990_ms_upper_bound": 8.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2690
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 23.467,
+        "p950_ms_upper_bound": 2.0,
+        "p990_ms_upper_bound": 5.375,
+        "p999_ms_upper_bound": 11.125,
+        "samples": 2697
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1372,
+      "persistence_errors": 0,
+      "process_max_ms": 16.598,
+      "process_p95_ms": 8.06,
+      "process_p99_ms": 11.824,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.154,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.526,
+          "p99_ms": 1.661
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 4.43,
+          "p95_ms": 1.786,
+          "p99_ms": 2.237
+        },
+        "enqueue": {
+          "max_ms": 0.354,
+          "p95_ms": 0.058,
+          "p99_ms": 0.071
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.436,
+          "p95_ms": 0.406,
+          "p99_ms": 0.626
+        }
+      },
+      "step_max_ms": 23.467,
+      "step_p95_ms": 4.518,
+      "step_p99_ms": 6.555,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2697,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 686810,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 4480088,
+      "udp_wire_received_bytes": 810906,
+      "udp_wire_sent_bytes": 4804895,
+      "unacked_snapshots": 5,
+      "uptime": 44.9542553333349,
+      "version": "0.6.0",
+      "sample_monotonic": 21421.4463554
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 4957360,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 87.0,
+          "rtt_variance": 14.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 108.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 15.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.625,
+        "p990_ms_upper_bound": 8.875,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2767
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.125,
+        "p990_ms_upper_bound": 5.5,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 2774
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1525,
+      "persistence_errors": 0,
+      "process_max_ms": 15.089,
+      "process_p95_ms": 8.111,
+      "process_p99_ms": 10.199,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.186,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.605,
+          "p99_ms": 1.661
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 4.43,
+          "p95_ms": 1.785,
+          "p99_ms": 2.175
+        },
+        "enqueue": {
+          "max_ms": 0.354,
+          "p95_ms": 0.058,
+          "p99_ms": 0.081
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.436,
+          "p95_ms": 0.417,
+          "p99_ms": 0.627
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 4.204,
+      "step_p99_ms": 7.586,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2774,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 755941,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 4935309,
+      "udp_wire_received_bytes": 891407,
+      "udp_wire_sent_bytes": 5286092,
+      "unacked_snapshots": 8,
+      "uptime": 46.237537333335,
+      "version": "0.6.0",
+      "sample_monotonic": 21422.7328976
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 5418065,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 91.0,
+          "rtt_variance": 13.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 103.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.625,
+        "p990_ms_upper_bound": 9.125,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2842
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.25,
+        "p990_ms_upper_bound": 5.5,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 2849
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1673,
+      "persistence_errors": 0,
+      "process_max_ms": 15.089,
+      "process_p95_ms": 8.433,
+      "process_p99_ms": 10.267,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.23,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.605,
+          "p99_ms": 1.661
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.189,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 3.393,
+          "p95_ms": 1.825,
+          "p99_ms": 2.577
+        },
+        "enqueue": {
+          "max_ms": 0.354,
+          "p95_ms": 0.058,
+          "p99_ms": 0.082
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.436,
+          "p95_ms": 0.406,
+          "p99_ms": 0.626
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 4.008,
+      "step_p99_ms": 6.686,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2849,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 824054,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 5396014,
+      "udp_wire_received_bytes": 970508,
+      "udp_wire_sent_bytes": 5773423,
+      "unacked_snapshots": 7,
+      "uptime": 47.487487333335,
+      "version": "0.6.0",
+      "sample_monotonic": 21423.9786425
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 5861275,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 94.0,
+          "rtt_variance": 15.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 104.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 16.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 6.875,
+        "p990_ms_upper_bound": 9.125,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2917
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.5,
+        "p990_ms_upper_bound": 5.5,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 2924
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 1828,
+      "persistence_errors": 0,
+      "process_max_ms": 15.089,
+      "process_p95_ms": 8.272,
+      "process_p99_ms": 10.681,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.228,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.605,
+          "p99_ms": 1.661
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.114,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 3.393,
+          "p95_ms": 1.798,
+          "p99_ms": 2.577
+        },
+        "enqueue": {
+          "max_ms": 0.291,
+          "p95_ms": 0.057,
+          "p99_ms": 0.073
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.36,
+          "p95_ms": 0.41,
+          "p99_ms": 0.581
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 4.008,
+      "step_p99_ms": 6.704,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2924,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 892640,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 5839224,
+      "udp_wire_received_bytes": 1049889,
+      "udp_wire_sent_bytes": 6242473,
+      "unacked_snapshots": 7,
+      "uptime": 48.7374373333351,
+      "version": "0.6.0",
+      "sample_monotonic": 21425.2262245
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 6331755,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 16.598,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 91.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.0,
+        "p990_ms_upper_bound": 9.125,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 2991
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 2998
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 1,
+      "outdated_motion_samples_skipped": 1954,
+      "persistence_errors": 0,
+      "process_max_ms": 15.089,
+      "process_p95_ms": 8.439,
+      "process_p99_ms": 10.681,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.275,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.607,
+          "p99_ms": 1.693
+        },
+        "checkpoint_commit": {
+          "max_ms": 3.412,
+          "p95_ms": 2.114,
+          "p99_ms": 2.496
+        },
+        "encode": {
+          "max_ms": 3.393,
+          "p95_ms": 1.968,
+          "p99_ms": 2.577
+        },
+        "enqueue": {
+          "max_ms": 0.291,
+          "p95_ms": 0.059,
+          "p99_ms": 0.074
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.36,
+          "p95_ms": 0.436,
+          "p99_ms": 0.617
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 4.004,
+      "step_p99_ms": 7.235,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 2998,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 955150,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 6309704,
+      "udp_wire_received_bytes": 1122644,
+      "udp_wire_sent_bytes": 6741160,
+      "unacked_snapshots": 8,
+      "uptime": 49.9707213333351,
+      "version": "0.6.0",
+      "sample_monotonic": 21426.4590544
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 6787660,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 109.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.125,
+        "p990_ms_upper_bound": 9.625,
+        "p999_ms_upper_bound": 15.25,
+        "samples": 3067
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 15.0,
+        "samples": 3074
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2016,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 8.516,
+      "process_p99_ms": 11.286,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.492,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.607,
+          "p99_ms": 1.693
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.314,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.042,
+          "p95_ms": 2.069,
+          "p99_ms": 2.93
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.061,
+          "p99_ms": 0.082
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.461,
+          "p99_ms": 0.932
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 3.895,
+      "step_p99_ms": 7.822,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3074,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 999005,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 6765609,
+      "udp_wire_received_bytes": 1175417,
+      "udp_wire_sent_bytes": 7228272,
+      "unacked_snapshots": 8,
+      "uptime": 51.2456906666685,
+      "version": "0.6.0",
+      "sample_monotonic": 21427.7344088
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 7129740,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 87.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.125,
+        "p990_ms_upper_bound": 9.75,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3141
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 15.0,
+        "samples": 3148
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2164,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 8.714,
+      "process_p99_ms": 12.898,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.619,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.607,
+          "p99_ms": 1.693
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.314,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.042,
+          "p95_ms": 2.097,
+          "p99_ms": 2.988
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.061,
+          "p99_ms": 0.091
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.479,
+          "p99_ms": 0.932
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 3.901,
+      "step_p99_ms": 7.822,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3148,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1066601,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 7107689,
+      "udp_wire_received_bytes": 1253821,
+      "udp_wire_sent_bytes": 7591392,
+      "unacked_snapshots": 8,
+      "uptime": 52.4790240000017,
+      "version": "0.6.0",
+      "sample_monotonic": 21428.9690262
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 7499188,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 13.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 61.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.25,
+        "p990_ms_upper_bound": 9.75,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3217
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 15.0,
+        "samples": 3224
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2274,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 8.626,
+      "process_p99_ms": 12.898,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.619,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.851,
+          "p95_ms": 1.637,
+          "p99_ms": 1.693
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.314,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.042,
+          "p95_ms": 2.079,
+          "p99_ms": 2.93
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.062,
+          "p99_ms": 0.083
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.478,
+          "p99_ms": 0.932
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 3.901,
+      "step_p99_ms": 7.235,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3224,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1124981,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 7477137,
+      "udp_wire_received_bytes": 1321873,
+      "udp_wire_sent_bytes": 7983668,
+      "unacked_snapshots": 8,
+      "uptime": 53.7456906666683,
+      "version": "0.6.0",
+      "sample_monotonic": 21430.2356078
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 7808637,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.25,
+        "p990_ms_upper_bound": 10.25,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3297
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 25.592,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 15.0,
+        "samples": 3304
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2376,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 9.041,
+      "process_p99_ms": 14.683,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.752,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 1.855,
+          "p95_ms": 1.672,
+          "p99_ms": 1.851
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.496,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.369,
+          "p95_ms": 2.097,
+          "p99_ms": 3.04
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.063,
+          "p99_ms": 0.095
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.519,
+          "p99_ms": 1.382
+        }
+      },
+      "step_max_ms": 25.592,
+      "step_p95_ms": 3.826,
+      "step_p99_ms": 6.686,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3304,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1182593,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 7786586,
+      "udp_wire_received_bytes": 1389544,
+      "udp_wire_sent_bytes": 8313311,
+      "unacked_snapshots": 8,
+      "uptime": 55.0790240000016,
+      "version": "0.6.0",
+      "sample_monotonic": 21431.570438
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 8117042,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 109.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.25,
+        "p990_ms_upper_bound": 10.0,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3371
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 2.625,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3378
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2517,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 8.582,
+      "process_p99_ms": 14.683,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.639,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.149,
+          "p95_ms": 1.738,
+          "p99_ms": 1.855
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.496,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.369,
+          "p95_ms": 2.079,
+          "p99_ms": 3.04
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.061,
+          "p99_ms": 0.142
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.51,
+          "p99_ms": 1.382
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.695,
+      "step_p99_ms": 6.285,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3378,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 10,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1248211,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 8094991,
+      "udp_wire_received_bytes": 1465331,
+      "udp_wire_sent_bytes": 8645504,
+      "unacked_snapshots": 8,
+      "uptime": 56.3123573333349,
+      "version": "0.6.0",
+      "sample_monotonic": 21432.796403
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 8614608,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 31.0,
+          "rtt_ms": 104.0,
+          "rtt_variance": 13.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 27.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.375,
+        "p990_ms_upper_bound": 9.875,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3445
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 2.75,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3452
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2665,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 8.714,
+      "process_p99_ms": 14.683,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.752,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.149,
+          "p95_ms": 1.838,
+          "p99_ms": 1.947
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.496,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.369,
+          "p95_ms": 2.116,
+          "p99_ms": 3.04
+        },
+        "enqueue": {
+          "max_ms": 2.059,
+          "p95_ms": 0.066,
+          "p99_ms": 0.142
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.322,
+          "p95_ms": 0.488,
+          "p99_ms": 1.382
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.407,
+      "step_p99_ms": 5.658,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3452,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1314549,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 8592557,
+      "udp_wire_received_bytes": 1542539,
+      "udp_wire_sent_bytes": 9176702,
+      "unacked_snapshots": 8,
+      "uptime": 57.5456906666681,
+      "version": "0.6.0",
+      "sample_monotonic": 21434.0320171
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 9553685,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 93.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 90.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 77.0,
+          "rtt_ms": 103.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 1,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.75,
+        "p990_ms_upper_bound": 10.375,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3584
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3591
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 2941,
+      "persistence_errors": 0,
+      "process_max_ms": 25.681,
+      "process_p95_ms": 9.358,
+      "process_p99_ms": 14.683,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.558,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.149,
+          "p95_ms": 1.851,
+          "p99_ms": 2.046
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.782,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 5.655,
+          "p95_ms": 2.195,
+          "p99_ms": 2.854
+        },
+        "enqueue": {
+          "max_ms": 0.24,
+          "p95_ms": 0.069,
+          "p99_ms": 0.101
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 1.835,
+          "p95_ms": 0.476,
+          "p99_ms": 0.976
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.695,
+      "step_p99_ms": 5.914,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3591,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1442245,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 9531634,
+      "udp_wire_received_bytes": 1691024,
+      "udp_wire_sent_bytes": 10175092,
+      "unacked_snapshots": 4,
+      "uptime": 59.8623573333346,
+      "version": "0.6.0",
+      "sample_monotonic": 21436.4176099
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 10111039,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 91.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 77.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.75,
+        "p990_ms_upper_bound": 10.75,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3663
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.75,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3670
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3110,
+      "persistence_errors": 0,
+      "process_max_ms": 17.06,
+      "process_p95_ms": 9.327,
+      "process_p99_ms": 12.842,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.748,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.277,
+          "p95_ms": 1.947,
+          "p99_ms": 2.149
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.782,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 5.655,
+          "p95_ms": 2.267,
+          "p99_ms": 3.026
+        },
+        "enqueue": {
+          "max_ms": 0.194,
+          "p95_ms": 0.074,
+          "p99_ms": 0.101
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.416,
+          "p95_ms": 0.476,
+          "p99_ms": 1.095
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.826,
+      "step_p99_ms": 5.914,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3670,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1514549,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 10088988,
+      "udp_wire_received_bytes": 1774509,
+      "udp_wire_sent_bytes": 10764680,
+      "unacked_snapshots": 8,
+      "uptime": 61.1790240000012,
+      "version": "0.6.0",
+      "sample_monotonic": 21437.668494
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 10654766,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 11.0,
+          "rtt_ms": 91.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 53.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 77.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.875,
+        "p990_ms_upper_bound": 10.875,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3739
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.75,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3746
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3263,
+      "persistence_errors": 0,
+      "process_max_ms": 16.054,
+      "process_p95_ms": 9.327,
+      "process_p99_ms": 12.728,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.571,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.277,
+          "p95_ms": 1.968,
+          "p99_ms": 2.149
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.496,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 5.655,
+          "p95_ms": 2.224,
+          "p99_ms": 2.773
+        },
+        "enqueue": {
+          "max_ms": 0.507,
+          "p95_ms": 0.072,
+          "p99_ms": 0.101
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.416,
+          "p95_ms": 0.445,
+          "p99_ms": 0.788
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.708,
+      "step_p99_ms": 5.916,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3746,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1583493,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 10632715,
+      "udp_wire_received_bytes": 1854535,
+      "udp_wire_sent_bytes": 11341117,
+      "unacked_snapshots": 8,
+      "uptime": 62.4456906666678,
+      "version": "0.6.0",
+      "sample_monotonic": 21439.4731466
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 11414899,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 92.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 77.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.875,
+        "p990_ms_upper_bound": 11.0,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 3875
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.75,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 3882
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3440,
+      "persistence_errors": 0,
+      "process_max_ms": 15.709,
+      "process_p95_ms": 9.327,
+      "process_p99_ms": 11.542,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.782,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.277,
+          "p95_ms": 1.987,
+          "p99_ms": 2.149
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.563,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 5.655,
+          "p95_ms": 2.315,
+          "p99_ms": 3.055
+        },
+        "enqueue": {
+          "max_ms": 0.507,
+          "p95_ms": 0.072,
+          "p99_ms": 0.103
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.416,
+          "p95_ms": 0.468,
+          "p99_ms": 1.106
+        }
+      },
+      "step_max_ms": 26.602,
+      "step_p95_ms": 3.675,
+      "step_p99_ms": 5.916,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 3882,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1679668,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 11392848,
+      "udp_wire_received_bytes": 1967586,
+      "udp_wire_sent_bytes": 12145811,
+      "unacked_snapshots": 7,
+      "uptime": 64.7123573333344,
+      "version": "0.6.0",
+      "sample_monotonic": 21441.203641
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 12040049,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 10.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 83.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 77.0,
+          "rtt_ms": 104.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 36.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 3,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 7.875,
+        "p990_ms_upper_bound": 11.0,
+        "p999_ms_upper_bound": 16.375,
+        "samples": 4011
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 17.625,
+        "samples": 4018
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3605,
+      "persistence_errors": 0,
+      "process_max_ms": 16.118,
+      "process_p95_ms": 9.358,
+      "process_p99_ms": 11.6,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.596,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.277,
+          "p95_ms": 2.046,
+          "p99_ms": 2.194
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.574,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 3.897,
+          "p95_ms": 2.151,
+          "p99_ms": 2.959
+        },
+        "enqueue": {
+          "max_ms": 0.507,
+          "p95_ms": 0.067,
+          "p99_ms": 0.096
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.835,
+          "p95_ms": 0.475,
+          "p99_ms": 1.327
+        }
+      },
+      "step_max_ms": 7.142,
+      "step_p95_ms": 3.587,
+      "step_p99_ms": 5.647,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4018,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1771796,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 12017998,
+      "udp_wire_received_bytes": 2076098,
+      "udp_wire_sent_bytes": 12813349,
+      "unacked_snapshots": 10,
+      "uptime": 66.9790240000009,
+      "version": "0.6.0",
+      "sample_monotonic": 21444.5201201
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 12657458,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 86.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 3,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.0,
+        "p990_ms_upper_bound": 11.125,
+        "p999_ms_upper_bound": 16.625,
+        "samples": 4149
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.625,
+        "p999_ms_upper_bound": 19.375,
+        "samples": 4156
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3732,
+      "persistence_errors": 0,
+      "process_max_ms": 16.743,
+      "process_p95_ms": 9.199,
+      "process_p99_ms": 12.842,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 2.751,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.5,
+          "p95_ms": 2.149,
+          "p99_ms": 2.319
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 2.782,
+          "p99_ms": 3.412
+        },
+        "encode": {
+          "max_ms": 4.874,
+          "p95_ms": 2.232,
+          "p99_ms": 3.06
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.061,
+          "p99_ms": 0.093
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.835,
+          "p95_ms": 0.537,
+          "p99_ms": 1.327
+        }
+      },
+      "step_max_ms": 19.325,
+      "step_p95_ms": 3.284,
+      "step_p99_ms": 5.564,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4156,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1852331,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 12635407,
+      "udp_wire_received_bytes": 2170995,
+      "udp_wire_sent_bytes": 13473460,
+      "unacked_snapshots": 10,
+      "uptime": 69.2790240000008,
+      "version": "0.6.0",
+      "sample_monotonic": 21445.7658404
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 13071682,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 87.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.125,
+        "p990_ms_upper_bound": 11.25,
+        "p999_ms_upper_bound": 16.75,
+        "samples": 4224
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.0,
+        "p990_ms_upper_bound": 5.75,
+        "p999_ms_upper_bound": 19.375,
+        "samples": 4231
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 3875,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 9.358,
+      "process_p99_ms": 13.934,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.077,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.5,
+          "p95_ms": 2.152,
+          "p99_ms": 2.344
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 4.987
+        },
+        "encode": {
+          "max_ms": 7.252,
+          "p95_ms": 2.625,
+          "p99_ms": 3.832
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.069,
+          "p99_ms": 0.104
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.073,
+          "p95_ms": 0.659,
+          "p99_ms": 1.574
+        }
+      },
+      "step_max_ms": 19.325,
+      "step_p95_ms": 3.162,
+      "step_p99_ms": 6.029,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4231,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1919101,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 13049631,
+      "udp_wire_received_bytes": 2249088,
+      "udp_wire_sent_bytes": 13911861,
+      "unacked_snapshots": 8,
+      "uptime": 70.5290240000007,
+      "version": "0.6.0",
+      "sample_monotonic": 21447.0245825
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 13502898,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 87.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 88.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 110.0,
+          "rtt_variance": 17.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.125,
+        "p990_ms_upper_bound": 11.375,
+        "p999_ms_upper_bound": 16.75,
+        "samples": 4299
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.125,
+        "p990_ms_upper_bound": 5.75,
+        "p999_ms_upper_bound": 19.375,
+        "samples": 4306
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4029,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 9.358,
+      "process_p99_ms": 13.934,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.101,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 2.5,
+          "p95_ms": 2.194,
+          "p99_ms": 2.344
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 4.987
+        },
+        "encode": {
+          "max_ms": 7.252,
+          "p95_ms": 2.625,
+          "p99_ms": 3.832
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.067,
+          "p99_ms": 0.118
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.073,
+          "p95_ms": 0.615,
+          "p99_ms": 1.533
+        }
+      },
+      "step_max_ms": 19.325,
+      "step_p95_ms": 3.229,
+      "step_p99_ms": 6.207,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4306,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 1988207,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 13480847,
+      "udp_wire_received_bytes": 2329356,
+      "udp_wire_sent_bytes": 14367689,
+      "unacked_snapshots": 8,
+      "uptime": 71.7790240000006,
+      "version": "0.6.0",
+      "sample_monotonic": 21448.2688932
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 13935838,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 9.0,
+          "rtt_ms": 81.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 108.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.125,
+        "p990_ms_upper_bound": 11.375,
+        "p999_ms_upper_bound": 16.75,
+        "samples": 4373
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 26.602,
+        "p950_ms_upper_bound": 3.125,
+        "p990_ms_upper_bound": 5.875,
+        "p999_ms_upper_bound": 19.375,
+        "samples": 4380
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4177,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 9.395,
+      "process_p99_ms": 13.934,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.111,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.319,
+          "p99_ms": 2.426
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 4.987
+        },
+        "encode": {
+          "max_ms": 7.252,
+          "p95_ms": 2.655,
+          "p99_ms": 3.832
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.067,
+          "p99_ms": 0.104
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.073,
+          "p95_ms": 0.615,
+          "p99_ms": 1.299
+        }
+      },
+      "step_max_ms": 19.325,
+      "step_p95_ms": 3.284,
+      "step_p99_ms": 6.602,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4380,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2056017,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 13913787,
+      "udp_wire_received_bytes": 2408193,
+      "udp_wire_sent_bytes": 14825417,
+      "unacked_snapshots": 5,
+      "uptime": 73.0123573333339,
+      "version": "0.6.0",
+      "sample_monotonic": 21449.5022704
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 14474012,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 77.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 51.0,
+          "rtt_ms": 91.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.25,
+        "p990_ms_upper_bound": 11.5,
+        "p999_ms_upper_bound": 16.75,
+        "samples": 4447
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.125,
+        "p990_ms_upper_bound": 5.875,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 4456
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4329,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 9.776,
+      "process_p99_ms": 13.934,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.205,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.322,
+          "p99_ms": 2.446
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 7.252,
+          "p95_ms": 2.695,
+          "p99_ms": 3.832
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.072,
+          "p99_ms": 0.121
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.073,
+          "p95_ms": 0.617,
+          "p99_ms": 1.183
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 3.769,
+      "step_p99_ms": 6.682,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4456,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2124617,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 14451961,
+      "udp_wire_received_bytes": 2487929,
+      "udp_wire_sent_bytes": 15395804,
+      "unacked_snapshots": 8,
+      "uptime": 74.2697826666672,
+      "version": "0.6.0",
+      "sample_monotonic": 21450.8336187
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 15212018,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 80.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.25,
+        "p990_ms_upper_bound": 11.625,
+        "p999_ms_upper_bound": 16.75,
+        "samples": 4550
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.25,
+        "p990_ms_upper_bound": 6.0,
+        "p999_ms_upper_bound": 22.0,
+        "samples": 4559
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4542,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 9.865,
+      "process_p99_ms": 13.821,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.16,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.344,
+          "p99_ms": 2.446
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 7.252,
+          "p95_ms": 2.657,
+          "p99_ms": 3.75
+        },
+        "enqueue": {
+          "max_ms": 2.868,
+          "p95_ms": 0.071,
+          "p99_ms": 0.121
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.073,
+          "p95_ms": 0.576,
+          "p99_ms": 1.075
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.399,
+      "step_p99_ms": 6.877,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4559,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2217987,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 15189967,
+      "udp_wire_received_bytes": 2596806,
+      "udp_wire_sent_bytes": 16178753,
+      "unacked_snapshots": 8,
+      "uptime": 75.9864493333337,
+      "version": "0.6.0",
+      "sample_monotonic": 21452.5657305
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 15750930,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 22.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 92.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 106.0,
+          "rtt_variance": 14.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 4,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.375,
+        "p990_ms_upper_bound": 11.75,
+        "p999_ms_upper_bound": 17.125,
+        "samples": 4635
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.25,
+        "p990_ms_upper_bound": 6.0,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 4644
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4697,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 10.547,
+      "process_p99_ms": 14.028,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.111,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.322,
+          "p99_ms": 2.446
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.085,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 5.554,
+          "p95_ms": 2.65,
+          "p99_ms": 3.555
+        },
+        "enqueue": {
+          "max_ms": 0.22,
+          "p95_ms": 0.071,
+          "p99_ms": 0.118
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.455,
+          "p95_ms": 0.534,
+          "p99_ms": 0.804
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.694,
+      "step_p99_ms": 6.877,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4644,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2291346,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 15728879,
+      "udp_wire_received_bytes": 2682054,
+      "udp_wire_sent_bytes": 16749319,
+      "unacked_snapshots": 13,
+      "uptime": 77.4031160000003,
+      "version": "0.6.0",
+      "sample_monotonic": 21453.8855484
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 16214175,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 67.0,
+          "rtt_ms": 103.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 46.0,
+          "rtt_ms": 99.0,
+          "rtt_variance": 12.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.5,
+        "p990_ms_upper_bound": 11.875,
+        "p999_ms_upper_bound": 17.125,
+        "samples": 4708
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.25,
+        "p990_ms_upper_bound": 6.0,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 4717
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 4854,
+      "persistence_errors": 0,
+      "process_max_ms": 20.739,
+      "process_p95_ms": 10.641,
+      "process_p99_ms": 14.028,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.018,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.344,
+          "p99_ms": 2.5
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.088,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 5.554,
+          "p95_ms": 2.535,
+          "p99_ms": 3.555
+        },
+        "enqueue": {
+          "max_ms": 0.186,
+          "p95_ms": 0.071,
+          "p99_ms": 0.121
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.455,
+          "p95_ms": 0.526,
+          "p99_ms": 0.842
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.694,
+      "step_p99_ms": 6.877,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4717,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2362135,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 16192124,
+      "udp_wire_received_bytes": 2764262,
+      "udp_wire_sent_bytes": 17239279,
+      "unacked_snapshots": 8,
+      "uptime": 78.6197826666669,
+      "version": "0.6.0",
+      "sample_monotonic": 21455.106319
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 16696473,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 85.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.5,
+        "p990_ms_upper_bound": 12.25,
+        "p999_ms_upper_bound": 19.25,
+        "samples": 4781
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.25,
+        "p990_ms_upper_bound": 6.125,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 4792
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5002,
+      "persistence_errors": 0,
+      "process_max_ms": 23.81,
+      "process_p95_ms": 10.748,
+      "process_p99_ms": 14.372,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.31,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.409,
+          "p99_ms": 2.537
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.088,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 8.154,
+          "p95_ms": 2.692,
+          "p99_ms": 4.166
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.073,
+          "p99_ms": 0.126
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.568,
+          "p95_ms": 0.517,
+          "p99_ms": 1.075
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.722,
+      "step_p99_ms": 7.118,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4792,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2430009,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 16674422,
+      "udp_wire_received_bytes": 2843074,
+      "udp_wire_sent_bytes": 17749814,
+      "unacked_snapshots": 8,
+      "uptime": 79.8695460000001,
+      "version": "0.6.0",
+      "sample_monotonic": 21456.3525754
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 17216557,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 84.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 105.0,
+          "rtt_variance": 10.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.5,
+        "p990_ms_upper_bound": 12.25,
+        "p999_ms_upper_bound": 19.25,
+        "samples": 4856
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.375,
+        "p990_ms_upper_bound": 6.25,
+        "p999_ms_upper_bound": 25.625,
+        "samples": 4867
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5158,
+      "persistence_errors": 0,
+      "process_max_ms": 23.81,
+      "process_p95_ms": 10.922,
+      "process_p99_ms": 14.396,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.31,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.422,
+          "p99_ms": 2.684
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.088,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 8.154,
+          "p95_ms": 2.666,
+          "p99_ms": 4.166
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.07,
+          "p99_ms": 0.126
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.689,
+          "p95_ms": 0.53,
+          "p99_ms": 1.324
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.912,
+      "step_p99_ms": 7.959,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4867,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2498247,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 17194506,
+      "udp_wire_received_bytes": 2921927,
+      "udp_wire_sent_bytes": 18298976,
+      "unacked_snapshots": 8,
+      "uptime": 81.1195460000001,
+      "version": "0.6.0",
+      "sample_monotonic": 21457.5989063
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 17759612,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 93.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 11.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.625,
+        "p990_ms_upper_bound": 12.625,
+        "p999_ms_upper_bound": 19.25,
+        "samples": 4931
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.375,
+        "p990_ms_upper_bound": 6.25,
+        "p999_ms_upper_bound": 25.625,
+        "samples": 4942
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5307,
+      "persistence_errors": 0,
+      "process_max_ms": 23.81,
+      "process_p95_ms": 10.947,
+      "process_p99_ms": 14.396,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.306,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.426,
+          "p99_ms": 2.684
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.334,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 8.154,
+          "p95_ms": 2.675,
+          "p99_ms": 4.166
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.067,
+          "p99_ms": 0.111
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.689,
+          "p95_ms": 0.504,
+          "p99_ms": 1.324
+        }
+      },
+      "step_max_ms": 36.108,
+      "step_p95_ms": 4.925,
+      "step_p99_ms": 7.719,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 4942,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2566451,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 17737561,
+      "udp_wire_received_bytes": 3001256,
+      "udp_wire_sent_bytes": 18872809,
+      "unacked_snapshots": 8,
+      "uptime": 82.369546,
+      "version": "0.6.0",
+      "sample_monotonic": 21458.8478437
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 18362753,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 80.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 54.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 97.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 8.875,
+        "p990_ms_upper_bound": 12.75,
+        "p999_ms_upper_bound": 17.125,
+        "samples": 5006
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.5,
+        "p990_ms_upper_bound": 6.25,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5017
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5458,
+      "persistence_errors": 0,
+      "process_max_ms": 23.81,
+      "process_p95_ms": 11.814,
+      "process_p99_ms": 14.396,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.49,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.446,
+          "p99_ms": 2.748
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.334,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 8.154,
+          "p95_ms": 2.985,
+          "p99_ms": 4.373
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.067,
+          "p99_ms": 0.126
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.689,
+          "p95_ms": 0.534,
+          "p99_ms": 1.316
+        }
+      },
+      "step_max_ms": 31.41,
+      "step_p95_ms": 5.167,
+      "step_p99_ms": 7.777,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5017,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2634957,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 18340702,
+      "udp_wire_received_bytes": 3080938,
+      "udp_wire_sent_bytes": 19508953,
+      "unacked_snapshots": 8,
+      "uptime": 83.6195459999999,
+      "version": "0.6.0",
+      "sample_monotonic": 21460.0989867
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 18982106,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 3,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.0,
+        "p990_ms_upper_bound": 12.75,
+        "p999_ms_upper_bound": 17.125,
+        "samples": 5081
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.625,
+        "p990_ms_upper_bound": 6.375,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5092
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5607,
+      "persistence_errors": 0,
+      "process_max_ms": 23.81,
+      "process_p95_ms": 11.89,
+      "process_p99_ms": 14.396,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.483,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.5,
+          "p99_ms": 2.765
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.334,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 8.154,
+          "p95_ms": 2.997,
+          "p99_ms": 4.195
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.066,
+          "p99_ms": 0.097
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 2.689,
+          "p95_ms": 0.522,
+          "p99_ms": 1.073
+        }
+      },
+      "step_max_ms": 31.41,
+      "step_p95_ms": 5.201,
+      "step_p99_ms": 7.959,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5092,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2703274,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 18960055,
+      "udp_wire_received_bytes": 3160263,
+      "udp_wire_sent_bytes": 20163189,
+      "unacked_snapshots": 9,
+      "uptime": 84.8695459999999,
+      "version": "0.6.0",
+      "sample_monotonic": 21461.4433663
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 19637691,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 81.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 10.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.125,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 19.875,
+        "samples": 5161
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.75,
+        "p990_ms_upper_bound": 6.625,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5173
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 1,
+      "outdated_motion_samples_skipped": 5772,
+      "persistence_errors": 0,
+      "process_max_ms": 23.863,
+      "process_p95_ms": 12.631,
+      "process_p99_ms": 16.134,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.973,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.564,
+          "p99_ms": 2.803
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.334,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 10.42,
+          "p95_ms": 3.459,
+          "p99_ms": 6.297
+        },
+        "enqueue": {
+          "max_ms": 3.052,
+          "p95_ms": 0.065,
+          "p99_ms": 0.092
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.188,
+          "p95_ms": 0.549,
+          "p99_ms": 1.677
+        }
+      },
+      "step_max_ms": 31.41,
+      "step_p95_ms": 5.435,
+      "step_p99_ms": 8.872,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5173,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2778161,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 19615640,
+      "udp_wire_received_bytes": 3247433,
+      "udp_wire_sent_bytes": 20854367,
+      "unacked_snapshots": 6,
+      "uptime": 86.2192926666664,
+      "version": "0.6.0",
+      "sample_monotonic": 21462.7098427
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 20269931,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 82.0,
+          "rtt_variance": 8.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 64.0,
+          "rtt_ms": 102.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 44.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.25,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 19.875,
+        "samples": 5237
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.75,
+        "p990_ms_upper_bound": 6.75,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5249
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 5924,
+      "persistence_errors": 0,
+      "process_max_ms": 23.863,
+      "process_p95_ms": 12.639,
+      "process_p99_ms": 15.212,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 4.034,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.564,
+          "p99_ms": 2.803
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.334,
+          "p99_ms": 3.577
+        },
+        "encode": {
+          "max_ms": 10.42,
+          "p95_ms": 3.599,
+          "p99_ms": 5.696
+        },
+        "enqueue": {
+          "max_ms": 0.537,
+          "p95_ms": 0.066,
+          "p99_ms": 0.104
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.188,
+          "p95_ms": 0.551,
+          "p99_ms": 1.324
+        }
+      },
+      "step_max_ms": 31.41,
+      "step_p95_ms": 5.626,
+      "step_p99_ms": 9.408,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5249,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 2847327,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 20247880,
+      "udp_wire_received_bytes": 3327674,
+      "udp_wire_sent_bytes": 21520979,
+      "unacked_snapshots": 8,
+      "uptime": 87.485959333333,
+      "version": "0.6.0",
+      "sample_monotonic": 21463.9686829
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 21773745,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 100.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 56.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 38.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.625,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 19.875,
+        "samples": 5409
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.875,
+        "p990_ms_upper_bound": 7.0,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5421
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 6269,
+      "persistence_errors": 0,
+      "process_max_ms": 23.863,
+      "process_p95_ms": 12.503,
+      "process_p99_ms": 15.097,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 4.335,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.639,
+          "p99_ms": 2.803
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.412,
+          "p99_ms": 3.707
+        },
+        "encode": {
+          "max_ms": 10.42,
+          "p95_ms": 3.685,
+          "p99_ms": 5.476
+        },
+        "enqueue": {
+          "max_ms": 0.537,
+          "p95_ms": 0.078,
+          "p99_ms": 0.125
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.188,
+          "p95_ms": 0.55,
+          "p99_ms": 1.532
+        }
+      },
+      "step_max_ms": 15.106,
+      "step_p95_ms": 6.048,
+      "step_p99_ms": 9.137,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5421,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 3003941,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 21751694,
+      "udp_wire_received_bytes": 3509999,
+      "udp_wire_sent_bytes": 23104813,
+      "unacked_snapshots": 6,
+      "uptime": 90.3526259999995,
+      "version": "0.6.0",
+      "sample_monotonic": 21466.8310046
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 22392838,
+      "checkpoint_pending": false,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 98.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 56.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 4.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 38.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.625,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 19.875,
+        "samples": 5484
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 3.875,
+        "p990_ms_upper_bound": 7.0,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5496
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 6421,
+      "persistence_errors": 0,
+      "process_max_ms": 23.863,
+      "process_p95_ms": 12.491,
+      "process_p99_ms": 14.114,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 4.25,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.675,
+          "p99_ms": 2.803
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.412,
+          "p99_ms": 3.707
+        },
+        "encode": {
+          "max_ms": 10.42,
+          "p95_ms": 3.661,
+          "p99_ms": 5.476
+        },
+        "enqueue": {
+          "max_ms": 0.537,
+          "p95_ms": 0.078,
+          "p99_ms": 0.125
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.188,
+          "p95_ms": 0.546,
+          "p99_ms": 1.532
+        }
+      },
+      "step_max_ms": 15.106,
+      "step_p95_ms": 6.183,
+      "step_p99_ms": 9.137,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5496,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 3072447,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 22370787,
+      "udp_wire_received_bytes": 3589137,
+      "udp_wire_sent_bytes": 23757247,
+      "unacked_snapshots": 6,
+      "uptime": 91.6026259999995,
+      "version": "0.6.0",
+      "sample_monotonic": 21468.1561061
+    },
+    {
+      "active_rooms": 2,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 23049540,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 25.681,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 10.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 56.0,
+          "rtt_ms": 103.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 38.0,
+          "rtt_ms": 96.0,
+          "rtt_variance": 9.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 2,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.625,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 19.875,
+        "samples": 5571
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 4.0,
+        "p990_ms_upper_bound": 7.125,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5583
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 0,
+      "outdated_motion_samples_skipped": 6593,
+      "persistence_errors": 0,
+      "process_max_ms": 23.863,
+      "process_p95_ms": 12.217,
+      "process_p99_ms": 15.097,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 4.335,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.684,
+          "p99_ms": 2.803
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.412,
+          "p99_ms": 3.707
+        },
+        "encode": {
+          "max_ms": 10.42,
+          "p95_ms": 3.661,
+          "p99_ms": 5.262
+        },
+        "enqueue": {
+          "max_ms": 0.537,
+          "p95_ms": 0.073,
+          "p99_ms": 0.12
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 4.188,
+          "p95_ms": 0.542,
+          "p99_ms": 1.532
+        }
+      },
+      "step_max_ms": 15.106,
+      "step_p95_ms": 6.52,
+      "step_p99_ms": 8.883,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5583,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 12,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 3150865,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 23027489,
+      "udp_wire_received_bytes": 3679882,
+      "udp_wire_sent_bytes": 24450925,
+      "unacked_snapshots": 8,
+      "uptime": 93.0526259999994,
+      "version": "0.6.0",
+      "sample_monotonic": 21469.5389653
+    },
+    {
+      "active_rooms": 1,
+      "battle_connections": 4,
+      "battle_encrypted": true,
+      "battle_port": 18779,
+      "buffered_bytes": 0,
+      "bytes_sent": 23594600,
+      "checkpoint_pending": true,
+      "combat_process_max_ms": 28.805,
+      "combat_stalls_over_100ms": 0,
+      "connection_close_reasons": {},
+      "connections": 4,
+      "enet_peers": [
+        {
+          "loss_raw": 18.0,
+          "rtt_ms": 89.0,
+          "rtt_variance": 3.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 52.0,
+          "rtt_ms": 94.0,
+          "rtt_variance": 6.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 56.0,
+          "rtt_ms": 101.0,
+          "rtt_variance": 5.0,
+          "throttle": 32.0
+        },
+        {
+          "loss_raw": 38.0,
+          "rtt_ms": 95.0,
+          "rtt_variance": 7.0,
+          "throttle": 32.0
+        }
+      ],
+      "largest_snapshot_window": 1,
+      "last_input_protections": [],
+      "lifetime_process": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 34.255,
+        "p950_ms_upper_bound": 9.625,
+        "p990_ms_upper_bound": 13.25,
+        "p999_ms_upper_bound": 20.75,
+        "samples": 5646
+      },
+      "lifetime_step": {
+        "bucket_width_ms": 0.125,
+        "max_ms": 36.108,
+        "p950_ms_upper_bound": 4.0,
+        "p990_ms_upper_bound": 7.125,
+        "p999_ms_upper_bound": 23.5,
+        "samples": 5658
+      },
+      "match_build_workers": 0,
+      "mutation_queue": 5,
+      "outdated_motion_samples_skipped": 6712,
+      "persistence_errors": 0,
+      "process_max_ms": 28.805,
+      "process_p95_ms": 12.026,
+      "process_p99_ms": 15.212,
+      "protocol": 2,
+      "queued": 0,
+      "replication_p95_ms": 3.557,
+      "retiring_battle_connections": 0,
+      "rooms": 2,
+      "service": "IncenseDebt Online",
+      "snapshot_retries": 0,
+      "snapshots_coalesced": 0,
+      "stages": {
+        "checkpoint_capture": {
+          "max_ms": 4.1,
+          "p95_ms": 2.7,
+          "p99_ms": 2.815
+        },
+        "checkpoint_commit": {
+          "max_ms": 5.633,
+          "p95_ms": 3.412,
+          "p99_ms": 3.707
+        },
+        "encode": {
+          "max_ms": 5.476,
+          "p95_ms": 3.043,
+          "p99_ms": 4.295
+        },
+        "enqueue": {
+          "max_ms": 0.537,
+          "p95_ms": 0.071,
+          "p99_ms": 0.116
+        },
+        "match_construct_worker": {
+          "max_ms": 185.05,
+          "p95_ms": 122.22,
+          "p99_ms": 122.22
+        },
+        "view": {
+          "max_ms": 3.368,
+          "p95_ms": 0.524,
+          "p99_ms": 0.804
+        }
+      },
+      "step_max_ms": 15.106,
+      "step_p95_ms": 6.205,
+      "step_p99_ms": 8.883,
+      "stopping": false,
+      "storage_fault": false,
+      "tick": 5658,
+      "transport": 2,
+      "udp_edge_rejected": 0,
+      "udp_forwarding": {
+        "active_flows": 4,
+        "active_quarantine": 0,
+        "expired_established": 0,
+        "expired_handshakes": 0,
+        "expired_retired": 0,
+        "outbound_alerts": 0,
+        "output_backlog_max": 18,
+        "quarantined": 0
+      },
+      "udp_received_bytes": 3209885,
+      "udp_rejected": 0,
+      "udp_sent_bytes": 23572549,
+      "udp_wire_received_bytes": 3748847,
+      "udp_wire_sent_bytes": 25025635,
+      "unacked_snapshots": 3,
+      "uptime": 94.3026259999993,
+      "version": "0.6.0",
+      "sample_monotonic": 21471.8522572
+    }
+  ],
+  "scope": "4 native Windows headless production sessions and the native Linux server over actual WAN. No physical Android or rendering evidence."
+}

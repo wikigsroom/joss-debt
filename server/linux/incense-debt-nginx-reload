@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eu
 if [ "${RENEWED_LINEAGE:-}" = /etc/letsencrypt/live/incense-debt-public ]; then
+    /usr/bin/python3 /usr/local/lib/incense-debt/certificate_refresh.py --renewed-lineage "$RENEWED_LINEAGE" --apply-pending
     /www/server/nginx/sbin/nginx -t
     /www/server/nginx/sbin/nginx -s reload
 fi

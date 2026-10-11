@@ -1,6 +1,6 @@
 """Render native mobile QA fixtures; every hidden native process is closed afterwards."""
 from pathlib import Path
-import argparse, json, subprocess
+import argparse, hashlib, json, subprocess
 from PIL import Image, ImageStat
 ROOT = Path(__file__).resolve().parents[2]
 ENGINE = ROOT / '.local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe'
@@ -40,6 +40,9 @@ def main():
         report=json.loads((folder/'verification.json').read_text('utf8'))
         matrix.append(dict(fixture=name,resolution=resolution,checks=len(report['checks']),passed=report['passed'],images=images))
         print(name+': '+str(len(report['checks']))+' checks passed; '+str(len(images))+' native frames',flush=True)
-    (report_root/'mobile-matrix.json').write_text(json.dumps(dict(scope='Native rendering and synthetic touch; no virtualization or physical handset claim',packaged=args.packaged,fixtures=matrix),indent=2)+'\n','utf8')
+    report=dict(passed=bool(matrix) and all(row['passed'] for row in matrix),scope='Native rendering and synthetic touch; no virtualization or physical handset claim',packaged=args.packaged,fixtures=matrix)
+    if args.packaged:
+        with (ROOT/'build/windows/IncenseDebt.exe').open('rb') as source: report['artifact_sha256']=hashlib.file_digest(source,'sha256').hexdigest()
+    (report_root/'mobile-matrix.json').write_text(json.dumps(report,indent=2)+'\n','utf8')
 
 if __name__=='__main__': main()
