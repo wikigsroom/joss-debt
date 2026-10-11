@@ -1,6 +1,7 @@
 extends RefCounted
 ## Bounded JSON frames: no executable Variant/Object deserialization.
 const VERSION = 2
+const TRANSPORT_REVISION = 1
 const RULESET = "cooperative-1-duel-2"
 const PORT = 18777
 const TICK_RATE = 60
@@ -9,6 +10,12 @@ const INPUT_RATE = 30
 const HEARTBEAT_SECONDS = 2.0
 const SILENCE_SECONDS = 8.0
 const INPUT_TIMEOUT = .25
+const INPUT_LEASE_SECONDS = 1.0
+const STATE_TIMEOUT = 2.0
+const REQUEST_RETRY_SECONDS = .75
+const MAX_PENDING_REQUESTS = 16
+const SNAPSHOT_WINDOW = 4
+const SNAPSHOT_RETRY_SECONDS = .5
 const RECONNECT_SECONDS = 90.0
 const MAX_CLIENT_BYTES = 4096
 const MAX_SERVER_BYTES = 512 * 1024

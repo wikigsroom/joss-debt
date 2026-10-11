@@ -1,25 +1,25 @@
 # 《香火债》当前交付与验收记录
 
-当前版本 **0.4.0**：默认双人合作闯十一层，保留离线单人和可选对灯切磋。双方共享真实敌人、场景、掉落与金币，各自成长、配装并救援队友；沿物理门和阶梯共同推进。发布页：[v0.4.0-alpha.1](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1)。发布状态以文末回执为准。
+当前源码与本地修复包为 **0.4.1**。默认共灯合作闯十一层，保留离线单人与可选对灯。公开 [v0.4.0-alpha.1](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1) 仍为旧版，附件和标签没有改动；0.4.1 尚未发布。
 
-| 平台 | 大小 | 实际 SHA-256 |
+| 本地产物 | 大小 | 实际 SHA-256 |
 | --- | --- | --- |
-| Windows 客户端 | 1057.5 MiB | `b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368` |
-| Android APK | 977.9 MiB | `4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74` |
-| Windows 独立服务端 | 105.7 MiB | `d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53` |
+| Windows 客户端 | 1057.5 MiB | `b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e` |
+| Android APK | 977.9 MiB | `baacb3414cb5e44eaf74510a9ed8ed43fad3f2617e648a8c46180ad9e68332b9` |
+| Windows 独立服务端 | 105.7 MiB | `05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0` |
 
-合作规则 **125** 项、真实传输 **32** 项、实际服务端重启／损坏恢复 **57** 项、写盘故障 **7** 项全部通过。实际新 EXE 合作键盘／触控流程 **27** 项、31 张捕获，包含真实清房、双人同门换房、数字选卡、双方成长历史和返回单人。可选 PvP 规则 271 项及实际 EXE 流程 30 项通过；离线核心 36 项、实际 EXE 键盘 107 项通过。
+联机应用故障 **65** 项、独立 TCP 中转 **18** 项、实际服务端崩溃／损坏恢复 **57** 项、持续写盘故障 **7** 项和原生 0.4.0 数据升级 **12** 项通过。应用消息丢弃与 TCP 字节停滞分开记录，没有宣称做过真实 IP 丢包或公网验收。
 
-实际 Windows／Android 包体 **2171** 项核对通过，**90** 份编译脚本一致，3810 项运行资源打包；独立服务端与实际客户端的 37 个共享编译模块逐字节一致。Android **0.4.0／code 7**，arm64 调试签名与旧 APK 升级签名一致；INTERNET、VIBRATE、Expand、边到边与全部联机模块均从实际包体检查。未做实体手机安装验收。iOS 仍为 0.2.0 历史交接，无新版 IPA。
+合作规则 **125** 项、真实传输 **32** 项、实际 EXE 合作流程 **27** 项／31 张捕获、可选对战规则 **271** 项／实际 EXE 流程 **30** 项通过。离线核心 **36** 项、实际 EXE 纯键盘流程 **107** 项通过。
 
-独立服务端默认两房、16 连接。实际最终 EXE 两房／四客户端、射线与散射 60 秒本机测试 **59.18 Hz**，step P95 **9.66 ms**、process P99 **33.63 ms**，无持久化错误。本轮是首房间短时网络负载，不能代表十一层长时容量或真实 WAN。暂停双方在线时没有断线期限；真正断线后重新计时 90 秒。两代注册表分别引用独立房间文件，损坏恢复经过实际二进制验证。
+Windows／Android 包体 **2171** 项、**90** 份编译脚本、**3810** 项运行资源通过核对；独立服务端与客户端 **37** 份共享编译模块一致。Android 为 **0.4.1／code 8**，arm64 调试签名，升级签名一致。没有实体手机安装或网络切换验收；iOS 保留 0.2.0 历史交接，无新版 IPA。
 
-[合作交付与限制](../42-cooperative-delivery.md) · [架构](../41-cooperative-architecture.md) · [交付回执](cooperative-2026-10-11/delivery.json) · [实机 GIF](cooperative-2026-10-11/media/cooperative-native.gif) · [运维](../../../server/README.md) · [APK](cooperative-2026-10-11/android.json) · [跨包核对](cooperative-2026-10-11/package-parity.json)
+最终服务端两房／四客户端、射线与散射的 60 秒本机负载：**59.47 Hz**，step P95 **2.77 ms**，process P99 **8.88 ms**。这只是首房间短时验证，不能代表十一层长时容量或 WAN。
 
-旧 0.3.0 与此前移动／美术动作记录保留原版本身份，本轮重新核对编译纹理；旧标签及附件没有修改。离线 schema 2 三槽愿簿与联机身份／战绩分开，合作结算不会改写离线成就。
+恢复默认 90 秒，双方重新确认后继续；双方在线的菜单暂停没有断线期限。客户端与服务器需一起更新到 transport revision 1。旧 0.4.0 检查点可以恢复，离线 schema 2 三槽保持独立。硬崩溃后可能回退到最近一次成功检查点；两代均损坏时保留原文件并拒绝覆盖。
 
-隐私政策 **1.5** 已公开到 [xhz.sidcloud.cn](https://xhz.sidcloud.cn/privacy-policy)，主体 **吴国黎**，邮箱 **carzyg@outlook.com**；合作共享场景、成长、救援及结果已同步。13 页现行 Word 全部逐页查看，现行与历史网页／下载共 **13** 项匿名 HTTPS 检查通过。
+[详细复查](../43-network-reliability-audit.md) · [结构化回执](network-reliability-2026-10-11/audit.json) · [实机 GIF](network-reliability-2026-10-11/media/cooperative-native.gif) · [媒体来源](network-reliability-2026-10-11/media-manifest.json) · [运维](../../../server/README.md) · [旧版发布回执](../../releases/v0.4.0-alpha.1.publication.json)
 
-整个工作使用原生 Windows，无 Docker、WSL、虚拟机或模拟器，没有打开浏览器标签页。默认没有公网游戏主机；仍需实体 Android／手柄、真人十一层平衡、真实 WAN、目标主机长时容量和发行签名验收。
+隐私政策沿用已发布的 **1.5**：[xhz.sidcloud.cn/privacy-policy](https://xhz.sidcloud.cn/privacy-policy)，主体 **吴国黎**，邮箱 **carzyg@outlook.com**。本轮没有新增隐私收集或网页部署。
 
-发布状态：**v0.4.0-alpha.1 已公开并核验**。标签提交 `b7770040265ff0fb1c8b8e6eddce426ff8884ad1`，6 个附件均通过 GitHub 完整 SHA-256 与大小核验，8 项匿名 HTTPS 检查通过。见[发布回执](../../releases/v0.4.0-alpha.1.publication.json)与[公开访问记录](../../releases/v0.4.0-alpha.1.https.json)。
+全程原生 Windows，无 Docker、WSL、虚拟机、模拟器或浏览器。当前没有默认公网游戏服务器；实体 Android 网络切换／后台恢复、真实 WAN、长时合作平衡与目标主机容量仍待验证。

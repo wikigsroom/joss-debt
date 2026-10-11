@@ -38,6 +38,8 @@ func send(client: Dictionary, message: Dictionary) -> void:
 func command(client: Dictionary, op: String, body: Dictionary = {}) -> void:
 	client.request += 1
 	body.op = op; body.request = client.request
+	body.room = str(client.view.get("room", "")); body.match = str(client.view.get("id", ""))
+	if op in ["pause", "resume"]: body.epoch = int(client.view.get("input_epoch", 0))
 	send(client, body)
 
 func once(client: Dictionary, key: String, op: String, body: Dictionary = {}) -> void:
@@ -57,7 +59,8 @@ func _process(delta: float) -> bool:
 			continue
 		if not client.hello:
 			client.hello = true; client.peer.set_no_delay(true)
-			send(client, {"op": "hello", "protocol": Protocol.VERSION, "content": Protocol.fingerprint(), "name": "压力验证%d" % client.index, "resume": ""})
+			send(client, {"op": "hello", "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION,
+				"instance": Protocol.nonce(16), "content": Protocol.fingerprint(), "name": "压力验证%d" % client.index, "resume": ""})
 		while client.peer.get_available_packet_count() > 0:
 			var message = Protocol.unpack(client.peer.get_packet())
 			if message.is_empty(): errors.append("invalid_snapshot"); continue
@@ -73,7 +76,8 @@ func _process(delta: float) -> bool:
 					client.view = message
 					if battle_started >= 0 and client.last_state > 0: intervals.append((now - float(client.last_state)) * 1000)
 					client.last_state = now; states += 1
-					if not message.get("events", []).is_empty(): send(client, {"op": "events_ack", "match": str(message.get("id", "")), "event": int(message.events.back().event_id)})
+					send(client, {"op": "state_ack", "link": message.link, "state_seq": message.state_seq, "lease": message.lease,
+						"match": str(message.get("id", "")), "event": int(message.event_serial)})
 		var view = client.view
 		if view.is_empty(): continue
 		var match_key = str(view.get("id", "room"))
@@ -104,7 +108,8 @@ func _process(delta: float) -> bool:
 					if game_mode == "coop" and view.actors[1 - seat].player.get("downed", false):
 						frame.move = own.direction_to(view.actors[1 - seat].player.pos)
 						frame.interact = own.distance_to(view.actors[1 - seat].player.pos) < 65
-					send(client, {"op": "input", "frame": frame})
+					send(client, {"op": "input", "frame": frame, "link": view.link, "room": view.room, "match": view.id,
+						"epoch": view.input_epoch, "scene": view.input_scene, "lease": view.lease})
 		if now - float(client.last_ping) > 2:
 			client.last_ping = now
 			send(client, {"op": "ping", "nonce": int(now * 1000)})

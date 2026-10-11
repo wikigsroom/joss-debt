@@ -3,6 +3,7 @@ signal changed
 signal state_received(state: Dictionary)
 signal events_received(events: Array)
 signal problem(code: String)
+signal command_completed(operation: String, succeeded: bool, code: String)
 const Protocol = preload("res://scripts/network/protocol.gd")
 const Store = preload("res://scripts/core/save_store.gd")
 const Actor = preload("res://scripts/network/duel_actor.gd")
@@ -24,6 +25,14 @@ var latest_input = Protocol.empty_input()
 var pending_edges = {"dash": false, "skill": false, "active_item": false, "interact": false}
 var wants_connection = false
 var hello_sent = false
+var authenticated = false
+var instance_id = Protocol.nonce(16)
+var link_id = ""
+var state_sequence = 0
+var authorized_room = ""
+var inflight_request = ""
+var command_started = 0.0
+var command_sent_at = -1.0
 var retry_count = 0
 var retry_at = 0.0
 var last_received = 0.0
@@ -64,8 +73,22 @@ func load_identity() -> void:
 	request_serial = int(identity.get("request_serial", 0))
 	input_serial = int(identity.get("input_serial", 0))
 	stats = identity.get("stats", {"wins": 0, "losses": 0, "draws": 0}).duplicate(true)
+	reset_command_delivery()
 
 func save_preferences() -> bool:
+	var saved = preferences.read().get("identities", {})
+	var current = saved.get(endpoint, {})
+	if not str(identity.get("session", "")).is_empty() and current.get("session") == identity.get("session") and int(current.get("owner_generation", 0)) > int(identity.get("owner_generation", 0)):
+		# An older process must not overwrite the new owner's durable credential.
+		wants_connection = false
+		clear_input()
+		peer.close(-1)
+		state = "expired"
+		raise_problem("session_replaced")
+		changed.emit()
+		return false
+	for address in saved:
+		if address != endpoint: identities[address] = saved[address].duplicate(true)
 	identity.pending = pending.duplicate(true)
 	identity.request_serial = request_serial
 	identity.input_serial = input_serial
@@ -96,15 +119,32 @@ func connect_service(url: String = "", name_value: String = "") -> bool:
 	last_error = ""
 	room.clear()
 	presentation.clear()
-	save_preferences()
+	if not save_preferences():
+		stop_for_local_storage()
+		return false
 	open_socket()
 	return true
+
+func stop_for_local_storage() -> void:
+	if state == "expired" and last_error == "session_replaced": return
+	wants_connection = false
+	clear_input()
+	peer.close(-1)
+	state = "local_storage"
+	raise_problem("local_storage_unavailable")
+	changed.emit()
 
 func open_socket() -> void:
 	peer.close(-1)
 	peer = WebSocketPeer.new()
 	Protocol.configure_socket(peer)
 	hello_sent = false
+	authenticated = false
+	link_id = ""
+	state_sequence = 0
+	authorized_room = ""
+	reset_command_delivery()
+	clear_input()
 	retry_at = -1.0
 	attempt_started = now()
 	last_received = now()
@@ -118,6 +158,8 @@ func disconnect_service() -> void:
 	peer.close(-1)
 	state = "offline"
 	hello_sent = false
+	authenticated = false
+	reset_command_delivery()
 	room.clear()
 	presentation.clear()
 	changed.emit()
@@ -154,8 +196,8 @@ func _process(delta: float) -> void:
 	if ready == WebSocketPeer.STATE_OPEN:
 		if not hello_sent:
 			peer.set_no_delay(true)
-			hello_sent = true
-			send({"op": "hello", "protocol": Protocol.VERSION, "content": Protocol.fingerprint(),
+			hello_sent = send({"op": "hello", "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION,
+				"content": Protocol.fingerprint(), "instance": instance_id, "owner_generation": int(identity.get("owner_generation", 0)),
 				"name": nickname, "resume": str(identity.get("resume", ""))})
 		while peer.get_available_packet_count() > 0:
 			var message = Protocol.unpack(peer.get_packet())
@@ -166,6 +208,17 @@ func _process(delta: float) -> void:
 				return
 			last_received = now()
 			receive(message)
+			if not wants_connection or peer.get_ready_state() != WebSocketPeer.STATE_OPEN: return
+		if not authenticated and now() - attempt_started > 6:
+			peer.close(-1)
+			schedule_retry()
+			return
+		if state == "room" and now() - last_state_received > Protocol.STATE_TIMEOUT:
+			raise_problem("state_timeout")
+			peer.close(-1)
+			schedule_retry()
+			return
+		if not flush_pending(): return
 		heartbeat_elapsed += delta
 		if heartbeat_elapsed >= Protocol.HEARTBEAT_SECONDS:
 			heartbeat_elapsed = 0
@@ -184,12 +237,16 @@ func _process(delta: float) -> void:
 			frame.seq = input_serial
 			for edge in pending_edges:
 				frame[edge] = pending_edges[edge]
-			if send({"op": "input", "frame": frame}):
+			if send(input_message(frame)):
 				input_history.append({"seq": input_serial, "frame": frame.duplicate(true), "seconds": seconds})
 				while input_history.size() > 32: input_history.pop_front()
 				for edge in pending_edges: pending_edges[edge] = false
 	elif ready == WebSocketPeer.STATE_CONNECTING:
 		if now() - attempt_started > 6:
+			peer.close(-1)
+			schedule_retry()
+	elif ready == WebSocketPeer.STATE_CLOSING:
+		if now() - last_received > Protocol.SILENCE_SECONDS:
 			peer.close(-1)
 			schedule_retry()
 	elif ready == WebSocketPeer.STATE_CLOSED:
@@ -209,17 +266,52 @@ func send(message: Dictionary) -> bool:
 
 func request(op: String, body: Dictionary = {}) -> int:
 	if state not in ["online", "queued", "room"]: return -1
+	if pending.size() >= Protocol.MAX_PENDING_REQUESTS:
+		raise_problem("too_many_pending_requests")
+		return -1
 	request_serial += 1
 	var message = body.duplicate(true)
 	message.op = op
 	message.request = request_serial
+	message.room = str(room.get("room", ""))
+	message.match = str(room.get("id", ""))
+	if op in ["pause", "resume"]: message.epoch = int(room.get("input_epoch", 0))
 	pending[str(request_serial)] = message
 	if not save_preferences():
 		pending.erase(str(request_serial))
-		raise_problem("local_storage_unavailable")
+		if last_error != "session_replaced": raise_problem("local_storage_unavailable")
 		return -1
-	send(message)
+	flush_pending()
 	return request_serial
+
+func reset_command_delivery() -> void:
+	inflight_request = ""
+	command_started = 0.0
+	command_sent_at = -1.0
+
+func flush_pending() -> bool:
+	if not authenticated or state not in ["online", "queued", "room"] or pending.is_empty(): return true
+	if inflight_request.is_empty() or not pending.has(inflight_request):
+		var ids = pending.keys()
+		ids.sort_custom(func(a, b): return int(a) < int(b))
+		inflight_request = str(ids[0])
+		command_started = now()
+		command_sent_at = -1.0
+	if now() - command_started > Protocol.SILENCE_SECONDS:
+		raise_problem("command_timeout")
+		peer.close(-1)
+		schedule_retry()
+		return false
+	if command_sent_at < 0 or now() - command_sent_at >= Protocol.REQUEST_RETRY_SECONDS:
+		# One durable command at a time: later requests cannot overtake a failed send.
+		command_sent_at = now()
+		send(pending[inflight_request])
+	return true
+
+func input_message(frame: Dictionary) -> Dictionary:
+	return {"op": "input", "frame": frame, "link": link_id, "room": str(room.get("room", "")),
+		"match": str(room.get("id", "")), "epoch": int(room.get("input_epoch", 0)),
+		"scene": int(room.get("input_scene", 0)), "lease": int(room.get("lease", 0))}
 
 func submit_input(frame: Dictionary) -> void:
 	if not can_play(): clear_input(); return
@@ -238,35 +330,55 @@ func can_play() -> bool:
 func receive(message: Dictionary) -> void:
 	match str(message.get("op", "")):
 		"welcome":
+			if message.get("transport") != Protocol.TRANSPORT_REVISION or not message.get("link") is String:
+				receive({"op": "error", "code": "version_mismatch"})
+				return
+			authenticated = true
+			link_id = str(message.link)
+			state_sequence = 0
+			authorized_room = str(message.get("room", ""))
 			identity.session = str(message.session)
 			identity.resume = str(message.resume)
+			identity.owner_generation = int(message.get("owner_generation", 0))
 			request_serial = maxi(request_serial, int(message.request_floor))
 			input_serial = maxi(input_serial, int(message.input_floor))
 			stats = message.stats.duplicate(true)
 			retry_count = 0
-			state = "online"
-			save_preferences()
-			for request_id in pending.keys(): send(pending[request_id])
+			state = "synchronizing" if not str(message.get("room", "")).is_empty() else ("queued" if message.get("queued", false) else "online")
+			if state != "synchronizing": room.clear(); presentation.clear()
+			if not save_preferences(): stop_for_local_storage(); return
+			flush_pending()
 			changed.emit()
 		"pong":
 			if Protocol.Store.integer(message.get("nonce")): latency_ms = maxi(0, int(Time.get_ticks_msec()) - int(message.nonce))
 		"ack":
 			var key = str(int(message.request))
+			if not pending.has(key): return
 			var command = pending.get(key, {})
 			pending.erase(key)
+			if key == inflight_request: reset_command_delivery()
 			if not bool(message.get("ok", false)):
 				raise_problem(str(message.get("code", "request_failed")))
-			elif command.get("op") == "queue" and bool(message.get("queued", false)) and room.is_empty(): state = "queued"
-			elif command.get("op") in ["leave", "cancel_queue"]:
+			var service = message.get("service", {})
+			authorized_room = str(service.get("room", authorized_room))
+			if service is Dictionary and str(service.get("room", "")).is_empty():
 				room.clear()
 				presentation.clear()
-				state = "online"
+				state = "queued" if bool(service.get("queued", false)) else "online"
 				clear_input()
-			save_preferences()
+			if not save_preferences(): stop_for_local_storage(); return
+			command_completed.emit(str(command.get("op", "")), bool(message.get("ok", false)), str(message.get("code", "")))
 			changed.emit()
+		"service":
+			if message.get("link") != link_id: return
+			authorized_room = str(message.get("room", ""))
+			if not authorized_room.is_empty() and str(room.get("room", "")) != authorized_room:
+				clear_input()
+				state = "synchronizing"
 		"state":
 			accept_state(message)
 		"room_closed":
+			authorized_room = ""
 			room.clear()
 			presentation.clear()
 			state = "online"
@@ -280,15 +392,21 @@ func receive(message: Dictionary) -> void:
 				state = "storage"
 				clear_input()
 				changed.emit()
-			if code in ["session_expired", "version_mismatch"]:
+			if code in ["session_expired", "session_replaced", "version_mismatch"]:
 				wants_connection = false
-				state = "expired" if code == "session_expired" else "incompatible"
+				state = "incompatible" if code == "version_mismatch" else "expired"
 				clear_input()
 				peer.close(-1)
 				changed.emit()
 
 func accept_state(message: Dictionary) -> void:
+	if message.get("link") != link_id or not Store.integer(message.get("state_seq")) or int(message.state_seq) < 1: return
+	if str(message.get("room", "")) != authorized_room or authorized_room.is_empty(): return
+	if int(message.state_seq) <= state_sequence:
+		acknowledge_state(message)
+		return
 	if not message.get("players") is Array or message.players.size() not in [1, 2] or not message.get("actors") is Array or message.actors.size() not in [0, 2]: return
+	state_sequence = int(message.state_seq)
 	var match_id = str(message.get("id", ""))
 	var was_room = state == "room"
 	if match_id != event_match:
@@ -297,6 +415,7 @@ func accept_state(message: Dictionary) -> void:
 		last_event = int(message.get("event_serial", 0)) if message.get("phase") in ["playing", "round_result", "suspended", "finished"] else 0
 		presentation.clear()
 	var before = ui_state_key(room)
+	if message.get("input_epoch") != room.get("input_epoch") or message.get("input_scene") != room.get("input_scene"): clear_input()
 	room = message.duplicate(true)
 	snapshot_serial += 1
 	input_history = input_history.filter(func(input): return int(input.seq) > int(message.get("input_ack", 0)))
@@ -339,11 +458,15 @@ func accept_state(message: Dictionary) -> void:
 			incoming.append(event)
 			last_event = maxi(last_event, int(event.event_id))
 	if not incoming.is_empty(): events_received.emit(incoming)
-	if last_event > 0: send({"op": "events_ack", "match": match_id, "event": last_event})
+	acknowledge_state(message)
 	if room.get("phase", "") != "playing": clear_input()
 	state_received.emit(room)
 	var after = ui_state_key(room)
 	if before != after or not was_room: changed.emit()
+
+func acknowledge_state(message: Dictionary) -> void:
+	send({"op": "state_ack", "link": link_id, "state_seq": int(message.state_seq),
+		"lease": int(message.get("lease", 0)), "match": str(message.get("id", "")), "event": last_event})
 
 func ui_state_key(value: Dictionary) -> String:
 	var offers = str(value.get("offers", [])) if value.get("game_mode") == "coop" and value.get("phase") == "draft" else ""

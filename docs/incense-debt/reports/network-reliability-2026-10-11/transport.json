@@ -1,0 +1,135 @@
+{
+  "checks": [
+    {
+      "id": "native_loopback_server",
+      "passed": true
+    },
+    {
+      "id": "three_real_socket_clients",
+      "passed": true
+    },
+    {
+      "id": "cooperation_and_duel_queues_separate",
+      "passed": true
+    },
+    {
+      "id": "matching_selects_same_mode_partner",
+      "passed": true
+    },
+    {
+      "id": "both_ready_start_real_campaign",
+      "passed": true
+    },
+    {
+      "id": "clients_share_npcs_not_opponent_proxy",
+      "passed": true
+    },
+    {
+      "id": "both_client_geometry_matches_server",
+      "passed": true
+    },
+    {
+      "id": "real_inputs_move_and_fire",
+      "passed": true
+    },
+    {
+      "id": "authority_never_uploads_offline_progress",
+      "passed": true
+    },
+    {
+      "id": "pause_suspends_both_clients",
+      "passed": true
+    },
+    {
+      "id": "paused_dungeon_stops_simulation",
+      "passed": true
+    },
+    {
+      "id": "connected_coop_menu_has_no_reconnect_timeout",
+      "passed": true
+    },
+    {
+      "id": "paused_control_checkpoints_commit",
+      "passed": true
+    },
+    {
+      "id": "paused_registry_generations_have_independent_room_files",
+      "passed": true
+    },
+    {
+      "id": "one_ready_cannot_resume_team",
+      "passed": true
+    },
+    {
+      "id": "mutual_resume_preserves_campaign",
+      "passed": true
+    },
+    {
+      "id": "growth_modal_snapshot",
+      "passed": true
+    },
+    {
+      "id": "stale_choice_rejected",
+      "passed": true
+    },
+    {
+      "id": "number_choice_records_personal_talent",
+      "passed": true
+    },
+    {
+      "id": "disconnect_freezes_other_client",
+      "passed": true
+    },
+    {
+      "id": "automatic_resume_identity",
+      "passed": true
+    },
+    {
+      "id": "reconnect_preserves_pending_growth",
+      "passed": true
+    },
+    {
+      "id": "reconnect_does_not_replay_events",
+      "passed": true
+    },
+    {
+      "id": "unfinished_growth_stays_modal_after_resume",
+      "passed": true
+    },
+    {
+      "id": "partner_leave_is_team_end",
+      "passed": true
+    },
+    {
+      "id": "team_loss_counted_for_both_once",
+      "passed": true
+    },
+    {
+      "id": "duplicate_settlement_cannot_duplicate_loss",
+      "passed": true
+    },
+    {
+      "id": "long_campaign_keeps_its_fresh_result_screen",
+      "passed": true
+    },
+    {
+      "id": "leading_zero_cooperative_room_code",
+      "passed": true
+    },
+    {
+      "id": "same_code_wrong_mode_rejected",
+      "passed": true
+    },
+    {
+      "id": "same_code_cooperative_partner_joins",
+      "passed": true
+    },
+    {
+      "id": "no_client_teleport_command",
+      "passed": true
+    }
+  ],
+  "isolated_authority_fixtures": true,
+  "native_sockets": true,
+  "passed": true
+}

@@ -1,12 +1,16 @@
 # 香火债 · 共灯与对灯服务端
 
+**0.4.1 联机可靠性修复：** 客户端／服务器需一起更新，采用 transport revision 1；0.4.0 检查点保持兼容并经过实际升级验证。顺序指令补发、状态停滞停战、输入与快照校验、持久身份接管及活跃房间容量见 [专项复查](../docs/incense-debt/43-network-reliability-audit.md)。已公开的 v0.4.0-alpha.1 附件仍为原版本。
+
+0.4.1 clients and server must be upgraded together. Transport revision 1 rejects old peers; existing 0.4.0 server checkpoints pass the native upgrade test. See the [reliability audit](../docs/incense-debt/43-network-reliability-audit.md) for command retries, state-progress protection, input/snapshot fences, ownership generations and active-room capacity. The public 0.4.0 release retains its original artifacts.
+
 原生 Godot 专用服务器。架构与恢复规格见 [合作设计](../docs/incense-debt/41-cooperative-architecture.md)与[原 PvP 设计](../docs/incense-debt/39-online-architecture.md)。共用协议与双人战斗代码放在 `game/scripts/network/`，本目录维护服务入口、启动配置和运维说明。运行数据不进入 Git。
 
 本机开发与验证直接使用 Windows 原生进程，不需要 Docker、WSL 或虚拟机。公网需要可持续运行的主机和有效 WSS 证书；本机地址不会自动变成公网服务。
 
-0.4.0 默认提供「共灯」双人合作十一层肉鸽：共享 NPC、房间、金币和掉落，各自成长、交易、债约与装备，倒地救援和双人同门／阶梯推进。快速匹配与六位房间隔离合作／切磋模式；「对灯」保留独立 PvP、四选一和三局两胜。六角色、32 武器、18 技能开放配装。
+0.4.1 默认提供「共灯」双人合作十一层肉鸽：共享 NPC、房间、金币和掉落，各自成长、交易、债约与装备，倒地救援和双人同门／阶梯推进。快速匹配与六位房间隔离合作／切磋模式；「对灯」保留独立 PvP、四选一和三局两胜。六角色、32 武器、18 技能开放配装。
 
-A native Windows x64 server for 0.4.0 Co-Light: a shared eleven-floor roguelite with personal builds, shared coins, nearby rescue and physical team doors. Quick matching and six-digit rooms separate cooperative and optional Duel modes. The exported server needs no separate engine installation.
+A native Windows x64 server for 0.4.1 Co-Light: a shared eleven-floor roguelite with personal builds, shared coins, nearby rescue and physical team doors. Quick matching and six-digit rooms separate cooperative and optional Duel modes. The exported server needs no separate engine installation.
 
 ## 发布包运行 / Run the server package
 
@@ -26,7 +30,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\StopServer.ps1
 
 Two clients on one PC use `ws://127.0.0.1:18777`. LAN clients use the server PC's IPv4 address, e.g. `ws://192.168.1.10:18777`. On a phone, localhost refers to the phone. Allow inbound TCP 18777; restrict health port 18778 to trusted operators.
 
-双方连接同一服务器、使用相同模式和 0.4.0 版本。在六位房间页输入相同数字，先到者创建、后到者加入；保留前导零，每房两人，第三人被拒。房间码用于寻找开放房间，不是身份密码。合作与切磋使用独立 FIFO 队列；同码另一模式不能混入。
+双方连接同一服务器、使用相同模式和 0.4.1 修复版。在六位房间页输入相同数字，先到者创建、后到者加入；保留前导零，每房两人，第三人被拒。房间码用于寻找开放房间，不是身份密码。合作与切磋使用独立 FIFO 队列；同码另一模式不能混入。
 
 Enter the same six-digit code on both clients: the first creates and the second joins. Leading zeroes are preserved. Rooms admit two players. Codes locate open rooms; they are not authentication secrets. Cooperation and Duel use separate FIFO queues; both clients need the same mode and version.
 

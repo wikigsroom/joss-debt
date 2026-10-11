@@ -44,6 +44,8 @@ func initialize(host, folder: String = "user://online-client") -> void:
 	session.changed.connect(refresh)
 	session.state_received.connect(receive_state)
 	session.events_received.connect(receive_events)
+	session.command_completed.connect(func(operation, succeeded, _code):
+		if operation == "pause" and not succeeded: pause_pending = false; refresh())
 	session.problem.connect(func(code):
 		if enabled: app.notice(Screens.error_text(code)))
 	var character = app.world.db.row("characters", str(session.loadout.get("character", "")))

@@ -13,7 +13,10 @@ static func error_text(code: String) -> String:
 		"session_replaced": "这份身份已在另一处登录。", "room_expired": "等待房间已到期，请重新点灯。",
 		"storage_unavailable": "服务器正在恢复存档写入，对局暂时停战。", "local_storage_unavailable": "本机联机存档无法写入，操作未发送。",
 		"invalid_server_packet": "连接数据异常，正在尝试恢复。", "stale_request": "操作已过期，请重新选择。",
-		"stale_choice": "房间奖励已经变化，请重新选择。", "room_mode_mismatch": "此房间玩法不同，请双方选择相同模式。"}.get(code, "操作未完成，请稍后重试。")
+		"stale_choice": "房间奖励已经变化，请重新选择。", "room_mode_mismatch": "此房间玩法不同，请双方选择相同模式。",
+		"stale_context": "房间状态已经变化，请重新操作。", "command_timeout": "操作确认超时，正在恢复连接。",
+		"state_timeout": "地图同步中断，正在恢复连接。", "too_many_pending_requests": "正在确认上一项操作，请稍候。",
+		"snapshot_too_large": "房间同步数据超出限制，请联系开发者。"}.get(code, "操作未完成，请稍后重试。")
 
 static func connection_text(c) -> String:
 	var s = c.session
@@ -22,8 +25,10 @@ static func connection_text(c) -> String:
 		"room": return "房间已连接 · %d ms" % s.latency_ms
 		"queued": return "正在寻找另一位还愿人…"
 		"connecting": return "正在连接服务器…"
+		"synchronizing": return "正在恢复地图状态…"
 		"reconnecting": return "正在恢复连接 · 第 %d 次尝试" % maxi(1, s.retry_count)
 		"storage": return error_text("storage_unavailable")
+		"local_storage": return error_text("local_storage_unavailable")
 		"expired": return error_text(s.last_error if not s.last_error.is_empty() else "session_expired")
 		"incompatible": return error_text("version_mismatch")
 	return "选择服务器后点灯"

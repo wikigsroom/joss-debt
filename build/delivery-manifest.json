@@ -1,52 +1,58 @@
 {
-  "version": "0.4.0",
-  "status": "verified_cooperative_alpha_published",
-  "recorded_at": "2026-10-11T02:23:43.261630+00:00",
+  "version": "0.4.1",
+  "status": "verified_network_reliability_alpha_local",
+  "recorded_at": "2026-10-11T08:07:37.972118+00:00",
   "files": [
     {
       "path": "build/windows/IncenseDebt.exe",
-      "sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
-      "bytes": 1108831472
+      "sha256": "b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e",
+      "bytes": 1108841888
     },
     {
       "path": "build/android/IncenseDebt.apk",
-      "sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
-      "bytes": 1025404576
+      "sha256": "baacb3414cb5e44eaf74510a9ed8ed43fad3f2617e648a8c46180ad9e68332b9",
+      "bytes": 1025416864
     },
     {
       "path": "build/server/IncenseDebtServer.exe",
-      "sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
-      "bytes": 110849184
+      "sha256": "05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0",
+      "bytes": 110855328
     }
   ],
-  "revision_report": "docs/incense-debt/reports/cooperative-2026-10-11/package-parity.json",
-  "revision_document": "docs/incense-debt/42-cooperative-delivery.md",
-  "revision_reports": "docs/incense-debt/reports/cooperative-2026-10-11",
+  "revision_report": "docs/incense-debt/reports/network-reliability-2026-10-11/audit.json",
+  "revision_document": "docs/incense-debt/43-network-reliability-audit.md",
+  "revision_reports": "docs/incense-debt/reports/network-reliability-2026-10-11",
   "runtime_assets": 3810,
   "matching_compiled_scripts": 90,
   "checks": {
+    "faults": 65,
+    "tcp": 18,
+    "storage": 7,
     "combat": 125,
     "transport": 32,
+    "native": 27,
+    "duel-native": 30,
+    "duel-combat": 271,
+    "offline-core": 36,
+    "keyboard": 107,
+    "package-parity": 2171,
+    "client-server-parity": 37,
     "recovery": 57,
-    "storage": 7,
-    "native_online": 27,
-    "duel_native": 30,
-    "duel_combat": 271,
-    "offline_core": 36,
-    "offline_keyboard": 107,
-    "package_parity": 2171
+    "upgrade": 12
   },
   "android_signing": "debug",
-  "android_version_code": 7,
+  "android_version_code": 8,
   "android_physical_device_tested": false,
   "public_game_server_deployed": false,
   "ios_handoff_version": "0.2.0_historical",
   "save_schema": 2,
   "public_github_release": "v0.4.0-alpha.1",
-  "public_release_state": "published_and_verified",
-  "previous_delivery_manifest": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/delivery-manifest.json",
+  "public_release_state": "historical_0.4.0_published_current_0.4.1_not_published",
+  "previous_delivery_manifest": "docs/incense-debt/reports/network-reliability-2026-10-11/baseline-0.4.0/delivery-manifest.json",
   "public_release_commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
   "public_release_published_at": "2026-10-11T02:39:05Z",
   "publication_receipt": "docs/releases/v0.4.0-alpha.1.publication.json",
-  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json"
+  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json",
+  "local_build_publication": "not_published",
+  "public_release_version": "0.4.0"
 }

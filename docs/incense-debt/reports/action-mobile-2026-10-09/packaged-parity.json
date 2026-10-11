@@ -1,6 +1,6 @@
 {
   "checks": [
-    "the executable loads the current 0.4.0 project from its embedded pack",
+    "the executable loads the current 0.4.1 project from its embedded pack",
     "the generated pickup bitmap loads with its dimensions and transparent background: heal",
     "the generated pickup bitmap loads with its dimensions and transparent background: coin",
     "the generated pickup bitmap loads with its dimensions and transparent background: coin_pair",
@@ -2178,8 +2178,8 @@
   "hero_frames": 864,
   "passed": true,
   "scope": "matching native Godot test runner opens the actual Windows EXE embedded PCK; real exported resources and compiled scripts; separate packaged keyboard QA verifies executable runtime; no Android hardware claim",
-  "windows_sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
-  "android_sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+  "windows_sha256": "b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e",
+  "android_sha256": "baacb3414cb5e44eaf74510a9ed8ed43fad3f2617e648a8c46180ad9e68332b9",
   "matching_compiled_scripts": 90,
   "matching_data": [
     "game/data/music_playlist.json",

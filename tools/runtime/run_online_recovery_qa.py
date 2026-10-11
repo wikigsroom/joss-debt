@@ -68,15 +68,22 @@ def main():
                 while time.monotonic() < deadline:
                     copies = []
                     for path in (data / "registry").glob("checkpoint_*.json"):
-                        registry = json.loads(json.loads(path.read_text("utf8"))["payload"])
-                        revisions = registry.get("room_revisions", {})
-                        if len(revisions) != 1:
-                            continue
-                        room_id, revision = next(iter(revisions.items()))
-                        archive = data / "rooms" / room_id / ("revision_%016d.json" % int(revision))
-                        if archive.is_file():
-                            room = json.loads(json.loads(archive.read_text("utf8"))["payload"])
-                            copies.append((int(revision), room))
+                        try:
+                            registry = json.loads(json.loads(path.read_text("utf8"))["payload"])
+                            revisions = registry.get("room_revisions", {})
+                            if len(revisions) != 1:
+                                continue
+                            room_id, revision = next(iter(revisions.items()))
+                            archive = data / "rooms" / room_id / ("revision_%016d.json" % int(revision))
+                            if archive.is_file():
+                                room = json.loads(json.loads(archive.read_text("utf8"))["payload"])
+                                copies.append((int(revision), room))
+                        except (OSError, ValueError, KeyError):
+                            # The native writer can briefly own/replace a file on
+                            # Windows. Retry observation within the same deadline;
+                            # do not mistake a sharing violation for stable data.
+                            copies = []
+                            break
                     if len(copies) == 2 and copies[0][0] != copies[1][0] and all(room["suspended"] for _, room in copies) and copies[0][1]["match"] == copies[1][1]["match"]:
                         break
                     time.sleep(.1)

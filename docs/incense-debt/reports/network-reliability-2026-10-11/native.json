@@ -1,0 +1,1960 @@
+{
+  "captures": [
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [],
+        "error": "",
+        "firing": false,
+        "hp": [],
+        "move_id": -1,
+        "page": "hub",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "",
+        "phase": "",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "offline",
+        "state_age": 3.763,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-hub",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-hub.png",
+      "phase": "",
+      "positions": [],
+      "room": -1,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "26524595573a364af99cf4238a50622c2a7cb2bacbde65457da8447603432576"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [],
+        "move_id": -1,
+        "page": "hub",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "lobby",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.021000000000000796,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-lobby",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-lobby.png",
+      "phase": "lobby",
+      "positions": [],
+      "room": -1,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "600570c3f7d08ef7dcc071863c703fc5d2074f1b44eba872126cfcc1cfb1428f"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": -1,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.058999999999999275,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-combat",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-combat.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            723.3328247070312,
+            601.2142944335938
+          ]
+        },
+        {
+          "__vector2": [
+            688.0,
+            589.2142944335938
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "e50ec9b8b49c86cde1188c5f467b953f3f703458f886b9c7d47359f2e6242ff4"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "suspended",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.025000000000000355,
+        "suspend_reason": "menu"
+      },
+      "doors": [],
+      "name": "coop-pause",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-pause.png",
+      "phase": "suspended",
+      "positions": [
+        {
+          "__vector2": [
+            723.3328247070312,
+            601.2142944335938
+          ]
+        },
+        {
+          "__vector2": [
+            688.0,
+            589.2142944335938
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "f9070bab0885f8e34e1b748d246a6974bc6426975b8334f9ffb36c0334fa0e99"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "arena",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.12899999999999956,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-map",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-map.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            723.3328247070312,
+            601.2142944335938
+          ]
+        },
+        {
+          "__vector2": [
+            688.0,
+            589.2142944335938
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "ffb75c5fe4fcb2a1f7c152b18575c9becca9745fbd26bf5c80a837614d74de8c"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "suspended",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.019999999999999574,
+        "suspend_reason": "disconnect"
+      },
+      "doors": [],
+      "name": "coop-reconnect",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-reconnect.png",
+      "phase": "suspended",
+      "positions": [
+        {
+          "__vector2": [
+            723.3328247070312,
+            601.2142944335938
+          ]
+        },
+        {
+          "__vector2": [
+            688.0,
+            589.2142944335938
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        1280,
+        720
+      ],
+      "source_sha256": "36544280e4e1a995c917c30af243134d0b9b18382519eea1771e3e2624e93c5e"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.06299999999999883,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-wide-touch",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-wide-touch.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            713.3663940429688,
+            601.1455688476562
+          ]
+        },
+        {
+          "__vector2": [
+            695.5791015625,
+            610.9298706054688
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "8cfeeebecf91e343f74a901fa5d20b82cab270ab26e78bf983dcf29e08b4655e"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.10699999999999932,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-00",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-00.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            718.7796630859375,
+            609.9342651367188
+          ]
+        },
+        {
+          "__vector2": [
+            700.6318359375,
+            610.9298706054688
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "1ff584a68b319f3c96f45cb0c16c69b8dfbfb7f4ad843844fdfc72a7ea2c55f1"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.12700000000000244,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-01",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-01.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            728.014892578125,
+            609.9342651367188
+          ]
+        },
+        {
+          "__vector2": [
+            710.7373046875,
+            610.9298706054688
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "dea90031de87c69925a3d493e0d8a582adf443232bd75b2e2aa25854d1e295a3"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.08699999999999974,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-02",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-02.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            693.6538696289062,
+            603.0247192382812
+          ]
+        },
+        {
+          "__vector2": [
+            724.639892578125,
+            596.0675659179688
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "b839df1dcc02a903d1c22f25a8359f9fc222e5dec9ce258cfb765cc165a224e3"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.14300000000000068,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-03",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-03.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            672.6340942382812,
+            610.2588500976562
+          ]
+        },
+        {
+          "__vector2": [
+            680.39794921875,
+            589.7698364257812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "4c4c41c18c216e4ddb39ec8e38b927c4d70b6b2949fc206b15eb4554128dc55d"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.1180000000000021,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-04",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-04.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            658.2744140625,
+            610.8616943359375
+          ]
+        },
+        {
+          "__vector2": [
+            673.0750122070312,
+            606.3291015625
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "c158a5a861eeca0b11fa4f9a964263bfe18962c83c3abaf37c22a4924c51dbbb"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.10299999999999798,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-05",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-05.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            635.8809814453125,
+            611.189208984375
+          ]
+        },
+        {
+          "__vector2": [
+            694.7008056640625,
+            607.1474609375
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "d3e6985b73ed408e0eb14a5afd50a65715f3d96ede35f6da9af0ac306c38b6e4"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.12300000000000111,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-06",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-06.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            620.8353881835938,
+            611.1229858398438
+          ]
+        },
+        {
+          "__vector2": [
+            714.1439819335938,
+            602.7731323242188
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "5be0701e7e526780216d1b310d4487a0e6f5798cecbb9f53f40e1ed9977cb4e4"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.09600000000000009,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-07",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-07.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            590.9324951171875,
+            608.2341918945312
+          ]
+        },
+        {
+          "__vector2": [
+            722.6455688476562,
+            587.9387817382812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "589da919a2c59ac3f1805ba8d3406ec7bf68a000164e2e2c494a3491e4c899b1"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.13400000000000034,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-08",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-08.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            576.2361450195312,
+            605.3921508789062
+          ]
+        },
+        {
+          "__vector2": [
+            753.3401489257812,
+            546.3450317382812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "d26a0b33db93389e275efef63ddeff1432322e0be3790ff93f36a9df3aa8a188"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.13500000000000156,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-09",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-09.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            563.0523681640625,
+            599.5253295898438
+          ]
+        },
+        {
+          "__vector2": [
+            753.3401489257812,
+            533.3469848632812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "91551cd710fdc464e6946a045954a8ecce91e4fa3eb9b1f110a772243a08158e"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.11799999999999855,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-10",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-10.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            545.590087890625,
+            587.0628051757812
+          ]
+        },
+        {
+          "__vector2": [
+            723.4495239257812,
+            540.2014770507812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "5a6157b955c69437613041d11c5df7fc660a14dec54787ce5d4383006ebb4905"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.1629999999999967,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-11",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-11.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            533.9837036132812,
+            578.7361450195312
+          ]
+        },
+        {
+          "__vector2": [
+            693.5588989257812,
+            547.0559692382812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "f3b56fcc4eab79c1e4ac392cd7e103183f3585445a2f46d7a3423034ca377f83"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.13599999999999923,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-12",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-12.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            518.0986938476562,
+            564.8240356445312
+          ]
+        },
+        {
+          "__vector2": [
+            683.4276733398438,
+            584.1097412109375
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "19559872c5eb0b997f34a2adc192bf7649851ab2be186b94f98f0b6795354625"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.12700000000000244,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-13",
+      "npcs": 3,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-13.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            504.9975891113281,
+            548.9733276367188
+          ]
+        },
+        {
+          "__vector2": [
+            680.864501953125,
+            610.8795776367188
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "c195ed09eb7f3f19ee71cedbc0f53d0eeb77bdced7ae2da58d579f58780c0691"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.11899999999999977,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-14",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-14.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            497.6347351074219,
+            537.690673828125
+          ]
+        },
+        {
+          "__vector2": [
+            697.935546875,
+            611.0714721679688
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "b3380a9d454cba1184478dd0db29db20eb4aea2d0950ff69c7473b35b9a1ff0c"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.13599999999999923,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-15",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-15.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            491.19097900390625,
+            533.3848876953125
+          ]
+        },
+        {
+          "__vector2": [
+            717.841552734375,
+            610.7723999023438
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "db0541ba0d9d6af122b47d081b48ef170d85638ae5891c9b43ac84fa790f28e6"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.09799999999999898,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-16",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-16.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            482.15087890625,
+            533.3848876953125
+          ]
+        },
+        {
+          "__vector2": [
+            747.4322509765625,
+            606.7471313476562
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "357b750f6ebd41eee0cbf22205e594dfd42ce63f1a6a24b574b6b8df1c8e9879"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.1269999999999989,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-17",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-17.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            476.52978515625,
+            533.3848876953125
+          ]
+        },
+        {
+          "__vector2": [
+            746.5675048828125,
+            576.0928344726562
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "24804981e33fffc5dc2e7447217b3c937ea2aacd60f93dc7fd69c79d4865aa90"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.11899999999999977,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-18",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-18.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            492.72674560546875,
+            537.2818603515625
+          ]
+        },
+        {
+          "__vector2": [
+            713.758544921875,
+            551.7748413085938
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "dab9993abe4f43dc640cca6482706f95293fabd0f6ef52636cdba2ecc2c8081a"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": 92,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": true,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": 91,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.14000000000000057,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "motion-19",
+      "npcs": 2,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-motion-19.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            511.2077941894531,
+            541.3911743164062
+          ]
+        },
+        {
+          "__vector2": [
+            683.3623046875,
+            548.4651489257812
+          ]
+        }
+      ],
+      "room": 0,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        1200,
+        540
+      ],
+      "source_sha256": "18665f3f5bb231e89e00c19794f8e75ee095bcf28f8acf688f64bb6d6d02181f"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "draft",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.021000000000000796,
+        "suspend_reason": ""
+      },
+      "doors": [],
+      "name": "coop-growth",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-growth.png",
+      "phase": "draft",
+      "positions": [
+        {
+          "__vector2": [
+            637.2241821289062,
+            609.8943481445312
+          ]
+        },
+        {
+          "__vector2": [
+            583.146484375,
+            530.9358520507812
+          ]
+        }
+      ],
+      "room": 1,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "bbc4926f709815fd4bab42ef5eb6d0c82a1dd84c15d9e0a7eef187d487203cbf"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          6
+        ],
+        "move_id": -1,
+        "page": "build",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "suspended",
+        "problems": [],
+        "reason": "",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.04700000000000415,
+        "suspend_reason": "menu"
+      },
+      "doors": [
+        {
+          "destination": 0,
+          "direction": "west",
+          "pos": {
+            "__vector2": [
+              240.0003662109375,
+              360.0
+            ]
+          },
+          "type": "combat",
+          "visited": true
+        },
+        {
+          "destination": 2,
+          "direction": "east",
+          "pos": {
+            "__vector2": [
+              1044.999267578125,
+              360.0
+            ]
+          },
+          "type": "reward",
+          "visited": false
+        },
+        {
+          "destination": 19,
+          "direction": "north",
+          "pos": {
+            "__vector2": [
+              640.0,
+              127.04978942871094
+            ]
+          },
+          "type": "angel",
+          "visited": false
+        }
+      ],
+      "name": "coop-history",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-history.png",
+      "phase": "suspended",
+      "positions": [
+        {
+          "__vector2": [
+            637.2241821289062,
+            609.8943481445312
+          ]
+        },
+        {
+          "__vector2": [
+            583.146484375,
+            530.9358520507812
+          ]
+        }
+      ],
+      "room": 1,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "d1addf03b3b93288264575ec94b4608240eb9d416afcb68c83842ec7e3a4db6e"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "combat",
+        "aim_id": -1,
+        "can_play": true,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          5
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": false,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "playing",
+        "problems": [],
+        "reason": "",
+        "screen": "game",
+        "state": "room",
+        "state_age": 0.09700000000000131,
+        "suspend_reason": ""
+      },
+      "doors": [
+        {
+          "destination": 0,
+          "direction": "west",
+          "pos": {
+            "__vector2": [
+              240.0003662109375,
+              360.0
+            ]
+          },
+          "type": "combat",
+          "visited": true
+        },
+        {
+          "destination": 2,
+          "direction": "east",
+          "pos": {
+            "__vector2": [
+              1044.999267578125,
+              360.0
+            ]
+          },
+          "type": "reward",
+          "visited": false
+        },
+        {
+          "destination": 19,
+          "direction": "north",
+          "pos": {
+            "__vector2": [
+              640.0,
+              127.04978942871094
+            ]
+          },
+          "type": "angel",
+          "visited": false
+        }
+      ],
+      "name": "coop-next-room",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-next-room.png",
+      "phase": "playing",
+      "positions": [
+        {
+          "__vector2": [
+            240.0003662109375,
+            360.0
+          ]
+        },
+        {
+          "__vector2": [
+            278.0003662109375,
+            360.0
+          ]
+        }
+      ],
+      "room": 1,
+      "saved": true,
+      "screen": "game",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "c448e5956dcecc12dac8b6b3f38ffea80615dbd69c0b678fbc87968693395923"
+    },
+    {
+      "diagnostics": {
+        "adapter_phase": "result",
+        "aim_id": -1,
+        "can_play": false,
+        "connected": [
+          true,
+          true
+        ],
+        "error": "",
+        "firing": false,
+        "hp": [
+          8,
+          5
+        ],
+        "move_id": -1,
+        "page": "status",
+        "paused": true,
+        "peer_error": "",
+        "peer_state": "room",
+        "phase": "finished",
+        "problems": [],
+        "reason": "partner_left",
+        "screen": "online",
+        "state": "room",
+        "state_age": 0.13699999999999335,
+        "suspend_reason": ""
+      },
+      "doors": [
+        {
+          "destination": 0,
+          "direction": "west",
+          "pos": {
+            "__vector2": [
+              240.0003662109375,
+              360.0
+            ]
+          },
+          "type": "combat",
+          "visited": true
+        },
+        {
+          "destination": 2,
+          "direction": "east",
+          "pos": {
+            "__vector2": [
+              1044.999267578125,
+              360.0
+            ]
+          },
+          "type": "reward",
+          "visited": false
+        },
+        {
+          "destination": 19,
+          "direction": "north",
+          "pos": {
+            "__vector2": [
+              640.0,
+              127.04978942871094
+            ]
+          },
+          "type": "angel",
+          "visited": false
+        }
+      ],
+      "name": "coop-result",
+      "npcs": 0,
+      "path": ".local-tools/network-audit-2026-10-11/native-cooperative/online-coop-result.png",
+      "phase": "finished",
+      "positions": [
+        {
+          "__vector2": [
+            240.0003662109375,
+            360.0
+          ]
+        },
+        {
+          "__vector2": [
+            278.0003662109375,
+            360.0
+          ]
+        }
+      ],
+      "room": 1,
+      "saved": true,
+      "screen": "online",
+      "size": [
+        2400,
+        1080
+      ],
+      "source_sha256": "b5e0c33f3e8d1f3598da1b1ac171735fadb8e00ae5061e04d33dcc234bf62155"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "",
+      "id": "keyboard_opens_default_cooperative_hub",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "consent_precedes_cooperative_network",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_queue_waits_for_partner",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_matchmaking",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_campaign_starts",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_heroes_and_real_monsters",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_wasd_movement",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_arrow_key_shooting",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_keyboard_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_escape_pauses_team",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "mutual_keyboard_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_tab_opens_dungeon_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_keyboard_return",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_native_reconnect",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_reconnect_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_right_hand_touch_fire",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "right_hand_dash_and_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_real_clients_clear_npc_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "physical_team_door_before_growth_0",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_growth_offered_after_real_room_clears",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_number_one_selects_growth",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "both_growth_choices_resume_game",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_history_contains_both_growth_logs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real_touch_same_door_transitions_both",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_partner_leave_ends_cooperation",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperation_returns_offline_menu",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "offline_save_kept_separate",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "physical_android": false,
+  "real_transport": true,
+  "recorded_at": "2026-10-11T07:46:56.720382+00:00",
+  "packaged": true,
+  "artifact_sha256": "b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e"
+}

@@ -1,0 +1,44 @@
+{
+  "before_commit": "e918f85faff4923fbf8c50f407c00dc865d9e2f8",
+  "before_version": "0.4.0",
+  "before": {
+    "checks": [
+      {
+        "id": "failed_local_send_retried_without_reconnect",
+        "passed": false
+      },
+      {
+        "id": "lost_control_ack_retried_without_reconnect",
+        "passed": false
+      },
+      {
+        "id": "state_blackhole_freezes_team_despite_live_ping",
+        "passed": false
+      }
+    ],
+    "faults": "application frame rejection/drop; not TCP packet loss",
+    "isolated_invulnerable_fixture": true,
+    "native_websockets": true
+  },
+  "after_initial_patch": {
+    "checks": [
+      {
+        "id": "failed_local_send_retried_without_reconnect",
+        "passed": true
+      },
+      {
+        "id": "lost_control_ack_retried_without_reconnect",
+        "passed": true
+      },
+      {
+        "id": "state_blackhole_freezes_team_despite_live_ping",
+        "passed": true
+      }
+    ],
+    "faults": "application frame rejection/drop; not TCP packet loss",
+    "isolated_invulnerable_fixture": true,
+    "native_websockets": true
+  },
+  "final_patch_regression": "faults.json",
+  "final_version": "0.4.1"
+}

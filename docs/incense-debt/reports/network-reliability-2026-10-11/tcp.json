@@ -1,0 +1,565 @@
+{
+  "actual_separate_server": true,
+  "actual_tcp_proxy": true,
+  "checks": [
+    {
+      "id": "fragmented_tcp_handshake",
+      "passed": true
+    },
+    {
+      "id": "fragmented_tcp_room_join",
+      "passed": true
+    },
+    {
+      "id": "fragmented_tcp_campaign_starts",
+      "passed": true
+    },
+    {
+      "id": "fragmented_tcp_inputs_move_real_actor",
+      "passed": true
+    },
+    {
+      "id": "jittered_240ms_rtt_keeps_campaign_live",
+      "passed": true
+    },
+    {
+      "id": "delayed_control_ack_completes",
+      "passed": true
+    },
+    {
+      "id": "delayed_pause_reaches_both_clients",
+      "passed": true
+    },
+    {
+      "id": "delayed_mutual_resume",
+      "passed": true
+    },
+    {
+      "id": "short_downstream_stall_disables_stale_input",
+      "passed": true
+    },
+    {
+      "id": "short_stall_recovers_without_losing_match",
+      "passed": true
+    },
+    {
+      "id": "long_blackhole_triggers_reconnect",
+      "passed": true
+    },
+    {
+      "id": "long_blackhole_recovers_original_match",
+      "passed": true
+    },
+    {
+      "id": "long_blackhole_requires_mutual_resume",
+      "passed": true
+    },
+    {
+      "id": "real_tcp_cut_detected",
+      "passed": true
+    },
+    {
+      "id": "real_tcp_cut_keeps_anonymous_identities",
+      "passed": true
+    },
+    {
+      "id": "real_tcp_cut_mutual_resume",
+      "passed": true
+    },
+    {
+      "id": "no_commands_stuck_after_tcp_faults",
+      "passed": true
+    },
+    {
+      "id": "terminal_result_delivered_after_faults",
+      "passed": true
+    }
+  ],
+  "faults": [
+    "97-byte TCP writes",
+    "120ms plus jitter each direction",
+    "0.8s downstream stall",
+    "3.3s bidirectional blackhole",
+    "actual socket cuts"
+  ],
+  "maximum_ping_ms": 334,
+  "not_tested": [
+    "physical Android network switching",
+    "actual IP packet loss",
+    "public WSS"
+  ],
+  "passed": true,
+  "transitions": [
+    {
+      "at_ms": 715,
+      "client": 0,
+      "phase": "",
+      "state": "offline"
+    },
+    {
+      "at_ms": 725,
+      "client": 0,
+      "phase": "",
+      "state": "connecting"
+    },
+    {
+      "at_ms": 728,
+      "client": 1,
+      "phase": "",
+      "state": "offline"
+    },
+    {
+      "at_ms": 739,
+      "client": 1,
+      "phase": "",
+      "state": "connecting"
+    },
+    {
+      "at_ms": 1906,
+      "client": 0,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 1966,
+      "client": 1,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 2084,
+      "client": 0,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 2084,
+      "client": 0,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2208,
+      "client": 0,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2222,
+      "client": 1,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 2223,
+      "client": 1,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2311,
+      "client": 0,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2312,
+      "client": 0,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2313,
+      "client": 1,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2549,
+      "client": 1,
+      "phase": "lobby",
+      "state": "room"
+    },
+    {
+      "at_ms": 2707,
+      "client": 0,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 2858,
+      "client": 1,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 5457,
+      "client": 0,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 5461,
+      "client": 1,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 9179,
+      "client": 0,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 9191,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 9228,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 9648,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 9650,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 9671,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 10057,
+      "client": 0,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 10070,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 10075,
+      "client": 1,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 12977,
+      "client": 1,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 12990,
+      "client": 0,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 15903,
+      "client": 0,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 15903,
+      "client": 1,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 16536,
+      "client": 1,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 16569,
+      "client": 0,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 17353,
+      "client": 1,
+      "phase": "playing",
+      "state": "synchronizing"
+    },
+    {
+      "at_ms": 17361,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17435,
+      "client": 0,
+      "phase": "playing",
+      "state": "synchronizing"
+    },
+    {
+      "at_ms": 17442,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17449,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17649,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17673,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17681,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17816,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 17823,
+      "client": 0,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 17828,
+      "client": 1,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 20741,
+      "client": 0,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 20745,
+      "client": 1,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 20780,
+      "client": 0,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 20780,
+      "client": 1,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 21319,
+      "client": 1,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 21453,
+      "client": 0,
+      "phase": "playing",
+      "state": "reconnecting"
+    },
+    {
+      "at_ms": 21476,
+      "client": 1,
+      "phase": "playing",
+      "state": "synchronizing"
+    },
+    {
+      "at_ms": 21494,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 21634,
+      "client": 0,
+      "phase": "playing",
+      "state": "synchronizing"
+    },
+    {
+      "at_ms": 21638,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 21644,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 21835,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 21839,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 21858,
+      "client": 0,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 22041,
+      "client": 1,
+      "phase": "suspended",
+      "state": "room"
+    },
+    {
+      "at_ms": 22046,
+      "client": 0,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 22051,
+      "client": 1,
+      "phase": "countdown",
+      "state": "room"
+    },
+    {
+      "at_ms": 24941,
+      "client": 0,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 24945,
+      "client": 1,
+      "phase": "playing",
+      "state": "room"
+    },
+    {
+      "at_ms": 25158,
+      "client": 0,
+      "phase": "finished",
+      "state": "room"
+    },
+    {
+      "at_ms": 25161,
+      "client": 1,
+      "phase": "finished",
+      "state": "room"
+    },
+    {
+      "at_ms": 25290,
+      "client": 0,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 25294,
+      "client": 1,
+      "phase": "finished",
+      "state": "room"
+    },
+    {
+      "at_ms": 25488,
+      "client": 1,
+      "phase": "",
+      "state": "online"
+    },
+    {
+      "at_ms": 25488,
+      "client": 0,
+      "phase": "",
+      "state": "offline"
+    },
+    {
+      "at_ms": 25488,
+      "client": 1,
+      "phase": "",
+      "state": "offline"
+    }
+  ],
+  "virtualization": "none",
+  "world_injection": false,
+  "server_sha256": "05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0",
+  "packaged_server": true,
+  "proxy_metrics": {
+    "accepted_connections": 6,
+    "fragment_writes": 31199,
+    "bytes_forwarded": 2941300,
+    "maximum_buffered_bytes_per_direction": 38669,
+    "actual_cuts": 1,
+    "mode_transitions": [
+      {
+        "id": 1,
+        "mode": "delay",
+        "at": 2277477.281,
+        "seconds": 0.0
+      },
+      {
+        "id": 2,
+        "mode": "normal",
+        "at": 2277483.875,
+        "seconds": 0.0
+      },
+      {
+        "id": 3,
+        "mode": "stall_downstream",
+        "at": 2277483.89,
+        "seconds": 0.8
+      },
+      {
+        "id": 4,
+        "mode": "stall_both",
+        "at": 2277484.75,
+        "seconds": 3.3
+      },
+      {
+        "id": 5,
+        "mode": "cut",
+        "at": 2277491.625,
+        "seconds": 0.1
+      }
+    ]
+  },
+  "proxy_failure": null,
+  "recorded_at": "2026-10-11T07:46:31.676444+00:00"
+}

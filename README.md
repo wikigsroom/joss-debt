@@ -9,16 +9,19 @@
 
 [Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-windows-x64.zip) · [Android arm64 APK（调试签名 / debug signed）](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-android-arm64-debug.apk) · [独立服务端 / Standalone server](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/SHA256SUMS.txt)
 
+**0.4.1 联机可靠性修复 / Multiplayer reliability patch：** 当前源码与本地修复构建改进控制指令重试、地图状态中断、旧输入与快照、匿名身份接管和结果房间容量；详见 [完整复查与原生证据 / Audit and native evidence](docs/incense-debt/43-network-reliability-audit.md)。以上公开下载链接仍指向 0.4.0；使用新修复需要同时更新客户端和服务器。  
+Current source and local 0.4.1 builds contain the reliability patch. Public downloads above are still 0.4.0. Update clients and server together to use the new transport; existing 0.4.0 server-data recovery was verified.
+
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **0.4.0 · 十一层离线 + 共灯合作 + 可选对灯 Alpha / solo + cooperative campaign + optional Duel Alpha** |
+| 版本 / Version | **源码／本地构建 0.4.1；公开发布 0.4.0 / source and local builds 0.4.1; public release 0.4.0** · 十一层离线 + 共灯合作 + 可选对灯 Alpha |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
 | 游玩 / Play | 离线单人 + 可选联机；本地愿簿、独立匿名联机身份 / offline solo + optional multiplayer, local saves and separate anonymous online identity |
 | 游戏语言 / Game language | 当前界面与叙事为简体中文；本 README 为中英双语 / the game currently uses Simplified Chinese; this README is bilingual |
-| 平台 / Platforms | Windows 0.4.0 原生客户端与服务端；Android 0.4.0 / code 7 调试包；iOS 保留 0.2.0 交接 / native Windows client/server; Android debug APK; historical iOS handoff |
+| 平台 / Platforms | Windows 0.4.1 本地客户端与服务端；Android 0.4.1 / code 8 本地调试包；iOS 保留 0.2.0 交接 / local Windows client/server and Android debug APK; historical iOS handoff |
 
 ### 双人共灯合作 / Two-player Co-Light campaign
 
@@ -47,9 +50,9 @@ Cooperation allows all six heroes, 32 weapons and 18 skills, with individual gro
 服务器裁定 60 Hz，共享场景以 20 Hz 快照显示；完整恢复保存包括双方成长、随机流、延迟攻击与救援。两代注册表分别引用独立房间文件，暂停时也能做损坏回退。默认两房／16 连接；实际短时合作负载见验收记录，目标主机与长时容量需重测。**未部署默认公网游戏服务器**，Vercel 仅托管隐私政策；公网 WSS 和常驻主机见[服务端说明](server/README.md)。  
 The server simulates at 60 Hz and sends 20 Hz shared-scene snapshots. Full recovery retains both builds, RNG, delayed attacks and rescue. Independent room generations support corruption fallback, including while paused. Defaults are two rooms/16 connections; re-test sustained capacity on the target host. No default public game server is deployed. Vercel hosts privacy only; see [server operations](server/README.md) for WSS and persistent hosting.
 
-本轮最终包：合作规则 125 项、真实传输 32 项、实际服务端恢复 57 项、写盘故障 7 项；实际 Windows 合作流程 27 项／31 张捕获、PvP 流程 30 项、离线键盘 107 项；跨包核对 2171 项、90 份编译脚本一致，客户端／服务端 37 份共享编译模块一致，全部通过。两房四客户端 60 秒本机实测 59.18 Hz。
+0.4.0 发布包验收：合作规则 125 项、真实传输 32 项、实际服务端恢复 57 项、写盘故障 7 项；Windows 合作流程 27 项／31 张捕获、PvP 流程 30 项、离线键盘 107 项；跨包核对 2171 项、90 份编译脚本一致，客户端／服务端 37 份共享编译模块一致。两房四客户端 60 秒本机实测 59.18 Hz。0.4.1 本轮验证以 [可靠性报告](docs/incense-debt/43-network-reliability-audit.md) 的新包体摘要和实际检查为准。
 
-Final-package acceptance passes 125 co-op rule, 32 transport, 57 packaged-server recovery, 7 storage, 27 packaged-client co-op and 30 Duel flow checks, plus 107 offline keyboard and 2171 package checks. 90 client scripts match Windows/Android; all 37 shared compiled client/server modules match. Four clients in two rooms sustained 59.18 Hz during the 60-second local test.
+The published 0.4.0 package passed 125 co-op rule, 32 transport, 57 server recovery, 7 storage, 27 client co-op and 30 Duel checks, plus 107 keyboard and 2171 package checks. Its 90 client scripts and 37 shared modules matched; the local 60-second load sustained 59.18 Hz. Current 0.4.1 evidence and hashes are recorded separately in the [reliability audit](docs/incense-debt/43-network-reliability-audit.md).
 
 [合作架构 / Cooperative architecture](docs/incense-debt/41-cooperative-architecture.md) · [当前验收 / Current acceptance](docs/incense-debt/42-cooperative-delivery.md) · [交付回执 / Delivery receipt](docs/incense-debt/reports/cooperative-2026-10-11/delivery.json) · [0.3.0 历史 PvP 记录 / Historical PvP](docs/incense-debt/40-online-delivery.md)
 
@@ -70,6 +73,17 @@ Current scope is defined by the [delivery status](docs/incense-debt/reports/curr
 
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
+
+### 0.4.1 弱网修复实机 / Native reliability patch
+
+![0.4.1 实际合作战斗 / Actual 0.4.1 cooperative combat](docs/incense-debt/reports/network-reliability-2026-10-11/media/cooperative-native.gif)
+
+| 断线后的共同恢复 / Team recovery after disconnect | 双方成长历史 / Both build histories |
+| --- | --- |
+| ![共同恢复 / Team recovery](docs/incense-debt/reports/network-reliability-2026-10-11/media/reconnect.webp) | ![成长历史 / Build histories](docs/incense-debt/reports/network-reliability-2026-10-11/media/history.webp) |
+
+以上来自实际 0.4.1 Windows EXE 与独立服务端，不是概念图；GIF 为 20 张连续实机帧、100 ms 播放、无声。联机故障 65 项、TCP 中转 18 项、崩溃／损坏恢复 57 项与旧版升级 12 项通过。[证据与范围 / Evidence and scope](docs/incense-debt/reports/network-reliability-2026-10-11/audit.json) · [媒体来源 / Media provenance](docs/incense-debt/reports/network-reliability-2026-10-11/media-manifest.json)。  
+Captured from the actual 0.4.1 Windows EXE and separate server. The silent GIF plays 20 consecutive frames at 100 ms. Application faults, ordered TCP stalls/cuts, crash/corruption recovery and 0.4.0 checkpoint upgrade are tested separately; physical Android and public-WAN acceptance remain pending.
 
 ### 0.4.0 合作实机与动效 / Native cooperative campaign
 
@@ -616,7 +630,7 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。README 引用的截图与 GIF 保留在 Git 中。[GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1) 提供 0.4.0 Windows 客户端 ZIP、Android APK、独立服务端 ZIP、中英指南和校验文件；也可按当前源码导出。[交付清单](build/delivery-manifest.json)记录当前验证产物，[发布清单](docs/releases/v0.4.0-alpha.1.manifest.json)绑定本次附件与实际包体验收。旧版 iOS 交接保留在 [0.2.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)。
 
-发布当前已验收的包时，`python tools/runtime/package_online_release.py --cooperative --tag v0.4.0-alpha.1` 会核对原 EXE／APK、验收哈希与原生捕获，生成 ZIP、指南及校验清单。提交发布文档并推送对应 annotated tag 后，`python tools/runtime/publish_release.py --tag v0.4.0-alpha.1` 使用本机 GitHub CLI 登录态上传草稿，逐项验证服务器摘要再公开；该流程保留原应用包和存档。
+0.4.0 的发布流程调用 `python tools/runtime/package_online_release.py --cooperative --tag v0.4.0-alpha.1` 核对包体、验收哈希和原生捕获，并以 `python tools/runtime/publish_release.py --tag v0.4.0-alpha.1` 验证草稿附件摘要后公开。0.4.1 当前为本地修复构建，正式公开需要新版本清单与新 tag；不能沿用这些历史命令覆盖旧发布。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法

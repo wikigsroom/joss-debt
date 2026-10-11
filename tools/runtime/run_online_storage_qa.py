@@ -17,6 +17,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
     parser.add_argument("--cooperative", action="store_true")
+    parser.add_argument("--hold-seconds", type=float, default=0, help="Keep the isolated write failure active after observation.")
     args = parser.parse_args()
     folder = (args.output or ROOT / ".local-tools/online-development" / ("storage-" + datetime.now().strftime("%Y%m%d-%H%M%S"))).resolve()
     if not folder.is_relative_to(ROOT / ".local-tools"):
@@ -55,11 +56,15 @@ def main():
         for path in blockers:
             path.mkdir()
         wait_for(lambda: (clients / "fault-observed").is_file())
+        if args.hold_seconds < 0 or args.hold_seconds > 10:
+            raise ValueError("--hold-seconds must be between 0 and 10")
+        if args.hold_seconds:
+            time.sleep(args.hold_seconds)
         for path in blockers:
             path.rmdir()  # Owned, checked, empty directory only.
         client.wait(timeout=20)
         report = json.loads((clients / "storage-report.json").read_text("utf8"))
-        report.update(game_mode="coop" if args.cooperative else "duel", server_sha256=digest, packaged_server=True, recorded_at=datetime.now(timezone.utc).isoformat(), virtualization="none")
+        report.update(game_mode="coop" if args.cooperative else "duel", server_sha256=digest, packaged_server=True, fault_hold_seconds=args.hold_seconds, recorded_at=datetime.now(timezone.utc).isoformat(), virtualization="none")
         if client.returncode:
             report["passed"] = False
         (folder / "storage-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-11T07:50:39.312411+00:00",
+  "from_version": "0.4.0",
+  "to_version": "0.4.1",
+  "old_server_sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+  "new_server_sha256": "05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0",
+  "same_data_directory": true,
+  "old_client_source": "immutable v0.4.0-alpha.1 tag",
+  "stages": {
+    "prepare": {
+      "checks": [
+        {
+          "id": "cooperative_process_credentials_connect",
+          "passed": true
+        },
+        {
+          "id": "cooperative_live_campaign_started",
+          "passed": true
+        },
+        {
+          "id": "cooperative_durable_pause",
+          "passed": true
+        },
+        {
+          "id": "cooperative_lost_receipt_saved_locally",
+          "passed": true
+        }
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "restore": {
+      "checks": [
+        {
+          "id": "cooperative_process_credentials_connect",
+          "passed": true
+        },
+        {
+          "id": "cooperative_restart_suspended",
+          "passed": true
+        },
+        {
+          "id": "cooperative_same_room_and_mode",
+          "passed": true
+        },
+        {
+          "id": "cooperative_both_full_player_states_restored",
+          "passed": true
+        },
+        {
+          "id": "cooperative_npcs_drops_obstacles_restored",
+          "passed": true
+        },
+        {
+          "id": "cooperative_both_growth_histories_restored",
+          "passed": true
+        },
+        {
+          "id": "cooperative_lost_receipt_idempotent",
+          "passed": true
+        },
+        {
+          "id": "cooperative_input_floor_restored",
+          "passed": true
+        }
+      ],
+      "failures": [],
+      "passed": true
+    }
+  },
+  "virtualization": "none"
+}

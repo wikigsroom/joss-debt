@@ -1,38 +1,38 @@
 {
-  "recorded_at": "2026-10-11T02:23:43.261630+00:00",
-  "version": "0.4.0",
+  "recorded_at": "2026-10-11T08:07:37.972118+00:00",
+  "version": "0.4.1",
   "status": "playable_cooperative_offline_and_optional_duel_alpha",
   "product_complete": false,
   "playable_scope": "eleven-floor offline roguelite plus authoritative two-player cooperative campaign, optional Duel, shared physical rooms, personal builds, revive and durable recovery",
   "windows": {
     "platform": "windows",
     "path": "build/windows/IncenseDebt.exe",
-    "bytes": 1108831472,
-    "sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
+    "bytes": 1108841888,
+    "sha256": "b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e",
     "engine": "4.7.2",
     "build": "release",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
     "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
     "device_tested": true,
     "virtualization": "none",
     "native_runtime_tested": true,
-    "native_runtime_report": "docs/incense-debt/reports/cooperative-2026-10-11/keyboard.json",
-    "native_online_report": "docs/incense-debt/reports/cooperative-2026-10-11/native.json"
+    "native_runtime_report": "docs/incense-debt/reports/network-reliability-2026-10-11/keyboard.json",
+    "native_online_report": "docs/incense-debt/reports/network-reliability-2026-10-11/native.json"
   },
   "android": {
     "platform": "android",
     "path": "build/android/IncenseDebt.apk",
-    "bytes": 1025404576,
-    "sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+    "bytes": 1025416864,
+    "sha256": "baacb3414cb5e44eaf74510a9ed8ed43fad3f2617e648a8c46180ad9e68332b9",
     "engine": "4.7.2",
     "build": "debug",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
     "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
     "device_tested": false,
     "virtualization": "none",
-    "version_code": 7,
+    "version_code": 8,
     "edge_to_edge": true,
     "signature_verified": true,
     "upgrade_signer_matches_previous": true
@@ -81,8 +81,8 @@
   "save_schema": 2,
   "virtualization": "none",
   "browser_used": false,
-  "revision_document": "docs/incense-debt/42-cooperative-delivery.md",
-  "revision_reports": "docs/incense-debt/reports/cooperative-2026-10-11",
+  "revision_document": "docs/incense-debt/43-network-reliability-audit.md",
+  "revision_reports": "docs/incense-debt/reports/network-reliability-2026-10-11",
   "historical_status": "docs/incense-debt/reports/product-status-0.2.0.baseline.json",
   "historical_platform_parity": "docs/incense-debt/reports/platforms/platform-parity.json",
   "privacy": {
@@ -120,13 +120,13 @@
   "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1",
   "public_release_manifest": "docs/releases/v0.4.0-alpha.1.manifest.json",
   "server": {
-    "version": "0.4.0",
+    "version": "0.4.1",
     "platform": "windows-x64",
     "headless": true,
     "virtualization": "none",
     "path": "build/server/IncenseDebtServer.exe",
-    "bytes": 110849184,
-    "sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+    "bytes": 110855328,
+    "sha256": "05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0",
     "shared_source_sha256": {
       "scripts/core/choice_shortcuts.gd": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
       "scripts/core/content_db.gd": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
@@ -158,12 +158,12 @@
       "scripts/combat/projectile_styles.gd": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
       "scripts/combat/room_geometry.gd": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
       "scripts/combat/world.gd": "095fb90836bf29369a8dae1248cc30c145b1ba2a9baeaebd6d51c6d52736b001",
-      "scripts/network/protocol.gd": "69f47f53cc0b451cc4e3216a1229e958322497a3fafbae943f545bafb5341e0c",
+      "scripts/network/protocol.gd": "9cad4950b986f37684156f4ebe3f4e4fd35d7fd0f290f65ae1bd14173f05aa19",
       "scripts/network/duel_actor.gd": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
       "scripts/network/duel_match.gd": "2717475cd31e2bd4982ba94a0838c0388827ae387bd70e6e4f6178be3ea23a21",
       "scripts/network/cooperative_world.gd": "d35c0f7174ac68c14e94e6ac14a5b7cb8d5a17bdb5f1a7a2ab7ccea21d8f868f",
       "scripts/network/cooperative_match.gd": "907882cd68fe0f3917f05f85d49569d3fa17f320541fc06e6d70aa8d3fb6e89b",
-      "scripts/network/server_runtime.gd": "d6c51ce79713bf60dadf92cdf73a6f24320215a8e2d1ea705019ea8fb4e950e7",
+      "scripts/network/server_runtime.gd": "baea1d0b415703b80fd97d37a4de671df3553ede05157e7774cd2f2218c4144c",
       "scripts/network/server_entry.gd": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
       "data/achievements.json": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
       "data/arena_boundaries.json": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
@@ -178,7 +178,7 @@
       "data/runtime_assets.json": "2e64aad01ff87314fdee7dcda09bdffe31920cde5f55dc6fd6d15218aa5a5e97",
       "data/story.zh_CN.json": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e"
     },
-    "built_at": "2026-10-11T01:30:50.676210+00:00"
+    "built_at": "2026-10-11T07:34:45.851363+00:00"
   },
   "online": {
     "default_rooms": 2,
@@ -188,16 +188,20 @@
     "wan_latency_tested": false,
     "human_balance_tested": false,
     "checks": {
+      "faults": 65,
+      "tcp": 18,
+      "storage": 7,
       "combat": 125,
       "transport": 32,
+      "native": 27,
+      "duel-native": 30,
+      "duel-combat": 271,
+      "offline-core": 36,
+      "keyboard": 107,
+      "package-parity": 2171,
+      "client-server-parity": 37,
       "recovery": 57,
-      "storage": 7,
-      "native_online": 27,
-      "duel_native": 30,
-      "duel_combat": 271,
-      "offline_core": 36,
-      "offline_keyboard": 107,
-      "package_parity": 2171
+      "upgrade": 12
     },
     "default_mode": "coop",
     "modes": [
@@ -211,7 +215,12 @@
     "ruleset": "cooperative-1-duel-2",
     "characters": 6,
     "weapons": 32,
-    "skills": 18
+    "skills": 18,
+    "transport_revision": 1,
+    "input_timeout_ms": 250,
+    "state_timeout_ms": 2000,
+    "maximum_unacked_snapshots": 4,
+    "reliable_control_retry_ms": 750
   },
   "prior_mobile_acceptance": {
     "version": "0.2.3",
@@ -222,7 +231,7 @@
       "widescreen_packaged_checks": 282
     }
   },
-  "public_release_state": "published_and_verified",
+  "public_release_state": "historical_0.4.0_published_current_0.4.1_not_published",
   "privacy_policy_version": "1.5",
   "anonymous_https_report": "docs/releases/v0.3.0-alpha.1.https.json",
   "public_release_assets": [
@@ -264,11 +273,12 @@
     }
   ],
   "prior_online_acceptance": {
-    "version": "0.3.0",
-    "report": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/current-product-status.json"
+    "version": "0.4.0",
+    "report": "docs/incense-debt/reports/network-reliability-2026-10-11/baseline-0.4.0/current-product-status.json"
   },
   "public_release_commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
   "public_release_published_at": "2026-10-11T02:39:05Z",
   "publication_receipt": "docs/releases/v0.4.0-alpha.1.publication.json",
-  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json"
+  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json",
+  "local_build_publication": "not_published"
 }

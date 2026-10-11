@@ -39,6 +39,8 @@ var checkpoint_thread: Thread
 var stopping = false
 var storage_fault = false
 var recovery_failed = false
+var snapshot_retries = 0
+var snapshots_coalesced = 0
 
 func start(options: Dictionary = {}) -> Error:
 	bind_address = str(options.get("bind", "127.0.0.1"))
@@ -95,7 +97,9 @@ func _process(delta: float) -> void:
 			continue
 		connection_serial += 1
 		connections[connection_serial] = {"peer": peer, "stream": stream, "session": "", "last_seen": monotonic(),
-			"created": monotonic(), "tokens": 100.0, "refill": monotonic(), "event_ack": 0, "event_match": "", "no_delay": false}
+			"created": monotonic(), "tokens": 100.0, "refill": monotonic(), "event_ack": 0, "event_match": "", "no_delay": false,
+			"link": Protocol.nonce(8), "state_serial": 0, "state_ack": 0, "state_lease": 0,
+			"state_progress": monotonic(), "watched_room": "", "state_pending": [], "last_snapshot": PackedByteArray(), "last_snapshot_at": 0.0}
 	for connection_id in connections.keys():
 		if not connections.has(connection_id): continue
 		var entry = connections[connection_id]
@@ -126,6 +130,10 @@ func _process(delta: float) -> void:
 				break
 			entry.last_seen = now
 			handle(connection_id, message)
+		if connections.has(connection_id) and not storage_fault and not str(entry.session).is_empty():
+			var active_room = rooms.get(str(sessions[entry.session].room))
+			if active_room != null and monotonic() - float(entry.state_progress) > Protocol.STATE_TIMEOUT:
+				close_peer(connection_id, "state_timeout")
 		if connections.has(connection_id) and monotonic() - float(entry.last_seen) > Protocol.SILENCE_SECONDS:
 			close_peer(connection_id, "heartbeat_timeout")
 		elif connections.has(connection_id) and str(entry.session).is_empty() and monotonic() - float(entry.created) > 6:
@@ -160,9 +168,10 @@ func _physics_process(delta: float) -> void:
 		var frames: Array = []
 		for seat in 2:
 			var input = room.inputs[seat]
-			var fresh = monotonic() - float(input.last_seen) <= Protocol.INPUT_TIMEOUT
+			var fresh = input_is_fresh(room, input)
 			frames.append(input.frame.duplicate(true) if fresh else Protocol.empty_input())
 			if fresh: room.applied_seq[seat] = int(input.seq)
+			else: input.frame = Protocol.empty_input()
 			for edge in ["dash", "skill", "active_item", "interact"]: input.frame[edge] = false
 		room.match.advance(frames, 1.0 / Protocol.TICK_RATE)
 		if room.match.phase == "finished": settle_match(room)
@@ -174,17 +183,66 @@ func _physics_process(delta: float) -> void:
 	if step_ms.size() > 600: step_ms.pop_front()
 
 func send(connection_id: int, message: Dictionary, compressed: bool = false) -> bool:
+	return send_bytes(connection_id, Protocol.packet(message, compressed))
+
+func send_bytes(connection_id: int, bytes: PackedByteArray) -> bool:
 	if not connections.has(connection_id): return false
 	var peer = connections[connection_id].peer
 	if peer.get_ready_state() != WebSocketPeer.STATE_OPEN: return false
 	if peer.get_current_outbound_buffered_amount() > Protocol.MAX_SERVER_BYTES:
 		close_peer(connection_id, "slow_connection")
 		return false
-	var bytes = Protocol.packet(message, compressed)
 	if bytes.size() > Protocol.MAX_SERVER_BYTES: return false
 	var result = peer.put_packet(bytes)
 	if result == OK: bytes_sent += bytes.size()
+	else: close_peer(connection_id, "slow_connection")
 	return result == OK
+
+func send_snapshot(connection_id: int, room: Dictionary) -> void:
+	if not connections.has(connection_id): return
+	var entry = connections[connection_id]
+	if entry.watched_room != room.id:
+		entry.watched_room = room.id
+		entry.state_progress = monotonic()
+		entry.state_pending.clear()
+		entry.state_lease = 0
+		if not send(connection_id, {"op": "service", "link": entry.link, "room": room.id}): return
+	if entry.state_pending.size() >= Protocol.SNAPSHOT_WINDOW:
+		snapshots_coalesced += 1
+		# Coalesce live state instead of accumulating seconds of obsolete combat.
+		if monotonic() - float(entry.last_snapshot_at) >= Protocol.SNAPSHOT_RETRY_SECONDS:
+			if send_bytes(connection_id, entry.last_snapshot):
+				entry.last_snapshot_at = monotonic()
+				snapshot_retries += 1
+		return
+	var view = room_view(room, str(entry.session))
+	view.link = entry.link
+	view.state_seq = int(entry.state_serial) + 1
+	view.lease = int(Time.get_ticks_msec())
+	var bytes = Protocol.packet(view, true)
+	if bytes.size() > Protocol.MAX_SERVER_BYTES:
+		send(connection_id, {"op": "error", "code": "snapshot_too_large"})
+		close_peer(connection_id, "snapshot_too_large")
+		return
+	if not send_bytes(connection_id, bytes): return
+	entry.state_serial = view.state_seq
+	entry.state_lease = view.lease
+	entry.state_pending.append({"seq": view.state_seq, "lease": view.lease, "match": str(view.get("id", "")), "event": int(view.get("event_serial", 0))})
+	entry.last_snapshot = bytes
+	entry.last_snapshot_at = monotonic()
+
+func acknowledge_state(entry: Dictionary, message: Dictionary) -> void:
+	if message.get("link") != entry.link or not Store.integer(message.get("state_seq")) or not Store.integer(message.get("lease")): return
+	var sequence = int(message.state_seq)
+	if sequence <= int(entry.state_ack) or sequence > int(entry.state_serial): return
+	var index = entry.state_pending.find_custom(func(value): return int(value.seq) == sequence and int(value.lease) == int(message.lease))
+	if index < 0: return
+	var snapshot = entry.state_pending[index]
+	entry.state_ack = sequence
+	entry.state_progress = monotonic()
+	entry.state_pending = entry.state_pending.filter(func(value): return int(value.seq) > sequence)
+	if str(message.get("match", "")) == snapshot.match and snapshot.match == entry.event_match and Store.integer(message.get("event")):
+		entry.event_ack = maxi(int(entry.event_ack), mini(int(snapshot.event), int(message.event)))
 
 func close_peer(connection_id: int, reason: String) -> void:
 	if not connections.has(connection_id): return
@@ -241,9 +299,8 @@ func handle(connection_id: int, message: Dictionary) -> void:
 	if op == "input":
 		receive_input(session, message)
 		return
-	if op == "events_ack":
-		if Protocol.Store.integer(message.get("event")) and str(message.get("match", "")) == entry.event_match:
-			entry.event_ack = maxi(int(entry.event_ack), int(message.event))
+	if op == "state_ack":
+		acknowledge_state(entry, message)
 		return
 	if storage_fault:
 		send(connection_id, {"op": "error", "code": "storage_unavailable"})
@@ -254,7 +311,7 @@ func handle(connection_id: int, message: Dictionary) -> void:
 	var request_id = int(message.request)
 	if request_id <= int(session.last_request):
 		var cached = session.replies.get(str(request_id), {"op": "ack", "request": request_id, "ok": false, "code": "stale_request"})
-		send(connection_id, cached)
+		send_reply(connection_id, session, cached)
 		return
 	var result = command(session, op, message)
 	result.op = "ack"
@@ -263,17 +320,26 @@ func handle(connection_id: int, message: Dictionary) -> void:
 	session.replies[str(request_id)] = result
 	while session.replies.size() > 16: session.replies.erase(session.replies.keys()[0])
 	if storage_fault or not persist_registry(): result = {"op": "error", "code": "storage_unavailable"}
-	send(connection_id, result)
+	send_reply(connection_id, session, result)
 	if rooms.has(str(session.room)): broadcast(rooms[str(session.room)])
+
+func send_reply(connection_id: int, session: Dictionary, reply: Dictionary) -> void:
+	var current = reply.duplicate(true)
+	if current.get("op") == "ack": current.service = {"room": str(session.room), "queued": bool(session.queued)}
+	send(connection_id, current)
 
 func authenticate(connection_id: int, message: Dictionary) -> void:
 	if storage_fault:
 		send(connection_id, {"op": "error", "code": "storage_unavailable"})
 		close_peer(connection_id, "storage_unavailable")
 		return
-	if message.get("protocol") != Protocol.VERSION or message.get("content") != Protocol.fingerprint():
+	if message.get("protocol") != Protocol.VERSION or message.get("transport") != Protocol.TRANSPORT_REVISION or message.get("content") != Protocol.fingerprint():
 		send(connection_id, {"op": "error", "code": "version_mismatch", "protocol": Protocol.VERSION})
 		connections[connection_id].peer.close(1008, "version_mismatch")
+		return
+	var instance = str(message.get("instance", ""))
+	if instance.length() != 32 or instance.hex_decode().size() != 16:
+		close_peer(connection_id, "invalid_instance")
 		return
 	var token = str(message.get("resume", ""))
 	var sid = ""
@@ -287,15 +353,34 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 			send(connection_id, {"op": "error", "code": "session_expired"})
 			return
 	else:
-		if sessions.size() >= 1024:
-			send(connection_id, {"op": "error", "code": "server_full"})
-			return
-		sid = Protocol.nonce(16)
+		# A lost first welcome has no resume credential on the client yet. Reuse
+		# its unclaimed enrollment instead of leaking an identity on every retry.
+		for candidate in sessions:
+			var enrollment = sessions[candidate]
+			if enrollment.get("owner_instance", "") == instance and int(enrollment.last_request) == 0 and str(enrollment.room).is_empty() and not enrollment.queued and wall_time() - float(enrollment.last_seen) <= grace:
+				sid = candidate
+				break
 		token = Protocol.nonce()
-		sessions[sid] = {"id": sid, "token_hash": token.sha256_text(), "name": Protocol.clean_name(message.get("name", "")),
-			"room": "", "queued": false, "peer": -1, "last_seen": wall_time(), "last_request": 0, "replies": {},
-			"loadout": {"character": "c_paper", "weapon": "w01", "skill": "s01"}, "game_mode": "duel", "wins": 0, "losses": 0, "draws": 0, "coop_wins": 0, "coop_losses": 0}
+		if sid.is_empty():
+			if sessions.size() >= 1024:
+				send(connection_id, {"op": "error", "code": "server_full"})
+				return
+			sid = Protocol.nonce(16)
+			sessions[sid] = {"id": sid, "token_hash": token.sha256_text(), "name": Protocol.clean_name(message.get("name", "")),
+				"room": "", "queued": false, "peer": -1, "last_seen": wall_time(), "last_request": 0, "replies": {},
+				"loadout": {"character": "c_paper", "weapon": "w01", "skill": "s01"}, "game_mode": "duel", "wins": 0, "losses": 0, "draws": 0, "coop_wins": 0, "coop_losses": 0}
+		else: sessions[sid].token_hash = token.sha256_text()
 	var session = sessions[sid]
+	var old_instance = str(session.get("owner_instance", ""))
+	var generation = int(session.get("owner_generation", 0))
+	if old_instance != instance and (not Store.integer(message.get("owner_generation", 0)) or int(message.get("owner_generation", 0)) != generation):
+		send(connection_id, {"op": "error", "code": "session_replaced"})
+		close_peer(connection_id, "session_replaced")
+		return
+	var owner_changed = not old_instance.is_empty() and old_instance != instance
+	if owner_changed: generation += 1
+	session.owner_generation = generation
+	session.owner_instance = instance
 	if int(session.peer) >= 0 and int(session.peer) != connection_id:
 		# Detach first: closing the old peer cannot suspend the new connection.
 		var old_peer = int(session.peer)
@@ -305,10 +390,6 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 	session.last_seen = wall_time()
 	session.name = Protocol.clean_name(message.get("name", session.name))
 	connections[connection_id].session = sid
-	if not persist_registry():
-		send(connection_id, {"op": "error", "code": "storage_unavailable"})
-		close_peer(connection_id, "storage_unavailable")
-		return
 	var room = rooms.get(str(session.room))
 	var last_seq = 0
 	if room != null:
@@ -317,7 +398,14 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 		room.inputs[seat].frame = Protocol.empty_input()
 		room.inputs[seat].last_seen = 0.0
 		room.resume_ready[seat] = false
-	send(connection_id, {"op": "welcome", "session": sid, "resume": token, "request_floor": session.last_request,
+		if owner_changed and room.match != null and room.match.phase != "finished": suspend_room(room, "identity_changed")
+	if not persist_registry() or owner_changed and not persist_registry():
+		send(connection_id, {"op": "error", "code": "storage_unavailable"})
+		close_peer(connection_id, "storage_unavailable")
+		return
+	send(connection_id, {"op": "welcome", "transport": Protocol.TRANSPORT_REVISION, "link": connections[connection_id].link,
+		"owner_generation": generation,
+		"room": str(session.room), "queued": bool(session.queued), "session": sid, "resume": token, "request_floor": session.last_request,
 		"input_floor": last_seq, "server_time": wall_time(), "grace": grace,
 		"stats": session_stats(session)})
 	if room != null: broadcast(room)
@@ -330,6 +418,9 @@ func valid_loadout(value) -> bool:
 func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary:
 	var sid = str(session.id)
 	var room = rooms.get(str(session.room))
+	if op in ["ready", "choose", "cooperative_action", "pause", "resume", "leave", "rematch"]:
+		if str(message.get("room", "")) != str(session.room) or str(message.get("match", "")) != (str(room.match.id) if room != null and room.match != null else ""): return failure("stale_context")
+		if op in ["pause", "resume"] and room != null and (not Store.integer(message.get("epoch")) or int(message.epoch) != int(room.get("input_epoch", 0))): return failure("stale_context")
 	match op:
 		"loadout":
 			if room != null or session.queued: return failure("busy")
@@ -368,7 +459,7 @@ func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary
 				session.room = room.id
 				persist_room(room)
 			else:
-				if rooms.size() >= max_rooms: return failure("server_full")
+				if active_room_count() >= max_rooms: return failure("server_full")
 				room = create_room([sid], code)
 			return success({"room": room.id, "code": room.code})
 		"ready":
@@ -403,6 +494,7 @@ func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary
 			room.resume_ready[room.players.find(sid)] = true
 			if all_connected(room) and room.resume_ready[0] and room.resume_ready[1]:
 				room.suspended = false
+				room.input_epoch = int(room.get("input_epoch", 0)) + 1
 				room.suspend_until = 0.0
 				if room.match.phase == "playing": room.match.phase = "countdown"; room.match.countdown = 3.0
 				room.match.push_event("resumed")
@@ -444,6 +536,7 @@ func create_room(players: Array, code: String = "", quick: bool = false) -> Dict
 		"game_mode": sessions[players[0]].get("game_mode", "duel"),
 		"ready": [false, false], "resume_ready": [false, false], "rematch_ready": [false, false],
 		"created": wall_time(), "match": null, "suspended": false, "suspend_reason": "", "suspend_until": 0.0,
+		"input_epoch": 0,
 		"inputs": [{"seq": 0, "frame": Protocol.empty_input(), "last_seen": 0.0}, {"seq": 0, "frame": Protocol.empty_input(), "last_seen": 0.0}],
 		"applied_seq": [0, 0], "store": Store.new(data_directory.path_join("rooms").path_join(room_id))}
 	rooms[room_id] = room
@@ -457,7 +550,7 @@ func create_room(players: Array, code: String = "", quick: bool = false) -> Dict
 
 func match_queue() -> void:
 	queue = queue.filter(func(sid): return sessions.has(sid) and connected(sid) and str(sessions[sid].room).is_empty())
-	while queue.size() >= 2 and rooms.size() < max_rooms:
+	while queue.size() >= 2 and active_room_count() < max_rooms:
 		var first = -1
 		var second = -1
 		for i in queue.size():
@@ -471,6 +564,9 @@ func match_queue() -> void:
 		var room = create_room(players, "", true)
 		broadcast(room)
 
+func active_room_count() -> int:
+	return rooms.values().filter(func(room): return room.match == null or room.match.phase != "finished").size()
+
 func begin_match(room: Dictionary) -> void:
 	room.match = Cooperation.new() if room.get("game_mode") == "coop" else Duel.new()
 	var loadouts: Array = []
@@ -479,6 +575,8 @@ func begin_match(room: Dictionary) -> void:
 	room.match.begin(Protocol.nonce(16), loadouts, random_seed)
 	room.ready = [false, false]
 	room.rematch_ready = [false, false]
+	room.resume_ready = [false, false]
+	room.input_epoch = int(room.get("input_epoch", 0)) + 1
 	room.suspended = false
 	room.suspend_until = 0.0
 	for seat in 2:
@@ -492,6 +590,13 @@ func receive_input(session: Dictionary, message: Dictionary) -> void:
 	if storage_fault: return
 	var room = rooms.get(str(session.room))
 	if room == null or room.match == null or room.suspended or room.match.phase != "playing": return
+	var entry = connections.get(int(session.peer), {})
+	if message.get("link") != entry.get("link") or str(message.get("room", "")) != room.id or str(message.get("match", "")) != room.match.id: return
+	for field in ["epoch", "scene", "lease"]:
+		if not Store.integer(message.get(field)): return
+	if int(message.epoch) != int(room.get("input_epoch", 0)) or int(message.scene) != input_scene(room): return
+	var lease = int(message.lease)
+	if lease < 1 or lease > int(entry.get("state_lease", 0)) or int(Time.get_ticks_msec()) - lease > Protocol.INPUT_LEASE_SECONDS * 1000: return
 	var frame = Protocol.clean_input(message.get("frame"))
 	if frame.is_empty(): return
 	var seat = room.players.find(str(session.id))
@@ -500,9 +605,15 @@ func receive_input(session: Dictionary, message: Dictionary) -> void:
 	for edge in ["dash", "skill", "active_item", "interact"]: frame[edge] = bool(frame.get(edge, false)) or bool(previous.frame.get(edge, false))
 	previous.seq = int(frame.seq)
 	previous.frame = frame
+	previous.epoch = int(message.epoch)
+	previous.scene = int(message.scene)
+	previous.lease = lease
 	previous.last_seen = monotonic()
 
 func suspend_room(room: Dictionary, cause: String, initiator: int = -1) -> void:
+	if not room.suspended or cause != "menu":
+		room.input_epoch = int(room.get("input_epoch", 0)) + 1
+		room.resume_ready = [false, false]
 	if not room.suspended or room.get("game_mode") == "coop" and room.suspend_reason == "menu" and cause != "menu":
 		room.suspend_until = wall_time() + grace
 		room.suspend_reason = cause
@@ -512,6 +623,16 @@ func suspend_room(room: Dictionary, cause: String, initiator: int = -1) -> void:
 	for input in room.inputs:
 		input.frame = Protocol.empty_input()
 		input.last_seen = 0.0
+
+func input_scene(room: Dictionary) -> int:
+	if room.match == null: return 0
+	return int(room.match.world.scene_serial) if room.get("game_mode") == "coop" else int(room.match.round_index)
+
+func input_is_fresh(room: Dictionary, input: Dictionary) -> bool:
+	return monotonic() - float(input.last_seen) <= Protocol.INPUT_TIMEOUT \
+		and int(input.get("epoch", -1)) == int(room.get("input_epoch", 0)) \
+		and int(input.get("scene", -1)) == input_scene(room) \
+		and int(Time.get_ticks_msec()) - int(input.get("lease", 0)) <= Protocol.INPUT_LEASE_SECONDS * 1000
 
 func room_view(room: Dictionary, sid: String) -> Dictionary:
 	var seat = room.players.find(sid)
@@ -535,6 +656,8 @@ func room_view(room: Dictionary, sid: String) -> Dictionary:
 	view.rematch_ready = room.rematch_ready.duplicate()
 	view.input_ack = room.applied_seq[seat]
 	view.input_floor = room.inputs[seat].seq
+	view.input_epoch = int(room.get("input_epoch", 0))
+	view.input_scene = input_scene(room)
 	view.names = room.players.map(func(player): return str(sessions[player].name))
 	view.stats = session_stats(sessions[sid])
 	if room.match == null:
@@ -548,7 +671,7 @@ func room_view(room: Dictionary, sid: String) -> Dictionary:
 
 func broadcast(room: Dictionary) -> void:
 	for sid in room.players:
-		if connected(sid) and str(sessions[sid].room) == room.id: send(int(sessions[sid].peer), room_view(room, sid), true)
+		if connected(sid) and str(sessions[sid].room) == room.id: send_snapshot(int(sessions[sid].peer), room)
 
 func settle_match(room: Dictionary) -> void:
 	room.suspended = false
@@ -636,6 +759,13 @@ func maintenance() -> void:
 				if connected(sid): send(int(sessions[sid].peer), {"op": "room_closed", "code": "room_expired"})
 			remove_room(room)
 	match_queue()
+	var results = rooms.values().filter(func(room): return room.match != null and room.match.phase == "finished")
+	results.sort_custom(func(a, b): return float(a.get("finished_at", a.created)) < float(b.get("finished_at", b.created)))
+	while results.size() > maxi(8, max_rooms * 4):
+		var disposable = results.find_custom(func(room): return not room.players.any(func(sid): return connected(sid) and str(sessions[sid].room) == room.id))
+		if disposable < 0: break
+		var expired_result = results.pop_at(disposable)
+		remove_room(expired_result)
 	var expired = sessions.keys().filter(func(sid): return not connected(sid) and str(sessions[sid].room).is_empty() and now - float(sessions[sid].last_seen) > 14 * 86400)
 	for sid in expired: sessions.erase(sid)
 	if not expired.is_empty(): persist_registry()
@@ -725,6 +855,11 @@ func finish_checkpoint(wait_for_commit: bool) -> void:
 		mark_storage_fault()
 		persistence_errors += 1
 	else:
+		if storage_fault:
+			for entry in connections.values():
+				entry.state_progress = monotonic()
+				entry.state_pending.clear()
+				entry.last_snapshot = PackedByteArray()
 		storage_fault = false
 		prune_archives()
 
@@ -863,15 +998,21 @@ func health() -> Dictionary:
 	var network = process_ms.duplicate()
 	network.sort()
 	var buffered = 0
-	for entry in connections.values(): buffered += entry.peer.get_current_outbound_buffered_amount()
-	return {"service": "IncenseDebt Online", "protocol": Protocol.VERSION, "uptime": uptime,
-		"connections": connections.size(), "rooms": rooms.size(), "queued": queue.size(), "tick": ticks,
+	var unacked = 0
+	var largest_window = 0
+	for entry in connections.values():
+		buffered += entry.peer.get_current_outbound_buffered_amount()
+		unacked += entry.state_pending.size()
+		largest_window = maxi(largest_window, entry.state_pending.size())
+	return {"service": "IncenseDebt Online", "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION, "uptime": uptime,
+		"connections": connections.size(), "rooms": rooms.size(), "active_rooms": active_room_count(), "queued": queue.size(), "tick": ticks,
 		"step_p95_ms": samples[int((samples.size() - 1) * .95)] if not samples.is_empty() else 0.0,
 		"step_p99_ms": samples[int((samples.size() - 1) * .99)] if not samples.is_empty() else 0.0,
 		"step_max_ms": samples.back() if not samples.is_empty() else 0.0,
 		"process_p95_ms": network[int((network.size() - 1) * .95)] if not network.is_empty() else 0.0,
 		"process_p99_ms": network[int((network.size() - 1) * .99)] if not network.is_empty() else 0.0,
 		"process_max_ms": network.back() if not network.is_empty() else 0.0, "buffered_bytes": buffered,
+		"unacked_snapshots": unacked, "largest_snapshot_window": largest_window, "snapshot_retries": snapshot_retries, "snapshots_coalesced": snapshots_coalesced,
 		"persistence_errors": persistence_errors, "storage_fault": storage_fault, "checkpoint_pending": checkpoint_thread != null, "bytes_sent": bytes_sent, "stopping": stopping}
 
 func process_health() -> void:
