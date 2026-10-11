@@ -1,0 +1,46 @@
+{
+  "url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1",
+  "tag": "v0.4.0-alpha.1",
+  "commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
+  "draft": false,
+  "prerelease": true,
+  "published_at": "2026-10-11T02:39:05Z",
+  "assets": [
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-android-arm64-debug.apk",
+      "bytes": 1025404576,
+      "digest": "sha256:4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-android-arm64-debug.apk"
+    },
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-server-windows-x64.zip",
+      "bytes": 38518839,
+      "digest": "sha256:48b4246539a6c5baf5d15818da53c459029d18e4f2b1c5e3036329a3e42aa9cd",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-server-windows-x64.zip"
+    },
+    {
+      "name": "IncenseDebt-v0.4.0-alpha.1-windows-x64.zip",
+      "bytes": 1031692040,
+      "digest": "sha256:7cd484a8b0511dfe657640f62fc62f1f7ac73f62a436dcf17eba737551a5e5f1",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-windows-x64.zip"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 5597,
+      "digest": "sha256:ac9b56ebbc72a692ac907e2fdc1383c0ef2121096d690977ffdc4a9d6737f971",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/release-manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 515,
+      "digest": "sha256:6770d22bb763dbf89c66c983bd6b83cfa4ddcfa9632cddf617079232ea6cca2e",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/SHA256SUMS.txt"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 12057,
+      "digest": "sha256:f272b425ee2804e28e60fe7f38a85cfecc671575812b62ea363aabed49bdf2ab",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/START-HERE.md"
+    }
+  ]
+}

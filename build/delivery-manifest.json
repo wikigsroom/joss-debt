@@ -1,6 +1,6 @@
 {
   "version": "0.4.0",
-  "status": "verified_cooperative_alpha_prepared",
+  "status": "verified_cooperative_alpha_published",
   "recorded_at": "2026-10-11T02:23:43.261630+00:00",
   "files": [
     {
@@ -43,6 +43,10 @@
   "ios_handoff_version": "0.2.0_historical",
   "save_schema": 2,
   "public_github_release": "v0.4.0-alpha.1",
-  "public_release_state": "prepared_not_yet_published",
-  "previous_delivery_manifest": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/delivery-manifest.json"
+  "public_release_state": "published_and_verified",
+  "previous_delivery_manifest": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/delivery-manifest.json",
+  "public_release_commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
+  "public_release_published_at": "2026-10-11T02:39:05Z",
+  "publication_receipt": "docs/releases/v0.4.0-alpha.1.publication.json",
+  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json"
 }

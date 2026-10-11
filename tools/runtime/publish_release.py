@@ -11,6 +11,7 @@ import os
 import re
 import shutil
 import subprocess
+import time
 
 from package_release import ROOT, TAG
 
@@ -90,7 +91,9 @@ def main():
         # The tag endpoint omits drafts. Discover our draft through the
         # authenticated release list, then query its stable numeric ID.
         if release_id is None:
-            _, output = command("api", f"repos/{REPO}/releases?per_page=100",
+            # Fresh reads prevent an API proxy's earlier release/asset list from
+            # hiding the draft or newly uploaded, digest-verified attachments.
+            _, output = command("api", f"repos/{REPO}/releases?per_page=100&verification={time.time_ns()}",
                                 "--paginate", "--slurp")
             candidates = [row for page in json.loads(output) for row in page
                           if row["tag_name"] == tag]
@@ -101,7 +104,7 @@ def main():
             if len(candidates) != 1:
                 raise RuntimeError("Multiple releases use the requested tag; review before uploading")
             release_id = candidates[0]["id"]
-        _, output = command("api", f"repos/{REPO}/releases/{release_id}")
+        _, output = command("api", f"repos/{REPO}/releases/{release_id}?verification={time.time_ns()}")
         return json.loads(output)
 
     def matching(row, name):

@@ -222,7 +222,7 @@
       "widescreen_packaged_checks": 282
     }
   },
-  "public_release_state": "prepared_not_yet_published",
+  "public_release_state": "published_and_verified",
   "privacy_policy_version": "1.5",
   "anonymous_https_report": "docs/releases/v0.3.0-alpha.1.https.json",
   "public_release_assets": [
@@ -266,5 +266,9 @@
   "prior_online_acceptance": {
     "version": "0.3.0",
     "report": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/current-product-status.json"
-  }
+  },
+  "public_release_commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
+  "public_release_published_at": "2026-10-11T02:39:05Z",
+  "publication_receipt": "docs/releases/v0.4.0-alpha.1.publication.json",
+  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json"
 }

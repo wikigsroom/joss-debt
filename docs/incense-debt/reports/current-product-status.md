@@ -22,4 +22,4 @@
 
 整个工作使用原生 Windows，无 Docker、WSL、虚拟机或模拟器，没有打开浏览器标签页。默认没有公网游戏主机；仍需实体 Android／手柄、真人十一层平衡、真实 WAN、目标主机长时容量和发行签名验收。
 
-发布状态：最终包已验收，公开发布回执完成后附在此处。
+发布状态：**v0.4.0-alpha.1 已公开并核验**。标签提交 `b7770040265ff0fb1c8b8e6eddce426ff8884ad1`，6 个附件均通过 GitHub 完整 SHA-256 与大小核验，8 项匿名 HTTPS 检查通过。见[发布回执](../../releases/v0.4.0-alpha.1.publication.json)与[公开访问记录](../../releases/v0.4.0-alpha.1.https.json)。
