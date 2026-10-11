@@ -602,8 +602,8 @@
   "failures": [],
   "passed": true,
   "scope": "native desktop menu and optional-room fixtures; not a human balance playtest or mobile device acceptance",
-  "recorded_at": "2026-10-10T20:59:04.833240+00:00",
+  "recorded_at": "2026-10-11T02:14:42.757590+00:00",
   "packaged": true,
   "render_cap_fps": 60,
-  "artifact_sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a"
+  "artifact_sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368"
 }

@@ -15,6 +15,7 @@ var latencies: Array = []
 var intervals: Array = []
 var states = 0
 var rounds = 0
+var game_mode = "duel"
 
 func _initialize() -> void:
 	for arg in OS.get_cmdline_user_args():
@@ -23,6 +24,7 @@ func _initialize() -> void:
 		if arg.begins_with("--seconds="): seconds = float(arg.trim_prefix("--seconds="))
 		if arg.begins_with("--weapons="): weapons = Array(arg.trim_prefix("--weapons=").split(",", false))
 		if arg.begins_with("--output="): output = arg.trim_prefix("--output=")
+		if arg.begins_with("--game-mode="): game_mode = arg.trim_prefix("--game-mode=")
 	started = Time.get_ticks_msec() / 1000.0
 	for index in room_count * 2:
 		var socket = WebSocketPeer.new()
@@ -62,7 +64,7 @@ func _process(delta: float) -> bool:
 			match message.get("op"):
 				"welcome":
 					var loadout = {"character": "c_paper", "weapon": weapons[(client.index / 2) % weapons.size()], "skill": "s01"}
-					command(client, "code", {"code": "%06d" % (300000 + client.index / 2), "loadout": loadout})
+					command(client, "code", {"code": "%06d" % (300000 + client.index / 2), "loadout": loadout, "game_mode": game_mode})
 				"ack":
 					if not message.get("ok", false): errors.append(str(message.get("code")))
 				"error": errors.append(str(message.get("code")))
@@ -78,7 +80,10 @@ func _process(delta: float) -> bool:
 		var round_key = match_key + "/" + str(view.get("round", 1))
 		match view.get("phase"):
 			"lobby": once(client, "ready", "ready")
-			"draft": once(client, round_key, "choose", {"index": client.index % 4})
+			"draft":
+				if game_mode == "coop":
+					if int(view.picked[int(view.seat)]) < 0: once(client, str(view.choice_token), "choose", {"index": 0, "choice_token": view.choice_token})
+				else: once(client, round_key, "choose", {"index": client.index % 4})
 			"finished": once(client, match_key + "rematch", "rematch")
 			"suspended": errors.append("unexpected_suspension")
 			"playing":
@@ -88,10 +93,17 @@ func _process(delta: float) -> bool:
 					var seat = int(view.seat)
 					var own = Vector2(view.actors[seat].player.pos)
 					var other = Vector2(view.actors[1 - seat].player.pos)
+					if game_mode == "coop":
+						var monsters = view.scene.enemies.filter(func(enemy): return not enemy.dead)
+						monsters.sort_custom(func(a, b): return own.distance_squared_to(a.pos) < own.distance_squared_to(b.pos))
+						if not monsters.is_empty(): other = Vector2(monsters[0].pos)
 					frame.seq = client.seq
 					frame.move = Vector2(sin(now * .8 + client.index), cos(now * .7 + client.index))
 					frame.aim = own.direction_to(other); frame.fire = fmod(now, 1.5) < 1.2
 					frame.dash = client.seq % 90 == 0; frame.skill = client.seq % 150 == 0
+					if game_mode == "coop" and view.actors[1 - seat].player.get("downed", false):
+						frame.move = own.direction_to(view.actors[1 - seat].player.pos)
+						frame.interact = own.distance_to(view.actors[1 - seat].player.pos) < 65
 					send(client, {"op": "input", "frame": frame})
 		if now - float(client.last_ping) > 2:
 			client.last_ping = now
@@ -109,7 +121,7 @@ func percentile(values: Array, fraction: float) -> float:
 
 func finish(now: float) -> void:
 	var active_seconds = now - battle_started if battle_started >= 0 else 0
-	var report = {"passed": errors.is_empty() and active_seconds >= seconds and states > room_count * seconds * 10,
+	var report = {"passed": errors.is_empty() and active_seconds >= seconds and states > room_count * seconds * 10, "game_mode": game_mode,
 		"rooms": room_count, "clients": clients.size(), "weapons": weapons, "battle_seconds": active_seconds, "snapshots": states,
 		"ping_p95_ms": percentile(latencies, .95), "snapshot_interval_p95_ms": percentile(intervals, .95),
 		"snapshot_interval_p99_ms": percentile(intervals, .99), "snapshot_interval_max_ms": intervals.max() if not intervals.is_empty() else 0.0,

@@ -6,11 +6,13 @@ signal problem(code: String)
 const Protocol = preload("res://scripts/network/protocol.gd")
 const Store = preload("res://scripts/core/save_store.gd")
 const Actor = preload("res://scripts/network/duel_actor.gd")
+const CooperativeActor = preload("res://scripts/network/cooperative_presentation.gd")
 var peer = WebSocketPeer.new()
 var state = "offline"
 var endpoint = "ws://127.0.0.1:18777"
 var nickname = "还愿人"
 var loadout = {"character": "c_paper", "weapon": "w01", "skill": "s01"}
+var game_mode = "coop"
 var identity: Dictionary = {}
 var identities: Dictionary = {}
 var room: Dictionary = {}
@@ -19,7 +21,7 @@ var pending: Dictionary = {}
 var request_serial = 0
 var input_serial = 0
 var latest_input = Protocol.empty_input()
-var pending_edges = {"dash": false, "skill": false, "active_item": false}
+var pending_edges = {"dash": false, "skill": false, "active_item": false, "interact": false}
 var wants_connection = false
 var hello_sent = false
 var retry_count = 0
@@ -49,6 +51,7 @@ func _init(folder: String = "user://online-client") -> void:
 		endpoint = str(data.get("endpoint", endpoint))
 		nickname = Protocol.clean_name(data.get("nickname", nickname))
 		if data.get("loadout") is Dictionary: loadout = data.loadout.duplicate(true)
+		game_mode = str(data.get("game_mode", "coop")) if data.get("game_mode", "coop") in ["coop", "duel"] else "coop"
 		identities = data.get("identities", {}).duplicate(true)
 	load_identity()
 
@@ -72,7 +75,7 @@ func save_preferences() -> bool:
 		var oldest = identities.keys()[0]
 		if oldest == endpoint: oldest = identities.keys()[1]
 		identities.erase(oldest)
-	return preferences.write({"version": 1, "endpoint": endpoint, "nickname": nickname, "loadout": loadout, "identities": identities})
+	return preferences.write({"version": 1, "endpoint": endpoint, "nickname": nickname, "loadout": loadout, "game_mode": game_mode, "identities": identities})
 
 func valid_endpoint(value: String) -> bool:
 	if value.length() > 240 or value.contains(" ") or value.contains("@") or value.contains("#") or value.contains("?"): return false
@@ -293,7 +296,7 @@ func accept_state(message: Dictionary) -> void:
 		# Initial recovery shows current projectiles, without replaying old FX/audio.
 		last_event = int(message.get("event_serial", 0)) if message.get("phase") in ["playing", "round_result", "suspended", "finished"] else 0
 		presentation.clear()
-	var before = str(room.get("phase", "")) + str(room.get("ready", [])) + str(room.get("picked", [])) + str(room.get("connected", [])) + str(room.get("rematch_ready", [])) + str(room.get("resume_ready", [])) + str(room.get("players", []))
+	var before = ui_state_key(room)
 	room = message.duplicate(true)
 	snapshot_serial += 1
 	input_history = input_history.filter(func(input): return int(input.seq) > int(message.get("input_ack", 0)))
@@ -303,8 +306,9 @@ func accept_state(message: Dictionary) -> void:
 	stats = message.get("stats", stats).duplicate(true)
 	if presentation.is_empty() and message.actors.size() == 2:
 		for seat in 2:
-			var actor = Actor.new()
-			actor.initialize_duel(message.players[seat], message.arena, 1, seat)
+			var actor = CooperativeActor.new() if message.get("game_mode") == "coop" else Actor.new()
+			if message.get("game_mode") == "coop": actor.start(str(message.players[seat].character), 1, 11, {"weapon": message.players[seat].weapon})
+			else: actor.initialize_duel(message.players[seat], message.arena, 1, seat)
 			presentation.append(actor)
 	for seat in presentation.size():
 		var actor = presentation[seat]
@@ -312,9 +316,23 @@ func accept_state(message: Dictionary) -> void:
 		for key in ["run", "player", "bullets", "zones", "enemies", "chains", "delayed", "room_flags", "stats"]:
 			actor.set(key, data[key].duplicate(true))
 		actor.time = float(data.time)
-		actor.online_biome = message.arena.duplicate(true)
-		if actor.geometry.boundary_key != str(message.arena.id) + "_a": actor.geometry.configure_biome(message.arena.id, 0)
-		actor.mode = "combat"
+		if message.get("game_mode") == "coop":
+			var scene = message.scene
+			if actor.online_scene != int(scene.serial):
+				actor.build_geometry(str(scene.template), scene.objects)
+				actor.online_scene = int(scene.serial)
+			else:
+				# Destroyed urns and changing obstacles share the server's collision.
+				actor.geometry.restore_objects(scene.objects)
+			for key in ["enemies", "bullets", "zones", "delayed", "pickups"]: actor.set(key, scene[key].duplicate(true))
+			actor.room_flags = scene.flags.duplicate(true)
+			actor.room_flags.merge(data.room_flags, true)
+			actor.online_stairs = bool(scene.stairs)
+			actor.mode = str(scene.mode)
+		else:
+			actor.online_biome = message.arena.duplicate(true)
+			if actor.geometry.boundary_key != str(message.arena.id) + "_a": actor.geometry.configure_biome(message.arena.id, 0)
+			actor.mode = "combat"
 	var incoming: Array = []
 	for event in message.get("events", []):
 		if int(event.get("event_id", 0)) > last_event:
@@ -324,8 +342,12 @@ func accept_state(message: Dictionary) -> void:
 	if last_event > 0: send({"op": "events_ack", "match": match_id, "event": last_event})
 	if room.get("phase", "") != "playing": clear_input()
 	state_received.emit(room)
-	var after = str(room.get("phase", "")) + str(room.get("ready", [])) + str(room.get("picked", [])) + str(room.get("connected", [])) + str(room.get("rematch_ready", [])) + str(room.get("resume_ready", [])) + str(room.get("players", []))
+	var after = ui_state_key(room)
 	if before != after or not was_room: changed.emit()
+
+func ui_state_key(value: Dictionary) -> String:
+	var offers = str(value.get("offers", [])) if value.get("game_mode") == "coop" and value.get("phase") == "draft" else ""
+	return str(value.get("phase", "")) + str(value.get("ready", [])) + str(value.get("picked", [])) + str(value.get("connected", [])) + str(value.get("rematch_ready", [])) + str(value.get("resume_ready", [])) + str(value.get("players", [])) + str(value.get("choice_token", "")) + str(value.get("scene", {}).get("serial", 0)) + offers
 
 func raise_problem(code: String) -> void:
 	last_error = code

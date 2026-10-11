@@ -130,7 +130,7 @@ def main():
     internet_expected = 'permissions/internet=true' in (ROOT / "game/export_presets.cfg").read_text("utf8")
     internet_matches = ("android.permission.INTERNET" in permissions.stdout) == internet_expected
     online_scripts = {name: all(any(p.endswith(name + suffix) for p in names) for suffix in [".gdc", ".gd.remap"])
-                      for name in ["protocol", "duel_actor", "duel_match", "online_session", "online_controller", "online_ui", "motion_prediction"]}
+                      for name in ["protocol", "duel_actor", "duel_match", "cooperative_world", "cooperative_match", "cooperative_presentation", "online_session", "online_controller", "online_ui", "motion_prediction"]}
     display_checks = {
         "edge_to_edge_in_actual_apk": "--edge_to_edge" in command_line,
         "immersive_in_actual_apk": "--fullscreen" in command_line,

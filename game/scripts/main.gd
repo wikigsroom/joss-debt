@@ -162,7 +162,7 @@ func _ready() -> void:
 	qa_equipment_enabled = OS.get_cmdline_user_args().has("--qa-equipment")
 	qa_consumables_enabled = OS.get_cmdline_user_args().has("--qa-consumables")
 	qa_display_enabled = OS.get_cmdline_user_args().has("--qa-display")
-	qa_online_enabled = OS.get_cmdline_user_args().has("--qa-online")
+	qa_online_enabled = OS.get_cmdline_user_args().has("--qa-online") or OS.get_cmdline_user_args().has("--qa-coop")
 	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
@@ -263,7 +263,7 @@ func _ready() -> void:
 		fixture.directory = qa_directory
 		add_child(fixture)
 	elif qa_online_enabled:
-		var fixture = preload("res://scripts/ui/online_native_qa.gd").new()
+		var fixture = preload("res://scripts/ui/cooperative_native_qa.gd").new() if OS.get_cmdline_user_args().has("--qa-coop") else preload("res://scripts/ui/online_native_qa.gd").new()
 		fixture.app = self
 		fixture.directory = qa_directory
 		add_child(fixture)

@@ -38,8 +38,8 @@ static func area_hit(w, center: Vector2, radius: float, damage: float) -> void:
 static func tick(w) -> void:
 	for object in w.geometry.objects.duplicate():
 		if not object.alive: continue
-		if object.kind == "thorn_seal" and dangerous(object, w.time) and w.player.pos.distance_to(object.pos) < 37:
-			w.damage_player(1, {"id": "thorn_seal", "table": "obstacles", "kind": "hazard", "origin": object.pos})
+		if object.kind == "thorn_seal" and dangerous(object, w.time):
+			w.damage_hazard(object.pos, 37, 1, {"id": "thorn_seal", "table": "obstacles", "kind": "hazard", "origin": object.pos})
 		if float(object.fuse_until) <= 0 or w.time < float(object.fuse_until): continue
 		w.geometry.remove_object(object)
 		w.emit("scenery_explosion", {"pos": object.pos, "radius": 116, "style": "blast_flame", "heavy": true})
@@ -47,7 +47,6 @@ static func tick(w) -> void:
 		for enemy in w.enemies.duplicate():
 			if not enemy.dead and enemy.pos.distance_to(object.pos) < 116 + enemy.radius:
 				w.damage_enemy(enemy, 72, "secondary", false, object.pos.direction_to(enemy.pos), 60)
-		if w.player.pos.distance_to(object.pos) < 128:
-			w.damage_player(2, {"id": str(object.kind), "table": "obstacles", "kind": "explosion", "origin": object.pos})
+		w.damage_hazard(object.pos, 128, 2, {"id": str(object.kind), "table": "obstacles", "kind": "explosion", "origin": object.pos})
 		area_hit(w, object.pos, 116, 25)
 		if object.kind == "oil_lamp": w.add_zone(object.pos, 64, 3.0, 12, true, 0.0)

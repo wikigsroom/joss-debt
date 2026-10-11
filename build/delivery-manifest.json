@@ -1,90 +1,48 @@
 {
-  "version": "0.3.0",
-  "status": "verified_alpha_published",
-  "recorded_at": "2026-10-10T21:22:46.415193+00:00",
+  "version": "0.4.0",
+  "status": "verified_cooperative_alpha_prepared",
+  "recorded_at": "2026-10-11T02:23:43.261630+00:00",
   "files": [
     {
       "path": "build/windows/IncenseDebt.exe",
-      "sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a",
-      "bytes": 1108782008
+      "sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
+      "bytes": 1108831472
     },
     {
       "path": "build/android/IncenseDebt.apk",
-      "sha256": "7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
-      "bytes": 1025354672
+      "sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
+      "bytes": 1025404576
     },
     {
       "path": "build/server/IncenseDebtServer.exe",
-      "sha256": "61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8",
-      "bytes": 110825096
+      "sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+      "bytes": 110849184
     }
   ],
-  "revision_report": "docs/incense-debt/reports/online-2026-10-11/package-parity.json",
-  "revision_document": "docs/incense-debt/40-online-delivery.md",
-  "revision_reports": "docs/incense-debt/reports/online-2026-10-11",
+  "revision_report": "docs/incense-debt/reports/cooperative-2026-10-11/package-parity.json",
+  "revision_document": "docs/incense-debt/42-cooperative-delivery.md",
+  "revision_reports": "docs/incense-debt/reports/cooperative-2026-10-11",
   "runtime_assets": 3810,
-  "matching_compiled_scripts": 86,
+  "matching_compiled_scripts": 90,
   "checks": {
-    "combat": 271,
-    "transport": 26,
+    "combat": 125,
+    "transport": 32,
     "recovery": 57,
     "storage": 7,
-    "native_online": 30,
-    "native_source": 30,
-    "native_touch": 33,
+    "native_online": 27,
+    "duel_native": 30,
+    "duel_combat": 271,
+    "offline_core": 36,
     "offline_keyboard": 107,
-    "package_parity": 2167
+    "package_parity": 2171
   },
   "android_signing": "debug",
-  "android_version_code": 6,
+  "android_version_code": 7,
   "android_physical_device_tested": false,
   "public_game_server_deployed": false,
   "ios_handoff_version": "0.2.0_historical",
   "save_schema": 2,
-  "public_github_release": "v0.3.0-alpha.1",
-  "public_release_state": "published",
-  "previous_delivery_manifest": "docs/incense-debt/reports/online-2026-10-11/baseline-0.2.3/delivery-manifest.json",
-  "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.3.0-alpha.1",
-  "public_release_commit": "9755f28c5e43167d1ca823ac4abc00522fafba7a",
-  "public_release_published_at": "2026-10-10T21:35:10Z",
-  "publication_receipt": "docs/releases/v0.3.0-alpha.1.publication.json",
-  "anonymous_https_report": "docs/releases/v0.3.0-alpha.1.https.json",
-  "public_release_assets": [
-    {
-      "name": "IncenseDebt-v0.3.0-alpha.1-android-arm64-debug.apk",
-      "bytes": 1025354672,
-      "digest": "sha256:7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-android-arm64-debug.apk"
-    },
-    {
-      "name": "IncenseDebt-v0.3.0-alpha.1-server-windows-x64.zip",
-      "bytes": 38495019,
-      "digest": "sha256:16c5006494a13155f0f2db449c7b44ef8cdd614f7b352ec8403f4ee886acb704",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-server-windows-x64.zip"
-    },
-    {
-      "name": "IncenseDebt-v0.3.0-alpha.1-windows-x64.zip",
-      "bytes": 1031643325,
-      "digest": "sha256:65a978824a67b7e4f344c2cab5b81ea474b70962ff64f51c7534274ff232a2a8",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/IncenseDebt-v0.3.0-alpha.1-windows-x64.zip"
-    },
-    {
-      "name": "release-manifest.json",
-      "bytes": 5053,
-      "digest": "sha256:24cc2c4d3d114ada727a450469c1aa6e125cffbd18fa66a07248481df7edf3bd",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/release-manifest.json"
-    },
-    {
-      "name": "SHA256SUMS.txt",
-      "bytes": 515,
-      "digest": "sha256:86c5b297437cc999ef3283bcbd67402cbdbaeb7e2fa5eaaad215ceb0557e3682",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/SHA256SUMS.txt"
-    },
-    {
-      "name": "START-HERE.md",
-      "bytes": 11123,
-      "digest": "sha256:fdbf28cdb7db94cab0b4876596fd2192b77e2636695024df3e5c2e94ab630920",
-      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/START-HERE.md"
-    }
-  ]
+  "public_github_release": "v0.4.0-alpha.1",
+  "public_release_state": "prepared_not_yet_published",
+  "previous_delivery_manifest": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/delivery-manifest.json"
 }

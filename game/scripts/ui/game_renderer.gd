@@ -17,6 +17,7 @@ var drawn_fx = DrawnFX.new()
 var actor_freeze: Dictionary = {}
 var player_death_clock = 0.0
 var online_actors: Dictionary = {}
+var online_death_clocks: Dictionary = {}
 var online_motions: Dictionary = {}
 ## Presentation consumes events; it cannot change the authoritative world or RNG.
 
@@ -126,11 +127,15 @@ func accept_opponent(events: Array, actor_id: int) -> void:
 	if not online_motions.has(actor_id): online_motions[actor_id] = WeaponMotion.new()
 	var saved_world = world
 	var saved_motion = weapon_motion
+	var saved_death = player_death_clock
+	player_death_clock = float(online_death_clocks.get(actor_id, clock))
 	world = online_actors[actor_id]
 	weapon_motion = online_motions[actor_id]
 	accept(events)
+	online_death_clocks[actor_id] = player_death_clock
 	world = saved_world
 	weapon_motion = saved_motion
+	player_death_clock = saved_death
 
 func _process(delta: float) -> void:
 	clock += delta
@@ -153,7 +158,7 @@ func _draw() -> void:
 	draw_set_transform_matrix(stage)
 	if world == null or world.run.is_empty():
 		return
-	if not world.run.get("online", false):
+	if not world.run.get("online", false) or world.run.get("cooperative", false):
 		draw_secret_entry()
 		draw_room_doors()
 	draw_room_ambient()
@@ -230,10 +235,14 @@ func _draw() -> void:
 		if effect.kind in ["ray","burst","scenery_explosion"]: draw_effect(effect)
 	var actors = world.enemies.duplicate()
 	actors.append({"is_player": true, "pos": world.player.pos})
+	if world.run.get("cooperative", false):
+		for actor_id in online_actors: actors.append({"online_id": actor_id, "pos": online_actors[actor_id].player.pos})
 	actors.sort_custom(func(a, b): return a.pos.y < b.pos.y)
 	for actor in actors:
 		if actor.get("is_player", false):
 			draw_player()
+		elif actor.has("online_id"):
+			draw_online_actor(int(actor.online_id))
 		else:
 			draw_enemy(actor)
 	for effect in visual_effects:
@@ -539,12 +548,15 @@ func draw_online_actor(actor_id: int) -> void:
 	if not online_motions.has(actor_id): online_motions[actor_id] = WeaponMotion.new()
 	var saved_world = world
 	var saved_motion = weapon_motion
+	var saved_death = player_death_clock
+	player_death_clock = float(online_death_clocks.get(actor_id, clock))
 	world = online_actors[actor_id]
 	weapon_motion = online_motions[actor_id]
 	draw_player()
-	draw_circle(world.player.pos, 19, Color(HOSTILE, .8), false, 2, true)
+	draw_circle(world.player.pos, 19, Color(UI.JADE if world.run.get("cooperative", false) else HOSTILE, .8), false, 2, true)
 	world = saved_world
 	weapon_motion = saved_motion
+	player_death_clock = saved_death
 
 func draw_enemy(enemy: Dictionary) -> void:
 	if enemy.get("online_actor", false) and online_actors.has(int(enemy.uid)):

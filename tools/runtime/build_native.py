@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
+import re
 import subprocess
 from PIL import Image
 from prepare_asset_registry import main as prepare_registry
@@ -73,6 +74,7 @@ def main():
     if args.platform != "android" and (args.android_build != "debug" or args.android_output):
         parser.error("--android-build and --android-output are only valid for the android platform")
     if (ROOT / "game/assets/creature-actions.json").is_file():
+        print("Checking the full creature-art catalog before export...", flush=True)
         from validate_creature_actions import validate
         validation = validate()
         validation.update(
@@ -119,6 +121,7 @@ def main():
                  export_flag, "Windows Desktop" if args.platform == "windows" else "Android", str(output)]]
     logs = []
     for step, cmd in enumerate(commands):
+        print("Importing native resources..." if step == 0 else "Exporting " + args.platform + " application...", flush=True)
         try:
             result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env,
                                     timeout=180 if step == 0 else args.export_timeout)
@@ -137,7 +140,7 @@ def main():
             # deliverable beside the verified debug package.
             if args.platform == "android" and args.android_build == "release":
                 output.unlink(missing_ok=True)
-            print(logs[-1])
+            print(logs[-1][-4000:])
             lowered = logs[-1].lower()
             if "keystore" in lowered or "发布密钥" in logs[-1] or "release key" in lowered:
                 raise RuntimeError(
@@ -154,8 +157,8 @@ def main():
     report = {"platform": args.platform, "path": relative_output, "bytes": output.stat().st_size,
               "sha256": hashlib.sha256(output.read_bytes()).hexdigest(), "engine": "4.7.2",
               "build": build_variant,
-              "version": "0.3.0",
-              "playable_scope": "eleven-floor offline alpha plus authoritative two-player Duel: quick pairing, six-digit open rooms, 32 weapons, 18 skills, 32 PvP relics, reconnect and isolated online records",
+              "version": re.search(r'config/version="([^"]+)"', (ROOT / "game/project.godot").read_text("utf8")).group(1),
+              "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
               "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
               "device_tested": False, "virtualization": "none"}
     (REPORTS / report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")

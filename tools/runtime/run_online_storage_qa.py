@@ -16,6 +16,7 @@ SERVER = ROOT / "build/server/IncenseDebtServer.exe"
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--cooperative", action="store_true")
     args = parser.parse_args()
     folder = (args.output or ROOT / ".local-tools/online-development" / ("storage-" + datetime.now().strftime("%Y%m%d-%H%M%S"))).resolve()
     if not folder.is_relative_to(ROOT / ".local-tools"):
@@ -47,7 +48,7 @@ def main():
 
     try:
         wait_for(ready, 10)
-        client = subprocess.Popen([str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/online_storage.gd", "--", "--folder=" + str(clients)], cwd=ROOT, stdout=client_log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
+        client = subprocess.Popen([str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/online_storage.gd", "--", "--folder=" + str(clients), "--game-mode=" + ("coop" if args.cooperative else "duel")], cwd=ROOT, stdout=client_log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
         wait_for(lambda: (clients / "fault-ready").is_file())
         # Directory placeholders make FileAccess.open(..., WRITE) fail, leaving
         # both committed generations intact. No ACL or system-wide change.
@@ -58,7 +59,7 @@ def main():
             path.rmdir()  # Owned, checked, empty directory only.
         client.wait(timeout=20)
         report = json.loads((clients / "storage-report.json").read_text("utf8"))
-        report.update(server_sha256=digest, packaged_server=True, recorded_at=datetime.now(timezone.utc).isoformat(), virtualization="none")
+        report.update(game_mode="coop" if args.cooperative else "duel", server_sha256=digest, packaged_server=True, recorded_at=datetime.now(timezone.utc).isoformat(), virtualization="none")
         if client.returncode:
             report["passed"] = False
         (folder / "storage-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")

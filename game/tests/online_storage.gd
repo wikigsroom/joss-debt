@@ -5,11 +5,13 @@ var folder = ""
 var url = "ws://127.0.0.1:18877"
 var clients: Array = []
 var checks: Array = []
+var game_mode = "duel"
 
 func _initialize() -> void:
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--folder="): folder = arg.trim_prefix("--folder=")
 		if arg.begins_with("--url="): url = arg.trim_prefix("--url=")
+		if arg.begins_with("--game-mode="): game_mode = arg.trim_prefix("--game-mode=")
 	call_deferred("run")
 
 func check(value: bool, id: String) -> void:
@@ -35,11 +37,12 @@ func run() -> void:
 		client.connect_service(url, "Storage %d" % i)
 	check(await until(func(): return clients.all(func(c): return c.state == "online")), "two_real_clients_connected")
 	if clients.any(func(c): return c.state != "online"): finish(); return
-	for client in clients: client.request("code", {"code": "001922", "loadout": client.loadout})
+	for client in clients: client.request("code", {"code": "001922", "loadout": client.loadout, "game_mode": game_mode})
 	await until(func(): return clients.all(func(c): return c.room.get("players", []).size() == 2))
 	for client in clients: client.request("ready")
-	await until(func(): return clients.all(func(c): return c.room.get("phase") == "draft"))
-	for client in clients: client.request("choose", {"index": 0})
+	if game_mode != "coop":
+		await until(func(): return clients.all(func(c): return c.room.get("phase") == "draft"))
+		for client in clients: client.request("choose", {"index": 0})
 	check(await until(func(): return clients.all(func(c): return c.can_play())), "live_match_started")
 	var frame = Protocol.empty_input(); frame.move = Vector2.RIGHT
 	clients[0].submit_input(frame)

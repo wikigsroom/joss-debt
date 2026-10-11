@@ -1,12 +1,14 @@
 extends Node
 const Protocol = preload("res://scripts/network/protocol.gd")
 const Duel = preload("res://scripts/network/duel_match.gd")
+const Cooperation = preload("res://scripts/network/cooperative_match.gd")
 const Store = preload("res://scripts/core/save_store.gd")
 const Content = preload("res://scripts/core/content_db.gd")
 var db = Content.new()
 var listener = TCPServer.new()
 var health_listener = TCPServer.new()
 var connections: Dictionary = {}
+var closing_peers: Array = []
 var health_connections: Array = []
 var sessions: Dictionary = {}
 var rooms: Dictionary = {}
@@ -74,6 +76,11 @@ func wall_time() -> float:
 func _process(delta: float) -> void:
 	if stopping: return
 	var begin = Time.get_ticks_usec()
+	for entry in closing_peers.duplicate():
+		entry.peer.poll()
+		if entry.peer.get_ready_state() == WebSocketPeer.STATE_CLOSED or monotonic() >= float(entry.until):
+			entry.stream.disconnect_from_host()
+			closing_peers.erase(entry)
 	finish_checkpoint(false)
 	uptime += delta
 	while listener.is_connection_available():
@@ -156,7 +163,7 @@ func _physics_process(delta: float) -> void:
 			var fresh = monotonic() - float(input.last_seen) <= Protocol.INPUT_TIMEOUT
 			frames.append(input.frame.duplicate(true) if fresh else Protocol.empty_input())
 			if fresh: room.applied_seq[seat] = int(input.seq)
-			for edge in ["dash", "skill", "active_item"]: input.frame[edge] = false
+			for edge in ["dash", "skill", "active_item", "interact"]: input.frame[edge] = false
 		room.match.advance(frames, 1.0 / Protocol.TICK_RATE)
 		if room.match.phase == "finished": settle_match(room)
 	checkpoint_elapsed += delta
@@ -182,6 +189,12 @@ func send(connection_id: int, message: Dictionary, compressed: bool = false) -> 
 func close_peer(connection_id: int, reason: String) -> void:
 	if not connections.has(connection_id): return
 	var socket = connections[connection_id].peer
+	if reason == "session_replaced":
+		# Retain the stream until the close handshake flushes. Dropping it after
+		# one poll can lose code 4001 and make the old client retry a takeover.
+		while closing_peers.size() >= max_connections:
+			closing_peers.pop_front().stream.disconnect_from_host()
+		closing_peers.append({"peer": socket, "stream": connections[connection_id].stream, "until": monotonic() + 2})
 	socket.close(4001 if reason == "session_replaced" else -1, reason)
 	if reason == "session_replaced": socket.poll()
 	disconnect_peer(connection_id)
@@ -281,7 +294,7 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 		token = Protocol.nonce()
 		sessions[sid] = {"id": sid, "token_hash": token.sha256_text(), "name": Protocol.clean_name(message.get("name", "")),
 			"room": "", "queued": false, "peer": -1, "last_seen": wall_time(), "last_request": 0, "replies": {},
-			"loadout": {"character": "c_paper", "weapon": "w01", "skill": "s01"}, "wins": 0, "losses": 0, "draws": 0}
+			"loadout": {"character": "c_paper", "weapon": "w01", "skill": "s01"}, "game_mode": "duel", "wins": 0, "losses": 0, "draws": 0, "coop_wins": 0, "coop_losses": 0}
 	var session = sessions[sid]
 	if int(session.peer) >= 0 and int(session.peer) != connection_id:
 		# Detach first: closing the old peer cannot suspend the new connection.
@@ -306,7 +319,7 @@ func authenticate(connection_id: int, message: Dictionary) -> void:
 		room.resume_ready[seat] = false
 	send(connection_id, {"op": "welcome", "session": sid, "resume": token, "request_floor": session.last_request,
 		"input_floor": last_seq, "server_time": wall_time(), "grace": grace,
-		"stats": {"wins": session.wins, "losses": session.losses, "draws": session.draws}})
+		"stats": session_stats(session)})
 	if room != null: broadcast(room)
 
 func valid_loadout(value) -> bool:
@@ -325,8 +338,10 @@ func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary
 			return success()
 		"queue":
 			if room != null: return failure("already_in_room")
+			if message.get("game_mode", "duel") not in ["coop", "duel"]: return failure("invalid_mode")
 			if not valid_loadout(message.get("loadout")): return failure("invalid_loadout")
 			session.loadout = message.loadout.duplicate(true)
+			session.game_mode = message.get("game_mode", "duel")
 			if not queue.has(sid): queue.append(sid)
 			session.queued = true
 			match_queue()
@@ -340,10 +355,13 @@ func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary
 			if room != null or session.queued: return failure("busy")
 			if not Protocol.valid_code(message.get("code")): return failure("invalid_code")
 			if not valid_loadout(message.get("loadout")): return failure("invalid_loadout")
+			if message.get("game_mode", "duel") not in ["coop", "duel"]: return failure("invalid_mode")
 			session.loadout = message.loadout.duplicate(true)
+			session.game_mode = message.get("game_mode", "duel")
 			var code = str(message.code)
 			if codes.has(code):
 				room = rooms[codes[code]]
+				if room.get("game_mode", "duel") != session.game_mode: return failure("room_mode_mismatch")
 				if room.players.size() >= 2: return failure("room_full")
 				if room.match != null: return failure("room_started")
 				room.players.append(sid)
@@ -362,7 +380,17 @@ func command(session: Dictionary, op: String, message: Dictionary) -> Dictionary
 			return success()
 		"choose":
 			if room == null or room.match == null or room.suspended: return failure("not_choosing")
+			if room.get("game_mode") == "coop" and message.get("choice_token", "") != room.match.choice_token(room.players.find(sid)): return failure("stale_choice")
 			if not Store.integer(message.get("index")) or not room.match.choose(room.players.find(sid), int(message.index)): return failure("invalid_choice")
+			persist_room(room)
+			return success()
+		"cooperative_action":
+			if room == null or room.match == null or room.get("game_mode") != "coop": return failure("not_choosing")
+			if room.suspended and not (message.get("action") == "repay" and room.suspend_reason == "menu" and all_connected(room)): return failure("not_choosing")
+			var seat = room.players.find(sid)
+			if message.get("choice_token", "") != room.match.choice_token(seat): return failure("stale_choice")
+			if not message.get("action") is String or not message.get("value", "") is String or str(message.get("value", "")).length() > 64: return failure("invalid_choice")
+			if not room.match.action(seat, message.action, message.get("value", "")): return failure("invalid_choice")
 			persist_room(room)
 			return success()
 		"pause":
@@ -407,9 +435,13 @@ func connected(sid: String) -> bool:
 func all_connected(room: Dictionary) -> bool:
 	return room.players.size() == 2 and room.players.all(func(sid): return connected(sid) and str(sessions[sid].room) == room.id)
 
+func session_stats(session: Dictionary) -> Dictionary:
+	return {"wins": session.wins, "losses": session.losses, "draws": session.draws, "coop_wins": session.get("coop_wins", 0), "coop_losses": session.get("coop_losses", 0)}
+
 func create_room(players: Array, code: String = "", quick: bool = false) -> Dictionary:
 	var room_id = Protocol.nonce(16)
 	var room = {"id": room_id, "code": code, "quick": quick, "players": players.duplicate(),
+		"game_mode": sessions[players[0]].get("game_mode", "duel"),
 		"ready": [false, false], "resume_ready": [false, false], "rematch_ready": [false, false],
 		"created": wall_time(), "match": null, "suspended": false, "suspend_reason": "", "suspend_until": 0.0,
 		"inputs": [{"seq": 0, "frame": Protocol.empty_input(), "last_seen": 0.0}, {"seq": 0, "frame": Protocol.empty_input(), "last_seen": 0.0}],
@@ -426,12 +458,21 @@ func create_room(players: Array, code: String = "", quick: bool = false) -> Dict
 func match_queue() -> void:
 	queue = queue.filter(func(sid): return sessions.has(sid) and connected(sid) and str(sessions[sid].room).is_empty())
 	while queue.size() >= 2 and rooms.size() < max_rooms:
-		var players = [queue.pop_front(), queue.pop_front()]
+		var first = -1
+		var second = -1
+		for i in queue.size():
+			for j in range(i + 1, queue.size()):
+				if sessions[queue[i]].get("game_mode", "duel") == sessions[queue[j]].get("game_mode", "duel"): first = i; second = j; break
+			if first >= 0: break
+		if first < 0: break
+		var players = [queue[first], queue[second]]
+		queue.remove_at(second)
+		queue.remove_at(first)
 		var room = create_room(players, "", true)
 		broadcast(room)
 
 func begin_match(room: Dictionary) -> void:
-	room.match = Duel.new()
+	room.match = Cooperation.new() if room.get("game_mode") == "coop" else Duel.new()
 	var loadouts: Array = []
 	for sid in room.players: loadouts.append(sessions[sid].loadout.duplicate(true))
 	var random_seed = Crypto.new().generate_random_bytes(4).decode_u32(0) % 2147483646 + 1
@@ -456,13 +497,13 @@ func receive_input(session: Dictionary, message: Dictionary) -> void:
 	var seat = room.players.find(str(session.id))
 	var previous = room.inputs[seat]
 	if int(frame.seq) <= int(previous.seq): return
-	for edge in ["dash", "skill", "active_item"]: frame[edge] = bool(frame.get(edge, false)) or bool(previous.frame.get(edge, false))
+	for edge in ["dash", "skill", "active_item", "interact"]: frame[edge] = bool(frame.get(edge, false)) or bool(previous.frame.get(edge, false))
 	previous.seq = int(frame.seq)
 	previous.frame = frame
 	previous.last_seen = monotonic()
 
 func suspend_room(room: Dictionary, cause: String, initiator: int = -1) -> void:
-	if not room.suspended:
+	if not room.suspended or room.get("game_mode") == "coop" and room.suspend_reason == "menu" and cause != "menu":
 		room.suspend_until = wall_time() + grace
 		room.suspend_reason = cause
 		room.suspend_by = initiator
@@ -483,6 +524,7 @@ func room_view(room: Dictionary, sid: String) -> Dictionary:
 			entry.event_ack = 0
 		view = room.match.view(seat, int(entry.get("event_ack", 0)))
 	view.op = "state"
+	view.game_mode = room.get("game_mode", "duel")
 	view.room = room.id
 	view.code = room.code
 	view.quick = room.quick
@@ -494,7 +536,7 @@ func room_view(room: Dictionary, sid: String) -> Dictionary:
 	view.input_ack = room.applied_seq[seat]
 	view.input_floor = room.inputs[seat].seq
 	view.names = room.players.map(func(player): return str(sessions[player].name))
-	view.stats = {"wins": sessions[sid].wins, "losses": sessions[sid].losses, "draws": sessions[sid].draws}
+	view.stats = session_stats(sessions[sid])
 	if room.match == null:
 		view.players = room.players.map(func(player): return sessions[player].loadout.duplicate(true))
 	if room.suspended:
@@ -513,19 +555,26 @@ func settle_match(room: Dictionary) -> void:
 	room.suspend_until = 0.0
 	var match_id = str(room.match.id)
 	if settled.has(match_id): return
+	room.finished_at = wall_time()
 	# Commit the terminal battle state before committing its idempotent result.
 	if not persist_room(room): return
 	settled[match_id] = wall_time()
 	for seat in room.players.size():
 		var session = sessions[room.players[seat]]
-		if room.match.winner < 0: session.draws += 1
+		if room.get("game_mode") == "coop":
+			var stat = "coop_wins" if room.match.winner == 2 else "coop_losses"
+			session[stat] = int(session.get(stat, 0)) + 1
+		elif room.match.winner < 0: session.draws += 1
 		elif room.match.winner == seat: session.wins += 1
 		else: session.losses += 1
 	if not persist_registry():
 		settled.erase(match_id)
 		for seat in room.players.size():
 			var session = sessions[room.players[seat]]
-			if room.match.winner < 0: session.draws -= 1
+			if room.get("game_mode") == "coop":
+				var stat = "coop_wins" if room.match.winner == 2 else "coop_losses"
+				session[stat] -= 1
+			elif room.match.winner < 0: session.draws -= 1
 			elif room.match.winner == seat: session.wins -= 1
 			else: session.losses -= 1
 		return
@@ -538,7 +587,7 @@ func leave_room(session: Dictionary) -> void:
 	var sid = str(session.id)
 	var seat = room.players.find(sid)
 	if room.match != null:
-		room.match.finish(1 - seat, "forfeit")
+		room.match.finish(-1 if room.get("game_mode") == "coop" else 1 - seat, "partner_left" if room.get("game_mode") == "coop" else "forfeit")
 		settle_match(room)
 		broadcast(room)
 		room.players.erase(sid)
@@ -569,8 +618,8 @@ func maintenance() -> void:
 		if room.match != null and room.match.phase == "finished":
 			settle_match(room)
 			var departed: Array = room.get("departed", [])
-			if departed.size() >= room.players.size() or now - float(room.created) > 3600: remove_room(room)
-		elif room.suspended and now >= float(room.suspend_until):
+			if departed.size() >= room.players.size() or now - float(room.get("finished_at", room.created)) > 3600: remove_room(room)
+		elif room.suspended and now >= float(room.suspend_until) and not (room.get("game_mode") == "coop" and room.suspend_reason == "menu" and all_connected(room)):
 			var live: Array = []
 			for seat in room.players.size():
 				if connected(room.players[seat]): live.append(seat)
@@ -593,6 +642,10 @@ func maintenance() -> void:
 
 func persist_registry() -> bool:
 	finish_checkpoint(true)
+	# Each registry generation must reference its own room files. Reusing the
+	# same paused room revision in both slots defeats corruption fallback.
+	for room in rooms.values():
+		if not persist_room(room): return false
 	var result = meta_store.write(registry_snapshot())
 	if not result:
 		persistence_errors += 1
@@ -643,8 +696,7 @@ func start_checkpoint() -> void:
 	if checkpoint_thread != null: return
 	var job = {"registry": registry_snapshot(), "writer": meta_store, "rooms": []}
 	for room in rooms.values():
-		if storage_fault or int(room.get("checkpoint_revision", 0)) == 0 or room.match != null and not room.suspended and room.match.phase != "finished":
-			job.rooms.append({"id": room.id, "writer": room.store, "data": room_snapshot(room)})
+		job.rooms.append({"id": room.id, "writer": room.store, "data": room_snapshot(room)})
 	checkpoint_thread = Thread.new()
 	if checkpoint_thread.start(write_checkpoint_job.bind(job)) != OK:
 		checkpoint_thread = null
@@ -793,7 +845,7 @@ func recover_registry(previous: Dictionary) -> void:
 		data.inputs = []
 		for seat in 2: data.inputs.append({"seq": int(value.input_seqs[seat]), "frame": Protocol.empty_input(), "last_seen": 0.0})
 		if not value.get("match", {}).is_empty():
-			var duel = Duel.new()
+			var duel = Cooperation.new() if data.get("game_mode") == "coop" else Duel.new()
 			if not duel.recover(value.match): continue
 			data.match = duel
 			if duel.phase != "finished":
@@ -859,6 +911,8 @@ func shutdown() -> void:
 	for room in rooms.values(): saved = persist_room(room) and saved
 	saved = persist_registry() and saved
 	for connection_id in connections.keys(): close_peer(connection_id, "server_shutdown")
+	for entry in closing_peers: entry.stream.disconnect_from_host()
+	closing_peers.clear()
 	rooms.clear()
 	sessions.clear()
 	print("ONLINE_STOPPED checkpoints_flushed=" + str(saved and not storage_fault))

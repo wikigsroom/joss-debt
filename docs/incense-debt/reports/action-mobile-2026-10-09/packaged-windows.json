@@ -1,6 +1,6 @@
 {
 	"checks": [
-		"the executable loads the current 0.3.0 project from its embedded pack",
+		"the executable loads the current 0.4.0 project from its embedded pack",
 		"the generated pickup bitmap loads with its dimensions and transparent background: heal",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin",
 		"the generated pickup bitmap loads with its dimensions and transparent background: coin_pair",
@@ -2099,6 +2099,9 @@
 		"packaged file matches current source: res://scripts/core/story_book.gdc",
 		"packaged file matches current source: res://scripts/core/weapon_trial.gdc",
 		"packaged file matches current source: res://scripts/main.gdc",
+		"packaged file matches current source: res://scripts/network/cooperative_match.gdc",
+		"packaged file matches current source: res://scripts/network/cooperative_presentation.gdc",
+		"packaged file matches current source: res://scripts/network/cooperative_world.gdc",
 		"packaged file matches current source: res://scripts/network/duel_actor.gdc",
 		"packaged file matches current source: res://scripts/network/duel_match.gdc",
 		"packaged file matches current source: res://scripts/network/motion_prediction.gdc",
@@ -2115,6 +2118,7 @@
 		"packaged file matches current source: res://scripts/ui/combat_fx.gdc",
 		"packaged file matches current source: res://scripts/ui/consumable_native_qa.gdc",
 		"packaged file matches current source: res://scripts/ui/control_settings.gdc",
+		"packaged file matches current source: res://scripts/ui/cooperative_native_qa.gdc",
 		"packaged file matches current source: res://scripts/ui/drawn_action_fx.gdc",
 		"packaged file matches current source: res://scripts/ui/equipment_native_qa.gdc",
 		"packaged file matches current source: res://scripts/ui/equipment_ui.gdc",

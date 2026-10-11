@@ -32,6 +32,10 @@ var opponent_visual = Vector2.ZERO
 var opponent_elapsed = 1.0
 var opponent_ready = false
 var waiting_label: Label
+var choice_page = 0
+var last_scene = -1
+var pause_pending = false
+var last_phase = ""
 
 func initialize(host, folder: String = "user://online-client") -> void:
 	app = host
@@ -62,6 +66,8 @@ func open() -> void:
 
 func close() -> void:
 	enabled = false
+	pause_pending = false
+	last_phase = ""
 	queued_action = ""
 	session.disconnect_service()
 	app.adapter.clear()
@@ -70,6 +76,7 @@ func close() -> void:
 	app.renderer.world = offline_world
 	app.renderer.online_actors.clear()
 	app.renderer.online_motions.clear()
+	app.renderer.online_death_clocks.clear()
 	app.renderer.visual_effects.clear()
 	app.renderer.weapon_motion.clear()
 	if is_instance_valid(online_hud): online_hud.queue_free()
@@ -99,14 +106,14 @@ func connect_service(action: String = "") -> void:
 		page = "identity" if session.state == "expired" else "hub"
 		refresh()
 		return
-	if session.identity.get("consent", "") != "1.4":
+	if session.identity.get("consent", "") != "1.5":
 		page = "consent"
 		refresh()
 		return
 	session.connect_service(session.endpoint, session.nickname)
 
 func accept_connection() -> void:
-	session.identity.consent = "1.4"
+	session.identity.consent = "1.5"
 	if not session.save_preferences(): app.notice(Screens.error_text("local_storage_unavailable")); return
 	page = "hub"
 	connect_service(queued_action)
@@ -115,8 +122,8 @@ func perform_queued_action() -> void:
 	if queued_action.is_empty() or session.state != "online": return
 	var action = queued_action
 	queued_action = ""
-	if action == "queue": session.request("queue", {"loadout": session.loadout})
-	elif action == "code": session.request("code", {"code": code_draft, "loadout": session.loadout})
+	if action == "queue": session.request("queue", {"loadout": session.loadout, "game_mode": session.game_mode})
+	elif action == "code": session.request("code", {"code": code_draft, "loadout": session.loadout, "game_mode": session.game_mode})
 
 func join_code() -> void:
 	if not Session.Protocol.valid_code(code_draft): app.notice("请输入六位数字，保留开头的 0。"); return
@@ -138,7 +145,19 @@ func choose(index: int) -> void:
 	var seat = int(session.room.get("seat", 0))
 	if int(session.room.picked[seat]) >= 0: return
 	if session.pending.values().any(func(command): return command.get("op") == "choose"): return
-	session.request("choose", {"index": index})
+	session.request("choose", {"index": index, "choice_token": session.room.get("choice_token", "")})
+
+func cooperative_action(operation: String, value: String = "") -> void:
+	if session.room.get("game_mode") != "coop": return
+	if session.room.get("phase") != "draft" and not (operation == "repay" and session.room.get("phase") == "suspended"): return
+	if session.pending.values().any(func(command): return command.get("op") in ["choose", "cooperative_action"]): return
+	session.request("cooperative_action", {"action": operation, "value": value, "choice_token": session.room.get("choice_token", "")})
+
+func set_mode(value: String) -> void:
+	if not session.room.is_empty() or session.state == "queued": return
+	session.game_mode = value
+	session.save_preferences()
+	refresh()
 
 func ready() -> void:
 	if session.room.get("phase") == "lobby":
@@ -148,14 +167,15 @@ func ready() -> void:
 func pause() -> void:
 	app.adapter.clear()
 	session.clear_input()
-	if session.state == "room" and session.room.get("phase") not in ["suspended", "finished", "lobby"]: session.request("pause")
+	if session.state == "room" and session.room.get("phase") not in ["suspended", "finished", "lobby"]:
+		pause_pending = session.request("pause") > 0
 	page = "status"
 	app.paused = true
 	refresh()
 
 func show_build() -> void:
 	if session.room.is_empty(): return
-	if session.room.get("phase") in ["playing", "countdown", "round_result", "draft"]: session.request("pause")
+	if session.room.get("phase") in ["playing", "countdown", "round_result", "draft"]: pause_pending = session.request("pause") > 0
 	session.clear_input()
 	app.adapter.clear()
 	page = "build"
@@ -163,7 +183,7 @@ func show_build() -> void:
 
 func show_arena() -> void:
 	if session.presentation.is_empty(): return
-	if session.room.get("phase") in ["playing", "countdown", "round_result"]: session.request("pause")
+	if session.room.get("phase") in ["playing", "countdown", "round_result"]: pause_pending = session.request("pause") > 0
 	session.clear_input()
 	app.adapter.clear()
 	page = "arena"
@@ -184,6 +204,7 @@ func resume() -> void:
 func back() -> void:
 	if page == "consent": queued_action = ""; show_page("hub"); return
 	if page in ["config", "loadout", "code", "identity"] and session.room.is_empty(): show_page("hub"); return
+	if page == "repay": show_page("build"); return
 	if page in ["build", "arena", "leave_confirm"]: exit_requested = false; show_page("status"); return
 	if not session.room.is_empty():
 		if session.room.get("phase") in ["playing", "countdown", "round_result", "draft"]: pause()
@@ -203,7 +224,10 @@ func handle_input(event: InputEvent) -> bool:
 		var code = event.physical_keycode if event.physical_keycode != 0 else event.keycode
 		if session.room.get("phase") == "draft" and page not in ["build", "arena", "leave_confirm"]:
 			var index = Shortcuts.index_for(event)
-			if index >= 0: choose(index); return true
+			if index >= 0:
+				if session.room.get("choice_mode") == "replace": return false
+				choose(index + choice_page * 4 if session.room.get("game_mode") == "coop" else index)
+				return true
 		if app.screen == "game":
 			if app.adapter.profile.event_matches("pause", event) or code == KEY_ESCAPE: pause(); return true
 			if app.adapter.profile.event_matches("map", event): show_arena(); return true
@@ -216,7 +240,7 @@ func refresh() -> void:
 	if exit_requested and page == "hub" and session.state == "online" and session.room.is_empty(): close(); return
 	perform_queued_action()
 	var phase = str(session.room.get("phase", ""))
-	if phase in ["playing", "countdown", "round_result"] and session.state == "room" and page not in ["build", "arena", "leave_confirm"]:
+	if phase in ["playing", "countdown", "round_result"] and session.state == "room" and not pause_pending and page not in ["build", "arena", "repay", "leave_confirm"]:
 		enter_battle()
 		return
 	app.paused = true
@@ -227,20 +251,26 @@ func refresh() -> void:
 
 func receive_state(value: Dictionary) -> void:
 	if not enabled: return
+	var phase = str(value.get("phase", ""))
+	if phase in ["suspended", "finished", "lobby"]: pause_pending = false
+	if phase == "finished" and last_phase != "finished": page = "status"
+	last_phase = phase
 	if session.presentation.size() == 2:
-		if int(value.get("round", 0)) != last_round:
+		if int(value.get("round", 0)) != last_round or int(value.get("scene", {}).get("serial", 0)) != last_scene:
 			last_round = int(value.get("round", 0))
+			last_scene = int(value.get("scene", {}).get("serial", 0))
 			app.renderer.visual_effects.clear()
 			app.renderer.weapon_motion.clear()
 			app.renderer.online_motions.clear()
+			app.renderer.online_death_clocks.clear()
 			prediction.clear()
 			opponent_ready = false
 			opponent_elapsed = 1.0
 		bind_worlds()
 	update_hud()
 	if is_instance_valid(status_label):
-		status_label.text = Screens.connection_text(self) + (" · %d 秒后默认第一项" % ceili(float(value.get("draft_remaining", 30))) if value.get("phase") == "draft" else "")
-	if is_instance_valid(waiting_label): waiting_label.text = "等待恢复 · %d 秒" % ceili(float(value.get("suspend_remaining", 90)))
+		status_label.text = Screens.connection_text(self) + (" · %d 秒后默认第一项" % ceili(float(value.get("draft_remaining", 30))) if value.get("phase") == "draft" and value.get("game_mode") != "coop" else "")
+	if is_instance_valid(waiting_label): waiting_label.text = "双方准备后继续" if value.get("game_mode") == "coop" and value.get("suspend_reason") == "menu" else "等待恢复 · %d 秒" % ceili(float(value.get("grace_left", 90)))
 
 func bind_worlds() -> void:
 	var seat = int(session.room.get("seat", 0))
@@ -250,6 +280,7 @@ func bind_worlds() -> void:
 	# Both players' attacks remain visible; opponent projectiles use danger colours.
 	var own = session.room.actors[seat]
 	var other = session.room.actors[1 - seat]
+	var cooperative = session.room.get("game_mode") == "coop"
 	if bound_snapshot != session.snapshot_serial:
 		bound_snapshot = session.snapshot_serial
 		prediction.observe(app.world, own.player, session.input_history, session.can_play())
@@ -258,6 +289,10 @@ func bind_worlds() -> void:
 		if opponent_from.distance_to(opponent_to) > 140: opponent_from = opponent_to
 		opponent_elapsed = 0
 		opponent_ready = true
+	if cooperative:
+		app.world.bullets = session.room.scene.bullets.duplicate(true)
+		app.world.zones = session.room.scene.zones.duplicate(true)
+		return
 	app.world.bullets = own.bullets.duplicate(true)
 	app.world.zones = own.zones.duplicate(true)
 	for bullet in other.bullets:
@@ -301,16 +336,20 @@ func enter_battle() -> void:
 
 func physics(delta: float) -> void:
 	if not enabled: return
-	if app.screen == "game" and not app.paused and session.can_play() and not app.orientation.blocked:
-		app.adapter.set_phase("combat", false)
+	# Preserve held fingers through a brief stale snapshot. Transport still rejects
+	# input while stale; a real pause, disconnect or menu releases the controls.
+	var battle_visible = app.screen == "game" and not app.paused and session.state == "room" and session.room.get("phase") == "playing" and not app.orientation.blocked
+	if battle_visible:
+		app.adapter.set_phase("combat", session.room.get("game_mode") == "coop" and not str(app.world.run.get("active_item", {}).get("id", "")).is_empty())
 		var frame = app.adapter.sample(app.renderer.to_world(app.get_viewport().get_mouse_position()), app.world.player.pos)
 		if app.adapter.last_device in ["touch", "controller"]:
 			var weapon = app.world.db.row("weapons", app.world.player.weapon)
 			var mode = "off" if weapon.mode == "controlled" else str(app.settings.aim_mode)
 			if frame.get("manual_aim", false) and mode == "auto": mode = "light"
 			frame.aim = app.aim_assist.apply(frame.aim, app.world.player.pos, app.world.enemies, app.world.geometry, app.world.time, mode, float(weapon.range), session.event_match, weapon.mode)
+		if app.world.player.get("downed", false): frame = Session.Protocol.empty_input()
 		session.submit_input(frame)
-		prediction.tick(app.world, frame, delta, true)
+		prediction.tick(app.world, frame, delta, session.can_play() and not app.world.player.get("downed", false))
 	else:
 		app.adapter.set_phase("result", false)
 		session.clear_input()
@@ -320,7 +359,7 @@ func physics(delta: float) -> void:
 		opponent_visual = opponent_from.lerp(opponent_to, opponent_elapsed)
 		var seat = int(session.room.seat)
 		session.presentation[1 - seat].player.pos = opponent_visual
-		if not app.world.enemies.is_empty(): app.world.enemies[0].pos = opponent_visual
+		if session.room.get("game_mode") != "coop" and not app.world.enemies.is_empty(): app.world.enemies[0].pos = opponent_visual
 	update_hud()
 	app.update_hud()
 
@@ -337,6 +376,16 @@ func update_hud() -> void:
 	timer_label.text = str(ceili(float(session.room.get("countdown", 3)))) if phase == "countdown" else "%02d:%02d" % [int(session.room.get("remaining", 120)) / 60, int(session.room.get("remaining", 120)) % 60]
 	hud_status.text = "准备" if phase == "countdown" else ("本轮平局" if int(session.room.get("round_winner", -1)) < 0 else ("本轮胜出" if int(session.room.round_winner) == seat else "下一轮再来")) if phase == "round_result" else "%d ms" % session.latency_ms
 	hud_arena.text = "%s · 第 %d 轮" % [str(session.room.get("arena", {}).get("name", "对灯")), int(session.room.get("round", 1))]
+	if session.room.get("game_mode") == "coop":
+		score_label.text = "第 %d 层" % int(app.world.run.floor)
+		timer_label.text = "◈ %d" % int(app.world.run.coins)
+		hud_arena.text = str(session.room.arena.name) + " · " + app.world.Graph.NAMES.get(app.world.room_type(), "行愿")
+		var scene = session.room.scene
+		if app.world.player.get("downed", false): hud_status.text = "等待救援"
+		elif int(scene.rescue.helper) >= 0: hud_status.text = "救援 %.1f" % maxf(0, 3 - float(scene.rescue.progress))
+		elif session.presentation[1 - seat].player.get("downed", false): hud_status.text = "靠近 · E 救援"
+		elif bool(scene.stairs): hud_status.text = "北门集合"
+		elif scene.mode == "clear": hud_status.text = "同门集合"
 	energy_bar.value = float(session.presentation[seat].player.energy)
 
 func focus_lost() -> void:

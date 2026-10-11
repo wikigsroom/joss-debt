@@ -1,0 +1,127 @@
+{
+  "version": "0.4.0",
+  "windows_sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
+  "server_sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+  "real_transport": true,
+  "physical_android": false,
+  "records": [
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/hub.webp",
+      "sha256": "039cc6faa0ea0975f0778971ee4a20592ee6510be503bab64ba3ba85a7320560",
+      "source_png_sha256": "26524595573a364af99cf4238a50622c2a7cb2bacbde65457da8447603432576",
+      "capture": "hub",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/lobby.webp",
+      "sha256": "54b3294a94b16bd196c3bf1a0d7e6a3606db69f932120c286380bc5abc7f3b44",
+      "source_png_sha256": "600570c3f7d08ef7dcc071863c703fc5d2074f1b44eba872126cfcc1cfb1428f",
+      "capture": "lobby",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/combat.webp",
+      "sha256": "e3e9a4d3ee4f59d6ed7325aff1c865bf07636d0989460fd7cd666671b7d96fac",
+      "source_png_sha256": "7d7116107cf361ad578a9f1bf00e81f09a8b487fa0e0180cd3b9ec2861f598b8",
+      "capture": "combat",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/pause.webp",
+      "sha256": "874aded3894760331319e3bf7fbdcf27196dbc54461676482dc75f7ae6284526",
+      "source_png_sha256": "ed34d458501f62f5bc0c132b10addaef6fa5e71c50e5470abee4f0478d8e6286",
+      "capture": "pause",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/map.webp",
+      "sha256": "76aefe7320cca9ac703f144b56085912013e35949a31e3627adfdf9b9956b286",
+      "source_png_sha256": "0b3fd27731c0d02cc9cc066bc491939da7689ad0fe5cbf2054bf0897d62de95c",
+      "capture": "map",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/reconnect.webp",
+      "sha256": "ff340d975886c3ceebd646db375949c2bad8b7de80f37b806c1f2b7ac99bc623",
+      "source_png_sha256": "59842f60f243b1a60eec4c1105b1c726966d157e0f50a09b9d38514a32733d70",
+      "capture": "reconnect",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/wide-touch.webp",
+      "sha256": "543a2e54933bf23c0c55c6cb520d09fe2b446df6d5f2d4e9eab8012fe8e57a08",
+      "source_png_sha256": "ae9d8a215c4832d074a1d05d840c28f2d592d3f6229cf2143f95018222d37418",
+      "capture": "wide-touch",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/growth.webp",
+      "sha256": "9160ec3a3e77755da568e9535b935f279d6cce64b0dc3765ce49c502b2f438c1",
+      "source_png_sha256": "70adf520edebe931b76a28341774f6a5f77791556882916a98929703fa136d84",
+      "capture": "growth",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/history.webp",
+      "sha256": "cbab88b657dc567f4bf6c5d781a2c374133ebd1ea6349f078a095b2bef8c5dea",
+      "source_png_sha256": "cc29d8edb411eac57a7a7e55de7bb4904bebab0b7e1b0c7fcda454da4f510ffc",
+      "capture": "history",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/next-room.webp",
+      "sha256": "3387ead6731d777442e247b1bfe7dc0fc697b991580069eac48d88d955b85709",
+      "source_png_sha256": "ec038cc43c0eb3194effa559ac5b17204bdccc9ccd9068225834a00f34b7ee1a",
+      "capture": "next-room",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/result.webp",
+      "sha256": "864146c952d9340987e49d45d2b682f4a7d3b0b857de0d4c35b160e379b7c012",
+      "source_png_sha256": "8519172b60d5432e0118284e2cf46136aa6bd3c2a1aded9bde86321f4c32b30e",
+      "capture": "result",
+      "execution": "actual Windows 0.4.0 EXE; native input; separate exported server",
+      "proof": "native.json"
+    },
+    {
+      "file": "docs/incense-debt/reports/cooperative-2026-10-11/media/cooperative-native.gif",
+      "sha256": "86c1910bce56126e79edb1716d7558392eb24cac569ac9f907e6aac8eb464642",
+      "frames": 20,
+      "source_png_sha256": [
+        "2a95c15953a633ba9cf3043270dd55bb8abb18514dd6b648a128ac07c066b821",
+        "ce18467767ff7d11374464d66407cf1595a2ababa0db746a1cfb79388ea031fb",
+        "209eff88e6e59f7d74bf69bba9b41e413516ecb9b55b1a6e95353900fab1ac24",
+        "b0ab9d9cd79aa1c3238beca2ebd9ad5f529e08817a7d7644bfc60599ede2dd85",
+        "314f92e7db9d54e8ccc070bdab774d66bb9555d5ad16b18a1aaad0ba90bc1d61",
+        "73b4e932c6660220bf10a805cf06c7ff90685ca69ecec397236ccb7419df67c4",
+        "27adee5cb5fd3aed32ccc57d2a04aec644e0121ed972bd0cbb8a05a5bcbd630f",
+        "dbcceb3ee4c8a842ec576b5c032c17151f7cd54a83b3a78d61c1608a4ff49daf",
+        "b8b03379822e399b712015f9f23479d8dd97e3db3db2c2144f6e17a9351e755a",
+        "eac127155c7271f02baca47a0514222f92e13c410b7cc8eab6008bfd829b640e",
+        "9e84f41725cfe0e35537db121b3b69ffef0b524331e7035333909a7290ed44f4",
+        "2206c3c4df54c6e15435c82ba711b2a78a718b057304f854f0037e116c27529f",
+        "fb40454bf47c247764bbe6f574e2be38462337c1d2c214e85bf9c650452c7a61",
+        "541328785850249561075412e9a33207509fb8e135088da3a18d9030e542eb88",
+        "7d9f924b9e350116faad282092f04550748b8596da37d0f60e7349cf0f69bdf0",
+        "558e17049c4f8d293cffdf6149b397efc3e7a30b0e81f8d79991a7a3903fee61",
+        "936366084526d2ed68953e02a172b1b2cce0aea10d693827a21e55b7149e8670",
+        "c0c86e7508100bdb404d682395fabbf08f88957268f6a54dcfd7e2317c9a72a4",
+        "0b76a8a7bc27ae412faca43342af2381c091d10d1638a49ff292dac85a234fe0",
+        "9efc8b2e3c497755353f011027bc8b3af9f530292f5684a8cb49502fe14328d8"
+      ],
+      "capture": "two real network clients fighting shared NPCs; right touchscreen held; silent 100 ms playback",
+      "execution": "actual Windows EXE; automated native input",
+      "proof": "native.json"
+    }
+  ]
+}

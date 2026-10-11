@@ -57,6 +57,7 @@ var active_pulse = ""
 var pulse_serial = 0
 var proc_ledger: Dictionary = {}
 var pending_entry_direction = ""
+var last_interacted = false
 
 func start(character_id: String, seed_value: int = 1, floors: int = 1, options: Dictionary = {}) -> void:
 	touch_charge_transfer.clear()
@@ -682,6 +683,35 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	if mode != "combat" and mode != "clear":
 		return
 	time += delta
+	advance_player(frame, delta)
+	if mode not in ["combat", "clear"]: return
+	if mode == "combat":
+		navigation_timer -= delta
+		if navigation_timer <= 0.0:
+			navigation_timer = 0.25
+			geometry.rebuild_flow(player.pos)
+		update_enemies(delta)
+		update_chains()
+	shoot_input(frame.get("fire", false), delta, frame.get("charge_hold", false), frame.get("device", "") == "touch")
+	Scenery.tick(self)
+	update_bullets(delta)
+	update_zones(delta)
+	update_delayed(delta)
+	update_pickups(delta)
+	update_secret_discovery(delta)
+	enemies = enemies.filter(func(e): return not e.dead)
+	if mode == "combat" and enemies.is_empty() and delayed.is_empty():
+		finish_wave()
+	if mode == "clear":
+		var door = nearby_room_door()
+		if not door.is_empty():
+			advance_room(int(door.destination))
+		elif player.move.length() > .08 and not try_enter_secret(true):
+			pass
+		elif frame.get("interact", false) and not last_interacted:
+			if not try_enter_secret(): emit("route_hint")
+
+func advance_player(frame: Dictionary, delta: float) -> void:
 	stats.elapsed += delta
 	for key in proc_ledger.keys():
 		if time > float(proc_ledger[key].expires): proc_ledger.erase(key)
@@ -720,35 +750,29 @@ func tick(frame: Dictionary, delta: float = 1.0 / 60.0) -> void:
 	else:
 		player.pos = geometry.slide(player.pos, move * speed * delta, 12)
 	player.moved_distance = float(player.get("moved_distance", 0)) + previous_position.distance_to(player.pos)
-	var picked_up = Equipment.interact(self) if frame.get("interact", false) else false
+	last_interacted = interact_input() if frame.get("interact", false) else false
 	if frame.get("active_item", false): Equipment.activate(self)
 	if mode not in ["combat", "clear"]: return
 	if mode == "combat":
 		player.energy = minf(100.0, player.energy + (3.0 + talent("t_ash_2b")) * delta)
-		navigation_timer -= delta
-		if navigation_timer <= 0.0:
-			navigation_timer = 0.25
-			geometry.rebuild_flow(player.pos)
-		update_enemies(delta)
-		update_chains()
-	shoot_input(frame.get("fire", false), delta, frame.get("charge_hold", false), frame.get("device", "") == "touch")
-	Scenery.tick(self)
-	update_bullets(delta)
-	update_zones(delta)
-	update_delayed(delta)
-	update_pickups(delta)
-	update_secret_discovery(delta)
-	enemies = enemies.filter(func(e): return not e.dead)
-	if mode == "combat" and enemies.is_empty() and delayed.is_empty():
-		finish_wave()
-	if mode == "clear":
-		var door = nearby_room_door()
-		if not door.is_empty():
-			advance_room(int(door.destination))
-		elif player.move.length() > .08 and not try_enter_secret(true):
-			pass
-		elif frame.get("interact", false) and not picked_up:
-			if not try_enter_secret(): emit("route_hint")
+
+func interact_input() -> bool:
+	return Equipment.interact(self)
+
+func prepare_entity(_entity: Dictionary, _kind: String) -> void:
+	pass
+
+func hostile_projectile_target(previous: Vector2, bullet: Dictionary) -> bool:
+	return Geometry.segment_circle(previous, bullet.pos, player.pos, 12 + bullet.radius)
+
+func damage_hazard(position: Vector2, radius: float, amount: int, source: Dictionary) -> void:
+	if player.pos.distance_to(position) < radius: damage_player(amount, source, position)
+
+func damage_hostile_zone(zone: Dictionary) -> void:
+	var inside = Geometry.segment_circle(zone.from, zone.to, player.pos, zone.width + 12) if zone.get("shape", "") == "line" else player.pos.distance_to(zone.pos) < zone.radius + 12
+	if inside:
+		if player.invulnerable > 0 and player.dash_left > 0: Effects.dodge(self)
+		else: damage_player(int(zone.damage), zone.get("source", Damage.normalize({}, zone.pos, "zone")), zone.pos)
 
 func start_dash(direction: Vector2) -> void:
 	room_flags.reflected_dash = false
@@ -1162,6 +1186,7 @@ func update_bullets(delta: float) -> void:
 	var next: Array = []
 	var processed: Dictionary = {}
 	for bullet in bullets.duplicate():
+		prepare_entity(bullet, "projectile")
 		processed[bullet.uid] = true
 		active_pulse = str(bullet.get("pulse", ""))
 		bullet.age += delta
@@ -1242,7 +1267,7 @@ func update_bullets(delta: float) -> void:
 			if bullet.returning and bullet.pos.distance_to(player.pos) < 18:
 				remove = true
 		else:
-			if Geometry.segment_circle(previous, bullet.pos, player.pos, 12 + bullet.radius):
+			if hostile_projectile_target(previous, bullet):
 				if player.guard > 0 and player.aim.dot(player.pos.direction_to(bullet.pos)) > -0.1:
 					deflect(bullet)
 				elif player.dash_left > (.12 if stack("r30") > 0 else .14) and (talent("t_seal_1b") > 0 or stack("r30") > 0) and not room_flags.get("reflected_dash", false):
@@ -1344,6 +1369,7 @@ func update_enemies(delta: float) -> void:
 	for enemy in enemies.duplicate():
 		if enemy.dead:
 			continue
+		prepare_entity(enemy, "enemy")
 		if time < float(enemy.get("arrival", 0)): continue
 		var pushed = Impact.tick(self, enemy, delta)
 		enemy.hit_flash = maxf(0.0, enemy.hit_flash - delta)
@@ -1358,6 +1384,7 @@ func update_enemies(delta: float) -> void:
 			Effects.burn_tick(self, enemy)
 			if enemy.dead:
 				continue
+		prepare_entity(enemy, "target")
 		if time < float(enemy.get("stun_until", 0)): continue
 		if enemy.boss:
 			var phase = mini(2, int((1.0 - enemy.hp / enemy.max_hp) * 3.0))
@@ -1434,6 +1461,7 @@ func add_zone(position: Vector2, radius: float, duration: float, damage: float, 
 
 func update_zones(unused_delta: float) -> void:
 	for zone in zones.duplicate():
+		prepare_entity(zone, "zone")
 		active_pulse = str(zone.get("pulse", ""))
 		if zone.get("follows_player", false): zone.pos = player.pos
 		if time > zone.until:
@@ -1452,15 +1480,14 @@ func update_zones(unused_delta: float) -> void:
 						zone.marked.append(enemy.uid)
 						add_mark(enemy, 1, false)
 					damage_enemy(enemy, zone.damage, "secondary")
-		elif (Geometry.segment_circle(zone.from, zone.to, player.pos, zone.width + 12) if zone.get("shape", "") == "line" else player.pos.distance_to(zone.pos) < zone.radius + 12):
-			if player.invulnerable > 0 and player.dash_left > 0: Effects.dodge(self)
-			else: damage_player(int(zone.damage), zone.get("source", Damage.normalize({}, zone.pos, "zone")), zone.pos)
+		else: damage_hostile_zone(zone)
 
 func update_delayed(unused_delta: float) -> void:
 	for action in delayed.duplicate():
 		if time < action.time:
 			continue
 		delayed.erase(action)
+		prepare_entity(action, "delayed")
 		active_pulse = str(action.get("pulse", ""))
 		if Composer.delayed(self, action): continue
 		if ExpandedWeapons.delayed(self, action): continue

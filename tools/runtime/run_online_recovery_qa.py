@@ -15,13 +15,15 @@ ENGINE = ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--packaged-server", action="store_true")
+    parser.add_argument("--cooperative", action="store_true")
+    parser.add_argument("--scenarios", nargs="+", choices=["crash", "registry_corruption", "room_corruption", "expiry_takeover"], default=["crash", "registry_corruption", "room_corruption", "expiry_takeover"])
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     folder = (args.output or ROOT / ".local-tools/online-development" / ("recovery-" + datetime.now().strftime("%Y%m%d-%H%M%S"))).resolve()
     folder.mkdir(parents=True, exist_ok=True)
     port = 18877
     reports = []
-    for scenario in ("crash", "registry_corruption", "room_corruption", "expiry_takeover"):
+    for scenario in args.scenarios:
         case = folder / scenario
         data = case / "server"
         data.mkdir(parents=True, exist_ok=True)
@@ -46,7 +48,7 @@ def main():
             raise RuntimeError("Native server health check did not become ready")
 
         def run_client(stage, mode="restore"):
-            command = [str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/online_recovery.gd", "--", "--folder=" + str(case / "clients"), "--stage=" + stage, "--mode=" + mode, f"--url=ws://127.0.0.1:{port}"]
+            command = [str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/cooperative_recovery.gd" if args.cooperative else "res://tests/online_recovery.gd", "--", "--folder=" + str(case / "clients"), "--stage=" + stage, "--mode=" + mode, f"--url=ws://127.0.0.1:{port}"]
             result = subprocess.run(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=75)
             log = result.stdout.decode("utf8", errors="replace")
             (case / (stage + "-client.log")).write_text(log, "utf8")
@@ -58,6 +60,28 @@ def main():
         try:
             start_server()
             prepare = run_client("prepare")
+            if args.cooperative:
+                # Exact-state corruption assertions need two committed copies
+                # of the same frozen state. A valid fallback during live combat
+                # can intentionally lose the most recent uncommitted tail.
+                deadline = time.monotonic() + 8
+                while time.monotonic() < deadline:
+                    copies = []
+                    for path in (data / "registry").glob("checkpoint_*.json"):
+                        registry = json.loads(json.loads(path.read_text("utf8"))["payload"])
+                        revisions = registry.get("room_revisions", {})
+                        if len(revisions) != 1:
+                            continue
+                        room_id, revision = next(iter(revisions.items()))
+                        archive = data / "rooms" / room_id / ("revision_%016d.json" % int(revision))
+                        if archive.is_file():
+                            room = json.loads(json.loads(archive.read_text("utf8"))["payload"])
+                            copies.append((int(revision), room))
+                    if len(copies) == 2 and copies[0][0] != copies[1][0] and all(room["suspended"] for _, room in copies) and copies[0][1]["match"] == copies[1][1]["match"]:
+                        break
+                    time.sleep(.1)
+                else:
+                    raise RuntimeError("Two independent stable paused generations were not committed")
             # This is intentionally an abrupt process termination: no final checkpoint.
             process.kill()
             process.wait(timeout=8)
@@ -93,7 +117,7 @@ def main():
     executable = ROOT / "build/server/IncenseDebtServer.exe" if args.packaged_server else ENGINE
     with executable.open("rb") as source:
         digest = hashlib.file_digest(source, "sha256").hexdigest()
-    report = {"passed": all(part["passed"] for case in reports for part in (case["prepare"], case["restore"])), "scenarios": reports, "packaged_server": args.packaged_server, "server_sha256": digest, "recorded_at": datetime.now(timezone.utc).isoformat(), "virtualization": "none"}
+    report = {"passed": all(part["passed"] for case in reports for part in (case["prepare"], case["restore"])), "scenarios": reports, "stable_paused_generations_verified": args.cooperative, "game_mode": "coop" if args.cooperative else "duel", "packaged_server": args.packaged_server, "server_sha256": digest, "recorded_at": datetime.now(timezone.utc).isoformat(), "virtualization": "none"}
     path = folder / "recovery-report.json"
     path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")
     print(json.dumps({"passed": report["passed"], "scenarios": len(reports), "report": str(path)}, ensure_ascii=False))

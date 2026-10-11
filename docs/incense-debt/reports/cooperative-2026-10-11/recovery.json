@@ -1,0 +1,299 @@
+{
+  "passed": true,
+  "scenarios": [
+    {
+      "scenario": "crash",
+      "prepare": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_live_campaign_started",
+            "passed": true
+          },
+          {
+            "id": "cooperative_durable_pause",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_saved_locally",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      },
+      "restore": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_restart_suspended",
+            "passed": true
+          },
+          {
+            "id": "cooperative_same_room_and_mode",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_full_player_states_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_npcs_drops_obstacles_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_growth_histories_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_idempotent",
+            "passed": true
+          },
+          {
+            "id": "cooperative_input_floor_restored",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      }
+    },
+    {
+      "scenario": "registry_corruption",
+      "prepare": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_live_campaign_started",
+            "passed": true
+          },
+          {
+            "id": "cooperative_durable_pause",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_saved_locally",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      },
+      "restore": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_restart_suspended",
+            "passed": true
+          },
+          {
+            "id": "cooperative_same_room_and_mode",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_full_player_states_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_npcs_drops_obstacles_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_growth_histories_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_idempotent",
+            "passed": true
+          },
+          {
+            "id": "cooperative_input_floor_restored",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      }
+    },
+    {
+      "scenario": "room_corruption",
+      "prepare": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_live_campaign_started",
+            "passed": true
+          },
+          {
+            "id": "cooperative_durable_pause",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_saved_locally",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      },
+      "restore": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_restart_suspended",
+            "passed": true
+          },
+          {
+            "id": "cooperative_same_room_and_mode",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_full_player_states_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_npcs_drops_obstacles_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_growth_histories_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_idempotent",
+            "passed": true
+          },
+          {
+            "id": "cooperative_input_floor_restored",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      }
+    },
+    {
+      "scenario": "expiry_takeover",
+      "prepare": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_live_campaign_started",
+            "passed": true
+          },
+          {
+            "id": "cooperative_durable_pause",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_saved_locally",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      },
+      "restore": {
+        "checks": [
+          {
+            "id": "cooperative_process_credentials_connect",
+            "passed": true
+          },
+          {
+            "id": "cooperative_restart_suspended",
+            "passed": true
+          },
+          {
+            "id": "cooperative_same_room_and_mode",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_full_player_states_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_npcs_drops_obstacles_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_both_growth_histories_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_lost_receipt_idempotent",
+            "passed": true
+          },
+          {
+            "id": "cooperative_input_floor_restored",
+            "passed": true
+          },
+          {
+            "id": "cooperative_single_live_identity",
+            "passed": true
+          },
+          {
+            "id": "cooperative_old_client_stops_takeover",
+            "passed": true
+          },
+          {
+            "id": "cooperative_mutual_restart_resume",
+            "passed": true
+          },
+          {
+            "id": "cooperative_old_held_input_cleared",
+            "passed": true
+          },
+          {
+            "id": "cooperative_partner_loss_freezes",
+            "passed": true
+          },
+          {
+            "id": "cooperative_grace_expiry_ends_team",
+            "passed": true
+          },
+          {
+            "id": "cooperative_expiry_is_team_loss_once",
+            "passed": true
+          },
+          {
+            "id": "cooperative_late_reconnect_sees_result",
+            "passed": true
+          },
+          {
+            "id": "cooperative_late_client_cannot_reopen_run",
+            "passed": true
+          }
+        ],
+        "failures": [],
+        "passed": true
+      }
+    }
+  ],
+  "stable_paused_generations_verified": true,
+  "game_mode": "coop",
+  "packaged_server": true,
+  "server_sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
+  "recorded_at": "2026-10-11T01:32:43.279597+00:00",
+  "virtualization": "none"
+}

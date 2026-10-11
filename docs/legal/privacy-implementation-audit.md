@@ -107,4 +107,12 @@ Vercel 已有 CLI 凭据失效；浏览器连接工具在初始化阶段报路�
 
 公开文本保留用户模板十章、温馨提示、权限清单、第三方清单和原 DOCX 版式。现行 Word **13 页**已逐页视觉核对；最终 SHA-256：`c1f270bd959619c156e5dd6a1d9e5df27f68629b03b30d688b76b596058ee84a`。两份旧日期 Word 的独立审核仍保留；旧条款用于展示当时的离线处理范围。
 
-生产部署 **`dpl_HYPDHFz9Fn3jzwgaWt22WodpF93f`**，状态 READY。2026-10-11 **04:39:41（Asia/Taipei）**完成 11 项无认证 HTTPS 核验：首页、两个别名、三个日期页、三份 Word、CSS 与纸偶图标均返回 **200**。正文包含十章、准确主体与邮箱；三份公开 Word 均与其审核哈希一致，TLS 校验开启。公开入口：[隐私政策 1.4](https://xhz.sidcloud.cn/privacy-policy)。
+生产部署 **`dpl_HYPDHFz9Fn3jzwgaWt22WodpF93f`**，状态 READY。2026-10-11 **04:39:41（Asia/Taipei）**完成 11 项无认证 HTTPS 核验：首页、两个别名、三个日期页、三份 Word、CSS 与纸偶图标均返回 **200**。正文包含十章、准确主体与邮箱；三份公开 Word 均与其审核哈希一致，TLS 校验开启。公开入口：[隐私政策 1.4 归档](https://xhz.sidcloud.cn/versions/2026-10-11-v1.4)。
+
+## 2026-10-11 v1.5：0.4.0 共灯合作
+
+默认联机更新为双人合作十一层，保留可选对灯切磋。条款同步说明服务器处理共享 NPC、房间、掉落、钱包及两名玩家的个人成长、装备、救援和团队结算；单人愿簿仍不上传。合作菜单双方在线时无断线期限，真正断线后重新计时 90 秒。主体吴国黎、邮箱 carzyg@outlook.com 不变。Android 0.4.0 继续只请求 INTERNET、VIBRATE；最终 APK 核对记录随合作交付发布。
+
+v1.4 原已审核 HTML 和 Word 保留在 `2026-10-11-v1.4` 独立公开归档。现行 v1.5 使用原模板的页面、字体、十章和两张表，原生 Word 渲染 13 页，最终 13 张 PNG 全部逐页查看；联系人完整位于末页，无裁切或表格行拆分。现行 Word SHA-256：`66a1c6511d93725bdb53210fe851e72f463a46c4454d72fb94214f428f358d5a`。
+
+已在用户 sidcloud 团队的 xhz-privacy-policy 项目正式发布，部署 `dpl_AvNkg7nf9CK251jsprSKm4oxVo7v`，READY，生产别名 https://xhz.sidcloud.cn。2026-10-11 09:14:02（Asia/Taipei）完成 **13 项无认证 HTTPS 核验**：现行别名、当前与历史正文、四份 Word 下载、CSS 和纸偶图标均返回 200。公开现行下载与逐页审核 SHA 一致。回执见合作交付的 privacy-https.json；Word、逐页审核和生产配置分别保存，凭据不发布。未使用浏览器、Docker、WSL 或其他虚拟化。

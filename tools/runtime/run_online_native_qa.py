@@ -13,6 +13,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", default="ws://127.0.0.1:18777")
     parser.add_argument("--packaged", action="store_true")
+    parser.add_argument("--cooperative", action="store_true")
     parser.add_argument("--output", type=Path)
     options = parser.parse_args()
     folder = options.output or ROOT / ".local-tools/online-development" / ("native-" + datetime.now().strftime("%Y%m%d-%H%M%S"))
@@ -22,7 +23,7 @@ def main():
     args = [str(engine), "--max-fps", "60", "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3", "--resolution", "1280x720", "--position", "-16000,-16000"]
     if not options.packaged:
         args += ["--path", str(ROOT / "game")]
-    args += ["--", "--qa-online", "--qa-output=" + str(folder), "--online-url=" + options.url]
+    args += ["--", "--qa-coop" if options.cooperative else "--qa-online", "--qa-output=" + str(folder), "--online-url=" + options.url]
     startup = subprocess.STARTUPINFO()
     startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW
     startup.wShowWindow = subprocess.SW_HIDE

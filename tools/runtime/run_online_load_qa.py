@@ -42,6 +42,7 @@ def main():
     parser.add_argument("--seconds", type=float, default=45)
     parser.add_argument("--weapons", default="w01,w04,w07,w11,w16,w21,w25,w30")
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--cooperative", action="store_true")
     args = parser.parse_args()
     folder = (args.output or ROOT / ".local-tools/online-development" / ("load-" + datetime.now().strftime("%Y%m%d-%H%M%S"))).resolve()
     folder.mkdir(parents=True, exist_ok=True)
@@ -74,7 +75,7 @@ def main():
                     time.sleep(.1)
             else:
                 raise RuntimeError("Server did not become ready")
-            traffic = subprocess.Popen([str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/online_load.gd", "--", f"--url=ws://127.0.0.1:{port}", f"--rooms={rooms}", f"--seconds={args.seconds}", "--weapons=" + args.weapons, "--output=" + str(case / "clients.json")], cwd=ROOT, stdout=client_log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
+            traffic = subprocess.Popen([str(ENGINE), "--headless", "--max-fps", "60", "--path", str(ROOT / "game"), "--script", "res://tests/online_load.gd", "--", f"--url=ws://127.0.0.1:{port}", f"--rooms={rooms}", f"--seconds={args.seconds}", "--weapons=" + args.weapons, "--game-mode=" + ("coop" if args.cooperative else "duel"), "--output=" + str(case / "clients.json")], cwd=ROOT, stdout=client_log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
             deadline = time.monotonic() + args.seconds + 80
             while traffic.poll() is None and time.monotonic() < deadline:
                 snapshot = health()
@@ -110,7 +111,7 @@ def main():
             server_log.close()
     with SERVER.open("rb") as source:
         digest = hashlib.file_digest(source, "sha256").hexdigest()
-    result = {"recorded_at": datetime.now(timezone.utc).isoformat(), "server_sha256": digest, "host": platform.platform(), "virtualization": "none", "runs": reports, "passed": all(run["passed"] for run in reports)}
+    result = {"recorded_at": datetime.now(timezone.utc).isoformat(), "game_mode": "coop" if args.cooperative else "duel", "server_sha256": digest, "host": platform.platform(), "virtualization": "none", "runs": reports, "passed": all(run["passed"] for run in reports)}
     (folder / "load-report.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", "utf8")
     return int(not result["passed"])
 

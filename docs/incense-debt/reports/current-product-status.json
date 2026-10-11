@@ -1,38 +1,38 @@
 {
-  "recorded_at": "2026-10-10T21:40:11.501017+00:00",
-  "version": "0.3.0",
-  "status": "playable_offline_and_two_player_online_alpha",
+  "recorded_at": "2026-10-11T02:23:43.261630+00:00",
+  "version": "0.4.0",
+  "status": "playable_cooperative_offline_and_optional_duel_alpha",
   "product_complete": false,
-  "playable_scope": "eleven-floor offline roguelite plus two-player authoritative Duel with quick matching and six-digit open rooms",
+  "playable_scope": "eleven-floor offline roguelite plus authoritative two-player cooperative campaign, optional Duel, shared physical rooms, personal builds, revive and durable recovery",
   "windows": {
     "platform": "windows",
     "path": "build/windows/IncenseDebt.exe",
-    "bytes": 1108782008,
-    "sha256": "4455bd4aa4e9a9a4cae7bc44cc2bfbb2736d7c1db9033910a7dbafa4359db02a",
+    "bytes": 1108831472,
+    "sha256": "b606d2a6da40f97b0c89cdaa7fd005d789530bcc3485c3b45983bb85009c4368",
     "engine": "4.7.2",
     "build": "release",
-    "version": "0.3.0",
-    "playable_scope": "eleven-floor offline alpha plus authoritative two-player Duel: quick pairing, six-digit open rooms, 32 weapons, 18 skills, 32 PvP relics, reconnect and isolated online records",
+    "version": "0.4.0",
+    "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
     "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
     "device_tested": true,
     "virtualization": "none",
     "native_runtime_tested": true,
-    "native_runtime_report": "docs/incense-debt/reports/online-2026-10-11/keyboard.json",
-    "native_online_report": "docs/incense-debt/reports/online-2026-10-11/native.json"
+    "native_runtime_report": "docs/incense-debt/reports/cooperative-2026-10-11/keyboard.json",
+    "native_online_report": "docs/incense-debt/reports/cooperative-2026-10-11/native.json"
   },
   "android": {
     "platform": "android",
     "path": "build/android/IncenseDebt.apk",
-    "bytes": 1025354672,
-    "sha256": "7eb253f85f560df8f324a8a4a87e3351f6a2b28b16f4ea82b4af8c7554dab553",
+    "bytes": 1025404576,
+    "sha256": "4011656a48da8623a0253cee50f5b037a5d3ca655452d6a7b2c6f156dbecfe74",
     "engine": "4.7.2",
     "build": "debug",
-    "version": "0.3.0",
-    "playable_scope": "eleven-floor offline alpha plus authoritative two-player Duel: quick pairing, six-digit open rooms, 32 weapons, 18 skills, 32 PvP relics, reconnect and isolated online records",
+    "version": "0.4.0",
+    "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
     "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
     "device_tested": false,
     "virtualization": "none",
-    "version_code": 6,
+    "version_code": 7,
     "edge_to_edge": true,
     "signature_verified": true,
     "upgrade_signer_matches_previous": true
@@ -75,25 +75,25 @@
   "creature_native_checks": 17,
   "creature_native_frames": 24048,
   "creature_action_report": "docs/incense-debt/35-creature-action-completion.md",
-  "matching_compiled_windows_android_scripts": 86,
+  "matching_compiled_windows_android_scripts": 90,
   "native_keyboard_checks": 107,
   "random_playlist_checks": 19,
   "save_schema": 2,
   "virtualization": "none",
   "browser_used": false,
-  "revision_document": "docs/incense-debt/40-online-delivery.md",
-  "revision_reports": "docs/incense-debt/reports/online-2026-10-11",
+  "revision_document": "docs/incense-debt/42-cooperative-delivery.md",
+  "revision_reports": "docs/incense-debt/reports/cooperative-2026-10-11",
   "historical_status": "docs/incense-debt/reports/product-status-0.2.0.baseline.json",
   "historical_platform_parity": "docs/incense-debt/reports/platforms/platform-parity.json",
   "privacy": {
-    "version": "1.4",
+    "version": "1.5",
     "operator": "吴国黎",
     "email": "carzyg@outlook.com",
     "url": "https://xhz.sidcloud.cn/privacy-policy",
-    "verified_at": "2026-10-10T20:39:41.688004+00:00",
-    "docx_sha256": "c1f270bd959619c156e5dd6a1d9e5df27f68629b03b30d688b76b596058ee84a"
+    "verified_at": "2026-10-11T01:14:02.430689+00:00",
+    "docx_sha256": "66a1c6511d93725bdb53210fe851e72f463a46c4454d72fb94214f428f358d5a"
   },
-  "public_github_release": "v0.3.0-alpha.1",
+  "public_github_release": "v0.4.0-alpha.1",
   "pending": [
     "physical Android installation, thumb feel, native keyboard/clipboard/file picker, haptics and thermal acceptance",
     "human visual, combat feel and long-term balance acceptance",
@@ -110,23 +110,23 @@
   "pickup_revision": "2026-10-11",
   "prior_package_receipts": "docs/incense-debt/reports/touch-right-2026-10-11/prior-package-receipts",
   "creature_evidence_reused_with_unchanged_atlases": true,
-  "package_checks": 2167,
+  "package_checks": 2171,
   "consumable_evidence_version": "0.2.1",
   "creature_evidence_version": "0.2.1",
   "consumable_evidence_reused_with_unchanged_bitmaps": true,
   "right_hand_touch_default": true,
   "legacy_default_layouts_upgraded": true,
   "custom_touch_layouts_preserved": true,
-  "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.3.0-alpha.1",
-  "public_release_manifest": "docs/releases/v0.3.0-alpha.1.manifest.json",
+  "public_release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1",
+  "public_release_manifest": "docs/releases/v0.4.0-alpha.1.manifest.json",
   "server": {
-    "version": "0.3.0",
+    "version": "0.4.0",
     "platform": "windows-x64",
     "headless": true,
     "virtualization": "none",
     "path": "build/server/IncenseDebtServer.exe",
-    "bytes": 110825096,
-    "sha256": "61c4846f92f36ce06d26f464e66b2d74ce02195c22dd278b830c2fc441a0b8d8",
+    "bytes": 110849184,
+    "sha256": "d7c794e31f8c23d10ccf59ed73fcb1e0d8fa6c358b28e272a1c7ca419ae5ae53",
     "shared_source_sha256": {
       "scripts/core/choice_shortcuts.gd": "42633df60267421e2896543015cbb7bdf16f9c052c25744de7af04d2f8c821eb",
       "scripts/core/content_db.gd": "2b8d5f296d6ba9abfdf2c741c62c21b8eb0daa58c5c8c91fec32f90491c6e1b7",
@@ -154,14 +154,16 @@
       "scripts/combat/expanded_patterns.gd": "022ce950598e1a3633bcc6c7e4d3598c6a89f15a7fb4bf84065e8b3e1e16ea3f",
       "scripts/combat/expanded_weapons.gd": "e6ee1095a7ca5421df83f0c94aa1e31c659135a82ca094df2685841488ff24ee",
       "scripts/combat/impact_control.gd": "a0e60caf9e97539d8a34270a941bb50cdb408a28ac0a26154908d3e2ce9dbe35",
-      "scripts/combat/interactive_scenery.gd": "540e6f0b6cbef0a510a1bff6087a208328e55dac4b0c1ef86b1abb20e91082af",
+      "scripts/combat/interactive_scenery.gd": "7f768d4d4f110bfa5cd78526cff8bc0da3fb8fb513100babcfc1c52ee645920c",
       "scripts/combat/projectile_styles.gd": "fc8c3f18d4210912aae1ccdc986e240ea98c40a0914a326b32b8f651ad88f637",
       "scripts/combat/room_geometry.gd": "1eecb3be4ed3e0a1e4d9919c69e02bb9b9fff84054862abb4d3999014c9e0f70",
-      "scripts/combat/world.gd": "a8b85f6a4ddef5c65679304aadea3c6e6e4dd20ccc77295feebb0b7fd8e1f7a3",
-      "scripts/network/protocol.gd": "371977266bec9469e9ec1b651de60b41b9242282128c2973698bbea73f5112e3",
+      "scripts/combat/world.gd": "095fb90836bf29369a8dae1248cc30c145b1ba2a9baeaebd6d51c6d52736b001",
+      "scripts/network/protocol.gd": "69f47f53cc0b451cc4e3216a1229e958322497a3fafbae943f545bafb5341e0c",
       "scripts/network/duel_actor.gd": "916648ddb0924fd08bea9663d85693332949c08c7abbcffc782527db4ef011e2",
       "scripts/network/duel_match.gd": "2717475cd31e2bd4982ba94a0838c0388827ae387bd70e6e4f6178be3ea23a21",
-      "scripts/network/server_runtime.gd": "55af6a104b408a888943df66a9a85acbb2ea0d0df2aaf8163a144f84152be1a8",
+      "scripts/network/cooperative_world.gd": "d35c0f7174ac68c14e94e6ac14a5b7cb8d5a17bdb5f1a7a2ab7ccea21d8f868f",
+      "scripts/network/cooperative_match.gd": "907882cd68fe0f3917f05f85d49569d3fa17f320541fc06e6d70aa8d3fb6e89b",
+      "scripts/network/server_runtime.gd": "d6c51ce79713bf60dadf92cdf73a6f24320215a8e2d1ea705019ea8fb4e950e7",
       "scripts/network/server_entry.gd": "b7b6039fa175bade22b924dbbc7822e268647c7c29e78aaf0e6869b7bba56d05",
       "data/achievements.json": "38b0854ddebb39df19a6f0ea13c1c9b0a1627a9a9962118b30f4e4439a0902d2",
       "data/arena_boundaries.json": "081436375aefaed01f6bf78ce217b0767b8a77cf3716f11b591b355002898cc9",
@@ -176,7 +178,7 @@
       "data/runtime_assets.json": "2e64aad01ff87314fdee7dcda09bdffe31920cde5f55dc6fd6d15218aa5a5e97",
       "data/story.zh_CN.json": "1bb60ed566213bf9b9d7a416704f78cfea91330879ae9763c4231d18775c1d4e"
     },
-    "built_at": "2026-10-10T20:38:55.209272+00:00"
+    "built_at": "2026-10-11T01:30:50.676210+00:00"
   },
   "online": {
     "default_rooms": 2,
@@ -186,23 +188,30 @@
     "wan_latency_tested": false,
     "human_balance_tested": false,
     "checks": {
-      "combat": 271,
-      "transport": 26,
+      "combat": 125,
+      "transport": 32,
       "recovery": 57,
       "storage": 7,
-      "native_online": 30,
-      "native_source": 30,
-      "native_touch": 33,
+      "native_online": 27,
+      "duel_native": 30,
+      "duel_combat": 271,
+      "offline_core": 36,
       "offline_keyboard": 107,
-      "package_parity": 2167
+      "package_parity": 2171
     },
+    "default_mode": "coop",
+    "modes": [
+      "coop",
+      "duel"
+    ],
+    "campaign_floors": 11,
     "reconnect_seconds": 90,
-    "protocol": 1,
-    "ruleset": "duel-2",
+    "connected_coop_menu_timeout": null,
+    "protocol": 2,
+    "ruleset": "cooperative-1-duel-2",
     "characters": 6,
     "weapons": 32,
-    "skills": 18,
-    "relics": 32
+    "skills": 18
   },
   "prior_mobile_acceptance": {
     "version": "0.2.3",
@@ -213,11 +222,8 @@
       "widescreen_packaged_checks": 282
     }
   },
-  "public_release_state": "published",
-  "privacy_policy_version": "1.4",
-  "public_release_commit": "9755f28c5e43167d1ca823ac4abc00522fafba7a",
-  "public_release_published_at": "2026-10-10T21:35:10Z",
-  "publication_receipt": "docs/releases/v0.3.0-alpha.1.publication.json",
+  "public_release_state": "prepared_not_yet_published",
+  "privacy_policy_version": "1.5",
   "anonymous_https_report": "docs/releases/v0.3.0-alpha.1.https.json",
   "public_release_assets": [
     {
@@ -256,5 +262,9 @@
       "digest": "sha256:fdbf28cdb7db94cab0b4876596fd2192b77e2636695024df3e5c2e94ab630920",
       "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.3.0-alpha.1/START-HERE.md"
     }
-  ]
+  ],
+  "prior_online_acceptance": {
+    "version": "0.3.0",
+    "report": "docs/incense-debt/reports/cooperative-2026-10-11/baseline-0.3.0/current-product-status.json"
+  }
 }

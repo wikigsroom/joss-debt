@@ -56,9 +56,12 @@ def main():
     status, _, readme_response = fetch(readme_url, 1024 * 1024)
     readme_document = json.loads(readme_response)
     readme = base64.b64decode(readme_document["content"], validate=False)
+    manifest = json.loads((ROOT / "build/release" / args.tag / "assets/release-manifest.json").read_text("utf8"))
+    required_gif = b"cooperative-2026-10-11/media/cooperative-native.gif" if manifest.get("default_game_mode") == "coop" else b"online-2026-10-11/media/duel-native.gif"
     checks.append({"id": "tagged_readme_has_online_gif", "url": readme_url, "status": status,
                    "git_blob_sha": readme_document["sha"],
-                   "passed": status == 200 and readme_document["encoding"] == "base64" and b"online-2026-10-11/media/duel-native.gif" in readme})
+                   "required_gif": required_gif.decode("utf8"),
+                   "passed": status == 200 and readme_document["encoding"] == "base64" and required_gif in readme})
     report = {"passed": all(item["passed"] for item in checks), "tag": args.tag, "release_url": receipt["url"],
               "commit": receipt["commit"], "verified_at": datetime.now(timezone.utc).isoformat(), "checks": checks,
               "anonymous": True, "tls_verification": "system default; enabled", "browser_used": False,

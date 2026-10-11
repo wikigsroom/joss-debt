@@ -99,6 +99,8 @@ func run() -> void:
 	await frames(6)
 	await key(KEY_ENTER); await key(KEY_ENTER)
 	await activate("online")
+	app.online.session.game_mode = "duel"
+	app.online.refresh()
 	expect("main_menu_keyboard_opens_online", app.online.active() and app.screen == "online")
 	offline_digest = JSON.stringify(Store.encode(app.save_session.current)).sha256_text()
 	await capture("hub")

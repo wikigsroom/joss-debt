@@ -1,7 +1,7 @@
 extends RefCounted
 ## Bounded JSON frames: no executable Variant/Object deserialization.
-const VERSION = 1
-const RULESET = "duel-2"
+const VERSION = 2
+const RULESET = "cooperative-1-duel-2"
 const PORT = 18777
 const TICK_RATE = 60
 const SNAPSHOT_RATE = 20
@@ -86,17 +86,18 @@ static func clean_input(value) -> Dictionary:
 	if not value is Dictionary or not Store.integer(value.get("seq")) or int(value.seq) < 1 or int(value.seq) > 2147483647: return {}
 	for field in ["move", "aim", "dash_direction"]:
 		if not value.get(field, Vector2.ZERO) is Vector2 or not value.get(field, Vector2.ZERO).is_finite(): return {}
-	for field in ["fire", "dash", "skill", "active_item", "charge_hold"]:
+	for field in ["fire", "dash", "skill", "active_item", "interact", "charge_hold"]:
 		if not value.get(field, false) is bool: return {}
 	return {"seq": int(value.seq), "move": Vector2(value.get("move", Vector2.ZERO)).limit_length(1),
 		"aim": Vector2(value.get("aim", Vector2.UP)).normalized(),
 		"dash_direction": Vector2(value.get("dash_direction", Vector2.ZERO)).limit_length(1),
 		"fire": value.get("fire", false), "dash": value.get("dash", false), "skill": value.get("skill", false),
 		"active_item": value.get("active_item", false), "charge_hold": value.get("charge_hold", false),
+		"interact": value.get("interact", false),
 		"device": "touch" if value.get("device", "") == "touch" else "keyboard"}
 
 static func empty_input() -> Dictionary:
-	return {"move": Vector2.ZERO, "aim": Vector2.UP, "fire": false, "dash": false, "skill": false, "active_item": false}
+	return {"move": Vector2.ZERO, "aim": Vector2.UP, "fire": false, "dash": false, "skill": false, "active_item": false, "interact": false}
 
 static func configure_socket(peer: WebSocketPeer, server_side: bool = false) -> void:
 	peer.inbound_buffer_size = 65536 if server_side else 2 * MAX_SERVER_BYTES
