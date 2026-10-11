@@ -3,20 +3,25 @@ from datetime import datetime, timezone
 from pathlib import Path
 import json
 import subprocess
+import argparse
 
 from record_online_delivery import ROOT, digest, require
 
 
 def main():
-    folder = ROOT / ".local-tools/cooperative-development/client-server-parity"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--server", type=Path, default=ROOT / "build/server/IncenseDebtServer.exe")
+    parser.add_argument("--output", type=Path, default=ROOT / ".local-tools/cooperative-development/client-server-parity")
+    args = parser.parse_args()
+    folder = args.output.resolve()
     folder.mkdir(parents=True, exist_ok=True)
     output = folder / "report.json"
     output.unlink(missing_ok=True)
     client = ROOT / "build/windows/IncenseDebt.exe"
-    server = ROOT / "build/server/IncenseDebtServer.exe"
+    server = args.server.resolve()
     command = [str(ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"), "--headless", "--main-pack", str(server),
                "--script", str(ROOT / "tools/runtime/verify_client_server_parity.gd"), "--", "--client=" + str(client),
-               "--manifest=" + str(ROOT / "build/server/server-build.json"), "--output=" + str(output)]
+               "--manifest=" + str(server.parent / "server-build.json"), "--output=" + str(output)]
     result = subprocess.run(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=120, creationflags=subprocess.CREATE_NO_WINDOW)
     log = result.stdout.decode("utf8", errors="replace")
     (folder / "execution.log").write_text(log, "utf8")

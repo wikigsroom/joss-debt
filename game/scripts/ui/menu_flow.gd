@@ -57,7 +57,7 @@ static func files(app) -> void:
 
 static func main_menu(app) -> void:
 	var sheet = shell(app, "香火债", "愿簿 %d  /  %s" % [app.save_slot, app.progress.data.wish_name])
-	app.add_art(sheet, "res://assets/portraits/" + app.selected + ".png", Rect2(34, 152, 480, 380))
+	app.add_art(sheet, "res://assets/portraits/" + app.selected + ".png", Rect2(62, 144, 428, 324))
 	var facts = [["sparkles", app.progress.data.merit], ["crown", app.progress.data.achievements.size()], ["sun", app.progress.data.endings.size()]]
 	for i in facts.size():
 		var chip = app.panel(sheet, Rect2(40 + i * 157, 554, 144, 52), UI.SURFACE, Color.TRANSPARENT)
@@ -92,6 +92,9 @@ static func main_menu(app) -> void:
 		if i == 1:
 			action.disabled = app.save_session.read_only or not has_run
 			action.tooltip_text = "当前愿簿没有进行中的还愿" if not has_run else "恢复同一房间与构筑"
+		elif i == 3:
+			action.tooltip_text = "打开后自动联网，用于匹配与断线恢复；离线愿簿不会上传。"
+	app.label(sheet, "共灯连接新加坡官方服务，发送昵称、匿名身份和游玩操作。\n点击共灯同意上述联机处理；退出即可停止。\n离线存档不上传 · 隐私政策可在菜单内查看。", Rect2(40, 483, 540, 60), 17, UI.MUTED)
 
 static func challenges(app) -> void:
 	var sheet = shell(app, "挑战", "挑战先选规则，再选还愿人；固定种子不会增加局外成长")

@@ -116,3 +116,9 @@ Vercel 已有 CLI 凭据失效；浏览器连接工具在初始化阶段报路�
 v1.4 原已审核 HTML 和 Word 保留在 `2026-10-11-v1.4` 独立公开归档。现行 v1.5 使用原模板的页面、字体、十章和两张表，原生 Word 渲染 13 页，最终 13 张 PNG 全部逐页查看；联系人完整位于末页，无裁切或表格行拆分。现行 Word SHA-256：`66a1c6511d93725bdb53210fe851e72f463a46c4454d72fb94214f428f358d5a`。
 
 已在用户 sidcloud 团队的 xhz-privacy-policy 项目正式发布，部署 `dpl_AvNkg7nf9CK251jsprSKm4oxVo7v`，READY，生产别名 https://xhz.sidcloud.cn。2026-10-11 09:14:02（Asia/Taipei）完成 **13 项无认证 HTTPS 核验**：现行别名、当前与历史正文、四份 Word 下载、CSS 和纸偶图标均返回 200。公开现行下载与逐页审核 SHA 一致。回执见合作交付的 privacy-https.json；Word、逐页审核和生产配置分别保存，凭据不发布。未使用浏览器、Docker、WSL 或其他虚拟化。
+
+## 2026-10-11 v1.6：0.5.0 官方自动联机
+
+当前条款为 1.6：主体吴国黎、邮箱 carzyg@outlook.com，官方服务器位于新加坡；进入共灯自动连接、普通断线自动重试，退出停止。主菜单在共灯入口前显示数据处理告知，菜单可访问完整政策。不再宣称每个自选地址有独立接受页面。离线愿簿不上传，在线处理昵称、匿名身份、游玩操作、共享世界、成长、救援、结果和连接 IP。专属代理访问日志关闭，错误日志最多保留 14 天；身份不活跃 14 天清理。
+
+原模板 Word 经原生 Word 与 packaged render_docx 渲染，最终 14 页全部审核；联系人完整、无裁切。DOCX SHA-256：126acde1f8c333fde98665fb9cfbf4a7d77726844eeed51a0e22410f4e7b2036。旧 1.5 HTML／Word 以独立 v1.5 文件保留，旧 1.4 和更早归档不改写。Vercel 现行 HTTPS 已无认证验证；版本与摘要见 [本轮政策回执](../incense-debt/reports/public-online-2026-10-11/privacy-https.json)。

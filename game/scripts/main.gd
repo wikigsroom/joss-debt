@@ -163,7 +163,7 @@ func _ready() -> void:
 	qa_consumables_enabled = OS.get_cmdline_user_args().has("--qa-consumables")
 	qa_display_enabled = OS.get_cmdline_user_args().has("--qa-display")
 	qa_online_enabled = OS.get_cmdline_user_args().has("--qa-online") or OS.get_cmdline_user_args().has("--qa-coop")
-	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled
+	qa_active = qa_capture_enabled or qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled or OS.get_cmdline_user_args().has("--qa-layout")
 	if not qa_active: telemetry = RunTelemetry.new()
 	mobile_ui = OS.get_name() in ["Android", "iOS"] or OS.get_cmdline_user_args().has("--mobile-ui")
 	if mobile_ui:
@@ -175,7 +175,7 @@ func _ready() -> void:
 			if argument.begins_with("--qa-output="):
 				qa_directory = argument.trim_prefix("--qa-output=")
 		DirAccess.make_dir_recursive_absolute(qa_directory)
-	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled:
+	if qa_keyboard_enabled or qa_expansion_enabled or qa_equipment_enabled or qa_consumables_enabled or qa_display_enabled or qa_online_enabled or OS.get_cmdline_user_args().has("--qa-layout"):
 		save_slots = SaveSlots.new(qa_directory.path_join("isolated-saves").path_join(str(Time.get_ticks_usec())))
 		save_slot = save_slots.selected_slot()
 		save_session = SaveSession.new(save_slots.base_path(save_slot), save_slots.legacy_profile_path(save_slot), save_slots.legacy_run_path(save_slot))

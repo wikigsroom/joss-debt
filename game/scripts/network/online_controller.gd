@@ -6,12 +6,12 @@ const Motion = preload("res://scripts/ui/weapon_motion.gd")
 const Prediction = preload("res://scripts/network/motion_prediction.gd")
 var app
 var session
+var service_endpoint = Session.OFFICIAL_ENDPOINT
 var enabled = false
 var page = "hub"
 var offline_world
 var queued_action = ""
 var code_draft = ""
-var endpoint_draft = ""
 var name_draft = ""
 var status_label: Label
 var online_hud: Control
@@ -40,8 +40,15 @@ var last_phase = ""
 func initialize(host, folder: String = "user://online-client") -> void:
 	app = host
 	session = Session.new(folder)
+	if app.qa_active:
+		for arg in OS.get_cmdline_user_args():
+			if arg.begins_with("--online-url=") and session.valid_endpoint(arg.trim_prefix("--online-url=")):
+				service_endpoint = arg.trim_prefix("--online-url=")
+	if session.endpoint != service_endpoint:
+		session.endpoint = service_endpoint
+		session.load_identity()
 	add_child(session)
-	session.changed.connect(refresh)
+	session.changed.connect(connection_changed)
 	session.state_received.connect(receive_state)
 	session.events_received.connect(receive_events)
 	session.command_completed.connect(func(operation, succeeded, _code):
@@ -56,15 +63,24 @@ func initialize(host, folder: String = "user://online-client") -> void:
 func active() -> bool:
 	return enabled
 
+func connection_changed() -> void:
+	# Network authentication can complete while a player is typing or navigating
+	# loadouts. Preserve these controls and their focus instead of rebuilding them.
+	if enabled and page in ["profile", "loadout", "code"] and session.room.is_empty() and session.state not in ["queued", "expired", "incompatible"]:
+		perform_queued_action()
+		if is_instance_valid(status_label): status_label.text = Screens.connection_text(self)
+		return
+	refresh()
+
 func open() -> void:
 	exit_requested = false
 	if not enabled:
 		enabled = true
 		offline_world = app.world
-		endpoint_draft = session.endpoint
 		name_draft = session.nickname
 	page = "hub"
 	refresh()
+	connect_service()
 
 func close() -> void:
 	enabled = false
@@ -102,23 +118,18 @@ func show_page(value: String) -> void:
 
 func connect_service(action: String = "") -> void:
 	queued_action = action
-	if session.state in ["connecting", "reconnecting"] and session.wants_connection: return
+	if session.state in ["connecting", "reconnecting", "synchronizing"] and session.wants_connection: return
 	if session.state in ["online", "queued", "room"]: perform_queued_action(); return
 	if session.state in ["expired", "incompatible"]:
 		page = "identity" if session.state == "expired" else "hub"
 		refresh()
 		return
-	if session.identity.get("consent", "") != "1.5":
-		page = "consent"
-		refresh()
-		return
-	session.connect_service(session.endpoint, session.nickname)
+	session.connect_service(service_endpoint, session.nickname)
 
-func accept_connection() -> void:
-	session.identity.consent = "1.5"
-	if not session.save_preferences(): app.notice(Screens.error_text("local_storage_unavailable")); return
-	page = "hub"
-	connect_service(queued_action)
+func cancel_matching() -> void:
+	queued_action = ""
+	if session.state == "queued": session.request("cancel_queue")
+	refresh()
 
 func perform_queued_action() -> void:
 	if queued_action.is_empty() or session.state != "online": return
@@ -131,16 +142,14 @@ func join_code() -> void:
 	if not Session.Protocol.valid_code(code_draft): app.notice("请输入六位数字，保留开头的 0。"); return
 	connect_service("code")
 
-func save_address() -> void:
-	var address = endpoint_draft.strip_edges().trim_suffix("/")
-	if not session.valid_endpoint(address): app.notice("请输入 ws:// 或 wss:// 开头的服务器地址。"); return
+func save_profile() -> void:
+	if not session.room.is_empty() or session.state == "queued": return
 	session.disconnect_service()
-	session.endpoint = address
 	session.nickname = Session.Protocol.clean_name(name_draft)
-	session.load_identity()
 	if not session.save_preferences(): app.notice("联机设置暂未存下。"); return
 	page = "hub"
 	refresh()
+	connect_service()
 
 func choose(index: int) -> void:
 	if str(session.room.get("phase", "")) != "draft": return
@@ -204,8 +213,7 @@ func resume() -> void:
 	refresh()
 
 func back() -> void:
-	if page == "consent": queued_action = ""; show_page("hub"); return
-	if page in ["config", "loadout", "code", "identity"] and session.room.is_empty(): show_page("hub"); return
+	if page in ["profile", "loadout", "code", "identity"] and session.room.is_empty(): show_page("hub"); return
 	if page == "repay": show_page("build"); return
 	if page in ["build", "arena", "leave_confirm"]: exit_requested = false; show_page("status"); return
 	if not session.room.is_empty():
@@ -253,6 +261,7 @@ func refresh() -> void:
 
 func receive_state(value: Dictionary) -> void:
 	if not enabled: return
+	if not str(value.get("id", "")).is_empty(): queued_action = ""
 	var phase = str(value.get("phase", ""))
 	if phase in ["suspended", "finished", "lobby"]: pause_pending = false
 	if phase == "finished" and last_phase != "finished": page = "status"

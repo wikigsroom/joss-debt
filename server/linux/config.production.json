@@ -1,0 +1,10 @@
+{
+  "bind": "127.0.0.1",
+  "port": 18777,
+  "max_connections": 16,
+  "max_rooms": 2,
+  "grace": 90,
+  "waiting": 300,
+  "checkpoint": 1,
+  "data_directory": "/var/lib/incense-debt"
+}

@@ -8,9 +8,10 @@ const Protocol = preload("res://scripts/network/protocol.gd")
 const Store = preload("res://scripts/core/save_store.gd")
 const Actor = preload("res://scripts/network/duel_actor.gd")
 const CooperativeActor = preload("res://scripts/network/cooperative_presentation.gd")
+const OFFICIAL_ENDPOINT = "wss://xhz-server.sidcloud.cn/play"
 var peer = WebSocketPeer.new()
 var state = "offline"
-var endpoint = "ws://127.0.0.1:18777"
+var endpoint = OFFICIAL_ENDPOINT
 var nickname = "还愿人"
 var loadout = {"character": "c_paper", "weapon": "w01", "skill": "s01"}
 var game_mode = "coop"
@@ -57,7 +58,7 @@ func _init(folder: String = "user://online-client") -> void:
 	preferences = Store.new(folder)
 	var data = preferences.read()
 	if data.get("version", 1) == 1:
-		endpoint = str(data.get("endpoint", endpoint))
+		# A saved development/LAN address must not redirect the official client.
 		nickname = Protocol.clean_name(data.get("nickname", nickname))
 		if data.get("loadout") is Dictionary: loadout = data.loadout.duplicate(true)
 		game_mode = str(data.get("game_mode", "coop")) if data.get("game_mode", "coop") in ["coop", "duel"] else "coop"

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "embedded_lineage_verified": true,
+  "legacy_certificate_sha256": "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c",
+  "release_certificate_sha256": "6d5f9c73c947f025641d0663f7699f78db6c089c070403e4558afee899ca69a3",
+  "installed_data": true,
+  "rollback": false,
+  "platform_checks": [
+    {
+      "api": 28,
+      "verified": true
+    },
+    {
+      "api": 32,
+      "verified": true
+    },
+    {
+      "api": 33,
+      "verified": true
+    },
+    {
+      "api": 36,
+      "verified": true
+    }
+  ],
+  "apk_sha256": "600ec0d5ef757fbc9f2d50e07fd453ddd668dec3c2fc270006dd5e55923b1d94"
+}

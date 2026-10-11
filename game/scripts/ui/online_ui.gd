@@ -4,9 +4,37 @@ const Menu = preload("res://scripts/ui/menu_flow.gd")
 const Protocol = preload("res://scripts/network/protocol.gd")
 const Modern = preload("res://scripts/ui/modern_ui.gd")
 const RouteMap = preload("res://scripts/ui/route_map.gd")
+static var art_regions: Dictionary = {}
+static var art_textures: Dictionary = {}
+
+static func art(c, parent: Control, path: String, rect: Rect2) -> void:
+	if not ResourceLoader.exists(path): return
+	if art_regions.is_empty():
+		var data = JSON.parse_string(FileAccess.get_file_as_string("res://assets/ui/online-art-layout.json"))
+		if data is Dictionary: art_regions = data.get("records", {})
+	var texture: Texture2D = load(path)
+	if art_regions.has(path):
+		if not art_textures.has(path):
+			var bounds = art_regions[path].region
+			var bitmap = texture.get_image()
+			if bitmap.is_compressed(): bitmap.decompress()
+			# Cache measured thumbnails in memory; source artwork stays unchanged.
+			art_textures[path] = ImageTexture.create_from_image(bitmap.get_region(Rect2i(bounds[0], bounds[1], bounds[2], bounds[3])))
+		texture = art_textures[path]
+	var picture = TextureRect.new()
+	# Drop the native texture minimum before assigning a smaller UI rectangle.
+	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	picture.texture = texture
+	picture.position = rect.position
+	picture.size = rect.size
+	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	picture.set_meta("online_art_size", rect.size)
+	parent.add_child(picture)
+	if path.contains("/portraits/"): UI.round_texture(picture, 20)
 
 static func error_text(code: String) -> String:
-	return {"invalid_endpoint": "服务器地址格式不正确。", "invalid_code": "请输入六位数字房间码。", "room_full": "这盏灯已有两人，请换一个房间码。",
+	return {"invalid_endpoint": "联机配置异常，请更新游戏。", "invalid_code": "请输入六位数字房间码。", "room_full": "这盏灯已有两人，请换一个房间码。",
 		"room_started": "对局已经开始。", "server_full": "服务器暂时满员，请稍后再试。", "busy": "请先结束当前匹配或房间。",
 		"invalid_choice": "这一轮已经选择过，或选择已失效。", "not_choosing": "当前无法选择供物。", "invalid_loadout": "配装无效，请重新选择。",
 		"version_mismatch": "双方需要使用与服务器相同的游戏版本。", "session_expired": "这份联机身份已过期，请确认后创建新身份。",
@@ -24,17 +52,20 @@ static func connection_text(c) -> String:
 		"online": return "已连接 · %d ms" % s.latency_ms
 		"room": return "房间已连接 · %d ms" % s.latency_ms
 		"queued": return "正在寻找另一位还愿人…"
-		"connecting": return "正在连接服务器…"
+		"connecting": return "正在点亮共灯…"
 		"synchronizing": return "正在恢复地图状态…"
 		"reconnecting": return "正在恢复连接 · 第 %d 次尝试" % maxi(1, s.retry_count)
 		"storage": return error_text("storage_unavailable")
 		"local_storage": return error_text("local_storage_unavailable")
 		"expired": return error_text(s.last_error if not s.last_error.is_empty() else "session_expired")
 		"incompatible": return error_text("version_mismatch")
-	return "选择服务器后点灯"
+	return "共灯连接已关闭"
 
 static func action(c, parent: Control, text: String, icon: String, rect: Rect2, callback: Callable, primary: bool = false, id: String = "") -> Button:
 	var button = c.app.icon_button(parent, text, icon, rect, callback, primary, text)
+	button.add_theme_constant_override("icon_max_width", 32 if rect.size.y >= 72 else 26)
+	button.add_theme_constant_override("h_separation", 14)
+	button.add_theme_font_size_override("font_size", 24 if primary and rect.size.x > 300 else 21)
 	button.set_meta("nav_id", "online_" + (id if not id.is_empty() else text))
 	return button
 
@@ -47,10 +78,14 @@ static func bar_style(color: Color, radius: int = 7) -> StyleBoxFlat:
 static func shell(c, title: String, note: String = "", navigation: String = "") -> Control:
 	var app = c.app
 	var sheet = Menu.shell(app, title, note)
+	var header_size = maxf(56, app.mobile_button_height) if app.mobile_ui else 56.0
+	var privacy = app.icon_button(sheet, "隐私政策", "shield", Rect2(1080 - 2 * header_size - 16, 24, header_size, header_size), func(): OS.shell_open("https://xhz.sidcloud.cn/privacy-policy"))
+	privacy.set_meta("nav_id", "online_privacy")
 	app.screen = "online"
 	app.menu_page = "online"
 	app.modal.set_meta("navigation_page", navigation if not navigation.is_empty() else c.page)
-	c.status_label = app.label(sheet, connection_text(c), Rect2(38, 613, 882, 22), 14, UI.MUTED)
+	app.icon(sheet, "circle-dot", Rect2(38, 606, 20, 20), UI.JADE)
+	c.status_label = app.label(sheet, connection_text(c), Rect2(70, 603, 818, 27), 16, UI.MUTED)
 	return sheet
 
 static func show(c) -> void:
@@ -66,49 +101,42 @@ static func show(c) -> void:
 			_: suspended(c)
 		return
 	match c.page:
-		"consent": consent(c)
-		"config": config(c)
+		"profile": profile(c)
 		"loadout": loadout(c)
 		"code": code(c)
 		"identity": identity(c)
 		_: hub(c)
 
-static func consent(c) -> void:
-	var app = c.app
-	var sheet = shell(c, "连接联机服务器", "首次连接前，请确认您选择的服务", "consent")
-	app.label(sheet, "将连接到：", Rect2(135, 165, 820, 35), 20, UI.MUTED)
-	app.label(sheet, c.session.endpoint, Rect2(135, 211, 870, 48), 28, UI.JADE)
-	app.label(sheet, "连接后，所选服务器会处理连接 IP、匿名联机身份、昵称、\n配装、房间与操作信息，用于匹配、战斗裁定和断线恢复。\n队友或对手能看到昵称、配装和游戏状态。离线愿簿不会上传。\n请选择您信任的服务器；公网连接建议使用 wss。", Rect2(135, 294, 870, 140), 23, UI.TEXT)
-	action(c, sheet, "隐私政策", "shield", Rect2(135, 477, 255, 76), func(): OS.shell_open("https://xhz.sidcloud.cn/privacy-policy"), false, "privacy")
-	action(c, sheet, "返回", "arrow-left", Rect2(406, 477, 255, 76), func(): c.queued_action = ""; c.show_page("hub"), false, "decline")
-	var accept = action(c, sheet, "同意并连接", "zap", Rect2(677, 477, 324, 76), c.accept_connection, true, "consent")
-	accept.set_meta("nav_default", true)
-
 static func hub(c) -> void:
 	var app = c.app
 	var coop = c.session.game_mode == "coop"
 	var sheet = shell(c, "共灯" if coop else "对灯", "两人合作闯关 · 十一层共同行愿 · 倒地互救" if coop else "两人实时对战 · 三局两胜 · 每轮四选一", "hub")
-	app.add_art(sheet, "res://assets/portraits/" + str(c.session.loadout.character) + ".png", Rect2(48, 142, 414, 400))
-	var selected = app.panel(sheet, Rect2(92, 492, 340, 70), UI.SURFACE, Color.TRANSPARENT)
-	app.add_art(selected, "res://assets/weapons/" + str(c.session.loadout.weapon) + ".png", Rect2(15, 7, 56, 56))
-	app.add_art(selected, "res://assets/skills/" + str(c.session.loadout.skill) + ".png", Rect2(83, 7, 56, 56))
-	app.label(selected, app.world.db.name_of("characters", c.session.loadout.character), Rect2(160, 14, 168, 40), 24)
-	var height = clampf(app.mobile_button_height, 72, 90)
-	var matching = c.session.state == "queued"
-	var fast = action(c, sheet, "取消匹配" if matching else ("寻找队友" if coop else "快速对战"), "x" if matching else "shuffle", Rect2(552, 135, 526, height), func(): c.session.request("cancel_queue") if matching else c.connect_service("queue"), true, "queue")
+	var portrait = app.panel(sheet, Rect2(40, 144, 440, 440), UI.SURFACE, Color.TRANSPARENT)
+	art(c, portrait, "res://assets/portraits/" + str(c.session.loadout.character) + ".png", Rect2(54, 16, 332, 332))
+	var selected = app.panel(portrait, Rect2(20, 364, 400, 60), UI.INSET, Color.TRANSPARENT)
+	art(c, selected, "res://assets/weapons/" + str(c.session.loadout.weapon) + ".png", Rect2(10, 6, 48, 48))
+	art(c, selected, "res://assets/skills/" + str(c.session.loadout.skill) + ".png", Rect2(70, 6, 48, 48))
+	app.label(selected, app.world.db.name_of("characters", c.session.loadout.character), Rect2(140, 13, 244, 34), 24)
+	var matching = c.session.state == "queued" or c.queued_action == "queue"
+	var expired = c.session.state == "expired"
+	var incompatible = c.session.state == "incompatible"
+	var fast_text = "重新点灯" if expired else "更新游戏" if incompatible else "取消匹配" if matching else "寻找队友" if coop else "快速对战"
+	var fast = action(c, sheet, fast_text, "refresh-cw" if expired or incompatible else "x" if matching else "shuffle", Rect2(552, 144, 526, 88), func():
+		if expired: c.show_page("identity")
+		elif incompatible: OS.shell_open("https://github.com/wikigsroom/joss-debt/releases/latest")
+		elif matching: c.cancel_matching()
+		else: c.connect_service("queue"), true, "queue")
 	fast.set_meta("nav_default", true)
-	action(c, sheet, "六位房间码", "lock", Rect2(552, 145 + height, 526, height), func(): c.show_page("code"), false, "code").disabled = matching
-	action(c, sheet, "配装", "sword", Rect2(552, 155 + 2 * height, 255, height), func(): c.show_page("loadout"), false, "loadout").disabled = matching
-	action(c, sheet, "服务器", "settings-2", Rect2(823, 155 + 2 * height, 255, height), func(): c.show_page("config"), false, "config").disabled = matching
+	action(c, sheet, "六位房间码", "lock", Rect2(552, 248, 526, 80), func(): c.show_page("code"), false, "code").disabled = matching
+	action(c, sheet, "配装", "sword", Rect2(552, 344, 255, 72), func(): c.show_page("loadout"), false, "loadout").disabled = matching
+	action(c, sheet, "昵称", "settings-2", Rect2(823, 344, 255, 72), func(): c.name_draft = c.session.nickname; c.show_page("profile"), false, "profile").disabled = matching
 	var stat = c.session.stats
-	var cooperate = action(c, sheet, "合作闯关", "heart", Rect2(552, 435, 255, 62), func(): c.set_mode("coop"), coop, "mode_coop")
-	var duel = action(c, sheet, "切磋对战", "sword", Rect2(823, 435, 255, 62), func(): c.set_mode("duel"), not coop, "mode_duel")
+	var cooperate = action(c, sheet, "合作闯关", "heart", Rect2(552, 448, 255, 64), func(): c.set_mode("coop"), coop, "mode_coop")
+	var duel = action(c, sheet, "切磋对战", "sword", Rect2(823, 448, 255, 64), func(): c.set_mode("duel"), not coop, "mode_duel")
 	cooperate.disabled = matching
 	duel.disabled = matching
-	app.label(sheet, "%d 次共同行愿    %d 次失灯" % [stat.get("coop_wins", 0), stat.get("coop_losses", 0)] if coop else "%d 胜    %d 负    %d 平" % [stat.wins, stat.losses, stat.draws], Rect2(561, 507, 510, 38), 22, UI.JADE)
-	app.label(sheet, "共享地图与纸钱，各自选择成长。\n双方需连接同一服务器。" if coop else "联机配装全部开放；离线成长不影响对战。", Rect2(561, 552, 516, 54), 17, UI.MUTED)
-	if c.session.state in ["expired", "incompatible"]:
-		action(c, sheet, "处理连接" if c.session.state == "expired" else "检查服务器", "refresh-cw", Rect2(948, 554, 130, 56), func(): c.show_page("identity" if c.session.state == "expired" else "config"), false, "repair")
+	app.label(sheet, "%d 次共同行愿    %d 次失灯" % [stat.get("coop_wins", 0), stat.get("coop_losses", 0)] if coop else "%d 胜    %d 负    %d 平" % [stat.wins, stat.losses, stat.draws], Rect2(561, 529, 510, 32), 20, UI.JADE)
+	app.label(sheet, "共享地图与纸钱，各自选择成长。" if coop else "平等配装 · 离线成长不影响切磋。", Rect2(561, 567, 516, 26), 17, UI.MUTED)
 
 static func editor(c, parent: Control, rect: Rect2, value: String, placeholder: String, nav_id: String, changed: Callable, limit: int = 240) -> LineEdit:
 	var field = LineEdit.new()
@@ -125,19 +153,16 @@ static func editor(c, parent: Control, rect: Rect2, value: String, placeholder: 
 	parent.add_child(field)
 	return field
 
-static func config(c) -> void:
+static func profile(c) -> void:
 	var app = c.app
-	var sheet = shell(c, "同一盏灯", "两位玩家填写相同的服务器地址", "config")
-	app.icon(sheet, "settings-2", Rect2(72, 170, 74, 74), UI.JADE)
-	app.label(sheet, "服务器地址", Rect2(181, 152, 790, 42), 25)
-	var address = editor(c, sheet, Rect2(181, 210, 832, 72), c.endpoint_draft, "ws://192.168.1.10:18777", "endpoint", func(value): c.endpoint_draft = value)
-	address.set_meta("nav_default", true)
-	address.virtual_keyboard_type = LineEdit.KEYBOARD_TYPE_URL
-	app.label(sheet, "你的名字", Rect2(181, 308, 790, 42), 25)
-	var nickname = editor(c, sheet, Rect2(181, 366, 832, 72), c.name_draft, "还愿人", "nickname", func(value): c.name_draft = value, 16)
-	nickname.text_submitted.connect(func(_value): c.save_address())
-	app.label(sheet, "同一 Wi-Fi 使用主机的局域网地址。互联网对战使用服务器提供的 wss:// 地址。\n联机会向所选服务器发送名字、对战输入和结果；身份密钥只用于恢复对局。", Rect2(181, 464, 832, 63), 17, UI.MUTED)
-	action(c, sheet, "保存", "check", Rect2(770, 544, 242, 68), c.save_address, true, "save_address")
+	var sheet = shell(c, "你的名字", "队友会看到这个昵称，无需注册账号", "profile")
+	app.icon(sheet, "settings-2", Rect2(528, 162, 80, 80), UI.JADE)
+	app.label(sheet, "联机昵称", Rect2(240, 279, 680, 38), 25)
+	var nickname = editor(c, sheet, Rect2(240, 333, 680, 80), c.name_draft, "还愿人", "nickname", func(value): c.name_draft = value, 16)
+	nickname.set_meta("nav_default", true)
+	nickname.text_submitted.connect(func(_value): c.save_profile())
+	app.label(sheet, "请勿使用真实姓名、手机号或其他个人联系方式。", Rect2(240, 437, 680, 32), 18, UI.MUTED)
+	action(c, sheet, "保存昵称", "check", Rect2(390, 504, 380, 80), c.save_profile, true, "save_profile")
 
 static func code(c) -> void:
 	var app = c.app
@@ -156,31 +181,32 @@ static func loadout(c) -> void:
 	var app = c.app
 	var selection = c.session.loadout
 	var sheet = shell(c, "联机配装", "所有还愿人、器具与角色技能平等开放", "loadout")
-	app.add_art(sheet, "res://assets/portraits/" + str(selection.character) + ".png", Rect2(16, 160, 276, 330))
-	app.label(sheet, app.world.db.name_of("characters", selection.character), Rect2(38, 477, 220, 44), 30).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var portrait = app.panel(sheet, Rect2(32, 144, 252, 440), UI.SURFACE, Color.TRANSPARENT)
+	art(c, portrait, "res://assets/portraits/" + str(selection.character) + ".png", Rect2(16, 38, 220, 260))
+	app.label(portrait, app.world.db.name_of("characters", selection.character), Rect2(16, 322, 220, 44), 28).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var chars = app.world.db.rows("characters")
 	for i in chars.size():
 		var row = chars[i]
-		var tile = app.button(sheet, row.name, Rect2(310 + i * 132, 141, 120, 82), func():
+		var tile = app.button(sheet, row.name, Rect2(310 + i * 132, 144, 120, 92), func():
 			selection.character = row.id; selection.skill = row.skills[0]; c.session.save_preferences(); c.refresh())
 		tile.text = ""
 		tile.set_meta("nav_id", "online_character_" + str(row.id))
 		tile.set_meta("nav_default", row.id == selection.character)
-		app.add_art(tile, "res://assets/heroes/" + str(row.id) + "_down.png", Rect2(32, 4, 56, 56))
-		app.label(tile, row.name, Rect2(3, 57, 114, 24), 15).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		art(c, tile, "res://assets/heroes/" + str(row.id) + "_down.png", Rect2(30, 6, 60, 60))
+		app.label(tile, row.name, Rect2(4, 67, 112, 24), 16).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if row.id == selection.character: UI.select(tile)
 	var selected_char = app.world.db.row("characters", selection.character)
 	for i in selected_char.skills.size():
 		var id = str(selected_char.skills[i])
-		var tile = app.button(sheet, app.world.db.name_of("skills", id), Rect2(310 + i * 264, 236, 250, 72), func(): selection.skill = id; c.session.save_preferences(); c.refresh())
+		var tile = app.button(sheet, app.world.db.name_of("skills", id), Rect2(310 + i * 264, 252, 250, 76), func(): selection.skill = id; c.session.save_preferences(); c.refresh())
 		tile.text = ""
 		tile.set_meta("nav_id", "online_skill_" + id)
-		app.add_art(tile, "res://assets/skills/" + id + ".png", Rect2(12, 10, 50, 50))
-		app.label(tile, app.world.db.name_of("skills", id), Rect2(75, 17, 160, 38), 21)
+		art(c, tile, "res://assets/skills/" + id + ".png", Rect2(12, 10, 56, 56))
+		app.label(tile, app.world.db.name_of("skills", id), Rect2(82, 18, 156, 38), 21)
 		if id == selection.skill: UI.select(tile)
 	var scroll = ScrollContainer.new()
-	scroll.position = Vector2(310, 330)
-	scroll.size = Vector2(802, 237)
+	scroll.position = Vector2(310, 348)
+	scroll.size = Vector2(802, 236)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.follow_focus = true
 	sheet.add_child(scroll)
@@ -190,31 +216,35 @@ static func loadout(c) -> void:
 	grid.add_theme_constant_override("v_separation", 10)
 	scroll.add_child(grid)
 	for row in app.world.db.rows("weapons"):
-		var tile = app.button(grid, row.name + " · " + str(row.mode), Rect2(0, 0, 120, 90), func(): selection.weapon = row.id; c.session.save_preferences(); c.refresh())
+		var tile = app.button(grid, row.name + " · " + str(row.mode), Rect2(0, 0, 120, 104), func(): selection.weapon = row.id; c.session.save_preferences(); c.refresh())
 		tile.text = ""
-		tile.custom_minimum_size = Vector2(120, maxf(90, app.mobile_button_height))
+		tile.custom_minimum_size = Vector2(120, maxf(104, app.mobile_button_height))
 		tile.set_meta("nav_id", "online_weapon_" + str(row.id))
-		app.add_art(tile, "res://assets/weapons/" + str(row.id) + ".png", Rect2(33, 3, 54, 54))
-		app.label(tile, row.name, Rect2(4, 61, 112, 24), 15).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		art(c, tile, "res://assets/weapons/" + str(row.id) + ".png", Rect2(28, 8, 64, 64))
+		app.label(tile, row.name, Rect2(4, 78, 112, 24), 16).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if row.id == selection.weapon: UI.select(tile)
-	app.label(sheet, "配装已自动保存", Rect2(47, 530, 226, 33), 17, UI.JADE)
+	app.label(portrait, "配装已自动保存", Rect2(16, 390, 220, 30), 17, UI.JADE).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 static func player_card(c, parent: Control, seat: int, rect: Rect2) -> void:
 	var app = c.app
 	var state = c.session.room
 	var card = app.panel(parent, rect, UI.SURFACE, Color.TRANSPARENT)
 	if seat >= state.players.size():
-		app.icon(card, "shuffle", Rect2(132, 78, 86, 86), UI.MUTED)
-		app.label(card, "等待另一位还愿人", Rect2(25, 204, 300, 44), 23, UI.MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		app.icon(card, "shuffle", Rect2(144, 102, 64, 64), UI.MUTED)
+		app.label(card, "等待另一位还愿人", Rect2(24, 218, 304, 44), 22, UI.MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		return
 	var loadout = state.players[seat]
-	app.add_art(card, "res://assets/portraits/" + str(loadout.character) + ".png", Rect2(50, 8, 244, 214))
-	app.label(card, str(state.names[seat]) + (" · 你" if seat == int(state.seat) else ""), Rect2(28, 211, 296, 40), 25).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	app.add_art(card, "res://assets/weapons/" + str(loadout.weapon) + ".png", Rect2(107, 259, 56, 56))
-	app.add_art(card, "res://assets/skills/" + str(loadout.skill) + ".png", Rect2(190, 259, 56, 56))
+	art(c, card, "res://assets/portraits/" + str(loadout.character) + ".png", Rect2(80, 16, 192, 192))
+	var name_label = app.label(card, str(state.names[seat]) + (" · 你" if seat == int(state.seat) else ""), Rect2(24, 223, 304, 38), 23)
+	name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	name_label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	name_label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	name_label.tooltip_text = name_label.text
+	art(c, card, "res://assets/weapons/" + str(loadout.weapon) + ".png", Rect2(110, 280, 56, 56))
+	art(c, card, "res://assets/skills/" + str(loadout.skill) + ".png", Rect2(186, 280, 56, 56))
 	var online = state.connected[seat]
 	var ready = bool(state.ready[seat]) if state.phase == "lobby" else bool(state.resume_ready[seat])
-	app.label(card, "已准备" if ready and online else ("等待准备" if online else "暂时离线"), Rect2(22, 331, 300, 32), 20, UI.JADE if ready else UI.MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	app.label(card, "已准备" if ready and online else ("等待准备" if online else "暂时离线"), Rect2(24, 350, 304, 30), 19, UI.JADE if ready else UI.MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 static func lobby(c) -> void:
 	var app = c.app
@@ -222,11 +252,13 @@ static func lobby(c) -> void:
 	var sheet = shell(c, "两人点灯", "快速匹配" if state.quick else "房间  " + str(state.code), "lobby")
 	player_card(c, sheet, 0, Rect2(129, 139, 352, 386))
 	player_card(c, sheet, 1, Rect2(669, 139, 352, 386))
-	app.icon(sheet, "heart" if state.get("game_mode") == "coop" else "sword", Rect2(532, 272, 86, 86), UI.JADE)
+	app.icon(sheet, "heart" if state.get("game_mode") == "coop" else "sword", Rect2(544, 278, 64, 64), UI.JADE)
 	if not state.quick:
-		action(c, sheet, "复制房间码", "copy", Rect2(889, 38, 150, 58), func(): DisplayServer.clipboard_set(str(state.code)); app.notice("房间码已复制。"), false, "copy_code")
+		var height = maxf(56, app.mobile_button_height) if app.mobile_ui else 56.0
+		var copy = app.icon_button(sheet, "复制房间码", "copy", Rect2(1080 - 3 * height - 32, 24, height, height), func(): DisplayServer.clipboard_set(str(state.code)); app.notice("房间码已复制。"))
+		copy.set_meta("nav_id", "online_copy_code")
 	var ready = bool(state.ready[int(state.seat)])
-	var start = action(c, sheet, "取消准备" if ready else "准备", "x" if ready else "check", Rect2(393, 536, 364, 76), c.ready, true, "ready")
+	var start = action(c, sheet, "取消准备" if ready else "准备", "x" if ready else "check", Rect2(393, 526, 364, 72), c.ready, true, "ready")
 	start.set_meta("nav_default", true)
 
 static func draft(c) -> void:
@@ -243,14 +275,14 @@ static func draft(c) -> void:
 		card.disabled = selected >= 0
 		card.set_meta("nav_id", "online_choice_" + str(i))
 		card.set_meta("nav_default", i == 0)
-		app.add_art(card, "res://assets/relics/" + id + ".png", Rect2(59, 18, 140, 140))
+		art(c, card, "res://assets/relics/" + id + ".png", Rect2(59, 18, 140, 140))
 		app.label(card, str(row.name), Rect2(16, 177, 226, 44), 28).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		app.label(card, str(row.get("description", row.get("behavior", ""))), Rect2(24, 233, 210, 60), 17, UI.MUTED)
 		card.tooltip_text = str(row.name) + " · " + str(row.get("behavior", ""))
 		app.label(card, str(i + 1), Rect2(107, 300, 44, 30), 23, UI.JADE).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if selected == i: UI.select(card)
 	app.label(sheet, "已选择，等待对方…" if selected >= 0 else "数字 1 / 2 / 3 / 4 直选 · Enter 确认当前卡片", Rect2(54, 526, 825, 44), 20, UI.JADE if selected >= 0 else UI.MUTED)
-	action(c, sheet, "构筑", "book-open", Rect2(924, 533, 166, 76), c.show_build, false, "build")
+	action(c, sheet, "构筑", "book-open", Rect2(904, 526, 186, 72), c.show_build, false, "build")
 
 static func suspended(c) -> void:
 	var app = c.app
@@ -306,16 +338,18 @@ static func build(c) -> void:
 	var app = c.app
 	var state = c.session.room
 	var sheet = shell(c, "两人的愿", "每次供物、技能、器具与契约选择均保留 · 返回后双方准备继续", "build")
+	var has_repayment = false
 	if state.get("game_mode") == "coop" and not c.session.presentation.is_empty():
 		var own = c.session.presentation[int(state.seat)]
 		if bool(state.get("scene", {}).get("stairs", false)) and not own.run.contracts.is_empty():
-			action(c, sheet, "偿还契约 · 共享金币 %d" % int(own.run.coins), "scroll-text", Rect2(350, 560, 450, 48), func(): c.show_page("repay"), false, "repay")
+			has_repayment = true
+			action(c, sheet, "偿还契约 · 共享金币 %d" % int(own.run.coins), "scroll-text", Rect2(350, 530, 450, 64), func(): c.show_page("repay"), false, "repay")
 	for seat in 2:
 		var x = 38 + seat * 556
 		app.label(sheet, str(state.names[seat]) + (" · 你" if seat == int(state.seat) else ""), Rect2(x, 145, 510, 44), 28, UI.JADE if seat == int(state.seat) else UI.ACCENT)
 		var scroll = ScrollContainer.new()
 		scroll.position = Vector2(x, 214)
-		scroll.size = Vector2(530, 340)
+		scroll.size = Vector2(530, 302 if has_repayment else 340)
 		scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 		scroll.follow_focus = true
 		sheet.add_child(scroll)
@@ -330,7 +364,7 @@ static func build(c) -> void:
 			tile.text = ""
 			tile.custom_minimum_size = Vector2(510, 106)
 			tile.set_meta("nav_id", "online_history_%d_%d" % [seat, i])
-			if not str(info.art).is_empty(): app.add_art(tile, str(info.art), Rect2(17, 15, 76, 76))
+			if not str(info.art).is_empty(): art(c, tile, str(info.art), Rect2(17, 15, 76, 76))
 			else: app.icon(tile, "sparkles", Rect2(29, 29, 50, 50), UI.JADE)
 			app.label(tile, "%d · %s" % [i + 1, info.title], Rect2(115, 20, 365, 35), 25)
 			app.label(tile, str(info.description), Rect2(115, 63, 365, 33), 16, UI.MUTED)
@@ -344,7 +378,7 @@ static func arena(c) -> void:
 	var picture = Rect2(180, 150, 800, 420)
 	var path = str(state.arena.backgrounds[0])
 	if not path.begins_with("res://"): path = "res://assets/" + path
-	app.add_art(sheet, path, picture)
+	art(c, sheet, path, picture)
 	for seat in 2:
 		var pos: Vector2 = c.session.presentation[seat].player.pos
 		var marker = picture.position + pos / Vector2(1280, 720) * picture.size
@@ -364,7 +398,7 @@ static func build_hud(c) -> void:
 		var x = 26 if left else 892
 		var panel = app.panel(c.online_hud, Rect2(x, 18, 362, 90), Color(UI.INSET, .92), Color.TRANSPARENT)
 		var loadout = c.session.room.players[i]
-		app.add_art(panel, "res://assets/heroes/" + str(loadout.character) + "_down.png", Rect2(7, 11, 63, 63))
+		art(c, panel, "res://assets/heroes/" + str(loadout.character) + "_down.png", Rect2(7, 11, 63, 63))
 		app.label(panel, str(c.session.room.names[i]) + (" · 你" if left else ""), Rect2(82, 10, 254, 29), 20, UI.JADE if left else UI.ACCENT)
 		var bar = ProgressBar.new()
 		bar.position = Vector2(82, 51)
@@ -412,13 +446,16 @@ static func cooperative_choices(c) -> void:
 			var id = str(ids[i])
 			var button = action(c, sheet, app.world.db.name_of("relics", id), "sparkles", Rect2(44 + (i % 6) * 180, 217 + int(i / 6) * 132, 168, 114), func(): c.cooperative_action("replace", id), false, "replace_" + id)
 			button.text = ""
-			app.add_art(button, "res://assets/relics/" + id + ".png", Rect2(50, 7, 68, 68))
+			button.icon = null
+			art(c, button, "res://assets/relics/" + id + ".png", Rect2(50, 7, 68, 68))
 			app.label(button, app.world.db.name_of("relics", id), Rect2(8, 78, 152, 28), 18).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		action(c, sheet, "放弃新供物", "x", Rect2(395, 525, 360, 74), func(): c.cooperative_action("replace"), false, "cancel_replace")
 		return
 	c.choice_page = clampi(c.choice_page, 0, maxi(0, int((offers.size() - 1) / 4)))
 	var start = c.choice_page * 4
-	for i in mini(4, offers.size() - start):
+	var count = mini(4, offers.size() - start)
+	var origin = (1152 - (count * 258 + maxi(0, count - 1) * 16)) * .5
+	for i in count:
 		var index = start + i
 		var choice = offers[index]
 		var kind = str(choice.get("reward_kind", choice.kind))
@@ -426,7 +463,7 @@ static func cooperative_choices(c) -> void:
 		var row = app.world.db.row(table, str(choice.id)) if not table.is_empty() else {}
 		var title = str(choice.get("name", row.get("name", "续灯" if choice.kind == "heal" else choice.id)))
 		var body = str(choice.get("behavior", row.get("description", row.get("behavior", ""))))
-		var card = app.button(sheet, title, Rect2(38 + i * 276, 162, 258, 329), func(): c.choose(index))
+		var card = app.button(sheet, title, Rect2(origin + i * 274, 162, 258, 329), func(): c.choose(index))
 		card.text = ""
 		card.disabled = waiting or bool(choice.get("taken", false)) or not str(choice.get("reason", "")).is_empty()
 		card.tooltip_text = body + (" · " + str(choice.reason) if not str(choice.get("reason", "")).is_empty() else "")
@@ -434,20 +471,25 @@ static func cooperative_choices(c) -> void:
 		card.set_meta("nav_default", i == 0 and not card.disabled)
 		var art_id = str(choice.get("art_id", choice.id))
 		var art_table = "relics" if choice.has("art_id") else table
-		if art_table in ["relics", "weapons", "skills"]: app.add_art(card, "res://assets/" + art_table + "/" + art_id + ".png", Rect2(65, 16, 128, 128))
-		else: app.icon(card, "heart" if choice.kind == "heal" else "scroll-text" if choice.kind == "contract" else "leaf", Rect2(91, 36, 76, 76), UI.JADE)
-		app.label(card, title, Rect2(16, 160, 226, 58), 25).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		app.label(card, body, Rect2(24, 222, 210, 57), 16, UI.MUTED)
-		app.label(card, "%d   ◈ %d" % [i + 1, int(choice.get("price", 0))] + ("  ♥-%d" % int(choice.hp_cost) if int(choice.get("hp_cost", 0)) > 0 else ""), Rect2(16, 290, 226, 30), 20, UI.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		if art_table in ["relics", "weapons", "skills"]: art(c, card, "res://assets/" + art_table + "/" + art_id + ".png", Rect2(77, 24, 104, 104))
+		else: app.icon(card, "heart" if choice.kind == "heal" else "scroll-text" if choice.kind == "contract" else "leaf", Rect2(97, 44, 64, 64), UI.JADE)
+		app.label(card, title, Rect2(16, 148, 226, 60), 24).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		app.label(card, body, Rect2(24, 216, 210, 66), 17, UI.MUTED)
+		app.label(card, str(i + 1), Rect2(20, 289, 30, 28), 19, UI.GOLD)
+		app.icon(card, "coins", Rect2(91, 292, 22, 22), UI.GOLD)
+		app.label(card, str(int(choice.get("price", 0))), Rect2(124, 289, 54, 28), 19, UI.GOLD)
+		if int(choice.get("hp_cost", 0)) > 0:
+			app.icon(card, "heart", Rect2(181, 292, 22, 22))
+			app.label(card, "-%d" % int(choice.hp_cost), Rect2(210, 289, 40, 28), 18, UI.ACCENT)
 	app.label(sheet, "已完成 · 等待队友" if waiting else "1 / 2 / 3 / 4 直选 · ↑↓←→ 与 Enter 导航", Rect2(49, 499, 1038, 32), 19, UI.JADE if waiting else UI.MUTED)
 	if offers.size() > 4:
-		action(c, sheet, "上一页", "arrow-left", Rect2(40, 543, 169, 68), func(): c.choice_page = maxi(0, c.choice_page - 1); c.refresh(), false, "previous_choices")
-		action(c, sheet, "下一页", "arrow-right", Rect2(225, 543, 169, 68), func(): c.choice_page = mini(int((offers.size() - 1) / 4), c.choice_page + 1); c.refresh(), false, "next_choices")
-	var skip = action(c, sheet, "完成" if state.choice_mode in ["shop", "debt"] else "跳过", "check", Rect2(445, 543, 205, 68), func(): c.cooperative_action("skip"), false, "skip")
+		action(c, sheet, "上一页", "arrow-left", Rect2(40, 530, 169, 64), func(): c.choice_page = maxi(0, c.choice_page - 1); c.refresh(), false, "previous_choices")
+		action(c, sheet, "下一页", "arrow-right", Rect2(225, 530, 169, 64), func(): c.choice_page = mini(int((offers.size() - 1) / 4), c.choice_page + 1); c.refresh(), false, "next_choices")
+	var skip = action(c, sheet, "完成" if state.choice_mode in ["shop", "debt"] else "跳过", "check", Rect2(445, 530, 205, 64), func(): c.cooperative_action("skip"), false, "skip")
 	skip.disabled = waiting or (not offers.is_empty() and offers[0].kind == "skill")
-	var reroll = action(c, sheet, "重掷", "rotate-ccw", Rect2(667, 543, 185, 68), func(): c.cooperative_action("reroll"), false, "reroll")
+	var reroll = action(c, sheet, "重掷", "rotate-ccw", Rect2(667, 530, 185, 64), func(): c.cooperative_action("reroll"), false, "reroll")
 	reroll.disabled = waiting or state.choice_mode != "choice" or c.session.presentation[int(state.seat)].run.rerolls <= 0
-	action(c, sheet, "构筑", "book-open", Rect2(869, 543, 212, 68), c.show_build, false, "build")
+	action(c, sheet, "构筑", "book-open", Rect2(869, 530, 212, 64), c.show_build, false, "build")
 
 static func cooperative_repayment(c) -> void:
 	var app = c.app

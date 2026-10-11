@@ -1,0 +1,1904 @@
+{
+  "schema": 1,
+  "artwork_unchanged": true,
+  "records": {
+    "res://assets/heroes/c_bell_down.png": {
+      "region": [
+        6,
+        6,
+        85,
+        81
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "1364cde69a4247b619426edf44b83e60bfd501a5d05a0e4291a95911eac81112"
+    },
+    "res://assets/heroes/c_bell_left.png": {
+      "region": [
+        14,
+        4,
+        69,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "67bed31a1977937921fab4162277117f30d28fce911e1b3c866938301ef8993c"
+    },
+    "res://assets/heroes/c_bell_right.png": {
+      "region": [
+        14,
+        5,
+        69,
+        82
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "63274c708bcc1ba8a6e6d9d1ad89c874001a5c1342afdb828391f4151deda1b1"
+    },
+    "res://assets/heroes/c_bell_up.png": {
+      "region": [
+        9,
+        9,
+        78,
+        78
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "c91c533ab59b33800b7fdbaf7be1a0da832103d575eb5eef05f0c43824e7370f"
+    },
+    "res://assets/heroes/c_ink_down.png": {
+      "region": [
+        14,
+        4,
+        69,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "b51da65096b65826f09e9b5702d1d9df10a8e877d30b207846226f0f8f9397fa"
+    },
+    "res://assets/heroes/c_ink_left.png": {
+      "region": [
+        22,
+        4,
+        53,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "247a63289bb6cc4aef69955894203f99d74025bc54bc788bbdd426e478856762"
+    },
+    "res://assets/heroes/c_ink_right.png": {
+      "region": [
+        18,
+        7,
+        59,
+        80
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "aba5d173bd72eb0424397e36ebf2bf38d716e6d2917ebeba6055aeebc9dd800f"
+    },
+    "res://assets/heroes/c_ink_up.png": {
+      "region": [
+        16,
+        11,
+        64,
+        76
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "ccb111ba6ec1dae282f33f5f45249f6d0d3b64828606a4fcdce88a89cee8f8df"
+    },
+    "res://assets/heroes/c_lantern_down.png": {
+      "region": [
+        19,
+        4,
+        58,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "ef4a0b4fb21562d961f0d7d5cf557de7dbb86a38f6c060edda3c34c48f344890"
+    },
+    "res://assets/heroes/c_lantern_left.png": {
+      "region": [
+        21,
+        6,
+        54,
+        81
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "da7d97e1377a84fc67c8de48097c5ede19f5b462d9f52e5a676fcb73ce57a993"
+    },
+    "res://assets/heroes/c_lantern_right.png": {
+      "region": [
+        22,
+        9,
+        52,
+        78
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "630c387370c06bf97970be6bb35d4cf1ea82c7a1498c9c0f0dfe355ae6100a08"
+    },
+    "res://assets/heroes/c_lantern_up.png": {
+      "region": [
+        21,
+        12,
+        54,
+        75
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "3b6e177917da0f664122fddeaa9333d1107714af91dc217e76215781ca107faa"
+    },
+    "res://assets/heroes/c_mask_down.png": {
+      "region": [
+        2,
+        6,
+        92,
+        81
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "f23d7a0b701ce3c3059ecc042c1727e17fc8b69aeef435b7dc1567823b6a453b"
+    },
+    "res://assets/heroes/c_mask_left.png": {
+      "region": [
+        6,
+        7,
+        85,
+        80
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "b3a5642e59dc17115fc8d577ff3f089836c6f64b877ec757f6cb38aabbd93732"
+    },
+    "res://assets/heroes/c_mask_right.png": {
+      "region": [
+        5,
+        9,
+        86,
+        78
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "51154ff2aa1a27fc97678d801443f831f04f919152399b35ff189d6b7315f0fc"
+    },
+    "res://assets/heroes/c_mask_up.png": {
+      "region": [
+        4,
+        13,
+        89,
+        74
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "36a610eaafdbc303ecdafce00b443cc1c65a896356e95df27f74f048778b733b"
+    },
+    "res://assets/heroes/c_paper_down.png": {
+      "region": [
+        12,
+        5,
+        73,
+        82
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "f3bab5d6ddf347c9c81f32a0d0cfb41cc921bdb4d3531c90ac3cdd9b282a9aee"
+    },
+    "res://assets/heroes/c_paper_left.png": {
+      "region": [
+        18,
+        4,
+        60,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "b81cf6675f982c6ac62be6f5ebb52deacc2e9f4e4f81e3aa3435193584164448"
+    },
+    "res://assets/heroes/c_paper_right.png": {
+      "region": [
+        16,
+        7,
+        64,
+        80
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "69f2255da457f05d998919a28e47c5d0bddd6d0aba9301417b13f3c8d9a644ef"
+    },
+    "res://assets/heroes/c_paper_up.png": {
+      "region": [
+        13,
+        8,
+        70,
+        79
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "40faee6a7784dd7c8dd2ff1d81d9c76af6617ef363457ec64fae878f00f64081"
+    },
+    "res://assets/heroes/c_umbrella_down.png": {
+      "region": [
+        4,
+        4,
+        87,
+        83
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "0f0006c81bf7bd832630b7713947a6cc1f934ce5d1b68c03199ad89150861218"
+    },
+    "res://assets/heroes/c_umbrella_left.png": {
+      "region": [
+        7,
+        7,
+        82,
+        80
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "7bd73519140721ade85ae6e7e80014c5949888ee5673fb4c8102f89f0450fca4"
+    },
+    "res://assets/heroes/c_umbrella_right.png": {
+      "region": [
+        6,
+        6,
+        84,
+        81
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "c6b96e9ad26d3e14c7e26002bd29548c335222196cc2ca466e7ea9bad3d74600"
+    },
+    "res://assets/heroes/c_umbrella_up.png": {
+      "region": [
+        4,
+        10,
+        87,
+        77
+      ],
+      "source_size": [
+        96,
+        96
+      ],
+      "source_sha256": "0917b314cc3cbff112013fd90ce3645f890bfc3c9a74198978c68f322c5a40d1"
+    },
+    "res://assets/portraits/c_bell.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "de3894dafb664c01ebc9fe1b49ec1a2151033f0040ac764d3527e657c20b6b24"
+    },
+    "res://assets/portraits/c_ink.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "67436c0555ab1dfaaaba124643b293dc86f0c30c94191e9ce670b1c2db235ff1"
+    },
+    "res://assets/portraits/c_lantern.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "1c5c902f7f09164c0e484c57625782fe63e295b4419065f71df2d5be151b5ecc"
+    },
+    "res://assets/portraits/c_mask.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "3a5b0453cf94bda6d9470e46d57d582163d1f9f64aec9d664eb77d0ce0e2d43c"
+    },
+    "res://assets/portraits/c_paper.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "0de96003a65d29211d5dac29d3d502b7e787594ef4d24a750dd872a7c7257e25"
+    },
+    "res://assets/portraits/c_umbrella.png": {
+      "region": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "source_size": [
+        496,
+        496
+      ],
+      "source_sha256": "82053c89a47060bf5a87bd4d19e56845dce346c8f33f29bf6ab68ec893d075b5"
+    },
+    "res://assets/weapons/w01.png": {
+      "region": [
+        11,
+        3,
+        106,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "b608803f58f720ff2fb775c6388cba24309bb4ac088fc2471772a45bc5c353d4"
+    },
+    "res://assets/weapons/w02.png": {
+      "region": [
+        2,
+        14,
+        124,
+        102
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d208f6c8ba8a4499c3b132118529016f6d6e287e94dac10cdd3a4ce508df5879"
+    },
+    "res://assets/weapons/w03.png": {
+      "region": [
+        26,
+        3,
+        77,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "7b58355a550983ca5e56438b54164c1d02acfd3a5d79a3cc45a2e03c2be452d6"
+    },
+    "res://assets/weapons/w04.png": {
+      "region": [
+        12,
+        3,
+        105,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8784db163a9374fdaf18d2b31b55d42667bf5647caaf67bd2e355461683c4ee8"
+    },
+    "res://assets/weapons/w05.png": {
+      "region": [
+        2,
+        12,
+        124,
+        104
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "cb348eeedc8cf754e68cf3f9261b52e549df062c1d8adf9d814ae2d73b04cc5d"
+    },
+    "res://assets/weapons/w06.png": {
+      "region": [
+        27,
+        3,
+        74,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "08ddf992b36e04a657080cc2ba3b08368ba3fd028c63cd7afc07e5e88ffbfa47"
+    },
+    "res://assets/weapons/w07.png": {
+      "region": [
+        2,
+        26,
+        124,
+        90
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "2bce03a17c01d245b678bd70f8f62008d49cc1033a0ba47343c99e2e8fab95b6"
+    },
+    "res://assets/weapons/w08.png": {
+      "region": [
+        8,
+        3,
+        113,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "41f91d0b60190591e6f554e1c8084cc12c9829161777adae990ca48e8a97a925"
+    },
+    "res://assets/weapons/w09.png": {
+      "region": [
+        2,
+        6,
+        124,
+        110
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "315100a5c74e147aa267bc2490c8d2f3ff0be0e199860cb7c2ab16a4be67c3d5"
+    },
+    "res://assets/weapons/w10.png": {
+      "region": [
+        18,
+        3,
+        91,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "531ea2688d94dfa9f52be53f5d69ae44c379d5454c851bf14fcd86fae38c6577"
+    },
+    "res://assets/weapons/w11.png": {
+      "region": [
+        4,
+        3,
+        121,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "fde04d3ef11b2248720bb973d4ac5439e500a36a04dcf25a12a6d1d957a28701"
+    },
+    "res://assets/weapons/w12.png": {
+      "region": [
+        19,
+        3,
+        90,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "df002b9b5f330c9ad9c7cfeed8fc3b9e5f3f60a0aadad9877d9a7ceaf7e6017c"
+    },
+    "res://assets/weapons/w13.png": {
+      "region": [
+        0,
+        2,
+        128,
+        123
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "34f034e870c7211ff3701f613392fddac311f218f7bdd9c8b5368ecf302fa9ad"
+    },
+    "res://assets/weapons/w14.png": {
+      "region": [
+        0,
+        6,
+        128,
+        121
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "39c317ebe7bf754aacffa27753e897d891667d55cab1a84be517ff43fd921935"
+    },
+    "res://assets/weapons/w15.png": {
+      "region": [
+        2,
+        0,
+        123,
+        128
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "352d704568b43125765b268c264dfab9957aeeb770c02960a83821569d8ad9bc"
+    },
+    "res://assets/weapons/w16.png": {
+      "region": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "2b7af65028f40f780ba4e21d48f2e22c9efc7be162a48458915a5c4cb5867ac7"
+    },
+    "res://assets/weapons/w17.png": {
+      "region": [
+        2,
+        3,
+        123,
+        112
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "7bb9af66b55695fe86a1dee334bc6144010af62d732b09ccf23ae9d637556ea3"
+    },
+    "res://assets/weapons/w18.png": {
+      "region": [
+        12,
+        0,
+        103,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d4e72ba4bb8b91c8cd88ae954f548b002cc0dc0f60194e59d11f86fc7dbd76a3"
+    },
+    "res://assets/weapons/w19.png": {
+      "region": [
+        7,
+        0,
+        113,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "e06ad2ed5151f5be04ab9a0550e941bb0ffd8aca895da0875e99dd0ac445968f"
+    },
+    "res://assets/weapons/w20.png": {
+      "region": [
+        3,
+        0,
+        121,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "650e38aac294fd20dd33686d3fbe5ed94a181a4757ce0b4df5b470af8583ff9a"
+    },
+    "res://assets/weapons/w21.png": {
+      "region": [
+        3,
+        0,
+        122,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "207161d48d4c08124db7a95a1271755037faef239637aedea39af20980db7a22"
+    },
+    "res://assets/weapons/w22.png": {
+      "region": [
+        6,
+        0,
+        115,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d69e22e15eaca526a5501231e1dbf0411ef2222aa7c1ae25012c4daf2b9c3364"
+    },
+    "res://assets/weapons/w23.png": {
+      "region": [
+        4,
+        0,
+        120,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "413fac943cd59f455f18acdf26c92dd3de88c08aded18aa0f376a136c483e78a"
+    },
+    "res://assets/weapons/w24.png": {
+      "region": [
+        5,
+        0,
+        118,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "c6cc98cf78e1ac756ea0afb5150622cb7f0081fff07aed532f2836d9dd0b298f"
+    },
+    "res://assets/weapons/w25.png": {
+      "region": [
+        2,
+        6,
+        123,
+        109
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "e8be89c37d7bef760cd518aebc2ae8d9fcdf3ccc01f3c0e7e4b3e2bd0577bae9"
+    },
+    "res://assets/weapons/w26.png": {
+      "region": [
+        6,
+        0,
+        116,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "24bed0814c5418db504c32aa0acd34ff668abdca4200e63d2fc802c6a08684e4"
+    },
+    "res://assets/weapons/w27.png": {
+      "region": [
+        2,
+        5,
+        123,
+        110
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "6e8269fc0f139d83516ce9c80002c01e4f56d6f147f1225e620bd37bbd14fd92"
+    },
+    "res://assets/weapons/w28.png": {
+      "region": [
+        2,
+        15,
+        123,
+        100
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d24ee7b28f70203257ee136822e84c28b2b1dc079ebfe16e5ef62db06b6156ed"
+    },
+    "res://assets/weapons/w29.png": {
+      "region": [
+        3,
+        0,
+        122,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "c20a8111766c1cc425c802040f60b81eb172bebe2fa70de45dec906f1fd1e33f"
+    },
+    "res://assets/weapons/w30.png": {
+      "region": [
+        4,
+        0,
+        120,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "96c9e097b6dd9f1140d8ca2e9ad600de9f7a4add99fcbc6a5def7e52b7e8cbcd"
+    },
+    "res://assets/weapons/w31.png": {
+      "region": [
+        4,
+        0,
+        119,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "9db5b31da4374f2da84670765ce73848ca43345db3be06ff330c645e649e10b5"
+    },
+    "res://assets/weapons/w32.png": {
+      "region": [
+        4,
+        0,
+        120,
+        115
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "25964c3f4c99d9b854dcc4102f5e0521b572050e5f5813ba6b110d6d109549bc"
+    },
+    "res://assets/skills/s01.png": {
+      "region": [
+        15,
+        3,
+        98,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "2a491d97a224e6119053692bbb72c9435f067408c0419b22932a346d41177eed"
+    },
+    "res://assets/skills/s02.png": {
+      "region": [
+        12,
+        3,
+        105,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "6f0dcc30ff9df215a1b3f83608c99d4a2925e66581ab44abaf00ddc462f04ba0"
+    },
+    "res://assets/skills/s03.png": {
+      "region": [
+        12,
+        3,
+        104,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "97d075d59c566bc05aa1dfe9ddc88bc3ee9a7f5ae614dec5261a78820c5839d8"
+    },
+    "res://assets/skills/s04.png": {
+      "region": [
+        20,
+        3,
+        87,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "49dc27d8097b53d3200ab7636cee81eb3a1778f33d2e9994bf0414dc1990dfab"
+    },
+    "res://assets/skills/s05.png": {
+      "region": [
+        16,
+        3,
+        97,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8f8ff22cbc651962aecf820e03b16d1c31d967c645f59edacd68a32ab572977d"
+    },
+    "res://assets/skills/s06.png": {
+      "region": [
+        2,
+        3,
+        124,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "61e9664ae6964e8a3b498f6277d37d43bcc9e1eb4d7ab6d40827c4874705a0fc"
+    },
+    "res://assets/skills/s07.png": {
+      "region": [
+        16,
+        3,
+        95,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "94efa744902bb7c880ec0e2869421c6fe7edaf6cd69ed3b148535a3874fb5ed2"
+    },
+    "res://assets/skills/s08.png": {
+      "region": [
+        16,
+        3,
+        95,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "e32fd196767d5937e9f7d8aa31d05bcd15698169b9e7061429bdc4cb217acdf1"
+    },
+    "res://assets/skills/s09.png": {
+      "region": [
+        12,
+        3,
+        105,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "0603b5eb872adab40c8181a6e5d319c06a9950f42e79659c6bf4a0213b13b880"
+    },
+    "res://assets/skills/s10.png": {
+      "region": [
+        12,
+        3,
+        103,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "df6fc4b0e82e6008ba2e75526360b490f71d9d2db0ea1d0f237be7f8d16af2b5"
+    },
+    "res://assets/skills/s11.png": {
+      "region": [
+        9,
+        3,
+        110,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8911797dd7e7b9a752fa9b463df77512de869cea701ad7d1ab7d3a98d07d86bb"
+    },
+    "res://assets/skills/s12.png": {
+      "region": [
+        11,
+        3,
+        106,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "5a724788e22510449d4230812aa66277e55b4fc23f5caa563fb7bb914c377a5a"
+    },
+    "res://assets/skills/s13.png": {
+      "region": [
+        12,
+        3,
+        103,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "42087811af536c7a37ad23d4beda8bf180bff5733646cf2bf269502b8d429c78"
+    },
+    "res://assets/skills/s14.png": {
+      "region": [
+        18,
+        3,
+        93,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "79903bc39d9c19bda734e7be38601815f05567b34d4df8cdc905503a11ddd670"
+    },
+    "res://assets/skills/s15.png": {
+      "region": [
+        13,
+        3,
+        102,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "a6b71da4e42f1f96be6baf7c64fff870298d25437dcb3e757a217f21acf6f6d5"
+    },
+    "res://assets/skills/s16.png": {
+      "region": [
+        14,
+        3,
+        99,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "9a20d6d6bd4a821475a4736c028f5a60e7d51278d67d305fe4b3e9468a09857d"
+    },
+    "res://assets/skills/s17.png": {
+      "region": [
+        18,
+        3,
+        93,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "1bcffaacdf603ae92c4dc07a32b31696e9eb124873fddd8d2901dddd1595a272"
+    },
+    "res://assets/skills/s18.png": {
+      "region": [
+        4,
+        3,
+        120,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "0731d912922be2958b82868c67dd273b80a67fc8cd05a34dcef2dc0acc4134f3"
+    },
+    "res://assets/relics/r01.png": {
+      "region": [
+        28,
+        3,
+        72,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "340e95e4da119748f76bd7b22de4d575dfd40094348b0cf41577d5edc9696112"
+    },
+    "res://assets/relics/r02.png": {
+      "region": [
+        20,
+        3,
+        89,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "a637e4b23c919807f1382c2dcd909686b40c0fd1c2ce71a6340187f0610057cb"
+    },
+    "res://assets/relics/r03.png": {
+      "region": [
+        22,
+        3,
+        83,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "5e1a22e860e3f1965f218004901a9e3e78a23c9b18f1143e09b24a083deae62f"
+    },
+    "res://assets/relics/r04.png": {
+      "region": [
+        4,
+        3,
+        121,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "b40eb19bec74c86d8a3e12079406c077b2f1054d9ce59910b9084ebc004800c5"
+    },
+    "res://assets/relics/r05.png": {
+      "region": [
+        18,
+        3,
+        91,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "bdbf9abd5361cddb67a9287271a0da4604d0a67835c65878374404acaf94e060"
+    },
+    "res://assets/relics/r06.png": {
+      "region": [
+        25,
+        3,
+        78,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "1b2065a119cc24bc3c47a0207f822fe74cf6d287f248f6c890043e6cd144bfc7"
+    },
+    "res://assets/relics/r07.png": {
+      "region": [
+        21,
+        3,
+        86,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "46bded7cebcaf4a841926eb7139e805952e8b06be44a25d24ad640476aedb543"
+    },
+    "res://assets/relics/r08.png": {
+      "region": [
+        20,
+        3,
+        89,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "f5c49fb285df2e057a8b1ad18f9772d8d3ab406d0669ab29eae1de2e86e8c7d3"
+    },
+    "res://assets/relics/r09.png": {
+      "region": [
+        18,
+        3,
+        92,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "69af82c65daeb0936e015db4ee4fb177c74001ae48f27376e8e1e6a3196a6f18"
+    },
+    "res://assets/relics/r10.png": {
+      "region": [
+        36,
+        3,
+        56,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "988bbd52eaec802bd906b6b58d29a19039f2c6bb4131201d26bb9a7119ba0d16"
+    },
+    "res://assets/relics/r11.png": {
+      "region": [
+        14,
+        3,
+        101,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d0f81564ce836fc69dc4c085f54904c4e47222a19b4038b99cb4c9f406c0080e"
+    },
+    "res://assets/relics/r12.png": {
+      "region": [
+        23,
+        3,
+        82,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "a154279aaeaa2422913e3521b771eecdfaee1c85db0b7d56778ecb5ca22f763b"
+    },
+    "res://assets/relics/r13.png": {
+      "region": [
+        12,
+        3,
+        105,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "3ec84a78c4922b1824c9d8da366a66a53c6e42a8fc3ddbdd78478744fac6f6d3"
+    },
+    "res://assets/relics/r14.png": {
+      "region": [
+        12,
+        3,
+        104,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "f30efd3ae6242c0c4b675a576b24ef1d9a91623775ff5373735eb022f69d7f3d"
+    },
+    "res://assets/relics/r15.png": {
+      "region": [
+        9,
+        3,
+        110,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "b7e25f21368385475936473d0a4b4bf07ea17fc476b818b62b322825ab849135"
+    },
+    "res://assets/relics/r16.png": {
+      "region": [
+        12,
+        3,
+        105,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "a5a6879f6f26e84d39599535fd6757946fdf1ddd322794d22311d5e3ca2c3f41"
+    },
+    "res://assets/relics/r17.png": {
+      "region": [
+        9,
+        3,
+        110,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "6f81b0ef76563be3a3588d38624b9cd2a081c34f15af8da392bf653541462ddd"
+    },
+    "res://assets/relics/r18.png": {
+      "region": [
+        2,
+        11,
+        124,
+        105
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8c434427899eab516337394f383ac4b0eebeea4b33e47c1a089cfb65004f7679"
+    },
+    "res://assets/relics/r19.png": {
+      "region": [
+        6,
+        3,
+        116,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "f253f534b970a039b01f16bd3a620dae717f7b2f6302173634799a2358416412"
+    },
+    "res://assets/relics/r20.png": {
+      "region": [
+        36,
+        3,
+        55,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "7c4594bee351b44984ee6d87e7126a9d61516cff593e859d8bd795fcce5b4c1c"
+    },
+    "res://assets/relics/r21.png": {
+      "region": [
+        2,
+        34,
+        124,
+        82
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "fccd4800a74582a33ca9c02ec3da8bb73d129c7aa52f90e3fbcd073b4fd5db81"
+    },
+    "res://assets/relics/r22.png": {
+      "region": [
+        2,
+        38,
+        124,
+        78
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "11da315e5cccb01ce25bc48b970493354316d2d793e9ad22ec584543ee83a8dc"
+    },
+    "res://assets/relics/r23.png": {
+      "region": [
+        8,
+        3,
+        112,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "6d6a2aef53cd254ce7791cf271b386cd21296461a5e6d17e654625e6603dd268"
+    },
+    "res://assets/relics/r24.png": {
+      "region": [
+        12,
+        3,
+        104,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "55847e3692152a346c7960de9eb4edf37f9127cb05a5746572298207617109b2"
+    },
+    "res://assets/relics/r25.png": {
+      "region": [
+        14,
+        3,
+        100,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "97a18991c060eaa06660b3d272fa1bcd5cfd20274dae7363acae0f56f83197ab"
+    },
+    "res://assets/relics/r26.png": {
+      "region": [
+        16,
+        3,
+        97,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "3383bb1a20d84d61d33cbcf9811825f70e9b650decc1a83948b604668ff7e350"
+    },
+    "res://assets/relics/r27.png": {
+      "region": [
+        2,
+        7,
+        124,
+        109
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "07cef3ddc8046fa6da8ea22f96caa23110961c30909efd898a0083ee785d13ea"
+    },
+    "res://assets/relics/r28.png": {
+      "region": [
+        2,
+        4,
+        124,
+        112
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "df3b03d3a6bc2c489ab0ad103d39ce2da740f0efcae84f8fbdd083cea72696f8"
+    },
+    "res://assets/relics/r29.png": {
+      "region": [
+        15,
+        3,
+        98,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "de97c25698a5ad20ee6fd5a128b4ba826ad69ad09be143391ab62a986900cf2d"
+    },
+    "res://assets/relics/r30.png": {
+      "region": [
+        18,
+        3,
+        93,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "ac67636978b3dbe74d6eeaa93b998a2a1412c12a312b77d521a5e24e8bf15c1a"
+    },
+    "res://assets/relics/r31.png": {
+      "region": [
+        12,
+        3,
+        104,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "434b4799d0e12cb1d933fb04e8bc2bfc05c915db49e00f100aa4270780b5a887"
+    },
+    "res://assets/relics/r32.png": {
+      "region": [
+        20,
+        3,
+        87,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d7e9a13d00b0dd14edfcca51376548d90e1011317a44843ff4af8a5a761959e9"
+    },
+    "res://assets/relics/r33.png": {
+      "region": [
+        18,
+        3,
+        93,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "ce4bd490d1263ea06a126ad59dff60dbed781e02fdbcde1b0e6f12ba5c27df6d"
+    },
+    "res://assets/relics/r34.png": {
+      "region": [
+        23,
+        3,
+        82,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "1df71b0e4ab838d5a8937764b1dba27103b2364c3c4d92ba086640650d7fef67"
+    },
+    "res://assets/relics/r35.png": {
+      "region": [
+        16,
+        3,
+        96,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "0332adf0e2dbe92620dd7b63fcf12e82291bbd1fce670f02413a40168e078d7d"
+    },
+    "res://assets/relics/r36.png": {
+      "region": [
+        24,
+        3,
+        80,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d2e9a74875d2fc040ea100e1a05e6a63f5822f3085a0db13bb2b8961794dd4a8"
+    },
+    "res://assets/relics/r37.png": {
+      "region": [
+        8,
+        3,
+        112,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "499b1fb833b351a3d943281db7aee9b94a7f4b10fb0925825105baaa1746de36"
+    },
+    "res://assets/relics/r38.png": {
+      "region": [
+        20,
+        3,
+        89,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "c6ba6c223c3b9bf26c67470d1f083f051c5c15eeac2b4584757251d83356011e"
+    },
+    "res://assets/relics/r39.png": {
+      "region": [
+        23,
+        3,
+        82,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "31b3be746849a1c5e565e21d1cc3c39e0e43c234e723e9e1d3709832737916fc"
+    },
+    "res://assets/relics/r40.png": {
+      "region": [
+        18,
+        3,
+        92,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8db337d6ee1233ae4070ea622ff84b93414f2997e0155745b7c29e69d649b19b"
+    },
+    "res://assets/relics/r41.png": {
+      "region": [
+        2,
+        30,
+        124,
+        86
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "d251078260a83c60287b1e38322cfc9a2c4916066b6e57f79f0666ee63f88b13"
+    },
+    "res://assets/relics/r42.png": {
+      "region": [
+        14,
+        3,
+        101,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "5bac9e66b2ef5522d5b4b870b1d4f9b4500810ffbb16082f20f1de68bb151bf3"
+    },
+    "res://assets/relics/r43.png": {
+      "region": [
+        32,
+        3,
+        63,
+        112
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "8f9a4c4befefb00131de1e4a3dfc1b6e10ec9979584412dd30a33a6a04820dc7"
+    },
+    "res://assets/relics/r44.png": {
+      "region": [
+        29,
+        3,
+        70,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "acdf13fa04f40d70bbfaae0de4729f6674813b2e3abd8a07a883aac529988014"
+    },
+    "res://assets/relics/r45.png": {
+      "region": [
+        14,
+        3,
+        100,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "e63552941885e5219a6e404d012109e345bd15414b3fb8c90f714c8445a196d3"
+    },
+    "res://assets/relics/r46.png": {
+      "region": [
+        9,
+        3,
+        110,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "9dc475575fe12c8ae0416569c7ae110e0d40d1425133139afb0f4f0c8eb0cb58"
+    },
+    "res://assets/relics/r47.png": {
+      "region": [
+        14,
+        3,
+        99,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "80a49e2de9fd02c11b02f3271ded43dedfe2f1ab5d5fe3ef870aa012673f7bb8"
+    },
+    "res://assets/relics/r48.png": {
+      "region": [
+        17,
+        3,
+        94,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "2390a0f330d119a212b653479509a7f184546cb59a102689fa124e9437ee70c6"
+    },
+    "res://assets/relics/r49.png": {
+      "region": [
+        14,
+        3,
+        100,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "c1e37516ec44d305ecf735bb95c2ea0b153a4542477ee6554fe66ffd00ff3bb1"
+    },
+    "res://assets/relics/r50.png": {
+      "region": [
+        6,
+        3,
+        115,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "35349aff73c4402158693eb4a9b34190b4596dd4df5f895a1756d2346a9e6de5"
+    },
+    "res://assets/relics/r51.png": {
+      "region": [
+        4,
+        3,
+        121,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "938dcb8cb35cd2e3c115ba79d42542a24605a6680c818e0f472e078e8c7aabfe"
+    },
+    "res://assets/relics/r52.png": {
+      "region": [
+        4,
+        3,
+        119,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "3356060b379c2b387928e3b32a74a9ea250c12ce84c34160e3790d3a30cb6f4c"
+    },
+    "res://assets/relics/r53.png": {
+      "region": [
+        28,
+        3,
+        71,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "29295d24eabc6db9adb9c908b78b7ce41b064b54e83143900ec4fe67c7c1307f"
+    },
+    "res://assets/relics/r54.png": {
+      "region": [
+        21,
+        3,
+        86,
+        113
+      ],
+      "source_size": [
+        128,
+        128
+      ],
+      "source_sha256": "6e36cb1e60811201e55766ab2f34de3ab2d3bdc8f8438b8862c8e6a1294dbe0a"
+    },
+    "res://assets/relics/r55.png": {
+      "region": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "3f6d760f0514def1874c68c404a00e79f60f9bfa82f727da9148006d1596290f"
+    },
+    "res://assets/relics/r56.png": {
+      "region": [
+        0,
+        8,
+        256,
+        240
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "a7ee1c58528ed73e520558f9d906ab2a96031a7c872a362635f5334463ad33f3"
+    },
+    "res://assets/relics/r57.png": {
+      "region": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "14ce1d7492a0201e011592ee5f0d7b6b6e4b8db24243dd3c2baaae7521b2fb7f"
+    },
+    "res://assets/relics/r58.png": {
+      "region": [
+        3,
+        0,
+        250,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "84fd8e902379e2f39a855405f6621cd84303d492926817349d6c33d640687851"
+    },
+    "res://assets/relics/r59.png": {
+      "region": [
+        40,
+        0,
+        176,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "a574ab90c36600d12f246d919389ea57924b3ad1744fe09a1ff0af99e56b75c1"
+    },
+    "res://assets/relics/r60.png": {
+      "region": [
+        16,
+        0,
+        223,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "fa138856c7243df0fe00242cb6266e714e6bc9eeb1488f4480dc9e973134733d"
+    },
+    "res://assets/relics/r61.png": {
+      "region": [
+        0,
+        11,
+        256,
+        233
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "d89af827b82fc065ba86f3b933079abc74947e9d787fc13ad6044f9c8e9147c3"
+    },
+    "res://assets/relics/r62.png": {
+      "region": [
+        11,
+        0,
+        234,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "16840313f68a515ec2a3b1c7770dff582610ecae733c4fe34cc7aad942d27767"
+    },
+    "res://assets/relics/r63.png": {
+      "region": [
+        26,
+        0,
+        204,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "f2dad5e2ecbc2100c3e6b0f1328933fc127ecffd84a92bb56468f617ea45ab3a"
+    },
+    "res://assets/relics/r64.png": {
+      "region": [
+        14,
+        0,
+        227,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "c9563bc47088a4d3a16ea72d34316138463f355264f72e54f576302736572fdf"
+    },
+    "res://assets/relics/r65.png": {
+      "region": [
+        7,
+        0,
+        242,
+        256
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "8b7b2eef96c9c46ae6079a722451de86b2d4d86892b2946395a876039e6aa96f"
+    },
+    "res://assets/relics/r66.png": {
+      "region": [
+        0,
+        3,
+        256,
+        249
+      ],
+      "source_size": [
+        256,
+        256
+      ],
+      "source_sha256": "c6b06d526c4007b003f60f704dc8414f4a6cff6cacd4816fdfed55c5457309f1"
+    }
+  }
+}

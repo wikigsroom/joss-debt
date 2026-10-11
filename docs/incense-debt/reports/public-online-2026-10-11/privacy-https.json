@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-10-11T09:26:32.962940+00:00",
+  "public_url": "https://xhz.sidcloud.cn",
+  "docx_sha256": "126acde1f8c333fde98665fb9cfbf4a7d77726844eeed51a0e22410f4e7b2036",
+  "operator_name": "吴国黎",
+  "policy_version": "1.6",
+  "unauthenticated_https_checks": [
+    {
+      "url": "https://xhz.sidcloud.cn/",
+      "resolved_url": "https://xhz.sidcloud.cn/",
+      "status": 200,
+      "bytes": 29548
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy",
+      "resolved_url": "https://xhz.sidcloud.cn/privacy",
+      "status": 200,
+      "bytes": 29548
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy-policy",
+      "resolved_url": "https://xhz.sidcloud.cn/privacy-policy",
+      "status": 200,
+      "bytes": 29548
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-11",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-11",
+      "status": 200,
+      "bytes": 29548
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-08",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-08",
+      "status": 200,
+      "bytes": 24877
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-09",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-09",
+      "status": 200,
+      "bytes": 24898
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-11-v1.4",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-11-v1.4",
+      "status": 200,
+      "bytes": 28608
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/versions/2026-10-11-v1.5",
+      "resolved_url": "https://xhz.sidcloud.cn/versions/2026-10-11-v1.5",
+      "status": 200,
+      "bytes": 28744
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-08.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-08.docx",
+      "status": 200,
+      "bytes": 27904
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-09.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-09.docx",
+      "status": 200,
+      "bytes": 27900
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11-v1.4.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11-v1.4.docx",
+      "status": 200,
+      "bytes": 29790
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11-v1.5.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11-v1.5.docx",
+      "status": 200,
+      "bytes": 29888
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11.docx",
+      "resolved_url": "https://xhz.sidcloud.cn/downloads/incense-debt-privacy-policy-2026-10-11.docx",
+      "status": 200,
+      "bytes": 30162
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/assets/privacy.css",
+      "resolved_url": "https://xhz.sidcloud.cn/assets/privacy.css",
+      "status": 200,
+      "bytes": 7870
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/assets/paper-spirit.png",
+      "resolved_url": "https://xhz.sidcloud.cn/assets/paper-spirit.png",
+      "status": 200,
+      "bytes": 33711
+    }
+  ],
+  "hosting": "Vercel"
+}

@@ -1,14 +1,10 @@
 # 《香火债》隐私政策网页
 
-当前条款为政策 v1.5，更新、生效日期均为 2026-10-11，覆盖 0.4.0 的可选双人合作闯关与对灯切磋。公开运营主体名称严格为 **`吴国黎`**，与应用资料页主体一致；隐私邮箱为 `carzyg@outlook.com`。此 README 被 `.vercelignore` 排除，不作为玩家页面上传。
+当前政策 **v1.6 / 2026-10-11**，覆盖 0.5.0 官方共灯自动连接与对灯。主体 **吴国黎**、邮箱 carzyg@outlook.com；新加坡托管，普通断线自动重试，离线愿簿不上传。主菜单共灯入口前有处理告知，退出停止联机。
 
-正式公开地址：[隐私政策](https://xhz.sidcloud.cn/privacy-policy)。站点关联用户的 Sidcloud 账户项目 `xhz-privacy-policy`，自定义域名绑定已经完成。2026-10-11 的新条款说明匿名身份、昵称、共享场景、个人成长、救援、合作与对战结果、连接 IP、断线恢复、所选服务器及 14 天清理规则；离线愿簿不会随联机上传。旧日期归档和旧 Word 保留原处理范围，四份下载均使用吴国黎署名。当前生产部署 `dpl_AvNkg7nf9CK251jsprSKm4oxVo7v` 已完成 13 项无认证 HTTPS 核验，全部返回 200；公开下载与逐页审核哈希一致。回执见 `.local-tools/privacy-policy/deployment-verified.json`。
+公开地址：[隐私政策](https://xhz.sidcloud.cn/privacy-policy)。既有 Sidcloud 账户项目 xhz-privacy-policy，生产部署 dpl_5gimqpYnJ2B85tV7udoUrBHzRpYk。共 15 项无认证 HTTPS 核验通过，公开 Word 与原生 Word 14 页审核产物摘要一致。旧 1.5 HTML／Word 独立归档，旧日期和 1.4 保留。
 
-`xhz.sidcloud.cn` 的所有权验证和 DNS 配置已通过，Vercel 返回 `verified=true`、`misconfigured=false`。根路径及 `/privacy-policy` 均显示本政策。阿里云 DNS 的 CNAME/TXT 值及验证结果见 [自定义域名说明](../../docs/legal/custom-domain-xhz.md)。
-
-这是独立的静态网站。只上传政策 HTML、CSS、已批准纸偶图标、Word 下载及 Vercel 配置；不包含游戏源码、安装包、存档、日志、运营者本地配置或托管凭据。
-
-源内容：`docs/legal/privacy-policy-content.json`。正文、Word 和网页由同一模型生成。修改内容后必须重新构建和逐页核对 Word。
+此 README 被 .vercelignore 排除，不上传为玩家页面。部署只允许静态文件，不含生成工具、日志、SSH／签名密钥或凭据。回执在 .local-tools/privacy-policy/deployment-verified.json；公开副本在 docs/incense-debt/reports/public-online-2026-10-11/privacy-https.json。
 
 ## 完成运营者信息
 

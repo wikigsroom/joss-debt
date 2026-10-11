@@ -1,6 +1,6 @@
 """Open the EXE's embedded pack with the matching native Godot test runner."""
 from pathlib import Path
-import hashlib,json,re,subprocess,zipfile
+import hashlib,json,re,subprocess,zipfile,argparse
 ROOT=Path(__file__).resolve().parents[2]
 REPORT=ROOT/'docs/incense-debt/reports/action-mobile-2026-10-09'
 
@@ -24,8 +24,12 @@ def runtime_remap(data):
     return '\n'.join(lines).strip()
 
 def main():
+    global REPORT
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',type=Path,default=REPORT)
+    REPORT=parser.parse_args().output.resolve()
     version=re.search(r'config/version="([^"]+)"',(ROOT/'game/project.godot').read_text('utf8')).group(1)
-    sources=['game/data/music_playlist.json','game/assets/weapon-rig.json','game/data/runtime_assets.json','game/assets/fx/drawn-actions/manifest.json','game/assets/creature-actions.json','game/assets/pickups/manifest.json']
+    sources=['game/data/music_playlist.json','game/assets/weapon-rig.json','game/data/runtime_assets.json','game/assets/fx/drawn-actions/manifest.json','game/assets/creature-actions.json','game/assets/pickups/manifest.json','game/assets/ui/online-art-layout.json']
     creatures=json.loads((ROOT/'game/assets/creature-actions.json').read_text('utf8'))
     if not creatures.get('complete') or creatures.get('compiled_actors')!=402 or creatures.get('compiled_action_poses')!=24048:
         raise RuntimeError('Creature action shipping coverage is incomplete; do not verify a partial release as complete')

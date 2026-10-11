@@ -1,79 +1,58 @@
-# 《香火债》0.3.0 · 运行与操作
+# 原生构建与发布 / Native builds and release
 
-[GitHub 0.3.0 预发布下载](https://github.com/wikigsroom/joss-debt/releases/tag/v0.3.0-alpha.1)提供 Windows 客户端 ZIP、Android 调试 APK、独立 Windows 服务端 ZIP、中英指南和校验清单；[中英安装说明](../docs/releases/START-HERE.md)与[发布说明](../docs/releases/v0.3.0-alpha.1.md)适用于下载包。本目录中的 EXE / APK 链接指本机导出产物，不进入 Git。
+当前正式联机版 **0.5.0 / Android code 9**。Windows x64、Android 9+ arm64、Linux／Windows 独立服务端。离线十一层、双人共灯、可选对灯；官方客户端进入共灯自动连接。
 
-本机与本次发布的 EXE / APK 为 0.3.0，新导出并原生验收。新增独立双人对灯、快速匹配、六位开房、每轮构筑与完整暂停／断线恢复，见[联机交付](../docs/incense-debt/40-online-delivery.md)。继承 0.2.3 的左手移动、右手战斗、长屏与安全区，旧布局与自定义保存规则见[默认触控修订](../docs/incense-debt/38-right-hand-touch-layout.md)。旧 iOS 交接保留 0.2.0。
+See [current delivery](../docs/incense-debt/reports/current-product-status.md), [audit](../docs/incense-debt/44-public-online-release.md), and [Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0).
 
-当前源码覆盖 402 个怪物身份的四向独立攻击／受击，共 1,002 张图集、24,048 帧。历史动作证据见 [0.2.1 全量动作交付](../docs/incense-debt/35-creature-action-completion.md)，最新包体与联机检查见 [当前交付](../docs/incense-debt/reports/current-product-status.md)；[主 README 的动效 GIF](../README.md#showcase)展示实际双人战斗、主角、小怪与 Boss 动作。
+| Build | 本地路径 / Local path |
+| --- | --- |
+| Windows | windows/IncenseDebt.exe |
+| Android release | android/IncenseDebt.apk |
+| Windows server | server/IncenseDebtServer.exe |
+| Linux server | server-linux/IncenseDebtServer.x86_64 |
+| Release payload | release/v0.5.0/assets/ |
 
-离线模式为十一层单人肉鸽 Alpha，20套独立环境、40张背景；正式遭遇60%本土＋40%一个随机高对比外来主题，1—5层每层两个独立单Boss房。40张图均按内墙限定碰撞，射线与范围攻击资源库合计88条分阶段动画、528帧生成特效（本次新增80条480帧）。完整交付状态、实机截图及测试证据见[当前交付记录](../docs/incense-debt/reports/current-product-status.md)、[最新战斗修复](../docs/incense-debt/26-combat-boundary-mixed-encounters.md)与[十一重扩展](../docs/incense-debt/reports/expansion-delivery.md)。
+## 构建 / Build
 
-## 对灯服务端
+Godot 4.7.2、Android SDK 36、JDK 21、Python，全部原生工具。Windows 可直接导出 Linux ELF；不使用 Docker、WSL、VM 或模拟器。导出前检查全量素材，第三方声明随 Windows ZIP 保留。
 
-原生服务端位于 [IncenseDebtServer.exe](server/IncenseDebtServer.exe)，发布 ZIP 内包含配置与 StartServer.cmd / StopServer.ps1。默认两房、16 连接，游戏端口 TCP 18777，健康端口 18778。双方在对灯服务器设置中填写同一地址，再快速匹配或输入同一六位数字；首连有数据告知。同电脑用 ws://127.0.0.1:18777，手机或其他电脑用主机 LAN IPv4。详细说明见 [服务端运维](../server/README.md)。当前没有默认公网主机；Vercel 仅托管政策。
+```powershell
+python tools/runtime/build_native.py windows
+python tools/runtime/sign_android_release.py --export
+python tools/runtime/build_online_server.py --platform both
+```
 
-## Windows
+`build_native.py android` 默认生成开发调试包；正式发布仅使用签名工具。私有 JKS 和密码保存在本机忽略目录，DPAPI 保护密码，不进入 Git；未来升级需保留同一材料和迁移链。
 
-打开[IncenseDebt.exe](windows/IncenseDebt.exe)即可运行。资源已嵌入，无需安装Godot；使用x86_64与OpenGL ES 3兼容桌面图形能力。分发时保留同目录NotoSansSC-OFL.txt、ResourceHanRounded-OFL.txt、SmileySans-OFL.txt、Lucide-LICENSE.txt和Godot-THIRDPARTY.txt。程序未使用发行者代码签名。
+非 Gradle 模板 minSdk 不能被 Godot 预设直接覆写。正式工具校验并只调整二进制 Manifest 的 minSdk 至 28，再 ZIP 对齐、嵌入官方迁移链签名。实际 API、debuggable、签名和数据继承均从最终 APK 验证。
 
-第一次从纸童开始，游戏会给出开场叙事和简短操作页；其余角色通过实际行为条件解锁。第六层固定剧情首领，第七至十层为双首领强度层，第十一层40房、连续六首领与最终总账，通关后进入结尾叙事。还愿庭可查看角色条件、故事、图鉴、训练与局外购买。训练无敌只在训练模式生效，不提供正式局奖励。
+The native signing pipeline uses a private release key with a legacy certificate lineage. It validates and adjusts the prebuilt manifest minSdk to 28 before alignment and signing. Keep private signing material for future updates; never publish it.
 
-启动依次进入标题、三个独立愿簿、主菜单，再选择新局、继续、挑战、记录或设置。菜单支持方向键选择、Enter确认、Esc逐层返回，Tab/Shift+Tab循环焦点；禁用项自动跳过。图标与选择卡完整说明可按F1查看，长列表支持PgUp/PgDn和Home/End。菜单与逐层返回的详细对比见[菜单与键盘审计](../docs/incense-debt/22-menu-save-achievements.md)。
+## 验收 / Acceptance
 
-| 动作 | 鼠标与键盘 | 手柄默认映射 |
-| --- | --- | --- |
-| 移动 | WASD | 左摇杆 |
-| 瞄准 | 方向键或鼠标 | 右摇杆 |
-| 主攻击 | 按住方向键或鼠标左键 | RT |
-| 焚债 | 鼠标右键或Q | RB |
-| 主动道具 | F，满充能使用；E拾取/交换装备，饰品最多一件 | X |
-| 身法 | Space | LT |
-| 场景交互 | E；清房后走入对应方向门切换房间 | A |
-| 行路图 | Tab打开/收起，只读地图 | 界面按钮 |
-| 本局构筑 | I打开/收起；暂停中可查看完整成长记录 | 界面按钮 |
-| 暂停/返回 | Esc | Start，菜单中B返回 |
-| 全屏切换 | F11 | — |
-| 奖励卡 | 1–4直接选择；或方向键选择、Enter确认 | 界面焦点导航及确认 |
+```powershell
+python tools/runtime/run_keyboard_qa.py --packaged
+python tools/runtime/run_online_native_qa.py --packaged --cooperative --url wss://xhz-server.sidcloud.cn/play
+python tools/runtime/verify_packaged_revision.py
+python tools/runtime/verify_android.py
+python tools/runtime/verify_android_lineage.py
+```
 
-设置可切换触控、左右镜像、减弱动态、静音，并分别调整总音量、配乐和效果。操作映射页支持鼠键/手柄重映射及冲突交换；触控布局页可拖动或用方向键移动触点、确认键切换触点。瞄准与反馈页提供辅助瞄准、死区、固定摇杆、切换攻击、触觉、战斗表现、愿页字号和拾取范围选项。放大的愿页可滚轮/拖动/方向键翻读；移动窄屏或竖屏时暂停，横屏后需确认继续。
+外部布局 fixture 使用实际 Windows main-pack，桌面／X30 尺寸／宽屏手机／平板覆盖不等于 Android 真机验收。公网 PvP 的 `--public-exit-wait` 只给外部测试驱动增加等待退出确认，生产字节码不变。所有记录绑定实际包体 SHA-256。
 
-方向键松开后停止射击，最后瞄准方向保持到实际移动鼠标。音量滑块左右调整、上下切换；按键录入时Esc取消录入；文本框与触控编辑区可用Tab离开。商店试射用Esc返回原商店，连续技能选择、供物替换、特殊房、偿债与结局均可由键盘完成。
+Layout fixtures inspect the exported Windows pack. They are not Android-device tests. Public Duel acceptance waits for the server leave acknowledgement in an external fixture; production bytecode is unchanged.
 
-角色页可输入12位种子，前导零保留，仅用于紧接着的一局，启动后自动清空。暂停页显示并可复制分享本局种子。Tab行路图包含垂直基础数值、完整构筑及所有历史选择；图内用Ctrl+Tab循环焦点、方向键导航、PgUp/PgDn与Home/End滚动，Tab收起。层间过场支持Enter推进、Esc暂停，保存后继续保持原叙事进度。
+## 发布 / Publish
 
-供物房侧墙若出现断绳纸门，清房后靠近并停留片刻即可显露入口；按交互键或“拂绳 · 入断页”进入。行路图会开放已发现支路，已清房间可安全返回，敌人和奖励不会重刷。后段战房会出现两阵敌人，阵间留有收灰时间；最后一阵结束才开放出口。
+完成源码与验收文档后提交，再生成附件；发布清单提交后创建注释 tag、推送 main 与 tag。发布工具拒绝脏工作区、源码或摘要不符。
 
-默认使用随包的四首 Yourset 曲目随机轮播，每轮各播一次、轮次衔接不紧邻重复、1.2 秒交叉淡化，切房不重启曲目。声音设置可切回原主题音乐，原主题会随探索、入战、连债与首领阶段变化。音乐与音效可分别调节或静音，切后台停声，回前台仍在暂停页。
+```powershell
+python tools/runtime/record_public_delivery.py
+python tools/runtime/package_public_release.py
+python tools/runtime/publish_release.py --tag v0.5.0
+python tools/runtime/verify_published_release.py --tag v0.5.0
+```
 
-## Android
+[v0.5.0 清单](../docs/releases/v0.5.0.manifest.json)：先草稿上传，逐份完整 SHA-256／大小核对后公开正式版；归档还校验 CRC 与每个解包成员。旧 Alpha tag／附件不改写。没有本輪 iOS IPA，历史源码交接不能安装。
 
-将[IncenseDebt.apk](android/IncenseDebt.apk)传到真实 arm64 手机安装。0.3.0 / code 6 为调试签名试玩包，最低 Android 7/API 24、目标 API 36，启用 VIBRATE 与对灯需要的 INTERNET。离线肉鸽无需服务器或账号，对灯使用独立匿名恢复身份。
-
-如需在真实发布前做一次 Godot release 模式导出，可运行 `python tools/runtime/build_native.py android --android-build release`。该命令会使用 `build/android/IncenseDebt-release.apk` 作为独立输出，并在缺少产品所有者发布密钥时安全删除未签名半成品；当前工作区没有提交任何 keystore，因此该命令只会留下导出日志，不会把调试包冒充发行包。签名发行包必须由产品所有者在本机注入自己的密钥后完成。
-
-横屏左侧只有移动摇杆，右侧为瞄准／攻击摇杆、身法位移、焚债／爆炸技能，道具装备后也在右侧显示。设置 → 触控可分别调整五项触点的位置与大小（75%～175%，保留最小热区），调整透明度、左右镜像，并保存后直接试操作。固定／浮动摇杆可切换。顶部地图在战斗中可点开，仍需走进场景中的门切房。技能候选同屏比较，满槽替换先预览旧、新效果，再确认。数字软键盘和输入框避让已实现；系统返回先收起键盘，再关闭界面或暂停。
-
-APK已通过结构及签名检查，尚未在连接的真实手机安装或运行。手机表现、温控与生命周期结论见交付记录的待验收部分。
-
-## 存档
-
-Windows运行数据保存在`%APPDATA%\IncenseDebt\`。愿簿1沿用`save_bundle/`，愿簿2/3各自使用`slots/slot_N/`；三个愿簿独立保存进度与设置。角色解锁、善缘、愿名、故事、设置与当前整局写进同一份愿簿，保存两代带校验的完整记录；最新代损坏时回到上一份完整记录并给出说明。游戏在房间转移、领取与关键操作时保存，恢复整局先暂停并聚焦继续。未完成局被新局替换前要求确认，取消不改存档。
-
-本版存档格式为2。初次读取旧版时自动转存原来的`profile/`与`saves/`，旧文件保持原样；未知存档版本或无法识别的内容会保护原文件并说明原因，暂停新局与覆盖操作。备份整个目录时先关闭游戏。Android使用应用私有目录，卸载通常会移除本地数据。
-
-本次更新保留旧愿簿读取，并让新写入的小数计时器按原始数值保存。含新数值编码的愿簿需使用本次更新后的程序；跨端传递时两端一起更新。
-
-跨设备传递在“设置 → 愿簿”的上传图标入口。源设备使用“导出”文件或“复制”文字；目标设备使用“导入”或“粘贴”，先看预览，再按“确认换入愿簿”。导入默认保留目标设备的操作和声音设置，也可在预览中选择带入设置。原进度保留为“回到导入前”，关掉游戏后仍可恢复；再次导入会把刚刚被替换的进度作为新的备份。角色进度与当前整局一起换入或恢复，继续游戏仍需主动确认。
-
-原生系统文件选择器可用时显示文件按钮；否则用传递文字跨设备。当前没有云同步。文件格式、文字校验、真实旧档迁移及恢复已通过软件检查；手机文件选择器、软键盘与剪贴板还需真实设备验收。
-
-## iOS与工程
-
-[iOS交接说明](ios-handoff/README.md)和源码ZIP供真实Mac使用；本目录没有已签名IPA。具体导出需要macOS、Xcode、Godot 4.7.2、实际Apple开发团队以及iPhone/iPad。
-
-[Godot共享工程](../game/project.godot)、[全部设计文档](../docs/incense-debt/README.md)、[五案记录](../docs/游戏方向提案-五案.md)均保留。美术通过指定sub2-image-gen/gpt-image-2.5生成并按锁定原图处理；声音为本地原创合成。运行包不含生成网关、供应商密钥、生产提示词或本地工具配置。
-
-精确包体SHA-256与字节数见[交付清单](delivery-manifest.json)。
-
-本版界面使用大圆角、圆形图标和胶囊行动。右上书本打开构筑，双竖线暂停，房屋回灯下，滑杆图标进入设置；供物点击图标展开详情，辅助设置点击信息图标查看解释。角色首页的信息图标打开天赋、路线、个人任务和三种技能；锁定角色也能查看条件及试演。“试演”不会解锁角色、领取奖励或改动挂起存档，顶部圆形箭头返回详情，刷新重置同一技能。正文字体为资源圆体，标题为得意黑；字体随游戏加载，无需系统安装。
-灯摊中的待售武器卡有准星图标，可进入独立靶场试射。试射沿用当前角色、遗物、行愿和焚债规则，固定靶不会攻击；左上圆形箭头返回灯摊，刷新重置靶场。试射不扣纸钱、不写入正式局或账号，回到灯摊后候选、钱包和随机流保持原样。
+Archives verify CRC and every member's full hash. Publication checks GitHub attachment digests before a stable release goes public. Historical tags/assets remain intact; no signed iOS IPA is included.

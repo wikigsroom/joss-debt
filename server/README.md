@@ -1,118 +1,80 @@
-# 香火债 · 共灯与对灯服务端
+# 香火债原生独立服务端 / Native dedicated server
 
-**0.4.1 联机可靠性修复：** 客户端／服务器需一起更新，采用 transport revision 1；0.4.0 检查点保持兼容并经过实际升级验证。顺序指令补发、状态停滞停战、输入与快照校验、持久身份接管及活跃房间容量见 [专项复查](../docs/incense-debt/43-network-reliability-audit.md)。已公开的 v0.4.0-alpha.1 附件仍为原版本。
+**0.5.0 正式联机发布**，提供 Linux x64 与 Windows x64。官方服务已部署为 `wss://xhz-server.sidcloud.cn/play`；客户端进入共灯自动连接，不展示／编辑地址。默认双人合作十一层、共享 NPC／钱包／掉落、各自成长、救援与真实门口推进；可选对灯 PvP 使用隔离队列。
 
-0.4.1 clients and server must be upgraded together. Transport revision 1 rejects old peers; existing 0.4.0 server checkpoints pass the native upgrade test. See the [reliability audit](../docs/incense-debt/43-network-reliability-audit.md) for command retries, state-progress protection, input/snapshot fences, ownership generations and active-room capacity. The public 0.4.0 release retains its original artifacts.
+Official 0.5.0 clients auto-connect to the fixed public WSS service. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
 
-原生 Godot 专用服务器。架构与恢复规格见 [合作设计](../docs/incense-debt/41-cooperative-architecture.md)与[原 PvP 设计](../docs/incense-debt/39-online-architecture.md)。共用协议与双人战斗代码放在 `game/scripts/network/`，本目录维护服务入口、启动配置和运维说明。运行数据不进入 Git。
+继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 1；旧传输版本明确拒绝。历史 0.4.0 检查点升级已有原生验证，旧 Release 保留原样。
 
-本机开发与验证直接使用 Windows 原生进程，不需要 Docker、WSL 或虚拟机。公网需要可持续运行的主机和有效 WSS 证书；本机地址不会自动变成公网服务。
+## 原生运行 / Native execution
 
-0.4.1 默认提供「共灯」双人合作十一层肉鸽：共享 NPC、房间、金币和掉落，各自成长、交易、债约与装备，倒地救援和双人同门／阶梯推进。快速匹配与六位房间隔离合作／切磋模式；「对灯」保留独立 PvP、四选一和三局两胜。六角色、32 武器、18 技能开放配装。
-
-A native Windows x64 server for 0.4.1 Co-Light: a shared eleven-floor roguelite with personal builds, shared coins, nearby rescue and physical team doors. Quick matching and six-digit rooms separate cooperative and optional Duel modes. The exported server needs no separate engine installation.
-
-## 发布包运行 / Run the server package
-
-解压服务端 ZIP 后双击 `StartServer.cmd`。脚本以 `--headless --max-fps 60` 启动同目录的 `IncenseDebtServer.exe`，读取 `config.json`，状态保存在旁边的 `data/`。不需要游戏素材、Godot 或 Python。看到 `ONLINE_READY` 表示成功启动。
-
-Extract the server ZIP and run `StartServer.cmd`. It loads `config.json`, stores state in `data/`, and prints `ONLINE_READY` when ready.
+Windows ZIP 完整解压后运行 `StartServer.cmd`，读取同目录 config.json、写入 server-data/，默认仅监听本机回环。Linux 解压后赋予可执行权限，系统应具备 Godot 4.7.2 headless 所需的原生库，无需桌面、Godot 安装或美术资源。
 
 ```powershell
-# 服务端目录中 / In the extracted server folder
-.\IncenseDebtServer.exe --headless --max-fps 60 -- --config="C:/Games/Duel/config.json" --data-dir="C:/Games/Duel/data"
+.\IncenseDebtServer.exe --headless --max-fps 60 -- --config=config.json
 Invoke-RestMethod http://127.0.0.1:18778/health
-# 优雅停机 / Graceful shutdown
-powershell -NoProfile -ExecutionPolicy Bypass -File .\StopServer.ps1
 ```
 
-两份同电脑客户端填写 `ws://127.0.0.1:18777`。局域网两台设备连接同一 Wi-Fi，在两个客户端的「共灯 → 服务器」填主机 IPv4，例如 `ws://192.168.1.10:18777`。手机的 `127.0.0.1` 指手机自身。Windows 防火墙需允许服务器在所选网络接收 **TCP 18777**；不使用 UDP。健康端口 **18778** 应限制在可信网络。
-
-Two clients on one PC use `ws://127.0.0.1:18777`. LAN clients use the server PC's IPv4 address, e.g. `ws://192.168.1.10:18777`. On a phone, localhost refers to the phone. Allow inbound TCP 18777; restrict health port 18778 to trusted operators.
-
-双方连接同一服务器、使用相同模式和 0.4.1 修复版。在六位房间页输入相同数字，先到者创建、后到者加入；保留前导零，每房两人，第三人被拒。房间码用于寻找开放房间，不是身份密码。合作与切磋使用独立 FIFO 队列；同码另一模式不能混入。
-
-Enter the same six-digit code on both clients: the first creates and the second joins. Leading zeroes are preserved. Rooms admit two players. Codes locate open rooms; they are not authentication secrets. Cooperation and Duel use separate FIFO queues; both clients need the same mode and version.
-
-## 源码运行与导出 / Source and build
-
-```powershell
-# 仓库根目录 / Repository root
-powershell -NoProfile -ExecutionPolicy Bypass -File server/run-server.ps1
-# 强制源码模式 / Force source runtime
-powershell -NoProfile -ExecutionPolicy Bypass -File server/run-server.ps1 -Source
-python tools/runtime/build_online_server.py
+```sh
+chmod +x IncenseDebtServer.x86_64
+./IncenseDebtServer.x86_64 --headless --max-fps 60 -- --config=/absolute/path/config.json
+curl --fail http://127.0.0.1:18778/health
 ```
 
-启动器优先使用已构建 EXE，源码模式调用 `.local-tools/godot-4.7.2/` 原生 Godot。构建工具创建隔离的小型工程，复制战斗、数据和服务模块，导出 `build/server/IncenseDebtServer.exe`，并记录共享源码 SHA-256。客户端美术、音频、用户存档和凭据不打入服务端。
-
-The launcher prefers the built EXE. Source mode uses the repository's native Godot. The exporter includes shared combat and data with source hashes, excluding client art, audio, user saves and credentials.
+All tools run natively; no Docker, WSL, VM or emulator. Official clients have a fixed service; self-hosting requires a development client configured for that server. QA URL overrides enter isolated test saves and are not a normal player setting.
 
 ## 配置 / Configuration
 
-复制 `config.example.json` 为 `config.json`。`--config=绝对路径` 加载配置，命令行参数覆盖配置。
+`config.example.json` 为源码示例；`linux/config.production.json` 为官方配置。CLI `--config=绝对路径` 加载配置，显式参数可覆盖。
 
-| 键 / Key | 默认 / Default | 用途 / Purpose |
+| Key | 默认 / Default | 用途 / Meaning |
 | --- | --- | --- |
-| `bind` | `0.0.0.0` | 监听地址；仅本机使用 `127.0.0.1` / Listen address |
-| `port` | `18777` | TCP WebSocket；健康检查用此值 + 1 / TCP game, health +1 |
-| `data_directory` / `--data-dir` | `user://online-server` | 发布启动器覆盖为旁边 `data/` / Persistent path |
-| `max_connections` | `16` | 连接与握手上限，含排队者 / Connection cap |
-| `max_rooms` | `2` | 等待和对局共用上限 / Waiting and active room cap |
-| `grace` | `90` 秒 | 真正断线后的恢复窗口；双方在线合作菜单无期限 / Disconnect grace; connected cooperative menus have no deadline |
-| `waiting` | `300` 秒 | 未开战房间 TTL / Lobby TTL |
-| `checkpoint` | `1` 秒 | 后台检查点捕获间隔 / Capture interval |
+| bind | 0.0.0.0（源码）；发布模板为 127.0.0.1 | 监听地址 / Bind |
+| port | 18777 | 游戏；健康端口为 +1 / Game, health +1 |
+| data_directory / --data-dir | user://online-server | 持久目录 / Persistent state |
+| max_rooms | 2 | 活跃房间，不计结果页 / Active rooms |
+| max_connections | 16 | 连接上限，不代表 16 人战斗 / Connection cap |
+| grace | 90 s | 真正断线恢复窗口 / Disconnect grace |
+| waiting | 300 s | 等待大厅期限 / Lobby timeout |
+| checkpoint | 1 s | 检查点周期 / Checkpoint interval |
 
-默认两房／16 连接。新版合作短时真实流量验收见[合作交付](../docs/incense-debt/42-cooperative-delivery.md)，旧 PvP 负载保留为历史记录。提高容量前在目标机器重测，不能把本机短时首房流量视为十一层长时、密集弹幕或公网承载承诺。
+## 官方 Linux 部署 / Official Linux deployment
 
-The two-room default has a separate current cooperative local benchmark. Earlier PvP loads remain historical. Re-test sustained campaign and dense-combat traffic on the intended host before increasing capacity.
+Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.5.0/`，current 符号链接指向当前版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
 
-## 公网 / Public WSS
+`linux/incense-debt.service` 使用独立用户与系统只读保护、内存软限制 192 MiB／硬限制 256 MiB、**仅本服务禁止 swap**、退出后 3 秒自动重启。`linux/stop.sh` 写入本服务的停止标记，等待最后检查点与正常退出。
 
-客户端不预设公共运营服务器。公网需持续运行的主机与有效证书的 TLS 反向代理，将 `wss://您的域名` 转到 `127.0.0.1:18777`，保留 WebSocket Upgrade，连接超时需容纳心跳和恢复窗口。原生 Caddy 的配置示例：
-
-```caddyfile
-duel.example.com {
-    reverse_proxy 127.0.0.1:18777
-}
+```sh
+sudo systemctl status incense-debt.service
+sudo systemctl restart incense-debt.service
+sudo systemctl stop incense-debt.service
+sudo journalctl -u incense-debt.service --since '10 minutes ago'
 ```
 
-此例不代表已经申请主机、证书或完成公网部署。18777／18778 可保持私有。`xhz.sidcloud.cn` 的 Vercel 站点仅托管隐私政策，独立于持续运行的游戏服务器。客户端保留正常证书验证；公网使用 WSS，明文 WS 只适合可信本机／局域网。
+当前主机已运行宝塔 Nginx。`linux/xhz-server.nginx.conf` 只配置本域名，使用实际 `/www/server/nginx/sbin/nginx`；不要安装／重启系统默认 Nginx、覆盖其他应用的全局配置。仅新增本游戏 vhost、测试并 reload 实际 Nginx。游戏／健康端口绑定回环，公开入口为 TLS 反代。
 
-Public play requires an always-running host and a TLS reverse proxy with a valid certificate. This example does not provision either. Keep raw game/health ports private. The Vercel privacy website is separate from the persistent server. Use WSS publicly; certificate verification remains enabled.
+The scoped templates assume the existing BT Nginx installation. Adapt paths on another host; do not replace unrelated services. Only the game's service, vhost and data directory are managed here.
 
-## 存盘与恢复 / Persistence and recovery
+| 公开入口 / Entry | 用途 / Purpose |
+| --- | --- |
+| https://xhz-server.sidcloud.cn/ | 下载与政策 / Release and policy |
+| https://xhz-server.sidcloud.cn/health | 不含玩家凭据的健康指标 / Credential-free health |
+| wss://xhz-server.sidcloud.cn/play | TLS WebSocket |
 
-`data/registry/checkpoint_0.json`、`checkpoint_1.json` 保存两代注册表，每代都使用独立房间文件（暂停也不共用文件），明确引用 `data/rooms/<随机房间>/revision_*.json` 的完整一致代。周期捕获从主线程分离完整状态，后台单一写入线程先房间、后注册表，每次最多一个任务。准备、选择、离开与结果的确认在可靠提交之后发送。
+证书 `/etc/letsencrypt/live/incense-debt-public/`，certbot.timer 已启用，续期 dry-run 成功；专属 deploy hook 仅针对本证书测试并 reload 实际 Nginx。访问日志关闭；专属错误日志按 `linux/logrotate.conf` 每日轮换、最多 14 天。不要发布 TLS 私钥、SSH 凭据、匿名 token 或检查点。
 
-Two registry generations reference independent immutable room generations, including while paused. A single bounded background writer commits detached snapshots, rooms first and registry last. Control and result acknowledgments follow durable commits.
+## 弱网与恢复 / Network and recovery
 
-备份先停机，再复制整个 `data/`，不要只拷最新 JSON。创建 `data/stop` 后，进程完成写入并打印 `ONLINE_STOPPED checkpoints_flushed=true`。强制结束可能丢失尚未提交的战斗尾部：一秒是捕获间隔，实际恢复点还受写入耗时影响。
+TCP 丢包主要表现为重传延迟、阻塞、积压或断线。事务同编号重试、服务端持久回执防止重复成长／扣款。250 ms 无有效输入停止移动射击，输入不能跨房间／暂停代数；状态过旧先停战，2 秒无进展再重连。普通断线自动退避重试，默认 90 秒内恢复，双方确认才能继续。
 
-Back up all of `data/` after graceful shutdown. A hard kill may lose the uncommitted battle tail: one second is the capture interval, not a strict loss bound.
+完整检查点保存地图、双方成长、钱包、救援、随机流与延迟攻击；两代注册表引用独立房间文件。正常退出后备份整个数据目录。硬崩溃可能丢失最近提交后的战斗尾部，不能承诺零回退。
 
-未完成对局重启后停在恢复等待，清空旧按键。原身份重新连接，恢复血量、位置、子弹、冷却、构筑、随机流和比分；两人确认后继续。新连接接管旧连接，旧端停止重试。超时结果只提交一次，不能复活旧比赛。最新注册表或房间损坏时回退到上一组一致代；均损坏则保留原件并拒绝启动。
+Control requests use durable deduplication; stale input, snapshots and ownership generations are rejected. State stalls pause combat independently of ping. Recovery restores the latest committed world and requires both players to resume.
 
-Unfinished matches restart suspended with old input cleared. Original identities recover combat and RNG state; both players confirm before resuming. Takeover stops the old client's retries. Expired results settle once. Corruption falls back consistently; unrecoverable data is preserved and startup refused.
+## 实测与容量 / Measurement and capacity
 
-`storage_fault=true` 停止战斗与新控制事务，客户端显示停战，后台尝试恢复写入。检查磁盘和目录权限。不要公开服务端 `data/`、客户端 `online-client/` 或恢复密钥。默认 14 天后清理离线无房间身份、过期结算账册及不再被恢复代引用的已释放房间文件；活动与恢复数据受保护。外部备份和代理日志由运营者管理。
+[0.5.0 报告](../docs/incense-debt/44-public-online-release.md)及[原生证据](../docs/incense-debt/reports/public-online-2026-10-11)：实际 Windows 包经官方 WSS 的合作 29 项、PvP 32 项；真实线上重启恢复 10 项；两房四个正式 Session 连续 60.399 秒、4542 快照、59.89 Hz、RTT p95 358 ms、状态年龄 p95 184 ms。实际 Linux／Windows 服务包分别有 37 份共享模块与客户端一致。
 
-Storage faults suspend combat and new transactions while writes are retried. Protect data and recovery credentials. Default retention clears inactive roomless identities and expired unreferenced data after 14 days; operators manage external backups and proxy logs.
+一分钟测量不是 SLA 或长时容量保证。共享主机／公网抖动仍存在；无恢复逻辑的原始 WebSocket 压测器曾发生连接关闭，原因未完全隔离。正式 Session 在记录的测量中无会话错误并通过恢复测试，不能据此宣称网络永不丢包。维持两间活跃房间，扩容前需长时负载和 Android 真机验收。
 
-协议 2／cooperative-1-duel-2 与 0.3.0 不兼容，内容／规则指纹变化拒绝加载旧联机检查点。升级前完成旧比赛并备份，更新后使用新数据目录。离线三槽存档兼容规则独立。
-
-Protocol 2 / cooperative-1-duel-2 cannot mix with 0.3.0. A content/rules mismatch rejects old online checkpoints. Finish and back up matches before upgrading, then use a new data directory. Offline save compatibility is separate.
-
-## 验收 / Verification
-
-健康接口显示连接、房间、排队、Tick、物理及网络处理 P95／P99／最大耗时、积压字节、后台写入与持久化错误，不含昵称、房间码或恢复密钥。
-
-```powershell
-python tools/runtime/run_online_recovery_qa.py --cooperative --packaged-server
-python tools/runtime/run_online_load_qa.py --cooperative --rooms 2 --seconds 60
-python tools/runtime/run_online_native_qa.py --cooperative --packaged
-```
-
-恢复测试对隔离目录中的实际 EXE 执行崩溃、重启、双类损坏、身份接管和超时；负载测试另起原生进程发送真实射击与技能。客户端原生输入与宽屏触控测试使用真实连接；APK 权限、签名和模块检查不等于手机真机联机验收。测试凭据只保存在 `.local-tools/`。
-
-Tests use actual native processes and real traffic, with corruption restricted to isolated data. APK inspection is not physical-device multiplayer validation. Test identities remain private under `.local-tools/`.
+This is a bounded WAN test, not an availability guarantee. Raw clients without recovery have seen connection closure with an unresolved cause. Shipping sessions pass the recorded load/restart scenarios; sustained capacity and physical Android remain to be tested.

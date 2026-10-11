@@ -16,6 +16,7 @@ var intervals: Array = []
 var states = 0
 var rounds = 0
 var game_mode = "duel"
+var code_base = 300000
 
 func _initialize() -> void:
 	for arg in OS.get_cmdline_user_args():
@@ -25,6 +26,7 @@ func _initialize() -> void:
 		if arg.begins_with("--weapons="): weapons = Array(arg.trim_prefix("--weapons=").split(",", false))
 		if arg.begins_with("--output="): output = arg.trim_prefix("--output=")
 		if arg.begins_with("--game-mode="): game_mode = arg.trim_prefix("--game-mode=")
+		if arg.begins_with("--code-base="): code_base = int(arg.trim_prefix("--code-base="))
 	started = Time.get_ticks_msec() / 1000.0
 	for index in room_count * 2:
 		var socket = WebSocketPeer.new()
@@ -55,6 +57,9 @@ func _process(delta: float) -> bool:
 	for client in clients:
 		client.peer.poll()
 		if client.peer.get_ready_state() != WebSocketPeer.STATE_OPEN:
+			if client.hello and client.peer.get_ready_state() == WebSocketPeer.STATE_CLOSED and not client.get("closure_recorded", false):
+				client.closure_recorded = true
+				errors.append("socket_closed/%s/%s" % [client.peer.get_close_code(), client.peer.get_close_reason()])
 			if now - started > 12: errors.append("connection_closed")
 			continue
 		if not client.hello:
@@ -67,7 +72,7 @@ func _process(delta: float) -> bool:
 			match message.get("op"):
 				"welcome":
 					var loadout = {"character": "c_paper", "weapon": weapons[(client.index / 2) % weapons.size()], "skill": "s01"}
-					command(client, "code", {"code": "%06d" % (300000 + client.index / 2), "loadout": loadout, "game_mode": game_mode})
+					command(client, "code", {"code": "%06d" % (code_base + client.index / 2), "loadout": loadout, "game_mode": game_mode})
 				"ack":
 					if not message.get("ok", false): errors.append(str(message.get("code")))
 				"error": errors.append(str(message.get("code")))
@@ -89,7 +94,10 @@ func _process(delta: float) -> bool:
 					if int(view.picked[int(view.seat)]) < 0: once(client, str(view.choice_token), "choose", {"index": 0, "choice_token": view.choice_token})
 				else: once(client, round_key, "choose", {"index": client.index % 4})
 			"finished": once(client, match_key + "rematch", "rematch")
-			"suspended": errors.append("unexpected_suspension")
+			"suspended":
+				if not client.get("suspension_recorded", false):
+					client.suspension_recorded = true
+					errors.append("unexpected_suspension/" + str(view.get("suspend_reason", "")))
 			"playing":
 				if input_due:
 					client.seq += 1

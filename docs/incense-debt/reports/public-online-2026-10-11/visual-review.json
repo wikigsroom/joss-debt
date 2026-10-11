@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "windows_sha256": "ad63f10b611d53641b483710c63d35539db28aeeec448c71b34b1df57a1e235c",
+  "reviewed_pages": 92,
+  "overview_groups": [
+    "desktop",
+    "x30",
+    "wide-phone",
+    "tablet"
+  ],
+  "full_size_review": [
+    "x30-coop-replacement",
+    "x30-coop-debt-repay",
+    "coop-hub",
+    "coop-combat"
+  ],
+  "physical_android": false,
+  "notes": "92-page visual contact sheets reviewed; full-size art, controls, clipping and safe margins checked; fixtures separate from native WSS captures"
+}

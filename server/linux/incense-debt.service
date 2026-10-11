@@ -1,0 +1,33 @@
+[Unit]
+Description=Incense Debt authoritative multiplayer server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=incense-debt
+Group=incense-debt
+WorkingDirectory=/opt/incense-debt/current
+Environment=LANG=C.UTF-8
+ExecStartPre=/usr/bin/rm -f /var/lib/incense-debt/stop
+ExecStart=/opt/incense-debt/current/IncenseDebtServer.x86_64 --headless --max-fps 60 -- --config=/opt/incense-debt/config.json
+ExecStop=/bin/bash /opt/incense-debt/current/stop.sh
+Restart=always
+RestartSec=3
+TimeoutStopSec=20
+StateDirectory=incense-debt
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/incense-debt
+MemoryHigh=192M
+MemoryMax=256M
+MemorySwapMax=0
+LimitNOFILE=4096
+LogRateLimitIntervalSec=30
+LogRateLimitBurst=60
+
+[Install]
+WantedBy=multi-user.target

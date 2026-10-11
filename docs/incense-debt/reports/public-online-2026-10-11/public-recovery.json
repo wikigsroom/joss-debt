@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "id": "both_authenticated_over_public_wss",
+      "passed": true
+    },
+    {
+      "id": "first_creates_room",
+      "passed": true
+    },
+    {
+      "id": "second_joins_same_room",
+      "passed": true
+    },
+    {
+      "id": "playing_before_restart",
+      "passed": true
+    },
+    {
+      "id": "mutual_pause_observed",
+      "passed": true
+    },
+    {
+      "id": "both_automatically_reconnect_after_service_restart",
+      "passed": true
+    },
+    {
+      "id": "checkpoint_preserves_room_actors_and_growth",
+      "passed": true
+    },
+    {
+      "id": "restart_requires_both_confirmations",
+      "passed": true
+    },
+    {
+      "id": "one_confirmation_cannot_resume_battle",
+      "passed": true
+    },
+    {
+      "id": "both_confirmations_resume_real_battle",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "real_public_wss": true,
+  "endpoint": "wss://xhz-server.sidcloud.cn/play",
+  "server_version": "0.5.0",
+  "recorded_at": "2026-10-11T09:24:25.512289+00:00"
+}

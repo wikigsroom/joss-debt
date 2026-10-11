@@ -1,0 +1,93 @@
+{
+  "scope": "Actual Windows release EXE through public WSS; prefixed layout images are offline fixtures",
+  "windows_sha256": "ad63f10b611d53641b483710c63d35539db28aeeec448c71b34b1df57a1e235c",
+  "gif_frames": 20,
+  "gif_duration_ms": 100,
+  "files": [
+    {
+      "name": "coop-combat.png",
+      "sha256": "47abf8b85cc7906711caefed8bfe181c7fcb82ce4afae5397f0ef9fbcf34038a",
+      "bytes": 1546117
+    },
+    {
+      "name": "coop-growth.png",
+      "sha256": "fe96b69cb397a0d95468dedaee263b5b7f102692e0ada5c14711d3afd71f010d",
+      "bytes": 834846
+    },
+    {
+      "name": "coop-history.png",
+      "sha256": "425baa5fc8b243d0020b5cc0b120600402af40ac58e3cb89fc3627f757a49e60",
+      "bytes": 984650
+    },
+    {
+      "name": "coop-hub.png",
+      "sha256": "fe022204025843b8fd9fad36766319b15f39505f6c69603ff7d6451df2e39e6d",
+      "bytes": 465784
+    },
+    {
+      "name": "coop-loadout.png",
+      "sha256": "94e0119392cc55877771b9f18394f053c7ab00385b66b3715e6222462a30a37d",
+      "bytes": 464038
+    },
+    {
+      "name": "coop-lobby.png",
+      "sha256": "c561dd407052bc3f6f415c897b7e88ad44df6326fabd80a191e1d24d35804eac",
+      "bytes": 376009
+    },
+    {
+      "name": "coop-map.png",
+      "sha256": "5148678f42d74d119cb79ee098cbd79207d723e9f8be6dba2bf35b59bf1f1f48",
+      "bytes": 218292
+    },
+    {
+      "name": "coop-profile.png",
+      "sha256": "857282996f64a03315c51c4b747e2f0f56b109347a06aaf4a035027a363bdd68",
+      "bytes": 202115
+    },
+    {
+      "name": "coop-reconnect.png",
+      "sha256": "352198935571f427b025e46c10bc884e3dfb266f1d94b3e9227a7d90cefff65f",
+      "bytes": 230052
+    },
+    {
+      "name": "coop-wide-touch.png",
+      "sha256": "f337c9401b4a29d5b05955e762db58617ed5520973388c788acabab92dc847a7",
+      "bytes": 3982541
+    },
+    {
+      "name": "cooperative-native.gif",
+      "sha256": "ed25b3ddeae7c588401877289222d0a0920c028ccd138903cb55c08ab9eaac20",
+      "bytes": 6864144
+    },
+    {
+      "name": "tablet-coop-lobby.png",
+      "sha256": "da64ee622c30351caf1dccef33a91e37b8129daa7d65e8fe4c4d09f60526574b",
+      "bytes": 1362794
+    },
+    {
+      "name": "wide-phone-coop-draft.png",
+      "sha256": "c9dd5d86fa175478420e444c8ba8a0ac4999982f9106887766447728cea737fc",
+      "bytes": 1021537
+    },
+    {
+      "name": "x30-coop-debt-build.png",
+      "sha256": "253629a8d8593a5b765c345880936577ae9c369d5641622425eb6b9a6d05d89d",
+      "bytes": 935611
+    },
+    {
+      "name": "x30-coop-debt-repay.png",
+      "sha256": "3d63a11ad9bdf7996b6065a6c40d9f258952c645a1408912b1a38996db405ba4",
+      "bytes": 748222
+    },
+    {
+      "name": "x30-coop-replacement.png",
+      "sha256": "73edbb6bae9993d8edf648ad845a105ce9aee4fbf6087f242981b8bd8ba6197d",
+      "bytes": 941756
+    },
+    {
+      "name": "x30-loadout.png",
+      "sha256": "cfe62cacd28353737096fc6220c0042692dfc987fadefe1cd309b193eb29583b",
+      "bytes": 1229646
+    }
+  ]
+}

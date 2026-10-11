@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "id": "scripts/core/choice_shortcuts.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/content_db.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/daily_seed.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/damage_record.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/derived_seed.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/expanded_campaign.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/meta_progress.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/room_graph.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/run_rng.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/run_telemetry.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/save_migrations.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/save_session.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/save_slots.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/save_store.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/save_transfer.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/story_book.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/core/weapon_trial.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/attack_composer.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/boss_patterns.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/creature_actions.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/effects.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/enemy_patterns.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/equipment.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/expanded_patterns.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/expanded_weapons.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/impact_control.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/interactive_scenery.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/projectile_styles.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/room_geometry.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/combat/world.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/protocol.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/duel_actor.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/duel_match.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/cooperative_world.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/cooperative_match.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/server_runtime.gdc",
+      "passed": true
+    },
+    {
+      "id": "scripts/network/server_entry.gdc",
+      "passed": true
+    }
+  ],
+  "compiled_shared_modules": 37,
+  "passed": true,
+  "recorded_at": "2026-10-11T09:41:54.215611+00:00",
+  "windows_sha256": "ad63f10b611d53641b483710c63d35539db28aeeec448c71b34b1df57a1e235c",
+  "server_sha256": "1b848e654388fda189b9ac871ef19f391ab166ad9ef684bc4768b621b07c0212",
+  "virtualization": "none"
+}

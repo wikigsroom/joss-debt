@@ -122,3 +122,7 @@ Thumbs.db
 
 # README-linked native capture of the network reliability patch.
 !/docs/incense-debt/reports/network-reliability-2026-10-11/media/cooperative-native.gif
+
+# Reviewed screenshots and real WSS gameplay referenced by the 0.5.0 README.
+!/docs/incense-debt/reports/public-online-2026-10-11/media/*.png
+!/docs/incense-debt/reports/public-online-2026-10-11/media/cooperative-native.gif

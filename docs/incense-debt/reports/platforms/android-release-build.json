@@ -1,0 +1,14 @@
+{
+  "platform": "android",
+  "path": "build/android/IncenseDebt.apk",
+  "bytes": 1022819407,
+  "sha256": "600ec0d5ef757fbc9f2d50e07fd453ddd668dec3c2fc270006dd5e55923b1d94",
+  "engine": "4.7.2",
+  "build": "release",
+  "version": "0.5.0",
+  "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
+  "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
+  "device_tested": false,
+  "virtualization": "none",
+  "signing": "release_with_legacy_rotation"
+}

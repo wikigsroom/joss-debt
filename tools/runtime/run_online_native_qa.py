@@ -14,6 +14,7 @@ def main():
     parser.add_argument("--url", default="ws://127.0.0.1:18777")
     parser.add_argument("--packaged", action="store_true")
     parser.add_argument("--cooperative", action="store_true")
+    parser.add_argument("--public-exit-wait", action="store_true", help="Use an external fixture that awaits the WAN leave acknowledgement")
     parser.add_argument("--output", type=Path)
     options = parser.parse_args()
     folder = options.output or ROOT / ".local-tools/online-development" / ("native-" + datetime.now().strftime("%Y%m%d-%H%M%S"))
@@ -23,7 +24,23 @@ def main():
     args = [str(engine), "--max-fps", "60", "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3", "--resolution", "1280x720", "--position", "-16000,-16000"]
     if not options.packaged:
         args += ["--path", str(ROOT / "game")]
-    args += ["--", "--qa-coop" if options.cooperative else "--qa-online", "--qa-output=" + str(folder), "--online-url=" + options.url]
+    fixture_path = None
+    if options.public_exit_wait:
+        if not options.packaged or options.cooperative:
+            raise ValueError("The exit-wait fixture is for packaged Duel acceptance")
+        source = (ROOT / "game/scripts/ui/online_native_qa.gd").read_text("utf8")
+        original = '\tawait activate("online_return")\n\tawait activate("online_code")'
+        if source.count(original) != 1:
+            raise RuntimeError("The native fixture leave transition changed")
+        source = source.replace(original, '\tawait activate("online_return")\n\tawait until(func(): return app.online.session.room.is_empty() and app.online.session.state == "online")\n\tawait activate("online_code")')
+        fixture_path = folder / "duel-wan-fixture.gd"
+        fixture_path.write_text(source, "utf8")
+        args[0] = str(ROOT / ".local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe")
+        args += ["--main-pack", str(engine), "--script", str(ROOT / "game/tests/online_native_external.gd")]
+        args += ["--", "--qa-layout", "--external-fixture=" + str(fixture_path)]
+    else:
+        args += ["--", "--qa-coop" if options.cooperative else "--qa-online"]
+    args += ["--qa-output=" + str(folder), "--online-url=" + options.url]
     startup = subprocess.STARTUPINFO()
     startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW
     startup.wShowWindow = subprocess.SW_HIDE
@@ -42,7 +59,9 @@ def main():
     if not path.is_file():
         return 1
     report = json.loads(path.read_text("utf8"))
-    report.update(recorded_at=datetime.now(timezone.utc).isoformat(), packaged=options.packaged)
+    report.update(recorded_at=datetime.now(timezone.utc).isoformat(), packaged=options.packaged, transport_endpoint=options.url)
+    if fixture_path:
+        report.update(external_acceptance_fixture=True, fixture_sha256=hashlib.sha256(fixture_path.read_bytes()).hexdigest(), fixture_change="Wait for the actual server leave acknowledgement before navigating the hub; production bytecode unchanged")
     if options.packaged:
         with engine.open("rb") as source:
             report["artifact_sha256"] = hashlib.file_digest(source, "sha256").hexdigest()

@@ -60,6 +60,9 @@ func target(id: String) -> bool:
 	expect("keyboard_path_" + id, false, app.screen)
 	return false
 
+func has_control(id: String) -> bool:
+	return app.keyboard.candidates(app.modal).any(func(control): return str(control.get_meta("nav_id", "")) == id)
+
 func activate(id: String) -> bool:
 	if not await target(id): return false
 	await key(KEY_ENTER)
@@ -89,9 +92,12 @@ func _physics_process(_delta: float) -> void:
 		opponent.submit_input(frame)
 
 func resume_both() -> bool:
+	# WAN peers can observe the suspension epoch on different frames. Send both
+	# confirmations only after both authoritative views identify the same pause.
+	if not await until(func(): return app.online.session.room.get("phase") == "suspended" and opponent.room.get("phase") == "suspended" and app.online.session.room.get("input_epoch") == opponent.room.get("input_epoch"), 7): return false
 	await activate("online_resume")
 	opponent.request("resume")
-	return await until(func(): return app.online.session.can_play() and opponent.can_play(), 7)
+	return await until(func(): return app.online.session.can_play() and opponent.can_play(), 10)
 
 func run() -> void:
 	previous_clipboard = DisplayServer.clipboard_get()
@@ -104,11 +110,13 @@ func run() -> void:
 	expect("main_menu_keyboard_opens_online", app.online.active() and app.screen == "online")
 	offline_digest = JSON.stringify(Store.encode(app.save_session.current)).sha256_text()
 	await capture("hub")
-	await activate("online_config")
-	await paste("online_endpoint", url)
+	expect("open_connects_automatically", app.online.session.wants_connection and await until(func(): return app.online.session.state == "online", 15))
+	expect("no_endpoint_editor_or_config_entry", not has_control("online_endpoint") and not has_control("online_config"))
+	await activate("online_profile")
 	await paste("online_nickname", "Paper A")
-	await activate("online_save_address")
-	expect("keyboard_endpoint_and_name_save", app.online.session.endpoint == url and app.online.session.nickname == "Paper A")
+	await capture("profile")
+	await activate("online_save_profile")
+	expect("keyboard_name_save_keeps_automatic_service", app.online.session.endpoint == url and app.online.session.nickname == "Paper A")
 	await activate("online_loadout")
 	await activate("online_character_c_lantern")
 	await activate("online_skill_s09")
@@ -117,9 +125,7 @@ func run() -> void:
 	await capture("loadout")
 	await key(KEY_ESCAPE)
 	await activate("online_queue")
-	expect("first_connection_explains_data_before_network", app.online.page == "consent" and not app.online.session.wants_connection)
-	await capture("connection-consent")
-	await activate("online_consent")
+	expect("matching_does_not_require_manual_connection", app.online.page != "consent" and app.online.session.wants_connection)
 	expect("real_queue_wait", await until(func(): return app.online.session.state == "queued"))
 	opponent = Session.new(directory.path_join("opponent"))
 	add_child(opponent)
@@ -140,10 +146,10 @@ func run() -> void:
 	if app.online.session.presentation.size() != 2: finish(); return
 	drive_opponent = true
 	var old_position: Vector2 = app.world.player.pos
-	await hold(KEY_D, .6)
-	expect("keyboard_movement_sent_to_authority", opponent.presentation[0].player.pos.x > old_position.x + 35)
-	await hold(KEY_RIGHT, .7)
-	expect("arrow_key_fires_at_opponent", app.online.session.presentation[1].player.hp < app.online.session.presentation[1].player.max_hp)
+	await hold(KEY_D, 1.0)
+	expect("keyboard_movement_sent_to_authority", await until(func(): return opponent.presentation[0].player.pos.x > old_position.x + 35, 3), "start=%s remote=%s phase=%s rtt=%s" % [old_position, opponent.presentation[0].player.pos, opponent.room.get("phase"), app.online.session.latency_ms])
+	await hold(KEY_RIGHT, 1.5)
+	expect("arrow_key_fires_at_opponent", await until(func(): return app.online.session.presentation[1].player.hp < app.online.session.presentation[1].player.max_hp, 3), "hp=%s phase=%s" % [app.online.session.presentation[1].player.hp, app.online.session.room.get("phase")])
 	await key(KEY_Q)
 	expect("keyboard_character_skill", await until(func(): return app.world.player.skill_cd > 0 or app.world.player.energy < 95, 2))
 	expect("other_player_uses_real_hero_renderer", app.renderer.online_actors.size() == 1 and app.world.enemies[0].online_actor)
@@ -166,7 +172,7 @@ func run() -> void:
 	expect("native_loss_suspends_other", await until(func(): return opponent.room.get("phase") == "suspended"))
 	await capture("reconnect")
 	expect("native_automatic_reconnect", await until(func(): return app.online.session.state == "room" and app.online.session.room.get("phase") == "suspended", 8))
-	expect("reconnect_keyboard_resume", await resume_both())
+	expect("reconnect_keyboard_resume", await resume_both(), "local=%s remote=%s" % [app.online.session.room.get("phase"), opponent.room.get("phase")])
 	# Real native wide viewport with the same safe-area and touch input path as Android.
 	app.mobile_ui = true
 	app.settings.touch = true
@@ -190,7 +196,7 @@ func run() -> void:
 	await get_tree().create_timer(.45).timeout
 	touch = touch.duplicate(); touch.pressed = false
 	Input.parse_input_event(touch)
-	expect("native_wide_touch_movement", opponent.presentation[0].player.pos.x > old_position.x + 15)
+	expect("native_wide_touch_movement", await until(func(): return opponent.presentation[0].player.pos.x > old_position.x + 15, 3), "start=%s remote=%s phase=%s" % [old_position, opponent.presentation[0].player.pos, opponent.room.get("phase")])
 	expect("native_right_hand_actions", app.adapter.control_center("dash").x > app.adapter.safe_rect.get_center().x and app.adapter.control_center("skill").x > app.adapter.safe_rect.get_center().x)
 	await capture("wide-mobile")
 	# Record real battle frames, with genuine keyboard aim/fire driving the beam.

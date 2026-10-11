@@ -1,0 +1,58 @@
+{
+  "version": "0.4.1",
+  "status": "verified_network_reliability_alpha_local",
+  "recorded_at": "2026-10-11T08:07:37.972118+00:00",
+  "files": [
+    {
+      "path": "build/windows/IncenseDebt.exe",
+      "sha256": "b956487845f18859adcd90016f53cfaba24d185344d5bfb2cbd13368b4bf6e8e",
+      "bytes": 1108841888
+    },
+    {
+      "path": "build/android/IncenseDebt.apk",
+      "sha256": "baacb3414cb5e44eaf74510a9ed8ed43fad3f2617e648a8c46180ad9e68332b9",
+      "bytes": 1025416864
+    },
+    {
+      "path": "build/server/IncenseDebtServer.exe",
+      "sha256": "05fc609133a4b3bc647a7044a25226447049c2aa703549011fe06aefc854f2f0",
+      "bytes": 110855328
+    }
+  ],
+  "revision_report": "docs/incense-debt/reports/network-reliability-2026-10-11/audit.json",
+  "revision_document": "docs/incense-debt/43-network-reliability-audit.md",
+  "revision_reports": "docs/incense-debt/reports/network-reliability-2026-10-11",
+  "runtime_assets": 3810,
+  "matching_compiled_scripts": 90,
+  "checks": {
+    "faults": 65,
+    "tcp": 18,
+    "storage": 7,
+    "combat": 125,
+    "transport": 32,
+    "native": 27,
+    "duel-native": 30,
+    "duel-combat": 271,
+    "offline-core": 36,
+    "keyboard": 107,
+    "package-parity": 2171,
+    "client-server-parity": 37,
+    "recovery": 57,
+    "upgrade": 12
+  },
+  "android_signing": "debug",
+  "android_version_code": 8,
+  "android_physical_device_tested": false,
+  "public_game_server_deployed": false,
+  "ios_handoff_version": "0.2.0_historical",
+  "save_schema": 2,
+  "public_github_release": "v0.4.0-alpha.1",
+  "public_release_state": "historical_0.4.0_published_current_0.4.1_not_published",
+  "previous_delivery_manifest": "docs/incense-debt/reports/network-reliability-2026-10-11/baseline-0.4.0/delivery-manifest.json",
+  "public_release_commit": "b7770040265ff0fb1c8b8e6eddce426ff8884ad1",
+  "public_release_published_at": "2026-10-11T02:39:05Z",
+  "publication_receipt": "docs/releases/v0.4.0-alpha.1.publication.json",
+  "release_https_verification": "docs/releases/v0.4.0-alpha.1.https.json",
+  "local_build_publication": "not_published",
+  "public_release_version": "0.4.0"
+}

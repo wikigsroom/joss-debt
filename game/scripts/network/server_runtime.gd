@@ -1004,7 +1004,7 @@ func health() -> Dictionary:
 		buffered += entry.peer.get_current_outbound_buffered_amount()
 		unacked += entry.state_pending.size()
 		largest_window = maxi(largest_window, entry.state_pending.size())
-	return {"service": "IncenseDebt Online", "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION, "uptime": uptime,
+	return {"service": "IncenseDebt Online", "version": str(ProjectSettings.get_setting("application/config/version", "")), "protocol": Protocol.VERSION, "transport": Protocol.TRANSPORT_REVISION, "uptime": uptime,
 		"connections": connections.size(), "rooms": rooms.size(), "active_rooms": active_room_count(), "queued": queue.size(), "tick": ticks,
 		"step_p95_ms": samples[int((samples.size() - 1) * .95)] if not samples.is_empty() else 0.0,
 		"step_p99_ms": samples[int((samples.size() - 1) * .99)] if not samples.is_empty() else 0.0,

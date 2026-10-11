@@ -5,23 +5,24 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[v0.4.0-alpha.1 联机 Alpha / Online prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1)** · [中英发布说明 / Bilingual release notes](docs/releases/v0.4.0-alpha.1.md) · [安装与操作 / Installation and controls](docs/releases/START-HERE.md)
+**[v0.5.0 正式联机版 / Stable online release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)** · [中英发布说明 / Release notes](docs/releases/v0.5.0.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
 
-[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-windows-x64.zip) · [Android arm64 APK（调试签名 / debug signed）](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-android-arm64-debug.apk) · [独立服务端 / Standalone server](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/IncenseDebt-v0.4.0-alpha.1-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.4.0-alpha.1/SHA256SUMS.txt)
+[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/IncenseDebt-v0.5.0-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.5.0/SHA256SUMS.txt)
 
-**0.4.1 联机可靠性修复 / Multiplayer reliability patch：** 当前源码与本地修复构建改进控制指令重试、地图状态中断、旧输入与快照、匿名身份接管和结果房间容量；详见 [完整复查与原生证据 / Audit and native evidence](docs/incense-debt/43-network-reliability-audit.md)。以上公开下载链接仍指向 0.4.0；使用新修复需要同时更新客户端和服务器。  
-Current source and local 0.4.1 builds contain the reliability patch. Public downloads above are still 0.4.0. Update clients and server together to use the new transport; existing 0.4.0 server-data recovery was verified.
+**进入共灯，自动联机。** 官方服务已上线，默认两人合作，无需填地址。普通断线自动重试，恢复后双方确认再继续。继承控制指令补发、旧输入拒绝、快照停滞停战和持久身份保护，并用实际发布包完成公网恢复验证。见 [完整交付与限制](docs/incense-debt/44-public-online-release.md)。
+
+**Open Co-Light to connect automatically.** The official service is live, cooperation is the default, and normal disconnects retry automatically. Both players confirm before resuming. Native public-WAN validation covers the shipping clients and Linux server; see [evidence and limits](docs/incense-debt/44-public-online-release.md). Physical Android acceptance and long-term capacity remain pending.
 
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **源码／本地构建 0.4.1；公开发布 0.4.0 / source and local builds 0.4.1; public release 0.4.0** · 十一层离线 + 共灯合作 + 可选对灯 Alpha |
+| 版本 / Version | **0.5.0 正式联机版 / Stable online release** · 十一层离线 + 共灯合作 + 可选对灯 |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
 | 游玩 / Play | 离线单人 + 可选联机；本地愿簿、独立匿名联机身份 / offline solo + optional multiplayer, local saves and separate anonymous online identity |
 | 游戏语言 / Game language | 当前界面与叙事为简体中文；本 README 为中英双语 / the game currently uses Simplified Chinese; this README is bilingual |
-| 平台 / Platforms | Windows 0.4.1 本地客户端与服务端；Android 0.4.1 / code 8 本地调试包；iOS 保留 0.2.0 交接 / local Windows client/server and Android debug APK; historical iOS handoff |
+| 平台 / Platforms | Windows x64、Android 9+ arm64 正式签名、Linux／Windows 原生服务端；iOS 仅历史交接 / Windows, signed Android, native Linux/Windows servers; historical iOS handoff |
 
 ### 双人共灯合作 / Two-player Co-Light campaign
 
@@ -41,20 +42,23 @@ The default multiplayer mode joins two heroes in the same eleven-floor roguelite
 | 结局 / Result | 十一层团队胜利；双方倒地、离开或超时团队失败；唯一结算 / Team victory, defeat or interruption; exactly-once settlement |
 | 手机 / Mobile | 左手仅移动，右手瞄准、射击、身法、技能和交互；保留长屏安全区 / Movement left, combat/interact right; widescreen safe areas |
 
-**开始合作：** 解压服务端 ZIP 并运行 `StartServer.cmd`。客户端进入「共灯 → 服务器」，同电脑填写 `ws://127.0.0.1:18777`；手机／另一电脑填写主机局域网 IPv4，例如 `ws://192.168.1.10:18777`。双方使用 0.4.0、相同地址和合作模式，再快速匹配或输入同一房间码。首次连接显示所选服务器和数据告知；服务主机允许 TCP 18777。手机 localhost 指手机自己。  
-**Play together:** Extract the server ZIP and run `StartServer.cmd`. Open Co-Light → Server. Use localhost on the host PC, or its LAN IPv4 on phones/other PCs. Both clients must use 0.4.0, the same address and cooperative mode. Quick-match or enter the same six digits; first connection displays a data notice. Permit TCP 18777. Localhost on a phone means that phone.
+**开始合作：** 主菜单阅读联机告知，进入「共灯」即自动连接。快速匹配，或两人输入相同六位房间码；前导零保留，双方准备后开始。昵称与配装在大厅修改。一般玩家无需下载服务端，客户端无地址编辑框。
 
-合作提供六角色、32 武器和18 技能的自由配装，各自成长与演化。单人三槽愿簿不上传或被改写，匿名联机身份的合作／对战战绩分别记录。大厅仍可切换「对灯切磋」：独立 PvP、每轮四选一、先赢两轮获胜；两个模式匹配隔离。  
-Cooperation allows all six heroes, 32 weapons and 18 skills, with individual growth/evolution. Solo save slots remain separate. Anonymous online records distinguish cooperative and Duel results. Optional Duel retains independent PvP with per-round drafting and first-to-two wins; queues are separated.
+**Play together:** Review the main-menu notice and open Co-Light. Quick-match or share the same six digits; both players ready up. Change nickname/loadout in the hub. No server setup or address entry is needed.
 
-服务器裁定 60 Hz，共享场景以 20 Hz 快照显示；完整恢复保存包括双方成长、随机流、延迟攻击与救援。两代注册表分别引用独立房间文件，暂停时也能做损坏回退。默认两房／16 连接；实际短时合作负载见验收记录，目标主机与长时容量需重测。**未部署默认公网游戏服务器**，Vercel 仅托管隐私政策；公网 WSS 和常驻主机见[服务端说明](server/README.md)。  
-The server simulates at 60 Hz and sends 20 Hz shared-scene snapshots. Full recovery retains both builds, RNG, delayed attacks and rescue. Independent room generations support corruption fallback, including while paused. Defaults are two rooms/16 connections; re-test sustained capacity on the target host. No default public game server is deployed. Vercel hosts privacy only; see [server operations](server/README.md) for WSS and persistent hosting.
+合作开放六角色、32 武器、18 技能，自由配装、各自成长与演化。离线三槽愿簿保持独立、不上传；匿名身份的合作／对战战绩分别记录。可选对灯保留每轮四选一和三局两胜，匹配队列隔离。
 
-0.4.0 发布包验收：合作规则 125 项、真实传输 32 项、实际服务端恢复 57 项、写盘故障 7 项；Windows 合作流程 27 项／31 张捕获、PvP 流程 30 项、离线键盘 107 项；跨包核对 2171 项、90 份编译脚本一致，客户端／服务端 37 份共享编译模块一致。两房四客户端 60 秒本机实测 59.18 Hz。0.4.1 本轮验证以 [可靠性报告](docs/incense-debt/43-network-reliability-audit.md) 的新包体摘要和实际检查为准。
+All six heroes, 32 weapons and 18 skills support personal builds. Offline saves stay local. Optional Duel retains per-round drafting and first-to-two wins in a separate queue.
 
-The published 0.4.0 package passed 125 co-op rule, 32 transport, 57 server recovery, 7 storage, 27 client co-op and 30 Duel checks, plus 107 keyboard and 2171 package checks. Its 90 client scripts and 37 shared modules matched; the local 60-second load sustained 59.18 Hz. Current 0.4.1 evidence and hashes are recorded separately in the [reliability audit](docs/incense-debt/43-network-reliability-audit.md).
+服务器 60 Hz、快照最多 20 Hz；90 秒断线恢复窗口，普通断线自动退避重试，恢复后双方确认。完整检查点保存共享世界与个人成长，崩溃可能回退到最近提交。当前共享主机限制两间活跃房间／16 条连接，一分钟公网负载不构成长时保证。[服务端说明](server/README.md) · [隐私政策 v1.6](https://xhz.sidcloud.cn/privacy-policy)。
 
-[合作架构 / Cooperative architecture](docs/incense-debt/41-cooperative-architecture.md) · [当前验收 / Current acceptance](docs/incense-debt/42-cooperative-delivery.md) · [交付回执 / Delivery receipt](docs/incense-debt/reports/cooperative-2026-10-11/delivery.json) · [0.3.0 历史 PvP 记录 / Historical PvP](docs/incense-debt/40-online-delivery.md)
+The native server simulates at 60 Hz with up to 20 Hz snapshots. Reconnection preserves the latest committed world for the normal 90-second grace; both players resume explicitly. The shared host currently allows two active rooms; a one-minute WAN measurement is not a capacity guarantee.
+
+**0.5.0 实際包体验收：** 公网合作 29 项、切磋 32 项、离线键盘 107 项；联机故障 65 项、真实线上重启恢复 10 项。Windows／APK 2172 项跨包检查、90 份编译模块一致，分别与实际 Windows／Linux 服务包的 37 份共享模块一致。两房四个正式 Session 公网运行 60.399 秒、4542 快照、59.89 Hz；RTT p95 358 ms。Android 为 API 28+ 正式签名非调试包，旧签名迁移链已验证，实体手机尚待验收。
+
+The shipping packages pass 29 co-op, 32 Duel, 107 keyboard, 65 application-fault and 10 live restart checks; package parity covers 2172 checks, 90 client modules and 37 shared modules per native server. A four-session/two-room WAN minute measures 59.89 Hz and RTT p95 358 ms. Android is a signed, non-debuggable API 28+ release with verified legacy lineage; physical phones remain pending.
+
+[当前报告 / Current report](docs/incense-debt/44-public-online-release.md) · [本轮证据 / Evidence](docs/incense-debt/reports/public-online-2026-10-11) · [0.4.1 历史复查 / Historical audit](docs/incense-debt/43-network-reliability-audit.md) · [0.4.0 历史合作 / Historical co-op](docs/incense-debt/42-cooperative-delivery.md)
 
 0.4.0 继承 0.2.3 的独立角色动作、可单独调整大小／位置的触控、四首随机 BGM 和全部 **402 个怪物身份、24,048 帧独立攻击／受击动作**。[操作修订](docs/incense-debt/33-action-mobile-update.md)与[全量怪物动作验收](docs/incense-debt/35-creature-action-completion.md)保留 0.2.1 历史证据；0.4.0 安装包与合作验收见[最新交付](docs/incense-debt/42-cooperative-delivery.md)。  
 0.4.0 retains the independently drawn hero actions, adjustable touch controls, four-song playlist, and **402 creature identities with 24,048 poses** from 0.2.3. Earlier revision reports keep their historical evidence; the [latest delivery](docs/incense-debt/42-cooperative-delivery.md) binds current packages and online acceptance.
@@ -74,7 +78,23 @@ Current scope is defined by the [delivery status](docs/incense-debt/reports/curr
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
 
-### 0.4.1 弱网修复实机 / Native reliability patch
+### 0.5.0 官方服务实机 / Official service gameplay
+
+![0.5.0 实际 Windows 包经官方 WSS 双人合作 / Shipping Windows client through public WSS](docs/incense-debt/reports/public-online-2026-10-11/media/cooperative-native.gif)
+
+| 自动连接大厅 / Automatic hub | 双方重新确认 / Team resume |
+| --- | --- |
+| ![自动共灯 / Co-Light hub](docs/incense-debt/reports/public-online-2026-10-11/media/coop-hub.png) | ![真实断线恢复 / Real reconnect](docs/incense-debt/reports/public-online-2026-10-11/media/coop-reconnect.png) |
+
+| 武器与技能配装 / Loadout | 个人成长与图标 / Growth |
+| --- | --- |
+| ![配装 / Loadout](docs/incense-debt/reports/public-online-2026-10-11/media/coop-loadout.png) | ![成长 / Growth](docs/incense-debt/reports/public-online-2026-10-11/media/coop-growth.png) |
+
+以上是实际 0.5.0 Windows EXE 经官方 WSS 的捕获；GIF 为 20 张连续实机帧、100 ms、无声。[媒体摘要](docs/incense-debt/reports/public-online-2026-10-11/media-manifest.json)绑定实际包体。独立的 X30／平板布局 fixture 明确标注为软件窗口，不能代表 Android 真机。
+
+Captured from the actual 0.5.0 Windows EXE through the official WSS endpoint. The silent GIF has 20 consecutive frames at 100 ms. Viewport fixtures are separately labelled; they do not establish physical Android acceptance.
+
+### 0.4.1 历史弱网修复实机 / Historical reliability patch
 
 ![0.4.1 实际合作战斗 / Actual 0.4.1 cooperative combat](docs/incense-debt/reports/network-reliability-2026-10-11/media/cooperative-native.gif)
 
@@ -615,7 +635,7 @@ python tools/runtime/build_native.py windows
 
 Windows 导出生成 `build/windows/IncenseDebt.exe`，资源嵌入程序，玩家运行 EXE 无需安装 Godot；分发时保留生成的字体、图标与 Godot 授权文件。当前程序未做发行者代码签名。
 
-**Android：** `python tools/runtime/build_native.py android` 生成 arm64 调试 APK，最低 API 24、目标 API 36，启用 `VIBRATE` 与可选联机所需的 `INTERNET`。脚本使用 `%LOCALAPPDATA%/Android/Sdk` 与固定 JDK 21 安装路径；请按本机位置调整配置，或在 Godot 编辑器中配置 SDK / JDK。模板下载不会安装 Android SDK。
+**Android：** 正式包用 `python tools/runtime/sign_android_release.py --export` 构建，最低 Android 9 / API 28，目标 API 36，arm64、非调试、私有正式签名和旧签名迁移链；请求 INTERNET、VIBRATE。普通 `build_native.py android` 仍是开发调试构建。SDK / JDK 位置可按本机配置调整，见 [构建指南](build/README.md)。
 
 ```powershell
 python tools/runtime/build_native.py android
@@ -628,9 +648,9 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **iOS：** Windows 可运行 `python tools/runtime/prepare_ios_handoff.py` 准备共享源码交接。真正导出需要实体 macOS、Godot 4.7.2、匹配模板、Xcode 和实际 Apple 开发团队；在 Mac 上使用 [export_ios_on_mac.py](tools/runtime/export_ios_on_mac.py)，再由 Xcode 完成签名、安装与验收。[iOS 交接说明](build/ios-handoff/README.md)列出操作步骤，目前没有已签名 IPA。
 
-**仓库与发布附件：** 仓库提交源代码、运行资源、原始素材、设计数据、验证记录和 README 媒体；`.local-tools/`、`.godot/`、EXE / APK / ZIP、可再生音频母带和大量逐帧 QA 截图由 `.gitignore` 排除。README 引用的截图与 GIF 保留在 Git 中。[GitHub Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1) 提供 0.4.0 Windows 客户端 ZIP、Android APK、独立服务端 ZIP、中英指南和校验文件；也可按当前源码导出。[交付清单](build/delivery-manifest.json)记录当前验证产物，[发布清单](docs/releases/v0.4.0-alpha.1.manifest.json)绑定本次附件与实际包体验收。旧版 iOS 交接保留在 [0.2.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1)。
+**仓库与发布附件：** 源码、资源、设计、验收记录与 README 截图／GIF 保留在 Git；私有工具、签名、SSH 凭据、服务器状态与 EXE／APK／ZIP 均不提交。[0.5.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) 提供 Windows、正式 Android、Linux／Windows 服务端、双语指南、清单和校验文件。[发布清单](docs/releases/v0.5.0.manifest.json)绑定实际验收包。旧版 iOS 交接保留在历史 0.2.0 Release。
 
-0.4.0 的发布流程调用 `python tools/runtime/package_online_release.py --cooperative --tag v0.4.0-alpha.1` 核对包体、验收哈希和原生捕获，并以 `python tools/runtime/publish_release.py --tag v0.4.0-alpha.1` 验证草稿附件摘要后公开。0.4.1 当前为本地修复构建，正式公开需要新版本清单与新 tag；不能沿用这些历史命令覆盖旧发布。
+0.5.0 使用 `record_public_delivery.py` 绑定验收，提交源码后以 `package_public_release.py` 生成附件，提交清单、推送注释 tag，最后 `publish_release.py --tag v0.5.0` 验证草稿附件完整摘要并公开正式版。旧 Release 不覆盖，详见 [构建指南](build/README.md)。
 
 <a id="zh-engineering"></a>
 ### 工程结构与验证方法
@@ -692,7 +712,7 @@ python tools/runtime/audit_consumable_art.py
 
 0.2.1 的[全量动作验收](docs/incense-debt/35-creature-action-completion.md)覆盖全部 402 个身份、24,048 个原生帧与源图哈希；17 项战斗状态检查通过。0.2.1 的[消耗品修订](docs/incense-debt/36-consumable-art-update.md)另通过 20 项美术检查、105 项实际 EXE 掉落检查与 91 张捕获，0.2.3 历史包体通过 2,157 项核对和 107 项键盘流程；0.2.2 的[长屏修订](docs/incense-debt/37-mobile-widescreen-adaptation.md)保留 274 项检查、51 张捕获及 340 项移动回归。0.2.3 的[默认触控修订](docs/incense-debt/38-right-hand-touch-layout.md)通过 368 项移动回归，源码与导出包各通过 282 项屏幕检查。[主角／移动修订](docs/incense-debt/33-action-mobile-update.md)保留四组窗口／密度配置的 340 项检查、80 张截图，随机配乐 19 项、持械 22 项、高级输入 54 项检查。
 
-历史 0.3.0 另有双人战斗 271 项、真实传输 26 项、独立服务端恢复 57 项、写盘故障 7 项，以及当时实际客户端联机菜单／输入 30 项和 33 张捕获。该版本记录见[历史联机交付](docs/incense-debt/40-online-delivery.md)。0.4.0 的重新构建、合作与回归验收以[当前合作交付](docs/incense-debt/42-cooperative-delivery.md)为准，两房短时通过不代表公网或长时容量。
+历史 0.3.0 另有双人战斗 271 项、真实传输 26 项、独立服务端恢复 57 项、写盘故障 7 项，以及当时实际客户端联机菜单／输入 30 项和 33 张捕获。该版本记录见[历史联机交付](docs/incense-debt/40-online-delivery.md)。0.4.0 的重新构建、合作与回归验收以[0.4.0 历史合作交付](docs/incense-debt/42-cooperative-delivery.md)为准，两房短时通过不代表公网或长时容量。
 
 历史 0.2.0 记录包括 1,568 项装备／掉落／攻击组合检查、80,000 次低概率抽样、29 项编译装备检查及 111 张截图，以及 373 项边界／混编／房间检查、509 项扩展系统检查、285 项打包扩展检查、75 项原生 GUI 操作、22 项原生音频检查与 3,313 项素材来源核对。存档传递的 51 项检查及受击／恢复的 54 项检查有独立报告。这些检查类别存在交集，不将数量相加作为覆盖率。
 
@@ -706,13 +726,13 @@ python tools/runtime/audit_consumable_art.py
 | 平台 / 项目 | 已有证据 | 尚需完成 |
 | --- | --- | --- |
 | Windows | 原生 EXE 运行、真实资源加载、菜单与键盘 QA、原生截图、音频采样 | 真人长期游玩、画面 / 手感 / 平衡验收、发行签名 |
-| Android | arm64 调试 APK，结构、权限、签名与导入资源检查 | 真机安装、触控、软键盘、剪贴板、温控及生命周期 |
+| Android | Android 9+ arm64 正式签名 APK；权限、资源、非调试与旧签名迁移链验证 | 真机安装、触控、软键盘、剪贴板、温控及生命周期 |
 | iOS | 历史 0.2.0 共享源码与模板交接 | 同步新源码、实体 Mac 导出、Xcode 工程、签名 IPA、iPhone / iPad 验收 |
 | 输入 | 纯键盘流程和鼠键原生操作；手柄 / 触控映射已实现 | 真实手柄与移动设备体验 |
 | 内容 | 十一层 Alpha 与上述系统、素材、自动流程证据 | 更多角色 / 种子的完整局和真人构筑平衡 |
 | 语言 | 完整中文界面；双语项目说明 | 英文游戏界面与叙事本地化 |
 
-版本仍为 Alpha；当前提供双人共灯合作闯关、可选对灯切磋及匿名恢复身份，没有账号注册或云愿簿同步。GitHub 提供 Windows 客户端、Android 调试 APK 和 Windows 独立服务端；iOS 交接保留旧版本。默认公网匹配主机、真实广域网测试、长期平衡与移动真机验收尚未完成。项目级许可证尚未选定，第三方授权见文末[授权说明](#licenses)。
+版本 0.5.0 已作为正式联机发布；功能和平衡仍持续完善。提供十一层离线、共灯合作、可选对灯、匿名恢复身份和已部署官方服务，没有账号注册或云愿簿同步。真实公网与服务重启已验证；长时容量和移动真机验收尚待完成。项目级许可证未选定，第三方条款见[授权说明](#licenses)。
 
 <a id="en-guide"></a>
 ## English guide
@@ -1018,7 +1038,7 @@ python tools/runtime/build_native.py windows
 
 Windows exports to `build/windows/IncenseDebt.exe` with embedded resources. Distribute the emitted font, icon, and Godot notices alongside it. End users do not need Godot. Publisher code signing has not been applied.
 
-**Android:** `python tools/runtime/build_native.py android` creates an arm64 debug APK, min API 24 / target API 36, with `VIBRATE` and `INTERNET` for optional multiplayer. The helper expects `%LOCALAPPDATA%/Android/Sdk` and a pinned JDK 21. Adapt these paths or configure exports in the Godot editor. Export templates do not install the Android SDK.
+**Android:** Use `python tools/runtime/sign_android_release.py --export` for the signed, non-debuggable arm64 release, min API 28 / target 36. The legacy lineage is verified against the actual APK. `build_native.py android` still creates a development debug build. See [build instructions](build/README.md).
 
 ```powershell
 python tools/runtime/build_native.py android
@@ -1037,9 +1057,9 @@ python3 tools/runtime/export_ios_on_mac.py \
 
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
-**Versioned vs. release assets:** Source, runtime assets, original image boards, design data, evidence records, and README media are tracked. `.local-tools/`, `.godot/`, EXE/APK/ZIP files, reproducible audio masters, and most raw QA frames are excluded. README-linked captures and GIFs are tracked. The [GitHub prerelease](https://github.com/wikigsroom/joss-debt/releases/tag/v0.4.0-alpha.1) provides 0.4.0 Windows/Android clients, a standalone Windows server, bilingual instructions and checksums; current source also builds 0.4.0. The [delivery manifest](build/delivery-manifest.json) records verified artifacts; the [release manifest](docs/releases/v0.4.0-alpha.1.manifest.json) binds these attachments to native verification. The old iOS handoff remains in the [0.2.0 release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.2.0-alpha.1).
+**Versioned vs. release assets:** Source, art, evidence and README GIFs are tracked. Private tooling, credentials, signing material, server state and EXE/APK/ZIP files are excluded. [Release 0.5.0](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) provides both clients and native Linux/Windows servers. The [manifest](docs/releases/v0.5.0.manifest.json) binds accepted assets; historical releases remain unchanged.
 
-For verified builds, `python tools/runtime/package_online_release.py --cooperative --tag v0.4.0-alpha.1` checks exact application hashes and native evidence, then produces the ZIP, guide and checksums. Commit release documentation and push the annotated tag before running `python tools/runtime/publish_release.py --tag v0.4.0-alpha.1`. It uses the local GitHub CLI session, uploads to a draft, verifies server digests and then publishes. Existing applications and saves are retained.
+For 0.5.0, record acceptance with `record_public_delivery.py`, commit source, then run `package_public_release.py`. Commit its manifest, push an annotated tag, and run `publish_release.py --tag v0.5.0`. It uploads a draft, verifies full GitHub asset digests, and publishes a stable release. See [build instructions](build/README.md).
 
 <a id="en-engineering"></a>
 ### Architecture, tests, and evidence
@@ -1068,7 +1088,7 @@ python tools/runtime/run_audio_qa.py --packaged
 
 The [0.2.1 action verification](docs/incense-debt/35-creature-action-completion.md) covers all 402 identities, 24,048 native frames, and their source hashes, with 17 combat-state checks. The 0.2.1 [pickup revision](docs/incense-debt/36-consumable-art-update.md) adds 20 art checks, 105 pickup checks and 91 captures in the actual executable. Historical 0.2.3 packages passed 2,157 comparison checks and 107 keyboard-flow checks; the [0.2.2 widescreen revision](docs/incense-debt/37-mobile-widescreen-adaptation.md) retains its 274 checks, 51 captures and 340 mobile-flow checks. The 0.2.3 [default-touch revision](docs/incense-debt/38-right-hand-touch-layout.md) passes 368 mobile-flow checks and 282 screen checks against both source and the exported pack. The [hero/mobile revision](docs/incense-debt/33-action-mobile-update.md) retains 340 checks and 80 captures across four window/density configurations, plus 19 playlist, 22 held-weapon, and 54 advanced-input checks.
 
-Historical 0.3.0 adds 271 combat checks, 26 real-transport checks, 57 native server recovery checks, seven storage-fault checks, and 30 native online menu/input checks with 33 captures. See its [historical online acceptance](docs/incense-debt/40-online-delivery.md). The freshly built 0.4.0 packages and cooperative/regression acceptance are recorded in [current co-op delivery](docs/incense-debt/42-cooperative-delivery.md); the short two-room benchmark is not a WAN or long-term capacity guarantee.
+Historical 0.3.0 adds 271 combat checks, 26 real-transport checks, 57 native server recovery checks, seven storage-fault checks, and 30 native online menu/input checks with 33 captures. See its [historical online acceptance](docs/incense-debt/40-online-delivery.md). The freshly built 0.4.0 packages and cooperative/regression acceptance are recorded in [historical co-op delivery](docs/incense-debt/42-cooperative-delivery.md); the short two-room benchmark is not a WAN or long-term capacity guarantee.
 
 Historical 0.2.0 evidence includes 1,568 equipment/loot/composition checks, 80,000 rare-roll samples, 29 packaged equipment checks, and 111 captures, alongside 373 combat-boundary/mixing/room checks, 509 expansion-system checks, 285 packaged-expansion checks, 75 native GUI interactions, 22 native audio checks, and 3,313 source-bound asset checks. Separate reports cover 51 save-transfer and 54 impact/resume checks. Categories overlap; their sum is not a coverage metric.
 
@@ -1082,13 +1102,13 @@ Evidence is bound to its recorded source and artifact hashes. Rebuilding require
 | Area | Existing evidence | Remaining acceptance |
 | --- | --- | --- |
 | Windows | Native executable operation, all runtime assets loaded, GUI/keyboard QA, captures and audio samples | Human visual/feel/balance review, long sessions, publisher signing |
-| Android | arm64 debug APK, structure, permissions, signature, and imported-resource checks | Phone installation, touch/keyboard/clipboard, thermals, lifecycle |
+| Android | Signed, non-debuggable Android 9+ arm64 APK, resources/permissions and verified legacy lineage | Physical installation, touch/keyboard/clipboard, thermals and lifecycle |
 | iOS | Historical 0.2.0 shared-source/template handoff | Updated source handoff, real Mac export, Xcode project, signed IPA, iPhone/iPad operation |
 | Inputs | Keyboard-only flow and native mouse/keyboard interactions; gamepad/touch mappings implemented | Physical controller and mobile-device experience |
 | Content | Eleven-floor Alpha with the documented systems and automated route | More characters/seeds and human build balancing |
 | Language | Chinese game UI/story, bilingual repository guide | English game localization |
 
-The game remains an Alpha with two-player Co-Light cooperation and optional Duel and anonymous recovery identities, without account registration or cloud save sync. GitHub provides Windows client/server and Android debug packages; iOS retains its historical handoff. A default public host, real WAN testing, long-term balance and physical mobile acceptance remain pending. No project-wide license has been selected; third-party notices remain applicable.
+Version 0.5.0 is a stable online release while content and balance continue to improve. Official auto-connect, native public-WAN and live restart tests are complete. Long-term capacity and physical Android acceptance remain pending. No account system or cloud save sync is provided; no project-wide license has been selected.
 
 <a id="references"></a>
 ## 资料与证据 / Documentation and evidence

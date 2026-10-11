@@ -90,6 +90,10 @@ def main():
         previous_signer = run([str(sdk / "build-tools/35.0.0/apksigner.bat"), "verify", "--print-certs", str(previous)], timeout=180)
         previous_certificates = re.findall(r"certificate SHA-256 digest: ([0-9a-fA-F]+)", previous_signer.stdout)
         upgrade_signer_matches = previous_signer.returncode == 0 and bool(certificates) and certificates == previous_certificates
+        if upgrade_signer_matches is False:
+            from verify_android_lineage import verify
+            lineage = verify(apk)
+            upgrade_signer_matches = lineage["passed"] and lineage["installed_data"] and previous_certificates == [lineage["legacy_certificate_sha256"]]
     devices = run([str(sdk / "platform-tools/adb.exe"), "devices", "-l"])
     with zipfile.ZipFile(apk) as bundle:
         names = bundle.namelist()
@@ -157,7 +161,7 @@ def main():
                    "weapon_rig_matches_source": rig_matches, "compiled_ui_and_weapon_scripts_packaged": ui_scripts,
                    "new_font_and_icon_license_bytes_match": license_bytes_match})
     report["artifact"] = relative_apk
-    report["build_variant"] = "release" if Path(relative_apk).name.endswith("-release.apk") else "debug"
+    report["build_variant"] = "debug" if "application-debuggable" in badging.stdout else "release"
     report.update(display_checks=display_checks, exported_project_display_fields=startup,
                   android_display_flags=[arg for arg in command_line if arg in ["--edge_to_edge", "--fullscreen"]],
                   signer_certificate_sha256=certificates, upgrade_signer_matches_previous=upgrade_signer_matches)

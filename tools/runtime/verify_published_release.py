@@ -35,7 +35,7 @@ def main():
     parser.add_argument("--tag", default="v0.3.0-alpha.1")
     args = parser.parse_args()
     receipt = json.loads((ROOT / "build/release" / args.tag / "publication-receipt.json").read_text("utf8"))
-    assert receipt["tag"] == args.tag and not receipt["draft"] and receipt["prerelease"]
+    assert receipt["tag"] == args.tag and not receipt["draft"] and receipt["prerelease"] == ("-alpha." in args.tag)
     checks = []
     status, _, page = fetch(receipt["url"], 2 * 1024 * 1024)
     checks.append({"id": "anonymous_release_page", "url": receipt["url"], "status": status,
@@ -58,6 +58,7 @@ def main():
     readme = base64.b64decode(readme_document["content"], validate=False)
     manifest = json.loads((ROOT / "build/release" / args.tag / "assets/release-manifest.json").read_text("utf8"))
     required_gif = b"cooperative-2026-10-11/media/cooperative-native.gif" if manifest.get("default_game_mode") == "coop" else b"online-2026-10-11/media/duel-native.gif"
+    if manifest.get("readme_motion_path"): required_gif = manifest["readme_motion_path"].encode("utf8")
     checks.append({"id": "tagged_readme_has_online_gif", "url": readme_url, "status": status,
                    "git_blob_sha": readme_document["sha"],
                    "required_gif": required_gif.decode("utf8"),

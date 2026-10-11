@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-11T10:05:05.593195+00:00",
+  "domain": "xhz-server.sidcloud.cn",
+  "transport": "wss://xhz-server.sidcloud.cn/play",
+  "host_region": "Tencent Cloud ap-singapore-2 (read-only placement metadata)",
+  "tls": {
+    "version": "TLSv1.3",
+    "not_before": "Oct 11 07:31:11 2026 GMT",
+    "not_after": "Jan  9 07:31:10 2027 GMT",
+    "hostname_verified": true
+  },
+  "renewal_dry_run": {
+    "passed": true,
+    "command": "certbot renew --cert-name incense-debt-public --dry-run",
+    "evidence": "Native SSH command completed with exit 0 during deployment; all simulated renewals succeeded"
+  },
+  "checks": [
+    {
+      "id": "installed_linux_server",
+      "passed": true
+    },
+    {
+      "id": "installed_service",
+      "passed": true
+    },
+    {
+      "id": "installed_config",
+      "passed": true
+    },
+    {
+      "id": "installed_nginx",
+      "passed": true
+    },
+    {
+      "id": "installed_logrotate",
+      "passed": true
+    },
+    {
+      "id": "installed_stop",
+      "passed": true
+    },
+    {
+      "id": "installed_homepage",
+      "passed": true
+    },
+    {
+      "id": "service_enabled_active",
+      "passed": true
+    },
+    {
+      "id": "isolated_private_ports",
+      "passed": true
+    },
+    {
+      "id": "data_private",
+      "passed": true
+    },
+    {
+      "id": "own_service_swap_disabled",
+      "passed": true
+    },
+    {
+      "id": "capacity_two_rooms",
+      "passed": true
+    },
+    {
+      "id": "renewal_timer",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz-server.sidcloud.cn/",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz-server.sidcloud.cn/health",
+      "passed": true
+    },
+    {
+      "id": "health_version",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz.sidcloud.cn/privacy-policy",
+      "passed": true
+    },
+    {
+      "id": "validated_tls",
+      "passed": true
+    }
+  ],
+  "https": [
+    {
+      "url": "https://xhz-server.sidcloud.cn/",
+      "status": 200,
+      "bytes": 1514
+    },
+    {
+      "url": "https://xhz-server.sidcloud.cn/health",
+      "status": 200,
+      "bytes": 531
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy-policy",
+      "status": 200,
+      "bytes": 29548
+    }
+  ],
+  "service": {
+    "MainPID": "1998697",
+    "NRestarts": "0",
+    "MemoryCurrent": "97054720",
+    "MemorySwapCurrent": "0",
+    "MemorySwapMax": "0",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "service_enabled": "enabled",
+  "certificate_timer": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "installed_sha256": {
+    "linux_server": "1b848e654388fda189b9ac871ef19f391ab166ad9ef684bc4768b621b07c0212",
+    "service": "24b4f1252e0a7ef7e7988645cbd16ecdcad8ab7c00da1afceb449fed509e601b",
+    "config": "a0c49f10aa358ae6d72c08d7f03abaac33d030a0cc80ae6c748a91bf4d380060",
+    "nginx": "c0ca485bd8b921047ceb6e9ebf02f0a7ec5078784212f230b67de37dbf784150",
+    "logrotate": "0a57dfd68564ffba937648eeaf7e612a22e5c3fbb826d384cf354f8b131b1c35",
+    "stop": "5c9c246514a05a46036f7189e75942ab1914d7ad70df9b797f23e45e334ebc17",
+    "homepage": "728e137e6c491c68e47afe6d1e43d9d96f738f4e98fa72b6e12687763d0e9e10"
+  },
+  "listeners": [
+    "LISTEN 0      8          127.0.0.1:18777 0.0.0.0:*",
+    "LISTEN 0      8          127.0.0.1:18778 0.0.0.0:*"
+  ],
+  "config": {
+    "bind": "127.0.0.1",
+    "port": 18777,
+    "max_connections": 16,
+    "max_rooms": 2,
+    "grace": 90,
+    "waiting": 300,
+    "checkpoint": 1,
+    "data_directory": "/var/lib/incense-debt"
+  },
+  "health": {
+    "active_rooms": 0,
+    "buffered_bytes": 0,
+    "bytes_sent": 58366517,
+    "checkpoint_pending": true,
+    "connections": 0,
+    "largest_snapshot_window": 0,
+    "persistence_errors": 0,
+    "process_max_ms": 16.162,
+    "process_p95_ms": 0.225,
+    "process_p99_ms": 14.912,
+    "protocol": 2,
+    "queued": 0,
+    "rooms": 7,
+    "service": "IncenseDebt Online",
+    "snapshot_retries": 165,
+    "snapshots_coalesced": 3668,
+    "step_max_ms": 13.023,
+    "step_p95_ms": 0.033,
+    "step_p99_ms": 9.909,
+    "stopping": false,
+    "storage_fault": false,
+    "tick": 123619,
+    "transport": 1,
+    "unacked_snapshots": 0,
+    "uptime": 2060.31970033176,
+    "version": "0.5.0"
+  },
+  "data_permissions": "0o700",
+  "nginx_config_valid": true,
+  "renewal_hook": {
+    "passed": true,
+    "scope": "incense-debt-public certificate only; actual BT nginx test and reload",
+    "diagnostic": "nginx: the configuration file /www/server/nginx/conf/nginx.conf syntax is ok\nnginx: configuration file /www/server/nginx/conf/nginx.conf test is successful"
+  }
+}

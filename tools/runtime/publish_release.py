@@ -32,8 +32,9 @@ def main():
                         str(ROOT / ".local-tools/github-cli/bin/gh.exe"))
     args = parser.parse_args()
     tag = args.tag
-    if not re.fullmatch(r"v\d+\.\d+\.\d+-alpha\.\d+", tag):
-        raise RuntimeError("Expected a versioned Alpha tag")
+    if not re.fullmatch(r"v\d+\.\d+\.\d+(?:-alpha\.\d+)?", tag):
+        raise RuntimeError("Expected a stable version or versioned Alpha tag")
+    prerelease = "-alpha." in tag
     gh = str(Path(args.gh).resolve())
     directory = ROOT / "build/release" / tag
     payload = directory / "assets"
@@ -52,8 +53,8 @@ def main():
         raise RuntimeError("Push the annotated release tag before publishing")
     manifest = json.loads((payload / "release-manifest.json").read_text("utf8"))
     game_tree = subprocess.check_output(["git", "rev-parse", tag + ":game"], cwd=ROOT).decode().strip()
-    if manifest["tag"] != tag or manifest["repository"] != REPO or manifest["prerelease"] is not True:
-        raise RuntimeError("Prepared manifest does not describe this Alpha release")
+    if manifest["tag"] != tag or manifest["repository"] != REPO or manifest["prerelease"] is not prerelease:
+        raise RuntimeError("Prepared manifest does not describe this release")
     if manifest["game_git_tree"] != game_tree:
         raise RuntimeError("Release game tree differs from the tag")
     if not manifest["windows_verification"]["passed"]:
@@ -114,8 +115,8 @@ def main():
 
     state = release(optional=True)
     if state is None:
-        print("Creating the prerelease draft at the verified tag...", flush=True)
-        command("release", "create", tag, "--repo", REPO, "--draft", "--prerelease",
+        print("Creating the release draft at the verified tag...", flush=True)
+        command("release", "create", tag, "--repo", REPO, "--draft", *(["--prerelease"] if prerelease else []),
                 "--verify-tag", "--target", head, "--title",
                 args.title or f"香火债 / Incense Debt {tag}",
                 "--notes-file", str(notes))
@@ -147,12 +148,12 @@ def main():
         assets = {row["name"]: row for row in state["assets"]}
         if set(assets) != set(expected) or not all(matching(assets.get(name), name) for name in expected):
             raise RuntimeError("Draft is incomplete or differs from the prepared files")
-        print("All attachments verified. Publishing the Alpha prerelease...", flush=True)
-        command("release", "edit", tag, "--repo", REPO, "--draft=false", "--prerelease",
+        print("All attachments verified. Publishing the verified release...", flush=True)
+        command("release", "edit", tag, "--repo", REPO, "--draft=false", "--prerelease=" + str(prerelease).lower(), *([] if prerelease else ["--latest"]),
                 "--target", head, "--notes-file", str(notes))
         state = release()
     assets = {row["name"]: row for row in state["assets"]}
-    if state["draft"] or not state["prerelease"] or set(assets) != set(expected) or \
+    if state["draft"] or state["prerelease"] is not prerelease or set(assets) != set(expected) or \
             not all(matching(assets.get(name), name) for name in expected):
         raise RuntimeError("Published release does not match the verified Alpha")
     # gh may preserve the Windows file's CRLF in GitHub's JSON response,

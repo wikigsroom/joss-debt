@@ -283,7 +283,7 @@ func run() -> void:
 	a.set_process(false)
 	var replacement = FaultClient.new(a.credential_folder)
 	root.add_child(replacement); clients.append(replacement)
-	replacement.connect_service()
+	replacement.connect_service(a.endpoint)
 	check("new_process_takes_over_original_identity", await until(func(): return replacement.state == "room" and replacement.identity.session == a.identity.session))
 	check("identity_takeover_freezes_team", room.suspended and room.suspend_reason == "identity_changed")
 	a.open_socket(); a.set_process(true)

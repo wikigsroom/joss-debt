@@ -25,6 +25,7 @@ EXPECTED_PUBLIC_FILES = {
     "versions/2026-10-08.html", "downloads/incense-debt-privacy-policy-2026-10-08.docx",
     "versions/2026-10-09.html", "downloads/incense-debt-privacy-policy-2026-10-09.docx",
     "versions/2026-10-11-v1.4.html", "downloads/incense-debt-privacy-policy-2026-10-11-v1.4.docx",
+    "versions/2026-10-11-v1.5.html", "downloads/incense-debt-privacy-policy-2026-10-11-v1.5.docx",
     "vercel.json", ".vercelignore",
 }
 
