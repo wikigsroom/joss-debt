@@ -1,0 +1,1565 @@
+{
+  "version": 1,
+  "rooms": {
+    "m01_a": {
+      "polygon": [
+        [
+          251,
+          155
+        ],
+        [
+          1024,
+          155
+        ],
+        [
+          1084,
+          215
+        ],
+        [
+          1084,
+          532
+        ],
+        [
+          1024,
+          592
+        ],
+        [
+          251,
+          592
+        ],
+        [
+          191,
+          532
+        ],
+        [
+          191,
+          215
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m01_a.png",
+      "source_sha256": "da952c7ea16b45bd438d68ded3e6c014adda9249708e454aa9e1864b0e2f5007",
+      "space": "background_1280x720"
+    },
+    "m01_b": {
+      "polygon": [
+        [
+          252,
+          144
+        ],
+        [
+          1033,
+          144
+        ],
+        [
+          1088,
+          199
+        ],
+        [
+          1088,
+          539
+        ],
+        [
+          1033,
+          594
+        ],
+        [
+          252,
+          594
+        ],
+        [
+          197,
+          539
+        ],
+        [
+          197,
+          199
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m01_b.png",
+      "source_sha256": "b054f3e4433aaf538b347789ce18a853ae47bb562f27942523ebafc09b787bb7",
+      "space": "background_1280x720"
+    },
+    "m02_a": {
+      "polygon": [
+        [
+          241,
+          133
+        ],
+        [
+          1034,
+          133
+        ],
+        [
+          1060,
+          159
+        ],
+        [
+          1060,
+          520
+        ],
+        [
+          1034,
+          546
+        ],
+        [
+          241,
+          546
+        ],
+        [
+          215,
+          520
+        ],
+        [
+          215,
+          159
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m02_a.png",
+      "source_sha256": "467db5a013cda204ae2916dcc8a95ad7ac296b0f865c490b754fc63ef2710697",
+      "space": "background_1280x720"
+    },
+    "m02_b": {
+      "polygon": [
+        [
+          255,
+          128
+        ],
+        [
+          1030,
+          128
+        ],
+        [
+          1060,
+          158
+        ],
+        [
+          1060,
+          520
+        ],
+        [
+          1030,
+          550
+        ],
+        [
+          255,
+          550
+        ],
+        [
+          225,
+          520
+        ],
+        [
+          225,
+          158
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m02_b.png",
+      "source_sha256": "b47241cf6dc57df7f3a52577b4137c98f16a71a3f67a29a498c7d1c203b04d52",
+      "space": "background_1280x720"
+    },
+    "m03_a": {
+      "polygon": [
+        [
+          334,
+          152
+        ],
+        [
+          950,
+          152
+        ],
+        [
+          1080,
+          282
+        ],
+        [
+          1080,
+          457
+        ],
+        [
+          950,
+          587
+        ],
+        [
+          334,
+          587
+        ],
+        [
+          204,
+          457
+        ],
+        [
+          204,
+          282
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m03_a.png",
+      "source_sha256": "5952b258849460f7e4ea8cfcc2d78f2e01088579a8192bb9ff287a4b3ec1e228",
+      "space": "background_1280x720"
+    },
+    "m03_b": {
+      "polygon": [
+        [
+          273,
+          142
+        ],
+        [
+          1004,
+          142
+        ],
+        [
+          1092,
+          230
+        ],
+        [
+          1092,
+          504
+        ],
+        [
+          1004,
+          592
+        ],
+        [
+          273,
+          592
+        ],
+        [
+          185,
+          504
+        ],
+        [
+          185,
+          230
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m03_b.png",
+      "source_sha256": "d3f61bd8496eb6229bc321441ef9ff5a8cbfb72e273bdf674b7ac5aab1e68b1e",
+      "space": "background_1280x720"
+    },
+    "m04_a": {
+      "polygon": [
+        [
+          268,
+          146
+        ],
+        [
+          1015,
+          146
+        ],
+        [
+          1080,
+          211
+        ],
+        [
+          1080,
+          531
+        ],
+        [
+          1015,
+          596
+        ],
+        [
+          268,
+          596
+        ],
+        [
+          203,
+          531
+        ],
+        [
+          203,
+          211
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m04_a.png",
+      "source_sha256": "3e1c46e72e705e9aedbd38f9dce223d0d4fc507fb6102b19fbb06faf8a09345e",
+      "space": "background_1280x720"
+    },
+    "m04_b": {
+      "polygon": [
+        [
+          288,
+          153
+        ],
+        [
+          1007,
+          153
+        ],
+        [
+          1077,
+          223
+        ],
+        [
+          1077,
+          514
+        ],
+        [
+          1007,
+          584
+        ],
+        [
+          288,
+          584
+        ],
+        [
+          218,
+          514
+        ],
+        [
+          218,
+          223
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m04_b.png",
+      "source_sha256": "8f31db820b42728eaedced432b4df2b968ff6177ec2a620682b1d8fa30bd17cf",
+      "space": "background_1280x720"
+    },
+    "m05_a": {
+      "polygon": [
+        [
+          217,
+          151
+        ],
+        [
+          1081,
+          151
+        ],
+        [
+          1106,
+          176
+        ],
+        [
+          1106,
+          575
+        ],
+        [
+          1081,
+          600
+        ],
+        [
+          217,
+          600
+        ],
+        [
+          192,
+          575
+        ],
+        [
+          192,
+          176
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m05_a.png",
+      "source_sha256": "976d64941b3be143ef31721f422f800a52558dc8eb1f669137f6a4c445445e47",
+      "space": "background_1280x720"
+    },
+    "m05_b": {
+      "polygon": [
+        [
+          222,
+          144
+        ],
+        [
+          1090,
+          144
+        ],
+        [
+          1110,
+          164
+        ],
+        [
+          1110,
+          580
+        ],
+        [
+          1090,
+          600
+        ],
+        [
+          222,
+          600
+        ],
+        [
+          202,
+          580
+        ],
+        [
+          202,
+          164
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m05_b.png",
+      "source_sha256": "78efd379f3bd71d19d8670ebf70a32316603bd07028a3cf3008b51a940dcec3d",
+      "space": "background_1280x720"
+    },
+    "m06_a": {
+      "polygon": [
+        [
+          275,
+          172
+        ],
+        [
+          1008,
+          172
+        ],
+        [
+          1088,
+          252
+        ],
+        [
+          1088,
+          515
+        ],
+        [
+          1008,
+          595
+        ],
+        [
+          275,
+          595
+        ],
+        [
+          195,
+          515
+        ],
+        [
+          195,
+          252
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m06_a.png",
+      "source_sha256": "c29d09a58de942b5dfdbfbd1dec2e9d652f55fff1559b863795cab9167759073",
+      "space": "background_1280x720"
+    },
+    "m06_b": {
+      "polygon": [
+        [
+          265,
+          146
+        ],
+        [
+          1017,
+          146
+        ],
+        [
+          1072,
+          201
+        ],
+        [
+          1072,
+          520
+        ],
+        [
+          1017,
+          575
+        ],
+        [
+          265,
+          575
+        ],
+        [
+          210,
+          520
+        ],
+        [
+          210,
+          201
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m06_b.png",
+      "source_sha256": "61ef1a275939d8ac5023d8324af9c69611e66e826b814d6461918c2bab74d564",
+      "space": "background_1280x720"
+    },
+    "m07_a": {
+      "polygon": [
+        [
+          265,
+          158
+        ],
+        [
+          1040,
+          158
+        ],
+        [
+          1085,
+          203
+        ],
+        [
+          1085,
+          565
+        ],
+        [
+          1040,
+          610
+        ],
+        [
+          265,
+          610
+        ],
+        [
+          220,
+          565
+        ],
+        [
+          220,
+          203
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m07_a.png",
+      "source_sha256": "14b3d31a0a7b0e0585f20018f43c7182d821cf5829ea48250c935f9237291eca",
+      "space": "background_1280x720"
+    },
+    "m07_b": {
+      "polygon": [
+        [
+          260,
+          142
+        ],
+        [
+          1024,
+          142
+        ],
+        [
+          1079,
+          197
+        ],
+        [
+          1079,
+          555
+        ],
+        [
+          1024,
+          610
+        ],
+        [
+          260,
+          610
+        ],
+        [
+          205,
+          555
+        ],
+        [
+          205,
+          197
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m07_b.png",
+      "source_sha256": "192259bc841fbeda972ec89db47b5617cac31cc337ec64c7360e40630470a4fb",
+      "space": "background_1280x720"
+    },
+    "m08_a": {
+      "polygon": [
+        [
+          295,
+          157
+        ],
+        [
+          996,
+          157
+        ],
+        [
+          1066,
+          227
+        ],
+        [
+          1066,
+          519
+        ],
+        [
+          996,
+          589
+        ],
+        [
+          295,
+          589
+        ],
+        [
+          225,
+          519
+        ],
+        [
+          225,
+          227
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m08_a.png",
+      "source_sha256": "8951447d2e1777a17f5a59ccc02644331d01995742dba283904947b94a43107a",
+      "space": "background_1280x720"
+    },
+    "m08_b": {
+      "polygon": [
+        [
+          308,
+          148
+        ],
+        [
+          977,
+          148
+        ],
+        [
+          1067,
+          238
+        ],
+        [
+          1067,
+          497
+        ],
+        [
+          977,
+          587
+        ],
+        [
+          308,
+          587
+        ],
+        [
+          218,
+          497
+        ],
+        [
+          218,
+          238
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m08_b.png",
+      "source_sha256": "3cf6cf0f7ed44b2810f32853960debf77ae9ef37ef584c1fde8c35fec7921b55",
+      "space": "background_1280x720"
+    },
+    "m09_a": {
+      "polygon": [
+        [
+          262,
+          157
+        ],
+        [
+          1022,
+          157
+        ],
+        [
+          1067,
+          202
+        ],
+        [
+          1067,
+          545
+        ],
+        [
+          1022,
+          590
+        ],
+        [
+          262,
+          590
+        ],
+        [
+          217,
+          545
+        ],
+        [
+          217,
+          202
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m09_a.png",
+      "source_sha256": "ac991585fa5c2e41799eb17a7749fff4adb1fbed8c3abbe493c074d2fdbc6214",
+      "space": "background_1280x720"
+    },
+    "m09_b": {
+      "polygon": [
+        [
+          244,
+          147
+        ],
+        [
+          1036,
+          147
+        ],
+        [
+          1058,
+          169
+        ],
+        [
+          1058,
+          568
+        ],
+        [
+          1036,
+          590
+        ],
+        [
+          244,
+          590
+        ],
+        [
+          222,
+          568
+        ],
+        [
+          222,
+          169
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m09_b.png",
+      "source_sha256": "036e441c1eb9bbacbc62b3c223d7739e4a2916b5497e1f0e8a33ba80dd2c4cb7",
+      "space": "background_1280x720"
+    },
+    "m10_a": {
+      "polygon": [
+        [
+          295,
+          164
+        ],
+        [
+          1000,
+          164
+        ],
+        [
+          1070,
+          234
+        ],
+        [
+          1070,
+          487
+        ],
+        [
+          1000,
+          557
+        ],
+        [
+          295,
+          557
+        ],
+        [
+          225,
+          487
+        ],
+        [
+          225,
+          234
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m10_a.png",
+      "source_sha256": "e45c4d1d4d43e0b47f79cb6e73313af54ba8dbcbef3866786518da66d545b3d3",
+      "space": "background_1280x720"
+    },
+    "m10_b": {
+      "polygon": [
+        [
+          296,
+          164
+        ],
+        [
+          1000,
+          164
+        ],
+        [
+          1058,
+          222
+        ],
+        [
+          1058,
+          494
+        ],
+        [
+          1000,
+          552
+        ],
+        [
+          296,
+          552
+        ],
+        [
+          238,
+          494
+        ],
+        [
+          238,
+          222
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m10_b.png",
+      "source_sha256": "d9b5651afba068536792c5a4a24a8da3566205a463b13fd90048a50fdd7eb9b0",
+      "space": "background_1280x720"
+    },
+    "m11_a": {
+      "polygon": [
+        [
+          216,
+          152
+        ],
+        [
+          1065,
+          152
+        ],
+        [
+          1099,
+          186
+        ],
+        [
+          1099,
+          546
+        ],
+        [
+          1065,
+          580
+        ],
+        [
+          216,
+          580
+        ],
+        [
+          182,
+          546
+        ],
+        [
+          182,
+          186
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m11_a.png",
+      "source_sha256": "857d457273a3c84ab6cc072bf7a4a86afdc735a575ad908eff8ec3315bf052e7",
+      "space": "background_1280x720"
+    },
+    "m11_b": {
+      "polygon": [
+        [
+          225,
+          152
+        ],
+        [
+          1062,
+          152
+        ],
+        [
+          1097,
+          187
+        ],
+        [
+          1097,
+          545
+        ],
+        [
+          1062,
+          580
+        ],
+        [
+          225,
+          580
+        ],
+        [
+          190,
+          545
+        ],
+        [
+          190,
+          187
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m11_b.png",
+      "source_sha256": "dfae773d4b55f67c375b91f4eaf338d42476eafe154b62d5355ed686f3f9733d",
+      "space": "background_1280x720"
+    },
+    "m12_a": {
+      "polygon": [
+        [
+          320,
+          140
+        ],
+        [
+          965,
+          140
+        ],
+        [
+          1075,
+          250
+        ],
+        [
+          1075,
+          471
+        ],
+        [
+          965,
+          581
+        ],
+        [
+          320,
+          581
+        ],
+        [
+          210,
+          471
+        ],
+        [
+          210,
+          250
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m12_a.png",
+      "source_sha256": "74dc337029159410405c1bdb01db5533e6d3beceead564875485d3c6f9e567dd",
+      "space": "background_1280x720"
+    },
+    "m12_b": {
+      "polygon": [
+        [
+          245,
+          142
+        ],
+        [
+          1046,
+          142
+        ],
+        [
+          1074,
+          170
+        ],
+        [
+          1074,
+          556
+        ],
+        [
+          1046,
+          584
+        ],
+        [
+          245,
+          584
+        ],
+        [
+          217,
+          556
+        ],
+        [
+          217,
+          170
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m12_b.png",
+      "source_sha256": "441ed9a6200c1022df748a1468f3a89a8de2649d03e577bb7f65ac28b10c6816",
+      "space": "background_1280x720"
+    },
+    "m13_a": {
+      "polygon": [
+        [
+          281,
+          168
+        ],
+        [
+          1009,
+          168
+        ],
+        [
+          1079,
+          238
+        ],
+        [
+          1079,
+          538
+        ],
+        [
+          1009,
+          608
+        ],
+        [
+          281,
+          608
+        ],
+        [
+          211,
+          538
+        ],
+        [
+          211,
+          238
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m13_a.png",
+      "source_sha256": "63e6b0e7d69c974b803ff7515916f97d9d3ed3fcbd54c85791a44c6cbfcd75fd",
+      "space": "background_1280x720"
+    },
+    "m13_b": {
+      "polygon": [
+        [
+          266,
+          142
+        ],
+        [
+          1020,
+          142
+        ],
+        [
+          1075,
+          197
+        ],
+        [
+          1075,
+          545
+        ],
+        [
+          1020,
+          600
+        ],
+        [
+          266,
+          600
+        ],
+        [
+          211,
+          545
+        ],
+        [
+          211,
+          197
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m13_b.png",
+      "source_sha256": "ef7d682a5dac918ca8e548811ad9324e5df7a4552fd7bc0b28f65f26fdd19324",
+      "space": "background_1280x720"
+    },
+    "m14_a": {
+      "polygon": [
+        [
+          249,
+          152
+        ],
+        [
+          1040,
+          152
+        ],
+        [
+          1072,
+          184
+        ],
+        [
+          1072,
+          523
+        ],
+        [
+          1040,
+          555
+        ],
+        [
+          249,
+          555
+        ],
+        [
+          217,
+          523
+        ],
+        [
+          217,
+          184
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m14_a.png",
+      "source_sha256": "0f58995ffe95d2d6c5bb53ccf0fe0c710783b11a7c5823aca39f920c2f433a15",
+      "space": "background_1280x720"
+    },
+    "m14_b": {
+      "polygon": [
+        [
+          295,
+          139
+        ],
+        [
+          992,
+          139
+        ],
+        [
+          1062,
+          209
+        ],
+        [
+          1062,
+          495
+        ],
+        [
+          992,
+          565
+        ],
+        [
+          295,
+          565
+        ],
+        [
+          225,
+          495
+        ],
+        [
+          225,
+          209
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m14_b.png",
+      "source_sha256": "1d8eebe0df5bb40586786c5a55cc8211d590dfc9c36bd33304ceec6ef20562ff",
+      "space": "background_1280x720"
+    },
+    "m15_a": {
+      "polygon": [
+        [
+          257,
+          170
+        ],
+        [
+          1030,
+          170
+        ],
+        [
+          1062,
+          202
+        ],
+        [
+          1062,
+          519
+        ],
+        [
+          1030,
+          551
+        ],
+        [
+          257,
+          551
+        ],
+        [
+          225,
+          519
+        ],
+        [
+          225,
+          202
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m15_a.png",
+      "source_sha256": "c677db1728e6936cb811567400ba3aa5f71efeaf8b386925c4347c9c4d507ab6",
+      "space": "background_1280x720"
+    },
+    "m15_b": {
+      "polygon": [
+        [
+          260,
+          173
+        ],
+        [
+          1028,
+          173
+        ],
+        [
+          1058,
+          203
+        ],
+        [
+          1058,
+          518
+        ],
+        [
+          1028,
+          548
+        ],
+        [
+          260,
+          548
+        ],
+        [
+          230,
+          518
+        ],
+        [
+          230,
+          203
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m15_b.png",
+      "source_sha256": "7d16bfd4c79b750dffb689351d68d657677f062194e376778182476cbcdb2bb3",
+      "space": "background_1280x720"
+    },
+    "m16_a": {
+      "polygon": [
+        [
+          295,
+          170
+        ],
+        [
+          1000,
+          170
+        ],
+        [
+          1065,
+          235
+        ],
+        [
+          1065,
+          500
+        ],
+        [
+          1000,
+          565
+        ],
+        [
+          295,
+          565
+        ],
+        [
+          230,
+          500
+        ],
+        [
+          230,
+          235
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m16_a.png",
+      "source_sha256": "03d0b16f9eb565f934665ab71eb7b42b90b2c1535d0b36bafd7f4b2d44f46753",
+      "space": "background_1280x720"
+    },
+    "m16_b": {
+      "polygon": [
+        [
+          278,
+          171
+        ],
+        [
+          1018,
+          171
+        ],
+        [
+          1058,
+          211
+        ],
+        [
+          1058,
+          526
+        ],
+        [
+          1018,
+          566
+        ],
+        [
+          278,
+          566
+        ],
+        [
+          238,
+          526
+        ],
+        [
+          238,
+          211
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m16_b.png",
+      "source_sha256": "4058883eb0dbf177f6b71eaeea99a0ca8c4ad37488b1acd110ad95c7055a383f",
+      "space": "background_1280x720"
+    },
+    "m17_a": {
+      "polygon": [
+        [
+          253,
+          145
+        ],
+        [
+          1045,
+          145
+        ],
+        [
+          1080,
+          180
+        ],
+        [
+          1080,
+          537
+        ],
+        [
+          1045,
+          572
+        ],
+        [
+          253,
+          572
+        ],
+        [
+          218,
+          537
+        ],
+        [
+          218,
+          180
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m17_a.png",
+      "source_sha256": "c58c0f0ff0fe620f17bc4098661f4bc106745a5c8395e9199697fa8688f7aa24",
+      "space": "background_1280x720"
+    },
+    "m17_b": {
+      "polygon": [
+        [
+          238,
+          148
+        ],
+        [
+          1056,
+          148
+        ],
+        [
+          1076,
+          168
+        ],
+        [
+          1076,
+          550
+        ],
+        [
+          1056,
+          570
+        ],
+        [
+          238,
+          570
+        ],
+        [
+          218,
+          550
+        ],
+        [
+          218,
+          168
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m17_b.png",
+      "source_sha256": "507eaec689a204a9374103bac6f561b90024875e41c781b9f39720d00ad92f1c",
+      "space": "background_1280x720"
+    },
+    "m18_a": {
+      "polygon": [
+        [
+          267,
+          154
+        ],
+        [
+          1025,
+          154
+        ],
+        [
+          1080,
+          209
+        ],
+        [
+          1080,
+          512
+        ],
+        [
+          1025,
+          567
+        ],
+        [
+          267,
+          567
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          212,
+          209
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m18_a.png",
+      "source_sha256": "466f508e8bab10247241a79223c72617d44fbb5b588f0893dd60577e0b941193",
+      "space": "background_1280x720"
+    },
+    "m18_b": {
+      "polygon": [
+        [
+          300,
+          151
+        ],
+        [
+          995,
+          151
+        ],
+        [
+          1060,
+          216
+        ],
+        [
+          1060,
+          502
+        ],
+        [
+          995,
+          567
+        ],
+        [
+          300,
+          567
+        ],
+        [
+          235,
+          502
+        ],
+        [
+          235,
+          216
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m18_b.png",
+      "source_sha256": "533ccb1089342bf03821bf21f3233713518b37e274ffdb9fa964e1e79c41fb58",
+      "space": "background_1280x720"
+    },
+    "m19_a": {
+      "polygon": [
+        [
+          222,
+          166
+        ],
+        [
+          1058,
+          166
+        ],
+        [
+          1090,
+          198
+        ],
+        [
+          1090,
+          544
+        ],
+        [
+          1058,
+          576
+        ],
+        [
+          222,
+          576
+        ],
+        [
+          190,
+          544
+        ],
+        [
+          190,
+          198
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m19_a.png",
+      "source_sha256": "c24bc9e9bcfe017d2c1d51996758e2c8ae96a99b33a1bb3a19d88b12578ac095",
+      "space": "background_1280x720"
+    },
+    "m19_b": {
+      "polygon": [
+        [
+          260,
+          156
+        ],
+        [
+          1029,
+          156
+        ],
+        [
+          1074,
+          201
+        ],
+        [
+          1074,
+          533
+        ],
+        [
+          1029,
+          578
+        ],
+        [
+          260,
+          578
+        ],
+        [
+          215,
+          533
+        ],
+        [
+          215,
+          201
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m19_b.png",
+      "source_sha256": "ae82c35f5187aff0f769b650311dc284c0aca0414c2c2c7a09b9150f4e72ba1c",
+      "space": "background_1280x720"
+    },
+    "m20_a": {
+      "polygon": [
+        [
+          254,
+          159
+        ],
+        [
+          1033,
+          159
+        ],
+        [
+          1098,
+          224
+        ],
+        [
+          1098,
+          490
+        ],
+        [
+          1033,
+          555
+        ],
+        [
+          254,
+          555
+        ],
+        [
+          189,
+          490
+        ],
+        [
+          189,
+          224
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m20_a.png",
+      "source_sha256": "11bfef91d1cc8daf8f8a8f66e70a371e85a8c607b677268afa89b32144fe971d",
+      "space": "background_1280x720"
+    },
+    "m20_b": {
+      "polygon": [
+        [
+          285,
+          164
+        ],
+        [
+          1002,
+          164
+        ],
+        [
+          1082,
+          244
+        ],
+        [
+          1082,
+          478
+        ],
+        [
+          1002,
+          558
+        ],
+        [
+          285,
+          558
+        ],
+        [
+          205,
+          478
+        ],
+        [
+          205,
+          244
+        ]
+      ],
+      "source": "game/assets/environment/expansion/m20_b.png",
+      "source_sha256": "6679860de1cc5a23a8f6a5b5e1ca451520587c96d052881863855ca30421a6ba",
+      "space": "background_1280x720"
+    }
+  }
+}

@@ -4,6 +4,20 @@
 
 Official 0.5.0 clients auto-connect to the fixed public WSS service. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
 
+## 源码归档 / Source archival
+
+[v0.5.0 独立源码归档](archives/v0.5.0/README.md)保存与正式服务端一致的 37 个共享脚本、12 份数据、可直接运行的 Godot 工程和公开部署文件；[归档清单](archives/v0.5.0/manifest.json)逐项绑定 SHA-256、原始 tag、正式包与下载地址。后续开发继续使用 `game/scripts/` 与 `game/data/`，发布新版本时新增归档目录。运行 `python tools/runtime/verify_server_archive.py` 可只读核验。
+
+The [standalone v0.5.0 source archive](archives/v0.5.0/README.md) preserves the exact accepted shared source bytes, portable project and public deployment files. Its manifest pins provenance and published binary hashes. Active development remains in the shared game source; future releases receive new archives. Verify from the repository root with `python tools/runtime/verify_server_archive.py`.
+
+Git 排除真实服务器配置、凭据、TLS 私钥、玩家 token／检查点、日志和缓存。运行包保留在 [正式 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)；玩家状态需要正常停机后做独立的加密备份，源码归档不包含在线存档。
+
+Private configuration, credentials, keys, player state, logs and caches are excluded from Git. Native packages are archived in the stable Release. Back up live state separately and privately after graceful shutdown.
+
+[归档验收记录](../docs/incense-debt/reports/server-archive-2026-10-11.json)已验证独立工程原生导入、两次启动／健康与 tick 推进、正常停机写盘及重启，另检查 17 项私密运行文件排除规则；测试使用独立空存储，不操作线上玩家。
+
+The [archive verification](../docs/incense-debt/reports/server-archive-2026-10-11.json) records native import, two isolated startup/health/tick/graceful-stop cycles, committed empty state and 17 private-file ignore checks. It does not exercise or modify live player sessions.
+
 继承 [0.4.1 可靠性修复](../docs/incense-debt/43-network-reliability-audit.md)：顺序指令补发、状态停滞停战、旧输入与快照拒绝、持久身份接管。协议 2、transport revision 1；旧传输版本明确拒绝。历史 0.4.0 检查点升级已有原生验证，旧 Release 保留原样。
 
 ## 原生运行 / Native execution
@@ -62,6 +76,10 @@ The scoped templates assume the existing BT Nginx installation. Adapt paths on a
 | wss://xhz-server.sidcloud.cn/play | TLS WebSocket |
 
 证书 `/etc/letsencrypt/live/incense-debt-public/`，certbot.timer 已启用，续期 dry-run 成功；专属 deploy hook 仅针对本证书测试并 reload 实际 Nginx。访问日志关闭；专属错误日志按 `linux/logrotate.conf` 每日轮换、最多 14 天。不要发布 TLS 私钥、SSH 凭据、匿名 token 或检查点。
+
+续期脚本已归档为 [linux/incense-debt-nginx-reload](linux/incense-debt-nginx-reload)，部署位置 `/etc/letsencrypt/renewal-hooks/deploy/incense-debt-nginx-reload`，需可执行权限。该文件不包含私钥，仅处理匹配的本服务证书；与线上脚本字节一致。
+
+The tracked [certificate-renewal hook](linux/incense-debt-nginx-reload) matches the deployed public script. Install it as executable at the above deploy-hook path; it contains no private key and reloads only for the matching certificate lineage.
 
 ## 弱网与恢复 / Network and recovery
 

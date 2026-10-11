@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "mode": "shuffle-bag",
+  "crossfade_seconds": 1.2,
+  "prevent_adjacent_repeats": true,
+  "source": "User-selected local Yourset collection",
+  "normalization": "48 kHz stereo Vorbis, loudnorm -18 LUFS / -1.5 dBTP",
+  "tracks": [
+    {
+      "id": "yourset-01",
+      "title": "Be A Single Dog Again",
+      "artist": "Yourset",
+      "source_filename": "Yourset - Be A Single Dog Again.mp3",
+      "source_sha256": "b5b61a1d373263709b2f1c5e0ce9cb0cb6ef1dc60b672d2c3842602651eb37cd",
+      "path": "res://assets/audio/yourset/track-01.ogg",
+      "sha256": "aa1b0e73c21f0df73b270a56aad27ccb9f895a4025b73a3ee92a8d67155fad98",
+      "duration": 173.6,
+      "bytes": 3016946,
+      "loop": false
+    },
+    {
+      "id": "yourset-02",
+      "title": "Loth",
+      "artist": "Yourset",
+      "source_filename": "Yourset - Loth.mp3",
+      "source_sha256": "c94e42b101e7631d2c60939a2d42953951422b5510dc35d1c3ae3b13307db119",
+      "path": "res://assets/audio/yourset/track-02.ogg",
+      "sha256": "ea4de24ced466d22e1d30e36796113f63158fdbb006e15106c2d64fe124503fb",
+      "duration": 106.1,
+      "bytes": 1682462,
+      "loop": false
+    },
+    {
+      "id": "yourset-03",
+      "title": "Sirirankok 修复版",
+      "artist": "Yourset",
+      "source_filename": "Yourset - Sirirankok 修复版.mp3",
+      "source_sha256": "cb2833c469eadbf2d547c6c98759b621c7a132d5ea402aa13d52efb54769cb15",
+      "path": "res://assets/audio/yourset/track-03.ogg",
+      "sha256": "b7f831d98a7e6cc98ccab860b866aa96032b40d6d1a2c2917e66f0e81eb0e29f",
+      "duration": 136.2,
+      "bytes": 2337805,
+      "loop": false
+    },
+    {
+      "id": "yourset-04",
+      "title": "黑历史 Infetar A1",
+      "artist": "Yourset",
+      "source_filename": "Yourset - 黑历史 Infetar A1.mp3",
+      "source_sha256": "3d53e7ecf9d83b621d9a016f0a1dc5fe807f8d6c0fc866bf28f34edc0a6a2e41",
+      "path": "res://assets/audio/yourset/track-04.ogg",
+      "sha256": "d665b95ee15969472df4b046b6ee2b7c1e8e3d0f244998d47f7c0d7aa2b25c9f",
+      "duration": 140.1,
+      "bytes": 2092340,
+      "loop": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-11T14:03:59.222057+00:00",
+  "source_archive": {
+    "passed": true,
+    "archive": "server/archives/v0.5.0",
+    "verified_files": 61,
+    "shared_scripts": 37,
+    "shared_data": 12,
+    "release_commit": "b3e2358196f9e7aa684cea59e642a80b1d86c05b",
+    "published_server_archives": 2
+  },
+  "native_engine": "4.7.2.stable.official.ed1daf0bf",
+  "virtualization": "none",
+  "native_import": {
+    "passed": true,
+    "exit_code": 0,
+    "log_sha256": "2b55c1d079992ebfff3112948bd04bf655edf71c22166e26e70e52b4b03614db"
+  },
+  "isolated_runs": [
+    {
+      "run": "initial",
+      "health_http": 200,
+      "version": "0.5.0",
+      "protocol": 2,
+      "transport": 1,
+      "tick_progressed": true,
+      "connections": 0,
+      "rooms": 0,
+      "storage_fault": false,
+      "persistence_errors": 0,
+      "graceful_stop": true,
+      "checkpoints_flushed": true,
+      "exit_code": 0
+    },
+    {
+      "run": "restart",
+      "health_http": 200,
+      "version": "0.5.0",
+      "protocol": 2,
+      "transport": 1,
+      "tick_progressed": true,
+      "connections": 0,
+      "rooms": 0,
+      "storage_fault": false,
+      "persistence_errors": 0,
+      "graceful_stop": true,
+      "checkpoints_flushed": true,
+      "exit_code": 0
+    }
+  ],
+  "durable_empty_state_written": true,
+  "production_server_modified": false,
+  "player_sessions_created": false,
+  "private_runtime_ignore_cases": 17,
+  "source_trackability_cases": 3,
+  "certificate_hook": {
+    "remote_read_only_sha256": "3de0c95b290441ee75b96485263431d3a03c2a1e979883993291efe106986c75",
+    "local_sha256": "3de0c95b290441ee75b96485263431d3a03c2a1e979883993291efe106986c75",
+    "matched": true
+  },
+  "probe_setup": "Explicit free high loopback port pair. Initial OS-assigned low-port probe returned an unexpected non-HTTP line; the test was repeated with the explicit pair.",
+  "scope": "Standalone source import, empty health/tick/persistence/graceful stop/restart and archival rules; gameplay proofs remain in the release evidence.",
+  "staged_review": {
+    "passed": true,
+    "files_reviewed": 69,
+    "archive_payload_files_verified_in_index": 61,
+    "sensitive_literal_findings": 0,
+    "review_scope": "Explicit staged files; private key/token/credential literal patterns and private/generated paths. No secret values printed."
+  }
+}

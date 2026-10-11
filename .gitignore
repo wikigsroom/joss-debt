@@ -114,6 +114,31 @@ Thumbs.db
 /server/generated/
 /build/server/
 
+# Private server runtime state, local configuration and credentials.
+/server/config.json
+/server/**/config.json
+/server/**/config.local.json
+/server/archives/*/data/
+/server/**/backups/
+/server/**/private/
+/server/**/server-data/
+/server/**/online-server/
+/server/**/registry/
+/server/**/rooms/
+/server/**/logs/
+/server/**/*.log
+/server/**/*.dmp
+/server/**/checkpoint_*.json
+/server/**/registry_*.json
+/server/**/sessions*.json
+/server/**/tokens*.json
+/server/**/export_credentials.cfg
+/server/archives/**/project/**/*.gd.uid
+*.dpapi
+id_rsa
+id_ed25519
+*.ppk
+
 # Documentation-linked native 0.3.0 Duel animation.
 !/docs/incense-debt/reports/online-2026-10-11/media/duel-native.gif
 

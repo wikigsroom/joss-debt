@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+if [ "${RENEWED_LINEAGE:-}" = /etc/letsencrypt/live/incense-debt-public ]; then
+    /www/server/nginx/sbin/nginx -t
+    /www/server/nginx/sbin/nginx -s reload
+fi

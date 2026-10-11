@@ -1,0 +1,10 @@
+config_version=5
+[application]
+config/name="IncenseDebt Dedicated Server"
+config/version="0.5.0"
+run/main_scene="res://server.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="IncenseDebtServer"
+run/flush_stdout_on_print=true
+[rendering]
+renderer/rendering_method="gl_compatibility"

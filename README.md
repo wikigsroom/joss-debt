@@ -650,6 +650,8 @@ release 模式使用独立输出；缺少发布密钥时清除未签名半成品
 
 **仓库与发布附件：** 源码、资源、设计、验收记录与 README 截图／GIF 保留在 Git；私有工具、签名、SSH 凭据、服务器状态与 EXE／APK／ZIP 均不提交。[0.5.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) 提供 Windows、正式 Android、Linux／Windows 服务端、双语指南、清单和校验文件。[发布清单](docs/releases/v0.5.0.manifest.json)绑定实际验收包。旧版 iOS 交接保留在历史 0.2.0 Release。
 
+**服务端归档：** [server/archives/v0.5.0](server/archives/v0.5.0/README.md)包含独立原生 Godot 工程、37 份共享脚本、12 份数据与实际部署的公开配置。[清单](server/archives/v0.5.0/manifest.json)绑定源码、原始 tag 和已发布 Linux／Windows 包的 SHA-256；使用 `python tools/runtime/verify_server_archive.py` 核验。凭据、TLS 私钥和玩家状态排除在 Git 外；在线存档需独立加密备份。
+
 0.5.0 使用 `record_public_delivery.py` 绑定验收，提交源码后以 `package_public_release.py` 生成附件，提交清单、推送注释 tag，最后 `publish_release.py --tag v0.5.0` 验证草稿附件完整摘要并公开正式版。旧 Release 不覆盖，详见 [构建指南](build/README.md)。
 
 <a id="zh-engineering"></a>
@@ -1058,6 +1060,8 @@ python3 tools/runtime/export_ios_on_mac.py \
 Then use Xcode for signing, installation, and device validation. Follow the [iOS handoff instructions](build/ios-handoff/README.md). No signed IPA or verified iOS runtime is currently supplied.
 
 **Versioned vs. release assets:** Source, art, evidence and README GIFs are tracked. Private tooling, credentials, signing material, server state and EXE/APK/ZIP files are excluded. [Release 0.5.0](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0) provides both clients and native Linux/Windows servers. The [manifest](docs/releases/v0.5.0.manifest.json) binds accepted assets; historical releases remain unchanged.
+
+**Server source archival:** [server/archives/v0.5.0](server/archives/v0.5.0/README.md) preserves a standalone native Godot project, the exact 37 shared scripts and 12 data files, and public deployment templates. Its [manifest](server/archives/v0.5.0/manifest.json) records source provenance and published Linux/Windows hashes. Run `python tools/runtime/verify_server_archive.py` to verify. Credentials, TLS keys and live player state stay private; state backups require separate encrypted storage.
 
 For 0.5.0, record acceptance with `record_public_delivery.py`, commit source, then run `package_public_release.py`. Commit its manifest, push an annotated tag, and run `publish_release.py --tag v0.5.0`. It uploads a draft, verifies full GitHub asset digests, and publishes a stable release. See [build instructions](build/README.md).
 
