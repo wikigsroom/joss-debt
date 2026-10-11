@@ -1,0 +1,84 @@
+{
+  "version": "0.5.0",
+  "tag": "v0.5.0",
+  "repository": "wikigsroom/joss-debt",
+  "prerelease": false,
+  "default_game_mode": "coop",
+  "source_commit": "f1f8e3032f905c6f42e9fc6f9022e22554db7002",
+  "game_git_tree": "88bba99be0f6bfabca61aa32edd56def2413b6cf",
+  "generated_at": "2026-10-11T10:24:25.374617+00:00",
+  "public_game_server_deployed": true,
+  "locked_automatic_connection": true,
+  "android_min_sdk": 28,
+  "android_version_code": 9,
+  "android_signing": "private release key with cryptographically verified legacy lineage",
+  "windows_verification": {
+    "passed": true,
+    "sha256": "ad63f10b611d53641b483710c63d35539db28aeeec448c71b34b1df57a1e235c",
+    "cooperative_checks": 29,
+    "duel_checks": 32,
+    "keyboard_checks": 107
+  },
+  "android_verification": {
+    "passed": true,
+    "embedded_lineage_verified": true,
+    "legacy_certificate_sha256": "66e1cfbcef2c0251d6d74144e6ac845ad713ec0496a266934645f06ca454708c",
+    "release_certificate_sha256": "6d5f9c73c947f025641d0663f7699f78db6c089c070403e4558afee899ca69a3",
+    "installed_data": true,
+    "rollback": false,
+    "platform_checks": [
+      {
+        "api": 28,
+        "verified": true
+      },
+      {
+        "api": 32,
+        "verified": true
+      },
+      {
+        "api": 33,
+        "verified": true
+      },
+      {
+        "api": 36,
+        "verified": true
+      }
+    ],
+    "apk_sha256": "600ec0d5ef757fbc9f2d50e07fd453ddd668dec3c2fc270006dd5e55923b1d94"
+  },
+  "native_server_sha256": {
+    "windows": "c7ca5b144f69cc91d3106f5820ff69f9b83aecb4592a2b566c9f1bb1ff1cf905",
+    "linux": "1b848e654388fda189b9ac871ef19f391ab166ad9ef684bc4768b621b07c0212"
+  },
+  "privacy_policy_version": "1.6",
+  "proofs": "docs/incense-debt/reports/public-online-2026-10-11",
+  "readme_motion_path": "public-online-2026-10-11/media/cooperative-native.gif",
+  "physical_android_tested": false,
+  "files": [
+    {
+      "name": "IncenseDebt-v0.5.0-android-arm64.apk",
+      "bytes": 1022819407,
+      "sha256": "600ec0d5ef757fbc9f2d50e07fd453ddd668dec3c2fc270006dd5e55923b1d94"
+    },
+    {
+      "name": "IncenseDebt-v0.5.0-server-linux-x64.zip",
+      "bytes": 28849855,
+      "sha256": "0c0eeecbda474f2240654d75a2274c43c45b49fb24ff23eb1458e9d4893641f2"
+    },
+    {
+      "name": "IncenseDebt-v0.5.0-server-windows-x64.zip",
+      "bytes": 38498057,
+      "sha256": "317e5a567ce78ddeb1e704864d3669a661a65a2205d352e014904ba573a29760"
+    },
+    {
+      "name": "IncenseDebt-v0.5.0-windows-x64.zip",
+      "bytes": 1031712509,
+      "sha256": "39202badd6491c4e099ca59f0f863362cb614445b95307b0d3b012cb9e6c07c3"
+    },
+    {
+      "name": "START-HERE.txt",
+      "bytes": 4534,
+      "sha256": "f76d2d4ee1f98578899d65210fceae8b261be9924cf171f8175f37874851b0ff"
+    }
+  ]
+}
