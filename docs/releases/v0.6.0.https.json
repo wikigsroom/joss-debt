@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "tag": "v0.6.0",
+  "release_url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0",
+  "commit": "5ca31dc9ed08aab541cfdd26e8d3bbb219045ffb",
+  "verified_at": "2026-10-11T22:28:10.796465+00:00",
+  "checks": [
+    {
+      "id": "anonymous_release_page",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "IncenseDebt-v0.6.0-android-arm64.apk",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-android-arm64.apk",
+      "status": 206,
+      "expected_bytes": 1023684930,
+      "prefix_only": true,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "IncenseDebt-v0.6.0-server-linux-x64.zip",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-linux-x64.zip",
+      "status": 206,
+      "expected_bytes": 28914132,
+      "prefix_only": true,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "IncenseDebt-v0.6.0-server-windows-x64.zip",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-windows-x64.zip",
+      "status": 206,
+      "expected_bytes": 38565935,
+      "prefix_only": true,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "IncenseDebt-v0.6.0-windows-x64.zip",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-windows-x64.zip",
+      "status": 206,
+      "expected_bytes": 1031770925,
+      "prefix_only": true,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "release-manifest.json",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/release-manifest.json",
+      "status": 200,
+      "expected_bytes": 2625,
+      "prefix_only": false,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/SHA256SUMS.txt",
+      "status": 200,
+      "expected_bytes": 592,
+      "prefix_only": false,
+      "passed": true
+    },
+    {
+      "id": "anonymous_asset",
+      "name": "START-HERE.md",
+      "url": "https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/START-HERE.md",
+      "status": 200,
+      "expected_bytes": 4754,
+      "prefix_only": false,
+      "passed": true
+    },
+    {
+      "id": "tagged_readme_has_online_gif",
+      "url": "https://api.github.com/repos/wikigsroom/joss-debt/contents/README.md?ref=v0.6.0",
+      "status": 200,
+      "git_blob_sha": "4010e388897b886b3ec916aeb41d766d840e5e87",
+      "required_gif": "online-2026-10-11/media/duel-native.gif",
+      "passed": true
+    }
+  ],
+  "anonymous": true,
+  "tls_verification": "system default; enabled",
+  "browser_used": false,
+  "binary_integrity": "full GitHub SHA-256 verified in publication receipt; HTTPS prefix check here"
+}
