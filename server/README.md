@@ -4,6 +4,10 @@
 
 Official 0.5.0 clients auto-connect to the fixed public WSS service. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
 
+**2026-10-11 重新选型：** 当前生产服务仍为 WSS；最新审查选择 ENet＋DTLS 承载原生战斗，保留 HTTPS／WSS 的发现与匹配。已归档原生 UDP 弱网探针和快照开销测量；尚未修改线上传输、开放 UDP 或升级玩家存档。[完整方案与部署／性能验收](../docs/incense-debt/45-network-reselection.md)。
+
+**Networking selection:** ENet/DTLS is selected for native battle, with HTTPS/WSS bootstrap. Native transport and payload probes are archived; production remains WSS and no UDP deployment or player-state migration has occurred. See the [research and migration plan](../docs/incense-debt/45-network-reselection.md).
+
 ## 源码归档 / Source archival
 
 [v0.5.0 独立源码归档](archives/v0.5.0/README.md)保存与正式服务端一致的 37 个共享脚本、12 份数据、可直接运行的 Godot 工程和公开部署文件；[归档清单](archives/v0.5.0/manifest.json)逐项绑定 SHA-256、原始 tag、正式包与下载地址。后续开发继续使用 `game/scripts/` 与 `game/data/`，发布新版本时新增归档目录。运行 `python tools/runtime/verify_server_archive.py` 可只读核验。

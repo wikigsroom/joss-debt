@@ -13,6 +13,10 @@
 
 **Open Co-Light to connect automatically.** The official service is live, cooperation is the default, and normal disconnects retry automatically. Both players confirm before resuming. Native public-WAN validation covers the shipping clients and Linux server; see [evidence and limits](docs/incense-debt/44-public-online-release.md). Physical Android acceptance and long-term capacity remain pending.
 
+**2026-10-11 联机重新选型：** 复查确认当前 WSS 的状态确认窗口、全量快照与表现同步仍存在卡顿风险，旧“通过”记录主要证明连接与恢复。新方案选择原生 ENet＋DTLS 战斗、固定 tick 预测和远端插值；已完成 UDP 弱网可行性及快照开销测量，**尚未迁移生产服务或发布新客户端**。见[完整研究、方案比较与验收门槛](docs/incense-debt/45-network-reselection.md)。
+
+**2026-10-11 networking review:** Current WSS snapshot gating, full-world replication and presentation still risk stalls; earlier passes mainly establish connection/recovery correctness. The selected native battle architecture is ENet/DTLS with fixed-tick prediction and remote interpolation. Isolated UDP impairment and payload measurements are complete; **production and shipping clients have not migrated**. See the [comparison, evidence and migration gates](docs/incense-debt/45-network-reselection.md).
+
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |

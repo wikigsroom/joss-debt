@@ -1,0 +1,171 @@
+{
+  "retrieved_at": "2026-10-11T14:26:03.158894+00:00",
+  "repositories": [
+    {
+      "repository": "foxssake/netfox",
+      "url": "https://github.com/foxssake/netfox",
+      "commit": "cf5189d18e98766022c8c1c5e637a6a30c4c3703",
+      "archived": false,
+      "default_branch": "main",
+      "license": "MIT",
+      "tree_truncated": false
+    },
+    {
+      "repository": "naxIO/netfox-cs-sample",
+      "url": "https://github.com/naxIO/netfox-cs-sample",
+      "commit": "0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f",
+      "archived": false,
+      "default_branch": "main",
+      "license": "MIT",
+      "tree_truncated": false
+    },
+    {
+      "repository": "unfa/liblast",
+      "url": "https://github.com/unfa/liblast",
+      "commit": "59f82f6e136bb29a1946f8e0c3389e0489402ba8",
+      "archived": true,
+      "default_branch": "main",
+      "license": "MIT",
+      "tree_truncated": false
+    },
+    {
+      "repository": "godotengine/godot-demo-projects",
+      "url": "https://github.com/godotengine/godot-demo-projects",
+      "commit": "b761b4cd5718a7118f2c95eb55f181d0a5f004f1",
+      "archived": false,
+      "default_branch": "master",
+      "license": "MIT",
+      "tree_truncated": false
+    }
+  ],
+  "files_examined": [
+    {
+      "repository": "naxIO/netfox-cs-sample",
+      "commit": "0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f",
+      "path": "examples/multiplayer-fps/scripts/player.gd",
+      "bytes": 10772,
+      "sha256": "61cd8e646e779e4e2cc32658122ba63e45cf422bd74146560a076b3632e86821",
+      "url": "https://github.com/naxIO/netfox-cs-sample/blob/0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f/examples/multiplayer-fps/scripts/player.gd"
+    },
+    {
+      "repository": "naxIO/netfox-cs-sample",
+      "commit": "0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f",
+      "path": "examples/multiplayer-fps/scripts/weapon_manager.gd",
+      "bytes": 11739,
+      "sha256": "9030ce483e3609c4f3cce29093bbaf3d737e9a466677b5d8c045ff264fb73c28",
+      "url": "https://github.com/naxIO/netfox-cs-sample/blob/0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f/examples/multiplayer-fps/scripts/weapon_manager.gd"
+    },
+    {
+      "repository": "unfa/liblast",
+      "commit": "59f82f6e136bb29a1946f8e0c3389e0489402ba8",
+      "path": "Game/Main.gd",
+      "bytes": 4169,
+      "sha256": "b1233006dde198c0f8d739ceada5f7dcd90f79b6471fb706cd91693fbcc13dc9",
+      "url": "https://github.com/unfa/liblast/blob/59f82f6e136bb29a1946f8e0c3389e0489402ba8/Game/Main.gd"
+    },
+    {
+      "repository": "unfa/liblast",
+      "commit": "59f82f6e136bb29a1946f8e0c3389e0489402ba8",
+      "path": "Game/Assets/Characters/Player.gd",
+      "bytes": 8379,
+      "sha256": "f3f863ac7e28fb69b059ea5af9ff80bfc6614c6e81d1c41d6e0afbba26296bde",
+      "url": "https://github.com/unfa/liblast/blob/59f82f6e136bb29a1946f8e0c3389e0489402ba8/Game/Assets/Characters/Player.gd"
+    },
+    {
+      "repository": "godotengine/godot-demo-projects",
+      "commit": "b761b4cd5718a7118f2c95eb55f181d0a5f004f1",
+      "path": "networking/multiplayer_bomber/lobby.gd",
+      "bytes": 2620,
+      "sha256": "b3927234d66fbd810f7af5982c647544400fee336ce2e72ec48f3973a7d3017b",
+      "url": "https://github.com/godotengine/godot-demo-projects/blob/b761b4cd5718a7118f2c95eb55f181d0a5f004f1/networking/multiplayer_bomber/lobby.gd"
+    },
+    {
+      "repository": "godotengine/godot-demo-projects",
+      "commit": "b761b4cd5718a7118f2c95eb55f181d0a5f004f1",
+      "path": "networking/multiplayer_bomber/gamestate.gd",
+      "bytes": 4394,
+      "sha256": "897216664665bc3ace9e44b1ca59d2f68d65429e60b7a67ac0860f018c039e78",
+      "url": "https://github.com/godotengine/godot-demo-projects/blob/b761b4cd5718a7118f2c95eb55f181d0a5f004f1/networking/multiplayer_bomber/gamestate.gd"
+    },
+    {
+      "repository": "foxssake/netfox",
+      "commit": "cf5189d18e98766022c8c1c5e637a6a30c4c3703",
+      "path": "examples/shared/scripts/network-boostrapper.gd",
+      "bytes": 263,
+      "sha256": "c009a073c418cef432fe1f100c44e1cfd3bdc9d00184ae5b832e0190db8d89df",
+      "url": "https://github.com/foxssake/netfox/blob/cf5189d18e98766022c8c1c5e637a6a30c4c3703/examples/shared/scripts/network-boostrapper.gd"
+    },
+    {
+      "repository": "foxssake/netfox",
+      "commit": "cf5189d18e98766022c8c1c5e637a6a30c4c3703",
+      "path": "addons/netfox/plugin.cfg",
+      "bytes": 148,
+      "sha256": "ae2c4bafa5053f31586ccf7281e2460e021f5bc028ec07c095642588f34331b5",
+      "url": "https://github.com/foxssake/netfox/blob/cf5189d18e98766022c8c1c5e637a6a30c4c3703/addons/netfox/plugin.cfg"
+    },
+    {
+      "repository": "naxIO/netfox-cs-sample",
+      "commit": "0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f",
+      "path": "addons/netfox/plugin.cfg",
+      "bytes": 148,
+      "sha256": "ef5cb2acef85a7b321a974ed260dc482a3e0eb594254cd8fc8136a7fc832282b",
+      "url": "https://github.com/naxIO/netfox-cs-sample/blob/0cf2dc5f5fafd1bed57027c6e1533e0f01091d2f/addons/netfox/plugin.cfg"
+    }
+  ],
+  "documentation_sources": [
+    {
+      "url": "https://docs.godotengine.org/en/stable/classes/class_enetconnection.html",
+      "scope": "Official native low-level ENet and DTLS API"
+    },
+    {
+      "url": "https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html",
+      "scope": "Official UDP multiplayer peer"
+    },
+    {
+      "url": "https://docs.godotengine.org/en/latest/tutorials/networking/high_level_multiplayer.html",
+      "scope": "Official channels and reliability modes; latest docs require installed-version compatibility verification"
+    },
+    {
+      "url": "https://foxssake.github.io/netfox/latest/netfox/tutorials/responsive-player-movement/",
+      "scope": "Maintainer prediction/rollback/interpolation tutorial"
+    },
+    {
+      "url": "https://foxssake.github.io/netfox/latest/faq/",
+      "scope": "Maintainer guidance on applicability and shooter rollback tradeoffs"
+    },
+    {
+      "url": "https://github.com/naxIO/netfox-cs-sample/blob/main/README.md",
+      "scope": "Community FPS sample, not commercial Counter-Strike"
+    },
+    {
+      "url": "https://godotengine.org/showcase/buckshot-roulette/",
+      "scope": "Official shipped Godot showcase; turn-based first-person multiplayer, not continuous FPS"
+    },
+    {
+      "url": "https://mikeklubnika.com/logs/log_4",
+      "scope": "Actual developer log; Steam/lobby work, not proof of specific transport or rollback implementation"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/api/ISteamNetworkingSockets",
+      "scope": "Official reliable/unreliable UDP networking interface"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay",
+      "scope": "Official relay conditions; open-source sockets do not grant Valve SDR access"
+    },
+    {
+      "url": "https://docs.godotengine.org/en/stable/tutorials/networking/webrtc.html",
+      "scope": "Official WebRTC platform/extension requirements"
+    },
+    {
+      "url": "https://github.com/skywind3000/kcp",
+      "scope": "Protocol author description of ARQ and external socket/clock responsibilities; no project-specific speed claims verified"
+    }
+  ],
+  "research_limits": [
+    "No publicly inspectable commercial Godot real-time FPS netcode was verified.",
+    "Liblast GitHub history is archived; current Codeberg source was not accessible in this research.",
+    "No third-party source has been vendored into production.",
+    "External documentation can change; repository source reads above pin exact commits."
+  ]
+}

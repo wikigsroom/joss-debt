@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-10-11T14:38:10.951862+00:00",
+  "audited_commit": "3e1d5eaf574202314cfa12fba4fd5b7cfd1511f6",
+  "game_git_tree": "88bba99be0f6bfabca61aa32edd56def2413b6cf",
+  "historical_load_source": "docs/incense-debt/reports/public-online-2026-10-11/public-load.json",
+  "historical_load_sha256": "7de46fa5399307d0e514eb7ee4a17aa2f8a19a246f1b822880e9891ab5c4177a",
+  "historical_client_metrics": {
+    "battle_seconds": 60.399,
+    "clients": 4,
+    "errors": [],
+    "fresh_playable_frame_ratio": 0.9538928768636112,
+    "passed": true,
+    "ping_p95_ms": 358.0,
+    "rooms": 2,
+    "snapshots": 4542,
+    "state_age_p95_ms": 184.0000000000046,
+    "uses_shipping_session": true
+  },
+  "historical_server_metrics": {
+    "tick_hz": 59.88982294158825,
+    "max_step_ms": 32.51,
+    "max_process_ms": 1993.963
+  },
+  "historical_sample_deltas": {
+    "wall_seconds": 72.5,
+    "server_uptime_seconds": 65.66256666660695,
+    "bytes_sent": 24520392,
+    "snapshots_coalesced": 583,
+    "snapshot_retries": 3,
+    "largest_snapshot_window": 4
+  },
+  "window_model": {
+    "flight_window": 4,
+    "target_snapshots_hz": 20,
+    "example_ack_rtt_ms": 358,
+    "conditional_rate_cap_hz": 11.1731843575419,
+    "qualification": "Conditional W/RTT bound if actual state-ACK round trip remains 358 ms; historical ping p95 is not a measured constant state-ACK RTT."
+  },
+  "production_changed": false,
+  "selection": "Server-authoritative ENetConnection/ENetPacketPeer over DTLS for native battle; separate channels and compact latest-state replication, fixed-tick prediction/reconciliation, remote interpolation. HTTPS/WSS only for discovery/matchmaking/tickets/operations. Netfox is a separately evaluated synchronization-layer option; Steam and WebRTC remain platform-specific alternatives.",
+  "implementation_status": "Selection, source/payload audit and isolated native transport feasibility verified. No production transport migration or public UDP deployment performed.",
+  "files_examined": {
+    "game/scripts/network/protocol.gd": {
+      "bytes": 5121,
+      "sha256": "9cad4950b986f37684156f4ebe3f4e4fd35d7fd0f290f65ae1bd14173f05aa19"
+    },
+    "game/scripts/network/online_session.gd": {
+      "bytes": 19009,
+      "sha256": "8daa56f7bb5b34ab561458c4b4e68fca26a38d70cce0f0ab64e277360ef401d7"
+    },
+    "game/scripts/network/server_runtime.gd": {
+      "bytes": 49340,
+      "sha256": "e93c46a229b6691cd33636cbbf85344052eca1bae3b118a59b8df492ec95d730"
+    },
+    "game/scripts/network/cooperative_match.gd": {
+      "bytes": 7043,
+      "sha256": "907882cd68fe0f3917f05f85d49569d3fa17f320541fc06e6d70aa8d3fb6e89b"
+    },
+    "game/scripts/network/motion_prediction.gd": {
+      "bytes": 3403,
+      "sha256": "b2a53d333d5b7764299bb58591ffdebc0053d4e971776fd2a67f992c60cc3405"
+    },
+    "game/scripts/network/online_controller.gd": {
+      "bytes": 17969,
+      "sha256": "43f6d218dfbb3dd07f43b85fee7f718fd186838bcd8ea20b34620cfe75bffa37"
+    },
+    "game/scripts/ui/game_renderer.gd": {
+      "bytes": 47454,
+      "sha256": "a2c883484f964e41dad0fa52844626dcfc6e60e75505f2ab053048ec197c4f5c"
+    }
+  }
+}

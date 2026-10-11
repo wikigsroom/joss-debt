@@ -1,0 +1,75 @@
+{
+	"fixtures": [
+		{
+			"bullets": 0,
+			"compressed_bytes": 4040,
+			"decode_p95_ms": 1.674,
+			"decode_valid": true,
+			"encode_p95_ms": 0.806,
+			"enemies": 3,
+			"expanded_bytes": 23284,
+			"expanded_field_bytes": {
+				"actors": 11480,
+				"arena": 1288,
+				"builds": 2148,
+				"events": 128,
+				"players": 208,
+				"scene": 7420
+			},
+			"fixture": "opening-room",
+			"per_client_kib_s_at_20hz": 78.90625,
+			"roundtrip_cpu_p95_ms": 2.598,
+			"samples": 60,
+			"view_p95_ms": 0.337
+		},
+		{
+			"bullets": 240,
+			"compressed_bytes": 11216,
+			"decode_p95_ms": 5.03,
+			"decode_valid": true,
+			"encode_p95_ms": 1.947,
+			"enemies": 3,
+			"expanded_bytes": 83760,
+			"expanded_field_bytes": {
+				"actors": 11480,
+				"arena": 1288,
+				"builds": 2148,
+				"events": 128,
+				"players": 208,
+				"scene": 67896
+			},
+			"fixture": "synthetic-240-diverse-projectiles",
+			"per_client_kib_s_at_20hz": 219.0625,
+			"roundtrip_cpu_p95_ms": 8.424,
+			"samples": 60,
+			"view_p95_ms": 2.248
+		},
+		{
+			"bullets": 240,
+			"compressed_bytes": 15245,
+			"decode_p95_ms": 13.66,
+			"decode_valid": true,
+			"encode_p95_ms": 4.778,
+			"enemies": 3,
+			"expanded_bytes": 253668,
+			"expanded_field_bytes": {
+				"actors": 11480,
+				"arena": 1288,
+				"builds": 172056,
+				"events": 128,
+				"players": 208,
+				"scene": 67896
+			},
+			"fixture": "synthetic-240-projectiles-256-build-entries-per-player",
+			"per_client_kib_s_at_20hz": 297.75390625,
+			"roundtrip_cpu_p95_ms": 22.395,
+			"samples": 60,
+			"view_p95_ms": 4.858
+		}
+	],
+	"native_engine": "4.7.2-stable (official)",
+	"passed": true,
+	"production_modified": false,
+	"scope": "Current v0.5.0 view/Variant-DEFLATE/unpack on native Windows CPU. 60 warmed samples per static fixture; dense cases are synthetic, not a WAN or Android test. Does not attribute observed production main-loop stalls to a specific function.",
+	"virtualization": "none"
+}
