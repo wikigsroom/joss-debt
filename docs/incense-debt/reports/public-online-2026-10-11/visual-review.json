@@ -15,5 +15,16 @@
     "coop-combat"
   ],
   "physical_android": false,
-  "notes": "92-page visual contact sheets reviewed; full-size art, controls, clipping and safe margins checked; fixtures separate from native WSS captures"
+  "notes": "92-page visual contact sheets reviewed; full-size art, controls, clipping and safe margins checked; fixtures separate from native WSS captures",
+  "actual_gif_frames": 20,
+  "unique_gif_frames": 20,
+  "gif_size": [
+    960,
+    432
+  ],
+  "gif_frames_visually_reviewed": [
+    1,
+    10,
+    20
+  ]
 }

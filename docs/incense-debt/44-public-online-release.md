@@ -2,6 +2,8 @@
 
 2026-10-11，正式联机版 **0.5.0 / Android code 9**。在 0.4.1 可靠性修复基础上，部署原生 Linux 服务、固定自动连接、整理共灯 UI、完成正式 Android 签名并核对最终发布包。旧版 tag 和附件保持原样。
 
+已公开为 GitHub 最新正式 [v0.5.0 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0)，7 个附件完整摘要／大小均与本地一致，9 项无认证 HTTPS 检查通过。[公开发布回执](../releases/v0.5.0.publication.json) · [下载验证](../releases/v0.5.0.https.json)。旧 0.4.0 发布 ID、附件 ID、大小及摘要已核对未变。
+
 ## 联机复查结论
 
 旧实现存在发送失败不补发、确认缺失永久等待、心跳正常掩盖世界停滞、积压输入跨房间释放、旧进程抢回身份等问题。[0.4.1 审计](43-network-reliability-audit.md)保留 14 类修复、前后复现和 TCP 中转证据；本轮再验证 65 项应用故障，并增加实际公网和线上进程重启验收。

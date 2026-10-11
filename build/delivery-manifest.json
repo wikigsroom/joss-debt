@@ -1,7 +1,7 @@
 {
   "version": "0.5.0",
-  "status": "verified_pending_publication",
-  "recorded_at": "2026-10-11T10:16:21.098841+00:00",
+  "status": "formal_online_release",
+  "recorded_at": "2026-10-11T10:35:07.402259+00:00",
   "files": [
     {
       "platform": "windows",
@@ -163,7 +163,7 @@
   "android_physical_device_tested": false,
   "public_game_server_deployed": true,
   "save_schema": 2,
-  "public_github_release": false,
+  "public_github_release": true,
   "public_release_version": "0.5.0",
-  "public_release_state": "prepared_stable"
+  "public_release_state": "published_stable"
 }

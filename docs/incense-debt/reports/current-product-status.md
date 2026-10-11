@@ -1,6 +1,6 @@
 # 当前产品与验证状态
 
-0.5.0：十一层离线肉鸽、默认双人合作、可选对战，固定官方 WSS 自动连接。公网 Linux 原生服务已部署；GitHub 发布状态：prepared_stable。
+0.5.0：十一层离线肉鸽、默认双人合作、可选对战，固定官方 WSS 自动连接。公网 Linux 原生服务已部署；GitHub 发布状态：published_stable。
 
 Windows：`ad63f10b611d53641b483710c63d35539db28aeeec448c71b34b1df57a1e235c`。Android 正式签名包：`600ec0d5ef757fbc9f2d50e07fd453ddd668dec3c2fc270006dd5e55923b1d94`，arm64，Android 9+，version code 9。实际 APK 签名链通过 API 28/32/33/36 验证，旧测试签名具有 installed-data 继承能力；Android 真机安装仍待验。
 
