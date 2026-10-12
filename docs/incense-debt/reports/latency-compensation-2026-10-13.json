@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-13T04:09:54+08:00",
+  "recorded_at": "2026-10-13T05:02:34+08:00",
   "scope": "client-prediction-and-remote-presentation-fix",
   "transport": "ENet/DTLS over UDP with WSS bootstrap",
   "server_changed": false,
@@ -17,7 +17,8 @@
     "monotonic render target while adaptive delay changes",
     "adaptive RTT/jitter interpolation delay bounded to 50-220 ms",
     "bounded 100 ms remote extrapolation",
-    "smooth local reconciliation with 1.5 px deadzone and 420 px hard-snap threshold"
+    "smooth local reconciliation with 1.5 px deadzone and 420 px hard-snap threshold",
+    "pending pause coalescing and one bounded retry after an authoritative epoch changes"
   ],
   "tests": {
     "remote_interpolation": "passed",
@@ -32,6 +33,20 @@
       "checks": 35
     },
     "network_faults": "passed"
+  },
+  "windows_local_build": {
+    "path": "build/windows/IncenseDebt.exe",
+    "bytes": 1108950224,
+    "sha256": "f9bf68867d16a48e9d8ad1cabd494dbc3c8863e5c4eacc5912d6b2b5966d9326",
+    "compatible_version": "0.6.0",
+    "native_public_flow": {
+      "passed": true,
+      "checks": 29,
+      "failures": 0,
+      "captures": 33,
+      "report": "latency-compensation-2026-10-13/native-client.json"
+    },
+    "github_release_updated": false
   },
   "public_wan_smoke": {
     "passed": true,
@@ -52,8 +67,8 @@
     "errors": []
   },
   "limits": [
-    "No physical Android device or rendered-frame capture was used.",
-    "The server binary was not changed; clients require a new build to receive the fix.",
+    "No physical Android device was used. Native Windows captures verify flow, not a long-duration frame-time benchmark.",
+    "The server binary was not changed. Windows was rebuilt locally; the public GitHub release and Android APK were not updated.",
     "A bounded smoke run is evidence of the current path, not a universal latency SLA."
   ],
   "virtualization": "none"

@@ -39,6 +39,7 @@ var waiting_label: Label
 var choice_page = 0
 var last_scene = -1
 var pause_pending = false
+var pause_context_retry_used = false
 var last_phase = ""
 
 func initialize(host, folder: String = "user://online-client") -> void:
@@ -57,8 +58,16 @@ func initialize(host, folder: String = "user://online-client") -> void:
 	session.events_received.connect(receive_events)
 	session.entity_state_received.connect(receive_entity_state)
 	session.input_sampled.connect(sample_local_input)
-	session.command_completed.connect(func(operation, succeeded, _code):
-		if operation == "pause" and not succeeded: pause_pending = false; refresh())
+	session.command_completed.connect(func(operation, succeeded, code):
+		if operation == "pause" and not succeeded:
+			pause_pending = false
+			if code == "stale_context" and not pause_context_retry_used:
+				# A newer authoritative epoch can arrive between the input key and
+				# the command reaching the server. Retry once with fresh context.
+				pause_context_retry_used = true
+				call_deferred("retry_pause_after_stale")
+			refresh()
+	)
 	session.problem.connect(func(code):
 		if enabled: app.notice(Screens.error_text(code)))
 	var character = app.world.db.row("characters", str(session.loadout.get("character", "")))
@@ -91,6 +100,7 @@ func open() -> void:
 func close() -> void:
 	enabled = false
 	pause_pending = false
+	pause_context_retry_used = false
 	last_phase = ""
 	queued_action = ""
 	session.disconnect_service()
@@ -182,18 +192,36 @@ func ready() -> void:
 		var seat = int(session.room.seat)
 		session.request("ready", {"ready": not bool(session.room.ready[seat])})
 
+func request_pause_if_needed(phases: Array) -> void:
+	# A map/build key can be followed by Escape before the authoritative pause
+	# snapshot arrives. Reusing the same request window avoids sending a second
+	# pause with the old epoch, which the server correctly rejects as stale.
+	if pause_pending or session.state != "room": return
+	if session.pending.values().any(func(command): return command.get("op") == "pause"):
+		pause_pending = true
+		return
+	if session.room.get("phase") in phases:
+		pause_context_retry_used = false
+		pause_pending = session.request("pause") > 0
+
+func retry_pause_after_stale() -> void:
+	await get_tree().process_frame
+	if not enabled or pause_pending or session.state != "room": return
+	if session.room.get("phase") in ["playing", "countdown", "round_result", "draft"]:
+		pause_pending = session.request("pause") > 0
+		refresh()
+
 func pause() -> void:
 	app.adapter.clear()
 	session.clear_input()
-	if session.state == "room" and session.room.get("phase") not in ["suspended", "finished", "lobby"]:
-		pause_pending = session.request("pause") > 0
+	request_pause_if_needed(["playing", "countdown", "round_result", "draft"])
 	page = "status"
 	app.paused = true
 	refresh()
 
 func show_build() -> void:
 	if session.room.is_empty(): return
-	if session.room.get("phase") in ["playing", "countdown", "round_result", "draft"]: pause_pending = session.request("pause") > 0
+	request_pause_if_needed(["playing", "countdown", "round_result", "draft"])
 	session.clear_input()
 	app.adapter.clear()
 	page = "build"
@@ -201,7 +229,7 @@ func show_build() -> void:
 
 func show_arena() -> void:
 	if session.presentation.is_empty(): return
-	if session.room.get("phase") in ["playing", "countdown", "round_result"]: pause_pending = session.request("pause") > 0
+	request_pause_if_needed(["playing", "countdown", "round_result"])
 	session.clear_input()
 	app.adapter.clear()
 	page = "arena"
@@ -270,7 +298,9 @@ func receive_state(value: Dictionary) -> void:
 	if not enabled: return
 	if not str(value.get("id", "")).is_empty(): queued_action = ""
 	var phase = str(value.get("phase", ""))
-	if phase in ["suspended", "finished", "lobby"]: pause_pending = false
+	if phase in ["suspended", "finished", "lobby"]:
+		pause_pending = false
+		pause_context_retry_used = false
 	if phase == "finished" and last_phase != "finished": page = "status"
 	last_phase = phase
 	if session.presentation.size() == 2:

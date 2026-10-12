@@ -1,0 +1,501 @@
+{
+  "recorded_at": "2026-10-12T21:02:34.830435+00:00",
+  "scope": "Actual newly exported Windows EXE, native renderer, keyboard/touch events and two production sessions over the official public ENet/DTLS server.",
+  "passed": true,
+  "packaged": true,
+  "transport_endpoint": "wss://xhz-server.sidcloud.cn/play",
+  "artifact_sha256": "f9bf68867d16a48e9d8ad1cabd494dbc3c8863e5c4eacc5912d6b2b5966d9326",
+  "artifact_bytes": 1108950224,
+  "checks": [
+    {
+      "detail": "",
+      "id": "keyboard_opens_default_cooperative_hub",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_open_connects_automatically",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_has_no_endpoint_editor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_matching_uses_existing_automatic_connection",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_queue_waits_for_partner",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_matchmaking",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_campaign_starts",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_heroes_and_real_monsters",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_wasd_movement",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_arrow_key_shooting",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_keyboard_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_escape_pauses_team",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "mutual_keyboard_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_tab_opens_dungeon_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_keyboard_return",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_native_reconnect",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_reconnect_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_right_hand_touch_fire",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "right_hand_dash_and_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_real_clients_clear_npc_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "physical_team_door_before_growth_0",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_growth_offered_after_real_room_clears",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_number_one_selects_growth",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "both_growth_choices_resume_game",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_history_contains_both_growth_logs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real_touch_same_door_transitions_both",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_partner_leave_ends_cooperation",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperation_returns_offline_menu",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "offline_save_kept_separate",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "captures": [
+    {
+      "name": "coop-hub",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": ""
+    },
+    {
+      "name": "coop-profile",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": ""
+    },
+    {
+      "name": "coop-loadout",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": ""
+    },
+    {
+      "name": "coop-lobby",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": "lobby"
+    },
+    {
+      "name": "coop-combat",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "coop-pause",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": "suspended"
+    },
+    {
+      "name": "coop-map",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": "playing"
+    },
+    {
+      "name": "coop-reconnect",
+      "saved": true,
+      "size": [
+        1280,
+        720
+      ],
+      "screen": "online",
+      "phase": "suspended"
+    },
+    {
+      "name": "coop-wide-touch",
+      "saved": true,
+      "size": [
+        2400,
+        1080
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-00",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-01",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-02",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-03",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-04",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-05",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-06",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-07",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-08",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-09",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-10",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-11",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-12",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-13",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-14",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-15",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-16",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-17",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-18",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "motion-19",
+      "saved": true,
+      "size": [
+        1200,
+        540
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "coop-growth",
+      "saved": true,
+      "size": [
+        2400,
+        1080
+      ],
+      "screen": "online",
+      "phase": "draft"
+    },
+    {
+      "name": "coop-history",
+      "saved": true,
+      "size": [
+        2400,
+        1080
+      ],
+      "screen": "online",
+      "phase": "suspended"
+    },
+    {
+      "name": "coop-next-room",
+      "saved": true,
+      "size": [
+        2400,
+        1080
+      ],
+      "screen": "game",
+      "phase": "playing"
+    },
+    {
+      "name": "coop-result",
+      "saved": true,
+      "size": [
+        2400,
+        1080
+      ],
+      "screen": "online",
+      "phase": "finished"
+    }
+  ],
+  "source_sha256": {
+    "motion_prediction.gd": "bc2c245a6670806f41bff31d23e82057690c89040d00263ec0c12bf496848bc9",
+    "remote_interpolation.gd": "aa1479187734389e895aaa72e0cf515c65c9c5469b4734305c1a2d8c8cc3973a",
+    "online_controller.gd": "6269be0989dbc1bac55f9a941c43371bc99dde219e56f494507b5c2145d7a4bc"
+  },
+  "physical_android": false,
+  "virtualization": "none",
+  "limits": [
+    "The captured native flow verifies functionality, not a long-duration frame-time benchmark.",
+    "No physical Android verification was run, as requested.",
+    "This local build is not an updated GitHub release."
+  ]
+}
