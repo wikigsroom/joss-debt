@@ -68,9 +68,9 @@ def main() -> None:
         if not path.is_file():
             raise RuntimeError("Missing build artifact: " + path.as_posix())
 
-    windows_report = read_json("docs/incense-debt/reports/platforms/windows-0.6.1/packaged-parity.json")
+    windows_report = read_json("docs/incense-debt/reports/latency-compensation-2026-10-13/windows-online-flow-v0.6.1.json")
     keyboard_report = read_json("docs/incense-debt/reports/platforms/windows-0.6.1/keyboard/keyboard-flow.json")
-    android_report = read_json("docs/incense-debt/reports/platforms/android-verification.json")
+    android_report = read_json("docs/incense-debt/reports/platforms/android-0.6.1-verification.json")
     if not windows_report.get("passed") or not keyboard_report.get("passed"):
         raise RuntimeError("Windows packaged or keyboard verification did not pass")
     if not android_report.get("passed") or not android_report.get("signature_verified"):
@@ -155,7 +155,7 @@ def main() -> None:
             "packaged_checks": len(windows_report.get("checks", [])),
             "keyboard_checks": len(keyboard_report.get("checks", [])),
             "compiled_scripts": windows_report.get("matching_compiled_scripts", 0),
-            "report": "docs/incense-debt/reports/platforms/windows-0.6.1/packaged-parity.json",
+            "report": "docs/incense-debt/reports/latency-compensation-2026-10-13/windows-online-flow-v0.6.1.json",
         },
         "android_verification": {
             "passed": True,

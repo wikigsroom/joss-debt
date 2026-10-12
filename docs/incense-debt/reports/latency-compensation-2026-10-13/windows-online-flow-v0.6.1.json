@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "packaged": true,
+  "artifact_sha256": "b3d3494c788e6ad54a528038ad7380191f48cf4eeec76f5a87d1078e6da45b1f",
+  "transport_endpoint": "wss://xhz-server.sidcloud.cn/play",
+  "checks": [
+    {
+      "detail": "",
+      "id": "keyboard_opens_default_cooperative_hub",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_open_connects_automatically",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_has_no_endpoint_editor",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_matching_uses_existing_automatic_connection",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_queue_waits_for_partner",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_matchmaking",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_cooperative_campaign_starts",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_heroes_and_real_monsters",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_wasd_movement",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_arrow_key_shooting",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_keyboard_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_escape_pauses_team",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "mutual_keyboard_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_tab_opens_dungeon_map",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "map_keyboard_return",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_native_reconnect",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_reconnect_resume",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_right_hand_touch_fire",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "right_hand_dash_and_skill",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "two_real_clients_clear_npc_room",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "physical_team_door_before_growth_0",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_growth_offered_after_real_room_clears",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperative_number_one_selects_growth",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "both_growth_choices_resume_game",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "pause_history_contains_both_growth_logs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "real_touch_same_door_transitions_both",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "native_partner_leave_ends_cooperation",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "cooperation_returns_offline_menu",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "id": "offline_save_kept_separate",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "artifact_bytes": 1108950224,
+  "check_count": 29,
+  "capture_count": 33,
+  "matching_compiled_scripts": 0,
+  "execution": "actual Windows 0.6.1 EXE; public WSS bootstrap and ENet/DTLS UDP battle flow"
+}

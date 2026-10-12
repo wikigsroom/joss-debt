@@ -1,0 +1,299 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-12T23:36:49.820014+00:00",
+  "domain": "xhz-server.sidcloud.cn",
+  "transport": "ENet/DTLS UDP 18779; WSS bootstrap wss://xhz-server.sidcloud.cn/play",
+  "host_region": "Tencent Cloud ap-singapore-2 (read-only placement metadata)",
+  "tls": {
+    "version": "TLSv1.3",
+    "not_before": "Oct 12 05:30:57 2026 GMT",
+    "not_after": "Jan 10 05:30:56 2027 GMT",
+    "hostname_verified": true
+  },
+  "checks": [
+    {
+      "id": "installed_linux_server",
+      "passed": true
+    },
+    {
+      "id": "installed_service",
+      "passed": true
+    },
+    {
+      "id": "installed_config",
+      "passed": true
+    },
+    {
+      "id": "installed_nginx",
+      "passed": true
+    },
+    {
+      "id": "installed_logrotate",
+      "passed": true
+    },
+    {
+      "id": "installed_stop",
+      "passed": true
+    },
+    {
+      "id": "installed_homepage",
+      "passed": true
+    },
+    {
+      "id": "installed_certificate_refresh",
+      "passed": true
+    },
+    {
+      "id": "installed_rotation_service",
+      "passed": true
+    },
+    {
+      "id": "installed_rotation_timer",
+      "passed": true
+    },
+    {
+      "id": "installed_renewal_hook",
+      "passed": true
+    },
+    {
+      "id": "service_enabled_active",
+      "passed": true
+    },
+    {
+      "id": "isolated_private_ports",
+      "passed": true
+    },
+    {
+      "id": "data_private",
+      "passed": true
+    },
+    {
+      "id": "own_service_swap_disabled",
+      "passed": true
+    },
+    {
+      "id": "capacity_two_rooms",
+      "passed": true
+    },
+    {
+      "id": "renewal_timer",
+      "passed": true
+    },
+    {
+      "id": "dtls_rotation_timer",
+      "passed": true
+    },
+    {
+      "id": "public_udp_socket",
+      "passed": true
+    },
+    {
+      "id": "dtls_key_restricted",
+      "passed": true
+    },
+    {
+      "id": "native_runtime_clean",
+      "passed": true
+    },
+    {
+      "id": "encrypted_battle",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz-server.sidcloud.cn/",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz-server.sidcloud.cn/health",
+      "passed": true
+    },
+    {
+      "id": "health_version",
+      "passed": true
+    },
+    {
+      "id": "https_https://xhz.sidcloud.cn/privacy-policy",
+      "passed": true
+    },
+    {
+      "id": "validated_tls",
+      "passed": true
+    }
+  ],
+  "https": [
+    {
+      "url": "https://xhz-server.sidcloud.cn/",
+      "status": 200,
+      "bytes": 1514
+    },
+    {
+      "url": "https://xhz-server.sidcloud.cn/health",
+      "status": 200,
+      "bytes": 1659
+    },
+    {
+      "url": "https://xhz.sidcloud.cn/privacy-policy",
+      "status": 200,
+      "bytes": 29548
+    }
+  ],
+  "service": {
+    "MainPID": "281269",
+    "NRestarts": "0",
+    "MemoryCurrent": "79347712",
+    "MemorySwapMax": "0",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "service_enabled": "enabled",
+  "certificate_timer": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "installed_sha256": {
+    "linux_server": "fdd46f963f09b8fb12e6ef7e57bba30c353e776e59136560845d5636f555779a",
+    "service": "518c158cb49c17015d041f16a6a8100c2507fb61f0e1e1c8f6d013fc9662376f",
+    "config": "587aad97c78bbb0fe9c4ba748d5e4c53b4d348d2b2a2cd2586cae07686744fd9",
+    "nginx": "c0ca485bd8b921047ceb6e9ebf02f0a7ec5078784212f230b67de37dbf784150",
+    "logrotate": "0a57dfd68564ffba937648eeaf7e612a22e5c3fbb826d384cf354f8b131b1c35",
+    "stop": "5c9c246514a05a46036f7189e75942ab1914d7ad70df9b797f23e45e334ebc17",
+    "homepage": "a48f0d46f1d9bf04bb5b111990b6453ac08025e625d0c33ab95daf051a4a4324",
+    "certificate_refresh": "200f68b4939d90f55438dbc811b71279ae998a43a8dbb1337ec35858a4c7d154",
+    "rotation_service": "b2b309a65af27cb4235cf98954b828e62040e98e34cf853845cb7b484ed469c1",
+    "rotation_timer": "055f8c2bf1e897881e7d3f0d4c95747e669ccd04d2dc00352901c582f0a6a493",
+    "renewal_hook": "2038d9fdc8220ff6b683fd7e467599c46e0697d2eb8712b72a39f0043ea74edb"
+  },
+  "listeners": [
+    "LISTEN 0      8          127.0.0.1:18777 0.0.0.0:*",
+    "LISTEN 0      8          127.0.0.1:18778 0.0.0.0:*"
+  ],
+  "config": {
+    "bind": "127.0.0.1",
+    "port": 18777,
+    "battle_bind": "0.0.0.0",
+    "battle_port": 18779,
+    "battle_certificate": "/etc/incense-debt/tls/fullchain.pem",
+    "battle_private_key": "/etc/incense-debt/tls/privkey.pem",
+    "max_connections": 16,
+    "max_rooms": 2,
+    "grace": 90,
+    "waiting": 300,
+    "checkpoint": 1,
+    "data_directory": "/var/lib/incense-debt"
+  },
+  "health": {
+    "active_rooms": 0,
+    "battle_connections": 0,
+    "battle_encrypted": true,
+    "battle_port": 18779,
+    "battle_tickets": {
+      "active": 0,
+      "bind_failures": 0,
+      "issued": 0,
+      "reissues": 0,
+      "rejections": {},
+      "revocations": 0
+    },
+    "buffered_bytes": 0,
+    "bytes_sent": 0,
+    "checkpoint_pending": false,
+    "combat_process_max_ms": 0.0,
+    "combat_stalls_over_100ms": 0,
+    "connection_close_reasons": {},
+    "connections": 0,
+    "enet_peers": [],
+    "largest_snapshot_window": 0,
+    "last_input_protections": [],
+    "lifetime_process": {
+      "bucket_width_ms": 0.125,
+      "max_ms": 5.346,
+      "p950_ms_upper_bound": 0.125,
+      "p990_ms_upper_bound": 5.125,
+      "p999_ms_upper_bound": 5.375,
+      "samples": 473
+    },
+    "lifetime_step": {
+      "bucket_width_ms": 0.125,
+      "max_ms": 0.526,
+      "p950_ms_upper_bound": 0.125,
+      "p990_ms_upper_bound": 0.5,
+      "p999_ms_upper_bound": 0.625,
+      "samples": 479
+    },
+    "match_build_workers": 0,
+    "mutation_queue": 0,
+    "outdated_motion_samples_skipped": 0,
+    "persistence_errors": 0,
+    "process_max_ms": 5.346,
+    "process_p95_ms": 0.079,
+    "process_p99_ms": 5.049,
+    "protocol": 2,
+    "queued": 0,
+    "replication_p95_ms": 0.0,
+    "retiring_battle_connections": 0,
+    "rooms": 0,
+    "service": "IncenseDebt Online",
+    "snapshot_retries": 0,
+    "snapshots_coalesced": 0,
+    "stages": {
+      "checkpoint_commit": {
+        "max_ms": 5.306,
+        "p95_ms": 5.138,
+        "p99_ms": 5.138
+      }
+    },
+    "step_max_ms": 0.526,
+    "step_p95_ms": 0.003,
+    "step_p99_ms": 0.382,
+    "stopping": false,
+    "storage_fault": false,
+    "tick": 479,
+    "transport": 2,
+    "udp_edge_rejected": 0,
+    "udp_forwarding": {
+      "active_flows": 0,
+      "active_quarantine": 0,
+      "expired_established": 0,
+      "expired_handshakes": 0,
+      "expired_retired": 0,
+      "outbound_alerts": 0,
+      "output_backlog_max": 0,
+      "quarantined": 0
+    },
+    "udp_received_bytes": 0,
+    "udp_rejected": 0,
+    "udp_sent_bytes": 0,
+    "udp_wire_received_bytes": 0,
+    "udp_wire_sent_bytes": 0,
+    "unacked_snapshots": 0,
+    "uptime": 7.99475866666663,
+    "version": "0.6.1"
+  },
+  "data_permissions": "0o700",
+  "nginx_config_valid": true,
+  "udp_listeners": [
+    "UNCONN 0      0                             0.0.0.0:18779 0.0.0.0:*"
+  ],
+  "tls_permissions": {
+    "fullchain.pem": {
+      "mode": "0o640",
+      "owner": "root",
+      "group": "incense-debt"
+    },
+    "privkey.pem": {
+      "mode": "0o640",
+      "owner": "root",
+      "group": "incense-debt"
+    }
+  },
+  "dtls_rotation_timer": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "native_errors": [],
+  "native_memory": {
+    "VmRSS": 127721472,
+    "VmHWM": 127721472
+  },
+  "public_certificate_sha256": "ce2ad9baad2009d21e743a3aa4d9e38fc1dd03dc84401ae8a671b6d2f2024b1f"
+}

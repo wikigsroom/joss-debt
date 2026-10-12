@@ -24,7 +24,7 @@ def sha(path):
   for block in iter(lambda:f.read(1024*1024),b''):digest.update(block)
  return digest.hexdigest()
 base=pathlib.Path('/opt/incense-debt')
- candidate=base/('candidates/v'+version)
+candidate=base/('candidates/v'+version)
 vhost=pathlib.Path('/www/server/panel/vhost/nginx/xhz-server.sidcloud.cn.conf')
 nginx='/www/server/nginx/sbin/nginx'
 unit='incense-debt-udp-candidate.service'
@@ -47,14 +47,14 @@ if payload['action']=='stage':
  tls=pathlib.Path('/etc/incense-debt/tls');tls.mkdir(parents=True,exist_ok=True);os.chown(tls,0,gid);tls.chmod(0o750)
  for name in ['fullchain.pem','privkey.pem']:
   target=tls/name;shutil.copyfile('/etc/letsencrypt/live/incense-debt-public/'+name,target);os.chown(target,0,gid);target.chmod(0o640)
-  state=pathlib.Path('/var/lib/incense-debt-candidate-v'+version)
+ state=pathlib.Path('/var/lib/incense-debt-candidate-v'+version)
  if state.exists():state.rename(pathlib.Path(str(state)+'-previous-'+str(time.time_ns())))
  state.mkdir(exist_ok=True);os.chown(state,uid,gid);state.chmod(0o700)
  config=dict(payload['config']);config.update(port=19577,data_directory=str(state))
  (candidate/'config.json').write_text(json.dumps(config,indent=2)+'\n');(candidate/'config.json').chmod(0o644)
  # This opens only the dedicated game's UDP port. Other applications stay in place.
  run(['ufw','allow','18779/udp','comment','IncenseDebt DTLS battle'])
-  backup=base/('backups/udp-v'+version);backup.mkdir(parents=True,exist_ok=True);backup.chmod(0o700)
+ backup=base/('backups/udp-v'+version);backup.mkdir(parents=True,exist_ok=True);backup.chmod(0o700)
  original=vhost.read_text()
  if 'location = /candidate-play' not in original:
   (backup/'nginx-before-stage.conf').write_text(original)
@@ -94,7 +94,7 @@ if payload['action']=='stage':
   # Diagnostic contains engine errors only; neither key nor player files are read.
   diagnostic=run(['journalctl','-u',unit,'--no-pager','-n','30'])
   print(json.dumps({'passed':False,'diagnostic':diagnostic}));raise SystemExit(1)
-  print(json.dumps({'passed':ready['version']==version and ready['transport']==2 and ready['battle_encrypted'],
+ print(json.dumps({'passed':ready['version']==version and ready['transport']==2 and ready['battle_encrypted'],
   'action':'stage','candidate_health':ready,'live_health':health(18778),'installed_sha256':sha(candidate/'IncenseDebtServer.x86_64'),
   'udp_port':18779,'candidate_endpoint':'wss://xhz-server.sidcloud.cn/candidate-play',
   'tls_permissions':{name:oct((tls/name).stat().st_mode&0o777) for name in ['fullchain.pem','privkey.pem']}}))
@@ -129,6 +129,8 @@ elif payload['action']=='sync':
  stop=release/'stop.sh';stop.write_text(payload['stop_script']);stop.chmod(0o755)
  service_path=pathlib.Path('/etc/systemd/system/incense-debt.service')
  service_path.write_text(payload['public_files']['service']);os.chown(service_path,0,0);service_path.chmod(0o644)
+ homepage=pathlib.Path('/var/www/incense-debt-public/index.html')
+ homepage.write_text(payload['public_files']['homepage']);os.chown(homepage,0,0);homepage.chmod(0o644)
  (base/'config.json').write_text(json.dumps(payload['config'],indent=2)+'\n');(base/'config.json').chmod(0o644)
  run(['systemctl','daemon-reload'])
  link=base/'current-next'
@@ -159,9 +161,9 @@ elif payload['action']=='activate':
  live=health(18778);staged=health(19578)
  if live['connections'] or live['active_rooms'] or staged['connections'] or staged['active_rooms']:
   raise RuntimeError('Active players prevent a scoped release switch')
-  if staged['version']!=version or sha(candidate/'IncenseDebtServer.x86_64')!=payload['sha256']:
+ if staged['version']!=version or sha(candidate/'IncenseDebtServer.x86_64')!=payload['sha256']:
   raise RuntimeError('Candidate version or checksum changed')
-  backup=base/('backups/udp-v'+version);backup.mkdir(parents=True,exist_ok=True);backup.chmod(0o700)
+ backup=base/('backups/udp-v'+version);backup.mkdir(parents=True,exist_ok=True);backup.chmod(0o700)
  old_target=os.readlink(base/'current')
  (backup/'previous-target.txt').write_text(old_target+'\n')
  shutil.copyfile(base/'config.json',backup/'config-before-upgrade.json')
@@ -183,7 +185,7 @@ elif payload['action']=='activate':
   path.write_text(payload['public_files'][name]);os.chown(path,0,0)
   path.chmod(0o755 if name in ['certificate_refresh','renewal_hook'] else 0o644)
  run(['systemctl','daemon-reload'])
-  release=base/('releases/'+version);release.mkdir(parents=True,exist_ok=True)
+ release=base/('releases/'+version);release.mkdir(parents=True,exist_ok=True)
  shutil.copyfile(candidate/'IncenseDebtServer.x86_64',release/'IncenseDebtServer.x86_64');(release/'IncenseDebtServer.x86_64').chmod(0o755)
  (release/'stop.sh').write_text(payload['stop_script']);(release/'stop.sh').chmod(0o755)
  (base/'config.json').write_text(json.dumps(payload['config'],indent=2)+'\n');(base/'config.json').chmod(0o644)
@@ -194,7 +196,7 @@ elif payload['action']=='activate':
   for attempt in range(50):
    try:fresh=health(18778);break
    except OSError:time.sleep(.1)
-   if not fresh or fresh['version']!=version or not fresh['battle_encrypted']:raise RuntimeError('New live server unhealthy')
+  if not fresh or fresh['version']!=version or not fresh['battle_encrypted']:raise RuntimeError('New live server unhealthy')
  except Exception:
   run(['systemctl','stop','incense-debt.service'])
   # Restore the coherent private checkpoint and binary together, before any clients enter.

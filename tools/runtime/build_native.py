@@ -124,7 +124,7 @@ def main():
         print("Importing native resources..." if step == 0 else "Exporting " + args.platform + " application...", flush=True)
         try:
             result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=ROOT, env=env,
-                                    timeout=180 if step == 0 else args.export_timeout)
+                                    timeout=900 if step == 0 else args.export_timeout)
         except subprocess.TimeoutExpired as error:
             logs.append((error.stdout or b"").decode("utf-8", errors="replace"))
             (REPORTS / log_name).write_text("\n".join(logs), "utf-8")

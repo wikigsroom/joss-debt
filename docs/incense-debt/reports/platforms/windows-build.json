@@ -2,17 +2,12 @@
   "platform": "windows",
   "path": "build/windows/IncenseDebt.exe",
   "bytes": 1108950224,
-  "sha256": "f9bf68867d16a48e9d8ad1cabd494dbc3c8863e5c4eacc5912d6b2b5966d9326",
+  "sha256": "b3d3494c788e6ad54a528038ad7380191f48cf4eeec76f5a87d1078e6da45b1f",
   "engine": "4.7.2",
   "build": "release",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
-  "source_status": "Local unreleased 0.6.0-compatible client rebuilt with latency-compensation and pause-context fixes; public native-flow evidence is recorded separately from historical release parity.",
+  "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
   "device_tested": false,
-  "virtualization": "none",
-  "native_runtime_tested": true,
-  "packaged_verification": "docs/incense-debt/reports/platforms/windows-0.6.0/packaged-parity.json",
-  "keyboard_verification": "docs/incense-debt/reports/platforms/windows-0.6.0/keyboard/keyboard-flow.json",
-  "native_runtime_report": "docs/incense-debt/reports/latency-compensation-2026-10-13/native-client.json",
-  "github_release_updated": false
+  "virtualization": "none"
 }

@@ -57,7 +57,7 @@ def main():
     (project / "export_presets.cfg").write_text("\n".join(presets), "utf8")
     logs = []
     def run(arguments, folder):
-        completed = subprocess.run([str(ENGINE), *arguments], cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=180)
+        completed = subprocess.run([str(ENGINE), *arguments], cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=900)
         log = completed.stdout.decode("utf8", errors="replace")
         logs.append(log)
         if completed.returncode or "SCRIPT ERROR" in log or "ERROR:" in log:
