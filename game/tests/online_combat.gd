@@ -44,6 +44,19 @@ func attack(duel, count: int = 180) -> void:
 		duel.advance([input, Protocol.empty_input()])
 
 func run() -> void:
+	var smoothing_actor = duel_for("c_paper", "w01", "s01").actors[0]
+	var smoothing = Prediction.new()
+	smoothing.observe(smoothing_actor, smoothing_actor.player, [], true)
+	smoothing.tick(smoothing_actor, {"move": Vector2.RIGHT}, 1.0 / 60, true)
+	var visual_before = smoothing.visual_position
+	var delayed_authority = smoothing_actor.player.duplicate(true)
+	delayed_authority.pos = visual_before - Vector2(180, 0)
+	smoothing.observe(smoothing_actor, delayed_authority, [], true)
+	check(smoothing.correction.length() > 0 and smoothing.visual_position.distance_to(visual_before) < .1, "large_wan_error_eases_without_position_flashback")
+	var discontinuity = smoothing_actor.player.duplicate(true)
+	discontinuity.pos = visual_before - Vector2(520, 0)
+	smoothing.observe(smoothing_actor, discontinuity, [], true)
+	check(smoothing.correction.is_zero_approx() and smoothing.visual_position.is_equal_approx(discontinuity.pos), "real_teleport_still_hard_snaps")
 	for relics in [{}, {"r33": 1, "r34": 2}]:
 		var movement = duel_for("c_paper", "w01", "s01").actors[0]
 		movement.run.relics = relics

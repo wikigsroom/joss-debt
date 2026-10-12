@@ -1,0 +1,60 @@
+{
+  "recorded_at": "2026-10-13T04:09:54+08:00",
+  "scope": "client-prediction-and-remote-presentation-fix",
+  "transport": "ENet/DTLS over UDP with WSS bootstrap",
+  "server_changed": false,
+  "server_health": {
+    "endpoint": "https://xhz-server.sidcloud.cn/health",
+    "version": "0.6.0",
+    "transport": 2,
+    "battle_encrypted": true,
+    "combat_stalls_over_100ms": 0,
+    "connections": 0,
+    "active_rooms": 0
+  },
+  "fixes": [
+    "monotonic authoritative presentation clock",
+    "monotonic render target while adaptive delay changes",
+    "adaptive RTT/jitter interpolation delay bounded to 50-220 ms",
+    "bounded 100 ms remote extrapolation",
+    "smooth local reconciliation with 1.5 px deadzone and 420 px hard-snap threshold"
+  ],
+  "tests": {
+    "remote_interpolation": "passed",
+    "online_combat": {
+      "passed": true,
+      "checks": 273,
+      "failures": 0
+    },
+    "state_stream": "passed",
+    "cooperative_transport": {
+      "passed": true,
+      "checks": 35
+    },
+    "network_faults": "passed"
+  },
+  "public_wan_smoke": {
+    "passed": true,
+    "endpoint": "wss://xhz-server.sidcloud.cn/play",
+    "health_endpoint": "https://xhz-server.sidcloud.cn/health",
+    "native_clients": 2,
+    "game_mode": "coop",
+    "rooms": 1,
+    "battle_seconds": 30.589,
+    "tick_hz": 60.00099195846003,
+    "ping_p95_ms": 51.0,
+    "state_age_p95_ms": 33.0000000000013,
+    "fresh_playable_frame_ratio": 1.0,
+    "combat_stalls_over_100ms": 0,
+    "transport_rebinds": [0, 0],
+    "rejected_baselines": [0, 0],
+    "edge_rejected": [0, 0],
+    "errors": []
+  },
+  "limits": [
+    "No physical Android device or rendered-frame capture was used.",
+    "The server binary was not changed; clients require a new build to receive the fix.",
+    "A bounded smoke run is evidence of the current path, not a universal latency SLA."
+  ],
+  "virtualization": "none"
+}

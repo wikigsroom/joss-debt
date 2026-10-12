@@ -305,7 +305,10 @@ func bind_worlds() -> void:
 		bound_snapshot = session.snapshot_serial
 		prediction.observe(app.world, own.player, session.input_history, session.can_play())
 		attack_prediction.observe(app.world, own.player, session.input_history)
-		interpolation.observe_clock(float(own.time), session.now())
+		# Feed the measured battle RTT into the remote render buffer. This adapts
+		# the interpolation window to the actual WAN path while local movement
+		# remains client-predicted and does not inherit this presentation delay.
+		interpolation.observe_clock(float(own.time), session.now(), session.latency_ms)
 		var remote_player: Dictionary = other.player.duplicate(false)
 		remote_player.uid = 1001 + 1 - seat
 		interpolation.observe("opponent", [remote_player], float(other.time), session.state_sequence)

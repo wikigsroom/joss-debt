@@ -11,6 +11,17 @@ func _initialize() -> void:
 	check("intermediate_remote_position", buffer.sample("scene/enemies")[0].pos.is_equal_approx(Vector2(150, 200)))
 	buffer.observe("scene/enemies", [{"uid": 1, "pos": Vector2(0, 200)}], .8, 1)
 	check("old_sample_does_not_rewind", buffer.sample("scene/enemies")[0].pos.is_equal_approx(Vector2(150, 200)))
+	var timeline = Interpolation.new()
+	timeline.observe_clock(10.0, 0.0)
+	timeline.observe("opponent", [{"uid": 9, "pos": Vector2(100, 200)}], 10.0, 1)
+	timeline.advance(.2, true)
+	var clock_before = timeline.clock
+	timeline.sample("opponent")
+	var render_before = timeline.render_time
+	timeline.observe_clock(10.02, .3, 300)
+	timeline.sample("opponent")
+	check("late_server_time_never_rewinds_clock", timeline.clock >= clock_before and timeline.render_time >= render_before)
+	check("rtt_expands_buffer_without_rewind", timeline.delay > .05)
 	buffer.current["scene/enemies"] = []
 	buffer.observe("scene/enemies", [], 1.1, 3)
 	check("dead_entities_are_removed", buffer.sample("scene/enemies").is_empty())

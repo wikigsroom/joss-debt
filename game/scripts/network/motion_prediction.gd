@@ -1,14 +1,25 @@
 extends RefCounted
 ## Movement presentation only. Health, hits, skills and results stay authoritative.
+const CORRECTION_DEADZONE = 1.5
+const MAX_SOFT_CORRECTION = 320.0
+const HARD_SNAP_DISTANCE = 420.0
+const CORRECTION_RATE = 11.0
 var state: Dictionary = {}
 var correction = Vector2.ZERO
 var visual_position = Vector2.ZERO
 var ready = false
+var last_error_distance = 0.0
+var soft_corrections = 0
+var hard_corrections = 0
 
 func clear() -> void:
 	state.clear()
 	correction = Vector2.ZERO
+	visual_position = Vector2.ZERO
 	ready = false
+	last_error_distance = 0.0
+	soft_corrections = 0
+	hard_corrections = 0
 
 func from_player(player: Dictionary) -> Dictionary:
 	return {"pos": Vector2(player.pos), "dash_left": float(player.dash_left), "dash_cd": float(player.dash_cd), "buffer_dash": float(player.buffer_dash),
@@ -16,16 +27,34 @@ func from_player(player: Dictionary) -> Dictionary:
 		"push_left": float(player.get("push_left", 0)), "push_remaining": Vector2(player.get("push_remaining", Vector2.ZERO))}
 
 func observe(actor, server_player: Dictionary, history: Array, playing: bool) -> void:
-	var old_position = visual_position
 	state = from_player(server_player)
 	state.time = actor.time
 	if playing:
 		for input in history: advance(actor, input.frame, float(input.seconds))
-	if ready and playing and old_position.distance_to(state.pos) < 140:
-		correction = old_position - Vector2(state.pos)
-	else:
+	var authoritative = Vector2(state.pos)
+	if not ready or not playing:
 		correction = Vector2.ZERO
-		visual_position = state.pos
+		visual_position = authoritative
+		last_error_distance = 0.0
+		ready = true
+		return
+	# Reconciliation is deliberately continuous. The old 140px cutoff caused a
+	# visible teleport whenever a dash or a burst of latency made the predicted
+	# position slightly farther away. Keep the current visual point and ease the
+	# error out, reserving a hard snap for a real scene/teleport discontinuity.
+	var error = visual_position - authoritative
+	last_error_distance = error.length()
+	if last_error_distance >= HARD_SNAP_DISTANCE:
+		correction = Vector2.ZERO
+		visual_position = authoritative
+		hard_corrections += 1
+	elif last_error_distance <= CORRECTION_DEADZONE:
+		correction = Vector2.ZERO
+		visual_position = authoritative
+	else:
+		correction = error.limit_length(MAX_SOFT_CORRECTION)
+		visual_position = authoritative + correction
+		soft_corrections += 1
 	ready = true
 
 func advance(actor, frame: Dictionary, delta: float) -> void:
@@ -62,7 +91,8 @@ func advance(actor, frame: Dictionary, delta: float) -> void:
 func tick(actor, frame: Dictionary, delta: float, playing: bool) -> void:
 	if not ready: return
 	if playing and actor.player.hp > 0: advance(actor, frame, delta)
-	correction *= exp(-20 * delta)
+	correction *= exp(-CORRECTION_RATE * delta)
+	if correction.length() <= CORRECTION_DEADZONE: correction = Vector2.ZERO
 	visual_position = actor.geometry.constrain_floor(Vector2(state.pos) + correction, 12)
 	actor.player.pos = visual_position
 	actor.player.dash_left = state.dash_left
