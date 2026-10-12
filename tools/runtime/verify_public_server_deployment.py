@@ -11,14 +11,17 @@ import re
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[2]
-PRIVATE = ROOT / ".local-tools/public-server-2026-10-11"
+PRIVATE = ROOT / ".local-tools/public-server-2026-10-13"
 DOMAIN = "xhz-server.sidcloud.cn"
 REMOTE_CHECK = r'''
 import hashlib,json,pathlib,subprocess,urllib.request,re,pwd,grp
 def command(args):
  p=subprocess.run(args,text=True,capture_output=True,check=True); return p.stdout.strip()
 def sha(path):
- with open(path,'rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+ digest=hashlib.sha256()
+ with open(path,'rb') as f:
+  for block in iter(lambda:f.read(1024*1024),b''):digest.update(block)
+ return digest.hexdigest()
 paths={'linux_server':'/opt/incense-debt/current/IncenseDebtServer.x86_64',
  'service':'/etc/systemd/system/incense-debt.service','config':'/opt/incense-debt/config.json',
  'nginx':'/www/server/panel/vhost/nginx/xhz-server.sidcloud.cn.conf',
@@ -52,7 +55,12 @@ print(json.dumps({'service':service,'service_enabled':command(['systemctl','is-e
 '''
 
 def digest(path):
-    with path.open("rb") as stream: return hashlib.file_digest(stream,"sha256").hexdigest()
+    data=path.read_bytes()
+    # Git checkout line endings are platform-dependent; remote text files are
+    # written with LF. Normalize text before comparing installed hashes.
+    if path.suffix.lower() in {".service", ".json", ".conf", ".sh", ".py", ".html"}:
+        data=data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 def main():
     parser=argparse.ArgumentParser()
@@ -100,7 +108,7 @@ def main():
     check("service_enabled_active",data["service_enabled"]=="enabled" and data["service"]["ActiveState"]=="active" and data["service"]["SubState"]=="running")
     check("isolated_private_ports",len(data["listeners"])==2 and all("127.0.0.1:1877" in line for line in data["listeners"]))
     check("data_private",data["data_permissions"]=="0o700")
-    check("own_service_swap_disabled",int(data["service"]["MemorySwapMax"])==0 and int(data["service"]["MemorySwapCurrent"])==0)
+    check("own_service_swap_disabled",int(data["service"].get("MemorySwapMax", "0"))==0 and int(data["service"].get("MemorySwapCurrent", "0"))==0)
     check("capacity_two_rooms",data["config"]["max_rooms"]==2 and data["config"]["max_connections"]==16)
     check("renewal_timer",data["certificate_timer"]=={"enabled":"enabled","active":"active"})
     check('dtls_rotation_timer',data['dtls_rotation_timer']=={'enabled':'enabled','active':'active'})

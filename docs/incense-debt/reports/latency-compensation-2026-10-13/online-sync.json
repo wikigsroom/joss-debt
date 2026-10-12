@@ -38,5 +38,31 @@
     "artifact_sha256": "f9bf68867d16a48e9d8ad1cabd494dbc3c8863e5c4eacc5912d6b2b5966d9326",
     "report": "docs/incense-debt/reports/latency-compensation-2026-10-13/native-client.json"
   },
-  "scope": "The latest local 0.6.0 native server build is active on the host resolved by the official game endpoint. The packaged Windows client completed the public WSS bootstrap and UDP battle flow after the switch."
+  "scope": "The latest local 0.6.0 native server build is active on the host resolved by the official game endpoint. The packaged Windows client completed the public WSS bootstrap and UDP battle flow after the switch.",
+  "host_verification": {
+    "passed": true,
+    "checks": 27,
+    "failures": 0,
+    "service_state": "active",
+    "certificate_expires": "Jan 10 05:30:56 2027 GMT"
+  },
+  "wan_smoke": {
+    "passed": true,
+    "seconds": 30.556,
+    "tick_hz": 59.975294827348506,
+    "ping_p95_ms": 50.0,
+    "state_age_p95_ms": 33.0000000000013,
+    "fresh_playable_frame_ratio": 1.0,
+    "combat_stalls_over_100ms": 0,
+    "server_sha256": "37487c2c09ef3370bb5da7bd79acadd37ae5aa9217e4324a3a924055b1ac6907",
+    "transport_rebinds": [
+      0,
+      0
+    ],
+    "rejected_baselines": [
+      0,
+      0
+    ],
+    "errors": []
+  }
 }

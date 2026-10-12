@@ -46,7 +46,7 @@ def main():
                 snapshot = health()
                 if snapshot["connections"] != 2: raise RuntimeError("Unexpected users; refuse restart")
                 # Credentials remain private DPAPI. This helper never prints them.
-                spec = importlib.util.spec_from_file_location("private_ssh", ROOT / ".local-tools/public-server-2026-10-11/remote.py")
+                spec = importlib.util.spec_from_file_location("private_ssh", ROOT / ".local-tools/public-server-2026-10-13/remote.py")
                 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
                 client = module.connect()
                 try:

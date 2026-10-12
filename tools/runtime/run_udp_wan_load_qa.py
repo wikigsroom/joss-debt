@@ -31,7 +31,7 @@ def main():
     first=health()
     if first['version']!='0.6.0' or first['transport']!=2 or not first['battle_encrypted']:
         raise RuntimeError('Expected encrypted 0.6.0 candidate')
-    spec=importlib.util.spec_from_file_location('private_remote', ROOT/'.local-tools/public-server-2026-10-11/remote.py')
+    spec=importlib.util.spec_from_file_location('private_remote', ROOT/'.local-tools/public-server-2026-10-13/remote.py')
     helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
     unit='incense-debt-udp-candidate.service' if 'candidate-play' in args.url else 'incense-debt.service'
     target='/opt/incense-debt/candidates/v0.6.0/IncenseDebtServer.x86_64' if 'candidate-play' in args.url else '/opt/incense-debt/current/IncenseDebtServer.x86_64'
@@ -42,7 +42,10 @@ def main():
             script='''import hashlib,subprocess,pathlib,json,re
 unit=UNIT
 pid=subprocess.check_output(['systemctl','show',unit,'--property=MainPID','--value'],text=True).strip()
-with open(TARGET,'rb') as source:digest=hashlib.file_digest(source,'sha256').hexdigest()
+digest=hashlib.sha256()
+with open(TARGET,'rb') as source:
+ for block in iter(lambda:source.read(1024*1024),b''):digest.update(block)
+digest=digest.hexdigest()
 status=pathlib.Path('/proc/'+pid+'/status').read_text()
 memory={key:int(re.search(r'^'+key+r':\\s*(\\d+)',status,re.M)[1])*1024 for key in ['VmRSS','VmHWM']}
 journal=subprocess.check_output(['journalctl','-u',unit,'_PID='+pid,'--no-pager','-o','cat'],text=True)

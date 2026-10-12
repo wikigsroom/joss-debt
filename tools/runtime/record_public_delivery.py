@@ -8,7 +8,7 @@ import shutil
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-PRIVATE = ROOT / ".local-tools/public-server-2026-10-11"
+PRIVATE = ROOT / ".local-tools/public-server-2026-10-13"
 PUBLIC = ROOT / "docs/incense-debt/reports/public-online-2026-10-11"
 URL = "https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0"
 
