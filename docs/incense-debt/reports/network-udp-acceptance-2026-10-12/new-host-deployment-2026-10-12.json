@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "recorded_at": "2026-10-12T06:36:42.608098+00:00",
+  "source_commit": "4c8ef46",
+  "deployment": {
+    "host": "124.221.198.220",
+    "domain": "xhz-server.sidcloud.cn",
+    "version": "0.6.0",
+    "protocol": 2,
+    "transport": "ENet/DTLS",
+    "battle_encrypted": true,
+    "https": "https://xhz-server.sidcloud.cn/",
+    "health": "https://xhz-server.sidcloud.cn/health",
+    "websocket": "wss://xhz-server.sidcloud.cn/play",
+    "udp": "xhz-server.sidcloud.cn:18779",
+    "server_sha256": "37487c2c09ef3370bb5da7bd79acadd37ae5aa9217e4324a3a924055b1ac6907",
+    "server_sha256_local_matches_remote": true
+  },
+  "service": {
+    "systemd_unit": "incense-debt.service",
+    "systemd_active": true,
+    "systemd_enabled": true,
+    "certificate_timer": "incense-debt-certificate.timer",
+    "certificate_timer_active": true,
+    "certificate_timer_enabled": true,
+    "nginx_config_test": true,
+    "listening": ["0.0.0.0:443/tcp", "0.0.0.0:80/tcp", "127.0.0.1:18777/tcp", "127.0.0.1:18778/tcp", "0.0.0.0:18779/udp"],
+    "ufw_allows_udp_18779": true
+  },
+  "certificate": {
+    "subject": "CN = xhz-server.sidcloud.cn",
+    "issuer": "C = US, O = Let's Encrypt, CN = YE1",
+    "not_before": "2026-10-12T05:30:57Z",
+    "not_after": "2027-01-10T05:30:56Z"
+  },
+  "public_checks": {
+    "dns_resolves_to": "124.221.198.220",
+    "https_health_http": 200,
+    "https_home_http": 200,
+    "tcp_443_reachable": true,
+    "health_after_clients": {
+      "connections": 0,
+      "active_rooms": 0,
+      "storage_fault": false,
+      "persistence_errors": 0,
+      "battle_encrypted": true,
+      "udp_edge_rejected": 0,
+      "udp_rejected": 0,
+      "battle_tickets": {
+        "active": 0,
+        "issued": 4,
+        "revocations": 2,
+        "reissues": 0,
+        "bind_failures": 0,
+        "rejections": {}
+      }
+    }
+  },
+  "wan_smoke": {
+    "passed": true,
+    "scope": "Two native Windows headless Godot clients, one cooperative room, 30 seconds over the actual WAN; no virtualization, Android, or rendering acceptance.",
+    "endpoint": "wss://xhz-server.sidcloud.cn/play",
+    "health_endpoint": "https://xhz-server.sidcloud.cn/health",
+    "rooms": 1,
+    "clients": 2,
+    "battle_seconds": 30.578,
+    "tick_hz": 60.003053564116314,
+    "fresh_playable_frame_ratio": 1.0,
+    "ping_p95_ms": 71.0,
+    "state_age_p95_ms": 44.0000000000005,
+    "combat_stalls_over_100ms": 0,
+    "transport_rebinds": 0,
+    "rejected_baselines": 0,
+    "client_errors": [],
+    "server_storage_fault": false,
+    "server_persistence_errors": 0,
+    "server_udp_edge_rejected": 0,
+    "server_udp_rejected": 0,
+    "server_lifetime_step_p990_ms_upper_bound": 1.125,
+    "server_lifetime_step_p999_ms_upper_bound": 3.375,
+    "server_binary_sha256": "37487c2c09ef3370bb5da7bd79acadd37ae5aa9217e4324a3a924055b1ac6907"
+  },
+  "artifacts": {
+    "raw_wan_report": ".local-tools/udp-development/delivery/new-host-wan-smoke-20261012/report.json",
+    "raw_wan_traffic": ".local-tools/udp-development/delivery/new-host-wan-smoke-20261012/traffic.log",
+    "note": "The raw client report is kept in the local ignored verification area; this tracked summary contains no credentials."
+  }
+}
