@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import re
 
 ROOT = Path(__file__).resolve().parents[2]
 PRIVATE = ROOT / ".local-tools/public-server-2026-10-11"
@@ -96,6 +97,58 @@ elif payload['action']=='status':
  try:candidate=health(19578)
  except OSError:pass
  print(json.dumps({'live_health':health(18778),'candidate_health':candidate}))
+elif payload['action']=='sync':
+ # Refresh an already promoted 0.6.x service while preserving its checkpoint.
+ # The live room must be empty so the authoritative state can be flushed first.
+ live=health(18778)
+ if live.get('connections') or live.get('active_rooms') or live.get('queued'):
+  raise RuntimeError('Active players prevent the synchronized release switch')
+ source=pathlib.Path(payload['upload'])
+ if sha(source)!=payload['sha256']:raise RuntimeError('Upload checksum mismatch')
+ old_target=pathlib.Path(os.path.realpath(base/'current'))
+ old_binary=old_target/'IncenseDebtServer.x86_64'
+ old_hash=sha(old_binary)
+ sync_id=payload['sha256'][:16]
+ backup=base/'backups'/('sync-'+sync_id)
+ backup.mkdir(parents=True,exist_ok=True);backup.chmod(0o700)
+ (backup/'previous-target.txt').write_text(str(old_target)+'\n')
+ (backup/'previous-sha256.txt').write_text(old_hash+'\n')
+ shutil.copyfile(base/'config.json',backup/'config-before-sync.json')
+ run(['systemctl','stop','incense-debt.service'])
+ if (backup/'player-state').exists():shutil.rmtree(backup/'player-state')
+ shutil.copytree('/var/lib/incense-debt',backup/'player-state')
+ release=base/'releases'/(payload['version']+'-sync-'+sync_id)
+ release.mkdir(parents=True,exist_ok=True)
+ target=release/'IncenseDebtServer.x86_64';shutil.copyfile(source,target);target.chmod(0o755)
+ stop=release/'stop.sh';stop.write_text(payload['stop_script']);stop.chmod(0o755)
+ service_path=pathlib.Path('/etc/systemd/system/incense-debt.service')
+ service_path.write_text(payload['public_files']['service']);os.chown(service_path,0,0);service_path.chmod(0o644)
+ (base/'config.json').write_text(json.dumps(payload['config'],indent=2)+'\n');(base/'config.json').chmod(0o644)
+ run(['systemctl','daemon-reload'])
+ link=base/'current-next'
+ if link.exists() or link.is_symlink():link.unlink()
+ link.symlink_to(release);os.replace(link,base/'current')
+ try:
+  run(['systemctl','start','incense-debt.service'])
+  fresh=None
+  for attempt in range(80):
+   try:fresh=health(18778);break
+   except OSError:time.sleep(.25)
+  if not fresh or fresh.get('version')!=payload['version'] or fresh.get('transport')!=2 or not fresh.get('battle_encrypted'):
+   raise RuntimeError('Synchronized live server unhealthy')
+ except Exception:
+  run(['systemctl','stop','incense-debt.service'])
+  failed=backup/'failed-player-state'
+  if pathlib.Path('/var/lib/incense-debt').exists():os.rename('/var/lib/incense-debt',failed)
+  shutil.copytree(backup/'player-state','/var/lib/incense-debt')
+  for path in [pathlib.Path('/var/lib/incense-debt'),*pathlib.Path('/var/lib/incense-debt').rglob('*')]:os.chown(path,uid,gid)
+  if (base/'current').exists() or (base/'current').is_symlink():(base/'current').unlink()
+  (base/'current').symlink_to(old_target)
+  shutil.copyfile(backup/'config-before-sync.json',base/'config.json')
+  run(['systemctl','daemon-reload']);run(['systemctl','start','incense-debt.service']);raise
+ service=run(['systemctl','show','incense-debt.service','--property=ActiveState,SubState,MainPID,NRestarts'])
+ print(json.dumps({'passed':True,'action':'sync','health':fresh,'installed_sha256':sha(target),'previous_sha256':old_hash,
+  'release':str(release),'backup':str(backup),'service':service,'endpoint':'wss://xhz-server.sidcloud.cn/play','udp_port':18779}))
 elif payload['action']=='activate':
  live=health(18778);staged=health(19578)
  if live['connections'] or live['active_rooms'] or staged['connections'] or staged['active_rooms']:
@@ -155,13 +208,14 @@ else:raise RuntimeError('Unknown action')
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['stage', 'status', 'activate'])
+    parser.add_argument('action', choices=['stage', 'status', 'activate', 'sync'])
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     binary = ROOT / 'build/server-linux/IncenseDebtServer.x86_64'
+    version = re.search(r'config/version="([^"]+)"', (ROOT/'game/project.godot').read_text('utf8')).group(1)
     with binary.open('rb') as stream:
         digest = hashlib.file_digest(stream, 'sha256').hexdigest()
-    payload = {'action': args.action, 'sha256': digest,
+    payload = {'action': args.action, 'version': version, 'sha256': digest,
                'config': json.loads((ROOT/'server/linux/config.production.json').read_text('utf8')),
                'stop_script': (ROOT/'server/linux/stop.sh').read_text('utf8')}
     payload['public_files'] = {name:(ROOT/'server/linux'/path).read_text('utf8') for name,path in {
@@ -172,8 +226,8 @@ def main():
     helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(helper)
     client = helper.connect()
     try:
-        if args.action == 'stage':
-            upload = '/tmp/incense-debt-v0.6.0-' + digest[:16] + '.x86_64'
+        if args.action in ['stage', 'sync']:
+            upload = '/tmp/incense-debt-v' + version + '-' + digest[:16] + '.x86_64'
             with client.open_sftp() as sftp:
                 try: existing_size = sftp.stat(upload).st_size
                 except OSError: existing_size = -1

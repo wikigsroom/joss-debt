@@ -61,7 +61,7 @@ All tools run natively; no Docker, WSL, VM or emulator. Official clients have a 
 
 ## 官方 Linux 部署 / Official Linux deployment
 
-Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.6.0/`，current 符号链接指向当前版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
+Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.6.0*/`，`current` 符号链接指向当前同步版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
 
 `linux/incense-debt.service` 使用独立用户与系统只读保护、内存软限制 192 MiB／硬限制 256 MiB、**仅本服务禁止 swap**、退出后 3 秒自动重启。`linux/stop.sh` 写入本服务的停止标记，等待最后检查点与正常退出。
 
@@ -73,6 +73,8 @@ sudo journalctl -u incense-debt.service --since '10 minutes ago'
 ```
 
 当前主机已运行宝塔 Nginx。`linux/xhz-server.nginx.conf` 只配置本域名，使用实际 `/www/server/nginx/sbin/nginx`；不要安装／重启系统默认 Nginx、覆盖其他应用的全局配置。仅新增本游戏 vhost、测试并 reload 实际 Nginx。游戏／健康端口绑定回环，公开入口为 TLS 反代。
+
+从已完成候选迁移的 0.6.x 线上服务同步最新本地服务端构建时，使用仓库根目录的 `tools/runtime/deploy_udp_server.py sync`。该流程先确认没有活动房间，备份 `/var/lib/incense-debt`，再原子切换 `current` 符号链接并核验 0.6.0、ENet/DTLS 与 UDP 18779；启动失败会恢复旧指针和检查点。后续服务端更新必须通过该流程留下 SHA 与健康证据，不能只复制二进制或手工覆盖运行目录。
 
 The scoped templates assume the existing BT Nginx installation. Adapt paths on another host; do not replace unrelated services. Only the game's service, vhost and data directory are managed here.
 
