@@ -1,22 +1,25 @@
 {
-  "schema": 1,
-  "recorded_at": "2026-10-12T21:21:17.497269+00:00",
+  "schema": 2,
+  "recorded_at": "2026-10-12T21:31:18.220636+00:00",
   "version": "0.6.0",
   "endpoint": "wss://xhz-server.sidcloud.cn/play",
+  "resolved_ip": "124.221.198.220",
   "battle_udp_port": 18779,
   "virtualization": "none",
   "physical_android_tested": false,
   "deployment": {
     "passed": true,
-    "previous_sha256": "469d7d0a8e5eacb907a7e377b9fa016be11894693ca465216fa0bb44f92722ef",
+    "host": "124.221.198.220",
+    "previous_sha256": "37487c2c09ef3370bb5da7bd79acadd37ae5aa9217e4324a3a924055b1ac6907",
     "installed_sha256": "37487c2c09ef3370bb5da7bd79acadd37ae5aa9217e4324a3a924055b1ac6907",
     "release_path": "/opt/incense-debt/releases/0.6.0-sync-37487c2c09ef3370",
     "backup_path": "/opt/incense-debt/backups/sync-37487c2c09ef3370",
-    "service": "MainPID=2967773\nNRestarts=0\nActiveState=active\nSubState=running",
-    "switched_at": "2026-10-12T21:18:25.588535+00:00"
+    "service": "MainPID=243556\nNRestarts=0\nActiveState=active\nSubState=running",
+    "switched_at": "2026-10-12T21:29:38.310870+00:00"
   },
   "public_health_after_client_qa": {
     "version": "0.6.0",
+    "uptime_seconds": 100.358668000004,
     "transport": 2,
     "battle_encrypted": true,
     "connections": 0,
@@ -25,7 +28,7 @@
     "persistence_errors": 0,
     "storage_fault": false,
     "udp_rejected": 0,
-    "udp_edge_rejected": 1
+    "udp_edge_rejected": 0
   },
   "packaged_windows_public_flow": {
     "passed": true,
@@ -35,5 +38,5 @@
     "artifact_sha256": "f9bf68867d16a48e9d8ad1cabd494dbc3c8863e5c4eacc5912d6b2b5966d9326",
     "report": "docs/incense-debt/reports/latency-compensation-2026-10-13/native-client.json"
   },
-  "scope": "The latest local 0.6.0 native server build is now active on the public host. The packaged Windows client was re-run against the public WSS bootstrap and UDP battle transport after the switch."
+  "scope": "The latest local 0.6.0 native server build is active on the host resolved by the official game endpoint. The packaged Windows client completed the public WSS bootstrap and UDP battle flow after the switch."
 }

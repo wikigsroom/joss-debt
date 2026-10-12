@@ -8,7 +8,9 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[2]
-PRIVATE = ROOT / ".local-tools/public-server-2026-10-11"
+# This is the host behind xhz-server.sidcloud.cn. The DPAPI-backed helper is
+# intentionally ignored and never enters the repository.
+PRIVATE = ROOT / ".local-tools/public-server-2026-10-13"
 REMOTE = r'''
 import hashlib,json,os,pathlib,pwd,grp,shutil,subprocess,time,urllib.request
 def run(args):
@@ -16,7 +18,10 @@ def run(args):
 def health(port):
  return json.load(urllib.request.urlopen('http://127.0.0.1:%d/health'%port,timeout=5))
 def sha(path):
- with open(path,'rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+ digest=hashlib.sha256()
+ with open(path,'rb') as f:
+  for block in iter(lambda:f.read(1024*1024),b''):digest.update(block)
+ return digest.hexdigest()
 base=pathlib.Path('/opt/incense-debt')
 candidate=base/'candidates/v0.6.0'
 vhost=pathlib.Path('/www/server/panel/vhost/nginx/xhz-server.sidcloud.cn.conf')
