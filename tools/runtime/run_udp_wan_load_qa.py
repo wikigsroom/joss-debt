@@ -12,6 +12,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[2]
 ENGINE = ROOT/'.local-tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe'
+VERSION = re.search(r'config/version="([^"]+)"', (ROOT/'game/project.godot').read_text('utf8')).group(1)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -29,12 +30,12 @@ def main():
     def health():
         with urllib.request.urlopen(args.health, timeout=15) as response:return json.load(response)
     first=health()
-    if first['version']!='0.6.0' or first['transport']!=2 or not first['battle_encrypted']:
-        raise RuntimeError('Expected encrypted 0.6.0 candidate')
+    if first['version']!=VERSION or first['transport']!=2 or not first['battle_encrypted']:
+        raise RuntimeError(f'Expected encrypted {VERSION} server')
     spec=importlib.util.spec_from_file_location('private_remote', ROOT/'.local-tools/public-server-2026-10-13/remote.py')
     helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
     unit='incense-debt-udp-candidate.service' if 'candidate-play' in args.url else 'incense-debt.service'
-    target='/opt/incense-debt/candidates/v0.6.0/IncenseDebtServer.x86_64' if 'candidate-play' in args.url else '/opt/incense-debt/current/IncenseDebtServer.x86_64'
+    target=('/opt/incense-debt/candidates/v'+VERSION+'/IncenseDebtServer.x86_64') if 'candidate-play' in args.url else '/opt/incense-debt/current/IncenseDebtServer.x86_64'
     def native_check():
         remote=helper.connect()
         try:

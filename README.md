@@ -5,9 +5,9 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[v0.6.0 正式联机版 / Stable native-UDP release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0)** · [中英发布说明 / Release notes](docs/releases/v0.6.0.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
+**[v0.6.1 延迟修复版 / Latency-fix native-UDP release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.1)** · [中英发布说明 / Release notes](docs/releases/v0.6.1.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
 
-[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/IncenseDebt-v0.6.0-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.0/SHA256SUMS.txt)
+[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/SHA256SUMS.txt)
 
 **进入共灯，自动联机。** v0.6.0 官方服务已切换到 Godot 原生 ENet＋DTLS：WSS 只做身份与一次性入战票据，战斗走 UDP 18779。普通断线自动重试，状态与输入分通道，恢复后双方确认再继续。见 [网络实现与验收](docs/incense-debt/47-native-udp-iteration.md)。
 

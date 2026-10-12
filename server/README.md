@@ -1,12 +1,12 @@
 # 香火债原生独立服务端 / Native dedicated server
 
-**0.6.0 原生 UDP 正式联机发布**，提供 Linux x64 与 Windows x64。官方稳定服务为 `wss://xhz-server.sidcloud.cn/play` 加 UDP `xhz-server.sidcloud.cn:18779`；客户端进入共灯自动完成 WSS 身份交换，再用 ENet＋DTLS 承载战斗，不展示／编辑地址。默认双人合作十一层、共享 NPC／钱包／掉落、各自成长、救援与真实门口推进；可选对灯 PvP 使用隔离队列。
+**0.6.1 原生 UDP 延迟修复发布**，提供 Linux x64 与 Windows x64。官方稳定服务为 `wss://xhz-server.sidcloud.cn/play` 加 UDP `xhz-server.sidcloud.cn:18779`；客户端进入共灯自动完成 WSS 身份交换，再用 ENet＋DTLS 承载战斗，不展示／编辑地址。默认双人合作十一层、共享 NPC／钱包／掉落、各自成长、救援与真实门口推进；可选对灯 PvP 使用隔离队列。
 
-Official 0.6.0 clients bootstrap through the fixed public WSS service and carry battle traffic over encrypted native ENet/UDP. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
+Official 0.6.1 clients bootstrap through the fixed public WSS service and carry battle traffic over encrypted native ENet/UDP. Co-Light is the default; optional Duel is isolated. Players do not need to run a server.
 
-**2026-10-12 原生 UDP 已激活：** 0.6.0 使用 HTTPS／WSS 做身份与一次性 battle ticket，使用 UDP 18779 上的 Godot ENet＋DTLS 承载战斗。候选已完成隔离验收后切换到 `/play`，激活摘要、健康与 SHA 见[开发计划](../docs/incense-debt/46-network-development-plan.md)、[实现说明](../docs/incense-debt/47-native-udp-iteration.md)与本轮[验收证据](../docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json)。
+**2026-10-13 原生联机延迟修复已同步：** 0.6.1 使用 HTTPS／WSS 做身份与一次性 battle ticket，使用 UDP 18779 上的 Godot ENet＋DTLS 承载战斗。客户端的状态时钟、插值和预测纠正已经更新，服务端已切换到同一版本；摘要、健康与 SHA 见[延迟补偿说明](../docs/incense-debt/49-latency-compensation.md)与本轮[同步记录](../docs/incense-debt/reports/latency-compensation-2026-10-13/online-sync.json)。
 
-**Native UDP is active:** 0.6.0 uses HTTPS/WSS for identity and a one-use battle ticket, then Godot ENet/DTLS on UDP 18779 for battle. The isolated candidate passed its gates and was promoted to `/play`; see the [plan](../docs/incense-debt/46-network-development-plan.md), [implementation note](../docs/incense-debt/47-native-udp-iteration.md) and [acceptance evidence](../docs/incense-debt/reports/network-udp-acceptance-2026-10-12.json).
+**Native UDP is active:** 0.6.1 uses HTTPS/WSS for identity and a one-use battle ticket, then Godot ENet/DTLS on UDP 18779 for battle. The latency-fix server and client are active on `/play`; see the [latency note](../docs/incense-debt/49-latency-compensation.md) and [sync evidence](../docs/incense-debt/reports/latency-compensation-2026-10-13/online-sync.json).
 
 ## 源码归档 / Source archival
 
@@ -14,7 +14,7 @@ Official 0.6.0 clients bootstrap through the fixed public WSS service and carry 
 
 The [standalone v0.6.0 source archive](archives/v0.6.0/README.md) preserves the exact accepted shared source bytes, portable project and public deployment files. Its manifest pins provenance and native server hashes. The immutable v0.5.0 archive remains available; future releases receive new archives. Verify from the repository root with `python tools/runtime/verify_server_archive.py --version 0.6.0`.
 
-Git 排除真实服务器配置、凭据、TLS 私钥、玩家 token／检查点、日志和缓存。运行包保留在 [正式 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.0)；玩家状态需要正常停机后做独立的加密备份，源码归档不包含在线存档。
+Git 排除真实服务器配置、凭据、TLS 私钥、玩家 token／检查点、日志和缓存。运行包保留在 [正式 Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.1)；玩家状态需要正常停机后做独立的加密备份，源码归档不包含在线存档。
 
 Private configuration, credentials, keys, player state, logs and caches are excluded from Git. Native packages are archived in the stable Release. Back up live state separately and privately after graceful shutdown.
 
@@ -61,7 +61,7 @@ All tools run natively; no Docker, WSL, VM or emulator. Official clients have a 
 
 ## 官方 Linux 部署 / Official Linux deployment
 
-Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.6.0*/`，`current` 符号链接指向当前同步版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
+Ubuntu 24.04、新加坡共享主机。原生 ELF 位于 `/opt/incense-debt/releases/0.6.1*/`，`current` 符号链接指向当前同步版本；配置 `/opt/incense-debt/config.json`，数据 `/var/lib/incense-debt` 由独立用户持有、权限 0700。
 
 `linux/incense-debt.service` 使用独立用户与系统只读保护、内存软限制 192 MiB／硬限制 256 MiB、**仅本服务禁止 swap**、退出后 3 秒自动重启。`linux/stop.sh` 写入本服务的停止标记，等待最后检查点与正常退出。
 
@@ -74,7 +74,7 @@ sudo journalctl -u incense-debt.service --since '10 minutes ago'
 
 当前主机已运行宝塔 Nginx。`linux/xhz-server.nginx.conf` 只配置本域名，使用实际 `/www/server/nginx/sbin/nginx`；不要安装／重启系统默认 Nginx、覆盖其他应用的全局配置。仅新增本游戏 vhost、测试并 reload 实际 Nginx。游戏／健康端口绑定回环，公开入口为 TLS 反代。
 
-从已完成候选迁移的 0.6.x 线上服务同步最新本地服务端构建时，使用仓库根目录的 `tools/runtime/deploy_udp_server.py sync`。该流程先确认没有活动房间，备份 `/var/lib/incense-debt`，再原子切换 `current` 符号链接并核验 0.6.0、ENet/DTLS 与 UDP 18779；启动失败会恢复旧指针和检查点。后续服务端更新必须通过该流程留下 SHA 与健康证据，不能只复制二进制或手工覆盖运行目录。
+从已完成候选迁移的 0.6.x 线上服务同步最新本地服务端构建时，使用仓库根目录的 `tools/runtime/deploy_udp_server.py sync`。该流程先确认没有活动房间，备份 `/var/lib/incense-debt`，再原子切换 `current` 符号链接并核验当前项目版本、ENet/DTLS 与 UDP 18779；启动失败会恢复旧指针和检查点。后续服务端更新必须通过该流程留下 SHA 与健康证据，不能只复制二进制或手工覆盖运行目录。
 
 The scoped templates assume the existing BT Nginx installation. Adapt paths on another host; do not replace unrelated services. Only the game's service, vhost and data directory are managed here.
 
