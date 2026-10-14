@@ -1,18 +1,18 @@
-# 香火债 0.6.1 / Incense Debt 0.6.1
+# 香火债 0.6.2 / Incense Debt 0.6.2
 
-十一层离线房间肉鸽、双人共灯合作和可选对灯切磋。游戏界面为简体中文。[Release 与校验文件](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.1)。战斗网络使用 Godot 原生 ENet＋DTLS UDP，WSS 只负责身份和入战票据。
+十一层离线房间肉鸽、双人共灯合作和可选对灯切磋。游戏界面为简体中文。[Release 与校验文件](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.2)。战斗网络使用 Godot 原生 ENet＋DTLS UDP，WSS 只负责身份和入战票据。本版同步修复菜单文字越界、笔刷按钮变形和移动端滚动短按问题。
 
-An eleven-floor offline roguelite with two-player Co-Light cooperation and optional Duel. Battle uses native Godot ENet/DTLS over UDP; WSS bootstraps identity and the battle ticket. The game currently uses Simplified Chinese.
+An eleven-floor offline roguelite with two-player Co-Light cooperation and optional Duel. Battle uses native Godot ENet/DTLS over UDP; WSS bootstraps identity and the battle ticket. This release also fixes measured menu text bounds, brush-button proportions and mobile scroll/tap behavior. The game currently uses Simplified Chinese.
 
 ## Windows
 
-下载 `IncenseDebt-v0.6.1-windows-x64.zip`，完整解压后运行 `IncenseDebt.exe`。需要 Windows x64 和 OpenGL 3.3，不需安装 Godot。程序未做 Windows 发行者代码签名；同一 Release 提供 SHA256SUMS.txt。
+下载 `IncenseDebt-v0.6.2-windows-x64.zip`，完整解压后运行 `IncenseDebt.exe`。需要 Windows x64 和 OpenGL 3.3，不需安装 Godot。程序未做 Windows 发行者代码签名；同一 Release 提供 SHA256SUMS.txt。
 
 Extract the Windows ZIP and run the EXE. Requires Windows x64 and OpenGL 3.3; no engine installation. No Windows publisher signature is provided. Check the release checksums.
 
 ## Android
 
-安装 `IncenseDebt-v0.6.1-android-arm64.apk`：**Android 9 / API 28 以上、arm64**，版本 0.6.1 / code 11。正式私有签名、非调试构建；只请求 INTERNET、VIBRATE。离线游玩无需网络，实体手机验收按本次发布范围未执行。
+安装 `IncenseDebt-v0.6.2-android-arm64.apk`：**Android 9 / API 28 以上、arm64**，版本 0.6.2 / code 12。正式私有签名、非调试构建；只请求 INTERNET、VIBRATE。离线游玩无需网络，实体手机验收按本次发布范围未执行。
 
 包内嵌入旧签名到正式签名的证书迁移链，官方校验器已验证 API 28、32、33、36 的签名与旧安装数据继承能力。优先直接覆盖安装，**不要先卸载**，卸载会删除私有愿簿。当前发布记录明确未做 Android 真机验证。
 

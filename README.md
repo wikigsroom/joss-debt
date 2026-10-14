@@ -5,9 +5,9 @@
 
 [中文说明](#zh-guide) · [English guide](#en-guide) · [实机与 GIF / Screenshots & GIFs](#showcase) · [菜单示意 / Menu diagram](#menu-diagram) · [运行 / Run](#zh-run) · [Build](#en-build) · [设计文档 / Design documents](docs/incense-debt/README.md)
 
-**[v0.6.1 延迟修复版 / Latency-fix native-UDP release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.1)** · [中英发布说明 / Release notes](docs/releases/v0.6.1.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
+**[v0.6.2 水墨朱砂符 UI 修订版 / Ink Cinnabar UI release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.6.2)** · [中英发布说明 / Release notes](docs/releases/v0.6.2.md) · [安装与操作 / Start here](docs/releases/START-HERE.md)
 
-[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/IncenseDebt-v0.6.1-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.1/SHA256SUMS.txt)
+[Windows x64 ZIP](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.2/IncenseDebt-v0.6.2-windows-x64.zip) · [Android 9+ arm64 正式签名 APK / Release APK](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.2/IncenseDebt-v0.6.2-android-arm64.apk) · [Linux server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.2/IncenseDebt-v0.6.2-server-linux-x64.zip) · [Windows server](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.2/IncenseDebt-v0.6.2-server-windows-x64.zip) · [SHA-256](https://github.com/wikigsroom/joss-debt/releases/download/v0.6.2/SHA256SUMS.txt)
 
 **进入共灯，自动联机。** v0.6.0 官方服务已切换到 Godot 原生 ENet＋DTLS：WSS 只做身份与一次性入战票据，战斗走 UDP 18779。普通断线自动重试，状态与输入分通道，恢复后双方确认再继续。见 [网络实现与验收](docs/incense-debt/47-native-udp-iteration.md)。
 
@@ -20,7 +20,7 @@
 | 项目 / Item | 当前情况 / Current state |
 | --- | --- |
 | 游戏名 / Game title | 《香火债》 / **Incense Debt**；仓库名为 `joss-debt` / repository name: `joss-debt` |
-| 版本 / Version | **0.6.0 原生 UDP 正式联机版 / Stable native-UDP online release** |
+| 版本 / Version | **0.6.2 水墨朱砂符 UI 修订版 / Ink Cinnabar UI release** |
 | 类型 / Genre | 平面房间探索、实时战斗、随机成长、风险交易 / room exploration, real-time combat, randomized builds, risk-based bargains |
 | 引擎 / Engine | **Godot 4.7.2 · GDScript · Compatibility / OpenGL** |
 | 画面 / Presentation | 1280 × 720 基准视口、横屏；60 Hz 战斗模拟 / reference landscape viewport; 60 Hz combat simulation |
@@ -85,6 +85,16 @@ Current scope is defined by the [delivery status](docs/incense-debt/reports/curr
 
 <a id="showcase"></a>
 ## 实机展示 / Native gameplay showcase
+
+### v0.6.2 水墨朱砂符 UI 发布媒体 / Ink Cinnabar UI publication media
+
+本轮 12 张截图、120 秒实机录屏和 45 秒宣传片统一采用 `v0.6.2` 当前水墨朱砂符 UI，覆盖菜单、角色选择、商店、暂停、供物选择和战斗画面。截图总览见 [十二张截图预览](output/publishing/incense-debt/store-kit-2026-10-08/previews/twelve-screenshots-preview.jpg)，完整原图见 [screenshots](output/publishing/incense-debt/store-kit-2026-10-08/screenshots/README.md)；视频提供 [120 秒实机录屏](output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-gameplay-120s.mp4) 和 [45 秒宣传片](output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-trailer-45s.mp4)。
+
+![当前 UI 的十二张原生截图 / Twelve native screenshots for the current UI](output/publishing/incense-debt/store-kit-2026-10-08/previews/twelve-screenshots-preview.jpg)
+
+![45 秒宣传片关键帧 / 45-second trailer contact sheet](output/publishing/incense-debt/store-kit-2026-10-08/previews/trailer-contact-sheet.jpg)
+
+The twelve screenshots, 120-second gameplay recording, and 45-second trailer now document the `v0.6.2` Ink Cinnabar UI across the title, character selection, shop, pause, relic choice and combat scenes. See the [twelve-screenshot preview](output/publishing/incense-debt/store-kit-2026-10-08/previews/twelve-screenshots-preview.jpg), [full screenshot set](output/publishing/incense-debt/store-kit-2026-10-08/screenshots/README.md), [120-second gameplay recording](output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-gameplay-120s.mp4), and [45-second trailer](output/publishing/incense-debt/store-kit-2026-10-08/videos/IncenseDebt-trailer-45s.mp4). The current UI audit passes 90 native desktop captures and four mobile fixtures of 100 checks each; see [the UI layout audit](docs/incense-debt/53-ui-layout-audit-2026-10-14.md).
 
 ### 0.5.0 官方服务实机 / Official service gameplay
 

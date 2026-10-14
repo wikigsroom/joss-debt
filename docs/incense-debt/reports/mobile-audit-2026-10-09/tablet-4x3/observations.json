@@ -1,72 +1,73 @@
 {
 	"engine": "4.7.2-stable (official)",
+	"generated_utc": "2026-10-14T15:49:52",
 	"observations": [
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "two_thumbs_dash_interrupts_fire",
 			"observed": {
 				"after_fire": false,
-				"before_fire": true,
+				"before_fire": false,
 				"dash": true,
 				"move_preserved": true
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "button_switch_discards_charge",
 			"observed": {
 				"charge_after": 0.0,
-				"charge_before": 0.4,
+				"charge_before": 0.0,
 				"weapon": "w32"
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "fire_inside_aim_deadzone",
 			"observed": {
 				"aim": "(0.0, -1.0)",
 				"deadzone": 0.32,
-				"fire": true,
-				"stick_length": 0.25
+				"fire": false,
+				"stick_length": 0.0
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "fixed_aim_captures_far_from_visible_stick",
 			"observed": {
-				"distance_from_stick": 382.099456787109,
-				"fire": true,
+				"distance_from_stick": 296.052978515625,
+				"fire": false,
 				"stick_radius": 72.0
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "sliding_aim_onto_dash_does_not_dash",
 			"observed": {
 				"dash": false,
-				"fire": true,
-				"floating_origin": "(945.0, 605.0)",
-				"overlaps_dash": true
+				"fire": false,
+				"floating_origin": "(910.0, 570.0)",
+				"overlaps_dash": false
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "move_capture_includes_upper_playfield",
 			"observed": {
-				"move_id": 6,
+				"move_id": -1,
 				"pressed_point": "(100, 180)"
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "custom_aim_crosses_half_screen_but_captures_move",
 			"observed": {
 				"aim_center": "(499.2, 475.2)",
-				"aim_id": -1,
+				"aim_id": 16,
 				"fire": false,
 				"layout_accepted": true,
-				"move_id": 16,
-				"movement": "(0.95355, -0.301236)"
+				"move_id": -1,
+				"movement": "(0.0, 0.0)"
 			}
 		},
 		{
@@ -86,10 +87,10 @@
 			}
 		},
 		{
-			"confirmed": true,
+			"confirmed": false,
 			"id": "auto_aim_ignores_manual_direction",
 			"observed": {
-				"effective_direction": "(-1.0, 0.0)",
+				"effective_direction": "(1.0, 0.0)",
 				"manual_direction": "RIGHT",
 				"nearest_target": "LEFT"
 			}
@@ -110,41 +111,46 @@
 				"button_height": 64.0,
 				"choice_controls": [
 					{
+						"name": "1 灯芯屑",
+						"rect": "[P: (96.0, 301.0), S: (352.0, 172.0)]",
+						"size": "(352.0, 172.0)"
+					},
+					{
+						"name": "2 火星灯",
+						"rect": "[P: (464.0, 301.0), S: (352.0, 172.0)]",
+						"size": "(352.0, 172.0)"
+					},
+					{
+						"name": "3 油纸笼",
+						"rect": "[P: (832.0, 301.0), S: (352.0, 172.0)]",
+						"size": "(352.0, 172.0)"
+					},
+					{
 						"name": "选择灯芯屑",
-						"rect": "[P: (823.0, 466.0), S: (305.0, 64.0)]",
-						"size": "(305.0, 64.0)"
-					},
-					{
-						"name": "上一件",
-						"rect": "[P: (126.0, 610.0), S: (64.0, 64.0)]",
-						"size": "(64.0, 64.0)"
-					},
-					{
-						"name": "下一件",
-						"rect": "[P: (212.0, 610.0), S: (64.0, 64.0)]",
-						"size": "(64.0, 64.0)"
+						"rect": "[P: (850.0, 728.0), S: (334.0, 64.0)]",
+						"size": "(334.0, 64.0)"
 					},
 					{
 						"name": "换一页",
-						"rect": "[P: (718.0, 610.0), S: (64.0, 64.0)]",
-						"size": "(64.0, 64.0)"
+						"rect": "[P: (96.0, 728.0), S: (210.0, 64.0)]",
+						"size": "(210.0, 64.0)"
 					},
 					{
 						"name": "留在此处 · 继续",
-						"rect": "[P: (846.0, 610.0), S: (308.0, 64.0)]",
-						"size": "(308.0, 64.0)"
+						"rect": "[P: (440.0, 728.0), S: (268.0, 64.0)]",
+						"size": "(268.0, 64.0)"
 					}
 				],
 				"dpi": 96,
 				"surface": "(1024, 768)",
-				"ui_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 0.0)]"
+				"ui_transform": "[X: (1.0, 0.0), Y: (0.0, 1.0), O: (0.0, 120.0)]"
 			}
 		}
 	],
 	"scope": "native Godot source audit with synthetic touch input; no physical Android device",
 	"settings": {
 		"emulate_mouse_from_touch": true,
-		"orientation": 0,
+		"orientation": 4,
 		"screen_transform": "[X: (0.8, 0.0), Y: (0.0, 0.8), O: (0.0, 96.0)]",
 		"stretch_aspect": "keep",
 		"surface": "(1024, 768)"

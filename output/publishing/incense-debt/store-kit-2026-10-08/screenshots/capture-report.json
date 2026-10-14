@@ -178,13 +178,16 @@
   "simulation_hz": 60,
   "source": "published executable embedded game resources",
   "transitions": [],
-  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+  "artifact_sha256": "9e0d3c3fa7dd11a1e3b8501f0b502426ca4cdc720e11167d76a87a7f0fa6e331",
   "harness": "tools/documentation/capture_store_media.gd",
   "renderer_source": "game/scripts/ui/game_renderer.gd",
-  "renderer_sha256": "ee1095438e9a3339e830d9fd1532a4f065919a56fcf8478bdb7dedb71302a8fd",
+  "renderer_sha256": "773639f30c344b38e73804bb15a59c43b18ee30214e39652f0bf37238071a194",
   "presentation_fix": "Skip disappeared/dead debt-chain anchors in current source renderer; no simulation, stats, loot or RNG change",
   "capture_size": [
     1920,
     1080
-  ]
+  ],
+  "artifact_version": "0.6.2",
+  "capture_package": "v0.6.2 Windows release package; no physical device",
+  "capture_date": "2026-10-15"
 }

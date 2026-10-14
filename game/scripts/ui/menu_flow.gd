@@ -1,11 +1,30 @@
 extends RefCounted
 ## Title -> file -> main -> run/stats/options. Extra game systems live below it.
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Daily = preload("res://scripts/core/daily_seed.gd")
 const ENDINGS = [
 	["burn", "焚账", "解除所有债，带走重要的愿页，让剩下的旧账化灰。", "r17"],
 	["repay", "偿还", "撕去利息页，留下已经回应的愿。还愿庭成为互助的集市。", "r54"],
 	["rewrite", "换约", "不再记谁欠了多少。共同的账，只留下谁已经回应。", "r48"]]
+
+static func attach_page(app) -> TextureRect:
+	# Shared page host for menu surfaces that historically built their own
+	# modal instead of calling shell(). It keeps the same live-paper background,
+	# z-order and contrast boundary as the title/main menu.
+	app.modal.set_meta("ink_page_host", true)
+	app.modal.set_meta("ink_paper_surface", true)
+	var page = TextureRect.new()
+	page.name = "InkDirection02Page"
+	page.set_meta("ink_page", true)
+	page.z_index = -5
+	page.texture = UI.texture("menu-background")
+	page.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	page.stretch_mode = TextureRect.STRETCH_SCALE
+	page.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	app.modal.add_child(page)
+	app.fit_ink_page(page)
+	return page
 
 static func shell(app, title: String, note: String = "") -> Control:
 	app.paused = true
@@ -15,9 +34,47 @@ static func shell(app, title: String, note: String = "") -> Control:
 	app.adapter.clear()
 	app.clear_modal()
 	app.dim(.93)
-	var sheet = app.panel(app.modal, Rect2(64, 42, 1152, 636), UI.INSET, Color.TRANSPARENT)
-	app.label(sheet, title, Rect2(32, 24, 930, 62), 42)
-	if not note.is_empty(): app.label(sheet, note, Rect2(35, 92, 1018, 38), 18, UI.MUTED)
+	# The approved reference is a full-bleed page. Keep the existing content
+	# coordinates for every sub-page, but move the generated paper to the modal
+	# edge so no dark viewport bars survive around it.
+	attach_page(app)
+	# Menu shells are the rice-paper page; all interactive cards remain ink plaques.
+	var sheet = app.panel(app.modal, Rect2(64, 42, 1152, 636), UI.CANVAS, Color.TRANSPARENT)
+	var transparent_page = UI.style(Color(0, 0, 0, 0), Color.TRANSPARENT, 0, 0)
+	transparent_page.shadow_size = 0
+	sheet.add_theme_stylebox_override("panel", transparent_page)
+	# Align the content grid with the approved board's left talisman margin.
+	app.label(sheet, title, Rect2(88, 4, 930, 72), 50)
+	# The approved direction board carries a small vermilion seal beside the
+	# title. Keep it as a generated raster asset so the seal texture and edge
+	# wear match the rest of the ink kit across every menu shell.
+	if title == "香火债":
+		var title_seal = TextureRect.new()
+		title_seal.name = "InkTitleSeal"
+		title_seal.texture = UI.texture("title-seal")
+		title_seal.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		title_seal.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		title_seal.custom_minimum_size = Vector2.ZERO
+		title_seal.position = Vector2(300, 13)
+		# TextureRect updates its minimum size when expand_mode changes; set the
+		# final compact seal bounds afterwards so a tall source cannot inflate it.
+		title_seal.size = Vector2(27, 48)
+		title_seal.modulate = Color(1, 1, 1, .9)
+		title_seal.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		title_seal.z_index = 3
+		sheet.add_child(title_seal)
+	if not note.is_empty(): app.label(sheet, note, Rect2(92, 69, 1018, 38), 19, UI.MUTED)
+	# Generated cloud-and-plum divider anchors every paper page to the same
+	# talisman language without adding another text label.
+	var divider = TextureRect.new()
+	divider.texture = UI.texture("ink-cloud-divider")
+	divider.position = Vector2(352, 116)
+	divider.size = Vector2(430, 54)
+	divider.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	divider.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	divider.modulate = Color(1, 1, 1, .64)
+	divider.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	sheet.add_child(divider)
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 56.0
 	var back = app.icon_button(sheet, "返回上一层", "arrow-left", Rect2(1080 - height, 24, height, height), app.go_back)
 	back.set_meta("nav_id", "back")
@@ -29,7 +86,7 @@ static func splash(app) -> void:
 	app.label(sheet, "香火债", Rect2(54, 162, 650, 100), 78)
 	app.label(sheet, "INCENSE DEBT", Rect2(60, 276, 500, 36), 22, UI.MUTED)
 	app.label(sheet, "留一盏灯，回应未完的愿。", Rect2(60, 344, 585, 44), 24, UI.JADE)
-	var start = app.icon_button(sheet, "翻开愿簿", "play", Rect2(60, 460, 426, 80), func(): app.show_menu("files"), true, "开始")
+	var start = app.icon_button(sheet, "翻开愿簿", "ink:play", Rect2(60, 460, 426, 80), func(): app.show_menu("files"), true, "开始")
 	start.set_meta("nav_default", true)
 	start.set_meta("nav_id", "start")
 
@@ -42,7 +99,7 @@ static func files(app) -> void:
 		card.set_meta("save_slot", str(slot))
 		card.set_meta("nav_default", slot == app.save_slot)
 		if slot == app.save_slot: UI.select(card)
-		app.icon(card, "save" if summary.get("occupied", false) else "folder-open", Rect2(144, 36, 56, 56), UI.JADE)
+		app.icon(card, "ink:scroll", Rect2(144, 36, 56, 56), UI.JADE)
 		var title = app.label(card, "愿簿 %d" % slot, Rect2(24, 112, 296, 44), 30)
 		title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		var line = app.label(card, str(summary.get("label", "空白槽位")), Rect2(24, 171, 296, 40), 22, UI.MUTED)
@@ -57,26 +114,39 @@ static func files(app) -> void:
 
 static func main_menu(app) -> void:
 	var sheet = shell(app, "香火债", "愿簿 %d  /  %s" % [app.save_slot, app.progress.data.wish_name])
-	app.add_art(sheet, "res://assets/portraits/" + app.selected + ".png", Rect2(62, 144, 428, 324))
+	var portrait_frame = TextureRect.new()
+	portrait_frame.name = "InkPortraitFrame"
+	portrait_frame.texture = UI.texture("portrait-frame")
+	portrait_frame.position = Vector2(80, 74)
+	portrait_frame.size = Vector2(470, 300)
+	portrait_frame.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	portrait_frame.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	portrait_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	portrait_frame.z_index = 2
+	sheet.add_child(portrait_frame)
+	app.add_art(sheet, "res://assets/portraits/" + app.selected + ".png", Rect2(83, 115, 428, 324))
 	var facts = [["sparkles", app.progress.data.merit], ["crown", app.progress.data.achievements.size()], ["sun", app.progress.data.endings.size()]]
 	for i in facts.size():
-		var chip = app.panel(sheet, Rect2(40 + i * 157, 554, 144, 52), UI.SURFACE, Color.TRANSPARENT)
+		var chip = app.panel(sheet, Rect2(94 + i * 157, 523, 144, 52), UI.SURFACE, Color.TRANSPARENT)
+		var chip_style = UI.style(UI.SURFACE, Color.TRANSPARENT, 14, 0)
+		chip_style.shadow_size = 0
+		chip.add_theme_stylebox_override("panel", chip_style)
 		app.icon(chip, facts[i][0], Rect2(18, 14, 24, 24), UI.JADE)
 		app.label(chip, str(int(facts[i][1])), Rect2(60, 8, 74, 36), 23)
 	var has_run = not app.checkpoint.is_empty() and app.checkpoint.get("run", {}).get("result", "") == ""
 	var entries = [
-		["新局", "play", func(): app.open_character_select("normal")],
-		["继续", "rotate-ccw", app.restore_run],
-		["挑战", "sword", func(): app.show_menu("challenges")],
-		["共灯 · 联机", "shuffle", func(): app.online.open()],
-		["记录", "scroll-text", func(): app.show_menu("stats")],
-		["还愿庭", "house", func(): app.show_hub()],
-		["设置", "settings-2", app.show_settings],
-		["离开", "log-out", app.request_quit]]
+		["新局", "ink:play", func(): app.open_character_select("normal")],
+		["继续", "ink:restart", app.restore_run],
+		["挑战", "ink:combat", func(): app.show_menu("challenges")],
+		["共灯 · 联机", "ink:shuffle", func(): app.online.open()],
+		["记录", "ink:scroll", func(): app.show_menu("stats")],
+		["还愿庭", "ink:house", func(): app.show_hub()],
+		["设置", "ink:settings", app.show_settings],
+		["离开", "ink:exit", app.request_quit]]
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 58.0
-	var scroll = ScrollContainer.new()
-	scroll.position = Vector2(620, 126)
-	scroll.size = Vector2(490, 488)
+	var scroll = TouchScroll.new()
+	scroll.position = Vector2(600, 90)
+	scroll.size = Vector2(540, 470)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.follow_focus = true
 	sheet.add_child(scroll)
@@ -85,26 +155,25 @@ static func main_menu(app) -> void:
 	scroll.add_child(list)
 	for i in entries.size():
 		var entry = entries[i]
-		var action = app.icon_button(list, entry[0], entry[1], Rect2(0, 0, 474, height), entry[2], i == 0, entry[0])
-		action.custom_minimum_size = Vector2(474, height)
+		var action = app.icon_button(list, entry[0], entry[1], Rect2(0, 0, 520, height), entry[2], i == 0, entry[0])
+		action.custom_minimum_size = Vector2(520, height)
 		action.set_meta("nav_id", ["new", "continue", "challenges", "online", "stats", "hub", "settings", "quit"][i])
 		action.set_meta("nav_default", i == 0)
 		if i == 1:
 			action.disabled = app.save_session.read_only or not has_run
 			action.tooltip_text = "当前愿簿没有进行中的还愿" if not has_run else "恢复同一房间与构筑"
 		elif i == 3:
-			action.tooltip_text = "打开后自动联网，用于匹配与断线恢复；离线愿簿不会上传。"
-	app.label(sheet, "共灯连接新加坡官方服务，发送昵称、匿名身份和游玩操作。\n点击共灯同意上述联机处理；退出即可停止。\n离线存档不上传 · 隐私政策可在菜单内查看。", Rect2(40, 483, 540, 60), 17, UI.MUTED)
+			action.tooltip_text = "打开共灯联机"
 
 static func challenges(app) -> void:
 	var sheet = shell(app, "挑战", "挑战先选规则，再选还愿人；固定种子不会增加局外成长")
 	var card = app.panel(sheet, Rect2(100, 180, 952, 350), UI.SURFACE, Color.TRANSPARENT)
-	app.icon(card, "sword", Rect2(44, 44, 76, 76), UI.ACCENT)
+	app.icon(card, "ink:combat", Rect2(44, 44, 76, 76), UI.ACCENT)
 	app.label(card, "每日还愿", Rect2(157, 43, 750, 62), 38)
 	var date_value = Time.get_date_dict_from_system()
 	app.label(card, Daily.key(date_value), Rect2(159, 121, 727, 34), 24, UI.JADE)
 	app.label(card, "固定初始器具与供物池 · 三章还愿\n可中途存下并继续 · 训练与每日不计角色成就", Rect2(159, 183, 724, 82), 22, UI.MUTED)
-	var action = app.icon_button(card, "选择挑战角色", "play", Rect2(570, 273, 340, 64), func(): app.open_character_select("daily"), true, "选还愿人")
+	var action = app.icon_button(card, "选择挑战角色", "ink:play", Rect2(570, 273, 340, 64), func(): app.open_character_select("daily"), true, "选还愿人")
 	action.disabled = app.save_session.read_only
 	action.set_meta("nav_default", true)
 
@@ -137,7 +206,7 @@ static func collection(app, bestiary: bool) -> void:
 		var tab = app.icon_button(sheet, names[kind], "sword" if bestiary else "sparkles", Rect2(38 + i * 204, 103, 188, 56 if not app.mobile_ui else 72), func(): app.collection_kind = kind; app.collection_id = ""; app.show_menu(app.menu_page), false, names[kind])
 		tab.set_meta("nav_id", "collection_" + kind)
 		if kind == app.collection_kind: UI.select(tab)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(38, 191)
 	scroll.size = Vector2(750, 376)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED

@@ -27993,6 +27993,334 @@
       ]
     },
     {
+      "file": "res://assets/ui/ink/brush-focus-frame.png",
+      "kind": "texture",
+      "size": [
+        492,
+        220
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/brush-panel-ink.png",
+      "kind": "texture",
+      "size": [
+        485,
+        205
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-compact.png",
+      "kind": "texture",
+      "size": [
+        389,
+        142
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-disabled.png",
+      "kind": "texture",
+      "size": [
+        491,
+        159
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-focus.png",
+      "kind": "texture",
+      "size": [
+        494,
+        190
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-hover.png",
+      "kind": "texture",
+      "size": [
+        499,
+        172
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-pressed.png",
+      "kind": "texture",
+      "size": [
+        499,
+        169
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-primary.png",
+      "kind": "texture",
+      "size": [
+        501,
+        161
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-detail-secondary.png",
+      "kind": "texture",
+      "size": [
+        483,
+        156
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-disabled-brush.png",
+      "kind": "texture",
+      "size": [
+        724,
+        172
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-focus-frame.png",
+      "kind": "texture",
+      "size": [
+        724,
+        235
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-hover-brush.png",
+      "kind": "texture",
+      "size": [
+        724,
+        170
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-pressed-brush.png",
+      "kind": "texture",
+      "size": [
+        724,
+        167
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-primary-brush.png",
+      "kind": "texture",
+      "size": [
+        724,
+        170
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/button-secondary-brush.png",
+      "kind": "texture",
+      "size": [
+        724,
+        170
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/card-disabled-ink.png",
+      "kind": "texture",
+      "size": [
+        456,
+        650
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/card-ink.png",
+      "kind": "texture",
+      "size": [
+        457,
+        660
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/card-paper.png",
+      "kind": "texture",
+      "size": [
+        456,
+        648
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/card-selected-cinnabar.png",
+      "kind": "texture",
+      "size": [
+        465,
+        662
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/cinnabar-focus-stroke.png",
+      "kind": "texture",
+      "size": [
+        510,
+        205
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/cinnabar-seal-round.png",
+      "kind": "texture",
+      "size": [
+        275,
+        255
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/controls-sheet.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/icon-disk-primary.png",
+      "kind": "texture",
+      "size": [
+        257,
+        242
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/icon-disk-secondary.png",
+      "kind": "texture",
+      "size": [
+        255,
+        239
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/icons-01.png",
+      "kind": "texture",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/ink-cloud-divider.png",
+      "kind": "texture",
+      "size": [
+        740,
+        235
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/ink-disk-button.png",
+      "kind": "texture",
+      "size": [
+        310,
+        260
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/menu-background.png",
+      "kind": "texture",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/modal-tile-disabled.png",
+      "kind": "texture",
+      "size": [
+        789,
+        346
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/modal-tile-normal.png",
+      "kind": "texture",
+      "size": [
+        791,
+        346
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/modal-tile-paper.png",
+      "kind": "texture",
+      "size": [
+        791,
+        347
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/modal-tile-selected.png",
+      "kind": "texture",
+      "size": [
+        792,
+        345
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/paper-panel.png",
+      "kind": "texture",
+      "size": [
+        497,
+        247
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/paper-wash-background.png",
+      "kind": "texture",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/portrait-frame.png",
+      "kind": "texture",
+      "size": [
+        420,
+        454
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/talisman-ribbon.png",
+      "kind": "texture",
+      "size": [
+        195,
+        449
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/tile-disabled-ink.png",
+      "kind": "texture",
+      "size": [
+        957,
+        301
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/tile-ink.png",
+      "kind": "texture",
+      "size": [
+        965,
+        298
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/tile-paper.png",
+      "kind": "texture",
+      "size": [
+        956,
+        301
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/tile-selected-cinnabar.png",
+      "kind": "texture",
+      "size": [
+        973,
+        301
+      ]
+    },
+    {
+      "file": "res://assets/ui/ink/title-seal.png",
+      "kind": "texture",
+      "size": [
+        611,
+        1285
+      ]
+    },
+    {
       "file": "res://assets/ui/ios-icon.png",
       "kind": "texture",
       "size": [

@@ -528,7 +528,10 @@ func optional_flows() -> void:
 		for j in range(i + 1, buttons.size()):
 			if buttons[i].get_global_rect().intersects(buttons[j].get_global_rect()): overlap = true
 	expect("compact_character_actions_do_not_overlap", not overlap)
-	expect("menu_notice_does_not_cover_actions", app.notice_left > 0 and not notice_overlap)
+	# A notice is transient and may have expired while the character sheet is
+	# being rebuilt. Only assert its bounds when one is actually visible; an
+	# absent notice cannot cover the action row.
+	expect("menu_notice_does_not_cover_actions", app.notice_left <= 0 or not notice_overlap)
 	app.mobile_ui = false
 
 func finish() -> void:

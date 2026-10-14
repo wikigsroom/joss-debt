@@ -1,8 +1,15 @@
 {
 	"checks": [
 		"three fingers independently move, aim/fire and cast",
-		"left-thumb dash preserves right-thumb fire and recent movement direction",
+		"right-hand dash preserves the held left movement stick, right aim and movement-based dash direction",
 		"the real world dashes along movement rather than the other thumb's aim",
+		"phone default leaves only movement on the left and all combat targets on the right",
+		"tablet default leaves only movement on the left and all combat targets on the right",
+		"saved old phone defaults upgrade after JSON reload while retaining size and opacity",
+		"saved four-control tablet defaults upgrade and acquire a separated right-hand item target",
+		"a customized old layout and its sizes survive the update unchanged",
+		"an enlarged legacy layout is retained when migrating it would cause overlapping targets",
+		"two-thumb aim-to-dash transfer keeps left movement, confirms charge handoff and triggers the dash once",
 		"fixed sticks cannot capture an upper-playfield press",
 		"floating sticks cannot capture menu or upper-playfield taps",
 		"aim stick can be placed on the other half of the screen",
@@ -69,8 +76,14 @@
 		"closing the virtual keyboard restores the normal menu position",
 		"save-paste touch controls fit the surface without overlapping",
 		"save-paste has a native rendered frame",
+		"the long save-transfer editor responds to an upward mobile swipe",
 		"assistance touch controls fit the surface without overlapping",
 		"assistance has a native rendered frame",
+		"long assistance settings expose a real vertical scroll range",
+		"dragging from a list button scrolls without submitting or leaving the button pressed",
+		"a tap inside a scroll list remains a tap and does not require a drag",
+		"an upward mobile swipe advances a long settings list",
+		"a downward mobile swipe reverses the same settings list",
 		"controller-bindings touch controls fit the surface without overlapping",
 		"controller-bindings has a native rendered frame",
 		"settings touch controls fit the surface without overlapping",
@@ -80,13 +93,18 @@
 		"settings persist per-control sizing without changing other controls",
 		"audio touch controls fit the surface without overlapping",
 		"audio has a native rendered frame",
+		"the long credits page responds to an upward mobile swipe",
+		"leaving the credits scroll page returns to settings",
 		"tryout has a native rendered frame",
 		"settings can launch a full-surface touch sandbox",
 		"Android system back returns from the sandbox to layout editing",
 		"room transitions immediately synchronize the visible and active touch actions",
 		"clear-room has a native rendered frame"
 	],
-	"failures": [],
+	"failures": [
+		"the long save-transfer editor responds to an upward mobile swipe",
+		"the long credits page responds to an upward mobile swipe"
+	],
 	"geometry": [
 		{
 			"complete": true,
@@ -883,6 +901,6 @@
 			"screen": "audio"
 		}
 	],
-	"passed": true,
+	"passed": false,
 	"scope": "native desktop Godot at actual viewport ratios, synthetic multi-touch, real input dispatch and settings; physical Android acceptance remains pending"
 }

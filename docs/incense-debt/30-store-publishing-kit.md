@@ -1,5 +1,7 @@
 # 《香火债》产品发布文案与商店素材
 
+> 当前新 UI 对应的截图、120 秒实机录屏和 45 秒宣传片已重制到 [51 新 UI 发布媒体重制](51-ui-publication-media-2026-10-14.md)。本篇和下方 2026-10-08 路径保留为历史发布批次。
+
 制作日期：2026-10-08。沿用当前原始纸偶形象与纸墨民俗视觉，对应 v0.2.0-alpha.1 的十一层内容线。
 
 [完整素材包说明](../../output/publishing/incense-debt/store-kit-2026-10-08/README.md) · [全部素材 ZIP](../../output/publishing/incense-debt/store-kit-2026-10-08/IncenseDebt-complete-store-kit.zip) · [文件清单与 SHA-256](../../output/publishing/incense-debt/store-kit-2026-10-08/manifest.json) · [验证结果](../../output/publishing/incense-debt/store-kit-2026-10-08/validation.json)

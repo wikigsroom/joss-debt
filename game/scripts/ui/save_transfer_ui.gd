@@ -1,6 +1,7 @@
 extends RefCounted
 const Transfer = preload("res://scripts/core/save_transfer.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
+const TouchTextScroll = preload("res://scripts/ui/touch_text_scroll.gd")
 
 static func sheet(app, title: String, detail: String) -> void:
 	app.paused = true
@@ -80,7 +81,14 @@ static func paste_sheet(app) -> void:
 	text.add_theme_font_size_override("font_size", 20)
 	text.add_theme_color_override("font_color", app.PAPER)
 	text.add_theme_color_override("background_color", app.INK)
-	app.modal.add_child(text)
+	var text_scroll = TouchTextScroll.new()
+	text_scroll.position = text.position
+	text_scroll.size = text.size
+	text_scroll.set_target(text)
+	app.modal.add_child(text_scroll)
+	text.position = Vector2.ZERO
+	text.size = text_scroll.size
+	text_scroll.add_child(text)
 	app.button(app.modal, "从剪贴板粘贴", Rect2(96, action_y, 326, button_height), func():
 		var value = DisplayServer.clipboard_get()
 		if value.length() > Transfer.MAX_BYTES: app.notice("文字过长，请使用完整愿簿文件。")

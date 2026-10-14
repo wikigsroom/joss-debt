@@ -100,6 +100,18 @@ Thumbs.db
 # Reproducible publication archives and local generation diagnostics.
 /output/**/*.zip
 /output/**/*.log
+/output/imagegen/incense-debt-menu-ui-directions-2026-10-13/
+/output/imagegen/ink-ui-2026-10-13/
+/output/imagegen/ink-ui-2026-10-14/
+/output/publishing/incense-debt/store-kit-2026-10-14/
+/output/publishing/incense-debt/store-kit-2026-10-15/
+/docs/incense-debt/reports/action-mobile-scroll-2026-10-14-new/
+/docs/incense-debt/reports/action-mobile-scroll-2026-10-14-new2/
+/docs/incense-debt/reports/action-mobile-scroll-2026-10-14/
+/docs/incense-debt/reports/platforms/windows/ink-ui-2026-10-13/
+/docs/incense-debt/reports/platforms/windows/mobile-scroll-2026-10-14/
+/docs/incense-debt/reports/runtime/ink-ui-2026-10-13/
+/docs/incense-debt/reports/runtime/ink-ui-2026-10-14/
 /output/imagegen/creature-action-revision/logs/
 /output/imagegen/creature-action-revision/rejected/
 /output/imagegen/creature-action-revision/journal-history/

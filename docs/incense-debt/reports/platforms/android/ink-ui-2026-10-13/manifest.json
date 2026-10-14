@@ -1,0 +1,9 @@
+{
+  "platform": "android",
+  "artifact": "build/android/IncenseDebt.apk",
+  "artifact_sha256": "29fa53c05122e9a58965ba3af97e8ecb9d7b7b143a857a495c7960ac9695fc2a",
+  "build": "debug",
+  "real_device_tested": false,
+  "release_signing": "pending owner keystore; release export intentionally not claimed",
+  "virtualization": "none"
+}

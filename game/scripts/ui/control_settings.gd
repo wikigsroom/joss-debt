@@ -1,4 +1,5 @@
 extends RefCounted
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const Profile = preload("res://scripts/ui/input_profile.gd")
 const Editor = preload("res://scripts/ui/touch_layout_editor.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
@@ -22,7 +23,7 @@ static func show_bindings(app, device: String = "keyboard", scroll_y: int = 0) -
 	for i in 2:
 		var tab = ["keyboard", "controller"][i]
 		app.button(app.modal, ["鼠标与键盘", "手柄"][i], Rect2(96 + i * 270, 162, 250, 60), func(): show_bindings(app, tab), tab == device)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	var list_top = maxf(240, 180 + app.mobile_button_height) if app.mobile_ui else 240.0
 	scroll.position = Vector2(96, list_top)
 	scroll.size = Vector2(1088, 564 - list_top)
@@ -57,7 +58,7 @@ static func show_bindings(app, device: String = "keyboard", scroll_y: int = 0) -
 static func show_assistance(app, scroll_y: int = 0) -> void:
 	app.screen = "assistance"
 	sheet(app, "瞄准与反馈", "辅助只调整触屏与手柄方向，攻击距离、遮挡和伤害照常结算。")
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(96, 176)
 	scroll.size = Vector2(1088, 386)
 	app.modal.add_child(scroll)
@@ -107,9 +108,10 @@ static func show_assistance(app, scroll_y: int = 0) -> void:
 		control.set_meta("nav_id", "assistance_" + str(option.key))
 		control.tooltip_text = option.detail
 		var info_width = maxf(58,app.mobile_button_height) if app.mobile_ui else 58.0
-		app.icon_button(row, option.detail, "info", Rect2(702-info_width, 18, info_width, info_width), func():
+		var info = app.icon_button(row, option.detail, "info", Rect2(702-info_width, 18, info_width, info_width), func():
 			detail.visible = not detail.visible
 			row.custom_minimum_size.y = row_height + 75 if detail.visible else row_height)
+		info.set_meta("setting_info", option.key)
 	app.button(app.modal, "回灯下设置", Rect2(786, 612, 398, 66), func(): app.back_to_settings(), true)
 
 static func show_layout(app) -> void:

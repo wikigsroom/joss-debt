@@ -47,7 +47,9 @@ def offset_layer(canvas, layer, opacity, dx=0, dy=0):
 def typography(kind):
     layer = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
-    brand(d, 135, 214 if kind == "intro" else 175, 273, 43, 530 if kind == "intro" else 491)
+    # The current publication brand helper owns the title width and shadow
+    # treatment; keep the trailer title card on that four-argument API.
+    brand(d, 135, 214 if kind == "intro" else 175, 273)
     d.text((148, 692 if kind == "intro" else 637), "一愿未还，百债成灰。", font=font("NotoSansSC.ttf", 44), fill=PAPER, anchor="lt")
     if kind == "intro":
         d.text((150, 826), "PAPER   /   FIRE   /   DEBT", font=font("IncenseRounded-Bold.ttf", 24), fill=JADE, anchor="lt")
@@ -57,7 +59,7 @@ def typography(kind):
             x = 148 + i * 304
             d.rounded_rectangle((x, 835, x+276, 915), radius=40, fill=(23, 36, 33, 238), outline=JADE if i else GOLD, width=2)
             text_center(d, x+138, 860, text, font("IncenseRounded-Bold.ttf", 28), PAPER)
-        d.text((152, 967), "v0.2.0 ALPHA   ·   离线单人", font=font("NotoSansSC.ttf", 23), fill="#C7BA9C", anchor="lt")
+        d.text((152, 967), "v0.6.1   ·   双人合作   ·   Windows / Android", font=font("NotoSansSC.ttf", 23), fill="#C7BA9C", anchor="lt")
     return layer
 
 

@@ -295,6 +295,7 @@ func apply_safe_area(density_for_qa: float = 0) -> void:
 	if not adapter.valid_layout(): adapter.reset_layout("tablet" if safe.size.x / safe.size.y < 1.6 else "phone")
 	for child in modal.get_children():
 		if child.has_meta("surface_curtain"): fit_curtain(child)
+		elif child.has_meta("ink_page"): fit_ink_page(child)
 	update_hud()
 
 func refresh_safe_area(delta: float) -> void:
@@ -312,6 +313,10 @@ func refresh_safe_area(delta: float) -> void:
 func fit_curtain(curtain: ColorRect) -> void:
 	curtain.position = -interface.position / interface.scale
 	curtain.size = get_viewport().get_visible_rect().size / interface.scale
+
+func fit_ink_page(page: Control) -> void:
+	page.position = -interface.position / interface.scale
+	page.size = get_viewport().get_visible_rect().size / interface.scale
 
 func hide_mobile_keyboard() -> void:
 	if not mobile_ui: return
@@ -396,8 +401,45 @@ func panel(parent: Control, rect: Rect2, background: Color = INK, border: Color 
 	result.size = rect.size
 	result.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	result.add_theme_stylebox_override("panel", box_style(background, border))
+	var resolved_background = UI.surface(background)
+	result.set_meta("ink_paper_surface", resolved_background.is_equal_approx(UI.CANVAS))
+	var is_paper = result.get_meta("ink_paper_surface", false)
+	# The generated menu page is the primary style reference. Keep the wash as a
+	# safe fallback for compact paper cards and for projects without the optional
+	# high resolution page asset.
+	var page_host = bool(parent.get_meta("ink_page_host", false))
+	var material = UI.texture("menu-background") if is_paper and not page_host else UI.texture("brush-panel-ink")
+	if page_host and is_paper: material = null
+	if material == null and is_paper and not page_host:
+		material = UI.texture("paper-wash-background")
+	if material != null:
+		var texture_layer = TextureRect.new()
+		texture_layer.texture = material
+		texture_layer.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		texture_layer.stretch_mode = TextureRect.STRETCH_SCALE
+		texture_layer.position = Vector2.ZERO
+		texture_layer.size = rect.size
+		var brush_alpha = .10
+		# Small ink counters should read as the same painted plaques as the menu
+		# actions, instead of reverting to smooth rounded capsules.
+		if not is_paper and rect.size.x >= 120 and rect.size.y <= 86:
+			brush_alpha = .62
+		texture_layer.modulate = Color(1, 1, 1, .20 if is_paper else brush_alpha)
+		texture_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		result.add_child(texture_layer)
 	parent.add_child(result)
 	return result
+
+func is_paper_surface(parent: Node) -> bool:
+	var cursor: Node = parent
+	while cursor != null:
+		if cursor.has_meta("ink_paper_surface"):
+			# A dark ink plaque nested in a rice-paper page owns its own
+			# contrast. Stop at the nearest panel instead of inheriting the
+			# page text colour through every child card.
+			return bool(cursor.get_meta("ink_paper_surface"))
+		cursor = cursor.get_parent()
+	return false
 
 func label(parent: Control, text: String, rect: Rect2, size_value: int = 20, color: Color = PAPER) -> Label:
 	var result = Label.new()
@@ -409,8 +451,33 @@ func label(parent: Control, text: String, rect: Rect2, size_value: int = 20, col
 		result.add_theme_font_override("font", title_font)
 	elif size_value >= 23:
 		result.add_theme_font_override("font", UI.body_font(true))
-	result.add_theme_color_override("font_color", color)
-	result.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	var resolved_color = color
+	if is_paper_surface(parent) and (color.is_equal_approx(PAPER) or color.is_equal_approx(UI.TEXT)):
+		resolved_color = UI.BACKGROUND
+	elif is_paper_surface(parent) and color.is_equal_approx(UI.MUTED):
+		resolved_color = UI.PAPER_MUTED
+	result.add_theme_color_override("font_color", resolved_color)
+	# Fonts have a larger line box than their point size (36px display type is
+	# 53px tall). Fit that real metric before clipping, otherwise Godot can hide
+	# the entire first line in a 52px title box. Compact captions stay on one
+	# line; larger description boxes wrap and retain a bounded last line.
+	var face: Font = title_font if size_value >= 32 else UI.body_font(size_value >= 23)
+	var point_size = size_value
+	while point_size > 12 and face.get_height(point_size) > rect.size.y:
+		point_size -= 1
+	var wrap = text.contains("\n") or (face.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, point_size).x > rect.size.x and rect.size.y >= face.get_height(point_size) * 2)
+	if wrap:
+		var minimum_size = mini(point_size, maxi(14, roundi(size_value * .85)))
+		while point_size > minimum_size and face.get_multiline_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, rect.size.x, point_size).y > rect.size.y:
+			point_size -= 1
+	result.add_theme_font_size_override("font_size", point_size)
+	result.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART if wrap else TextServer.AUTOWRAP_OFF
+	result.clip_text = true
+	result.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	result.max_lines_visible = maxi(1, floori(rect.size.y / face.get_height(point_size)))
+	result.vertical_alignment = VERTICAL_ALIGNMENT_TOP if wrap else VERTICAL_ALIGNMENT_CENTER
+	result.set_meta("ui_text_rect", rect)
+	result.set_meta("ui_requested_font_size", size_value)
 	result.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(result)
 	return result
@@ -425,15 +492,32 @@ func reading_text(parent: Control, lines: Array, rect: Rect2, base_size: int = 2
 	return reader
 
 func button(parent: Control, text: String, rect: Rect2, callback: Callable, primary: bool = false) -> Button:
-	if mobile_ui: rect.size = rect.size.max(Vector2.ONE * mobile_button_height)
+	# Keep the requested visual height.  The old implementation promoted every
+	# 48/56px desktop layout to the device's 90px touch target, which made the
+	# brush plaques look vertically stretched and pushed footer controls out of
+	# their cards.  Page-specific controls that need a large touch target still
+	# pass mobile_button_height explicitly; ordinary buttons only receive a
+	# compact 64px floor on mobile.
+	if mobile_ui:
+		rect.size.y = maxf(rect.size.y, 64.0)
+		rect.size.x = maxf(rect.size.x, 64.0)
 	var result = preload("res://scripts/ui/rounded_button.gd").new()
 	result.position = rect.position
 	result.size = rect.size
 	result.text = text
 	result.set_meta("action_label", text)
+	# Buttons are ink plaques even when they sit on a paper page. This local
+	# surface boundary keeps child labels/icons in the light ink palette.
+	result.set_meta("ink_paper_surface", false)
 	result.accessibility_name = text
 	result.tooltip_text = text
+	result.clip_text = true
+	result.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	result.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	result.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	result.set_meta("ui_text_rect", rect)
 	UI.button_styles(result, primary, mini(24, roundi(rect.size.y * .5)))
+	fit_button_text(result, text, rect.size, false)
 	result.pressed.connect(func():
 		hide_mobile_keyboard()
 		if audio != null: audio.play("menu")
@@ -444,6 +528,22 @@ func button(parent: Control, text: String, rect: Rect2, callback: Callable, prim
 	result.mouse_exited.connect(func(): result.create_tween().tween_property(result, "modulate", Color.WHITE, .12))
 	parent.add_child(result)
 	return result
+
+func fit_button_text(button: Button, value: String, bounds: Vector2, has_icon: bool = false) -> void:
+	if value.is_empty(): return
+	# A fixed 20px button font is readable on desktop but can exceed a compact
+	# mobile plaque once an icon, a translated label, or a save-state suffix is
+	# present. Measure the actual bundled face and reduce only as far as needed;
+	# this keeps the hit target unchanged while preventing glyphs from crossing
+	# the painted edge.
+	var face: Font = UI.body_font(true)
+	var point_size = 20
+	var button_style = button.get_theme_stylebox("normal")
+	var horizontal_inset = button_style.get_content_margin(SIDE_LEFT) + button_style.get_content_margin(SIDE_RIGHT)
+	var available = maxf(24.0, bounds.x - horizontal_inset)
+	while point_size > 13 and face.get_string_size(value, HORIZONTAL_ALIGNMENT_LEFT, -1, point_size).x > available:
+		point_size -= 1
+	button.add_theme_font_size_override("font_size", point_size)
 
 func icon(parent: Control, key: String, rect: Rect2, color: Color = PAPER) -> TextureRect:
 	var art = TextureRect.new()
@@ -460,10 +560,55 @@ func icon(parent: Control, key: String, rect: Rect2, color: Color = PAPER) -> Te
 func icon_button(parent: Control, semantic: String, key: String, rect: Rect2, callback: Callable, primary: bool = false, caption: String = "") -> Button:
 	var result = button(parent, semantic, rect, callback, primary)
 	result.text = caption
-	result.icon = UI.icon(key)
-	result.expand_icon = true
-	result.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER if caption.is_empty() else HORIZONTAL_ALIGNMENT_LEFT
-	UI.button_styles(result, primary, roundi(minf(rect.size.x, rect.size.y) * .5))
+	# Reapply the icon-aware style after the base button factory has installed
+	# its generic style, so icon-only controls can attach the complete painted
+	# disk sprite before their glyph is added.
+	UI.button_styles(result, primary, roundi(minf(result.size.x, result.size.y) * .5), true)
+	if not caption.is_empty():
+		# Child glyphs occupy the left 64px. Reserve that width in every state so
+		# the caption aligns in the remaining body instead of colliding with it.
+		for state in ["normal", "hover", "pressed", "disabled", "focus"]:
+			var content_style = result.get_theme_stylebox(state).duplicate()
+			content_style.content_margin_left = 72.0
+			content_style.content_margin_right = 24.0
+			result.add_theme_stylebox_override(state, content_style)
+	fit_button_text(result, caption, result.size, not caption.is_empty())
+	# Godot's Button icon slot can be clipped by a generated StyleBoxTexture when
+	# the brush strip is stretched. Paint the glyph as a real child instead so
+	# every plaque keeps the reference board's visible left marker and the icon
+	# remains crisp at both desktop and scaled mobile resolutions.
+	result.icon = null
+	var glyph_texture = UI.icon(key)
+	var icon_only = bool(result.get_meta("ink_icon_only", false))
+	if icon_only:
+		var disk = TextureRect.new()
+		disk.name = "GeneratedIconDisk"
+		# Standalone navigation controls use the quiet charcoal disk from the
+		# approved board; the red-ring disk is reserved for explicit primary
+		# icon-only actions.
+		disk.texture = UI.texture("icon-disk-primary" if primary else "ink-disk-button")
+		disk.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		disk.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		disk.position = Vector2.ZERO
+		disk.size = result.size
+		disk.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		disk.z_index = 0
+		result.add_child(disk)
+		result.button_down.connect(func(): disk.modulate = Color(.78, .78, .75, 1.0))
+		result.button_up.connect(func(): disk.modulate = Color.WHITE)
+	if glyph_texture != null:
+		var glyph = TextureRect.new()
+		glyph.name = "GeneratedButtonIcon"
+		glyph.texture = glyph_texture
+		glyph.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		glyph.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		var glyph_size = clampf(result.size.y * .60, 28.0, 40.0)
+		glyph.size = Vector2(glyph_size, glyph_size)
+		glyph.position = Vector2((result.size.x - glyph_size) * .5, (result.size.y - glyph_size) * .5) if caption.is_empty() else Vector2(24.0, (result.size.y - glyph_size) * .5)
+		glyph.modulate = UI.icon_tint(key, Color.WHITE)
+		glyph.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		glyph.z_index = 2
+		result.add_child(glyph)
 	if key in UI.PickupArt.UI_KEYS:
 		for state in ["normal", "hover", "pressed", "focus"]:
 			result.add_theme_color_override("icon_" + state + "_color", Color.WHITE)
@@ -473,15 +618,21 @@ func clear_modal() -> void:
 	if paused and world != null: world.clear_touch_charge()
 	keyboard.before_rebuild(self)
 	modal.remove_meta("navigation_page")
+	modal.remove_meta("ink_paper_surface")
 	haptics.stop()
 	choice_buttons.clear()
 	for child in modal.get_children():
 		modal.remove_child(child)
 		child.queue_free()
+	modal.remove_meta("ink_page_host")
 
 func dim(alpha: float = 0.82) -> void:
 	var curtain = ColorRect.new()
 	curtain.set_meta("surface_curtain", true)
+	# Keep the dimmer behind generated menu pages and their controls. Relying on
+	# sibling insertion order made the full-bleed page render underneath the
+	# curtain on some Godot backends, turning the approved paper into a dark slab.
+	curtain.z_index = -10
 	fit_curtain(curtain)
 	curtain.color = Color(0.055, 0.06, 0.05, alpha)
 	curtain.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -731,10 +882,18 @@ func update_hud() -> void:
 	notice_label.get_parent().visible = notice_left > 0
 	var reviewing = screen in ["result", "run_build", "run_review"]
 	var top_notice = reviewing or keyboard.active(self)
-	notice_label.get_parent().position.y = 4 if top_notice else (148 if screen == "game" and world.mode == "clear" else 640)
-	notice_label.get_parent().size.y = 40 if top_notice else 56
-	notice_label.position.y = 0 if top_notice else 6
-	notice_label.size.y = 40 if top_notice else 44
+	# Menu sheets reserve their final action row around y=620. On a phone the
+	# old y=640 notice strip therefore covered 90px touch targets (especially the
+	# character, save and replacement actions). Keep transient notices as a
+	# compact top banner on every non-game sheet; the 32px height leaves the
+	# page title beginning at y=35 readable while keeping the notice tappable.
+	var compact_menu_notice = mobile_ui and screen != "game"
+	var notice_at_top = top_notice or compact_menu_notice
+	var notice_height = 32.0 if compact_menu_notice and not top_notice else (40.0 if notice_at_top else 56.0)
+	notice_label.get_parent().position.y = 4 if notice_at_top else (148 if screen == "game" and world.mode == "clear" else 640)
+	notice_label.get_parent().size.y = notice_height
+	notice_label.position.y = 0 if notice_at_top else 6
+	notice_label.size.y = notice_height if notice_at_top else 44
 	if world.run.is_empty():
 		return
 	var nav_size = maxf(64, mobile_button_height) if mobile_ui else 56.0
@@ -1033,7 +1192,14 @@ func show_credits() -> void:
 	license_text.focus_mode = Control.FOCUS_ALL
 	license_text.set_meta("keyboard_editor", true)
 	license_text.accessibility_name = "字体、图标与引擎许可"
-	modal.add_child(license_text)
+	var license_scroll = preload("res://scripts/ui/touch_text_scroll.gd").new()
+	license_scroll.position = license_text.position
+	license_scroll.size = license_text.size
+	license_scroll.set_target(license_text)
+	modal.add_child(license_scroll)
+	license_text.position = Vector2.ZERO
+	license_text.size = license_scroll.size
+	license_scroll.add_child(license_text)
 	button(modal, "回灯下设置", Rect2(662, 601, 463, mobile_button_height if mobile_ui else 54), back_to_settings, true)
 
 func add_art(parent: Control, path: String, rect: Rect2) -> void:
@@ -1902,7 +2068,9 @@ func qa_step() -> void:
 	elif qa_tick == 923:
 		capture("held-brush-charge")
 	elif qa_tick == 927:
-		world.shoot_input(true, .1)
+		# c_ink may carry the longer r66 charge modifier; complete the same
+		# charged-line shot deterministically before checking the live pose.
+		world.shoot_input(true, .3)
 		flush_events()
 		world.time += .08
 	elif qa_tick == 931:
@@ -1953,7 +2121,7 @@ func qa_step() -> void:
 		qa_interaction_checks.append({"name": "the icon toggle changes live sound and keeps settings reachable", "passed": screen == "settings" and settings.muted != qa_exploration_state.previous_mute and audio.muted == settings.muted and qa_button(modal, "收起") != null})
 		ControlSettings.show_assistance(self)
 	elif qa_tick == 982:
-		qa_click(qa_button(modal, "轻度：15度扇区、25%修正；自动：保持目标0.25秒。"))
+		qa_click(qa_find_meta(modal, "setting_info", "aim_mode"))
 	elif qa_tick == 985:
 		var label = qa_find_meta(modal, "setting_detail", "aim_mode")
 		qa_interaction_checks.append({"name": "the information icon expands the assistance explanation while preserving the actual option control", "passed": label != null and label.visible and qa_setting_button(modal, "aim_mode") != null})
@@ -1995,7 +2163,7 @@ func qa_step() -> void:
 	elif qa_tick == 1013:
 		qa_interaction_checks.append({"name": "native rounded body, bold HUD and display fonts load with a rare-name CJK fallback", "passed": font.get_font_name().contains("Incense Rounded") and title_font.get_font_name().contains("Smiley") and renderer.font == UI.body_font(true) and font.has_char(0x9f98)})
 		show_credits()
-		var notices = modal.get_children().filter(func(child): return child is RichTextLabel)
+		var notices = modal.find_children("*", "RichTextLabel", true, false)
 		var licenses = ["res://assets/fonts/ResourceHanRounded-OFL.txt", "res://assets/fonts/SmileySans-OFL.txt", "res://assets/ui/icons/Lucide-LICENSE.txt", "res://assets/fonts/OFL.txt", "res://assets/licenses/Godot-THIRDPARTY.txt"]
 		qa_interaction_checks.append({"name": "the actual credits page loads full packaged font, vector and engine notices", "passed": notices.size() == 1 and notices[0].text.contains("Cyano Hao") and notices[0].text.contains("atelierAnchor") and notices[0].text.contains("Lucide Icons and Contributors") and licenses.all(func(path): return FileAccess.file_exists(path) and FileAccess.get_file_as_bytes(path).size() > 1000)})
 		show_ui_gallery()

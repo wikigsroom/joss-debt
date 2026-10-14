@@ -1,5 +1,6 @@
 extends RefCounted
 ## Shared modern controls and approved courtyard sprites.
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const DailySeed = preload("res://scripts/core/daily_seed.gd")
 const GOLD = UI.MUTED
@@ -9,7 +10,7 @@ const PAGE_NAMES = ["还愿簿", "铜盘图鉴", "旧账回顾", "器具灯摊",
 const PAGE_SHORT = ["还愿", "图鉴", "账簿", "器具", "留名"]
 
 static func scroll_list(ui) -> VBoxContainer:
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(390, 246)
 	scroll.size = Vector2(790, 380)
 	ui.modal.add_child(scroll)

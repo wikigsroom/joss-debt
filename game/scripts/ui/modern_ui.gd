@@ -1,5 +1,6 @@
 extends RefCounted
 ## Product sheets share icon semantics, a restrained palette and one rounded rhythm.
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Review = preload("res://scripts/ui/run_review.gd")
 const ROUTE_ICONS = {"fire": "flame", "thread": "link", "ash": "sparkles", "seal": "shield", "wind": "wind", "ink": "pencil"}
@@ -33,6 +34,7 @@ static func character_select(app) -> void:
 	app.adapter.clear()
 	app.clear_modal()
 	app.dim(.9)
+	app.MenuFlow.attach_page(app)
 	app.label(app.modal, "香火债", Rect2(56, 42, 390, 72), 58)
 	app.label(app.modal, "INCENSE DEBT", Rect2(60, 115, 360, 26), 16, UI.MUTED)
 	var nav_size = maxf(64, app.mobile_button_height) if app.mobile_ui else 52.0
@@ -99,7 +101,9 @@ static func character_select(app) -> void:
 	start.disabled = app.save_session.read_only or not app.progress.data.characters.has(app.selected)
 	if start.disabled:
 		start.text = "愿簿保护" if app.save_session.read_only else "未留名"
-		start.icon = UI.icon("lock")
+		app.fit_button_text(start, start.text, start.size, true)
+		var start_glyph = start.find_child("GeneratedButtonIcon", false, false)
+		if start_glyph != null: start_glyph.texture = UI.icon("lock")
 		start.tooltip_text = app.save_session.message if app.save_session.read_only else selected.unlock
 	var marks = app.progress.achievement_rows(app.selected)
 	var seed_button = app.icon_button(app.modal, "固定12位愿种" + (" · " + app.seed_draft if not app.seed_draft.is_empty() else " · 单次生效"), "shuffle", Rect2(1012, 51, 64, 64), func(): app.SeedUI.show(app))
@@ -130,7 +134,10 @@ static func pause(app, reason: String) -> void:
 	if reason != "灯还燃着，账可以慢慢还。":
 		var detail = app.label(sheet, reason, Rect2(36, 148, sheet_width - 72, 42), 18, UI.MUTED)
 		detail.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 60.0
+	# Keep the pause sheet compact while retaining a comfortable touch target.
+	# The previous 90px mobile height made the two primary actions read as
+	# stretched ribbons and left little breathing room for the footer.
+	var height = minf(maxf(64, app.mobile_button_height), 72.0) if app.mobile_ui else 60.0
 	var action_width = sheet_width - 96
 	var first_y = 204 if reason == "灯还燃着，账可以慢慢还。" else 210
 	app.icon_button(sheet, "继续动身", "play", Rect2(48, first_y, action_width, height), app.resume_game, true, "继续").grab_focus()
@@ -207,7 +214,11 @@ static func history_card(app, parent: Control, entry: Dictionary, index: int, wi
 	app.label(card, meta, Rect2(124, 43, width - 264, 24), 14, UI.MUTED)
 	var short = info.description.split("；")[0]
 	if short.length() > 32: short = short.left(31) + "…"
-	app.label(card, short, Rect2(width - 132, 16, 112, 44), 14, UI.MUTED)
+	# Reserve the right edge for the completion badge.  The old 112px text box
+	# ended underneath that badge, so long item descriptions visibly collided
+	# with the check icon in the history list.
+	var summary_width = 106.0
+	app.label(card, short, Rect2(width - 158, 16, summary_width, 44), 14, UI.MUTED)
 	var badge = app.panel(card, Rect2(width - 44, 22, 26, 26), UI.INSET, Color.TRANSPARENT)
 	app.icon(badge, "check", Rect2(5, 5, 16, 16), UI.JADE)
 
@@ -229,7 +240,7 @@ static func run_history(app) -> void:
 	var height = maxf(64, app.mobile_button_height) if app.mobile_ui else 56.0
 	app.icon_button(shell, "收起记录", "x", Rect2(1168 - height, 20, height, height), app.show_pause)
 	var list_panel = app.panel(shell, Rect2(28, 122, 748, 478), UI.SURFACE, Color.TRANSPARENT)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.focus_mode = Control.FOCUS_ALL
 	scroll.accessibility_name = "本局全部成长记录"
 	scroll.set_meta("nav_default", true)
@@ -358,15 +369,14 @@ static func achievements(app, character_id: String = "") -> void:
 	for i in filters.size():
 		var filter = filters[i]
 		var button_width = 154.0
-		var tab = app.icon_button(shell, str(filter.name), str(filter.icon), Rect2(28 + i * (button_width + 8), 118, button_width, height), func(): app.show_achievements(str(filter.id)), str(filter.id) == character_id, "")
+		var tab = app.icon_button(shell, str(filter.name), str(filter.icon), Rect2(28 + i * (button_width + 8), 118, button_width, height), func(): app.show_achievements(str(filter.id)), str(filter.id) == character_id, str(filter.name))
 		tab.set_meta("nav_default", str(filter.id) == character_id)
 		tab.set_meta("nav_id", "achievement_filter_" + str(filter.id))
-		tab.text = str(filter.name)
 		tab.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		if str(filter.id) == character_id: UI.select(tab)
 	var summary = app.progress.achievement_summary(character_id)
 	app.label(shell, "%d / %d 已完成" % [int(summary.unlocked), int(summary.total)], Rect2(28, 184, 250, 31), 20, UI.JADE)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(28, 224)
 	scroll.size = Vector2(1124, 420)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -463,6 +473,7 @@ static func choices(app) -> void:
 		if not reason.is_empty():
 			action.tooltip_text = reason
 			action.text = "已取" if taken else "不足" if "纸钱" in reason else reason
+			app.fit_button_text(action, action.text, action.size, true)
 		app.choice_buttons.append(action)
 		if can_trial:
 			var trial = app.icon_button(card, "试射" + row.name, "crosshair", Rect2(18, 290, 48, 48), func(): app.begin_shop_trial(i))
@@ -526,20 +537,25 @@ static func mobile_choice(app) -> void:
 	var reason = app.world.choice_reason(choice)
 	var hp_cost = int(choice.get("hp_cost", 0))
 	var caption = "献出 %d 心火" % hp_cost if hp_cost > 0 else ("确认" if choice.price == 0 else str(choice.price))
-	var action = app.icon_button(app.modal, "选择" + row.name, "heart" if hp_cost > 0 else ("check" if choice.price == 0 else "coins"), Rect2(850, 608, 334, app.mobile_button_height), func(): app.choose_index(app.mobile_choice), true, caption)
-	if not reason.is_empty(): action.text = reason
+	# Actions keep the sheet's visual rhythm at 72px.  Their hit areas are still
+	# explicit controls and no longer inherit the global 90px visual stretch.
+	var action_height = minf(maxf(64, app.mobile_button_height), 72.0)
+	var action = app.icon_button(app.modal, "选择" + row.name, "heart" if hp_cost > 0 else ("check" if choice.price == 0 else "coins"), Rect2(850, 608, 334, action_height), func(): app.choose_index(app.mobile_choice), true, caption)
+	if not reason.is_empty():
+		action.text = reason
+		app.fit_button_text(action, action.text, action.size, true)
 	action.disabled = not reason.is_empty()
 	action.set_meta("nav_id", "choice_confirm")
 	app.choice_buttons.append(action)
 	if choice.kind in ["relic", "talent"] and app.world.mode in ["shop", "choice"]:
 		var cost = "12" if app.world.mode == "shop" else "×%d" % int(app.world.run.rerolls)
-		var reroll = app.icon_button(app.modal, "换一页", "refresh-cw", Rect2(96, 608, 210, app.mobile_button_height), func(): app.world.reroll(); app.mobile_choice = 0; app.flush_events(); app.ui_signature = "", false, cost)
+		var reroll = app.icon_button(app.modal, "换一页", "refresh-cw", Rect2(96, 608, 210, action_height), func(): app.world.reroll(); app.mobile_choice = 0; app.flush_events(); app.ui_signature = "", false, cost)
 		reroll.disabled = app.world.run.coins < 12 if app.world.mode == "shop" else app.world.run.rerolls <= 0
 	if app.world.mode == "shop" and choice.kind == "weapon" and not choice.get("taken", false):
-		var trial = app.icon_button(app.modal, "试射" + row.name, "crosshair", Rect2(96, 608, 210, app.mobile_button_height), func(): app.begin_shop_trial(app.mobile_choice), false, "试射")
+		var trial = app.icon_button(app.modal, "试射" + row.name, "crosshair", Rect2(96, 608, 210, action_height), func(): app.begin_shop_trial(app.mobile_choice), false, "试射")
 		trial.set_meta("shop_trial_index", app.mobile_choice)
 	if choice.kind != "skill":
-		app.icon_button(app.modal, "留在此处 · 继续", "arrow-right", Rect2(440, 608, 268, app.mobile_button_height), func(): app.world.skip_choice(); app.flush_events(); app.ui_signature = "", false, "继续")
+		app.icon_button(app.modal, "留在此处 · 继续", "arrow-right", Rect2(440, 608, 268, action_height), func(): app.world.skip_choice(); app.flush_events(); app.ui_signature = "", false, "继续")
 
 static func synergy_status(row: Dictionary) -> Dictionary:
 	var count = int(row.get("owned_count", 0))
@@ -662,7 +678,7 @@ static func inventory(app, page: String, selected_id: String) -> void:
 		if not str(app.world.run.trinket).is_empty(): entries.append({"id": app.world.run.trinket, "table": "trinkets"})
 	var ids = entries.map(func(entry): return str(entry.id) if page in ["contracts", "synergies", "equipment"] else str(entry))
 	if not ids.has(selected_id): selected_id = str(ids[0]) if not ids.is_empty() else ""
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(382, 174 + height)
 	scroll.size = Vector2(826, 282 - height if page != "synergies" else 282 - height)
 	app.modal.add_child(scroll)

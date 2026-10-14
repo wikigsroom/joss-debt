@@ -2,7 +2,7 @@
 
 这张表把《香火债》的设计来源、数据、运行代码、验证报告和素材证据放在同一条链路上。`verified_alpha` 代表当前 Alpha 的软件与素材证据已经闭环；`pending_device`、`pending_human_and_device` 保留正式发布所需的真实设备或人工体验边界。
 
-记录时间：2026-10-06T14:27:41.687548+00:00。目录统计：六角色 6、武器 16、技能 18、遗物 54、行愿 36、组合 24、路线 6、区域 3、房间模板 18、特殊房间 4。
+记录时间：2026-10-14T15:49:32.345257+00:00。目录统计：六角色 6、武器 32、技能 18、遗物 54、行愿 36、组合 24、路线 6、区域 3、房间模板 18、特殊房间 4。
 
 ## 覆盖表
 
@@ -17,7 +17,7 @@
 | 组合搭配与构筑图鉴 | docs/incense-debt/07-skills-synergies.md; docs/incense-debt/17-visual-contract.md | game/data/catalog.json:synergies | game/scripts/combat/world.gd:synergy_rows,active_synergies; game/scripts/ui/modern_ui.gd | runtime/synergy-matrix-tests.json; platforms/windows/inventory-synergy.png | game/assets/ui/icons | **verified_alpha** | 完整组合的真人理解成本与三章胜率仍需观察。 |
 | 方向性角色朝向与手持动作 | docs/incense-debt/03-playable-characters.md; docs/incense-debt/17-visual-contract.md | game/data/catalog.json:characters,weapons | game/scripts/ui/weapon_motion.gd; game/scripts/ui/game_renderer.gd | runtime/weapon-motion-tests.json; platforms/windows/held-brush-fire.png | game/assets/heroes; game/assets/weapons | **verified_alpha** | 透明边、真人动作观感和移动端小屏识别度仍需设备验收。 |
 | 叙事、NPC与局外回收 | docs/incense-debt/01-world-story.md; docs/incense-debt/05-progression-builds.md | game/data/catalog.json:npcs; game/data/rules.json:story | game/scripts/main.gd; game/scripts/core/meta_progress.gd | runtime/campaign-rules-tests.json; platforms/windows/story.png; platforms/windows/endings.png | game/assets/npcs; game/assets/portraits; game/assets/bosses | **verified_alpha** | 全量多语言字典尚未建立，当前首版以简体中文为主。 |
-| UI、字体、图标与美术一致性 | docs/incense-debt/09-ui-ux-input.md; docs/incense-debt/10-art-bible.md; docs/incense-debt/17-visual-contract.md | docs/incense-debt/data/asset-manifest.json | game/scripts/ui/modern_ui.gd; game/scripts/ui/game_renderer.gd | runtime/ui-refresh/ui-refresh.json; runtime/visual-baseline.json; runtime/visual-contract-audit.json; runtime/choice-history-tests.json; platforms/windows/ui-style.png; platforms/windows/native-render.json | docs/incense-debt/reports/runtime/asset-verification.json | **verified_alpha** | 用户最终审美确认、真人色觉与动态舒适度属于后续体验验收。 |
+| UI、字体、图标与美术一致性 | docs/incense-debt/09-ui-ux-input.md; docs/incense-debt/10-art-bible.md; docs/incense-debt/17-visual-contract.md | docs/incense-debt/data/asset-manifest.json | game/scripts/ui/modern_ui.gd; game/scripts/ui/game_renderer.gd | runtime/ui-refresh/ui-refresh.json; runtime/visual-baseline.json; runtime/visual-contract-audit.json; runtime/choice-history-tests.json; platforms/windows/ui-style.png; platforms/windows/native-render.json | docs/incense-debt/reports/runtime/asset-verification.json | **missing** | 用户最终审美确认、真人色觉与动态舒适度属于后续体验验收。 |
 | 声音与动态配乐 | docs/incense-debt/12-audio-narrative.md | docs/incense-debt/data/asset-manifest.json:audio,music | game/scripts/ui/audio_director.gd; game/scripts/ui/music_state.gd | runtime/adaptive-music-tests.json; platforms/windows/audio/native-audio.json | game/assets/audio | **verified_alpha** | 手机扬声器、耳机和长时听觉舒适度仍需人耳验收。 |
 | 存档、恢复与跨端传递 | docs/incense-debt/13-cross-platform-engineering.md | game/data/rules.json:save; game/scripts/core/save_migrations.gd | game/scripts/core/save_session.gd; game/scripts/core/save_transfer.gd | runtime/save-transfer-tests.json; runtime/legacy-save-fixtures.json | build/ios-handoff; build/android | **verified_alpha** | 手机系统文件选择器、软键盘、剪贴板和真实跨设备导入仍待设备验收。 |
 | 菜单、愿簿槽位与角色成就 | docs/incense-debt/22-menu-save-achievements.md | game/data/achievements.json; game/scripts/core/save_slots.gd | game/scripts/main.gd; game/scripts/ui/menu_flow.gd; game/scripts/ui/keyboard_navigation.gd; game/scripts/core/meta_progress.gd; game/scripts/core/save_migrations.gd | runtime/achievement-tests.json; runtime/choice-history-tests.json; runtime/menu-hierarchy-audit.json; platforms/windows/keyboard/keyboard-flow.json | game/assets/ui/icons; game/assets/fonts | **verified_alpha** | 原生键盘和桌面截图证据不能替代真人菜单信息密度、长期成就节奏与设备返回键体验。 |
@@ -31,7 +31,7 @@
 
 - 自动固定 tick 样本用于发现规则回归和构筑覆盖；它不等于真人胜率、手感或难度结论。
 - 运行截图只证明编译程序的实际状态，与概念图和视觉约定一起使用，不把截图相似度写成百分比。
-- Android 包签名、资源和软件路径已核验；Windows 工程与 iOS 共享源码的全部 game 文件逐项一致，Android APK 的 725 项运行资源与六份核心 JSON/武器绑定已做静态包内比对。物理设备安装、触控、文件选择器、热稳定仍需真实设备。
+- Android 包签名、资源和软件路径已核验；Windows 工程与 iOS 共享源码的全部 game 文件逐项一致，Android APK 的 3781 项运行资源与六份核心 JSON/武器绑定已做静态包内比对。物理设备安装、触控、文件选择器、热稳定仍需真实设备。
 - 所有素材生产仍以批准的 Sub2/gpt-image-2.5 参考图、资产清单和许可记录为来源，未经验证的 planned 素材不能计入交付。
 
 机器可读报告：[system-coverage.json](reports/system-coverage.json)。重新生成：

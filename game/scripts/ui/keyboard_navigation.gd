@@ -106,18 +106,49 @@ func describe(app, control: Control) -> void:
 		control.add_child(ring)
 	if app.mobile_ui: return
 	if not is_instance_valid(hint):
+		# Keep the global keyboard legend out of the last action row.  It used to
+		# sit at y=642 on every page, directly over save/return buttons whose
+		# mobile-sized hit boxes reached the same strip.  Put it below the content
+		# when there is room, otherwise use a small top banner.
+		var content_bottom = _modal_button_bottom(app.modal, app.modal)
+		var hint_y = 690.0
+		if content_bottom > 684.0: hint_y = 6.0
+		var hint_plate = TextureRect.new()
+		hint_plate.name = "InkKeyboardHintPlate"
+		hint_plate.texture = app.UI.texture("button-secondary-brush")
+		hint_plate.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		hint_plate.stretch_mode = TextureRect.STRETCH_SCALE
+		hint_plate.position = Vector2(230, hint_y)
+		hint_plate.size = Vector2(820, 32)
+		hint_plate.modulate = Color(1, 1, 1, .95)
+		hint_plate.z_index = 1
+		hint_plate.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		app.modal.add_child(hint_plate)
 		hint = Label.new()
-		hint.position = Vector2(48, 692)
-		hint.size = Vector2(1184, 25)
+		hint.position = Vector2(48, hint_y + 1)
+		hint.size = Vector2(1184, 27)
+		hint.z_index = 2
 		hint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		hint.add_theme_font_size_override("font_size", 14)
-		hint.add_theme_color_override("font_color", app.UI.MUTED)
+		hint.add_theme_color_override("font_color", app.UI.TEXT)
 		hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		hint.clip_text = true
+		hint.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 		app.modal.add_child(hint)
 	var name_value = control.accessibility_name
 	if name_value.is_empty(): name_value = str(control.get_meta("action_label", ""))
 	if name_value.is_empty(): name_value = str(control.get_meta("keyboard_label", ""))
 	hint.text = "↑ ↓ ← → 选择  ·  Enter 确认  ·  Esc 返回  ·  Tab 切换  ·  F1 详情" + ("    /    " + name_value if not name_value.is_empty() else "")
+
+func _modal_button_bottom(node: Node, root: Control) -> float:
+	var result = 0.0
+	for child in node.get_children():
+		if child is BaseButton and child.is_visible_in_tree():
+			var rect = child.get_global_rect()
+			var local_end = root.get_global_transform_with_canvas().affine_inverse() * rect.end
+			result = maxf(result, local_end.y)
+		result = maxf(result, _modal_button_bottom(child, root))
+	return result
 
 func focus(app, target: Control) -> void:
 	target.grab_focus()
@@ -180,6 +211,9 @@ func handle(app, event: InputEvent) -> bool:
 	if code == KEY_ESCAPE:
 		if not event.echo: app.go_back()
 		return true
+	# Tab is a menu navigation command even while a text editor owns the
+	# caret. Handling it before the text-control early return keeps save import
+	# and other editable pages keyboard-complete without inserting a tab.
 	if code == KEY_TAB:
 		if app.screen == "route" and not event.ctrl_pressed: app.go_back()
 		else: cycle(app, event.shift_pressed)

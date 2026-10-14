@@ -1,13 +1,17 @@
 {
   "platform": "windows",
   "path": "build/windows/IncenseDebt.exe",
-  "bytes": 1108950224,
-  "sha256": "b3d3494c788e6ad54a528038ad7380191f48cf4eeec76f5a87d1078e6da45b1f",
+  "bytes": 1124086552,
+  "sha256": "9e0d3c3fa7dd11a1e3b8501f0b502426ca4cdc720e11167d76a87a7f0fa6e331",
   "engine": "4.7.2",
   "build": "release",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "playable_scope": "eleven-floor offline alpha plus authoritative two-player cooperative campaign and optional Duel; shared physical rooms, individual builds, shared coins, revive, matchmaking, six-digit rooms, durable reconnect and isolated online records",
   "source_status": "Build output; current rule, playthrough and native-render evidence recorded separately in reports/current-product-status.json",
   "device_tested": false,
-  "virtualization": "none"
+  "virtualization": "none",
+  "native_runtime_tested": true,
+  "native_runtime_report": "docs/incense-debt/reports/platforms/windows/native-render.json",
+  "physical_device_tested": false,
+  "native_test_scope": "desktop native viewport fixture; no physical device"
 }

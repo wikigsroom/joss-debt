@@ -38,6 +38,49 @@ func drag(adapter, index: int, point: Vector2) -> void:
 	event.position = point
 	adapter.event(event)
 
+func screen_swipe(start: Vector2, finish: Vector2, index: int) -> void:
+	## Feed the same touch sequence a handset emits. The points are viewport
+	## coordinates (Control.get_global_rect() already includes the interface
+	## scale), so this also exercises safe-area scaling on narrow phones.
+	var press = InputEventScreenTouch.new()
+	press.index = index
+	press.position = root.get_final_transform() * start
+	press.pressed = true
+	Input.parse_input_event(press)
+	Input.flush_buffered_events()
+	await process_frame
+	var move = InputEventScreenDrag.new()
+	move.index = index
+	move.position = root.get_final_transform() * finish
+	move.relative = root.get_final_transform().basis_xform(finish - start)
+	Input.parse_input_event(move)
+	Input.flush_buffered_events()
+	await process_frame
+	var release = InputEventScreenTouch.new()
+	release.index = index
+	release.position = root.get_final_transform() * finish
+	release.pressed = false
+	Input.parse_input_event(release)
+	Input.flush_buffered_events()
+	await process_frame
+
+func screen_tap(target: Control, index: int) -> void:
+	var point = root.get_final_transform() * target.get_global_rect().get_center()
+	var press = InputEventScreenTouch.new()
+	press.index = index
+	press.position = point
+	press.pressed = true
+	Input.parse_input_event(press)
+	Input.flush_buffered_events()
+	await process_frame
+	var release = InputEventScreenTouch.new()
+	release.index = index
+	release.position = point
+	release.pressed = false
+	Input.parse_input_event(release)
+	Input.flush_buffered_events()
+	await process_frame
+
 func sample(adapter) -> Dictionary: return adapter.sample(Vector2.ZERO, Vector2.ZERO)
 
 func core_input() -> void:
@@ -358,9 +401,43 @@ func run_suite() -> void:
 	app.SaveUI.paste_sheet(app)
 	await check_geometry("save-paste")
 	await screenshot("save-paste")
+	var paste_text = app.modal.find_child("SaveTransferText", true, false)
+	var paste_lines: Array = []
+	for index in 40: paste_lines.append("传递记录 %d · 长文本滚动测试" % (index + 1))
+	paste_text.text = "\n".join(paste_lines)
+	await process_frame
+	var paste_bar = paste_text.get_v_scroll_bar()
+	var paste_before = paste_bar.value
+	var paste_rect = paste_text.get_global_rect()
+	await screen_swipe(paste_rect.get_center() + Vector2(0, 90), paste_rect.get_center() - Vector2(0, 150), 34)
+	expect(paste_bar.value > paste_before, "the long save-transfer editor responds to an upward mobile swipe")
 	app.ControlSettings.show_assistance(app)
 	await check_geometry("assistance")
 	await screenshot("assistance")
+	var assistance_scroll = app.qa_find_meta(app.modal, "touch_scroll", "true")
+	expect(assistance_scroll != null and assistance_scroll.get_v_scroll_bar().max_value > 0, "long assistance settings expose a real vertical scroll range")
+	var assistance_control = app.qa_setting_button(app.modal, "aim_mode")
+	var assistance_before = str(assistance_control.text) if assistance_control != null else ""
+	if assistance_control != null:
+		await screen_swipe(assistance_control.get_global_rect().get_center(), assistance_control.get_global_rect().get_center() - Vector2(0, 180), 29)
+	var assistance_after_drag = app.qa_setting_button(app.modal, "aim_mode")
+	expect(assistance_after_drag != null and str(assistance_after_drag.text) == assistance_before and not assistance_after_drag.button_pressed, "dragging from a list button scrolls without submitting or leaving the button pressed")
+	assistance_scroll.scroll_vertical = 0
+	await process_frame
+	assistance_control = app.qa_setting_button(app.modal, "aim_mode")
+	if assistance_control != null:
+		await screen_tap(assistance_control, 30)
+	var assistance_after_tap = app.qa_setting_button(app.modal, "aim_mode")
+	expect(assistance_after_tap != null and str(assistance_after_tap.text) != assistance_before, "a tap inside a scroll list remains a tap and does not require a drag")
+	assistance_scroll = app.qa_find_meta(app.modal, "touch_scroll", "true")
+	var assistance_rect = assistance_scroll.get_global_rect()
+	var scroll_before = assistance_scroll.scroll_vertical
+	await screen_swipe(assistance_rect.get_center() + Vector2(0, 120), assistance_rect.get_center() - Vector2(0, 180), 31)
+	var scroll_after_up = assistance_scroll.scroll_vertical
+	expect(scroll_after_up > scroll_before, "an upward mobile swipe advances a long settings list")
+	await screen_swipe(assistance_rect.get_center() - Vector2(0, 120), assistance_rect.get_center() + Vector2(0, 180), 32)
+	var scroll_after_down = assistance_scroll.scroll_vertical
+	expect(scroll_after_down < scroll_after_up, "a downward mobile swipe reverses the same settings list")
 	app.ControlSettings.show_bindings(app,"controller")
 	await check_geometry("controller-bindings")
 	await screenshot("controller-bindings")
@@ -377,6 +454,17 @@ func run_suite() -> void:
 	app.show_audio_settings()
 	await check_geometry("audio")
 	await screenshot("audio")
+	app.show_credits()
+	await process_frame
+	var credits_text = app.modal.find_children("*", "RichTextLabel", true, false)[0]
+	var credits_bar = credits_text.get_v_scroll_bar()
+	var credits_before = credits_bar.value
+	var credits_rect = credits_text.get_global_rect()
+	await screen_swipe(credits_rect.get_center() + Vector2(0, 90), credits_rect.get_center() - Vector2(0, 150), 33)
+	expect(credits_bar.value > credits_before, "the long credits page responds to an upward mobile swipe")
+	app.go_back()
+	await process_frame
+	expect(app.screen == "settings", "leaving the credits scroll page returns to settings")
 	var trial = load("res://scripts/ui/touch_tryout.gd").new()
 	trial.app = app
 	app.add_child(trial)

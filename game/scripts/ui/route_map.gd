@@ -1,4 +1,5 @@
 extends Control
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const Graph = preload("res://scripts/core/room_graph.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Modern = preload("res://scripts/ui/modern_ui.gd")
@@ -25,7 +26,7 @@ func _draw() -> void:
 		draw_line(a, b, Color(UI.JADE, .6) if explored else UI.EDGE, 3, true)
 
 static func list_view(ui, sheet: Control, page: String) -> void:
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	var tabs_height = maxf(52, ui.mobile_button_height) if ui.mobile_ui else 52.0
 	scroll.position = Vector2(18, tabs_height + 32)
 	scroll.size = Vector2(312, 509 - tabs_height - 46)
@@ -91,7 +92,8 @@ static func show_sheet(ui, page: String = "build") -> void:
 		ui.label(stats, str(row.value), Rect2(51, 95 + i * 62, 150, 31), 23)
 	ui.label(stats, str(ui.world.run.get("seed_text", ui.Seed.text(int(ui.world.run.seed)))), Rect2(18, 448, 189, 36), 18, UI.JADE)
 	var map_panel = ui.panel(ui.modal, Rect2(268, 178, 612, 509), UI.INSET, Color.TRANSPARENT)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
+	scroll.pan_horizontal = true
 	scroll.position = Vector2(10, 10)
 	scroll.size = Vector2(592, 443)
 	map_panel.add_child(scroll)

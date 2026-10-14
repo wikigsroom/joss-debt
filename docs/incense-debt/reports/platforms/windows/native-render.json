@@ -1,6 +1,6 @@
 {
   "asset_failures": [],
-  "asset_loads": 3781,
+  "asset_loads": 3851,
   "captures": [
     {
       "expected_mode": "",
@@ -1740,14 +1740,14 @@
   "source": "real native viewport; fixture states for visual review",
   "stress": {
     "enemies": 8,
-    "frame_ms_p95": 50.0,
+    "frame_ms_p95": 50.0646666666667,
     "godot_static_memory_bytes": null,
-    "physics_ms_p95": 48.382,
+    "physics_ms_p95": 54.772,
     "projectiles": 240,
     "sampled_render_frames": 70,
     "scope": "native desktop renderer fixture; not mobile or long-duration profiling",
-    "world_tick_ms_p95": 3.032,
+    "world_tick_ms_p95": 3.427,
     "static_memory_available": false
   },
-  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9"
+  "artifact_sha256": "9e0d3c3fa7dd11a1e3b8501f0b502426ca4cdc720e11167d76a87a7f0fa6e331"
 }

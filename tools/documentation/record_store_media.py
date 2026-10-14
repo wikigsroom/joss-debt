@@ -114,7 +114,11 @@ def encode_video(target, report, scenario, seconds):
             "-map", "0:v:0", "-map", "0:a:0", "-t", str(seconds), "-frames:v", str(round(seconds * 30)),
             "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-pix_fmt", "yuv420p", "-r", "30",
             "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
-            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(path)]
+            # Keep a small digital peak margin after AAC encoding. Native
+            # MovieWriter captures can reach exactly 0 dBFS during a hit or
+            # menu cue; -1.5 dB prevents inter-sample clipping while keeping
+            # the original BGM/SFX balance audible.
+            "-af", "volume=-1.5dB", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(path)]
     subprocess.run(args, cwd=ROOT, check=True, creationflags=subprocess.CREATE_NO_WINDOW)
     info = probe(path)
     assert abs(float(info["format"]["duration"]) - seconds) <= .05

@@ -1,11 +1,11 @@
 {
-  "recorded_at": "2026-10-06T14:27:41.687548+00:00",
+  "recorded_at": "2026-10-14T15:49:32.345257+00:00",
   "version": "0.1.0",
   "status": "playable_three_chapter_alpha",
   "matrix_status": "audited",
   "catalog_counts": {
     "characters": 6,
-    "weapons": 16,
+    "weapons": 32,
     "skills": 18,
     "relics": 54,
     "talents": 36,
@@ -17,7 +17,8 @@
     "rules": 10
   },
   "status_counts": {
-    "verified_alpha": 16,
+    "verified_alpha": 15,
+    "missing": 1,
     "pending_device": 1,
     "pending_human_and_device": 1
   },
@@ -43,7 +44,7 @@
     "method": "shared fixed-tick simulation, character-route-focused reward selection, normal stats and 72000-tick maximum"
   },
   "native": {
-    "asset_loads": 725,
+    "asset_loads": 3851,
     "captures": 90,
     "interaction_checks": 75
   },
@@ -164,7 +165,7 @@
       "runtime": "game/scripts/ui/modern_ui.gd; game/scripts/ui/game_renderer.gd",
       "verification": "runtime/ui-refresh/ui-refresh.json; runtime/visual-baseline.json; runtime/visual-contract-audit.json; runtime/choice-history-tests.json; platforms/windows/ui-style.png; platforms/windows/native-render.json",
       "assets": "docs/incense-debt/reports/runtime/asset-verification.json",
-      "status": "verified_alpha",
+      "status": "missing",
       "evidence": "三张Sub2概念板、运行截图、字体、57 个矢量图标、75 项原生 GUI 检查和本局成长记录报告相互对照；PC 数字键 1—4 可直接提交候选。",
       "open_boundary": "用户最终审美确认、真人色觉与动态舒适度属于后续体验验收。"
     },
@@ -225,7 +226,7 @@
       "verification": "runtime/advanced-input-tests.json; platforms/android-verification.json; platforms/ios-handoff-verification.json; platforms/platform-parity.json; platforms/windows/native-render.json",
       "assets": "build/windows; build/android; build/ios-handoff",
       "status": "pending_device",
-      "evidence": "软件路径、桌面原生 GUI、Windows 包、Android 包和 iOS 共享源码交接完整性均已核验；Windows/iOS 的 1795 个 game 文件逐项一致，Android 的 725 项运行资源与核心内容通过包内核对。",
+      "evidence": "软件路径、桌面原生 GUI、Windows 包、Android 包和 iOS 共享源码交接完整性均已核验；Windows/iOS 的 7956 个 game 文件逐项一致，Android 的 3781 项运行资源与核心内容通过包内核对。",
       "open_boundary": "Android 真机安装/触控/热稳定及 macOS/Xcode 签名、iOS 真机仍缺证据。"
     },
     {

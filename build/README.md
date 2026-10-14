@@ -1,6 +1,6 @@
 # 原生构建与发布 / Native builds and release
 
-当前正式联机版 **0.5.0 / Android code 9**。Windows x64、Android 9+ arm64、Linux／Windows 独立服务端。离线十一层、双人共灯、可选对灯；官方客户端进入共灯自动连接。
+当前正式联机版 **0.6.2 / Android code 12**。Windows x64、Android 9+ arm64、Linux／Windows 独立服务端。离线十一层、双人共灯、可选对灯；官方客户端进入共灯自动连接。
 
 See [current delivery](../docs/incense-debt/reports/current-product-status.md), [audit](../docs/incense-debt/44-public-online-release.md), and [Release](https://github.com/wikigsroom/joss-debt/releases/tag/v0.5.0).
 
@@ -10,7 +10,7 @@ See [current delivery](../docs/incense-debt/reports/current-product-status.md), 
 | Android release | android/IncenseDebt.apk |
 | Windows server | server/IncenseDebtServer.exe |
 | Linux server | server-linux/IncenseDebtServer.x86_64 |
-| Release payload | release/v0.5.0/assets/ |
+| Release payload | release/v0.6.2/assets/ |
 
 ## 构建 / Build
 
@@ -49,8 +49,8 @@ Layout fixtures inspect the exported Windows pack. They are not Android-device t
 ```powershell
 python tools/runtime/record_public_delivery.py
 python tools/runtime/package_public_release.py
-python tools/runtime/publish_release.py --tag v0.5.0
-python tools/runtime/verify_published_release.py --tag v0.5.0
+python tools/runtime/publish_release.py --tag v0.6.2
+python tools/runtime/verify_published_release.py --tag v0.6.2
 ```
 
 [v0.5.0 清单](../docs/releases/v0.5.0.manifest.json)：先草稿上传，逐份完整 SHA-256／大小核对后公开正式版；归档还校验 CRC 与每个解包成员。旧 Alpha tag／附件不改写。没有本輪 iOS IPA，历史源码交接不能安装。

@@ -1,4 +1,5 @@
 extends RefCounted
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Menu = preload("res://scripts/ui/menu_flow.gd")
 const Protocol = preload("res://scripts/network/protocol.gd")
@@ -212,7 +213,7 @@ static func loadout(c) -> void:
 		art(c, tile, "res://assets/skills/" + id + ".png", Rect2(12, 10, 56, 56))
 		app.label(tile, app.world.db.name_of("skills", id), Rect2(82, 18, 156, 38), 21)
 		if id == selection.skill: UI.select(tile)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(310, 348)
 	scroll.size = Vector2(802, 236)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -355,7 +356,7 @@ static func build(c) -> void:
 	for seat in 2:
 		var x = 38 + seat * 556
 		app.label(sheet, str(state.names[seat]) + (" · 你" if seat == int(state.seat) else ""), Rect2(x, 145, 510, 44), 28, UI.JADE if seat == int(state.seat) else UI.ACCENT)
-		var scroll = ScrollContainer.new()
+		var scroll = TouchScroll.new()
 		scroll.position = Vector2(x, 214)
 		scroll.size = Vector2(530, 302 if has_repayment else 340)
 		scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -505,7 +506,7 @@ static func cooperative_repayment(c) -> void:
 	var own = c.session.presentation[int(state.seat)]
 	var sheet = shell(c, "还一份愿", "楼层出口 · 使用共享金币偿还你自己的契约", "repay")
 	app.label(sheet, "共享金币 %d" % int(own.run.coins), Rect2(55, 135, 1030, 48), 27, UI.GOLD)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(55, 196)
 	scroll.size = Vector2(1035, 400)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -543,7 +544,8 @@ static func cooperative_map(c) -> void:
 	var sheet = shell(c, "共同行路", "两人到同一扇门集合后换房 · 地图仅用于查看", "arena")
 	if c.session.presentation.is_empty(): return
 	var dungeon = c.session.presentation[int(c.session.room.seat)]
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
+	scroll.pan_horizontal = true
 	scroll.position = Vector2(82, 155)
 	scroll.size = Vector2(988, 430)
 	scroll.follow_focus = true

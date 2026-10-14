@@ -29,7 +29,10 @@ def main():
         engine = ROOT / "build/windows/IncenseDebt.exe"
         reports = ROOT / "docs/incense-debt/reports/platforms/windows"
     reports.mkdir(parents=True, exist_ok=True)
-    args = [str(engine), "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3",
+    # Keep the long capture fixture deterministic. Without a cap the desktop
+    # renderer can run far ahead of the fixed QA clock, making the same 90
+    # frames consume the timeout on heavier generated UI textures.
+    args = [str(engine), "--max-fps", "60", "--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3",
             "--resolution", "1280x720", "--position", "-16000,-16000", "--", "--qa-capture", "--qa-output=" + str(reports)]
     if "--packaged" not in sys.argv:
         args[1:1] = ["--path", str(ROOT / "game")]
@@ -80,7 +83,11 @@ def main():
             raise RuntimeError("Native viewport capture belongs to a different executable")
         build["native_runtime_tested"] = True
         build["native_runtime_report"] = "docs/incense-debt/reports/platforms/windows/native-render.json"
-        build["device_tested"] = True
+        # This fixture uses the native desktop renderer. Keep physical-device
+        # acceptance separate so a screenshot run cannot be mistaken for phone QA.
+        build["device_tested"] = False
+        build["physical_device_tested"] = False
+        build["native_test_scope"] = "desktop native viewport fixture; no physical device"
         build_file.write_text(json.dumps(build, ensure_ascii=False, indent=2) + "\n", "utf8")
     (reports / "native-render.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf8")
     print(f"Native Windows viewport: {len(CAPTURE_NAMES)} screenshots saved; runtime assets loaded; process exited.")

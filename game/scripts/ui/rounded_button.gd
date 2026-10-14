@@ -12,5 +12,7 @@ func _make_custom_tooltip(for_text: String) -> Object:
 	text.add_theme_font_override("font", UI.body_font())
 	text.add_theme_font_size_override("font_size", 18)
 	text.add_theme_color_override("font_color", UI.TEXT)
+	text.clip_text = true
+	text.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	panel.add_child(text)
 	return panel

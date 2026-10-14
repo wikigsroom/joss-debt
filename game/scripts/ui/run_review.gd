@@ -1,5 +1,6 @@
 extends RefCounted
 ## End-of-run disclosure reads the finished world and committed account ledger.
+const TouchScroll = preload("res://scripts/ui/touch_scroll_container.gd")
 const UI = preload("res://scripts/ui/game_theme.gd")
 const Damage = preload("res://scripts/core/damage_record.gd")
 const Progress = preload("res://scripts/core/meta_progress.gd")
@@ -40,7 +41,7 @@ static func hits(app, top: float, selected_index: int) -> void:
 		app.label(empty, "这页没有受击记录。", Rect2(129, 47, 950, 45), 26, UI.MUTED)
 		return
 	selected_index = clampi(selected_index if selected_index >= 0 else history.size() - 1, 0, history.size() - 1)
-	var scroll = ScrollContainer.new()
+	var scroll = TouchScroll.new()
 	scroll.position = Vector2(64, top)
 	scroll.size = Vector2(512, 352)
 	app.modal.add_child(scroll)

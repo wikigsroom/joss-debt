@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-10-06T14:27:40.839967+00:00",
-  "passed": true,
+  "recorded_at": "2026-10-14T12:09:01.976098+00:00",
+  "passed": false,
   "checks": [
     {
       "name": "approved concept references are registered in the asset manifest",
@@ -54,13 +54,13 @@
     },
     {
       "name": "runtime screenshots and UI evidence remain bound to the current executable",
-      "passed": true,
-      "detail": "compiled=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; native=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; ui=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0"
+      "passed": false,
+      "detail": "compiled=7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85; native=d1a42e0de0fe08722aeb4a8ac8b20ba1faf73e80b9e5234004164032ca357e81; ui=7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85"
     },
     {
       "name": "native asset and screenshot evidence is green",
       "passed": true,
-      "detail": "assets=725; captures=90"
+      "detail": "assets=3665; captures=90"
     },
     {
       "name": "visual contract keeps concept references separate from runtime replacements",
@@ -68,13 +68,15 @@
       "detail": "concept direction is reviewed while runtime screenshots/assets remain authoritative"
     }
   ],
-  "failures": [],
+  "failures": [
+    "runtime screenshots and UI evidence remain bound to the current executable"
+  ],
   "reviewed_concepts": [
     "concept_roster",
     "concept_paper_room",
     "concept_menu_map_combat"
   ],
-  "runtime_assets": 725,
+  "runtime_assets": 3665,
   "native_captures": 90,
   "scope": "reviewed visual references, prompt provenance, visual contract and current native evidence; concept boards do not silently replace engine assets"
 }

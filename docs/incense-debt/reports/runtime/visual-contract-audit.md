@@ -16,8 +16,8 @@
 | visual contract names the character, room, menu, door and impact references | 通过 | missing=[] |
 | the new reference prompt covers all three visual anchors | 通过 | menu, physical room entry and combat feedback are explicit prompt sections |
 | visual baseline binds the new board to its current hash | 通过 | baseline_references=4 |
-| runtime screenshots and UI evidence remain bound to the current executable | 通过 | compiled=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; native=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0; ui=b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0 |
-| native asset and screenshot evidence is green | 通过 | assets=725; captures=90 |
+| runtime screenshots and UI evidence remain bound to the current executable | 失败 | compiled=7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85; native=d1a42e0de0fe08722aeb4a8ac8b20ba1faf73e80b9e5234004164032ca357e81; ui=7bed5e7ffc5620dc009493a5c91b7007d2e67091291e829b8650bdfd7958fd85 |
+| native asset and screenshot evidence is green | 通过 | assets=3665; captures=90 |
 | visual contract keeps concept references separate from runtime replacements | 通过 | concept direction is reviewed while runtime screenshots/assets remain authoritative |
 
 边界：概念图审查通过不等于每个运行时栅格都由新模型逐帧生成；运行时资源、原生截图和设备/真人验收仍按各自报告处理。

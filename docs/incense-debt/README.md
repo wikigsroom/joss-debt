@@ -39,6 +39,11 @@
 | [26 本轮战斗修复](26-combat-boundary-mixed-encounters.md) | 内墙碰撞与房门、射线／范围特效、60/40混编、早期两个独立Boss房及旧局迁移 |
 | [33 动作与移动操作修订](33-action-mobile-update.md) | 六角色独立动作、十四项触控问题修复、随机曲库、隐私主体与当前包体验证 |
 | [35 全量怪物动作交付](35-creature-action-completion.md) | 402 个身份、24,048 帧独立攻击／受击、四向原生截图及两端包体一致性 |
+| [50 方向2水墨朱砂符 UI 系统](50-ui-direction2-ink-cinnabar.md) | 统一宣纸页面、墨色卡片、朱砂焦点、生成素材、字体、焦点状态与响应式验收 |
+| [51 新 UI 发布媒体重制](51-ui-publication-media-2026-10-14.md) | 基于当前水墨朱砂符 UI 重录 12 张截图、120 秒实机录屏与 45 秒宣传片，含包体绑定与 115 项校验 |
+| [52 移动端菜单滚动兼容修复](52-mobile-menu-scroll-compatibility-2026-10-14.md) | 统一触摸滚动容器，修复上下滑动失效，覆盖点击保留、方向锁、惯性、安全区缩放与四种原生窗口比例 |
+| [53 UI 版式与文字边界复查](53-ui-layout-audit-2026-10-14.md) | 统一修复文字越界、按钮纵向变形、底部通知覆盖、长文本滚动与按钮动态字号，覆盖暂停页、道具选单、供物选择和战斗 HUD |
+| [54 v0.6.2 完整打包与 UI 发布](../releases/v0.6.2.md) | 绑定 Windows、Android、Linux/Windows 服务端四件发布包，更新 README 配图并记录 90 张原生截图、107 项键盘和 2,180 项跨包一致性检查 |
 
 ## 可执行的数据来源
 
@@ -58,6 +63,10 @@
 
 以上均通过指定的 `sub2-image-gen` / `gpt-image-2.5` 生成。角色板和环境板用于锁定设计；正式精灵和动作条已完成透明、锚点、切片与原生加载检查，技术证据见[素材验证](reports/runtime/asset-verification.json)。
 
+## 当前 UI 方向 02：水墨朱砂符
+
+当前菜单和所有页面的统一皮肤已切换到已选中的「水墨朱砂符」方向：宣纸承载页面层级，深墨圆角牌承载交互，朱砂只表示当前选择、确认与危险，玉青和金色分别表示可用状态与奖励。菜单标题下的云气梅枝、主页面宣纸背景、墨色笔触卡片、横向按钮细节、圆形图标盘、横向 tile 卡片和 4×4 生成图标雪碧表均来自 `sub2-image-gen` 生成并经过原生导入检查；本轮运行时素材清单与哈希见 [`reports/runtime/ink-ui-2026-10-14/manifest.json`](reports/runtime/ink-ui-2026-10-14/manifest.json)，代表性原生截图见 [`reports/platforms/windows/menu.png`](reports/platforms/windows/menu.png)。完整的令牌、字体、页面层级、键盘/触控规则与后续修改顺序见 [50 方向2水墨朱砂符 UI 系统](50-ui-direction2-ink-cinnabar.md)。
+
 ## 成品验收总线
 
 当前内容覆盖六名可玩角色、六条成长路线、三十二件武器、十八种焚债形态、五十四件遗物、三十六个行愿节点、九类债约、二十套环境、二百九十六种普通敌人、六种精英变体、九十九名首领。每个主题使用12种专属小怪与3名首领，最终天穹为7名首领；原始通用敌人保留用于兼容与试演。献灯、判官、观音、破阵、商店、事件、秘密房及双首领支路均纳入种子地图。
@@ -68,7 +77,7 @@
 
 ## 直接查看与运行
 
-[项目中英双语说明与实机展示](../../README.md) · [本地导出与操作说明](../../build/README.md) · [iOS原生交接说明](../../build/ios-handoff/README.md) · [Godot工程](../../game/project.godot)。应用包不进入Git仓库；本地导出后，Windows打开 `build/windows/IncenseDebt.exe` 即可，Android调试签名arm64包位于 `build/android/IncenseDebt.apk`。iOS源码交接不是已签名的IPA。
+[项目中英双语说明与实机展示](../../README.md) · [本地导出与操作说明](../../build/README.md) · [iOS原生交接说明](../../build/ios-handoff/README.md) · [Godot工程](../../game/project.godot)。应用包不进入Git仓库；当前方向02的 Windows release 位于 `build/windows/IncenseDebt.exe`，Android 更新后的调试签名 arm64 包位于 `build/android/IncenseDebt.apk`。Android 商店 release 仍需要持有者的发布密钥，当前不把旧包冒充新视觉版本；iOS源码交接不是已签名的IPA。
 
 WASD移动，鼠标瞄准，左键攻击，右键/Q焚债，Space身法；方向键可直接瞄准并持续射击。清房后朝发光门口走入切房，E用于靠近断绳入口时的交互/提示；Tab行路图，I愿簿，Esc暂停，F11全屏。奖励、技能、商店和债约候选支持数字键 `1/2/3/4` 直接提交；暂停页“本局记录”查看本局所有历史成长选择与当前构筑。手机采用独立双摇杆与施术/身法触点。
 

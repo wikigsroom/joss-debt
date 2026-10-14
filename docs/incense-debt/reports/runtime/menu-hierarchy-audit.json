@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-06T14:26:54.303790+00:00",
+  "recorded_at": "2026-10-14T07:40:44.591219+00:00",
   "passed": true,
   "checks": [
     {
@@ -94,9 +94,9 @@
     }
   ],
   "failures": [],
-  "compiled_windows_sha256": "b42d30ac412fbe90299066bc8f32f624544cdbdead870e9253f35f388a7043a0",
+  "compiled_windows_sha256": "d1a42e0de0fe08722aeb4a8ac8b20ba1faf73e80b9e5234004164032ca357e81",
   "native_interaction_checks": 75,
-  "keyboard_checks": 105,
+  "keyboard_checks": 107,
   "keyboard_driver": "native Input.parse_input_event key presses/releases; Tab navigation only; no mouse events, no grab_focus or button pressed emissions by the test driver",
   "hierarchy": [
     "splash -> files -> main -> character/challenges/stats/options",
