@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "tag": "v0.6.2",
+  "version": "0.6.2",
+  "repository": "wikigsroom/joss-debt",
+  "prerelease": false,
+  "engine": "Godot 4.7.2",
+  "built_at": "2026-10-14T19:12:28.936703+00:00",
+  "built_from_commit": "dd46b0c8d169a3c08bb6b71447abea1743b1db31",
+  "game_git_tree": "040179355640627af40465585288b14691e885fb",
+  "server_git_tree": "e0e3951be523dde0ec22d958fb8e80c72baad003",
+  "native_server_sha256": {
+    "windows": "6d32bf84d55ed95bae5098bd141f94505bf01e4e408eba0f7f4845e0eb98cdc6",
+    "linux": "d82ca37ab1ca535deb4e3c37872e5f6b29bfa95ba9f40be0cd5850702d30c5bf"
+  },
+  "native_server_bytes": {
+    "windows": 110904936,
+    "linux": 75155864
+  },
+  "windows_verification": {
+    "passed": true,
+    "artifact_sha256": "9e0d3c3fa7dd11a1e3b8501f0b502426ca4cdc720e11167d76a87a7f0fa6e331",
+    "artifact_bytes": 1124086552,
+    "packaged_checks": 75,
+    "native_captures": 90,
+    "keyboard_checks": 107,
+    "runtime_assets": 3851,
+    "report": "docs/incense-debt/reports/platforms/windows-0.6.2/native-render.json"
+  },
+  "android_verification": {
+    "passed": true,
+    "apk_sha256": "88f493ecf8b69b889d8a8ee0fd678902eaf458f5f36b6ae262b193344638a8c5",
+    "apk_bytes": 1038030236,
+    "signature_verified": true,
+    "physical_device_tested": false,
+    "report": "docs/incense-debt/reports/platforms/android-0.6.2-verification.json"
+  },
+  "native_wan_report": "docs/incense-debt/reports/latency-compensation-2026-10-13/public-wan-v0.6.1.json",
+  "local_regression_report": "docs/incense-debt/reports/network-udp-acceptance-2026-10-12/application-regression.json",
+  "ui_layout_report": "docs/incense-debt/53-ui-layout-audit-2026-10-14.md",
+  "mobile_ui_report": "docs/incense-debt/reports/platforms/windows-0.6.2/mobile/mobile-matrix.json",
+  "server_archive": "server/archives/v0.6.0/manifest.json",
+  "server_archive_note": "The 0.6.2 server source is tracked in server/ and is bound by server_git_tree; v0.6.0 is the prior immutable archive.",
+  "virtualization": "none",
+  "physical_android_tested": false,
+  "files": [
+    {
+      "name": "IncenseDebt-v0.6.2-windows-x64.zip",
+      "bytes": 1046816642,
+      "sha256": "e519e35d2da15960487ba6e611c3cc48ce4a048c2bb130e2ea029b4f684fbb0f"
+    },
+    {
+      "name": "IncenseDebt-v0.6.2-android-arm64.apk",
+      "bytes": 1038030236,
+      "sha256": "88f493ecf8b69b889d8a8ee0fd678902eaf458f5f36b6ae262b193344638a8c5"
+    },
+    {
+      "name": "IncenseDebt-v0.6.2-server-linux-x64.zip",
+      "bytes": 28915965,
+      "sha256": "03629b8bf4b01fa0ca5677e045e9f60909ceb6c9c920d11d459f81b2cb8b271e"
+    },
+    {
+      "name": "IncenseDebt-v0.6.2-server-windows-x64.zip",
+      "bytes": 38567669,
+      "sha256": "693fde36aff4bca373871ee48adbcb731efaeb7920e07d2e6618c43bd86c9ef1"
+    },
+    {
+      "name": "START-HERE.md",
+      "bytes": 4952,
+      "sha256": "dde77eace6431e98bc402bc3237f3a60ebaaf02be78ff856510b439194897a08"
+    }
+  ]
+}
