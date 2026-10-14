@@ -73,7 +73,14 @@ movie_writer/video_quality=0.85
     if code or "SCRIPT ERROR" in logs or "ERROR:" in logs:
         raise RuntimeError(logs[-6000:])
     report = json.loads((target / "capture-report.json").read_text("utf-8"))
-    report["artifact_sha256"] = json.loads((ROOT / "build/delivery-manifest.json").read_text("utf-8"))["files"][0]["sha256"]
+    # Bind the capture to the current v0.6.x Windows build report.  The legacy
+    # delivery-manifest.json is retained for older releases and may otherwise
+    # make a fresh capture claim an obsolete executable hash.
+    current_build = ROOT / "docs/incense-debt/reports/platforms/windows-build.json"
+    if current_build.is_file():
+        report["artifact_sha256"] = json.loads(current_build.read_text("utf-8"))["sha256"]
+    else:
+        report["artifact_sha256"] = json.loads((ROOT / "build/delivery-manifest.json").read_text("utf-8"))["files"][0]["sha256"]
     report["harness"] = SCRIPT.relative_to(ROOT).as_posix()
     renderer = ROOT / "game/scripts/ui/game_renderer.gd"
     report["renderer_source"] = renderer.relative_to(ROOT).as_posix()

@@ -1,20 +1,20 @@
 {
-  "method": "FFmpeg volumedetect on the complete final AAC audio stream; measured 2026-10-08",
+  "method": "FFmpeg volumedetect on the complete final AAC audio stream; measured 2026-10-15",
   "sample_rate": 48000,
   "channels": 2,
   "measurements": [
     {
       "file": "videos/IncenseDebt-gameplay-120s.mp4",
-      "sha256": "88f7851f8a64aca891d146ec4d2a06105583662b30e4d7dd7c4945d6420d2865",
-      "mean_volume_db": -30.0,
-      "max_volume_db": -0.4,
+      "sha256": "0100632c4e6cf67c7e145c339a126d7c68de75f6f3ff6655c76c6ef43387eba6",
+      "mean_volume_db": -28.3,
+      "max_volume_db": -1.8,
       "decoded_samples": 11520000
     },
     {
       "file": "videos/IncenseDebt-trailer-45s.mp4",
-      "sha256": "5cb369679c681428cc77af5f0a788e9b9a6b5fcba7488a40be75c3cd200cad14",
-      "mean_volume_db": -29.2,
-      "max_volume_db": -3.0,
+      "sha256": "5f687de1afe72dc3677ccf516fcd0c25afecc97e9fb04ccc62ea6a705b2a834b",
+      "mean_volume_db": -28.2,
+      "max_volume_db": -4.3,
       "decoded_samples": 4321280
     }
   ]

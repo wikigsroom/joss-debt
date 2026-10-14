@@ -59,7 +59,7 @@ def typography(kind):
             x = 148 + i * 304
             d.rounded_rectangle((x, 835, x+276, 915), radius=40, fill=(23, 36, 33, 238), outline=JADE if i else GOLD, width=2)
             text_center(d, x+138, 860, text, font("IncenseRounded-Bold.ttf", 28), PAPER)
-        d.text((152, 967), "v0.6.1   ·   双人合作   ·   Windows / Android", font=font("NotoSansSC.ttf", 23), fill="#C7BA9C", anchor="lt")
+        d.text((152, 967), "v0.6.2   ·   双人合作   ·   Windows / Android", font=font("NotoSansSC.ttf", 23), fill="#C7BA9C", anchor="lt")
     return layer
 
 
@@ -173,8 +173,11 @@ def assemble(clips):
     info=probe(output)
     assert abs(float(info["format"]["duration"])-45)<=.04
     assert next(s for s in info["streams"] if s["codec_type"]=="video")["nb_frames"]=="1350"
+    native_path = KIT / "videos/native-showcase-40s.mp4"
+    if not native_path.is_file():
+        native_path = KIT / "sources/native-showcase-40s.mp4"
     report=dict(duration=45,dimensions=[1920,1080],fps=30,clips=[p.relative_to(ROOT).as_posix() for p in clips],
-                native_source="sources/native-showcase-40s.mp4" if (KIT/"sources/native-showcase-40s.mp4").exists() else "videos/native-showcase-40s.mp4",cut_offsets=[3.3,10.2,17.1,24.0,30.9,37.8],transition_seconds=.3,
+                native_source=native_path.relative_to(ROOT).as_posix(),cut_offsets=[3.3,10.2,17.1,24.0,30.9,37.8],transition_seconds=.3,
                 source_bgm="game/assets/audio/paper_lane_loop.ogg",native_audio="Original native BGM and attack/hit SFX retained",narration=False,
                 sources="Actual embedded gameplay; original paper-spirit RGB cutout; Sub2 scene art; existing game fonts",media_probe=info)
     (KIT/"videos/trailer-edit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n","utf-8")

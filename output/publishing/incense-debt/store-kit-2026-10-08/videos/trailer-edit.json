@@ -60,7 +60,7 @@
         "start_time": "0.000000",
         "duration_ts": 691200,
         "duration": "45.000000",
-        "bit_rate": "5859927",
+        "bit_rate": "6056326",
         "bits_per_raw_sample": "8",
         "nb_frames": "1350",
         "extradata_size": 50,
@@ -114,7 +114,7 @@
         "start_time": "0.000000",
         "duration_ts": 2160000,
         "duration": "45.000000",
-        "bit_rate": "186361",
+        "bit_rate": "190384",
         "nb_frames": "2111",
         "extradata_size": 5,
         "disposition": {
@@ -153,8 +153,8 @@
       "format_long_name": "QuickTime / MOV",
       "start_time": "0.000000",
       "duration": "45.000000",
-      "size": "34061715",
-      "bit_rate": "6055416",
+      "size": "35189133",
+      "bit_rate": "6255845",
       "probe_score": 100,
       "tags": {
         "major_brand": "isom",

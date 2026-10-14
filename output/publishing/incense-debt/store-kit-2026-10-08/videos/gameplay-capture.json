@@ -259,10 +259,10 @@
       "to": "1/11"
     }
   ],
-  "artifact_sha256": "51b896b4c3deb5a0bb197c44210f5bdd72e95cc216a4dd0961fedd4edee364d9",
+  "artifact_sha256": "9e0d3c3fa7dd11a1e3b8501f0b502426ca4cdc720e11167d76a87a7f0fa6e331",
   "harness": "tools/documentation/capture_store_media.gd",
   "renderer_source": "game/scripts/ui/game_renderer.gd",
-  "renderer_sha256": "ee1095438e9a3339e830d9fd1532a4f065919a56fcf8478bdb7dedb71302a8fd",
+  "renderer_sha256": "773639f30c344b38e73804bb15a59c43b18ee30214e39652f0bf37238071a194",
   "presentation_fix": "Skip disappeared/dead debt-chain anchors in current source renderer; no simulation, stats, loot or RNG change",
   "capture_size": [
     1920,
@@ -306,7 +306,7 @@
         "start_time": "0.000000",
         "duration_ts": 1843200,
         "duration": "120.000000",
-        "bit_rate": "3329224",
+        "bit_rate": "3565815",
         "bits_per_raw_sample": "8",
         "nb_frames": "3600",
         "extradata_size": 51,
@@ -360,7 +360,7 @@
         "start_time": "0.000000",
         "duration_ts": 5760000,
         "duration": "120.000000",
-        "bit_rate": "191179",
+        "bit_rate": "195690",
         "nb_frames": "5626",
         "extradata_size": 5,
         "disposition": {
@@ -399,8 +399,8 @@
       "format_long_name": "QuickTime / MOV",
       "start_time": "0.000000",
       "duration": "120.000000",
-      "size": "52939692",
-      "bit_rate": "3529312",
+      "size": "56556404",
+      "bit_rate": "3770426",
       "probe_score": 100,
       "tags": {
         "major_brand": "isom",
@@ -409,5 +409,6 @@
         "encoder": "Lavf62.12.100"
       }
     }
-  }
+  },
+  "capture_package": "v0.6.2 Windows release package; no physical device"
 }
